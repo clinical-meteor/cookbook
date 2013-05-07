@@ -9,6 +9,9 @@ Additional sections to add to the unofficial-meteor-faq
 ------------------------------------------------------------------
 ## UNSORTED, UNEDITED
 
+Q:  Is jQuery a core package?  
+A:  Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  
+
 ### Collections
  
 save()
@@ -16,8 +19,6 @@ save()
 
 Q:  move back to clean-css instead of uglify?
 
-Homebrew Meteor Installation
-https://gist.github.com/4317935
 
 DDP Acryonym
 - Distributed Data Protocol
@@ -69,6 +70,10 @@ A: Appcache
 
 ### Installing on X, Y, Z
 
+Homebrew Meteor Installation  
+https://gist.github.com/4317935
+
+http://win.meteor.com/
 
 ### Adding 'somelibrary.js' as a smartpackage?
 
