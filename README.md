@@ -8,16 +8,17 @@ Additional sections to add to the unofficial-meteor-faq
 ------------------------------------------------------------------
 ## Meteor Logo
 
+The CloudBees NodeJS logo:
+https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
+
+
+
 ------------------------------------------------------------------
 ## UNSORTED, UNEDITED
 
 Q:  Is jQuery a core package?  
 A:  Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  
 
-### Collections
- 
-save()
-- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622
 
 Q:  move back to clean-css instead of uglify?
 
@@ -31,17 +32,25 @@ Check out LiveJS as a possible solution:
 https://github.com/q42/livejs
 
 
-Unit Testing
-- BrowserStack (official)
-- jenkins 
-- jasmine
-- phantomjs
 
 Templates
 - jade
 - blade
 
-# User Model
+------------------------------------------------------------------
+### Collections
+ 
+save()
+- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622
+
+count()
+````
+MyCollection.find(selector, options).fetch().length()
+````
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d7b8e6aa025958  
+
+------------------------------------------------------------------
+### User Model
 
 user.username
 user.emails[] {address, verified}
@@ -49,12 +58,23 @@ user.profile.name
 
 The intention is that the first email address in the 'emails' list is the primary contact, where people want to be emailed, and the other addresses in the list are alternates that work for login but do not receive email.
 
-# File Uploads
+------------------------------------------------------------------
+### File Uploads
 
 https://gist.github.com/dariocravero/3922137
 
 http://collectionfs.meteor.com/
 
+------------------------------------------------------------------
+### Unit Testing
+- BrowserStack (official)
+- jenkins 
+- jasmine
+- phantomjs
+- mocha -
+
+
+------------------------------------------------------------------
 ### How to make 3rd-party-librar.js work with Meteor?
 
 What's probably going on is that a) the Timeline object itself is being destroyed when the reactive templates get re-rendered; and b) if it does manage to render anything, the reactive simply write over the rendering.  
@@ -84,29 +104,38 @@ var createStoryJS = function ()
 
 - 
 
+------------------------------------------------------------------
 ### Running Devel Branch of Meteor
 git checkout devel
 
 Q: Preserving templates across pages?
 A: Appcache
 
+------------------------------------------------------------------
 ### Installing on X, Y, Z
 
 Homebrew Meteor Installation  
 https://gist.github.com/4317935
 
+When will Windows version become a first class citizen?
+
+https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d9453041fae6aa
 http://win.meteor.com/
 
+------------------------------------------------------------------
 ### Adding 'somelibrary.js' as a smartpackage?
 
 This is a rephrasing of 'how to build a smartpackage'.  
 
 
 
+------------------------------------------------------------------
 ### Content Delivery Networks (CDN)
 https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 
+------------------------------------------------------------------
 ### Click/Touch Artifacts
 
 ````
@@ -209,6 +238,21 @@ That means WebSphere.
 
 Q:  Help!  Something broke in production!
 - Did you check it with --debug?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
+
+Proxies?
+
+
+------------------------------------------------------------------
+## Url Generation
+
+````js
+//http://mydomain.com
+Meteor.absoluteUrl.defaultOptions.rootUrl = "http://mydomain.com"
+
+//http://mydomain.com/foo
+Meteor.absoluteUrl("/foo", {});
+
+````
 
 ------------------------------------------------------------------
 ## PACKAGES
@@ -358,3 +402,10 @@ https://gist.github.com/awatson1978/5139909
 
 Load Testing on AWS:
 https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/meteor-talk/BJXA1FRuTzU/M2e9pCH4es0J
+
+
+------------------------------------------------------------------
+Server Side Sessions
+
+http://stackoverflow.com/questions/15397609/meteor-session-replacement  
+
