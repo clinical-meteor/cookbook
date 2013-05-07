@@ -9,6 +9,11 @@ Additional sections to add to the unofficial-meteor-faq
 ------------------------------------------------------------------
 ## UNSORTED, UNEDITED
 
+### Collections
+ 
+save()
+- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622
+
 Q:  move back to clean-css instead of uglify?
 
 Homebrew Meteor Installation
@@ -47,22 +52,94 @@ https://gist.github.com/dariocravero/3922137
 
 http://collectionfs.meteor.com/
 
-# How to make 3rd-party-librar.js work with Meteor?
+### How to make 3rd-party-librar.js work with Meteor?
 
-# Meteor.Device
+### Meteor.Device
 
 
-# Meteor.settings
+### Meteor.settings
 
 - 
 
-# Running Devel Branch of Meteor
+### Running Devel Branch of Meteor
 git checkout devel
 
 Q: Preserving templates across pages?
 A: Appcache
 
+### Installing on X, Y, Z
 
+
+### Adding 'somelibrary.js' as a smartpackage?
+
+This is a rephrasing of 'how to build a smartpackage'.  
+
+### Content Delivery Networks (CDN)
+https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
+
+
+### Click/Touch Artifacts
+
+````
+.unselectable{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+````
+
+------------------------------------------------------------------
+## Dyno Worker Processes
+
+On the server side:
+````js
+function runSync(func) {
+    var fiber = Fiber.current;
+    var result, error;
+
+    var args = Array.prototype.slice.call(arguments, 1);
+
+    func.apply(undefined, [cb].concat(args));
+    Fiber.yield();
+    if (error) throw new Meteor.Error(500, error.code, error.toString());
+    return result;
+
+    function cb(err, res) {
+        error = err;
+        result = res;
+        fiber.run();
+    }
+}
+runSync(myFunction, arg1, arg2);
+
+function myFunction(cb, arg1, arg2) {
+    // do my async thing and then call cb(err, result);
+}
+
+````
+
+And on the client side:
+````
+Meteor.call('myFunction', arg1, arg2, function(error, result) {
+  this.unblock();
+});
+
+````
+
+------------------------------------------------------------------
+## Packages We Love
+
+
+### Payments
+https://atmosphere.meteor.com/package/stripe
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
+
+
+### Date/Time
+https://github.com/possibilities/meteor-moment
+
+### Routing
 
 
 ------------------------------------------------------------------
@@ -113,3 +190,52 @@ Q:  Does Meteor support graph databases (Titan, Neo4J, etc)?
 
 Q:  When will see support for SQL, Postgress, CouchDB, Redis, etc?
               
+
+------------------------------------------------------------------
+### Reserved Keywords
+
+Template.foo.name
+https://github.com/meteor/meteor/issues/703
+
+collection.insert({ owner: Meteor.userId(), length:3 }); 
+https://github.com/meteor/meteor/issues/594#issuecomment-15441895
+
+------------------------------------------------------------------
+### Pagination
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13df0f84a324826d
+https://trello.com/card/pattern-for-easy-pagination/508721606e02bb9d570016ae/67
+
+------------------------------------------------------------------
+### Accounts - Facebook
+
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d2c92723e3a31d
+
+------------------------------------------------------------------
+### Theming
+
+````html
+<template name="foo">
+  <div class="{{current_theme_name}}">
+    <span class="t1">hello</span>
+  </div>
+</template>
+````
+
+````
+theme1 {
+  t1 {background-color: black}
+}
+theme2 {
+  t1 {background-color: red}
+}
+````
+
+````
+Template.foo.current_theme_name = function(){
+  if(Session.get(current_theme_name){
+    return "theme1";
+  }else{
+    return "theme2";
+  }
+}
+````
