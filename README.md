@@ -227,6 +227,20 @@ https://gist.github.com/awatson1978/4645762
 
 Q:  Does Meteor support SQL?
 
+Also, thank you for sticking with the find() syntax on the client side.  And kudos for the Meteor.Table() syntax, rather than kludging things into Collections. I know that some people feel much more comfortable with SQL databases, and there's a lot of interest in having Meteor support SQL, so this is definitely a milestone.  
+
+That being said, there are those of us who have very specific application requirements that require document oriented databases, and Meteor is one of the few funded frameworks around that provides a native Mongo framework.  There are many frameworks out there built around SQL and relational database frameworks.  Far fewer frameworks built around document oriented databases like Mongo.  So...  would hate to see one of the few frameworks natively designed to use Mongo get derailed and watered down by having to maintain backwards compatibility with legacy databases.  
+
+Be that as it may, relational databases *do* do analytics and statistics better, so...  what the hell.  Yay SQL support?  
+
+In the meantime, instead of spending resources building out an alternative to the client side find() command, could we (as a community, perhaps?) focus on promoting SQL to Mongo translation documentation and making it readily available and accessible to new devs and maybe in the official documentation?  Here are the best resources I've found:  
+
+http://www.querymongo.com/
+http://docs.mongodb.org/manual/reference/sql-comparison/
+http://rickosborne.org/download/SQL-to-MongoDB.pdf
+
+That may help the client side find() syntax be less of a limitation, and less onerous to new Meteor users accustomed to SQL.  At the same time, the SQL support provides Meteor with a nice pathway for statistics/analytics, while not borking the harmony of having the same query syntax on both server/client. 
+
 Q:  Does Meteor support graph databases (Titan, Neo4J, etc)?
 
 Q:  When will see support for SQL, Postgress, CouchDB, Redis, etc?
@@ -251,9 +265,13 @@ skip/limit on the server
 
 
 ------------------------------------------------------------------
-### Accounts - Facebook
+### Accounts
 
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d2c92723e3a31d
+Facebook Icons
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d2c92723e3a31d  
+
+Customized Accounts UI  
+http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
 
 ------------------------------------------------------------------
 ### Theming
@@ -323,12 +341,13 @@ https://gist.github.com/awatson1978/4625736
 
 ------------------------------------------------------------------
 ### Load Order
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d51078cfbdb349  
 
-/client/lib/deepest/folder/libraryA.js
-/client/lib/deeper/libraryB.js
-/client/lib/libraryC.js
-/client/lib/main.js
-Meteor.startup();
+/client/lib/deepest/folder/libraryA.js  
+/client/lib/deeper/libraryB.js  
+/client/lib/libraryC.js  
+/client/lib/main.js  
+Meteor.startup();  
 
 
 ------------------------------------------------------------------
