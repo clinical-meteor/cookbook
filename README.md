@@ -5,6 +5,66 @@ unofficial-meteor-faq-extended
 Additional sections to add to the unofficial-meteor-faq
 
 
+
+------------------------------------------------------------------
+## UNSORTED, UNEDITED
+
+Q:  move back to clean-css instead of uglify?
+
+Homebrew Meteor Installation
+https://gist.github.com/4317935
+
+DDP Acryonym
+- Distributed Data Protocol
+- Dynamic Data ...
+
+CSS Transitions
+Check out LiveJS as a possible solution:
+https://github.com/q42/livejs
+
+
+Unit Testing
+- BrowserStack (official)
+- jenkins 
+- jasmine
+- phantomjs
+
+Templates
+- jade
+- blade
+
+# User Model
+
+user.username
+user.emails[] {address, verified}
+user.profile.name
+
+The intention is that the first email address in the 'emails' list is the primary contact, where people want to be emailed, and the other addresses in the list are alternates that work for login but do not receive email.
+
+# File Uploads
+
+https://gist.github.com/dariocravero/3922137
+
+http://collectionfs.meteor.com/
+
+# How to make 3rd-party-librar.js work with Meteor?
+
+# Meteor.Device
+
+
+# Meteor.settings
+
+- 
+
+# Running Devel Branch of Meteor
+git checkout devel
+
+Q: Preserving templates across pages?
+A: Appcache
+
+
+
+
 ------------------------------------------------------------------
 ## LOAD ORDERING
 
