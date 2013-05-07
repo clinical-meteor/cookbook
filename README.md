@@ -5,6 +5,8 @@ unofficial-meteor-faq-extended
 Additional sections to add to the unofficial-meteor-faq
 
 
+------------------------------------------------------------------
+## Meteor Logo
 
 ------------------------------------------------------------------
 ## UNSORTED, UNEDITED
@@ -55,6 +57,26 @@ http://collectionfs.meteor.com/
 
 ### How to make 3rd-party-librar.js work with Meteor?
 
+What's probably going on is that a) the Timeline object itself is being destroyed when the reactive templates get re-rendered; and b) if it does manage to render anything, the reactive simply write over the rendering.  
+
+Given my testing with other libraries, I'm almost certain TimelineJS will need to go into a #constant region.  Here is some pseudo code that may help:
+
+````js
+Template.templateWithConstantRegion.rendered = function(){
+    self.node = self.find("#timelineObject");
+    if (! self.handle) {
+        self.handle = Meteor.autorun(function(){
+            Timeline();            
+        });
+    };
+};
+````
+
+You'll also want to check for var comments in your library, like so:
+````
+var createStoryJS = function ()
+````
+
 ### Meteor.Device
 
 
@@ -78,6 +100,8 @@ http://win.meteor.com/
 ### Adding 'somelibrary.js' as a smartpackage?
 
 This is a rephrasing of 'how to build a smartpackage'.  
+
+
 
 ### Content Delivery Networks (CDN)
 https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
@@ -150,6 +174,7 @@ https://github.com/possibilities/meteor-moment
 ------------------------------------------------------------------
 ## LOAD ORDERING
 
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d528e41f3739e6
 
 - First and foremost, make sure to use an IDE that supports refactoring javascript.  I recommend using WebStorm.  Think more organically, and try to grow your application, rather than engineer it.  Discover the correct syntax through refactoring, rather than assume a 'best practices' approach or try to force Meteor to work like an object-oriented framework.  Meteor is a different breed of framework, and simply works differently than object-oriented LAMP stacks.  If you're not familiar with refactoring... perhaps it's time to get into the practice?  
 
@@ -174,7 +199,16 @@ https://github.com/possibilities/meteor-moment
 
 Q:  What are best practices for setting up my development environment?
 
+There's no plan for Cloud9 to support Meteor later than 0.6.0, due to the NPM packaging system.
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
 
+That means WebSphere.
+
+------------------------------------------------------------------
+## PRODUCTION ENVIRONMENT
+
+Q:  Help!  Something broke in production!
+- Did you check it with --debug?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
 
 ------------------------------------------------------------------
 ## PACKAGES
@@ -185,6 +219,8 @@ Q:  How do I create a package for distribution?
 
 Q:  Is there package documentation?
 
+Not yet.  But here's the gist of it:  
+https://gist.github.com/awatson1978/4645762
 
 ------------------------------------------------------------------
 ## DATABASES
@@ -207,8 +243,12 @@ https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 
 ------------------------------------------------------------------
 ### Pagination
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13df0f84a324826d
-https://trello.com/card/pattern-for-easy-pagination/508721606e02bb9d570016ae/67
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13df0f84a324826d  
+https://trello.com/card/pattern-for-easy-pagination/508721606e02bb9d570016ae/67  
+
+skip/limit on the server
+.slice() on the client. 
+
 
 ------------------------------------------------------------------
 ### Accounts - Facebook
@@ -244,3 +284,58 @@ Template.foo.current_theme_name = function(){
   }
 }
 ````
+
+------------------------------------------------------------------
+### MVC Structures - Angular, Ember, Knockout, etc.
+
+
+https://groups.google.com/forum/#!topic/meteor-talk/-JqCEBxi0_g
+
+
+------------------------------------------------------------------
+### Conditional Template Publishing
+
+client/.admin
+
+Server Side Rendering - Roadmap
+https://trello.com/card/page-model-server-side-rendering-rest-endpoints/508721606e02bb9d570016ae/7
+
+
+------------------------------------------------------------------
+### Uninstalling Meteor
+
+````
+sudo rm /usr/local/bin/meteor
+rm -rf ~/.meteor
+````
+
+------------------------------------------------------------------
+### MongoDB Administration
+
+http://genghisapp.com/  
+meteor mongo --url YOURSITE.meteor.com
+
+http://www.mongohq.com/  
+
+Importing a JSON datafile into a Meteor's Server-Side Mongo Collection  
+https://gist.github.com/awatson1978/4625736
+
+
+------------------------------------------------------------------
+### Load Order
+
+/client/lib/deepest/folder/libraryA.js
+/client/lib/deeper/libraryB.js
+/client/lib/libraryC.js
+/client/lib/main.js
+Meteor.startup();
+
+
+------------------------------------------------------------------
+### Load Testing 
+
+Using PhantomJS:  
+https://gist.github.com/awatson1978/5139909
+
+Load Testing on AWS:
+https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/meteor-talk/BJXA1FRuTzU/M2e9pCH4es0J
