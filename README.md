@@ -1,5 +1,5 @@
 ------------------------------------------------------------------
-### Meteor Logo
+## Meteor Logo
 
 The CloudBees NodeJS logo:  
 https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
@@ -16,7 +16,7 @@ DDP Acryonym
 ------------------------------------------------------------------
 ## Development Environment
 
-Q:  What are best practices for setting up my development environment?
+**Q:  What are best practices for setting up my development environment?**
 
 There's no plan for Cloud9 to support Meteor later than 0.6.0, due to the NPM packaging system.
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
