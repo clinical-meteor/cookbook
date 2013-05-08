@@ -4,7 +4,7 @@
 The CloudBees NodeJS logo:  
 https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 
-------------------------------------------------------------------
+
 ## Terminology
 
 DDP Acryonym
@@ -13,7 +13,6 @@ DDP Acryonym
 
 
 
-------------------------------------------------------------------
 ## Development Environment
 
 **Q:  What are best practices for setting up my development environment?**  
@@ -52,7 +51,7 @@ Also, watch follow this issue:
 https://github.com/meteor/meteor/pull/920
 
 
-------------------------------------------------------------------
+
 ## Installation & Uninstallation
 
 **Q:  Is there a Homebrew installer for Mac OSX?**  
@@ -87,7 +86,7 @@ sudo rm /usr/local/bin/meteor
 sudo rm -rf ~/.meteor
 ````
 
-------------------------------------------------------------------
+
 ## Getting Started
 
 **Q:  Is jQuery a core package?**  
@@ -97,7 +96,7 @@ Sortof.  It's a dependency of Spark, and is included in pretty much all core app
 Because it's a dependency of Spark.  It's a hidden dependency.  The myapp/.meteor/packages is not a definitive list of dependencies.  Just the most immediate dependencies.
 
 
-------------------------------------------------------------------
+
 ## Model, View, Controllers
 
 **Q:  Can I add Ember into my Meteor Application?**  
@@ -116,8 +115,8 @@ View       - CSS        - How It Is Displayed
 Controller - Javascript - When It Is Displayed  
 
 
-------------------------------------------------------------------
-### Collections
+
+## Collections
   
 insert()  
 ````
@@ -151,17 +150,7 @@ Meteor.publish('images', function (asset_title_search) {
 https://github.com/lbdremy/solr-node-client
 
 
-------------------------------------------------------------------
-### User Profile
 
-user.username
-user.emails[] {address, verified}
-user.profile.name
-
-The intention is that the first email address in the 'emails' list is the primary contact, where people want to be emailed, and the other addresses in the list are alternates that work for login but do not receive email.
-
-Q:  How do I detect if another user is logged in?  
-A:  https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13b63c5203f1d930  
 
 ------------------------------------------------------------------
 ### File Uploads
@@ -483,6 +472,19 @@ skip/limit on the server
 
 ------------------------------------------------------------------
 ### Accounts
+
+**Q: Is there any documentation on the User Profile?**  
+
+````
+user.username  
+user.emails[] {address, verified}  
+user.profile.name  
+````
+
+The intention is that the first email address in the 'emails' list is the primary contact, where people want to be emailed, and the other addresses in the list are alternates that work for login but do not receive email.
+
+**Q:  How do I detect if another user is logged in?**  
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13b63c5203f1d930  
 
 Facebook Icons
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d2c92723e3a31d  
