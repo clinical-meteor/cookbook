@@ -1,8 +1,4 @@
-unofficial-meteor-faq-extended
-==============================
 
-
-Additional sections to add to the unofficial-meteor-faq
 
 
 ------------------------------------------------------------------
@@ -104,13 +100,16 @@ MyCollection.find(selector, options).fetch().length()
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d7b8e6aa025958  
 
 ------------------------------------------------------------------
-### User Model
+### User Profile
 
 user.username
 user.emails[] {address, verified}
 user.profile.name
 
 The intention is that the first email address in the 'emails' list is the primary contact, where people want to be emailed, and the other addresses in the list are alternates that work for login but do not receive email.
+
+Q:  How do I detect if another user is logged in?  
+A:  https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13b63c5203f1d930  
 
 ------------------------------------------------------------------
 ### File Uploads
@@ -122,10 +121,14 @@ http://collectionfs.meteor.com/
 ------------------------------------------------------------------
 ### Unit Testing
 - BrowserStack (official)
+- tiny-test (unofficially official)
 - jenkins 
 - jasmine
 - phantomjs
-- mocha -
+- mocha 
+- cucumberjs
+
+http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 
 
 ------------------------------------------------------------------
@@ -154,9 +157,12 @@ var createStoryJS = function ()
 ### Meteor.Device
 
 
+------------------------------------------------------------------
 ### Meteor.settings
 
-- 
+Meteor.settings.privateKey == "MY_KEY" 
+Meteor.settings.public.publicKey == "MY_PUBLIC_KEY" 
+Meteor.settings.public.anotherPublicKey == "MORE_KEY"
 
 ------------------------------------------------------------------
 ### Running Devel Branch of Meteor
@@ -294,7 +300,9 @@ METEOR_SETTINGS
 
 
 ------------------------------------------------------------------
-## Url Generation
+## Url and Path Generation
+
+Meteor Methods  
 
 ````js
 //http://mydomain.com
@@ -303,6 +311,13 @@ Meteor.absoluteUrl.defaultOptions.rootUrl = "http://mydomain.com"
 //http://mydomain.com/foo
 Meteor.absoluteUrl("/foo", {});
 
+````
+
+Node/Javascript Methods  
+````
+__meteor_bootstrap__.bundle.root  
+
+process.mainModule.filename  
 ````
 
 ------------------------------------------------------------------
