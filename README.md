@@ -11,6 +11,56 @@ Additional sections to add to the unofficial-meteor-faq
 The CloudBees NodeJS logo:
 https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 
+------------------------------------------------------------------
+## Terminology
+
+
+------------------------------------------------------------------
+## DEVELOPMENT ENVIRONMENT
+
+Q:  What are best practices for setting up my development environment?
+
+There's no plan for Cloud9 to support Meteor later than 0.6.0, due to the NPM packaging system.
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
+
+That means WebSphere.
+
+
+Q:  My editor keeps crashing!  Help!
+A:  Add the .meteor directory to your ignore list.  
+
+````
+.meteor
+````
+
+
+------------------------------------------------------------------
+## Installation
+
+###Mac OSX
+Q:  Is there a Homebrew installer for Mac OSX?    
+https://gist.github.com/4317935
+
+### Windows  
+http://win.meteor.com/
+
+Q:  When will Windows version become a first class citizen?  
+https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11  
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d9453041fae6aa  
+
+### Rasberry Pi  
+http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
+https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
+
+------------------------------------------------------------------
+### Uninstalling Meteor
+
+````
+sudo rm /usr/local/bin/meteor
+rm -rf ~/.meteor
+````
+
+
 
 
 ------------------------------------------------------------------
@@ -33,9 +83,13 @@ https://github.com/q42/livejs
 
 
 
-Templates
+## Templates
+**Supported**
 - jade
 - blade
+
+**Unsupported**
+- dust 
 
 ------------------------------------------------------------------
 ### Collections
@@ -110,18 +164,6 @@ git checkout devel
 
 Q: Preserving templates across pages?
 A: Appcache
-
-------------------------------------------------------------------
-### Installing on X, Y, Z
-
-Homebrew Meteor Installation  
-https://gist.github.com/4317935
-
-When will Windows version become a first class citizen?
-
-https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d9453041fae6aa
-http://win.meteor.com/
 
 ------------------------------------------------------------------
 ### Adding 'somelibrary.js' as a smartpackage?
@@ -223,15 +265,7 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d528e41f3739e6
 
 
 
-------------------------------------------------------------------
-## DEVELOPMENT ENVIRONMENT
 
-Q:  What are best practices for setting up my development environment?
-
-There's no plan for Cloud9 to support Meteor later than 0.6.0, due to the NPM packaging system.
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
-
-That means WebSphere.
 
 ------------------------------------------------------------------
 ## PRODUCTION ENVIRONMENT
@@ -239,7 +273,24 @@ That means WebSphere.
 Q:  Help!  Something broke in production!
 - Did you check it with --debug?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
 
-Proxies?
+Q:  How can I run Meteor behind a reverse proxy?  
+A:  Monitor the activity of this thread:  
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13de0148a37cf58a  
+
+### CloudBees ClickStart  
+https://github.com/CloudBees-community/meteor-clickstart  
+
+### Modulus.io  
+http://blog.modulus.io/demeteorizer  
+https://github.com/onmodulus/demeteorizer  
+
+### Environment Variables
+
+PORT
+MONGO_URL
+ROOT_URL
+METEOR_SETTINGS
+
 
 
 ------------------------------------------------------------------
@@ -265,6 +316,7 @@ Q:  Is there package documentation?
 
 Not yet.  But here's the gist of it:  
 https://gist.github.com/awatson1978/4645762
+
 
 ------------------------------------------------------------------
 ## DATABASES
@@ -314,8 +366,10 @@ https://github.com/meteor/meteor/issues/703
 collection.insert({ owner: Meteor.userId(), length:3 }); 
 https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 
+
 ------------------------------------------------------------------
 ### Pagination
+
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13df0f84a324826d  
 https://trello.com/card/pattern-for-easy-pagination/508721606e02bb9d570016ae/67  
 
@@ -378,13 +432,7 @@ Server Side Rendering - Roadmap
 https://trello.com/card/page-model-server-side-rendering-rest-endpoints/508721606e02bb9d570016ae/7
 
 
-------------------------------------------------------------------
-### Uninstalling Meteor
 
-````
-sudo rm /usr/local/bin/meteor
-rm -rf ~/.meteor
-````
 
 ------------------------------------------------------------------
 ### MongoDB Administration
@@ -420,7 +468,31 @@ https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/m
 
 
 ------------------------------------------------------------------
-Server Side Sessions
+### Server Side Sessions
 
 http://stackoverflow.com/questions/15397609/meteor-session-replacement  
+
+
+------------------------------------------------------------------
+## Logging
+
+Terminal Output Color
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13dcd5cbd7c03544
+
+
+------------------------------------------------------------------
+## Application Recipies
+
+### HIPAA Compliant Application
+- meteor add accounts-ui
+- meteor add force-ssl
+- mrt add hippa-audit-log
+
+### Multi-Page Application
+- mrt add router
+
+
+------------------------------------------------------------------
+## Resizing
+
 
