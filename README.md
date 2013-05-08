@@ -1,6 +1,5 @@
 
 
-
 ------------------------------------------------------------------
 ### Meteor Logo
 
@@ -28,6 +27,20 @@ A:  Add the .meteor directory to your ignore list.
 ````
 .meteor
 ````
+
+Q:  Help!  I'm behind a proxy!  How can I install/run Meteor behind a reverse proxy?  
+
+Generically speaking, you're going to need to update your environment variables in bash, like so:
+````
+// make sure your shell knows about your proxy
+export http_proxy=http://your.proxy.server:port/
+
+// install meteor manually
+curl https://install.meteor.com | sh
+````
+
+Also, watch the following thread:
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13de0148a37cf58a  
 
 
 ------------------------------------------------------------------
@@ -89,15 +102,38 @@ https://github.com/q42/livejs
 
 ------------------------------------------------------------------
 ### Collections
- 
-save()
-- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622
+  
+insert()  
+````
+Todos.insert({
+        text: text,
+        gannt.dependency: dependency,
+        gannt.parent: parent,
+        list_id: Session.get('list_id'),
+        done: false,
+        timestamp: (new Date()).getTime(),
+        tags: tag ? [tag] : []
+      });
+````
 
-count()
+save()  
+- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622  
+
+count()  
 ````
 MyCollection.find(selector, options).fetch().length()
 ````
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d7b8e6aa025958  
+
+searching()  
+````
+Meteor.publish('images', function (asset_title_search) {
+    return Images.find({'title':{ $regex: asset_title_search, $options: 'i' }},{limit: 200});
+});
+````
+
+https://github.com/lbdremy/solr-node-client
+
 
 ------------------------------------------------------------------
 ### User Profile
@@ -279,9 +315,6 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d528e41f3739e6
 Q:  Help!  Something broke in production!
 - Did you check it with --debug?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
 
-Q:  How can I run Meteor behind a reverse proxy?  
-A:  Monitor the activity of this thread:  
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13de0148a37cf58a  
 
 ### CloudBees ClickStart  
 https://github.com/CloudBees-community/meteor-clickstart  
@@ -372,6 +405,45 @@ http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13db6cfab8680f42  
 
 
+Populating the underlying Mongo collections via REST calls is pretty straight forward, and uses Meteor to it's fullest potential.  Between different projects, I've verified using REST to insert and update documents into Mongo collections, and then Meteor to reactively update to underlying inserts and changes into the database.  Dror is right that the publication hooks are important to take care of.  Not difficult for simple new documents inserted into collections; but requires a bit more finess when updating fields of existing documents.
+
+http://docs.mongodb.org/ecosystem/tools/http-interfaces/
+http://stackoverflow.com/questions/7386740/does-mongodb-has-a-native-rest-interface
+http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/
+
+The reactive templates use a number of features that have to be addressed before alternate databases can be supported, the most important being native javascript objects in the data model.  Essentially, Mongo isn't just a 'document oriented database', it's also an object-oriented database, able to persistently store arbitrarily large javascript objects.  The reactive templates are wired up so as to use those javascript objects as-is, without any translation or modification.  This makes Meteor easy to program, very fast, very robust, and a data model to die for.
+
+The problem with introducing other databases, such as SQL and such, are the database management layers between the database and serving up the javascript objects ready to be used.  Other than trivial single-table database examples, supporting SQL will require an ORM to map tables together during JOINS and to produce the necessary javascript objects for the templates.  Which sort of completely defeats the purpose of using Mongo in the first place.  Nobody on the core Dev team wants those headaches of supporting an SQL/ORM layer, and it breaks the philosophy of javascript-everywhere.  
+
+But don't take my word for it.  Here are some nice articles on ORMs and the perception that they are the 'Vietnam War' of computer science.  Meteor is specifically architected to avoid ORM headaches.
+
+http://www.codinghorror.com/blog/2006/06/object-relational-mapping-is-the-vietnam-of-computer-science.html
+http://blogs.tedneward.com/PermaLink,guid,33e0e84c-1a82-4362-bb15-eb18a1a1d91f.aspx
+http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
+
+Of the different databases you mention, CouchDB would probably be the easiest to add full native support for; followed by Redis (which I'm looking forward to seeing support for).  Postgres has the same general problems of needing an ORM that other flavors of SQL have to deal with.  And, as mentioned above, not only does it introduce an extra layer of ORM, it introduces an entire extra language to support... SQL.  One of the entire philosophical goals behind Meteor is to have a single language across client, server, and database.  Mongo's interface is written in Javascript.  Which streamlines and simplifies development.  SQL not so much. 
+
+Don't get me wrong.  I totally understand that real-world business use-cases often require backwards compatibility of legacy systems.  But that can be achieved with database-to-database communications, ala REST transactions, rather than adding an ORM layer to Meteor and moving away from the javascript-everywhere paradigm.  
+
+Bottom line... all of my SQL interoperability plans right now are via direct SQL to Mongo interfaces via REST protocols.  I've had success with SQL to Mongo via HL7 interfaces, as well.    
+
+### Schemas
+
+So, taking a quick look at what you've posted, and having built out similar multi-user feed functionality in one of my own apps, I'd hazard to suggest that you're using too many collections, and still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.
+Obviously, I don't know the application you're trying to build, but from what you've posted, I'd suggest taking a close, critical look at your UserFeeds collection and whether its necessary.  The reactivity of the mongo cursors is only going to work for the first Find(), so your pluck/fetch syntax is going to break the reactivity, which is why it only works on refresh.  
+
+UserPosts is obviously the type of data table that could have a billion records, so it should definitely be converted into a collection.  Same too with Feeds; one could imagine a million or a billion feeds in an application.  But why UserFeeds?  Isn't a UserFeed a type of Feed?  If so, simply add a field to each record in the Fields collection to specify whether its a UserFeed or a NonUserFeed.  Alternatively, the UserFeed data may be a prime candidate for simply putting into the Meteor.Users collection, under the profile fields.
+
+I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
+
+1.  Don't do data modeling in the database.  
+2.  Design collections in terms of commonly used queries.   Collections should reflect the types of queries the application is going to perform.
+3.  If its not worth storing a billion records, odds are that it doesn't actually need to be a collection.  
+
+Are you explicitly creating an application to draw and graph network meshes of user relationships?  If not, your UserFeeds collection is probably over complicating the data storage modal.  It breaks rule number 2 above.  Unless you're specifically trying to map and graph many-to-many relationships, or implement some type of three-table tagging pattern, the UserFeeds table with just it's two fields is suspicious in the Mongo world.  
+
+Anyhow, just my $0.02.
+
 ------------------------------------------------------------------
 ### Reserved Keywords
 
@@ -384,6 +456,7 @@ https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 
 ------------------------------------------------------------------
 ### Pagination
+The pattern seems to be to use $limit on the server, and $slice on the client.  
 
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13df0f84a324826d  
 https://trello.com/card/pattern-for-easy-pagination/508721606e02bb9d570016ae/67  
@@ -397,6 +470,11 @@ skip/limit on the server
 
 Facebook Icons
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d2c92723e3a31d  
+
+````
+Basic Info > App Domains:  might-river-5358.herokuapp.com
+Website with Facebook Login > Site URL:  http://might-river-5358.herokuapp.com
+````
 
 Customized Accounts UI  
 http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
@@ -465,11 +543,14 @@ https://gist.github.com/awatson1978/4625736
 ### Load Order
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d51078cfbdb349  
 
-/client/lib/deepest/folder/libraryA.js  
-/client/lib/deeper/libraryB.js  
-/client/lib/libraryC.js  
-/client/lib/main.js  
+/client/lib/deepest/folder/library.js  
+/client/lib/deeper/library.js  
+/client/lib/library.js  
+/client/library.js  
 Meteor.startup();  
+Template.foo.rendered
+Template.foo.my_custom_field
+
 
 
 ------------------------------------------------------------------
@@ -508,6 +589,113 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13dcd5cbd7c03544
 
 
 ------------------------------------------------------------------
-## Resizing
+### Resizing
 
 
+
+------------------------------------------------------------------
+### Template Controllers
+
+How do I choose what way to run a function?  
+
+1. Include {{foo}} in the "bar" template and then set up Template.bar.foo {...}.
+2. Include {{foo}} in the "bar" template and set up Template.bar.helpers including "foo" {...}.
+3. Include a Meteor.method of "foo" {...} on the client.
+
+I always use # 1 by default.  When I find myself repeating a chunk of code repeatedly, I refactor and extract the duplicate code into a helper function, as per #2.  I only use #3 in the rare cases when I need the server to trigger something on the client (ie.  almost never; it's usually the other way around; methods on the server, not client).   $0.02
+
+
+------------------------------------------------------------------
+### Structuring Apps
+
+
+Dependencies:  look into the packages.  If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/loca/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
+
+Backbone.js:  Mostly redundant.  All of the MVC functionality is pretty much already there in the framework. To be perfectly blunt, Model is coded up in HTML, Controller is coded in Javascript, and View is coded up in CSS.  It's that simple.  If it helps, you may want to go into the /client directory, and create the following directory structure:
+
+````
+/client
+/client/model/
+/client/view/
+/cleint/controllers/
+````
+
+It will work exactly the same as if you were to do the following structure: 
+
+````
+/client
+/client/templates/
+/client/stylesheets/
+/cleint/libraries/
+````
+
+Or, more simply:
+
+````
+/client
+/client/html/
+/client/css/
+/cleint/js/
+````
+
+Grab yourself the jQuery library with a 'meteor add jquery', and between jQuery and Meteor, you should have analogous helper functions to most all of what Backbone.js provides.  You're not going down a darkpath by mixing Meteor and MVC.  You're just... applying a redundant framework to what's already there.  Meteor is a communication platform.  But it also provides much of the MVC you're looking for.  
+
+All I can say is this....  Meteor's Reactive framework is crazy amazing from the future, and I dare say that it's not going to behave quite like any other framework you've ever used.  Ditch some of the old worrying about MV* structure, and just go by the mantra that "Model is HTML, View is CSS, and Controller is Javascript".  When in doubt, refer back to that.  
+
+Also, be on the lookout for what I refer to the 'bubble templating'.  I don't know how exactly to explain this, but the closest thing I can think of is a bubble sort.  The reactive templates work on a similar bubbling principle.  It's a side affect of the javascript's functional programming paradigm, and works similar to how anonymous functions don't have an intrinsic ordering.  The result is that refreshes and new data just bubble up to the templates.  
+
+The end result is that it works really well (I have *no* complaints about it, and never plan on going back, if I can help it), particularly when the templates are tied into Session variables.  But it's a very different approach than C, C#, ObjectiveC and Java.  Very different.  So don't worry about MVC in the traditional sense.  You won't be spending the weeks of drudgery doing plumbing and wiring like you're accustomed to.  And everything sitting in the global context... hasn't been an issue for me so far.  
+
+As far as dependencies and namespaces go....  this may sound weird, but as far as the dependencies go, my best recommendation would be to make sure you're using an IDE that supports refactoring (ie. invest in a copy of WebStorm).  What you're going to find is that you're going to find some functionality that gets reused between projects, and you'll want to carry that functionality between projects, which will require refactoring bits and pieces of code out into packages, and then defining dependencies in the package.js files.  
+
+As for namespacing, just use the filesystem as a namespace.  Feel free to use multi dotted names like so:
+
+````
+/client/templates/page.home.html
+/client/templates/page.profile.html
+/client/templates/page.graph.html
+/client/templates/page.error.pagenotfound.html
+/client/templates/page.error.unknownbrowser.html
+/client/templates/sidebar.inspection.html
+/client/templates/sidebar.navigation.html
+````
+
+And go to town with creating namespaces.
+
+Also, while talking about dependencies and 'how to use meteor', I'll mention this...  the Reactive Templates are really awesome, but as I mentioned... they bubble.  Sometimes that bubbling is fast, sometimes it's slow.  Moreover, it will break many 3rd party libraries.  
+
+Countless discussions have already occurred with people trying to add Isotope.js, List.js, and similar libraries, which implement various 3rd party functionality.  Time and time again, people try to introduce an external library like Isotope.js or List.js, because it's class oriented and has a two important areas of functionality that they're interested in...  the first is for list management functionalities... sorting, searching, filtering, and the like.  The second being for a specific user interface.  A grid layout.  A swipe function.  Pagination.  etc.  
+
+Meteor and mongo will take care of the first portion...  the sorting, searching, filtering.  And it will do it at it's own speed.  Usually blazingly fast, sometimes slowly, as things bubble through the templates.  However, you might still want to implement a bit of swipe functionality, or a grid layout and such.  Now, you may be accustomed to using javascript to implement those features.  The bubbling templates will break that approach, and cause things to get re-rendered.  You'll get flickering.  Instead, those features like grids and movement of elements want to be moved into CSS, where their state will persist through re-renders without flickering.  More importantly, all the hardware accelerated goodness is in the CSS, so if you want to offload processing from the core, and move it onto the GPU, you're going to need to use CSS.  That's important for mobile platforms, of course.  And it's the only way you'll get good animations is with the CSS, not through Javascript.
+
+To bring things round back to dependencies, be sure to run 'meteor add less'.  If you haven't used a CSS precompiler, get ready to have a birthday present!  In particular, Meteor now supports the less @import command.  So, for any code that needs hardware acceleration, move it into your CSS, and use the @import command to manage dependencies.  In fact, you may want to set up some namespacing for syntax that gets reused, like so:
+
+````
+\client\stylesheets\syntax.custom.less
+\client\stylesheets\syntax.fonts.less
+\client\stylesheets\syntax.themes.less
+\client\stylesheets\syntax.base.less
+````
+
+I found that I spend far, far more time working about establishing the correct syntax of LESS/CSS classes, than ever worrying about MVC structure nowdays.  By doing so, you can create code like the following:
+
+````
+<template name="userItemTemplate">
+    <li class="rounded-corners user-card without-padding">
+        <img class="card-image with gray-border" src="{{ userImage }}" />
+        <div class="card-data">
+            <div class="card-northwest gray card-meta-data without-padding barcode">*{{ _id }}*</div>
+            <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
+            <ul class="card-southeast pictograph-buttons">
+                <li class="{{isActiveCollaborator}} largish transfer-icon pictograph">o</li>
+                <li class="{{isCollaborator}} largish collaborator-icon pictograph">a</li>
+                <li class="{{isCarewatched}} largish carewatch-icon pictograph">j</li>
+            </ul>
+        </div>
+    </li>
+</template>
+````
+
+And once you get to larger applications, that kind of syntax will be not just invaluable, it will be essential, to managing application complexity.  Note how the classes are bordering on being pseudo-english sentences.  If you can structure your css/less classes in that manner, you'll be able to offload commonly used functionality to hardware accelerated code, manage it with dependencies and includes/imports, and keep your application syntax super easy to read and maintain.   
+
+Anyhow, HTML is model, CSS is view, and Javascript is the Controller.  ;-)
