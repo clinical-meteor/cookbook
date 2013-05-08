@@ -12,8 +12,9 @@ https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 
 ** Acroynms **  
 
+CRUD - 
+
 DDP - Distributed Data Protocol  
-- Dynamic Data ...
 
 ORM - Object Relation Mapper  
 
@@ -21,6 +22,7 @@ http://www.codinghorror.com/blog/2006/06/object-relational-mapping-is-the-vietna
 http://blogs.tedneward.com/PermaLink,guid,33e0e84c-1a82-4362-bb15-eb18a1a1d91f.aspx  
 http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html  
 
+REST - 
 
 **Reserved Keywords**
 
@@ -249,8 +251,26 @@ Meteor.settings.public.anotherPublicKey == "MORE_KEY"
 ### Running Devel Branch of Meteor
 git checkout devel
 
-Q: Preserving templates across pages?
-A: Appcache
+````
+// using meteor
+ 
+cd
+mkdir meteor.branchname
+cd meteor.branchname
+git clone https://github.com/username/meteor.git
+cd <path to meteor project>
+~/meteor.branchname/meteor/meteor
+ 
+ 
+// using mrt
+{
+  "meteor": {
+    "meteor.branch": "branchname",
+    "git": "https://github.com/username/meteor.git"
+  }
+}
+````
+
 
 ------------------------------------------------------------------
 ### Adding 'somelibrary.js' as a smartpackage?
@@ -313,10 +333,10 @@ https://github.com/onmodulus/demeteorizer
 
 ### Environment Variables
 
-PORT
-MONGO_URL
-ROOT_URL
-METEOR_SETTINGS
+PORT  
+MONGO_URL  
+ROOT_URL  
+METEOR_SETTINGS  
 
 
 
@@ -357,7 +377,40 @@ https://gist.github.com/awatson1978/4645762
 ------------------------------------------------------------------
 ## DATABASES
 
-Q:  Does Meteor support SQL?
+**Q: Does Meteor support SQL?**  
+No.  
+
+**Q: When will Meteor support SQL?**  
+Hopefully not any time soon, even though it's on the roadmap.  It's a mistake for Meteor to natively support SQL.
+
+**Q: Well, how am I suppose to use the data in my SQL database then?**  
+Ah.  Through REST interfaces.  Meteor itself basically can act as an ORM, so the trick is to move your data from your SQL database into Meteor's Mongo database, and have Mongo act as an object store.
+
+
+**Q: How do you import data into the Mongo database?**  
+
+````js
+mongod
+
+// import the json data into a staging database
+// jsonArray is a useful command, particularly if you're migrating from SQL
+mongoimport -d staging -c assets < data.json --jsonArray
+ 
+// navigate to your application
+cd myappdir
+ 
+// run meteor and initiate it's database
+meteor
+ 
+// connect to the meteor mongodb
+meteor mongo --port 3002
+ 
+// copy collections from staging database into meteor database
+db.copyDatabase('staging', 'meteor', 'localhost');
+ 
+// shut down the staging database
+Ctrl-C
+````
 
 Also, thank you for sticking with the find() syntax on the client side.  And kudos for the Meteor.Table() syntax, rather than kludging things into Collections. I know that some people feel much more comfortable with SQL databases, and there's a lot of interest in having Meteor support SQL, so this is definitely a milestone.  
 
