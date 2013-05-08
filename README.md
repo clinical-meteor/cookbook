@@ -381,6 +381,18 @@ http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
 **Q: Well, how am I suppose to use the data in my SQL database then?**  
 Through REST interfaces.  We put the ORM __outside__ of Meteor, as part of the interface.  So, the trick is to move your data from your SQL database into Meteor's Mongo database, and have Mongo act as an object store.
 
+http://stackoverflow.com/questions/10452431/how-do-you-make-a-rest-api-and-upload-files-in-meteor/13871399#13871399  
+http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/   
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13db6cfab8680f42  
+
+Populating the underlying Mongo collections via REST calls is pretty straight forward, and uses Meteor to it's fullest potential.  Between different projects, I've verified using REST to insert and update documents into Mongo collections, and then Meteor to reactively update to underlying inserts and changes into the database.  Dror is right that the publication hooks are important to take care of.  Not difficult for simple new documents inserted into collections; but requires a bit more finess when updating fields of existing documents.
+
+http://docs.mongodb.org/ecosystem/tools/http-interfaces/
+http://stackoverflow.com/questions/7386740/does-mongodb-has-a-native-rest-interface
+http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/
+
+The reactive templates use a number of features that have to be addressed before alternate databases can be supported, the most important being native javascript objects in the data model.  Essentially, Mongo isn't just a 'document oriented database', it's also an object-oriented database, able to persistently store arbitrarily large javascript objects.  The reactive templates are wired up so as to use those javascript objects as-is, without any translation or modification.  This makes Meteor easy to program, very fast, very robust, and a data model to die for.
+
 **Q: Okay, you got a plan.  How do I get started with translating SQL syntax into Mongo syntax?**  
 Start with the following links.  They'll get you up to speed quickly.
 
@@ -437,6 +449,17 @@ db.copyDatabase('staging', 'meteor', 'localhost');
 Ctrl-C
 ````
 
+**Q:  How should I go about designing my collections?**  
+Well, instead of telling you what you ought to do; how about I tell you how I go about designing *my* collection schemas.  I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
+
+1.  Don't do data modeling in the database.  
+2.  Design collections in terms of commonly used queries.   Collections should reflect the types of queries the application is going to perform.
+3.  If its not worth storing a billion records, odds are that it doesn't actually need to be a collection.  
+4.  Collections with just 2 or 3 fields, or only a few dozen records are suspicious in the Mongo world.
+5.  Collection schemas should be designed for optimizing server/client communications.
+
+**Q:  How do I create a JOIN in Meteor?**  
+Timeout.  You're still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.  This is bad juju magic, and will cause bad application design.  Take a timeout and do some more research and reading before moving forward with your application.
 
 
 
@@ -450,37 +473,11 @@ As far as the RSS Feed Reader, you could actually design it with just Feeds and 
 
 Generally speaking, you should be able to consolidate UserPosts into either the Posts or Users collection, or both.  The caveat being if you want to do many-to-many relationships.  If everybody can view a post, and everybody needs the ability to mark a post as a favorite or not, and a single post needs to keep track of a million favorites/likes, then an extra UserPosts type table might be necessary.  And you'd probably want to rename it to something along the lines of Likes or Favorites.  But if only a single person owns a post (ala email) and needs to mark it as favorite, consolidation is sufficient with Posts, Users, and Feeds.  If you're going for the generic multi-user approach where everybody can mark favorite, go with Posts, Users, Feeds, and Favorites.
 
-### SQL Connectivity
-
-REST Connectivity
-http://stackoverflow.com/questions/10452431/how-do-you-make-a-rest-api-and-upload-files-in-meteor/13871399#13871399  
-http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/   
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13db6cfab8680f42  
-
-
-Populating the underlying Mongo collections via REST calls is pretty straight forward, and uses Meteor to it's fullest potential.  Between different projects, I've verified using REST to insert and update documents into Mongo collections, and then Meteor to reactively update to underlying inserts and changes into the database.  Dror is right that the publication hooks are important to take care of.  Not difficult for simple new documents inserted into collections; but requires a bit more finess when updating fields of existing documents.
-
-http://docs.mongodb.org/ecosystem/tools/http-interfaces/
-http://stackoverflow.com/questions/7386740/does-mongodb-has-a-native-rest-interface
-http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/
-
-The reactive templates use a number of features that have to be addressed before alternate databases can be supported, the most important being native javascript objects in the data model.  Essentially, Mongo isn't just a 'document oriented database', it's also an object-oriented database, able to persistently store arbitrarily large javascript objects.  The reactive templates are wired up so as to use those javascript objects as-is, without any translation or modification.  This makes Meteor easy to program, very fast, very robust, and a data model to die for.
 
 
 
-### Schemas
 
-**Q:  How do I create a JOIN in Meteor?  How do I create data relationships?**  
-Timeout.  You're still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.  This is bad juju magic, and will cause bad application design.
 
-**Q:  How should I go about designing my collections?**  
-Well, instead of telling you what you ought to do; how about I tell you how I go about designing *my* collection schemas.  I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
-
-1.  Don't do data modeling in the database.  
-2.  Design collections in terms of commonly used queries.   Collections should reflect the types of queries the application is going to perform.
-3.  If its not worth storing a billion records, odds are that it doesn't actually need to be a collection.  
-4.  Collections with just 2 or 3 fields, or only a few dozen records are suspicious in the Mongo world.
-5.  Collection schemas should be designed for optimizing server/client communications.
 
 
 
