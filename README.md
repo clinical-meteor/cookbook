@@ -372,9 +372,7 @@ No.
 Hopefully not any time soon, even though it's on the roadmap.  It's a mistake for Meteor to natively support SQL.
 
 **Q: Why is that?  Why doesn't Meteor support SQL, the most common database on the internet?**  
-The problem with introducing other databases, such as SQL and such, are the database management layers between the database and serving up the javascript objects ready to be used. Other than trivial single-table database examples, supporting SQL will require an ORM to map tables together during JOINS and to produce the necessary javascript objects for the templates. Which sort of completely defeats the purpose of using Mongo in the first place. Nobody on the core Dev team wants those headaches of supporting an SQL/ORM layer, and it breaks the philosophy of javascript-everywhere.
-
-But don't take my word for it. Here are some nice articles on ORMs and the perception that they are the 'Vietnam War' of computer science. Meteor is specifically architected to avoid ORM headaches.
+The problem with introducing other databases, such as SQL and such, are the database management layers between the database and serving up the javascript objects ready to be used. Other than trivial single-table database examples, supporting SQL will require an ORM to map tables together during JOINS and to produce the necessary javascript objects for the templates. Which sort of completely defeats the purpose of using Mongo in the first place. Nobody on the core Dev team wants those headaches of supporting an SQL/ORM layer, and it breaks the philosophy of javascript-everywhere.  But don't take my word for it. Here are some nice articles on ORMs and the perception that they are the 'Vietnam War' of computer science. Meteor is specifically architected to avoid ORM headaches.
 
 http://www.codinghorror.com/blog/2006/06/object-relational-mapping-is-the-vietnam-of-computer-science.html  
 http://blogs.tedneward.com/PermaLink,guid,33e0e84c-1a82-4362-bb15-eb18a1a1d91f.aspx  
@@ -383,7 +381,7 @@ http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
 **Q: Well, how am I suppose to use the data in my SQL database then?**  
 Through REST interfaces.  We put the ORM __outside__ of Meteor, as part of the interface.  So, the trick is to move your data from your SQL database into Meteor's Mongo database, and have Mongo act as an object store.
 
-**Q: Okay, you got a plan.  How do I get started with Mongo?**  
+**Q: Okay, you got a plan.  How do I get started with translating SQL syntax into Mongo syntax?**  
 Start with the following links.  They'll get you up to speed quickly.
 
 http://www.querymongo.com/  
@@ -396,9 +394,27 @@ Nope.  It's basically the same issue as supporting SQL databases.  There would n
 **Q:  When will see support for SQL, Postgress, CouchDB, Redis, etc?**  
 Of the different databases you mention, CouchDB would probably be the easiest to add full native support for; followed by Redis (which I'm looking forward to seeing support for).  Postgres has the same general problems of needing an ORM that other flavors of SQL have to deal with.  And, as mentioned above, not only does it introduce an extra layer of ORM, it introduces an entire extra language to support... SQL.  One of the entire philosophical goals behind Meteor is to have a single language across client, server, and database.  Mongo's interface is written in Javascript.  Which streamlines and simplifies development.  SQL not so much. 
 
+
+**Q:  Are there any recommended admin interfaces for MongoDB?**  
+For internal development use, you may get some milage out of Genghis, even though it's written in Ruby:  
+http://genghisapp.com/   
+
+You can also use the mongo command to connect to a remote instance on the meteor.com domain.
+````
+meteor mongo --url YOURSITE.meteor.com
+````
+
+But for scalable production use, get yourself to MongoHQ.    
+http://www.mongohq.com/  
+
+Also, the Mongo Monitoring Service, from 10Gen, the makers of Mongo:  
+https://mms.10gen.com/user/login
+
+
 **Q: How do you import data into the Mongo database?**  
 
 ````js
+// download mongodb from 10gen, and start a stand-along instance
 mongod
 
 // import the json data into a staging database
@@ -469,21 +485,6 @@ Are you explicitly creating an application to draw and graph network meshes of u
 
 Anyhow, just my $0.02.
 
-
-**Q:  Are there any recommended admin interfaces for MongoDB?**  
-For internal development use, you may get some milage out of Genghis, even though it's written in Ruby:  
-http://genghisapp.com/   
-
-You can also use the mongo command to connect to a remote instance on the meteor.com domain.
-````
-meteor mongo --url YOURSITE.meteor.com
-````
-
-But for scalable production use, get yourself to MongoHQ.    
-http://www.mongohq.com/  
-
-Also, the Mongo Monitoring Service, from 10Gen, the makers of Mongo:  
-https://mms.10gen.com/user/login
 
 
 
