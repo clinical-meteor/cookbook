@@ -1,4 +1,4 @@
-Hi.  Welcome to an unofficial Meteor FAQ and Tutorial, culled from about 6 months of emails and discussions from the [meteor] google group, and compiled the following FAQ and tutorial.  It's aimed at the user who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  
+Hi.  Welcome to yet another unofficial Meteor FAQ and Tutorial, culled from about 6 months of emails and discussions from the [meteor] google group, and compiled the following FAQ and tutorial.  It's aimed at the user who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  
 
 ------------------------------------------------------------------
 ## Meteor Logo
@@ -470,20 +470,18 @@ The reactive templates use a number of features that have to be addressed before
 
 ### Schemas
 
-So, taking a quick look at what you've posted, and having built out similar multi-user feed functionality in one of my own apps, I'd hazard to suggest that you're using too many collections, and still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.
-Obviously, I don't know the application you're trying to build, but from what you've posted, I'd suggest taking a close, critical look at your UserFeeds collection and whether its necessary.  The reactivity of the mongo cursors is only going to work for the first Find(), so your pluck/fetch syntax is going to break the reactivity, which is why it only works on refresh.  
+**Q:  How do I create a JOIN in Meteor?  How do I create data relationships?**  
+Timeout.  You're still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.  This is bad juju magic, and will cause bad application design.
 
-UserPosts is obviously the type of data table that could have a billion records, so it should definitely be converted into a collection.  Same too with Feeds; one could imagine a million or a billion feeds in an application.  But why UserFeeds?  Isn't a UserFeed a type of Feed?  If so, simply add a field to each record in the Fields collection to specify whether its a UserFeed or a NonUserFeed.  Alternatively, the UserFeed data may be a prime candidate for simply putting into the Meteor.Users collection, under the profile fields.
-
-I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
+**Q:  How should I go about designing my collections?**  
+Well, instead of telling you what you ought to do; how about I tell you how I go about designing *my* collection schemas.  I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
 
 1.  Don't do data modeling in the database.  
 2.  Design collections in terms of commonly used queries.   Collections should reflect the types of queries the application is going to perform.
 3.  If its not worth storing a billion records, odds are that it doesn't actually need to be a collection.  
+4.  Collections with just 2 or 3 fields, or only a few dozen records are suspicious in the Mongo world.
+5.  Collection schemas should be designed for optimizing server/client communications.
 
-Are you explicitly creating an application to draw and graph network meshes of user relationships?  If not, your UserFeeds collection is probably over complicating the data storage modal.  It breaks rule number 2 above.  Unless you're specifically trying to map and graph many-to-many relationships, or implement some type of three-table tagging pattern, the UserFeeds table with just it's two fields is suspicious in the Mongo world.  
-
-Anyhow, just my $0.02.
 
 
 
