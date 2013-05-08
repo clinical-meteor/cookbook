@@ -1,4 +1,3 @@
-
 ------------------------------------------------------------------
 ### Meteor Logo
 
@@ -49,7 +48,7 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13de0148a37cf58a
 ------------------------------------------------------------------
 ## Installation
 
-###Mac OSX
+### Mac OSX
 Q:  Is there a Homebrew installer for Mac OSX?    
 https://gist.github.com/4317935
 
