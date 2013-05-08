@@ -10,13 +10,12 @@ https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
  
 ## Terminology
 
-** Acroynms **
-DDP 
-- Distributed Data Protocol
+** Acroynms **  
+
+DDP - Distributed Data Protocol  
 - Dynamic Data ...
 
-ORM
-- Object Relation Mapper
+ORM - Object Relation Mapper  
 
 http://www.codinghorror.com/blog/2006/06/object-relational-mapping-is-the-vietnam-of-computer-science.html  
 http://blogs.tedneward.com/PermaLink,guid,33e0e84c-1a82-4362-bb15-eb18a1a1d91f.aspx  
@@ -30,6 +29,43 @@ https://github.com/meteor/meteor/issues/703
 
 collection.insert({ owner: Meteor.userId(), length:3 });  
 https://github.com/meteor/meteor/issues/594#issuecomment-15441895  
+
+
+
+## Installation & Uninstallation
+
+**Q:  Is there a Homebrew installer for Mac OSX?**  
+Unofficially, yes.  It can be found here:  
+https://gist.github.com/4317935
+
+````
+brew install https://gist.github.com/raw/4317935/05084353d3cd50acad7e88e01c3f6463b42c0ed3/meteor.rb
+````
+
+**Q:  Is there an MSI installer for Windows?**  
+Unofficially, yes, but it's support has been discontinued for the time being.  It can be found here:  
+http://win.meteor.com/
+
+**Q:  When will Windows version become a first class citizen?**  
+Not in the immediate future, as it's slated to be included after the 1.0 release.  In the meantime, it's recommended to use a virtual machine for development.  You can read the roadmap and relevant disscussions here:
+https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11  
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d9453041fae6aa  
+
+**Q:  Can Meteor run on Rasberry Pi?**  
+Daaah... maybe?  People seem to be working on it, but not much success yet.
+http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
+https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
+
+**Q:  How do I uninstall Meteor?**  
+No need to run scripts.  Just delete directories like so:  
+````js
+// the older location, pre 0.6.0
+sudo rm /usr/local/bin/meteor
+
+// the newer location, post 0.6.0
+sudo rm -rf ~/.meteor
+````
+
 
 
 ## Development Environment
@@ -71,42 +107,26 @@ https://github.com/meteor/meteor/pull/920
 
 
 
-## Installation & Uninstallation
+## Model, View, Controllers
 
-**Q:  Is there a Homebrew installer for Mac OSX?**  
-Unofficially, yes.  It can be found here:  
-https://gist.github.com/4317935
+**Q:  Can I add Ember into my Meteor Application?**  
+Sure you could add Ember in, but dear lord, why?  Ember and Meteor are essentially the same. Saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  
 
-````
-brew install https://gist.github.com/raw/4317935/05084353d3cd50acad7e88e01c3f6463b42c0ed3/meteor.rb
-````
+**Q:  What about Angular.js?  Wouldn't Angular and Meteor work great together?**  
+See the question about Ember.  It's redundant.  
 
-**Q:  Is there an MSI installer for Windows?**  
-Unofficially, yes, but it's support has been discontinued for the time being.  It can be found here:  
-http://win.meteor.com/
+**Q:  How do I add MVC to my application?**  
+The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  Don't overcomplicate things with Ember.js, Angular.js, Knockout.js, or any of the other MVC frameworks.  When needed, Meteor will use Backbone.js for it's MVC.  
 
-**Q:  When will Windows version become a first class citizen?**  
-Not in the immediate future, as it's slated to be included after the 1.0 release.  In the meantime, it's recommended to use a virtual machine for development.  You can read the roadmap and relevant disscussions here:
-https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11  
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d9453041fae6aa  
+**Model is HTML, View is CSS, and Controller is Javascript**  
 
-**Q:  Can Meteor run on Rasberry Pi?**  
-Daaah... maybe?  People seem to be working on it, but not much success yet.
-http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
-https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
-
-**Q:  How do I uninstall Meteor?**  
-No need to run scripts.  Just delete directories like so:  
-````js
-// the older location, pre 0.6.0
-sudo rm /usr/local/bin/meteor
-
-// the newer location, post 0.6.0
-sudo rm -rf ~/.meteor
-````
+Model      - HTML       - What It Is Displayed  
+View       - CSS        - How It Is Displayed  
+Controller - Javascript - When It Is Displayed  
 
 
-## Getting Started
+
+## Controller Libraries
 
 **Q:  Is jQuery a core package?**  
 Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  Assume it's a core package.
@@ -136,8 +156,7 @@ You'll also want to check for var comments in your library, like so:
 var createStoryJS = function ()
 ````
 
-------------------------------------------------------------------
-## Load Ordering
+## Load Ordering & Dependencies
 
 Something that really trips people up a lot with Meteor is load ordering and dependencies, particularly if they're accustomed to sequential or imperative style programming (i.e. coming from object-oriented languages and frameworks). Roughly speaking, this is the best I can figure of the load ordering:
 
@@ -188,58 +207,9 @@ Here are some tips and suggestions on managing load ordering and dependencies:
 
 
 
-## Model, View, Controllers
-
-**Q:  Can I add Ember into my Meteor Application?**  
-Sure you could add Ember in, but dear lord, why?  Ember and Meteor are essentially the same. Saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  
-
-**Q:  What about Angular.js?  Wouldn't Angular and Meteor work great together?**  
-See the question about Ember.  It's redundant.  
-
-**Q:  How do I add MVC to my application?**  
-The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  Don't overcomplicate things with Ember.js, Angular.js, Knockout.js, or any of the other MVC frameworks.  When needed, Meteor will use Backbone.js for it's MVC.  
-
-**Model is HTML, View is CSS, and Controller is Javascript**  
-
-Model      - HTML       - What It Is Displayed  
-View       - CSS        - How It Is Displayed  
-Controller - Javascript - When It Is Displayed  
 
 
 
-
-## Collections
-  
-insert()  
-````
-Todos.insert({
-        text: text,
-        gannt.dependency: dependency,
-        gannt.parent: parent,
-        list_id: Session.get('list_id'),
-        done: false,
-        timestamp: (new Date()).getTime(),
-        tags: tag ? [tag] : []
-      });
-````
-
-save()  
-- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622  
-
-count()  
-````
-MyCollection.find(selector, options).fetch().length()
-````
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d7b8e6aa025958  
-
-searching()  
-````
-Meteor.publish('images', function (asset_title_search) {
-    return Images.find({'title':{ $regex: asset_title_search, $options: 'i' }},{limit: 200});
-});
-````
-
-https://github.com/lbdremy/solr-node-client
 
 
 
@@ -269,9 +239,11 @@ http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 ------------------------------------------------------------------
 ### Meteor.settings
 
+````
 Meteor.settings.privateKey == "MY_KEY"  
 Meteor.settings.public.publicKey == "MY_PUBLIC_KEY"   
 Meteor.settings.public.anotherPublicKey == "MORE_KEY"  
+````
 
 ------------------------------------------------------------------
 ### Running Devel Branch of Meteor
@@ -460,6 +432,38 @@ Are you explicitly creating an application to draw and graph network meshes of u
 
 Anyhow, just my $0.02.
 
+## Collections
+  
+insert()  
+````
+Todos.insert({
+        text: text,
+        gannt.dependency: dependency,
+        gannt.parent: parent,
+        list_id: Session.get('list_id'),
+        done: false,
+        timestamp: (new Date()).getTime(),
+        tags: tag ? [tag] : []
+      });
+````
+
+save()  
+- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622  
+
+count()  
+````
+MyCollection.find(selector, options).fetch().length()
+````
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d7b8e6aa025958  
+
+searching()  
+````
+Meteor.publish('images', function (asset_title_search) {
+    return Images.find({'title':{ $regex: asset_title_search, $options: 'i' }},{limit: 200});
+});
+````
+
+https://github.com/lbdremy/solr-node-client
 
 
 ------------------------------------------------------------------
