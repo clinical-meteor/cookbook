@@ -4,8 +4,8 @@
 The CloudBees NodeJS logo:  
 https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 
-------------------------------------------------------------------
 ### Terminology
+------------------------------------------------------------------
 
 DDP Acryonym
 - Distributed Data Protocol
