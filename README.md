@@ -16,15 +16,19 @@ DDP Acryonym
 ------------------------------------------------------------------
 ## Development Environment
 
-**Q:  What are best practices for setting up my development environment?**
-Well, you're going to need to chose an IDE and editor to work with, the most popular of which seems to be Webstorm.  
+**Q:  What are best practices for setting up my development environment?**  
+Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  See below.  
+
+**Q:  Which editor should I use with Meteor?**  
+Well, you're going to need to chose an IDE and editor to work with, the most popular of which seems to be Webstorm, since it's got the best refactoring tools.  
 http://www.jetbrains.com/webstorm/  
 
-As of Meteor 0.6.0, and it's new packaging system, Cloud9 support has become questionable.  
+As of Meteor 0.6.0, and it's new packaging system, Cloud9 support has become questionable.  Avoid it.  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
 
 Some people are also reporting success with Coda.  
 http://panic.com/coda/
+
 
 **Q:  My editor keeps crashing!  Help!**  
 Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
@@ -52,7 +56,7 @@ https://github.com/meteor/meteor/pull/920
 ## Installation & Uninstallation
 
 **Q:  Is there a Homebrew installer for Mac OSX?**  
-Unofficially, yes.  It can be found here:
+Unofficially, yes.  It can be found here:  
 https://gist.github.com/4317935
 
 ````
@@ -60,7 +64,7 @@ brew install https://gist.github.com/raw/4317935/05084353d3cd50acad7e88e01c3f646
 ````
 
 **Q:  Is there an MSI installer for Windows?**  
-Unofficially, yes, but it's support has been discontinued for the time being.  It can be found here:
+Unofficially, yes, but it's support has been discontinued for the time being.  It can be found here:  
 http://win.meteor.com/
 
 **Q:  When will Windows version become a first class citizen?**  
@@ -75,7 +79,6 @@ https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ
 
 **Q:  How do I uninstall Meteor?**  
 No need to run scripts.  Just delete directories like so:  
-
 ````js
 // the older location, pre 0.6.0
 sudo rm /usr/local/bin/meteor
@@ -84,6 +87,22 @@ sudo rm /usr/local/bin/meteor
 sudo rm -rf ~/.meteor
 ````
 
+------------------------------------------------------------------
+## Getting Started
+
+**Q:  Is jQuery a core package?**  
+Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  Assume it's a core package.
+
+**Q:  I'm looking in myapp/.meteor/packages, and I don't see jQuery listed.  Why does my app act like it's loading jQuery?**  
+Because it's a dependency of Spark.  It's a hidden dependency.  The myapp/.meteor/packages is not a definitive list of dependencies.  Just the most immediate dependencies.
+
+
+------------------------------------------------------------------
+## Model, View, Controllers
+
+The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  Don't overcomplicate things with Ember.js, Angular.js, Knockout.js, or any of the other MVC frameworks.  When needed, Meteor will use Backbone.js for it's MVC.  But, generically speaking, Meteor suffices 
+
+**Model is HTML, View is CSS, and Controller is Javascript**  
 
 
 
@@ -598,36 +617,9 @@ I always use # 1 by default.  When I find myself repeating a chunk of code repea
 
 Dependencies:  look into the packages.  If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/loca/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
 
-Backbone.js:  Mostly redundant.  All of the MVC functionality is pretty much already there in the framework. To be perfectly blunt, Model is coded up in HTML, Controller is coded in Javascript, and View is coded up in CSS.  It's that simple.  If it helps, you may want to go into the /client directory, and create the following directory structure:
 
-````
-/client
-/client/model/
-/client/view/
-/cleint/controllers/
-````
 
-It will work exactly the same as if you were to do the following structure: 
 
-````
-/client
-/client/templates/
-/client/stylesheets/
-/cleint/libraries/
-````
-
-Or, more simply:
-
-````
-/client
-/client/html/
-/client/css/
-/cleint/js/
-````
-
-Grab yourself the jQuery library with a 'meteor add jquery', and between jQuery and Meteor, you should have analogous helper functions to most all of what Backbone.js provides.  You're not going down a darkpath by mixing Meteor and MVC.  You're just... applying a redundant framework to what's already there.  Meteor is a communication platform.  But it also provides much of the MVC you're looking for.  
-
-All I can say is this....  Meteor's Reactive framework is crazy amazing from the future, and I dare say that it's not going to behave quite like any other framework you've ever used.  Ditch some of the old worrying about MV* structure, and just go by the mantra that "Model is HTML, View is CSS, and Controller is Javascript".  When in doubt, refer back to that.  
 
 Also, be on the lookout for what I refer to the 'bubble templating'.  I don't know how exactly to explain this, but the closest thing I can think of is a bubble sort.  The reactive templates work on a similar bubbling principle.  It's a side affect of the javascript's functional programming paradigm, and works similar to how anonymous functions don't have an intrinsic ordering.  The result is that refreshes and new data just bubble up to the templates.  
 
@@ -692,8 +684,6 @@ Anyhow, HTML is model, CSS is view, and Javascript is the Controller.  ;-)
 ------------------------------------------------------------------
 ## UNSORTED, UNEDITED
 
-Q:  Is jQuery a core package?  
-A:  Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  
 
 
 Q:  move back to clean-css instead of uglify?
