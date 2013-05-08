@@ -1,4 +1,4 @@
-Hi.  Yeah.  So, I went through about 6 months of emails and discussions from the [meteor] google group, and compiled the following FAQ and tutorial.  It's aimed at the user who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  
+Hi.  Welcome to an unofficial Meteor FAQ and Tutorial, culled from about 6 months of emails and discussions from the [meteor] google group, and compiled the following FAQ and tutorial.  It's aimed at the user who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  
 
 ------------------------------------------------------------------
 ## Meteor Logo
