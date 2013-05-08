@@ -79,39 +79,19 @@ https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ
 ------------------------------------------------------------------
 ### Uninstalling Meteor
 
-````
+**Q:  How do I uninstall Meteor?**  
+No need to run scripts.  Just delete directories like so:  
+
+````js
+// the older location, pre 0.6.0
 sudo rm /usr/local/bin/meteor
-rm -rf ~/.meteor
+
+// the newer location, post 0.6.0
+sudo rm -rf ~/.meteor
 ````
 
 
 
-
-------------------------------------------------------------------
-## UNSORTED, UNEDITED
-
-Q:  Is jQuery a core package?  
-A:  Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  
-
-
-Q:  move back to clean-css instead of uglify?
-
-
-
-
-CSS Transitions
-Check out LiveJS as a possible solution:
-https://github.com/q42/livejs
-
-
-
-## Templates
-**Supported**
-- jade
-- blade
-
-**Unsupported**
-- dust 
 
 ------------------------------------------------------------------
 ### Collections
@@ -712,3 +692,31 @@ I found that I spend far, far more time working about establishing the correct s
 And once you get to larger applications, that kind of syntax will be not just invaluable, it will be essential, to managing application complexity.  Note how the classes are bordering on being pseudo-english sentences.  If you can structure your css/less classes in that manner, you'll be able to offload commonly used functionality to hardware accelerated code, manage it with dependencies and includes/imports, and keep your application syntax super easy to read and maintain.   
 
 Anyhow, HTML is model, CSS is view, and Javascript is the Controller.  ;-)
+
+
+
+------------------------------------------------------------------
+## UNSORTED, UNEDITED
+
+Q:  Is jQuery a core package?  
+A:  Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  
+
+
+Q:  move back to clean-css instead of uglify?
+
+
+
+
+CSS Transitions
+Check out LiveJS as a possible solution:
+https://github.com/q42/livejs
+
+
+
+## Templates
+**Supported**
+- jade
+- blade
+
+**Unsupported**
+- dust 
