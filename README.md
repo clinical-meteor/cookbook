@@ -1,5 +1,4 @@
 
-
 ------------------------------------------------------------------
 ### Meteor Logo
 
@@ -9,9 +8,14 @@ https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 ------------------------------------------------------------------
 ### Terminology
 
+DDP Acryonym
+- Distributed Data Protocol
+- Dynamic Data ...
+
+
 
 ------------------------------------------------------------------
-## DEVELOPMENT ENVIRONMENT
+## Development Environment
 
 Q:  What are best practices for setting up my development environment?
 
@@ -29,8 +33,7 @@ A:  Add the .meteor directory to your ignore list.
 ````
 
 Q:  Help!  I'm behind a proxy!  How can I install/run Meteor behind a reverse proxy?  
-
-Generically speaking, you're going to need to update your environment variables in bash, like so:
+A:  Generically speaking, you're going to need to update your environment variables in bash, like so:
 ````
 // make sure your shell knows about your proxy
 export http_proxy=http://your.proxy.server:port/
@@ -39,7 +42,7 @@ export http_proxy=http://your.proxy.server:port/
 curl https://install.meteor.com | sh
 ````
 
-Also, watch the following thread:
+Also, watch the following thread:  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13de0148a37cf58a  
 
 
@@ -82,9 +85,7 @@ A:  Sortof.  It's a dependency of Spark, and is included in pretty much all core
 Q:  move back to clean-css instead of uglify?
 
 
-DDP Acryonym
-- Distributed Data Protocol
-- Dynamic Data ...
+
 
 CSS Transitions
 Check out LiveJS as a possible solution:
