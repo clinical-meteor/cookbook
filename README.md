@@ -1,3 +1,5 @@
+Hi.  Yeah.  So, I went through about 6 months of emails and discussions from the [meteor] google group, and compiled the following FAQ and tutorial.  It's aimed at the user who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  
+
 ------------------------------------------------------------------
 ## Meteor Logo
 
@@ -8,9 +10,17 @@ https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
  
 ## Terminology
 
-DDP Acryonym
+** Acroynms **
+DDP 
 - Distributed Data Protocol
 - Dynamic Data ...
+
+ORM
+- Object Relation Mapper
+
+http://www.codinghorror.com/blog/2006/06/object-relational-mapping-is-the-vietnam-of-computer-science.html  
+http://blogs.tedneward.com/PermaLink,guid,33e0e84c-1a82-4362-bb15-eb18a1a1d91f.aspx  
+http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html  
 
 
 **Reserved Keywords**
