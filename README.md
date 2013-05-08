@@ -18,11 +18,14 @@ DDP Acryonym
 
 **Q:  What are best practices for setting up my development environment?**
 
-There's no plan for Cloud9 to support Meteor later than 0.6.0, due to the NPM packaging system.
+Well, you're going to need to chose an IDE and editor to work with, the most popular of which seems to be Webstorm.  
+http://www.jetbrains.com/webstorm/  
+
+As of Meteor 0.6.0, and it's new packaging system, Cloud9 support has become questionable.  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
 
-That means WebSphere.
-
+Some people are also reporting success with Coda.  
+http://panic.com/coda/
 
 **Q:  My editor keeps crashing!  Help!  **
 A:  Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
@@ -33,8 +36,8 @@ A:  Add the myapp/.meteor directory to your ignore list.  Meteor takes your appl
 ````
 
 **Q:  Help!  I'm behind a proxy!  How can I install/run Meteor behind a reverse proxy?**  
-A:  Generically speaking, you're going to need to update your environment variables in bash, like so:
-````
+This is a networking issue related to your operating system and local network topology, something that the Meteor Development Group doesn't really have any control over.  Some people have had success updating their bash environment variables, and running the installer with curl, like so:
+````js
 // make sure your shell knows about your proxy
 export http_proxy=http://your.proxy.server:port/
 
