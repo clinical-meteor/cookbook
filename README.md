@@ -6,13 +6,13 @@ Additional sections to add to the unofficial-meteor-faq
 
 
 ------------------------------------------------------------------
-## Meteor Logo
+### Meteor Logo
 
-The CloudBees NodeJS logo:
+The CloudBees NodeJS logo:  
 https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 
 ------------------------------------------------------------------
-## Terminology
+### Terminology
 
 
 ------------------------------------------------------------------
