@@ -13,6 +13,14 @@ DDP Acryonym
 - Dynamic Data ...
 
 
+**Reserved Keywords**
+
+Template.foo.name  
+https://github.com/meteor/meteor/issues/703  
+
+collection.insert({ owner: Meteor.userId(), length:3 });  
+https://github.com/meteor/meteor/issues/594#issuecomment-15441895  
+
 
 ## Development Environment
 
@@ -251,9 +259,9 @@ http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 ------------------------------------------------------------------
 ### Meteor.settings
 
-Meteor.settings.privateKey == "MY_KEY" 
-Meteor.settings.public.publicKey == "MY_PUBLIC_KEY" 
-Meteor.settings.public.anotherPublicKey == "MORE_KEY"
+Meteor.settings.privateKey == "MY_KEY"  
+Meteor.settings.public.publicKey == "MY_PUBLIC_KEY"   
+Meteor.settings.public.anotherPublicKey == "MORE_KEY"  
 
 ------------------------------------------------------------------
 ### Running Devel Branch of Meteor
@@ -442,14 +450,6 @@ Are you explicitly creating an application to draw and graph network meshes of u
 
 Anyhow, just my $0.02.
 
-------------------------------------------------------------------
-### Reserved Keywords
-
-Template.foo.name
-https://github.com/meteor/meteor/issues/703
-
-collection.insert({ owner: Meteor.userId(), length:3 }); 
-https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 
 
 ------------------------------------------------------------------
