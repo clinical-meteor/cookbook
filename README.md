@@ -17,7 +17,6 @@ DDP Acryonym
 ## Development Environment
 
 **Q:  What are best practices for setting up my development environment?**
-
 Well, you're going to need to chose an IDE and editor to work with, the most popular of which seems to be Webstorm.  
 http://www.jetbrains.com/webstorm/  
 
@@ -28,7 +27,7 @@ Some people are also reporting success with Coda.
 http://panic.com/coda/
 
 **Q:  My editor keeps crashing!  Help!**  
-A:  Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
+Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
 
 ````js
 // Webstore > Preferences > Directories > Excluded Directories
@@ -45,7 +44,7 @@ export http_proxy=http://your.proxy.server:port/
 curl https://install.meteor.com | sh
 ````
 
-Also, watch follow this issue:
+Also, watch follow this issue:  
 https://github.com/meteor/meteor/pull/920
 
 
@@ -53,17 +52,27 @@ https://github.com/meteor/meteor/pull/920
 ## Installation
 
 ### Mac OSX
-Q:  Is there a Homebrew installer for Mac OSX?    
+**Q:  Is there a Homebrew installer for Mac OSX?**  
+Unofficially, yes.  It can be found here:
 https://gist.github.com/4317935
 
+````
+brew install https://gist.github.com/raw/4317935/05084353d3cd50acad7e88e01c3f6463b42c0ed3/meteor.rb
+````
+
 ### Windows  
+**Q:  Is there an MSI installer for Windows?**  
+Unofficially, yes.  It can be found here:
 http://win.meteor.com/
 
-Q:  When will Windows version become a first class citizen?  
+**Q:  When will Windows version become a first class citizen?**  
+Not in the immediate future, as it's slated to be included after the 1.0 release.  You can find the roadmap and discussion here:  
 https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d9453041fae6aa  
 
 ### Rasberry Pi  
+**Q:  Can Meteor run on Rasberry Pi?**  
+Daaah... maybe?  People seem to be working on it, but not much success yet.
 http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
 https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
 
