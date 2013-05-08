@@ -298,19 +298,7 @@ https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 
 
-------------------------------------------------------------------
-## Packages We Love
 
-
-### Payments
-https://atmosphere.meteor.com/package/stripe
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
-
-
-### Date/Time
-https://github.com/possibilities/meteor-moment
-
-### Routing
 
 
 
@@ -383,18 +371,30 @@ No.
 **Q: When will Meteor support SQL?**  
 Hopefully not any time soon, even though it's on the roadmap.  It's a mistake for Meteor to natively support SQL.
 
+**Q: Why is that?  Why doesn't Meteor support SQL, the most common database on the internet?**  
+The problem with introducing other databases, such as SQL and such, are the database management layers between the database and serving up the javascript objects ready to be used. Other than trivial single-table database examples, supporting SQL will require an ORM to map tables together during JOINS and to produce the necessary javascript objects for the templates. Which sort of completely defeats the purpose of using Mongo in the first place. Nobody on the core Dev team wants those headaches of supporting an SQL/ORM layer, and it breaks the philosophy of javascript-everywhere.
+
+But don't take my word for it. Here are some nice articles on ORMs and the perception that they are the 'Vietnam War' of computer science. Meteor is specifically architected to avoid ORM headaches.
+
+http://www.codinghorror.com/blog/2006/06/object-relational-mapping-is-the-vietnam-of-computer-science.html  
+http://blogs.tedneward.com/PermaLink,guid,33e0e84c-1a82-4362-bb15-eb18a1a1d91f.aspx  
+http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
+
 **Q: Well, how am I suppose to use the data in my SQL database then?**  
-Ah.  Through REST interfaces.  Meteor itself basically can act as an ORM, so the trick is to move your data from your SQL database into Meteor's Mongo database, and have Mongo act as an object store.
+Through REST interfaces.  We put the ORM __outside__ of Meteor, as part of the interface.  So, the trick is to move your data from your SQL database into Meteor's Mongo database, and have Mongo act as an object store.
 
-
-**Q: How do I get started with Mongo?**  
-Start with the following links.
+**Q: Okay, you got a plan.  How do I get started with Mongo?**  
+Start with the following links.  They'll get you up to speed quickly.
 
 http://www.querymongo.com/  
 http://docs.mongodb.org/manual/reference/sql-comparison/   
 http://rickosborne.org/download/SQL-to-MongoDB.pdf  
 
+**Q:  Does Meteor support graph databases (Titan, Neo4J, etc)?**  
+Nope.  It's basically the same issue as supporting SQL databases.  There would need to be some type of ORM mapping layer, which would totally gum up the works.
 
+**Q:  When will see support for SQL, Postgress, CouchDB, Redis, etc?**  
+Of the different databases you mention, CouchDB would probably be the easiest to add full native support for; followed by Redis (which I'm looking forward to seeing support for).  Postgres has the same general problems of needing an ORM that other flavors of SQL have to deal with.  And, as mentioned above, not only does it introduce an extra layer of ORM, it introduces an entire extra language to support... SQL.  One of the entire philosophical goals behind Meteor is to have a single language across client, server, and database.  Mongo's interface is written in Javascript.  Which streamlines and simplifies development.  SQL not so much. 
 
 **Q: How do you import data into the Mongo database?**  
 
@@ -425,12 +425,6 @@ Ctrl-C
 
 
 
-
-**Q:  Does Meteor support graph databases (Titan, Neo4J, etc)?**  
-
-
-
-**Q:  When will see support for SQL, Postgress, CouchDB, Redis, etc?**  
               
 
 ### Database Modeling
@@ -456,19 +450,7 @@ http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-
 
 The reactive templates use a number of features that have to be addressed before alternate databases can be supported, the most important being native javascript objects in the data model.  Essentially, Mongo isn't just a 'document oriented database', it's also an object-oriented database, able to persistently store arbitrarily large javascript objects.  The reactive templates are wired up so as to use those javascript objects as-is, without any translation or modification.  This makes Meteor easy to program, very fast, very robust, and a data model to die for.
 
-The problem with introducing other databases, such as SQL and such, are the database management layers between the database and serving up the javascript objects ready to be used.  Other than trivial single-table database examples, supporting SQL will require an ORM to map tables together during JOINS and to produce the necessary javascript objects for the templates.  Which sort of completely defeats the purpose of using Mongo in the first place.  Nobody on the core Dev team wants those headaches of supporting an SQL/ORM layer, and it breaks the philosophy of javascript-everywhere.  
 
-But don't take my word for it.  Here are some nice articles on ORMs and the perception that they are the 'Vietnam War' of computer science.  Meteor is specifically architected to avoid ORM headaches.
-
-http://www.codinghorror.com/blog/2006/06/object-relational-mapping-is-the-vietnam-of-computer-science.html
-http://blogs.tedneward.com/PermaLink,guid,33e0e84c-1a82-4362-bb15-eb18a1a1d91f.aspx
-http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
-
-Of the different databases you mention, CouchDB would probably be the easiest to add full native support for; followed by Redis (which I'm looking forward to seeing support for).  Postgres has the same general problems of needing an ORM that other flavors of SQL have to deal with.  And, as mentioned above, not only does it introduce an extra layer of ORM, it introduces an entire extra language to support... SQL.  One of the entire philosophical goals behind Meteor is to have a single language across client, server, and database.  Mongo's interface is written in Javascript.  Which streamlines and simplifies development.  SQL not so much. 
-
-Don't get me wrong.  I totally understand that real-world business use-cases often require backwards compatibility of legacy systems.  But that can be achieved with database-to-database communications, ala REST transactions, rather than adding an ORM layer to Meteor and moving away from the javascript-everywhere paradigm.  
-
-Bottom line... all of my SQL interoperability plans right now are via direct SQL to Mongo interfaces via REST protocols.  I've had success with SQL to Mongo via HL7 interfaces, as well.    
 
 ### Schemas
 
@@ -486,6 +468,26 @@ I've been working with Mongo for a couple years now, and document oriented datab
 Are you explicitly creating an application to draw and graph network meshes of user relationships?  If not, your UserFeeds collection is probably over complicating the data storage modal.  It breaks rule number 2 above.  Unless you're specifically trying to map and graph many-to-many relationships, or implement some type of three-table tagging pattern, the UserFeeds table with just it's two fields is suspicious in the Mongo world.  
 
 Anyhow, just my $0.02.
+
+
+**Q:  Are there any recommended admin interfaces for MongoDB?**  
+For internal development use, you may get some milage out of Genghis, even though it's written in Ruby:  
+http://genghisapp.com/   
+
+You can also use the mongo command to connect to a remote instance on the meteor.com domain.
+````
+meteor mongo --url YOURSITE.meteor.com
+````
+
+But for scalable production use, get yourself to MongoHQ.    
+http://www.mongohq.com/  
+
+Also, the Mongo Monitoring Service, from 10Gen, the makers of Mongo:  
+https://mms.10gen.com/user/login
+
+
+
+
 
 ## Collections
   
@@ -519,6 +521,7 @@ Meteor.publish('images', function (asset_title_search) {
 ````
 
 https://github.com/lbdremy/solr-node-client
+
 
 
 ------------------------------------------------------------------
@@ -606,17 +609,21 @@ https://trello.com/card/page-model-server-side-rendering-rest-endpoints/50872160
 
 
 
+## Templates
+**Supported**
+- jade
+- blade
+
+**Unsupported**
+- dust 
+- 
+
 
 ------------------------------------------------------------------
-### MongoDB Administration
+### Resizing
 
-http://genghisapp.com/  
-meteor mongo --url YOURSITE.meteor.com
 
-http://www.mongohq.com/  
 
-Importing a JSON datafile into a Meteor's Server-Side Mongo Collection  
-https://gist.github.com/awatson1978/4625736
 
 
 
@@ -646,16 +653,6 @@ Terminal Output Color
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13dcd5cbd7c03544
 
 
-------------------------------------------------------------------
-## Application Recipies
-
-### HIPAA Compliant Application
-- meteor add accounts-ui
-- meteor add force-ssl
-- mrt add hippa-audit-log
-
-### Multi-Page Application
-- mrt add router
 
 
 
@@ -797,16 +794,30 @@ https://github.com/q42/livejs
 
 
 
-## Templates
-**Supported**
-- jade
-- blade
-
-**Unsupported**
-- dust 
-- 
 
 
 ------------------------------------------------------------------
-### Resizing
+## Packages We Love
 
+
+### Payments
+https://atmosphere.meteor.com/package/stripe
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
+
+
+### Date/Time
+https://github.com/possibilities/meteor-moment
+
+### Routing
+
+
+------------------------------------------------------------------
+## Application Recipies
+
+### HIPAA Compliant Application
+- meteor add accounts-ui
+- meteor add force-ssl
+- mrt add hippa-audit-log
+
+### Multi-Page Application
+- mrt add router
