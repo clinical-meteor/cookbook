@@ -387,6 +387,15 @@ Hopefully not any time soon, even though it's on the roadmap.  It's a mistake fo
 Ah.  Through REST interfaces.  Meteor itself basically can act as an ORM, so the trick is to move your data from your SQL database into Meteor's Mongo database, and have Mongo act as an object store.
 
 
+**Q: How do I get started with Mongo?**  
+Start with the following links.
+
+http://www.querymongo.com/  
+http://docs.mongodb.org/manual/reference/sql-comparison/   
+http://rickosborne.org/download/SQL-to-MongoDB.pdf  
+
+
+
 **Q: How do you import data into the Mongo database?**  
 
 ````js
@@ -412,23 +421,16 @@ db.copyDatabase('staging', 'meteor', 'localhost');
 Ctrl-C
 ````
 
-Also, thank you for sticking with the find() syntax on the client side.  And kudos for the Meteor.Table() syntax, rather than kludging things into Collections. I know that some people feel much more comfortable with SQL databases, and there's a lot of interest in having Meteor support SQL, so this is definitely a milestone.  
 
-That being said, there are those of us who have very specific application requirements that require document oriented databases, and Meteor is one of the few funded frameworks around that provides a native Mongo framework.  There are many frameworks out there built around SQL and relational database frameworks.  Far fewer frameworks built around document oriented databases like Mongo.  So...  would hate to see one of the few frameworks natively designed to use Mongo get derailed and watered down by having to maintain backwards compatibility with legacy databases.  
 
-Be that as it may, relational databases *do* do analytics and statistics better, so...  what the hell.  Yay SQL support?  
 
-In the meantime, instead of spending resources building out an alternative to the client side find() command, could we (as a community, perhaps?) focus on promoting SQL to Mongo translation documentation and making it readily available and accessible to new devs and maybe in the official documentation?  Here are the best resources I've found:  
 
-http://www.querymongo.com/
-http://docs.mongodb.org/manual/reference/sql-comparison/
-http://rickosborne.org/download/SQL-to-MongoDB.pdf
 
-That may help the client side find() syntax be less of a limitation, and less onerous to new Meteor users accustomed to SQL.  At the same time, the SQL support provides Meteor with a nice pathway for statistics/analytics, while not borking the harmony of having the same query syntax on both server/client. 
+**Q:  Does Meteor support graph databases (Titan, Neo4J, etc)?**  
 
-Q:  Does Meteor support graph databases (Titan, Neo4J, etc)?
 
-Q:  When will see support for SQL, Postgress, CouchDB, Redis, etc?
+
+**Q:  When will see support for SQL, Postgress, CouchDB, Redis, etc?**  
               
 
 ### Database Modeling
