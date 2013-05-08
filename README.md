@@ -111,9 +111,9 @@ The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Co
 
 **Model is HTML, View is CSS, and Controller is Javascript**  
 
-Model - HTML - What It Is Displayed
-View - CSS - How It Is Displayed
-Controller - Javascript - When It Is Displayed
+Model      - HTML       - What It Is Displayed  
+View       - CSS        - How It Is Displayed  
+Controller - Javascript - When It Is Displayed  
 
 
 ------------------------------------------------------------------
