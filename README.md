@@ -4,7 +4,8 @@
 The CloudBees NodeJS logo:  
 https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 
-
+ 
+ 
 ## Terminology
 
 DDP Acryonym
@@ -113,6 +114,7 @@ The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Co
 Model      - HTML       - What It Is Displayed  
 View       - CSS        - How It Is Displayed  
 Controller - Javascript - When It Is Displayed  
+
 
 
 
@@ -291,6 +293,35 @@ https://github.com/possibilities/meteor-moment
 
 ------------------------------------------------------------------
 ## LOAD ORDERING
+
+Something that really trips people up a lot with Meteor is load ordering, particularly if they're accustomed to sequential or imperative style programming with object-oriented languages, such as Java or C#.  Simply put, Meteor is based on Javascript, which is a functional programming language, and uses a declarative style of programming.  The term is used in opposition to declarative programming, which expresses what the program should accomplish without prescribing how to do it in terms of sequences of actions to be taken. Functional programming describes what the program should do, not necessarily how the computer should go about doing it.
+
+https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d51078cfbdb349  
+
+````js
+// the bundling process will load the libraries in the deepest directories first
+/client/lib/deepest/folder/library.js  
+/client/lib/deeper/library.js  
+/client/lib/library.js  
+
+// and libraries in the root directory will be loaded last
+/client/library.js  
+
+// meteor will then startup
+Meteor.startup();  
+
+// a page will load
+document.onload
+
+// templates will render
+Template.foo.rendered
+
+// and fields will populate
+Template.foo.my_custom_field
+
+// and, eventually, the document will unload
+document.onunload
+````
 
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d528e41f3739e6
 
@@ -557,17 +588,7 @@ Importing a JSON datafile into a Meteor's Server-Side Mongo Collection
 https://gist.github.com/awatson1978/4625736
 
 
-------------------------------------------------------------------
-### Load Order
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d51078cfbdb349  
 
-/client/lib/deepest/folder/library.js  
-/client/lib/deeper/library.js  
-/client/lib/library.js  
-/client/library.js  
-Meteor.startup();  
-Template.foo.rendered
-Template.foo.my_custom_field
 
 
 
@@ -703,8 +724,8 @@ Q:  move back to clean-css instead of uglify?
 
 
 
-CSS Transitions
-Check out LiveJS as a possible solution:
+### CSS Transitions  
+Check out LiveJS as a possible solution:  
 https://github.com/q42/livejs
 
 
