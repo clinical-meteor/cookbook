@@ -96,6 +96,27 @@ Sortof.  It's a dependency of Spark, and is included in pretty much all core app
 **Q:  I'm looking in myapp/.meteor/packages, and I don't see jQuery listed.  Why does my app act like it's loading jQuery?**  
 Because it's a dependency of Spark.  It's a hidden dependency.  The myapp/.meteor/packages is not a definitive list of dependencies.  Just the most immediate dependencies.
 
+**Q: How do I get 3rd-party-library.js work with Meteor?**  
+
+What's probably going on is that a) the Timeline object itself is being destroyed when the reactive templates get re-rendered; and b) if it does manage to render anything, the reactive simply write over the rendering.  
+
+Given my testing with other libraries, I'm almost certain TimelineJS will need to go into a #constant region.  Here is some pseudo code that may help:
+
+````js
+Template.templateWithConstantRegion.rendered = function(){
+    self.node = self.find("#timelineObject");
+    if (! self.handle) {
+        self.handle = Meteor.autorun(function(){
+            Timeline();            
+        });
+    };
+};
+````
+
+You'll also want to check for var comments in your library, like so:
+````
+var createStoryJS = function ()
+````
 
 ------------------------------------------------------------------
 ## Load Ordering
@@ -225,30 +246,6 @@ http://collectionfs.meteor.com/
 http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 
 
-------------------------------------------------------------------
-### How to make 3rd-party-librar.js work with Meteor?
-
-What's probably going on is that a) the Timeline object itself is being destroyed when the reactive templates get re-rendered; and b) if it does manage to render anything, the reactive simply write over the rendering.  
-
-Given my testing with other libraries, I'm almost certain TimelineJS will need to go into a #constant region.  Here is some pseudo code that may help:
-
-````js
-Template.templateWithConstantRegion.rendered = function(){
-    self.node = self.find("#timelineObject");
-    if (! self.handle) {
-        self.handle = Meteor.autorun(function(){
-            Timeline();            
-        });
-    };
-};
-````
-
-You'll also want to check for var comments in your library, like so:
-````
-var createStoryJS = function ()
-````
-
-### Meteor.Device
 
 
 ------------------------------------------------------------------
@@ -289,43 +286,7 @@ https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 }
 ````
 
-------------------------------------------------------------------
-## Dyno Worker Processes
 
-On the server side:
-````js
-function runSync(func) {
-    var fiber = Fiber.current;
-    var result, error;
-
-    var args = Array.prototype.slice.call(arguments, 1);
-
-    func.apply(undefined, [cb].concat(args));
-    Fiber.yield();
-    if (error) throw new Meteor.Error(500, error.code, error.toString());
-    return result;
-
-    function cb(err, res) {
-        error = err;
-        result = res;
-        fiber.run();
-    }
-}
-runSync(myFunction, arg1, arg2);
-
-function myFunction(cb, arg1, arg2) {
-    // do my async thing and then call cb(err, result);
-}
-
-````
-
-And on the client side:
-````
-Meteor.call('myFunction', arg1, arg2, function(error, result) {
-  this.unblock();
-});
-
-````
 
 ------------------------------------------------------------------
 ## Packages We Love
@@ -628,8 +589,6 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13dcd5cbd7c03544
 - mrt add router
 
 
-------------------------------------------------------------------
-### Resizing
 
 
 
@@ -714,6 +673,44 @@ And once you get to larger applications, that kind of syntax will be not just in
 Anyhow, HTML is model, CSS is view, and Javascript is the Controller.  ;-)
 
 
+------------------------------------------------------------------
+## Dyno Worker Processes
+
+On the server side:
+````js
+function runSync(func) {
+    var fiber = Fiber.current;
+    var result, error;
+
+    var args = Array.prototype.slice.call(arguments, 1);
+
+    func.apply(undefined, [cb].concat(args));
+    Fiber.yield();
+    if (error) throw new Meteor.Error(500, error.code, error.toString());
+    return result;
+
+    function cb(err, res) {
+        error = err;
+        result = res;
+        fiber.run();
+    }
+}
+runSync(myFunction, arg1, arg2);
+
+function myFunction(cb, arg1, arg2) {
+    // do my async thing and then call cb(err, result);
+}
+
+````
+
+And on the client side:
+````
+Meteor.call('myFunction', arg1, arg2, function(error, result) {
+  this.unblock();
+});
+
+```` 
+
 
 ------------------------------------------------------------------
 ## UNSORTED, UNEDITED
@@ -738,3 +735,9 @@ https://github.com/q42/livejs
 
 **Unsupported**
 - dust 
+- 
+
+
+------------------------------------------------------------------
+### Resizing
+
