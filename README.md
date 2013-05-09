@@ -180,7 +180,7 @@ You'll also want to check for var comments in your library, like so:
 var createStoryJS = function ()
 ````
 
-## Load Ordering & Dependencies
+### Load Ordering & Dependencies
 
 Something that really trips people up a lot with Meteor is load ordering and dependencies, particularly if they're accustomed to sequential or imperative style programming (i.e. coming from object-oriented languages and frameworks). Roughly speaking, this is the best I can figure of the load ordering:
 
@@ -270,31 +270,11 @@ Meteor.settings.public.anotherPublicKey == "MORE_KEY"
 ````
 
 
-
-
-------------------------------------------------------------------
-### Adding 'somelibrary.js' as a smartpackage?
-
-This is a rephrasing of 'how to build a smartpackage'.  
-
-
-
 ------------------------------------------------------------------
 ### Content Delivery Networks (CDN)
 https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 
-------------------------------------------------------------------
-### Click/Touch Artifacts
-
-````
-.unselectable{
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-````
 
 
 
@@ -576,6 +556,17 @@ https://github.com/q42/livejs
 
 
 
+------------------------------------------------------------------
+### Click/Touch Artifacts
+
+````
+.unselectable{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+````
 
 
 
