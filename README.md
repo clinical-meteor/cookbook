@@ -527,7 +527,18 @@ Website with Facebook Login > Site URL:  http://might-river-5358.herokuapp.com
 Customized Accounts UI  
 http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
 
-------------------------------------------------------------------
+
+
+## Templates
+**Supported**
+- jade
+- blade
+
+**Unsupported**
+- dust 
+- 
+
+
 ### Theming
 
 ````html
@@ -559,21 +570,11 @@ Template.foo.current_theme_name = function(){
 
 
 
+### CSS Transitions  
+Check out LiveJS as a possible solution:  
+https://github.com/q42/livejs
 
 
-
-## Templates
-**Supported**
-- jade
-- blade
-
-**Unsupported**
-- dust 
-- 
-
-
-------------------------------------------------------------------
-### Resizing
 
 
 
@@ -769,20 +770,6 @@ Meteor.call('myFunction', arg1, arg2, function(error, result) {
 
 ```` 
 
-
-------------------------------------------------------------------
-## UNSORTED, UNEDITED
-
-
-
-Q:  move back to clean-css instead of uglify?
-
-
-
-
-### CSS Transitions  
-Check out LiveJS as a possible solution:  
-https://github.com/q42/livejs
 
 
 
