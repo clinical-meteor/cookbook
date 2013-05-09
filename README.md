@@ -305,45 +305,6 @@ https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 
 
-------------------------------------------------------------------
-## PRODUCTION ENVIRONMENT
-
-Q:  Help!  Something broke in production!  
-- Did you check it with --debug?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
-
-### Heroku 
-Sadly, just don't.  It doesn't support Sticky Sessions, and won't scale up or support fail-over configurations.  Instead, use Meteor.com, CloudBees, or Modulus.io.
-
-### CloudBees ClickStart  
-https://github.com/CloudBees-community/meteor-clickstart  
-
-### Modulus.io  
-http://blog.modulus.io/demeteorizer  
-https://github.com/onmodulus/demeteorizer  
-
-````
-sudo npm install -g demeteorizer
-sudo cd ~/path/myapp
-sudo demeteorizer -n 0.8.15
-sudo cd .demeteorized
-sudo rm -rf ./server/node_modules/
-sudo nano package.json
->    "sockjs": "0.3.4",
->    "websocket": "1.0.7",
->    "mongodb": "1.2.13",
->    "mailcomposer": "0.1.15"
-sudo modulus login
-sudo modulus deploy
-````
-
-### Environment Variables
-
-PORT  
-MONGO_URL  
-ROOT_URL  
-METEOR_SETTINGS  
-
-
 
 
 ------------------------------------------------------------------
@@ -654,6 +615,45 @@ https://trello.com/card/page-model-server-side-rendering-rest-endpoints/50872160
 **Terminal Output Color**
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13dcd5cbd7c03544
 
+
+
+------------------------------------------------------------------
+## PRODUCTION ENVIRONMENT
+
+Q:  Help!  Something broke in production!  
+- Did you check it with --debug?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
+
+### Heroku 
+Sadly, just don't.  It doesn't support Sticky Sessions, and won't scale up or support fail-over configurations.  Instead, use Meteor.com, CloudBees, or Modulus.io.
+
+### CloudBees ClickStart  
+https://github.com/CloudBees-community/meteor-clickstart  
+
+### Modulus.io  
+http://blog.modulus.io/demeteorizer  
+https://github.com/onmodulus/demeteorizer  
+
+````
+sudo npm install -g demeteorizer
+sudo cd ~/path/myapp
+sudo demeteorizer -n 0.8.15
+sudo cd .demeteorized
+sudo rm -rf ./server/node_modules/
+sudo nano package.json
+>    "sockjs": "0.3.4",
+>    "websocket": "1.0.7",
+>    "mongodb": "1.2.13",
+>    "mailcomposer": "0.1.15"
+sudo modulus login
+sudo modulus deploy
+````
+
+### Environment Variables
+
+PORT  
+MONGO_URL  
+ROOT_URL  
+METEOR_SETTINGS  
 
 
 
