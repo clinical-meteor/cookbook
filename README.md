@@ -60,19 +60,19 @@ https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ
 
 
 **Q:  How do I run a development branch of Meteor?**  
+There are two ways, depending if you're using meteor, or meteorite.  If using meteor:
 
 ````
-// using meteor
- 
 cd
 mkdir meteor.branchname
 cd meteor.branchname
 git clone https://github.com/username/meteor.git
 cd <path to meteor project>
 ~/meteor.branchname/meteor/meteor
+```` 
  
- 
-// using mrt
+And, if you're using mrt:
+````
 {
   "meteor": {
     "meteor.branch": "branchname",
