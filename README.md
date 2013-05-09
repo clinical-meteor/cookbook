@@ -791,8 +791,8 @@ https://github.com/q42/livejs
 ## PACKAGES
 
 
-Q:  How do I create a package for distribution?
-Unofficially, this seems to to be all the available options currently in use in the package creation process:
+**Q:  How do I create a package for distribution?**  
+Unofficially, this seems to to be all the available options currently in use in the package creation process:  
 
 ````
 Package.describe({
