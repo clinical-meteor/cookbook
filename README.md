@@ -328,17 +328,7 @@ __meteor_bootstrap__.bundle.root
 process.mainModule.filename  
 ````
 
-------------------------------------------------------------------
-## PACKAGES
 
-
-Q:  How do I create a package for distribution?
-
-
-Q:  Is there package documentation?
-
-Not yet.  But here's the gist of it:  
-https://gist.github.com/awatson1978/4645762
 
 
 ------------------------------------------------------------------
@@ -797,9 +787,64 @@ https://github.com/q42/livejs
 
 
 
-
 ------------------------------------------------------------------
-## Packages We Love
+## PACKAGES
+
+
+Q:  How do I create a package for distribution?
+Unofficially, this seems to to be all the available options currently in use in the package creation process:
+
+````
+Package.describe({
+  // define a message to describe the package
+  summary: "This is a sample package that doesn't actually do anything.",
+  
+  // for internal dependency packages, set the internal flag true
+  internal: false  
+});
+ 
+Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
+ 
+Package.register_extension(
+    "otf", function (bundle, source_path, serve_path, where) {
+        bundle.add_resource({
+            type: "static",
+            path: '/fonts/' + serve_path.split('/').pop(),
+            source_file: source_path,
+            where: where
+        });
+    }
+);
+Package.on_use(function (api) {
+  
+  var path = Npm.require('path');
+  api.add_files(path.join('audio', 'click1.wav'), 'client');
+    
+  // define dependencies using api.use
+  api.use('package_name', 'directory/to/install/into');
+ 
+  // add files to specific locations using api.add_files
+  api.add_files('library_name.js', 'directory/to/install/into');
+ 
+  // example: add multiple files to a location using an array
+  api.add_files(['first_library.js', 'second_library.js'], 'client');
+ 
+  // example: add file to multiple locations using an array
+  api.add_files('other_library_name.js', ['client', 'server']);
+});
+ 
+Package.on_test(function (api) {
+ 
+  // define dependencies using api.use
+  api.use('package_name');
+ 
+  // add files to specific locations using api.add_files
+  api.add_files('library_name.js', 'directory/to/install/into');
+});
+````
+
+
+### Packages We Love
 
 
 ### Payments
