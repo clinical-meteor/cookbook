@@ -246,7 +246,7 @@ Here are some tips and suggestions on managing load ordering and dependencies:
 
 
 ## Templates
-**Q:  I want to use Jade/Blade/Dust as my templating engine.  Are they supported?**
+**Q:  I want to use Jade/Blade/Dust as my templating engine.  Are they supported?**  
 Well, if you're hell bent on ditching the integrated Spark templating engine, a few people have reporting some success getting jade and blade working, and there are packages in Atmosphere, but nobody seems to have gotten dust working yet.  Of the three, Jade seems to have the best documentation and integration so far.  
 
 Blade  
