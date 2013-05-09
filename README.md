@@ -322,21 +322,6 @@ http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 
 
 
-------------------------------------------------------------------
-### Meteor.settings
-
-````
-Meteor.settings.privateKey == "MY_KEY"  
-Meteor.settings.public.publicKey == "MY_PUBLIC_KEY"   
-Meteor.settings.public.anotherPublicKey == "MORE_KEY"  
-````
-
-
-------------------------------------------------------------------
-### Content Delivery Networks (CDN)
-https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
-
-
 
 
 
@@ -610,13 +595,15 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13dcd5cbd7c03544
 ------------------------------------------------------------------
 ## PRODUCTION ENVIRONMENT
 
-Q:  Help!  Something broke in production!  
+**Q:  Help!  Something broke in production!**  
 - Did you check it with --debug?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
 
-### Heroku 
-Sadly, just don't.  It doesn't support Sticky Sessions, and won't scale up or support fail-over configurations.  Instead, use Meteor.com, CloudBees, or Modulus.io.
+**Q:  How do I deploy to Heroku?**  
+Sadly, just don't.  Prior to 0.6.0, lots of people were using the Oortcloud Heroku Buildpack with much success.  As of 0.6.0, it seems to have broken, however.  And it's a moot point, because Heroku doesn't support Sticky Sessions, and won't scale up or support fail-over configurations.  Instead, use Meteor.com, CloudBees, or Modulus.io.
+https://github.com/oortcloud/heroku-buildpack-meteorite
 
-### CloudBees ClickStart  
+**Q:  Are there any cloud hosting providers that provide unit testing?**  
+CloudBees provides a Meteor clickstart, software-as-a-service, unit testing, and continuous integration.  It's a bit klunky, but if you're worried about continuous integration, it's the one to choose:  
 https://github.com/CloudBees-community/meteor-clickstart  
 
 ### Modulus.io  
@@ -645,6 +632,21 @@ MONGO_URL
 ROOT_URL  
 METEOR_SETTINGS  
 
+
+
+------------------------------------------------------------------
+### Meteor.settings
+
+````
+Meteor.settings.privateKey == "MY_KEY"  
+Meteor.settings.public.publicKey == "MY_PUBLIC_KEY"   
+Meteor.settings.public.anotherPublicKey == "MORE_KEY"  
+````
+
+
+------------------------------------------------------------------
+### Content Delivery Networks (CDN)
+https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 
 
