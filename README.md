@@ -58,6 +58,28 @@ Daaah... maybe?  People seem to be working on it, but not much success yet.
 http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
 https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
 
+
+**Q:  How do I run a development branch of Meteor?**  
+
+````
+// using meteor
+ 
+cd
+mkdir meteor.branchname
+cd meteor.branchname
+git clone https://github.com/username/meteor.git
+cd <path to meteor project>
+~/meteor.branchname/meteor/meteor
+ 
+ 
+// using mrt
+{
+  "meteor": {
+    "meteor.branch": "branchname",
+    "git": "https://github.com/username/meteor.git"
+  }
+}
+````
 **Q:  How do I uninstall Meteor?**  
 No need to run scripts.  Just delete directories like so:  
 ````js
@@ -247,29 +269,7 @@ Meteor.settings.public.publicKey == "MY_PUBLIC_KEY"
 Meteor.settings.public.anotherPublicKey == "MORE_KEY"  
 ````
 
-------------------------------------------------------------------
-### Running Devel Branch of Meteor
-git checkout devel
 
-````
-// using meteor
- 
-cd
-mkdir meteor.branchname
-cd meteor.branchname
-git clone https://github.com/username/meteor.git
-cd <path to meteor project>
-~/meteor.branchname/meteor/meteor
- 
- 
-// using mrt
-{
-  "meteor": {
-    "meteor.branch": "branchname",
-    "git": "https://github.com/username/meteor.git"
-  }
-}
-````
 
 
 ------------------------------------------------------------------
