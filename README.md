@@ -627,7 +627,8 @@ sudo modulus login
 sudo modulus deploy
 ````
 
-### Environment Variables
+**Q:  What environment variables are supported?**  
+So far, the following variables have been seen in the wild:  
 
 PORT  
 MONGO_URL  
@@ -637,7 +638,8 @@ METEOR_SETTINGS
 
 
 ------------------------------------------------------------------
-### Meteor.settings
+**Q:  Is there any documentation on the Meteor.settings? **
+So far, the following setting parameters have been seen in the wild:  
 
 ````
 Meteor.settings.privateKey == "MY_KEY"  
