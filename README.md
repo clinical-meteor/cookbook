@@ -150,6 +150,20 @@ View       - CSS        - How It Is Displayed
 Controller - Javascript - When It Is Displayed  
 
 
+## Routing
+
+**Q: How do I generate URL paths? **  
+
+````js
+//http://mydomain.com
+Meteor.absoluteUrl.defaultOptions.rootUrl = "http://mydomain.com"
+
+//http://mydomain.com/foo
+Meteor.absoluteUrl("/foo", {});
+````
+
+
+
 
 ## Controller Libraries
 
@@ -231,6 +245,50 @@ Here are some tips and suggestions on managing load ordering and dependencies:
 - And finally, I recommend not using the filesystem as a namespace for Classes, as you may be accustomed to in object-oriented frameworks.  Use the filesystem as a namespace for Workflow components instead...  pages, modaldialogs, importers, reports, etc.  I find that the workflow components namespace generally gets replicated three times... in the lib, stylesheets, and templates directories, respectively, and reflecting the MVC components.  When refactoring out a package, grab the appropriate file from each of the directories (ie. profile.html, profile.css, profile.js, for example), and put them into a single directory under the packages directory.  
 
 
+## Templates
+**Supported**
+- jade
+- blade
+
+**Unsupported**
+- dust 
+- 
+
+
+### Theming
+
+````html
+<template name="foo">
+  <div class="{{current_theme_name}}">
+    <span class="t1">hello</span>
+  </div>
+</template>
+````
+
+````
+theme1 {
+  t1 {background-color: black}
+}
+theme2 {
+  t1 {background-color: red}
+}
+````
+
+````
+Template.foo.current_theme_name = function(){
+  if(Session.get(current_theme_name){
+    return "theme1";
+  }else{
+    return "theme2";
+  }
+}
+````
+
+
+
+### CSS Transitions  
+Check out LiveJS as a possible solution:  
+https://github.com/q42/livejs
 
 
 
@@ -288,26 +346,7 @@ https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 
 
-------------------------------------------------------------------
-## Url and Path Generation
 
-Meteor Methods  
-
-````js
-//http://mydomain.com
-Meteor.absoluteUrl.defaultOptions.rootUrl = "http://mydomain.com"
-
-//http://mydomain.com/foo
-Meteor.absoluteUrl("/foo", {});
-
-````
-
-Node/Javascript Methods  
-````
-__meteor_bootstrap__.bundle.root  
-
-process.mainModule.filename  
-````
 
 
 
@@ -510,50 +549,6 @@ http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-fo
 
 
 
-## Templates
-**Supported**
-- jade
-- blade
-
-**Unsupported**
-- dust 
-- 
-
-
-### Theming
-
-````html
-<template name="foo">
-  <div class="{{current_theme_name}}">
-    <span class="t1">hello</span>
-  </div>
-</template>
-````
-
-````
-theme1 {
-  t1 {background-color: black}
-}
-theme2 {
-  t1 {background-color: red}
-}
-````
-
-````
-Template.foo.current_theme_name = function(){
-  if(Session.get(current_theme_name){
-    return "theme1";
-  }else{
-    return "theme2";
-  }
-}
-````
-
-
-
-### CSS Transitions  
-Check out LiveJS as a possible solution:  
-https://github.com/q42/livejs
 
 
 
@@ -588,6 +583,15 @@ https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/m
 
 ------------------------------------------------------------------
 ### Server 
+
+**Q: How do I generate filepaths on the server? **  
+
+````
+__meteor_bootstrap__.bundle.root  
+
+process.mainModule.filename  
+````
+
 
 **Server Side Sessions**  
 http://stackoverflow.com/questions/15397609/meteor-session-replacement  
