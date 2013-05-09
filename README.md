@@ -326,13 +326,14 @@ sudo npm install -g demeteorizer
 sudo cd ~/path/myapp
 sudo demeteorizer -n 0.8.15
 sudo cd .demeteorized
-sudo rm -rf 
 sudo rm -rf ./server/node_modules/
 sudo nano package.json
 >    "sockjs": "0.3.4",
 >    "websocket": "1.0.7",
 >    "mongodb": "1.2.13",
 >    "mailcomposer": "0.1.15"
+sudo modulus login
+sudo modulus deploy
 ````
 
 ### Environment Variables
