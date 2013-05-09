@@ -59,7 +59,7 @@ http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html
 https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
 
 
-**Q:  How do I run a development branch of Meteor?**  
+**Q:  How do I install and use a development branch of Meteor?**  
 There are two ways, depending if you're using meteor, or meteorite.  If using meteor:
 
 ````
