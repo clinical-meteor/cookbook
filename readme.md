@@ -426,8 +426,14 @@ Ctrl-C
 ````
 
 **Q:  Where does a Meteor app store its mongodb log files?**  
-Once it's bundled, 
 
+````
+MONGO_URL='mongodb://user:password@host:port/databasename'
+````
+
+````
+/var/log/mongodb/server1.log
+````
 
 **Q:  How should I go about designing my collections?**  
 Well, instead of telling you what you ought to do; how about I tell you how I go about designing *my* collection schemas.  I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
