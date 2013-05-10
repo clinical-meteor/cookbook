@@ -114,7 +114,6 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
 Some people are also reporting success with Coda.  
 http://panic.com/coda/
 
-
 **Q:  My editor keeps crashing!  Help!**  
 Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
 
@@ -122,6 +121,18 @@ Add the myapp/.meteor directory to your ignore list.  Meteor takes your applicat
 // Webstore > Preferences > Directories > Excluded Directories
 .meteor
 ````
+
+**Q:  How do I debug node?**  
+````
+npm install -g node-inspector
+
+export NODE_OPTIONS='--debug'
+sudo mrt run
+sudo node-inspector &
+
+http://0.0.0.0:8080/debug?port=5858
+````
+
 
 **Q:  Help!  I'm behind a proxy!  How can I install/run Meteor behind a reverse proxy?**  
 This is a networking issue related to your operating system and local network topology, something that the Meteor Development Group doesn't really have any control over.  Some people have had success updating their bash environment variables, and running the installer with curl, like so:
@@ -416,6 +427,10 @@ db.copyDatabase('staging', 'meteor', 'localhost');
 Ctrl-C
 ````
 
+**Q:  Where does a Meteor app store its mongodb log files?**  
+Once it's bundled, 
+
+
 **Q:  How should I go about designing my collections?**  
 Well, instead of telling you what you ought to do; how about I tell you how I go about designing *my* collection schemas.  I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
 
@@ -609,7 +624,7 @@ PORT
 MONGO_URL  
 ROOT_URL  
 METEOR_SETTINGS  
-
+NODE_OPTIONS
 
 
 ------------------------------------------------------------------
