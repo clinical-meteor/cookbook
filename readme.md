@@ -809,3 +809,22 @@ https://github.com/jhoxray/observatory
 
 ### Multi-Page Application
 - mrt add router
+- 
+- 
+
+------------------------------------------------------------------
+## Exceptions and Errors
+
+**Q:  Uncaught ReferenceError: Templates is not defined**  
+- Check that you haven't mispelled 'Template' as 'Templates'.  It's a common typo.
+- Also check that your templates are references as follows:
+
+````js
+//correct
+{{> customTemplate }}
+
+//incorrect
+{{ customTemplate }}
+````
+
+
