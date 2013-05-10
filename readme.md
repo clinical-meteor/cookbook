@@ -324,9 +324,7 @@ http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 ### Logging
 
 **Q: Where does a Meteor app store its mongodb log files?**  
-
-
-**Q:  **  
+They're not easily accessible.  If you run the 'meteor bundle' command, you can generate a tar.gz file, and then run your app manually.  Doing that, you should be able to access the mongo logs... probably in the .meteor/db directory. 
 
 
 
