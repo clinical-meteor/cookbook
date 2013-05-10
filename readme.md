@@ -619,7 +619,7 @@ METEOR_SETTINGS
 
 
 ------------------------------------------------------------------
-**Q:  Is there any documentation on the Meteor.settings? **
+**Q:  Is there any documentation on the Meteor.settings? **  
 So far, the following setting parameters have been seen in the wild:  
 
 ````
