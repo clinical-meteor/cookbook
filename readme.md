@@ -13,7 +13,7 @@ Meteor is now available under the MIT license.  They switched licenses around ve
  
 ## Terminology
 
-** Acroynms **  
+**Acroynms**  
 
 **DDP - Distributed Data Protocol**  
 This is simply the protocol that enables the Meteor.publish() and Meteor.subscribe() methods.  It does all the heavy lifting of data communications between the server and client.  
@@ -30,7 +30,7 @@ http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
 When people talk about REST interfaces, they're talking about GET, POST, PUT, and DELETE commands that web browsers use to request data from a server.  
 https://en.wikipedia.org/wiki/Representational_state_transfer
 
-**Reserved Keywords**
+**Reserved Keywords**  
 Be careful about the reserved keywords 'length' and 'name'.  They're used by the Spark templates and Mongo, respectively, and can cause unexpected problems in your application.  
 
 Template.foo.name  
