@@ -750,24 +750,18 @@ Package.on_test(function (api) {
 
 ### Packages We Love
 
-
-### Payments
+**Payments - Stripe**  
 https://atmosphere.meteor.com/package/stripe
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
 
-
-### Date/Time
+**Date/Time - Moment**  
 https://github.com/possibilities/meteor-moment
 
+**Page Routing - Routing** 
 ### Routing
 
-
-### Logging
+**Logging - Observatory**  
 https://github.com/jhoxray/observatory
-https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/logging/meteor-talk/x3gx6libAvQ/FvUZrRCDHV0J
-
-
-https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/logging/meteor-talk/_7xan-oXvTA/kLKlI01RzGwJ
 
 
 ------------------------------------------------------------------
