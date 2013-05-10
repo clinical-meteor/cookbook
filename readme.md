@@ -310,8 +310,12 @@ http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 
 
 
+### Logging
+
+**Q: Where does a Meteor app store its mongodb log files?**  
 
 
+**Q:  **  
 
 
 
@@ -756,6 +760,14 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
 https://github.com/possibilities/meteor-moment
 
 ### Routing
+
+
+### Logging
+https://github.com/jhoxray/observatory
+https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/logging/meteor-talk/x3gx6libAvQ/FvUZrRCDHV0J
+
+
+https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/logging/meteor-talk/_7xan-oXvTA/kLKlI01RzGwJ
 
 
 ------------------------------------------------------------------
