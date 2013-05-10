@@ -152,8 +152,6 @@ View       - CSS        - How It Is Displayed
 Controller - Javascript - When It Is Displayed  
 
 
-## Routing
-
 **Q: How do I generate URL paths? **  
 
 ````js
