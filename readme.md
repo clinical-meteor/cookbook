@@ -434,7 +434,7 @@ Timeout.  You're still thinking in terms of normalizing data, not repeating your
 
 ## Collections
   
-**Q:  How do I insert an array|date|boolean|session into a document record?**  
+**Q:  How do I insert an { array | date | boolean | session } into a document record?**  
 This example should mostly cover it:
 
 ````
