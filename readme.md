@@ -590,7 +590,8 @@ https://github.com/oortcloud/heroku-buildpack-meteorite
 CloudBees provides a Meteor clickstart, software-as-a-service, unit testing, and continuous integration.  It's a bit klunky, but if you're worried about continuous integration, it's the one to choose:  
 https://github.com/CloudBees-community/meteor-clickstart  
 
-### Modulus.io  
+**Q:  How do I specify an external database using MONGO_URL?**  
+Okay, so you're starting to talk about separating your application layer from your database layer, and getting things ready for scale-out.  If you're looking for something quick and simple, try Modulus.io:  
 http://blog.modulus.io/demeteorizer  
 https://github.com/onmodulus/demeteorizer  
 
@@ -630,8 +631,13 @@ Meteor.settings.public.anotherPublicKey == "MORE_KEY"
 ````
 
 
-------------------------------------------------------------------
-### Content Delivery Networks (CDN)
+**Q:  What's the best practice for using content distribution networks (CDN)?**  
+Currently, there's not anything specific, other than putting static content on your CDN, and creating links to it from your app.  You may want to run the meteor bundle command, and take a peek in the resulting tar.gz file.
+````
+meteor bundle
+````
+
+Also, follow the feature card on the Meteor roadmap:  
 https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 
