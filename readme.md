@@ -430,30 +430,13 @@ Timeout.  You're still thinking in terms of normalizing data, not repeating your
 
 
 
-              
-
-### Database Modeling
-Whatever caused you to realize you can create an array of user ids as a field on the Feeds collection.... go with that.  That's the right approach.  What you were doing (even if you weren't entirely aware at the time), is you were starting to consolidate tables, and convert your table schema into a document schema.  And that's going to be the bulk of the learning curve.  Data relationships still exist.  They're simply encoded within document schemas, rather than table schemas.  And table schemas, or collection schemas as the case may be, are reserved for optimizing server/client response times.  Which means optimizing for query lookups.  
- 
-As far as the RSS Feed Reader, you could actually design it with just Feeds and Users collections, if you were willing to do network lookups of the feeds when you read them.  If you want to store the feeds locally, then adding Posts is necessary.  A billion Posts, a million Users, a million Feeds.  Three collections is all you really need.  
-
-Generally speaking, you should be able to consolidate UserPosts into either the Posts or Users collection, or both.  The caveat being if you want to do many-to-many relationships.  If everybody can view a post, and everybody needs the ability to mark a post as a favorite or not, and a single post needs to keep track of a million favorites/likes, then an extra UserPosts type table might be necessary.  And you'd probably want to rename it to something along the lines of Likes or Favorites.  But if only a single person owns a post (ala email) and needs to mark it as favorite, consolidation is sufficient with Posts, Users, and Feeds.  If you're going for the generic multi-user approach where everybody can mark favorite, go with Posts, Users, Feeds, and Favorites.
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Collections
   
-insert()  
+**Q:  How do I insert an array|date|boolean|session into a document record?**  
+This example should mostly cover it:
+
 ````
 Todos.insert({
         text: text,
@@ -466,7 +449,8 @@ Todos.insert({
       });
 ````
 
-save()  
+**Q: Why isn't there a MyCollection.save() function?**  
+See this converation:  
 - https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622  
 
 count()  
