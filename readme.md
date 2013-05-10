@@ -122,7 +122,7 @@ Add the myapp/.meteor directory to your ignore list.  Meteor takes your applicat
 .meteor
 ````
 
-**Q:  How do I debug node?**  
+**Q:  How do I debug node.js itself?**  
 ````
 npm install -g node-inspector
 
