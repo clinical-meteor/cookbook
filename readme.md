@@ -152,7 +152,7 @@ View       - CSS        - How It Is Displayed
 Controller - Javascript - When It Is Displayed  
 
 
-**Q: How do I generate URL paths? **  
+**Q: How do I generate URL paths?**    
 
 ````js
 //http://mydomain.com
@@ -545,7 +545,7 @@ https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/m
 ------------------------------------------------------------------
 ### Server 
 
-**Q: How do I generate filepaths on the server? **  
+**Q: How do I generate filepaths on the server?**    
 
 ````
 __meteor_bootstrap__.bundle.root  
@@ -610,7 +610,7 @@ METEOR_SETTINGS
 
 
 ------------------------------------------------------------------
-**Q:  Is there any documentation on the Meteor.settings? **  
+**Q:  Is there any documentation on the Meteor.settings?**    
 So far, the following setting parameters have been seen in the wild:  
 
 ````
