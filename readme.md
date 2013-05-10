@@ -611,7 +611,7 @@ https://github.com/onmodulus/demeteorizer
 sudo npm install -g demeteorizer
 sudo cd ~/path/myapp
 
-sudo demeteorizer -n 0.8.18
+sudo demeteorizer -n 0.8.11
 sudo cd .demeteorized
 sudo modulus login
 sudo modulus deploy
