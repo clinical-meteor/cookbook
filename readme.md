@@ -522,24 +522,45 @@ The intention is that the first email address in the 'emails' list is the primar
 **Q:  How do I detect if another user is logged in?**  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13b63c5203f1d930  
 
-Facebook Icons
+**Q:  services.facebook.picture doesn't return an image. How do I display a facebook image?**  
+Facebook Icons  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d2c92723e3a31d  
 
 ````
-Basic Info > App Domains:  might-river-5358.herokuapp.com
-Website with Facebook Login > Site URL:  http://might-river-5358.herokuapp.com
+Template.userCardTemplate.user_image = function () {
+    try{
+        if(Meteor.user().services.facebook){
+            return "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
+        }else if(Meteor.user().profile){
+            return $.trim(Meteor.user().profile.avatar);
+        }else{
+            return "/images/placeholder-240x240.gif";
+        }
+    }
+    catch(err){
+        console.log(err);
+    }
+};
 ````
 
-Customized Accounts UI  
-http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
+**Q:  How do I get Facebook OAuth to work?  There's something wrong with the URLs.**  
+Facebook is inconsistent.  Check the 'http://' at the beginning of your URLs.  The Site URL wants an 'http://', but the App Domains does not.  
+
+````
+Basic Info > App Domains:  might-river-5358.herokuapp.com  
+Website with Facebook Login > Site URL:  http://might-river-5358.herokuapp.com  
+````
+
+**Q:  How do I customize the Accounts UI login page?**  
+See this link:  http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
 
 
 
 
 
 
-------------------------------------------------------------------
-### Click/Touch Artifacts
+**Q:  There are weird blue artifacts when using touch monitors.  How do I get rid of them?**  
+The tap events don't handle :hover pseudoclasses very well.  Trying sprinkling your application with the following CSS class:
 
 ````
 .unselectable{
