@@ -31,6 +31,7 @@ When people talk about REST interfaces, they're talking about GET, POST, PUT, an
 https://en.wikipedia.org/wiki/Representational_state_transfer
 
 **Reserved Keywords**
+Be careful about the reserved keywords 'length' and 'name'.  They're used by the Spark templates and Mongo, respectively, and can cause unexpected problems in your application.  
 
 Template.foo.name  
 https://github.com/meteor/meteor/issues/703  
