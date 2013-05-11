@@ -505,6 +505,9 @@ https://trello.com/card/pattern-for-easy-pagination/508721606e02bb9d570016ae/67
 skip/limit on the server
 .slice() on the client. 
 
+http://stackoverflow.com/questions/14167394/ideal-way-of-doing-infinite-scroll-and-real-time-updates-in-meteor  
+
+
 
 ------------------------------------------------------------------
 ### Accounts
