@@ -802,6 +802,11 @@ https://github.com/possibilities/meteor-moment
 https://github.com/jhoxray/observatory
 
 
+**REST Interface - Meteor-CollectionApi**  
+https://github.com/crazytoad/meteor-collectionapi
+
+
+
 ------------------------------------------------------------------
 ## Application Recipies
 
