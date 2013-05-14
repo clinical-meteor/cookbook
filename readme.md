@@ -805,7 +805,8 @@ https://github.com/jhoxray/observatory
 **REST Interface - Meteor-CollectionApi**  
 https://github.com/crazytoad/meteor-collectionapi
 
-
+*Clustering - Meteor-Cluster**    
+https://github.com/arunoda/meteor-cluster
 
 ------------------------------------------------------------------
 ## Application Recipies
