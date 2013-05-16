@@ -114,6 +114,13 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
 Some people are also reporting success with Coda.  
 http://panic.com/coda/
 
+**Q:  Any recommendations on pair-programming?**  
+Screenhero  
+http://screenhero.com/download.html?src=btn  
+
+MadEye  
+http://madeye.io/get-started  
+
 **Q:  My editor keeps crashing!  Help!**  
 Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
 
