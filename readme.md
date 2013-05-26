@@ -205,16 +205,24 @@ Given my testing with other libraries, I'm almost certain TimelineJS will need t
 Template.templateWithConstantRegion.rendered = function(){
     self.node = self.find("#timelineObject");
     if (! self.handle) {
-        self.handle = Meteor.autorun(function(){
+        self.handle = Deps.autorun(function(){
             Timeline();            
         });
     };
 };
+
+Template.templateWithConstantRegion.destroyed = function () {
+  this.handle && this.handle.stop();
+};
 ````
 
 You'll also want to check for var comments in your library, like so:
-````
-var createStoryJS = function ()
+````js
+// bad
+var createStoryJS = function (){ ... }
+
+// good
+createStoryJS = function (){ ... }
 ````
 
 ### Load Ordering & Dependencies
