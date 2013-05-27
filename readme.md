@@ -201,6 +201,16 @@ What's probably going on is that a) the Timeline object itself is being destroye
 
 Given my testing with other libraries, I'm almost certain TimelineJS will need to go into a #constant region.  Here is some pseudo code that may help:
 
+````html
+<temlate name="templateWithConstantRegion">
+  <div>
+  {{#constant}}
+  <div id="timelineObject"></div>
+  {{/contant}}
+  </div>
+</template>
+````
+
 ````js
 Template.templateWithConstantRegion.rendered = function(){
     self.node = self.find("#timelineObject");
