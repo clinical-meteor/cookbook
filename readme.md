@@ -52,7 +52,7 @@ brew install https://gist.github.com/raw/4317935/05084353d3cd50acad7e88e01c3f646
 ````
 
 **Q:  Is there an MSI installer for Windows?**  
-Unofficially, yes, but it's support has been discontinued for the time being.  It can be found here:  
+Unofficially, yes. The last released version is 0.6.4.1. It can be found here:  
 http://win.meteor.com/
 
 **Q:  When will Windows version become a first class citizen?**  
