@@ -816,6 +816,7 @@ Package.on_test(function (api) {
 
 ### Packages We Love
 
+
 **Payments - Stripe**  
 https://atmosphere.meteor.com/package/stripe
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
@@ -830,8 +831,23 @@ https://github.com/jhoxray/observatory
 **REST Interface - Meteor-CollectionApi**  
 https://github.com/crazytoad/meteor-collectionapi
 
-*Clustering - Meteor-Cluster**    
+**Clustering - Meteor-Cluster**    
 https://github.com/arunoda/meteor-cluster
+
+**Router**    
+https://atmosphere.meteor.com/package/router
+- Generally speaking, Router works better than mini-pages.  Mini-pages supports nifty reactive session variables as routing before functions, which sounds great in theory; but in practice leads to all sorts of unexpected behaviors.  Router behaves much more consistently and as you expect a router should behave.
+
+**Device Detection**
+https://atmosphere.meteor.com/package/device-detection
+
+**Mocha-Web**
+https://atmosphere.meteor.com/package/mocha-web
+- Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)
+
+**Less**    
+Installed by default.  If you're not using less, you should be.
+
 
 ------------------------------------------------------------------
 ## Application Recipies
