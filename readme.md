@@ -835,15 +835,15 @@ https://github.com/crazytoad/meteor-collectionapi
 https://github.com/arunoda/meteor-cluster
 
 **Router**    
-https://atmosphere.meteor.com/package/router
-- Generally speaking, Router works better than mini-pages.  Mini-pages supports nifty reactive session variables as routing before functions, which sounds great in theory; but in practice leads to all sorts of unexpected behaviors.  Router behaves much more consistently and as you expect a router should behave.
+https://atmosphere.meteor.com/package/router  
+Generally speaking, Router works better than mini-pages.  Mini-pages supports nifty reactive session variables as routing before functions, which sounds great in theory; but in practice leads to all sorts of unexpected behaviors.  Router behaves much more consistently and as you expect a router should behave.
 
 **Device Detection**
-https://atmosphere.meteor.com/package/device-detection
+https://atmosphere.meteor.com/package/device-detection  
 
 **Mocha-Web**
-https://atmosphere.meteor.com/package/mocha-web
-- Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)
+https://atmosphere.meteor.com/package/mocha-web  
+Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)
 
 **Less**    
 Installed by default.  If you're not using less, you should be.
