@@ -762,9 +762,20 @@ Meteor.call('myFunction', arg1, arg2, function(error, result) {
 
 
 **Q:  How do I create a package for distribution?**  
-Unofficially, this seems to to be all the available options currently in use in the package creation process:  
+Unofficially, this seems to to be all the available options currently in use in the package creation process.  
 
 ````
+ // sample_package.js  
+ foo = Npm.require('sample_package');  
+ 
+ // at this point, to use the npm package, call foo.function();  
+````
+
+
+````
+// package.js  
+// should go into the /meteor-project/packages/sample_package directory  
+
 Package.describe({
   // define a message to describe the package
   summary: "This is a sample package that doesn't actually do anything.",
