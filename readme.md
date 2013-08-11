@@ -827,7 +827,7 @@ Package.on_test(function (api) {
 ````
 
 
-### Packages We Love
+### Packages We Love And Should be Included Meteor Core
 
 
 **Payments - Stripe**  
@@ -836,10 +836,6 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
 
 **Date/Time - Moment**  
 https://github.com/possibilities/meteor-moment
-
-**Logging - Observatory**  
-https://github.com/jhoxray/observatory
-
 
 **REST Interface - Meteor-CollectionApi**  
 https://github.com/crazytoad/meteor-collectionapi
@@ -856,10 +852,8 @@ https://atmosphere.meteor.com/package/device-detection
 
 **Mocha-Web**
 https://atmosphere.meteor.com/package/mocha-web  
-Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)
+Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)  
 
-**Less**    
-Installed by default.  If you're not using less, you should be.
 
 
 ------------------------------------------------------------------
