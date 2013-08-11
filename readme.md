@@ -864,10 +864,6 @@ Best package around for quick-and-easy unit testing.  (Doesn't support acceptanc
 - meteor add force-ssl
 - mrt add hippa-audit-log
 
-### Multi-Page Application
-- mrt add router
-- 
-- 
 
 ------------------------------------------------------------------
 ## Exceptions and Errors
