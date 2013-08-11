@@ -764,15 +764,16 @@ Meteor.call('myFunction', arg1, arg2, function(error, result) {
 **Q:  How do I create a package for distribution?**  
 Unofficially, this seems to to be all the available options currently in use in the package creation process.  
 
-````
+````js
  // sample_package.js  
  foo = Npm.require('sample_package');  
  
- // at this point, to use the npm package, call foo.function();  
+ // and now use the function like so:
+ foo.function();  
 ````
 
 
-````
+````js
 // package.js  
 // should go into the /meteor-project/packages/sample_package directory  
 
@@ -783,7 +784,8 @@ Package.describe({
   // for internal dependency packages, set the internal flag true
   internal: false  
 });
- 
+
+// If you're bundling an NPM package, be sure to reference the package as a dependency
 Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
  
 Package.register_extension(
