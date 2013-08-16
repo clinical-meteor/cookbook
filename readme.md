@@ -767,14 +767,3 @@ Meteor.call('myFunction', arg1, arg2, function(error, result) {
 
 
 
-
-
-
-------------------------------------------------------------------
-## Application Recipies
-
-### HIPAA Compliant Application
-- meteor add accounts-ui
-- meteor add force-ssl
-- mrt add hippa-audit-log
-
