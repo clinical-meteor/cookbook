@@ -1,6 +1,5 @@
 
 
-------------------------------------------------------------------
 ## Application Recipies
 
 ### HIPAA Compliant Application
