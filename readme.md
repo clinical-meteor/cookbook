@@ -257,6 +257,18 @@ Meteor.startup();
 document.onload
 
 // templates will render
+Template.foo.created
+
+  // subtemplates will render
+  Template.subtemplate.created  // need to confirm
+
+  // subtemplates will render
+  Template.subtemplate.rendered  // need to confirm
+
+  // and subtemplates fields will populate
+  Template.subtemplate.subtemplate_custom_field  // need to confirm
+
+// templates will finalize
 Template.foo.rendered
 
 // and fields will populate
