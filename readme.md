@@ -10,7 +10,6 @@ https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
 **Q:  I heard Meteor is licensed under the GPL.  Will it be available under the MIT license?**  
 Meteor is now available under the MIT license.  They switched licenses around version 0.4.0.
 
- 
 ## Terminology
 
 **Acroynms**  
@@ -855,9 +854,8 @@ https://github.com/crazytoad/meteor-collectionapi
 **Clustering - Meteor-Cluster**    
 https://github.com/arunoda/meteor-cluster
 
-**Router**    
-https://atmosphere.meteor.com/package/router  
-Generally speaking, Router works better than mini-pages.  Mini-pages supports nifty reactive session variables as routing before functions, which sounds great in theory; but in practice leads to all sorts of unexpected behaviors.  Router behaves much more consistently and as you expect a router should behave.
+**Iron Router**    
+https://github.com/EventedMind/meteor-iron-router
 
 **Device Detection**  
 https://atmosphere.meteor.com/package/device-detection  
