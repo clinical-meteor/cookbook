@@ -267,13 +267,6 @@ Template.foo.current_theme_name = function(){
 
 
 
-### CSS Transitions  
-Check out LiveJS as a possible solution:  
-https://github.com/q42/livejs
-
-
-
-
 
 
 
