@@ -96,6 +96,5 @@ https://atmosphere.meteor.com/package/device-detection
 https://atmosphere.meteor.com/package/mocha-web  
 Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)  
 
-** Iron-Transitions **
-https://github.com/tmeasday/iron-transitioner/
-
+**Iron-Transitions**  
+https://github.com/tmeasday/iron-transitioner/  
