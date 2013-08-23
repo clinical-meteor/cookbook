@@ -12,7 +12,7 @@ Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a
 {{ customTemplate }}
 ````
 
-**Q:  ReferenceError: Oauth is not defined **  
+**Q:  ReferenceError: Oauth is not defined **   
 
 ````
 // fixed by adding the following line of code (before the offending code)
