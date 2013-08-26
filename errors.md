@@ -39,3 +39,10 @@ oauth
 
 
 **Q:   TypeError: Object # has no method 'require'**  
+**Q:   TypeError: Object #<Object> has no method 'methods' **  
+
+
+
+
+
+
