@@ -43,7 +43,20 @@ oauth
 
 
 
+The following shamelessly ganked from @oortcloud's excellent unofficial FAQ.
+https://github.com/oortcloud/unofficial-meteor-faq
 
+**Q:   "Uncaught SyntaxError: Unexpected token Y"**  
+Client-side error caused by the server crashing and sending a message starting with "Your app is crashing. Here's the latest log."  
+
+**Q:   "TypeError: Object # has no method '_defineMutationMethods'"**  
+Server-side error. Most likely, you forgot to place "new" before a constructor call in the client. Read more.  
+
+**Q:   "Uncaught TypeError: Converting circular structure to JSON"**  
+Check if you're trying to save into Session an object with circular references, such as a Collection. Read more.  
+
+**Q:   "Unexpected mongo exit code 100. Restarting."**  
+Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongod.lock. If that fails do an meteor reset.  
 
 
 
