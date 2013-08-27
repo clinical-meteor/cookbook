@@ -48,7 +48,7 @@ Meteor.methods({
 })
 
 // fixed with the following:
-api.user('`standard-app-packages');
+api.use('`standard-app-packages');
 ````
 
 
