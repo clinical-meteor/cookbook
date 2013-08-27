@@ -42,7 +42,7 @@ oauth
 **Q:   TypeError: Object #<Object> has no method 'methods'**  
 
 ````js
-// offending code
+// this shouldn't be placed in a packages.js file, or a packages subdirectory 
 Meteor.methods({
   // stuff....
 })
