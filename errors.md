@@ -41,6 +41,13 @@ oauth
 **Q:   TypeError: Object # has no method 'require'**  
 **Q:   TypeError: Object #<Object> has no method 'methods'**  
 
+````js
+// offending code
+Meteor.methods({
+  // stuff....
+})
+
+````
 
 
 The following shamelessly ganked from @oortcloud's excellent unofficial FAQ.
