@@ -37,19 +37,20 @@ oauth
 ````
 
 
-
-**Q:   TypeError: Object # has no method 'require'**  
 **Q:   TypeError: Object #<Object> has no method 'methods'**  
 
 ````js
-// this shouldn't be placed in a packages.js file, or a packages subdirectory 
+// this was missing in a package.js file
+api.use('`standard-app-packages');
+
+// so this caused errors within the package itself
 Meteor.methods({
   // stuff....
 })
 
-// fixed with the following:
-api.use('`standard-app-packages');
 ````
+
+**Q:   TypeError: Object # has no method 'require'**  
 
 
 The following shamelessly ganked from @oortcloud's excellent unofficial FAQ.
