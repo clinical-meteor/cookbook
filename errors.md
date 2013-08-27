@@ -70,8 +70,9 @@ Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongo
 
 
 
-***MODULUS***  
 
+------------------------------------------------------------------
+## Modulus Errors
 
 **Error: a route URL prefix must begin with a slash**  
 Gotta set the ``ROOT_URL`` to ``http://sub.domain.com``.  Be sure to include the http:// prefix.
