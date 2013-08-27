@@ -14,7 +14,7 @@ Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a
 
 **Q: ReferenceError: Oauth is not defined**     
 
-````
+````js
 // fixed by adding the following line of code (before the offending code)
 Npm.require('oauth');
 
