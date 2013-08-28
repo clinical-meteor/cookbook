@@ -57,7 +57,7 @@ http://win.meteor.com/
 **Q:  When will Windows version become a first class citizen?**  
 Not in the immediate future, as it's slated to be included after the 1.0 release.  In the meantime, it's recommended to use a virtual machine for development.  You can read the roadmap and relevant disscussions here:
 https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11  
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d9453041fae6aa  
+https://github.com/meteor/meteor/issues/867
 
 **Q:  Can Meteor run on Rasberry Pi?**  
 Daaah... maybe?  People seem to be working on it, but not much success yet.
@@ -281,17 +281,17 @@ http://collectionfs.meteor.com/
 ------------------------------------------------------------------
 ### Unit Testing
 
-Tiny Tests
+**Tiny Tests**  
 http://stackoverflow.com/questions/10760601/how-do-you-run-the-meteor-tests  
 
-Mocha-Web  
+**Mocha-Web**  
 https://atmosphere.meteor.com/package/mocha-web  
 
-RDT With Selenium, Mocha, Jasmine, and Istanbul
+**RDT With Selenium, Mocha, Jasmine, and Istanbul**  
 https://github.com/xolvio/meteor-rtd-example-project
 http://blog.xolv.io/2013/04/unit-testing-with-meteor.html
 
-Laika
+**Laika**  
 http://arunoda.github.io/laika/
 
 
