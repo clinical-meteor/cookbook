@@ -76,3 +76,11 @@ Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongo
 
 **Error: a route URL prefix must begin with a slash**  
 Gotta set the ``ROOT_URL`` to ``http://sub.domain.com``.  Be sure to include the http:// prefix.
+
+
+**Error: Cannot find module 'fibers'**  
+Sometimes I see this error when I try to push an app while another version is already running.  Try stopping the app from the Modulus admin panel, then deploying.  Also, versions matter.  Using ``sudo demeteorizer -n 0.10.0`` seems to be a safe bet.
+https://github.com/onmodulus/demeteorizer/issues/14  
+
+
+
