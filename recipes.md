@@ -1,4 +1,3 @@
-
 ## Application Recipies
 
 ------------------------------------------------------------------
@@ -49,5 +48,10 @@ Meteor.call('myFunction', arg1, arg2, function(error, result) {
 ```` 
 
 
+------------------------------------------------------------------
+### File Uploads
 
+https://gist.github.com/dariocravero/3922137
+
+http://collectionfs.meteor.com/
 
