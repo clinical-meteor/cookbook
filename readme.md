@@ -270,14 +270,6 @@ Template.foo.current_theme_name = function(){
 
 
 
-
-------------------------------------------------------------------
-### File Uploads
-
-https://gist.github.com/dariocravero/3922137
-
-http://collectionfs.meteor.com/
-
 ------------------------------------------------------------------
 ### Unit Testing
 
