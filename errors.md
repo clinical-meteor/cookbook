@@ -1,5 +1,6 @@
 ------------------------------------------------------------------
-## Exceptions and Errors
+## Command Line Errors
+
 **run: You're not in a Meteor project directory.**  
 Try creating a ``.meteor/packages`` file.  Sometimes it gets corrupted.  Most of my apps have the following as a base.
 ````
@@ -8,6 +9,8 @@ iron-router
 less
 ````
 
+------------------------------------------------------------------
+## Console Errors
 
 **Uncaught ReferenceError: Templates is not defined**  
 Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a common typo.  Also check that your templates are references with a right arrow ``>``, like so:
