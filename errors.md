@@ -1,7 +1,15 @@
 ------------------------------------------------------------------
 ## Exceptions and Errors
+**run: You're not in a Meteor project directory.**  
+Try creating a ``.meteor/packages`` file.  Sometimes it gets corrupted.  Most of my apps have the following as a base.
+````
+standard-app-packages
+iron-router
+less
+````
 
-**Q:  Uncaught ReferenceError: Templates is not defined**  
+
+**Uncaught ReferenceError: Templates is not defined**  
 Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a common typo.  Also check that your templates are references with a right arrow ``>``, like so:
 
 ````js
@@ -12,7 +20,7 @@ Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a
 {{ customTemplate }}
 ````
 
-**Q: ReferenceError: Oauth is not defined**     
+**ReferenceError: Oauth is not defined**     
 
 ````js
 // fixed by adding the following line of code (before the offending code)
@@ -23,7 +31,7 @@ Oauth.registerService('stripe', 2, null, function(query) {
 ````
 
 
-**Q:  Error: Cannot find module 'oauth'**  
+**Error: Cannot find module 'oauth'**  
 Check that you ran ``meteor add oauth`` and not ``mrt add oauth``.  
 
 ````js
@@ -37,7 +45,7 @@ oauth
 ````
 
 
-**Q:   TypeError: Object #<Object> has no method 'methods'**  
+**TypeError: Object #<Object> has no method 'methods'**  
 
 ````js
 // this was missing in a package.js file
@@ -50,22 +58,22 @@ Meteor.methods({
 
 ````
 
-**Q:   TypeError: Object # has no method 'require'**  
+**TypeError: Object # has no method 'require'**  
 
 
 The following shamelessly ganked from @oortcloud's excellent unofficial FAQ.
 https://github.com/oortcloud/unofficial-meteor-faq
 
-**Q:   "Uncaught SyntaxError: Unexpected token Y"**  
+**"Uncaught SyntaxError: Unexpected token Y"**  
 Client-side error caused by the server crashing and sending a message starting with "Your app is crashing. Here's the latest log."  
 
-**Q:   "TypeError: Object # has no method '_defineMutationMethods'"**  
+**"TypeError: Object # has no method '_defineMutationMethods'"**  
 Server-side error. Most likely, you forgot to place "new" before a constructor call in the client. Read more.  
 
-**Q:   "Uncaught TypeError: Converting circular structure to JSON"**  
+**"Uncaught TypeError: Converting circular structure to JSON"**  
 Check if you're trying to save into Session an object with circular references, such as a Collection. Read more.  
 
-**Q:   "Unexpected mongo exit code 100. Restarting."**  
+**"Unexpected mongo exit code 100. Restarting."**  
 Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongod.lock. If that fails do an meteor reset.  
 
 
