@@ -309,7 +309,7 @@ Through REST interfaces.  We put the ORM __outside__ of Meteor, as part of the i
 
 http://stackoverflow.com/questions/10452431/how-do-you-make-a-rest-api-and-upload-files-in-meteor/13871399#13871399  
 http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/   
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13db6cfab8680f42  
+https://groups.google.com/forum/#!searchin/meteor-talk/Re$3A$20Using$20meteor$20as$20JSON$20sink/meteor-talk/M7h-GbKNS88/9v1WxlwtL2kJ  
 
 Populating the underlying Mongo collections via REST calls is pretty straight forward, and uses Meteor to it's fullest potential.  Between different projects, I've verified using REST to insert and update documents into Mongo collections, and then Meteor to reactively update to underlying inserts and changes into the database.  Dror is right that the publication hooks are important to take care of.  Not difficult for simple new documents inserted into collections; but requires a bit more finess when updating fields of existing documents.
 
@@ -429,39 +429,14 @@ Todos.insert({
       });
 ````
 
-**Q: Why isn't there a MyCollection.save() function?**  
-See this converation:  
-- https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13beeebb2d9a9622  
-
-count()  
-````
-MyCollection.find(selector, options).fetch().length()
-````
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d7b8e6aa025958  
-
-searching()  
-````
-Meteor.publish('images', function (asset_title_search) {
-    return Images.find({'title':{ $regex: asset_title_search, $options: 'i' }},{limit: 200});
-});
-````
-
-https://github.com/lbdremy/solr-node-client
-
 
 
 ------------------------------------------------------------------
 ### Pagination
 The pattern seems to be to use $limit on the server, and $slice on the client.  
 
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13df0f84a324826d  
 https://trello.com/card/pattern-for-easy-pagination/508721606e02bb9d570016ae/67  
-
-skip/limit on the server
-.slice() on the client. 
-
 http://stackoverflow.com/questions/14167394/ideal-way-of-doing-infinite-scroll-and-real-time-updates-in-meteor  
-
 
 
 ------------------------------------------------------------------
@@ -477,17 +452,16 @@ user.profile.name
 
 The intention is that the first email address in the 'emails' list is the primary contact, where people want to be emailed, and the other addresses in the list are alternates that work for login but do not receive email.
 
-**Q:  How do I detect if another user is logged in?**  
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13b63c5203f1d930  
 
 **Q:  services.facebook.picture doesn't return an image. How do I display a facebook image?**  
-Facebook Icons  
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13d2c92723e3a31d  
+
+All you need is the facebook ID and a URL.  Try something like the following:  
 
 ````
 Template.userCardTemplate.user_image = function () {
     try{
         if(Meteor.user().services.facebook){
+            // this is the line of interest
             return "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
         }else if(Meteor.user().profile){
             return $.trim(Meteor.user().profile.avatar);
@@ -510,8 +484,7 @@ Website with Facebook Login > Site URL:  http://might-river-5358.herokuapp.com
 ````
 
 **Q:  How do I customize the Accounts UI login page?**  
-See this link:  http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
-
+http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
 
 
 
@@ -540,10 +513,10 @@ The tap events don't handle :hover pseudoclasses very well.  Trying sprinkling y
 ### Load Testing 
 
 Using PhantomJS:  
-https://gist.github.com/awatson1978/5139909
+https://gist.github.com/awatson1978/5139909  
 
-Load Testing on AWS:
-https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/meteor-talk/BJXA1FRuTzU/M2e9pCH4es0J
+Load Testing on AWS:  
+https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/meteor-talk/BJXA1FRuTzU/M2e9pCH4es0J  
 
 
 ------------------------------------------------------------------
@@ -563,10 +536,6 @@ http://stackoverflow.com/questions/15397609/meteor-session-replacement
 
 **Server Side Rendering - Roadmap**  
 https://trello.com/card/page-model-server-side-rendering-rest-endpoints/508721606e02bb9d570016ae/7
-
-**Terminal Output Color**
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13dcd5cbd7c03544
-
 
 
 
