@@ -9,9 +9,6 @@ Well, you're going to need to select an Integrated Development Environment (IDE)
 Well, you're going to need to chose an IDE and editor to work with, the most popular of which seems to be Webstorm, since it's got the best refactoring tools.  
 http://www.jetbrains.com/webstorm/  
 
-As of Meteor 0.6.0, and it's new packaging system, Cloud9 support has become questionable.  Avoid it.  
-https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13c49334f501e4b3
-
 Some people are also reporting success with Coda.  
 http://panic.com/coda/
 
