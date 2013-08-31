@@ -17,7 +17,9 @@ http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
 When people talk about REST interfaces, they're talking about GET, POST, PUT, and DELETE commands that web browsers use to request data from a server.  
 https://en.wikipedia.org/wiki/Representational_state_transfer
 
-**Reserved Keywords**  
+
+## Reserved Keywords  
+
 Be careful about the reserved keywords 'length' and 'name'.  They're used by the Spark templates and Mongo, respectively, and can cause unexpected problems in your application.  
 
 Template.foo.name  
@@ -25,6 +27,7 @@ https://github.com/meteor/meteor/issues/703
 
 collection.insert({ owner: Meteor.userId(), length:3 });  
 https://github.com/meteor/meteor/issues/594#issuecomment-15441895  
+
 
 
 ## Syntax  
