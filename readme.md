@@ -36,9 +36,15 @@ sudo nano .meteor/packages
 ````
 
 
-``TypeError: Object # has no method 'methods'``  
+**TypeError: Object # has no method 'methods'**  
 This is caused by a call to ``Meteor.methods()`` in a package.  Add the following added to the ``package.js`` file to fix it.
 ````js
 api.use('standard-app-packages');
+````
+
+**TypeError: Cannot call method 'find' of undefined**  
+Same type of error, except to ``Meteor.users.find()``.
+````js
+api.use('accounts-base');
 ````
 
