@@ -4,7 +4,7 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
 The Cookbook is growing!  It was actually getting so cumbersome to edit, that I split it into a dozen files.  So, we now have an index!  Also, for the few people who asked, links from private gmail account have been removed to improve readability.
 
 
-[General Notes](https://github.com/awatson1978/meteor-cookbook/blob/master/general-notes.md)  
+[General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/general-advice.md)  
 [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md)  
 [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md)  
 [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md)  
