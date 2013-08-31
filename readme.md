@@ -7,14 +7,16 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
 
 
 
-https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/errors.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/general-notes.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/packages.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md
-https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md
+https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/errors.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/general-notes.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/packages.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md  
+https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md  
+
+
