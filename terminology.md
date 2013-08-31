@@ -1,7 +1,5 @@
 ## Terminology
 
-**Acroynms**  
-
 **DDP - Distributed Data Protocol**  
 This is simply the protocol that enables the Meteor.publish() and Meteor.subscribe() methods.  It does all the heavy lifting of data communications between the server and client.  
 http://meteor.com/blog/2012/03/21/introducing-ddp  
