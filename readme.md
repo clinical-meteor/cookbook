@@ -22,7 +22,8 @@ The Cookbook is growing!  It was actually getting so cumbersome to edit, that I 
 
 **Community News - 0.6.5**  
 
-With the recent release of version 0.6.5, lots of applications and packages broke broke.  Here's a quick rundown on getting apps back up and running again.
+With the recent release of version 0.6.5, lots of applications and packages broke broke, and people are seeing ``TypeError: Object # has no method 'methods'`` errors all over the place.  Here's a quick rundown on getting apps back up and running again.
+
 
 ````js
 // try running the following
