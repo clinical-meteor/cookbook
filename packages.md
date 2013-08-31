@@ -8,11 +8,8 @@
 Unofficially, this seems to to be all the available options currently in use in the package creation process.  
 
 ````js
- // sample_package.js  
- foo = Npm.require('sample_package');  
- 
  // and now use the function like so:
- foo.function();  
+ Foo.function();  
 ````
 
 
@@ -44,6 +41,13 @@ Package.register_extension(
 Package.on_use(function (api) {
   
   var path = Npm.require('path');
+  
+  // sample_package.js  
+  Foo = Npm.require('sample_package');  
+  
+  // export the object
+  api.export('Foo');
+  
   api.add_files(path.join('audio', 'click1.wav'), 'client');
     
   // define dependencies using api.use
