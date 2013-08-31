@@ -22,7 +22,7 @@ The Cookbook is growing!  It was actually getting so cumbersome to edit, that I 
 
 **Community News - 0.6.5**  
 
-With the recent release of version 0.6.5, lots of applications and packages broke broke, and people are seeing ``TypeError: Object # has no method 'methods'`` errors all over the place.  Here's a quick rundown on getting apps back up and running again.
+With the recent release of version 0.6.5, lots of applications and packages broke broke, and people are seeingerrors all over the place.  Here's a quick rundown on getting apps back up and running again.
 
 
 ````js
@@ -35,7 +35,9 @@ sudo nano .meteor/packages
 > standard-app-packages
 ````
 
-Also, packages that rely on the 'templating' package will need the following added to their ``package.js`` file.
+
+``TypeError: Object # has no method 'methods'``  
+This is caused by a call to ``Meteor.methods()`` in a package.  Add the following added to the ``package.js`` file to fix it.
 ````js
 api.use('standard-app-packages');
 ````
