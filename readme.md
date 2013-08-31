@@ -4,19 +4,18 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
 The Cookbook is growing!  It was actually getting so cumbersome to edit, that I split it into a dozen files.  So, we now have an index!  Also, for the few people who asked, links from private gmail account have been removed to improve readability.
 
 
-
-
-[User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md)  
+[General Notes](https://github.com/awatson1978/meteor-cookbook/blob/master/general-notes.md)  
+[Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md)  
+[Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md)  
+[Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md)  
+[Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md)
 [Application Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
 [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md)  
-[Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md)  
-[Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/errors.md)  
-[General Notes](https://github.com/awatson1978/meteor-cookbook/blob/master/general-notes.md)  
-[Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md)  
+[User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md)  
 [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages.md)  
+[Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/errors.md)  
 [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md)  
-[Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md)  
-[Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md)
+
 
 
 
