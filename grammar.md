@@ -1,4 +1,3 @@
-
 ## Terminology
 
 **Acroynms**  
@@ -29,10 +28,10 @@ https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 
 
 ## Syntax  
-(comming soon)  
+(add description of .less syntax)  
 
 ## Grammar  
-(comming soon)  
+???
 
 
 
