@@ -67,3 +67,5 @@ http://reactive-rendering-tests.meteor.com/
 Dictionary  
 http://dictionary.meteor.com/
 
+Mobile Devices - iOS in Particular  
+https://github.com/awatson1978/cordova-phonegap  
