@@ -2,7 +2,7 @@
 ------------------------------------------------------------------
 ### Test Driven Development
 
-So, the bad news is that the test driven development in Meteor is still somewhat lacking.  The good news is that it's starting to mature, with a number of different approaches being investigated.  If you'd like a comprehensive rundown of the options, keep tabs of the following resource:  
+So, the bad news is that the test driven development in Meteor is still somewhat in its infancy.  The good news is that it's starting to mature, with a number of different approaches being investigated.  So, maybe it's more  If you'd like a comprehensive rundown of the options, keep tabs of the following resource:  
 http://safety-harness.meteor.com/features
 
 **Tiny Tests**  
