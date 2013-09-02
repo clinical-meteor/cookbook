@@ -53,17 +53,17 @@ api.use('accounts-base');
 **Sample Applets**
 
 Data Sets  
-http://hubble.meteor.com/
+http://hubble.meteor.com/  
 
 Acceptance Testing  
-http://safety-harness.meteor.com/
+http://safety-harness.meteor.com/  
 
 Creating Forms  
-http://forms-kitchen-sink.meteor.com/
+http://forms-kitchen-sink.meteor.com/  
 
 Understanding The Rendering Event Loop  
-http://reactive-rendering-tests.meteor.com/
+http://reactive-rendering-tests.meteor.com/  
 
-Dictionary
+Dictionary  
 http://dictionary.meteor.com/
 
