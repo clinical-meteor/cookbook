@@ -50,7 +50,7 @@ api.use('accounts-base');
 
 ````
 
-**Sample Applets**
+**Sample Applets**  
 New section.  Probably going to eventually wind up in the recipes.md page.  
 
 Data Sets  
