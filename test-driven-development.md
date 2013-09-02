@@ -14,7 +14,7 @@ Basic unit test runner and HTML reporter, that can be installed as a package.
 https://atmosphere.meteor.com/package/mocha-web  
 
 **RDT With Selenium, Mocha, Jasmine, and Istanbul**  
-In depth unit testing and acceptance testing; relies on a command line interface.
+In depth unit testing and acceptance testing; relies on a command line interface.  
 https://github.com/xolvio/meteor-rtd-example-project  
 http://blog.xolv.io/2013/04/unit-testing-with-meteor.html  
 
