@@ -26,6 +26,9 @@ With the recent release of version 0.6.5, lots of applications and packages brok
 
 
 ````js
+//------------------------------------------------------
+// application-wide updates using the command line
+
 // try running the following
 sudo mrt add standard-app-packages
 
@@ -33,18 +36,19 @@ sudo mrt add standard-app-packages
 cd myapp
 sudo nano .meteor/packages
 > standard-app-packages
-````
 
+//------------------------------------------------------
+// debugging errors; updating packages
 
-**TypeError: Object # has no method 'methods'**  
-This is caused by a call to ``Meteor.methods()`` in a package.  Add the following added to the ``package.js`` file to fix it.
-````js
+//TypeError: Object # has no method 'methods'  
+//This is caused by a call to ``Meteor.methods()`` in a package.  Add the following added to the ``package.js`` file to fix it.
 api.use('standard-app-packages');
+
+//TypeError: Cannot call method 'find' of undefined  
+//Same type of error, except to ``Meteor.users.find()``.
+api.use('accounts-base');
+
 ````
 
-**TypeError: Cannot call method 'find' of undefined**  
-Same type of error, except to ``Meteor.users.find()``.
-````js
-api.use('accounts-base');
-````
+
 
