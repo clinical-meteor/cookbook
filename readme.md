@@ -51,6 +51,7 @@ api.use('accounts-base');
 ````
 
 **Sample Applets**
+New section.  Probably going to eventually wind up in the recipes.md page.  
 
 Data Sets  
 http://hubble.meteor.com/  
