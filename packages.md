@@ -106,4 +106,6 @@ https://atmosphere.meteor.com/package/event-hooks
 **Collection2**  
 https://atmosphere.meteor.com/package/collection2  
 
+**cron**  
+https://atmosphere.meteor.com/package/cron  
 
