@@ -90,6 +90,7 @@ MONGO_URL
 ROOT_URL  
 METEOR_SETTINGS  
 NODE_OPTIONS
+DISABLE_WEBSOCKETS
 
 
 ------------------------------------------------------------------
