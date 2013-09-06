@@ -34,7 +34,7 @@ https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 ## Grammar  
 
 **Semicolons**  
-Obviously, everybody has their own opinions about grammar, but here's a reason to use semicolons:  eventmaps.
+Obviously, everybody has their own opinions about grammar, and the Javascript specification (ECMA5 whatever) says that semicolons are option.  Fair enough.  But here's a reason to use semicolons:  eventmaps.
 
 ````js
 // eventmap will fail
@@ -44,6 +44,7 @@ Template.topicsPage.events({
     }
 })
 
+// eventmap will run correctly
 Template.topicsPage.events({
     'click .button':function(){
         console.count('initialize-rooms');
