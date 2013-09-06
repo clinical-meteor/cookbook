@@ -32,7 +32,25 @@ https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 (add description of .less syntax)  
 
 ## Grammar  
-???
+
+**Semicolons**
+Obviously, everybody has their own opinions about grammar, but here's a reason to use semicolons:  eventmaps.
+
+````js
+// eventmap will fail
+Template.topicsPage.events({
+    'click .button':function(){
+        console.count('initialize-rooms')
+    }
+})
+
+Template.topicsPage.events({
+    'click .button':function(){
+        console.count('initialize-rooms');
+    }
+})
+
+````
 
 
 
