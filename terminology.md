@@ -33,7 +33,7 @@ https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 
 ## Grammar  
 
-**Semicolons**
+**Semicolons**  
 Obviously, everybody has their own opinions about grammar, but here's a reason to use semicolons:  eventmaps.
 
 ````js
