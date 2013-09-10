@@ -19,7 +19,7 @@ The Cookbook is growing!  It was actually getting so cumbersome to edit, that I 
 [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md)  
 
 **External Resources**  
-[Asynchronous Programming](https://gist.github.com/possibilities/3443021)
+[Async & Futures](https://gist.github.com/possibilities/3443021)
 
 **Community News - 0.6.5**  
 
