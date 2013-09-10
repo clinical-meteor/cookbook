@@ -116,7 +116,9 @@ Well, instead of telling you what you ought to do; how about I tell you how I go
 **Q:  How do I create a JOIN in Meteor?**  
 Timeout.  You're still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.  This is bad juju magic, and will cause bad application design.  Take a timeout and do some more research and reading before moving forward with your application.
 
-
+**Q: I have a pre-existing SQL database, and simply must have an ORM**  
+Well, you might want to check out Sails.js.  It looks like a very promising framework that has an ORM and is database agnostic.
+http://sailsjs.org/#!
 
 ## Collections
   
