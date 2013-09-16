@@ -111,3 +111,5 @@ https://atmosphere.meteor.com/package/collection2
 **cron**  
 https://atmosphere.meteor.com/package/cron  
 
+**Mesosphere**  
+https://atmosphere.meteor.com/package/Mesosphere  
