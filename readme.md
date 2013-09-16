@@ -71,3 +71,8 @@ http://dictionary.meteor.com/
 
 Mobile Devices - iOS in Particular  
 https://github.com/awatson1978/cordova-phonegap  
+
+**Useful Modules/Recipes**  
+
+Reactive Overlays  
+https://github.com/awatson1978/reactive-overlays  
