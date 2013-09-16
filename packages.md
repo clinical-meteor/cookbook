@@ -100,8 +100,7 @@ https://atmosphere.meteor.com/package/device-detection
 https://atmosphere.meteor.com/package/browser-detection  
 
 **Mocha-Web**  
-https://atmosphere.meteor.com/package/mocha-web  
-Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)  
+https://atmosphere.meteor.com/package/mocha-web   
 
 **Event Hooks**  
 https://atmosphere.meteor.com/package/event-hooks  
