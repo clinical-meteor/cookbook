@@ -96,6 +96,9 @@ https://github.com/EventedMind/meteor-iron-router
 **Device Detection**  
 https://atmosphere.meteor.com/package/device-detection  
 
+**Browser Detection**  
+https://atmosphere.meteor.com/package/browser-detection  
+
 **Mocha-Web**  
 https://atmosphere.meteor.com/package/mocha-web  
 Best package around for quick-and-easy unit testing.  (Doesn't support acceptance testing though.)  
