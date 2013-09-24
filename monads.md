@@ -19,3 +19,8 @@
 - And going from that, you might say that they're... sort of like a derivative or integral of an Object.  They live on the circumference of objects.  On the surface area of objects.  They're like arteries and capillaries that objects move through.  
 
 - It took me a few years to get a handle on method chaining and monads.  So, be aware that this is one of those topics that you may need to meditate on!
+
+
+&#5783;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760;&#5782;
+
+&#5782;&#5783;
