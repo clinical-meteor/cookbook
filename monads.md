@@ -37,6 +37,9 @@ http://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
 - It took me a few years to get a handle on method chaining and monads.  So, be aware that this is one of those topics that you may need to meditate on!
 
 
+
+### Notation Samples
+
 &#5782;&#5783;
 
 
@@ -49,3 +52,13 @@ http://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
 &#955;
 
 
+&#8611;
+
+&#8760;
+
+&#8888;
+&#8886;
+
+&#9149;&#9149;&#9149; &#9095; &#9149;&#9149;&#9149;
+
+&#9187;
