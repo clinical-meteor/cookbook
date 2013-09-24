@@ -43,20 +43,17 @@ Because it's a dependency of Spark.  It's a hidden dependency.  The myapp/.meteo
 
 **Q: How do I get 3rd-party-library.js work with Meteor?**  
 
-What's probably going on is that a) the Timeline object itself is being destroyed when the reactive templates get re-rendered; and b) if it does manage to render anything, the reactive simply write over the rendering.  
+Installing a 3rd party library doesn't have to be hard.  If you're having problems, it's probably because the reactive templates are overwriting the objects you created.  There are a few ways to deal with this:
 
-Given my testing with other libraries, I'm almost certain TimelineJS will need to go into a #constant region.  Here is some pseudo code that may help:
-
-````html
-<temlate name="templateWithConstantRegion">
-  <div>
-  {{#constant}}
-  <div id="timelineObject"></div>
-  {{/contant}}
-  </div>
-</template>
+1.  Move your code out of reactive templates.  Autorun() is a good event hook for creating objects in.
+````js
+Meteor.autorun(function(){
+    timeline = new Timeline();            
+});
 ````
 
+
+2.  check to see if your object already exists
 ````js
 Template.templateWithConstantRegion.rendered = function(){
     self.node = self.find("#timelineObject");
@@ -66,6 +63,20 @@ Template.templateWithConstantRegion.rendered = function(){
         });
     };
 };
+````
+
+3.  use a #constant regionor a preserve() callback
+````html
+<temlate name="templateWithConstantRegion">
+  <div>
+  {{#constant}}
+    <div id="timelineObject"></div>
+  {{/contant}}
+  </div>
+</template>
+````
+
+
 
 Template.templateWithConstantRegion.destroyed = function () {
   this.handle && this.handle.stop();
