@@ -83,7 +83,7 @@ But often times, in practice, one doesn't go about *naming* a Monad.  That is, o
 In practice, they'll far more often look like this, and the best you'll be able to do is add a comment.
 
 ````js
-  // CircleSliding Monad
+  // FastCircleSliding Monad
   d3.selectAll("circle").transition()
     .duration(750)
     .delay(function(d, i) { return i * 10; })
