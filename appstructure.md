@@ -11,7 +11,7 @@ Sure you could add Ember in, but dear lord, why?  Ember and Meteor are essential
 Ah...  so you want to drive a Ford in your Porche, instead.  Mmhmmm.  See the question above about Ember.  Angular.js is redundant.  Don't overcomplicate things with Ember.js, Angular.js, Knockout.js, or any of the other MVC frameworks.  When needed, Meteor will use Backbone.js for it's MVC.  
 
 **Q:  How do I add MVC to my application?**  
-The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  
+It's already there, baked into the core of the framework.  The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  
 
 Model      - HTML       - What It Is Displayed  
 View       - CSS        - How It Is Displayed  
