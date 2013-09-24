@@ -20,6 +20,8 @@
 
 - It took me a few years to get a handle on method chaining and monads.  So, be aware that this is one of those topics that you may need to meditate on!
 
+- Monads and Objects are inverses of each other.  There's a Yin/Yang thing going on.
+
 
 &#5783;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760;&#5782;
 
