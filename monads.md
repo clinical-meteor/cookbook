@@ -43,7 +43,23 @@ http://support.apple.com/kb/HT2488
 - There's a reason it's called the &#955; calculcus, and not the &#950; calculus or the &#958; calculus.  The &#955; pictographically represents branching.  Specifically, it represents a single simple branch off a line.  And that fundamentally represents what the basic binding/substitution function is all about in the &#955; calculus.  At it's heart, the &#955; calculus is about this one simple function that forks.  We just happen to use that forking function over and over and over a bazillion times.  And we can derive all of geometry and algebra and calcullus from it.   
 http://en.wikipedia.org/wiki/Lambda_calculus
 
-- In Javascript, you most often see &#955; functions at work as ``anonymous functions``.    Whenever you use an anonymous function, you're sprinkling your application with Lambda Calculus sparkly goodness.  
+- In Javascript, you most often see &#955; functions at work as ``anonymous functions``.    Whenever you use an anonymous function, you're sprinkling your application with Lambda Calculus sparkly goodness.  You can see that Meteor has lambda functions sprinkled throughout it's core functions.  
+
+````js
+
+
+// they can be the argument of a function themselves
+Deps.autorun(function(){ ... });
+
+Meteor.startup(function(){ ... });
+
+// or they can be parameters to objects that are passed into functions
+Meteor.methods({
+  foo: function(){ ...}
+});
+````
+
+
 
 ### Notation Samples
 
