@@ -65,7 +65,7 @@ Obviously, everybody has their own opinions about grammar, and the Javascript sp
 // eventmap will fail
 Template.topicsPage.events({
     'click .button':function(){
-        console.count('initialize-rooms')
+        console.count('initialize-rooms')   // note the missing semicolon
     }
 })
 
