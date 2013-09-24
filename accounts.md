@@ -70,7 +70,9 @@ The tap events don't handle :hover pseudoclasses very well.  Trying sprinkling y
 ````
 
 
-
+**Q:  Is there a way to get a login-page, and not have a drop-down menu?'**
+Check out this very clever package.  I haven't tried it, but it looks very promising.  
+https://atmosphere.meteor.com/package/accounts-entry  
 
 
 
