@@ -35,7 +35,7 @@ https://github.com/meteor/meteor/issues/594#issuecomment-15441895
 
 I found that I spend far, far more time working about establishing the correct syntax of LESS/CSS classes, than ever worrying about MVC structure nowdays.  By doing so, you can create code like the following:
 
-````
+````html
 <template name="userItemTemplate">
     <li class="rounded-corners user-card without-padding">
         <img class="card-image with gray-border" src="{{ userImage }}" />
