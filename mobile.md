@@ -1,6 +1,6 @@
 For cross-platform mobility.
 
-````css
+````less
 //----------------------------------------------------
 
 // landscape orientation
