@@ -80,3 +80,5 @@ Template.topicsPage.events({
 
 
 
+## Meteor Style Guide    
+https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
