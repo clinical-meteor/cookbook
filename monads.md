@@ -1,4 +1,4 @@
-### Yet Another Attempt to Describe Monads
+### Yet Another Attempt to Describe Monads, Labda Calculus, etc.
 This section is still in draft form.  I'll be moving into D3 interactives this Winter, and will be adding many code samples here.  Stay tuned.
 
 
