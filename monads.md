@@ -12,7 +12,12 @@
 
 - Any Object can be described as a Monad; any Monad can be described as a Object.  They are formally translatable to each other.  But they're based on very different worldviews and perspectives.  
 
-- There's a front-loading version of Monad and method-chains, that often uses a selector of some type (jQuery, D3, others), and there's a back-loading version.  The back-loading versions are the hardest to learn.  It's very much like learning to read Reverse Polish Notation (RPN) or German, where the verbs are at the very end of the sentence.  
+- There's a front-loading version of Monad and method-chains, that often uses a selector of some type (jQuery, D3, others).  
+&#5783;&#5782;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760; 
+
+- And there's a back-loading version.  The back-loading versions are the hardest to learn.  It's very much like learning to read Reverse Polish Notation (RPN) or German, where the verbs are at the very end of the sentence.  
+&#5783;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760;&#5782;
+
 
 - Also, Monads have a very Alice-In-Wonderland habit of referencing things that don't exist with their selectors, then instantiating those very things as side effects of the computation on the data that's passed into them.  It's completely contrary to what you'd expect.  Sort of like levitating or literally lifting one's self off the ground.   
 
@@ -26,6 +31,8 @@
 
 - It took me a few years to get a handle on method chaining and monads.  So, be aware that this is one of those topics that you may need to meditate on!
 
+
+&#5782;&#5783;
 
 
 &#5783;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760;&#5782;
