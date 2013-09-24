@@ -1,6 +1,7 @@
 Here are some general tips and advice on writing Meteor applications.
 
 - First and foremost, make sure to use an IDE that supports refactoring javascript, such as WebStorm.  Think more organically, and try to grow your application, rather than engineer it.  Discover the correct syntax through refactoring, rather than assume a 'best practices' approach or try to force Meteor to work like an object-oriented framework.  Meteor is a different breed of framework, and simply works differently than object-oriented LAMP stacks.  There's this whole concept of scoping, and you'll find yourself constantly moving things around to fit into different scopes.  That moving of things around makes refactoring tools invaluable.  
+http://www.jetbrains.com/webstorm/  
 
 - Be aggressive about offloading object structure into .less files, when possible.  The LESS precompiled supports @import statements, and can be used to create dependencies between files.  More importantly, CSS can be used to create class inheritance structures.  If you're inclined to use class inheritance, try doing it with CSS instead of Javascript.   And the more functionality that is offloaded into CSS, that's less functionality that you have to manage in Javascript (sorry for the pun). 
 
