@@ -47,41 +47,44 @@ Installing a 3rd party library doesn't have to be hard.  If you're having proble
 
 1.  Move your code out of reactive templates.  Autorun() is a good event hook for creating objects in.
 ````js
-Meteor.autorun(function(){
-    timeline = new Timeline();            
-});
+    Meteor.autorun(function(){  
+        // the timeline object is outside the scope of any reactive templates
+        timeline = new Timeline();            
+    });
 ````
 
 
 2.  check to see if your object already exists
 ````js
-Template.templateWithConstantRegion.rendered = function(){
-    self.node = self.find("#timelineObject");
-    if (! self.handle) {
+    Template.templateWithConstantRegion.rendered = function(){
+      // we simply add feature detection to see if the object already exists 
+      self.node = self.find("#timelineObject");
+      if (! self.handle) {
+        // don't get worked up about this Deps.autorun()
+        // it's an option addition to this pattern
         self.handle = Deps.autorun(function(){
             Timeline();            
         });
+      };
     };
-};
+
+    // don't forget to complete the pattern by tearing down the object properly
+    Template.templateWithConstantRegion.destroyed = function () {
+      this.handle && this.handle.stop();
+    };
 ````
 
-3.  use a #constant regionor a preserve() callback
+3.  use a ``#constant`` region or a ``Template.frontPage.preserve()`` callback
 ````html
-<temlate name="templateWithConstantRegion">
-  <div>
-  {{#constant}}
-    <div id="timelineObject"></div>
-  {{/contant}}
-  </div>
-</template>
+    <temlate name="templateWithConstantRegion">
+      <div>
+        {{#constant}}
+          <div id="timelineObject"></div>
+        {{/contant}}
+      </div>
+    </template>
 ````
 
-
-
-Template.templateWithConstantRegion.destroyed = function () {
-  this.handle && this.handle.stop();
-};
-````
 
 You'll also want to check for var comments in your library, like so:
 ````js
