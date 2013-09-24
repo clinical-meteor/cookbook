@@ -113,3 +113,6 @@ https://atmosphere.meteor.com/package/cron
 
 **Mesosphere**  
 https://atmosphere.meteor.com/package/Mesosphere  
+
+**Login Page**  
+https://atmosphere.meteor.com/package/accounts-entry   
