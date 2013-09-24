@@ -22,6 +22,8 @@
 
 - Monads and Objects are inverses of each other.  There's a Yin/Yang thing going on.
 
+- Monads are focused on the function, the becoming, the doing, the verb.  Objects are focused on the state, the presence, the noun.
+
 
 &#5783;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760;&#5782;
 
