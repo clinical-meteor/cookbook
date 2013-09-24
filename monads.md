@@ -1,3 +1,6 @@
+## Functional Programming & Monads
+This section is still in draft form.  I'll be moving into D3 interactives this Winter, and will be adding many code samples here.  Stay tuned.
+
 - Like the terms 'Object' and 'Class', the term 'Monad' has a bunch of different meanings.  Don't get overly bogged down with the technical definitions.  Just remember that Monad's are computation objects or method chains.  
 
 - Most tutorials you'll see written on Monads are written in purely functional programming languages, like Lisp, Scheme, or Haskell.  The syntax is considerably different between them and Javascript, so you'll need to imagine lots and lots of parenthesis and braces added to all of the Lispy tutorials you run across.
