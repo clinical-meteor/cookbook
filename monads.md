@@ -57,7 +57,38 @@ Meteor.methods({
 });
 ````
 
+- When naming Monads, I generally use one of three approaches.  
 
+````js
+// use -ing or -ator suffixe
+coffeeMaker = new CoffeeExtrator();
+coffeeMaker.brewing();
+coffeeMaker.loading(beans);
+
+// imperative verb such
+brew = function(beans){
+  result {};
+  result.beans = beans;
+  result.roast = false;
+  result.aroma = function(){
+    return random(16);
+  }
+  return result;
+}
+brew(coffeeMaker.beans);
+````
+
+But often times, in practice, one doesn't go about *naming* a Monad.  That is, one doesn't think up a name for a Monad, and then go about writing that Monad.  I don't think I've ever written a Monad that way, anyhow.  Far more often, you'll have a series of functions you're trying to chain together, and you name the Monad in hindsight.  It's far more often to say 'oh, I guess that was a ``beanExtractionCaffieneBrewingMonad`` that I was trying to create'.  Naming a Monad is quite often an exercise in humility.  If you have a sense of 'well, I would have never thought of that on my own' when naming one, you're probably on the right track.      
+
+In practice, they'll far more often look like this.  
+````js
+  // and the best you'll be able to do is write a comment
+  // CircleSliding Monad
+  d3.selectAll("circle").transition()
+    .duration(750)
+    .delay(function(d, i) { return i * 10; })
+    .attr("r", function(d) { return Math.sqrt(d * scale); });
+````
 
 ### Notation Samples
 
