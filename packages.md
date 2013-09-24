@@ -116,3 +116,7 @@ https://atmosphere.meteor.com/package/Mesosphere
 
 **Login Page**  
 https://atmosphere.meteor.com/package/accounts-entry   
+
+**LeapJS**  
+https://github.com/kevohagan/meteor-leapmotion  
+http://js.leapmotion.com/examples  
