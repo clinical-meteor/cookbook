@@ -1,4 +1,4 @@
-## Functional Programming & Monads
+## Yet Another Attempt to Describe Functional Programming & Monads
 This section is still in draft form.  I'll be moving into D3 interactives this Winter, and will be adding many code samples here.  Stay tuned.
 
 - Like the terms 'Object' and 'Class', the term 'Monad' has a bunch of different meanings.  Don't get overly bogged down with the technical definitions.  Just remember that Monad's are computation objects or method chains.  
@@ -43,3 +43,9 @@ http://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
 &#5783;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760;&#5782;
 
 &#5782;&#5783;
+
+&#8257;
+
+&#955;
+
+
