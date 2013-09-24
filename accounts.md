@@ -6,10 +6,15 @@
 
 **Q: Is there any documentation on the User Profile?**  
 
-````
-user.username  
-user.emails[] {address, verified}  
-user.profile.name  
+The basic user profile looks like the following object:
+````js
+{
+  username: 'jdoe',  
+  emails: [{'address': 'somebody@somewhere.com', 'verified': true}],   
+  profile: {
+    'name': 'Jane Doe'
+  }
+}
 ````
 
 The intention is that the first email address in the 'emails' list is the primary contact, where people want to be emailed, and the other addresses in the list are alternates that work for login but do not receive email.
