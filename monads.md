@@ -15,7 +15,7 @@
 - There's a front-loading version of Monad and method-chains, that often uses a selector of some type (jQuery, D3, others).  
 &#5783;&#5782;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760; 
 
-- And there's a back-loading version.  The back-loading versions are the hardest to learn.  It's very much like learning to read Reverse Polish Notation (RPN) or German, where the verbs are at the very end of the sentence.  
+- And there's a back-loading version.  The back-loading versions are the hardest to learn.  It's very much like learning to read Reverse Polish Notation (RPN) or German, where the verbs are at the very end of the sentence.  Only, with method-chains, it's the data input that's at the very end of the chain.
 &#5783;&#5761;&#5766;&#5761;&#5761;&#5760;&#5760;&#5760;&#5782;
 
 
