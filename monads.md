@@ -3,7 +3,9 @@ This section is still in draft form.  I'll be moving into D3 interactives this W
 
 - Like the terms 'Object' and 'Class', the term 'Monad' has a bunch of different meanings.  Don't get overly bogged down with the technical definitions.  Just remember that Monad's are computation objects or method chains.  
 
-- Most tutorials you'll see written on Monads are written in purely functional programming languages, like Lisp, Scheme, or Haskell.  The syntax is considerably different between them and Javascript, so you'll need to imagine lots and lots of parenthesis and braces added to all of the Lispy tutorials you run across.
+- Most tutorials you'll see written on Monads are written in purely functional programming languages, like Lisp, Scheme, or Haskell.  The syntax is considerably different between them and Javascript, so you'll need to imagine lots and lots of parenthesis and braces added to all of the Lispy tutorials you run across.  
+http://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad  
+
 
 - For most uses in Meteor, you won't be concerned with the Maybe pattern, so much as the Writer and I/O forms.  
 
