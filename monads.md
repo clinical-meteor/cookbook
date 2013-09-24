@@ -1,4 +1,3 @@
-
 - Like the terms 'Object' and 'Class', the term 'Monad' has a bunch of different meanings.  Don't get overly bogged down with the technical definitions.  Just remember that Monad's are computation objects or method chains.  
 
 - Most tutorials you'll see written on Monads are written in purely functional programming languages, like Lisp, Scheme, or Haskell.  The syntax is considerably different between them and Javascript, so you'll need to imagine lots and lots of parenthesis and braces added to all of the Lispy tutorials you run across.
@@ -18,3 +17,5 @@
 - Once you read Baroque Cycle, Leibniz, Church/Turing, Donnie Darko, etc....  this following statement will make a bit more sense:  Monads are sort of about computational surface area.  One might go so far as to say quantized computational surface area.  
 
 - And going from that, you might say that they're... sort of like a derivative or integral of an Object.  They live on the circumference of objects.  On the surface area of objects.  They're like arteries and capillaries that objects move through.  
+
+- It took me a few years to get a handle on method chaining and monads.  So, be aware that this is one of those topics that you may need to meditate on!
