@@ -1,7 +1,7 @@
-Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 months of emails and discussions from the [meteor] google group and my experiences rolling out packages and apps.  These documents are intended for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The overall focus is to help the user get accustomed to functional programming using document oriented databases.
+Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 months of emails and discussions from the [meteor] google group and my experiences rolling out packages and apps.  These documents are intended for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The focus is on helping the user grow accustomed to functional programming using document oriented databases.
 
 **Updates 08/31/2013**  
-The Cookbook is growing!  It was actually getting so cumbersome to edit, that I split it into a dozen files.  So, we now have an index!  Also, for the few people who asked, links from private gmail account have been removed to improve readability.
+The Cookbook is growing!  It was getting so cumbersome to edit that I split it into a dozen files.  Now have an index!  Also, for those who asked, links from private gmail accounts have been removed to improve readability.
 
 
 **Index**  
@@ -23,7 +23,7 @@ The Cookbook is growing!  It was actually getting so cumbersome to edit, that I 
 
 **Community News - 0.6.5**  
 
-With the recent release of version 0.6.5, lots of applications and packages broke broke, and people are seeingerrors all over the place.  Here's a quick rundown on getting apps back up and running again.
+With the recent release of version 0.6.5, many applications and packages broke and people are seeing errors all over the place.  Here's a quick rundown on getting apps back up and running again.
 
 
 ````js
