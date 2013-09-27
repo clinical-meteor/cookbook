@@ -78,7 +78,7 @@ Package.on_test(function (api) {
 
 
 **Payments - Stripe**  
-https://atmosphere.meteor.com/package/stripe
+https://atmosphere.meteor.com/package/stripe  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
 
 **Date/Time - Moment**  
