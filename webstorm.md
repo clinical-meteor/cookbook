@@ -16,6 +16,7 @@
 
 
 ### MVC Color Coding 
+Run ``meteor add less`` at the command line to include the LESS precompiler.  Then use ``.less`` files instead of ``.css`` files.  Presto.  Your application should color code Model (Green), View (Blue), and Controller (Red) files.
 
 
 ### Refactoring
