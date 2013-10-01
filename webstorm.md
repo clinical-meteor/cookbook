@@ -49,6 +49,65 @@ You want to exclude the ``.meteor`` file so that the Meteor build process doesn'
 ````
 
 
+### Preferences > File and Code Templates
+
+I find it very convenient to create a Less file template, using some default media styles to help with responsive mobile application design.  
+
+**View Template**  
+````css
+#guestPage{
+  .foo{
+    background-color: red;
+  }
+  .foo:hover{
+    text-decoration: underlined;
+  }
+
+}
+
+// landscape orientation
+@media only screen and (min-width: 768px) {
+  #guestPage{
+    .foo{
+      background-color: blue;
+    }
+  }
+}
+
+// portrait orientation
+@media only screen and (max-width: 768px) {
+  #guestPage{
+    .foo{
+      background-color: blue;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  #guestPage{
+    .foo{
+      background-color: blue;
+    }
+  }
+}
+````
+
+
+**Page Model Template**  
+````html
+<template name="fooPage">
+  <div id="fooPage" class="page">
+    <div class="container">
+    
+    </div>
+  </div>
+</template>
+````
+
+
+### Preferences > Live Edit  
+You want this turned **off**.  It conflicts with Meteor's build process, and basically duplicates functionality found in Meteor.  Bundling and live editing will basically conflict with each other.  
+
+
 ### Preferences > Javascript > Code Quality Tools > JSLint
 
 ````
