@@ -1,6 +1,6 @@
 A quick tutorial for hacking on Meteor and Meteorite itself.
 
-````
+````sh
 // using meteor
  
 cd
