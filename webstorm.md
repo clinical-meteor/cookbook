@@ -143,7 +143,8 @@ Password: yourpassword
 ### Preferences > Editor 
 Editor preferences are going to vary wildly, particularly if you're accustomed to old school editors like Vim or Emacs.  However, if you'd like WebStorm to behave like a typical text editor, I'd recommend setting the following items.  In particular, allow placement of the caret after the end of line can be particularly confusing and frustrating.  
 ````
-+ Honor 'CamelHumps'
+- Honor 'CamelHumps'
++ Zoom with Cmd + Mousewheel
 + Use soft wraps in editor
 - Allow placement of caret after end of line
 + Allowplacement of caret inside of tabs
