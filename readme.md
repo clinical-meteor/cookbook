@@ -54,6 +54,9 @@ api.use('accounts-base');
 **Sample Applets**  
 New section.  Probably going to eventually wind up in the recipes.md page.  
 
+Fonts & Calligraphy
+http://fonts.meteor.com/  
+
 Data Sets  
 http://hubble.meteor.com/  
 
