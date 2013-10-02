@@ -24,7 +24,7 @@ https://github.com/meteor/meteor/wiki/Meteor-Style-Guide
 
 ````
 // Tabs and Indents  
-Tab Size: 4  
+Tab Size: 2  
 Indent: 2  
 Continuation indent: 2  
 
@@ -163,7 +163,21 @@ Another personal preference, but if you're into reducing eye strain, coding in l
 
 ### Preferences > Live Templates
 
+try/catch block  
+````js
+try{
+  $SELECTION$
+}catch(error){
+  console.log(error);
+}
+$END$
+````
 
+````js
+````
+
+````js
+````
 
 
 ### Refactoring
@@ -192,6 +206,7 @@ Handlebars/Mustache
 CamelCase  
 Git Flow Integration  
 SyncEdit 2  
+
 
 
 
