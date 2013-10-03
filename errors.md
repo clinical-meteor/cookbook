@@ -23,8 +23,22 @@ Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a
 {{ customTemplate }}
 ````
 
-**ReferenceError: Oauth is not defined**     
 
+**ReferenceError: ServiceConfiguration is not defined**     
+
+The first step to resolving 'is not defined' errors is to check to see if there's a core package available.  Be aware that sometimes you'll need to change naming schemas.  In this example, there's a core package in snake-case that gets converted to camelCase in the error message.
+````sh
+# first we want to get a list of all the available packages
+ls ~/.meteor/packages
+
+# then lets add the relevant package to our application
+# note the use of meteor, and not mrt
+meteor add service-configuration
+````
+
+
+**ReferenceError: Oauth is not defined**     
+If there's not a core package available, the next step is to start trying to add Atmosphere or NPM packages.  Atmosphere packages are pretty self-explanitory.  But Npm packages are a bit trickier.  Here's the pattern.  
 ````js
 // fixed by adding the following line of code (before the offending code)
 Npm.require('oauth');
@@ -32,6 +46,7 @@ Npm.require('oauth');
 // error refers to this line of code
 Oauth.registerService('stripe', 2, null, function(query) {
 ````
+
 
 
 **Error: Cannot find module 'oauth'**  
