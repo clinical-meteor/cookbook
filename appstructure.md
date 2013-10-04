@@ -46,7 +46,7 @@ Installing a 3rd party library doesn't have to be hard.  If you're having proble
 
 1.  Move your code out of reactive templates.  Autorun() is a good event hook for creating objects in.
 ````js
-    Meteor.autorun(function(){  
+    Deps.autorun(function(){  
         // the timeline object is outside the scope of any reactive templates
         timeline = new Timeline();            
     });
