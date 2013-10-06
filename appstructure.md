@@ -65,8 +65,8 @@ libraries/collections.js                 // collection definitions and allow/den
 
 packages/                                // place for all your atmosphere packages
 
-public/                                  // static files, such as images, that are served directly.
-public/images                            // static files, such as images, that are served directly.
+public/                                  // static files that are served directly.
+public/images                            // will serve images as: '/images/foo.jpg'
 
 tests/                                   // unit test files (won't be loaded on client or server)
 
