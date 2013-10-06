@@ -50,9 +50,9 @@ client/routes.js                          // application routes
 
 client/compatibility/                     // legacy 3rd party javascript libraries
 
-client/templates/page.example.html        // html files (document object model)
-client/stylesheets/page.example.less      // css/less/styl files (view)
-client/controllers/page.example.js        // js files (controllers)
+client/templates/                         // html files (document object model)
+client/stylesheets/                       // css/less/styl files (view)
+client/controllers/                       // js files (controllers)
 
 server/publications.js                    // Meteor.publish definitions
 server/environment.js                     // configuration of server side packages
@@ -72,17 +72,29 @@ tests/                                   // unit test files (won't be loaded on 
 
 ```
 
-For larger applications, discrete functionality can be broken up into sub-directories which are themselves organized using the same pattern. The idea here is that eventually module of functionality could be factored out into a separate smart package, and ideally, shared around.
+**Q:  Is there a recommended refactoring flow?**  
 
-```bash
-feature-foo/               # <- all functionality related to feature 'foo'
-feature-foo/lib/           # <- common code
-feature-foo/models/        # <- model definitions
-feature-foo/client/        # <- files only sent to the client
-feature-foo/server/        # <- files only available on the server
-```
+Sort of.  If you're not accustomed to refactoring, it's basically just moving files and code around, and renaming things.  It's housekeeping and code maintenance.  And between the default MVC model and the Meteor package system, one can work out a basic refactoring flow, that looks like this:
 
+````js
+// begin by creating pages in your template, stylesheet, and controller directories
+client/templates/page.feature.html        // html files (document object model)
+client/stylesheets/page.feature.less      // css/less/styl files (view)
+client/controllers/page.feature.js        // js files (controllers)
 
+// when you find some feature you want to consolidate, formalize, or share
+// create a directory and move the relevant files into it
+client/feature/page.html         
+client/feature/page.js           
+client/feature/page.less        
+
+// then, when the feature is ready, move it into a package
+// and add a package.js file
+packages/feature/page.html         
+packages/feature/page.js           
+packages/feature/page.less  
+packages/feature/package.js
+````
 
 
 ## Controller Libraries
