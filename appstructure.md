@@ -59,8 +59,6 @@ server/environment.js                     // configuration of server side packag
 server/methods.js                         // cMeteor.method() definitions
 server/initializations/                   // code for initializing collections
 
-// Libraries Shared Between Client/Server 
-// Note that js files in lib folders are loaded before other js files.
 libraries/                               // any common code for client/server.
 libraries/scehmas.js                     // schema validations and the like
 libraries/collections.js                 // collection definitions and allow/deny rules
