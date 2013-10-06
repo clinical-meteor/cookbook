@@ -34,6 +34,58 @@ Meteor.absoluteUrl("/foo", {});
 ````
 
 
+##Where should I put my files?  
+(Grabbed from Oortcloud's FAQ)  
+https://github.com/oortcloud/unofficial-meteor-faq/blob/master/README.md  
+
+The example apps in meteor are very simple, and don’t provide much insight. Here’s my current thinking on the best way to do it: (any suggestions/improvements are very welcome!)
+
+```js
+.scrap                     // keep a .scrap or .temp directory for scrap files
+
+client/main.js            // the main application javascript
+client/main.html          // the main application html
+client/subscriptions.js   // application subscriptions
+client/routes.js          // application routes 
+
+client/compatibility/      // directory for adding legacy 3rd party javascript libraries
+
+client/templates/page.example.html        // html files (document object model)
+client/stylesheets/page.example.less      // css/less/styl files (view)
+client/controllers/page.example.js        // js files (controllers)
+
+server/publications.js     // Meteor.publish definitions
+server/environment.js  // configuration of server side packages
+server/methods.js  // configuration of server side packages
+
+// Libraries Shared Between Client/Server 
+// Note that js files in lib folders are loaded before other js files.
+libraries/                       // any common code for client/server.
+libraries/environment.js         // general configuration
+libraries/methods.js             // Meteor.method definitions
+libraries/scehmas.js
+libraries/collections.js
+
+packages/ 
+
+public/                    // static files, such as images, that are served directly.
+public/images                    // static files, such as images, that are served directly.
+
+tests/                     // unit test files (won't be loaded on client or server)
+
+```
+
+For larger applications, discrete functionality can be broken up into sub-directories which are themselves organized using the same pattern. The idea here is that eventually module of functionality could be factored out into a separate smart package, and ideally, shared around.
+
+```bash
+feature-foo/               # <- all functionality related to feature 'foo'
+feature-foo/lib/           # <- common code
+feature-foo/models/        # <- model definitions
+feature-foo/client/        # <- files only sent to the client
+feature-foo/server/        # <- files only available on the server
+```
+
+
 
 
 ## Controller Libraries
@@ -209,51 +261,6 @@ Template.foo.current_theme_name = function(){
 ````
 
 
-
-###Where should I put my files?  
-(Grabbed from Oortcloud's FAQ)  
-https://github.com/oortcloud/unofficial-meteor-faq/blob/master/README.md  
-
-The example apps in meteor are very simple, and don’t provide much insight. Here’s my current thinking on the best way to do it: (any suggestions/improvements are very welcome!)
-
-```bash
-lib/                       # <- any common code for client/server.
-lib/environment.js         # <- general configuration
-lib/methods.js             # <- Meteor.method definitions
-lib/external               # <- common code from someone else
-## Note that js files in lib folders are loaded before other js files.
-
-collections/               # <- definitions of collections and methods on them (could be models/)
-
-client/lib                 # <- client specific libraries (also loaded first)
-client/lib/environment.js  # <- configuration of any client side packages
-client/lib/helpers         # <- any helpers (handlebars or otherwise) that are used often in view files
-
-client/application.js      # <- subscriptions, basic Meteor.startup code.
-client/index.html          # <- toplevel html
-client/index.js            # <- and its JS
-client/views/<page>.html   # <- the templates specific to a single page
-client/views/<page>.js     # <- and the JS to hook it up
-client/views/<type>/       # <- if you find you have a lot of views of the same object type
-client/stylesheets/        # <- css / styl / less files
-
-server/publications.js     # <- Meteor.publish definitions
-server/lib/environment.js  # <- configuration of server side packages
-
-public/                    # <- static files, such as images, that are served directly.
-
-tests/                     # <- unit test files (won't be loaded on client or server)
-```
-
-For larger applications, discrete functionality can be broken up into sub-directories which are themselves organized using the same pattern. The idea here is that eventually module of functionality could be factored out into a separate smart package, and ideally, shared around.
-
-```bash
-feature-foo/               # <- all functionality related to feature 'foo'
-feature-foo/lib/           # <- common code
-feature-foo/models/        # <- model definitions
-feature-foo/client/        # <- files only sent to the client
-feature-foo/server/        # <- files only available on the server
-```
 
 
 
