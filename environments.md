@@ -27,9 +27,10 @@ http://screenhero.com/download.html?src=btn
 MadEye  
 http://madeye.io/get-started  
 
-Nitrious.io  
+Nitrous.io  
 https://www.nitrous.io/  
 
+Run the following command in the Nitrous.io (web) command line to create a Meteor project.  
 ````
 parts install meteor
 ````
