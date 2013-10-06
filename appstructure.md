@@ -41,37 +41,36 @@ https://github.com/oortcloud/unofficial-meteor-faq/blob/master/README.md
 The example apps in meteor are very simple, and don’t provide much insight. Here’s my current thinking on the best way to do it: (any suggestions/improvements are very welcome!)
 
 ```js
-.scrap                     // keep a .scrap or .temp directory for scrap files
+.scrap                                    // keep a .scrap or .temp directory for scrap files
 
-client/main.js            // the main application javascript
-client/main.html          // the main application html
-client/subscriptions.js   // application subscriptions
-client/routes.js          // application routes 
+client/main.js                            // the main application javascript
+client/main.html                          // the main application html
+client/subscriptions.js                   // application subscriptions
+client/routes.js                          // application routes 
 
-client/compatibility/      // directory for adding legacy 3rd party javascript libraries
+client/compatibility/                     // legacy 3rd party javascript libraries
 
 client/templates/page.example.html        // html files (document object model)
 client/stylesheets/page.example.less      // css/less/styl files (view)
 client/controllers/page.example.js        // js files (controllers)
 
-server/publications.js     // Meteor.publish definitions
-server/environment.js  // configuration of server side packages
-server/methods.js  // configuration of server side packages
+server/publications.js                    // Meteor.publish definitions
+server/environment.js                     // configuration of server side packages
+server/methods.js                         // cMeteor.method() definitions
+server/initializations/                   // code for initializing collections
 
 // Libraries Shared Between Client/Server 
 // Note that js files in lib folders are loaded before other js files.
-libraries/                       // any common code for client/server.
-libraries/environment.js         // general configuration
-libraries/methods.js             // Meteor.method definitions
-libraries/scehmas.js
-libraries/collections.js
+libraries/                               // any common code for client/server.
+libraries/scehmas.js                     // schema validations and the like
+libraries/collections.js                 // collection definitions and allow/deny rules
 
-packages/ 
+packages/                                // place for all your atmosphere packages
 
-public/                    // static files, such as images, that are served directly.
-public/images                    // static files, such as images, that are served directly.
+public/                                  // static files, such as images, that are served directly.
+public/images                            // static files, such as images, that are served directly.
 
-tests/                     // unit test files (won't be loaded on client or server)
+tests/                                   // unit test files (won't be loaded on client or server)
 
 ```
 
