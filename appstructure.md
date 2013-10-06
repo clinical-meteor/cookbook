@@ -111,8 +111,8 @@ Note:  I'm being judgemental here, and saying certain approaches are 'good' and 
 Speaking of global contexts, when you bring variables into the global scope, err on the side of verbose names.  A rule-of-thumb I use is any varible in the local scope should be at least 6 characters long.  
 
 ````js
-// only use in loops
-var i = 0;
+// bad!  creates unreadable code 
+var f = 0;
 
 // too short 
 var foo = 0;
