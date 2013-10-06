@@ -114,10 +114,10 @@ Speaking of global contexts, when you bring variables into the global scope, err
 // bad!  creates unreadable code 
 var f = 0;
 
-// too short 
+// still too short 
 var foo = 0;
 
-// much better
+// much better!
 fooCount = 0;
 
 // ideal
