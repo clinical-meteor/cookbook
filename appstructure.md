@@ -94,15 +94,38 @@ var foo = 42;
 foo = 42;
 
 // bad; function restricted to local scope
+// source of lots of frustration and broken applications
 var createStoryJS = function (){ ... }
 
 // less bad; not explicitely restricted because of the 'var' keyword
 // but still restricted to local scope because of synxtax
+// still breaks many things
 function createStoryJS(){ ... }
 
 // good; function can be shared between files
 createStoryJS = function (){ ... }
 ````
+
+Note:  I'm being judgemental here, and saying certain approaches are 'good' and 'bad', which implies certain ways of coding things.  If you're used to using ``private`` and ``public`` keywords, you'll note that the ``var`` keyword acts like ``private``, and can be useful for encapsulation and preventing internal variables from being shared with outside scopes.  That's a good thing.   Proper encapsulation and scoping should be encouraged.  But for people debugging applications and trying to integrate 3rd party libraries, the default usage of the ``var`` keyword breaks a lot of things, and the bottom line is that they generally need to bring some of the private variables into a more global context.
+
+Speaking of global contexts, when you bring variables into the global scope, err on the side of verbose names.  A rule-of-thumb I use is any varible in the local scope should be at least 6 characters long.  
+
+````js
+// only use in loops
+var i = 0;
+
+// too short 
+var foo = 0;
+
+// much better
+fooCount = 0;
+
+// ideal
+currentFooIndex = 0;
+````
+
+The reason behind wanting to use long variable names has to do with the entropic information density of longer strings, which leads to less name collissions.  This is particularly useful when refactoring.  Sometimes you'll want to do a global Find And Replace on just 'foo' eleemnts, or just 'count' elements, or just 'current' elements, etc.  Having long names will help in refactoring, and prevent name collissions.  Short, concise names are prone to causing name collisions.  Also this rule-of-thumb about name lengths applies to function names too.
+
 
 ### Load Ordering & Dependencies
 
