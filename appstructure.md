@@ -180,6 +180,7 @@ The simple rule of thumb is that the bundler includes files in the deepest direc
 
 ````js
 // the bundling process output is such that libraries in the deepest directories will be loaded first  
+
 /client/lib/deepest/folder/library.js  
 /client/lib/deeper/library.js  
 /client/lib/library.js  
