@@ -23,15 +23,6 @@ Sure you could add Ember in, but dear lord, why?  Ember and Meteor are essential
 **Q:  What about Angular.js?  Wouldn't Angular and Meteor work great together?**  
 Ah...  so you want to drive a Ford in your Porche, instead.  Mmhmmm.  See the question above about Ember.  Angular.js is redundant.  Don't overcomplicate things with Ember.js, Angular.js, Knockout.js, or any of the other MVC frameworks.  When needed, Meteor will use Backbone.js for it's MVC.  
 
-**Q: How do I generate URL paths?**    
-
-````js
-//http://mydomain.com
-Meteor.absoluteUrl.defaultOptions.rootUrl = "http://mydomain.com"
-
-//http://mydomain.com/foo
-Meteor.absoluteUrl("/foo", {});
-````
 
 
 ##Where should I put my files?  
@@ -152,25 +143,26 @@ Installing a 3rd party library doesn't have to be hard.  If you're having proble
 
 
 4.  You'll also want to check for var comments in your library.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  So, many libraries will use the 'var' keyword to simply define a variable to the global scope; but Meteor will interpret the 'var' to mean a variable specific to the local file.  This causes problems sometimes.
-````js
-// variable restricted to local file
-var foo = 42;
 
-// variable shared between files
-foo = 42;
+    ````js
+    // variable restricted to local file
+    var foo = 42;
 
-// bad; function restricted to local scope
-// source of lots of frustration and broken applications
-var createStoryJS = function (){ ... }
+    // variable shared between files
+    foo = 42;
 
-// less bad; not explicitely restricted because of the 'var' keyword
-// but still restricted to local scope because of synxtax
-// still breaks many things
-function createStoryJS(){ ... }
+    // bad; function restricted to local scope
+    // source of lots of frustration and broken applications
+    var createStoryJS = function (){ ... }
 
-// good; function can be shared between files
-createStoryJS = function (){ ... }
-````
+    // less bad; not explicitely restricted because of the 'var' keyword
+    // but still restricted to local scope because of synxtax
+    // still breaks many things
+    function createStoryJS(){ ... }
+
+    // good; function can be shared between files
+    createStoryJS = function (){ ... }
+    ````
 
 Note:  I'm being judgemental here, and saying certain approaches are 'good' and 'bad', which implies certain ways of coding things.  If you're used to using ``private`` and ``public`` keywords, you'll note that the ``var`` keyword acts like ``private``, and can be useful for encapsulation and preventing internal variables from being shared with outside scopes.  That's a good thing.   Proper encapsulation and scoping should be encouraged.  But for people debugging applications and trying to integrate 3rd party libraries, the default usage of the ``var`` keyword breaks a lot of things, and the bottom line is that they generally need to bring some of the private variables into a more global context.
 
