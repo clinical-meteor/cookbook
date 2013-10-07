@@ -35,10 +35,7 @@ Meteor.absoluteUrl("/foo", {});
 
 
 ##Where should I put my files?  
-(Grabbed from Oortcloud's FAQ)  
-https://github.com/oortcloud/unofficial-meteor-faq/blob/master/README.md  
-
-The example apps in meteor are very simple, and don’t provide much insight. Here’s my current thinking on the best way to do it: (any suggestions/improvements are very welcome!)
+The following section was originally hosted on Oortcloud's excellent FAQ, but I must dissent and disagree with his particular recommended structure.  While Oortcloud's and my approach are very similar, there have been some changes in the bundler since he wrote his FAQ, and there have been a number of discussions surrounding load ordering... both of which suggest a slightly revised application template.  Long story short, here's the template I use in **my* applications.  Is it the best approach?  Or the only approach?  Of course not.  I merely find it to be more effective than any other approach I've encountered.  
 
 ```js
 .scrap                                    // keep a .scrap or .temp directory for scrap files
@@ -150,7 +147,7 @@ Installing a 3rd party library doesn't have to be hard.  If you're having proble
 ````
 
 
-You'll also want to check for var comments in your library.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  So, many libraries will use the 'var' keyword to simply define a variable to the global scope; but Meteor will interpret the 'var' to mean a variable specific to the local file.  This causes problems sometimes.
+4.  You'll also want to check for var comments in your library.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  So, many libraries will use the 'var' keyword to simply define a variable to the global scope; but Meteor will interpret the 'var' to mean a variable specific to the local file.  This causes problems sometimes.
 ````js
 // variable restricted to local file
 var foo = 42;
@@ -192,9 +189,11 @@ currentFooIndex = 0;
 The reason behind wanting to use long variable names has to do with the entropic information density of longer strings, which leads to less name collissions.  This is particularly useful when refactoring.  Sometimes you'll want to do a global Find And Replace on just 'foo' eleemnts, or just 'count' elements, or just 'current' elements, etc.  Having long names will help in refactoring, and prevent name collissions.  Short, concise names are prone to causing name collisions.  Also this rule-of-thumb about name lengths applies to function names too.
 
 
-### Load Ordering & Dependencies
+### Dependency Load Ordering
 
-Something that really trips people up a lot with Meteor is load ordering and dependencies, particularly if they're accustomed to sequential or imperative style programming (i.e. coming from object-oriented languages and frameworks). Roughly speaking, this is the best I can figure of the load ordering:
+Something that really trips people up a lot with Meteor is load ordering and dependencies, particularly if they're accustomed to sequential or imperative style programming (i.e. coming from object-oriented languages and frameworks).  When it comes to the ordering and sequence of events, there are two phases.  First, there's the bundling of resource.  During bundling, as Meteor prepares your application for deployment, it gathers up all your resources and files, and puts them into a bundle according to rules on how **it** thinks things should be ordered.  So, the first step to getting load ordering right, is to learn to adjust your file directories and naming schemas to fit with the Meteor bundler.  
+
+The simple rule of thumb is that the bundler includes files in the deepest directories first (see following example).  You'll note that this bundling order has specifically influenced our previous discussion on 'where should we put files?' 
 
 ````js
 // the bundling process output is such that libraries in the deepest directories will be loaded first  
@@ -206,7 +205,11 @@ Something that really trips people up a lot with Meteor is load ordering and dep
 /client/library.js  
 
 // meteor then bundles and deploys
+````
 
+### The Event Cycle
+
+````js
 // meteor will then startup
 Meteor.startup();  
 
@@ -224,7 +227,8 @@ Template.foo.my_custom_field
 
 // and, eventually, the document will unload
 document.onunload
-````
+
+
 
 
 ## Templates
