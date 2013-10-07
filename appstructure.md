@@ -179,8 +179,7 @@ Something that really trips people up a lot with Meteor is load ordering and dep
 The simple rule of thumb is that the bundler includes files in the deepest directories first (see following example).  You'll note that this bundling order has specifically influenced our previous discussion on 'where should we put files?' 
 
 ````js
-// the bundling process output is such that libraries in the deepest directories will be loaded first  
-
+// the bundling process output is such that libraries in the deepest directories will be loaded first    
 /client/lib/deepest/folder/library.js  
 /client/lib/deeper/library.js  
 /client/lib/library.js  
