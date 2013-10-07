@@ -29,3 +29,12 @@ http://stackoverflow.com/questions/15397609/meteor-session-replacement
 https://trello.com/card/page-model-server-side-rendering-rest-endpoints/508721606e02bb9d570016ae/7
 
 
+**Q: How do I generate URL paths?**    
+
+````js
+//http://mydomain.com
+Meteor.absoluteUrl.defaultOptions.rootUrl = "http://mydomain.com"
+
+//http://mydomain.com/foo
+Meteor.absoluteUrl("/foo", {});
+````
