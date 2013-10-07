@@ -171,24 +171,6 @@ createStoryJS = function (){ ... }
 
 Note:  I'm being judgemental here, and saying certain approaches are 'good' and 'bad', which implies certain ways of coding things.  If you're used to using ``private`` and ``public`` keywords, you'll note that the ``var`` keyword acts like ``private``, and can be useful for encapsulation and preventing internal variables from being shared with outside scopes.  That's a good thing.   Proper encapsulation and scoping should be encouraged.  But for people debugging applications and trying to integrate 3rd party libraries, the default usage of the ``var`` keyword breaks a lot of things, and the bottom line is that they generally need to bring some of the private variables into a more global context.
 
-Speaking of global contexts, when you bring variables into the global scope, err on the side of verbose names.  A rule-of-thumb I use is any varible in the local scope should be at least 6 characters long.  
-
-````js
-// bad!  creates unreadable code 
-var f = 0;
-
-// still too short 
-var foo = 0;
-
-// much better!
-fooCount = 0;
-
-// ideal
-currentFooIndex = 0;
-````
-
-The reason behind wanting to use long variable names has to do with the entropic information density of longer strings, which leads to less name collissions.  This is particularly useful when refactoring.  Sometimes you'll want to do a global Find And Replace on just 'foo' eleemnts, or just 'count' elements, or just 'current' elements, etc.  Having long names will help in refactoring, and prevent name collissions.  Short, concise names are prone to causing name collisions.  Also this rule-of-thumb about name lengths applies to function names too.
-
 
 ### Dependency Load Ordering
 
@@ -257,8 +239,9 @@ A { B { C { D { E | E | E } C } B { C { D { E | E | E } B
 
 Make sense?  What's happening here is that a Meteor application has four or five 'layers' or 'scopes' that it needs to create to get the reactive rendering templates working.  And each scope has instructions to create it's children scopes.  So, as a person navigates through their application, they'll be building up and tearing down templates, navigating pages, and the like, and people will be going up and down these scopes.  
 
-If you're familiar with the OSI 7 Layer Model, it might help to think of the Event Cycle and templating engine in terms of going up and down a network protocol stack.  But, in this case, we're structuring the application UI around a 5 layer rendering stack.
-http://en.wikipedia.org/wiki/OSI_model
+If you're familiar with the OSI 7 Layer Model, it might help to think of the Event Cycle and templating engine in terms of going up and down a network protocol stack.  But, in this case, we're structuring the application UI around a 5 layer rendering stack.  
+http://en.wikipedia.org/wiki/OSI_model  
+http://www.soumyabrata.com/blog-images/osi-reference-model.png  
 
 ## Templates
 **Q:  I want to use Jade/Blade/Dust as my templating engine.  Are they supported?**  
