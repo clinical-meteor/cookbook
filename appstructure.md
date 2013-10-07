@@ -152,7 +152,6 @@ Installing a 3rd party library doesn't have to be hard.  If you're having proble
 
 
 4.  You'll also want to check for var comments in your library.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  So, many libraries will use the 'var' keyword to simply define a variable to the global scope; but Meteor will interpret the 'var' to mean a variable specific to the local file.  This causes problems sometimes.
-
 ````js
 // variable restricted to local file
 var foo = 42;
