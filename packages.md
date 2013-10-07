@@ -27,17 +27,19 @@ Package.describe({
 
 // If you're bundling an NPM package, be sure to reference the package as a dependency
 Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
- 
-Package.register_extension(
-    "otf", function (bundle, source_path, serve_path, where) {
-        bundle.add_resource({
-            type: "static",
-            path: '/fonts/' + serve_path.split('/').pop(),
-            source_file: source_path,
-            where: where
-        });
-    }
-);
+
+// Depreciated as of Meteor 0.6.6  
+// Package.register_extension(
+//     "otf", function (bundle, source_path, serve_path, where) {
+//         bundle.add_resource({
+//             type: "static",
+//             path: '/fonts/' + serve_path.split('/').pop(),
+//             source_file: source_path,
+//             where: where
+//         });
+//     }
+// );
+
 Package.on_use(function (api) {
   
   var path = Npm.require('path');
