@@ -148,6 +148,7 @@ Installing a 3rd party library doesn't have to be hard.  If you're having proble
 
 
 4.  You'll also want to check for var comments in your library.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  So, many libraries will use the 'var' keyword to simply define a variable to the global scope; but Meteor will interpret the 'var' to mean a variable specific to the local file.  This causes problems sometimes.
+
 ````js
 // variable restricted to local file
 var foo = 42;
@@ -209,27 +210,55 @@ The simple rule of thumb is that the bundler includes files in the deepest direc
 
 ### The Event Cycle
 
+Once people get their files loaded correctly, they'll then need to step into the Event Cycle, and start triggering events.  Unlike sequential imperative style programming, this style of programming involves an Application Event Loop that gets run.  Just think of it as the engine of your application.  The motor that's constantly turning and making your application run and your templates reactive.  But, unlike a simmple shells script or an imperative object-oriented program in C# or Java, our Meteor application is going to have parts of it that run over-and-over-and-over again, as part of our Event Cycle.
+
+Different parts of your application will exist in different parts of the Event Cycle.  So, what does the Event Cycle look like?  Well, that's a difficult question.  The following is an imperfect representation, but it should get you started.   
+
 ````js
-// meteor will then startup
+// A: meteor will startup
 Meteor.startup();  
 
-// a page will load
-document.onload
+  // B: a page will load
+  document.onload
 
-// templates will render
-Template.foo.created
+    // C: templates be created
+    Template.foo.created
 
-// templates will finalize
-Template.foo.rendered
+      // D: and then rendered
+      Template.foo.rendered
 
-// and fields will populate
-Template.foo.my_custom_field
+        // E: and filled in with data 
+        Template.foo.my_custom_field
 
-// and, eventually, the document will unload
-document.onunload
+    // C:  templates will finalize
+    // we could also call this F, if we were doing things sequentially or imperatively
+    // but we call it C to represent the functional scope we're in
+    Template.foo.destroyed
 
+  // B:  and, eventually, the document will unload
+  // we could also call this G, if we were doing things sequentially or imperatively
+  // but we call it B to represent the functional scope we're in
+  document.onunload
+  
+// there is no matching Meteor.shutdown()
+````
 
+Basically, what happens is that the application will step through sequences A { B { C { D { E until the page templates are all rendered with data.  Once the application is running, the bulk of what Meteor does is refreshing D and E.  So, a typical application run might look like this:
 
+````
+A { B { C { D { E | E | E | E } D { E | E | E } D | D | D { E | E | E | E | E } B
+````
+
+But, if you navigate to a new page with the router, or press 'refresh', you'll close out templates, and it will look something like this:
+
+````
+A { B { C { D { E | E | E } C } B { C { D { E | E | E } B
+````
+
+Make sense?  What's happening here is that a Meteor application has four or five 'layers' or 'scopes' that it needs to create to get the reactive rendering templates working.  And each scope has instructions to create it's children scopes.  So, as a person navigates through their application, they'll be building up and tearing down templates, navigating pages, and the like, and people will be going up and down these scopes.  
+
+If you're familiar with the OSI 7 Layer Model, it might help to think of the Event Cycle and templating engine in terms of going up and down a network protocol stack.  But, in this case, we're structuring the application UI around a 5 layer rendering stack.
+http://en.wikipedia.org/wiki/OSI_model
 
 ## Templates
 **Q:  I want to use Jade/Blade/Dust as my templating engine.  Are they supported?**  
