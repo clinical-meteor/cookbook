@@ -243,7 +243,7 @@ Also, be on the lookout for what I refer to the 'bubble templating'.  I don't kn
 The end result is that it works really well (I have *no* complaints about it, and never plan on going back, if I can help it), particularly when the templates are tied into Session variables.  But it's a very different approach than C, C#, ObjectiveC and Java.  Very different.  So don't worry about MVC in the traditional sense.  You won't be spending the weeks of drudgery doing plumbing and wiring like you're accustomed to.  And everything sitting in the global context... hasn't been an issue for me so far.  
 
 
-## Document Model Templates
+### Document Model Templates
 **Q:  I want to use Jade/Blade/Dust as my templating engine.  Are they supported?**  
 Why would you want to do this?  The Spark templates have had a lot of work put into them, and can basically do everything that Jade, Blade, and Dust can do, but better.  That being said, if you're hell-bent on replacing the default templating engine, a few people have reporting some success getting jade and blade working, and there are packages in Atmosphere, but nobody seems to have gotten dust working yet.  Of the three, Jade seems to have the best documentation and integration so far.  But seriously... ask yourself why you would ever actually want to do this.  Don't you have better things to do with your time?
 
@@ -258,6 +258,7 @@ https://github.com/SimonDegraeve/meteor-jade-handlebars
 
 ### View Theming
 
+**Q:  How do I add themes to my application?**  
 Theming in Meteor is beautiful, because we have CSS precompilers at our disposal.  Start off with an html template: 
 
 ````html
