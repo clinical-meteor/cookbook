@@ -109,6 +109,7 @@ ROOT_URL
 METEOR_SETTINGS  
 NODE_OPTIONS  
 DISABLE_WEBSOCKETS
+MAIL_URL
 
 
 ------------------------------------------------------------------
