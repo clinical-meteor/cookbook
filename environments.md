@@ -109,7 +109,8 @@ ROOT_URL
 METEOR_SETTINGS  
 NODE_OPTIONS  
 DISABLE_WEBSOCKETS  
-MAIL_URL
+MAIL_URL  
+DDP_DEFAULT_CONNECTION_URL  
 
 
 ------------------------------------------------------------------
