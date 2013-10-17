@@ -111,6 +111,8 @@ NODE_OPTIONS
 DISABLE_WEBSOCKETS  
 MAIL_URL  
 DDP_DEFAULT_CONNECTION_URL  
+HTTP_PROXY  
+HTTPS_PROXY  
 
 
 ------------------------------------------------------------------
