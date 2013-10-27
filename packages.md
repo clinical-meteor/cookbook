@@ -5,7 +5,7 @@
 
 **Q:  How do I install packages without Atmosphere?**  
 
-Simple!  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the following syntax.  
+Simple!  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the syntax described in the following code sample.  
 https://atmosphere.meteor.com/wtf/package  
 ````json
 {
