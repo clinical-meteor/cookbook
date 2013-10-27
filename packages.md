@@ -7,7 +7,7 @@
 
 Simple!  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the following syntax.  
 https://atmosphere.meteor.com/wtf/package  
-````js
+````json
 {
   "meteor": {
     "branch": "master"
