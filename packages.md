@@ -3,6 +3,38 @@
 ------------------------------------------------------------------
 ## PACKAGES
 
+**Q:  How do I install packages without Atmosphere?**  
+
+Simple!  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the following syntax.  
+https://atmosphere.meteor.com/wtf/package  
+````js
+{
+  "meteor": {
+    "branch": "master"
+  },
+  "packages": {
+    "audio-click": {
+      "git": "https://github.com/awatson1978/audio-click.git"
+    },
+    "fonts-barcode": {
+      "git": "https://github.com/awatson1978/fonts-barcode.git"
+    },
+    "hipaa-audit-log": {
+      "git": "https://github.com/awatson1978/hipaa-audit-log.git"
+    },
+    "reactive-overlays": {
+      "git": "https://github.com/awatson1978/reactive-overlays.git"
+    },
+    "accounts-famous-dead-people": {
+      "git": "https://github.com/awatson1978/accounts-famous-dead-people.git"
+    },
+    "device-detection": {},
+    "cordova-phonegap": {},
+    "keybindings": {}
+  }
+}
+````
+
 
 **Q:  How do I create a package for distribution?**  
 Unofficially, this seems to to be all the available options currently in use in the package creation process.  
