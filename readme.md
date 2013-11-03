@@ -17,6 +17,7 @@ The Cookbook is growing!  It was getting so cumbersome to edit that I split it i
 [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages.md)  
 [Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/errors.md)  
 [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md)  
+[Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/breaking-news.md)  
 
 **External Resources**  
 [Async & Futures](https://gist.github.com/possibilities/3443021)
