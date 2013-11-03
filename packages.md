@@ -98,10 +98,12 @@ Once all that is done, you should have a Foo object which you can now use in you
 ````
 
 
-### Packages We Love And Should be Included Meteor Core
+### Packages We Love And Should be Included Meteor Core  
 
+**Q:  Which packages should I use in my application?**  
+So, with the growing number of packages available in Atmosphere, a question 
 
-**Payments - Stripe**  
+***Payments - Stripe***  
 https://atmosphere.meteor.com/package/stripe  
 https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
 
