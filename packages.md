@@ -37,12 +37,7 @@ https://atmosphere.meteor.com/wtf/package
 
 
 **Q:  How do I create a package for distribution?**  
-Unofficially, this seems to to be all the available options currently in use in the package creation process.  
-
-````js
- // and now use the function like so:
- Foo.function();  
-````
+So, there isn't an official documented API for creating packages, as far as I'm aware.  The best we can do is sort of document all of the api calls we've seen in the wild.  The following example illustrates all the different syntax we've seen in creating packages.
 
 
 ````js
@@ -59,18 +54,6 @@ Package.describe({
 
 // If you're bundling an NPM package, be sure to reference the package as a dependency
 Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
-
-// Depreciated as of Meteor 0.6.6  
-// Package.register_extension(
-//     "otf", function (bundle, source_path, serve_path, where) {
-//         bundle.add_resource({
-//             type: "static",
-//             path: '/fonts/' + serve_path.split('/').pop(),
-//             source_file: source_path,
-//             where: where
-//         });
-//     }
-// );
 
 Package.on_use(function (api) {
   
@@ -105,6 +88,13 @@ Package.on_test(function (api) {
   // add files to specific locations using api.add_files
   api.add_files('library_name.js', 'directory/to/install/into');
 });
+````
+
+Once all that is done, you should have a Foo object which you can now use in your application, like so:
+
+````js
+ // and now use the function like so:
+ Foo.function();  
 ````
 
 
