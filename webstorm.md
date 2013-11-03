@@ -53,7 +53,7 @@ You want to exclude the ``.meteor`` file so that the Meteor build process doesn'
 
 I find it very convenient to create a Less file template, using some default media styles to help with responsive mobile application design.  
 
-**View Template**  
+**Meteor - Mobile View**  
 ````css
 #guestPage{
   .foo{
@@ -92,7 +92,7 @@ I find it very convenient to create a Less file template, using some default med
 ````
 
 
-**Page Model Template**  
+**Meteor - Basic Page Model**  
 ````html
 <template name="fooPage">
   <div id="fooPage" class="page">
@@ -101,6 +101,42 @@ I find it very convenient to create a Less file template, using some default med
     </div>
   </div>
 </template>
+````
+
+**Meteor - List Page Controller**  
+````js
+Template.fooPage.events({
+  'click .btn':function(){
+    console.count('click .btn);
+    alert('click .btn!);
+  }
+})
+Template.fooList.fooList = function(){
+  return Foo.find();
+}
+````
+
+**Meteor - List Page Model**  
+````html
+<template name="fooPage">
+  <div id="fooPage" class="page">
+    <div class="container">
+      <ul>
+      {{each fooList}}
+        {{> fooListItem }}
+      {{/each}}
+      </ul>    
+    </div>
+  </div>
+</template>
+
+
+<template name="fooListItem">
+  <li>
+    {{_id}}
+  </ulil>
+</template>
+
 ````
 
 
@@ -173,25 +209,73 @@ try{
 $END$
 ````
 
+self.once
 ````js
+  self = this;
+  if(! self.once) {
+    $SELECTED$
+    $END$
+  }
+  self.once = true;
 ````
 
+if/else block
 ````js
+if($END$){
+    $SELECTION$
+}else{
+
+}
+````
+
+console.group
+````js
+console.group('$END$');
+$SELECTION$
+console.endGroup();
 ````
 
 
-### Refactoring
+
+bootstrap panel - basic
+````js
+<div class="panel panel-default">
+  <div class="panel-heading">
+    $END$  
+  </div>
+  $SELECTION$
+</div>
+````
 
 
+bootstrap panel - complete
+````js
+<div class="panel panel-default">
+  <div class="panel-heading">
+    $END$  
+  </div>
+  $SELECTION$
+  <div class="panel-footer">
+  </div>
+</div>
+````
 
+bootstrap panel - minimal
+````js
+<div class="panel panel-default">
+  $SELECTION$
+</div>
+$END$  
+````
 
-
-
-
-### Javascript Libraries
-
-
-
+new page template
+````js
+<template name="$END$">
+  <div id="newPage" class="page">
+    $SELECTION$
+  </div>
+</template>
+````
 
 
 
