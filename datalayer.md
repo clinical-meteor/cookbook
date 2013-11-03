@@ -121,6 +121,7 @@ Well, you might want to check out Sails.js.  It looks like a very promising fram
 http://sailsjs.org/#!
 
 ## Collections
+
   
 **Q:  How do I insert an { array | date | boolean | session } into a document record?**  
 This example should mostly cover it:
@@ -136,6 +137,13 @@ Todos.insert({
   tags: tag ? [tag] : []
 });
 ````
+
+**Q:  How do I get the _id of the most recently created document?**  
+
+````
+var id = Todos.insert({text: 'foo'});
+````
+
 
 **Q:  Something is funny with arrays in my document.  Help!**  
 So, Mongo reactivity is currently limited, in that it's not reactive on arrays of object.  
