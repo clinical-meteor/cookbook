@@ -3,11 +3,14 @@
 This page is a little different than some of the other pages in the Meteor Cookbook, as it is intended more for the UI designer or business executive.  Eventually, I hope to make it into an infographic poster.   
 
  
-### Number Theory  
-Computers understand three numbers:  0,. 1, and infinity  
-The hop from 0 to 1 is a fundamental   
-but so is the hop from 1 to Infinity  
+### Set Theory  
+There's an old saying that computers only understand three numbers:  0, 1, and many.  This saying comes from the branch of mathematics known as set theory, which concerns itself with collections of objects, and is a colloquial way of describing empty sets, regular sets, and unbounded sets.  Suffice it to say that, in set theory, the hop from 0 to 1 is a fundamental event.  There's an existential event that occurs when going from nothing to something.  It's creative.  It's existential.  It's generative.  Once you get to 1, a person can build up all the other integers by repeating 1 a whole bunch of times.  But getting to Infinity... that requires another special type of hop, that is as unique as going from 0 to 1.  The hop from 1 to Infinity is also existential.  But in a more metaphyiscal sense. 
+
+### Proofs
+
 n+1 proofs  
+
+
 So we always implement a feature for a single person, then apply it to the crowd; the 1 to the many  
 
 ### Data Transformations  
