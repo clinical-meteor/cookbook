@@ -11,17 +11,14 @@ So we always implement a feature for a single person, then apply it to the crowd
 
 Data Transformations
 
-list » table
-list » hash
 
 0 » 1
 1 » n
-0 || false
-1 || true
-0 || black
-1 || white
 
-if 1 or 0 || if boolean
+0 = false = #000000 = black
+0 = true  = #000000 = white
+
+if 1 or 0 = if boolean
 boolean » string
 boolean » number > alphabet > character > word > sentence > paragraph > section > chapter > book > series
 string » image
