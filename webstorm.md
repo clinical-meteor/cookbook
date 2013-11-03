@@ -9,7 +9,8 @@ http://www.jetbrains.com/webstorm/
 http://www.jetbrains.com/webstorm/download/download_thanks.jsp?os=mac  
 
 
-### Download the Settings.jar File
+### Download the Settings.jar File  
+There's now a pre-compiled settings file which you can download and import directly into WebStorm, rather than following all the instructions in this document.  
 https://github.com/awatson1978/webstorm-settings
 
 ### Implementing Meteor Styleguide
