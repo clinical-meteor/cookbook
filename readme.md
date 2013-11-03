@@ -25,8 +25,9 @@ The Cookbook is growing!  It was getting so cumbersome to edit that I split it i
 
 **Community Breaking News - 0.6.6**  
 
-As of 0.6.6, Package.register_extention() is now deprecated and breaks applications.
+As of 0.6.6, Package.register_extention() is now deprecated and breaks applications.  Please remove any such calls from your packages.
 
+````js
 // Depreciated as of Meteor 0.6.6  
 // Package.register_extension(
 //     "otf", function (bundle, source_path, serve_path, where) {
@@ -38,6 +39,7 @@ As of 0.6.6, Package.register_extention() is now deprecated and breaks applicati
 //         });
 //     }
 // );
+````
 
 **Community Brekaing News - 0.6.5**  
 
