@@ -9,6 +9,9 @@ http://www.jetbrains.com/webstorm/
 http://www.jetbrains.com/webstorm/download/download_thanks.jsp?os=mac  
 
 
+### Download the Settings.jar File
+https://github.com/awatson1978/webstorm-settings
+
 ### Implementing Meteor Styleguide
 https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
 
