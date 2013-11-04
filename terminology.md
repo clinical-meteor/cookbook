@@ -9,6 +9,8 @@ https://github.com/meteor/meteor/wiki/Meteor-Style-Guide
 This is simply the protocol that enables the Meteor.publish() and Meteor.subscribe() methods.  It does all the heavy lifting of data communications between the server and client.  
 http://meteor.com/blog/2012/03/21/introducing-ddp  
 
+**MDG - Meteor Development Group**  
+Nickname for the wonderful folks who brought us Meteor.
 
 **ORM - Object Relation Mapper**    
 Something that the Meteor community doesn't like, related to SQL databases.  Most SQL table structures are designed with a Don't Repeat Yourself (DRY) principle, and create tables that isolate data so it's only entered into the database a single time.  This process is called normalization, and results in data tables that don't represent the data objects that are typically used in the application itself.  Thus, a layer is added above the database, which translates the normalized data into usable data objects for the application.  This mapping layer is the cause of countless problems, and is something Meteor has been architected without. 
