@@ -10,6 +10,8 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - [Grammar](https://github.com/awatson1978/meteor-cookbook/blob/master/grammar.md)  
 - [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md)  
 - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md)  
+  - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-development.md)  
+  - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-production.md)  
 - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md)  
 - [Application Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
 - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md)
