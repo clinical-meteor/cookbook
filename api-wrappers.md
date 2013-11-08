@@ -16,10 +16,14 @@ The documentation for creating smart packages is somewhat spotty, so check out t
 https://github.com/awatson1978/meteor-cookbook/blob/master/packages.md
 
 In particular, you'll want to make sure that you have an api.export() call, like so:
+
+````js
 api.export('PredictionIO');
+````
 
 After that, just add a file to your package to implement the API by creating a Prediction object, which should look something like this:
 
+````js
 PredictionIO = {
   identify: function(input){
     return Http.get('http://prediction.io/api/identity/' + input);    
@@ -28,6 +32,7 @@ PredictionIO = {
     return Http.put('http://prediction.io/api/record_action_on_item/' + firstInput + '&' + secondInput);    
   }
 }
+````
 
 Meteor supports Http.get(), Http.post(), Http.put(), etc.
 http://docs.meteor.com/#http_get
