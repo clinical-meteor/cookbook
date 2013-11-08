@@ -7,7 +7,7 @@ The Cookbook is growing!  It was getting so cumbersome to edit that I split it i
 **Index**  
 
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/general-advice.md)  
-- [Language]  
+- [Language References](https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md)
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md)  
   - [Syntax](https://github.com/awatson1978/meteor-cookbook/blob/master/syntax.md)  
   - [Grammar](https://github.com/awatson1978/meteor-cookbook/blob/master/grammar.md)  
