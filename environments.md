@@ -106,6 +106,7 @@ So far, the following variables have been seen in the wild:
 PORT  
 MONGO_URL  
 ROOT_URL  
+OPLOG_URL  
 METEOR_SETTINGS  
 NODE_OPTIONS  
 DISABLE_WEBSOCKETS  
