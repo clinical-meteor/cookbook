@@ -41,7 +41,7 @@ Package.on_use(function (api) {
 After that, just add a file to your package to implement the API by creating a Prediction object, which should look something like this:
 
 ````js
-PredictionIO = {
+Foo = {
   identify: function(input){
     return Http.get('http://foo.net/api/identity/' + input);    
   },
