@@ -1,7 +1,6 @@
 ## Integration of 3rd Party APIs  
 
-**Q:  How do I integrate a 3rd party REST API?**  
-Conceptually, it's really not all that hard.  However, there are a few steps to it, and you'll find that it may help to create a sandbox environment for the API before integrating it into your application.
+Conceptually, it's really not all that hard to integrate 3rd party REST APIs.  However, there are a few steps to it, and you'll find that it may help to create a sandbox environment for the API before integrating it into your application.
 
 #### Create Sandbox Environment  
 This really can't be stressed enough.  If you try writing an API wrapper inside of another application, there's a good chance it's going to get confused with all the other features you're trying to implement.  When writing an API wrapper, the goal is to create a wrapper object which implements the API function locally within Meteor.  Implementing all the nifty application functionality comes later.  So, do yourself a favor... set up a new project to implement the API wrapper.  
