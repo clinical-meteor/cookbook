@@ -43,7 +43,7 @@ After that, just add a file to your package to implement the API by creating a P
 ````js
 Foo = {
   identify: function(input){
-    return Http.get('http://foo.net/api/identity/' + input);    
+    return Http.get('http://foo.net/api/identify/' + input);    
   },
   record_action_on_item: function(firstInput, secondInput){
     return Http.put('http://foo.net/api/record_action_on_item/' + firstInput + '&' + secondInput);    
