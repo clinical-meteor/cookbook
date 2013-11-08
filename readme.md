@@ -13,7 +13,7 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-development.md)  
   - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-production.md)  
 - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md)  
-- [Application Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
+- [Application Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
   - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/filestructure.md) 
 - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md)
   - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/collections.md)
