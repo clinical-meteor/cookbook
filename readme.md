@@ -56,7 +56,7 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - Mobile App
   - Landing Page
   - Image Archive
-  - Content Mangaement System
+  - Content Management System
   - Microblogging Framework
   - Workqueues
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/breaking-news.md)  
