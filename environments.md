@@ -13,6 +13,15 @@ Quick deploy a meteor application on Nitrous.io using the following command...
 parts install meteor
 ````
 
+**What's the best PaaS provider for Meteor apps?**    
+Modulus.io has bypassed Heroku as our favorite PaaS provider.  
+
+http://blog.modulus.io/deploying-meteor-apps-on-modulus  
+http://blog.modulus.io/demeteorizer  
+https://github.com/onmodulus/demeteorizer  
+
+
+
 **Q:  How do I detect the environment?**  
 ````js
 //------------------------------------------------------------------------------------------------------
