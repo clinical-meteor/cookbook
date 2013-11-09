@@ -27,8 +27,22 @@ The holy grail of web-apps is a single code base across different platforms.  So
 #### X-Code Configuration
 
 The latest X-Code configuration settings for a PhoneGap application
+
+````sh
+# terminal commands in osx
+cd phonegap-master/
+cd lib/ios/bin/
+./create ~/Documents/Cordova/TodosApp com.pentasyllabic.TodosAdd TodosApp
 ````
+
+Once set up, configure your X-Code project.  
+````sh
 architecture ``armv7 armv7s``  
+````
+
+And edit the project Cordova/TodosApp/config.xm file.  
+````html
+<preference name="UIWebViewBounce" value="false" />
 ````
 
 #### Project Configuration for iFrame Method
