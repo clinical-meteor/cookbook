@@ -1,5 +1,6 @@
 **Q:  How do I import a JSON file into Meteor?**   
 
+````js
 // This gist is meant to help you load a json datafile into a Meteor application.  More specifically, it's useful to migrate or bootstrap a Mongo datacollection.
 // The easiest way to do this task is to open up three command shell windows.  
 // As a few of the commands will take over the command shell and direct their output to stdout.  
@@ -54,4 +55,4 @@ meteor mongo --port 3002
  
 // copy collections from staging database into meteor database
 db.copyDatabase('test', 'meteor', 'localhost');
-
+````
