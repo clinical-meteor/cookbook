@@ -1,5 +1,17 @@
  
+
+
+The simple version of the singleton pattern.  
+````js
+self = this;
+if(! self.once) {
+  $SELECTED$
+  $END$
+}
+self.once = true;
+````
  
+The advanced version of the singleton pattern, using Deps and observeChanges.
 ````js
 /************************ Collections ****************************************/
 Tickets = new Meteor.Collection('tickets');
@@ -39,8 +51,8 @@ if (Meteor.isClient) {
     // Singleton instance
     inst: null,
 
-    // Use underscore's _.once functio to make sure this is only called
-    // once. Subsequent calls will just return.
+    // Use underscore's _.once function to make sure this is only called once.
+    // Subsequent calls will just return.
     init: _.once(function (container) {
       MyPackery.inst = new Packery(container, {
         gutter: 10
