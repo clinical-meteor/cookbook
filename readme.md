@@ -32,9 +32,13 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
     - Peer to Peer
     - Mesh Networking
   - Data-Link Layer
-    - Disk IO
-    - Network IO
-    - Haptics IO
+    - WebKit Browsers
+      - Disk IO
+      - Network IO
+      - Haptics IO
+    - PhoneGap
+      - Accelerometer
+      - Camera
   - Physical Layer
     - Keybindings
     - Mouse Controls
