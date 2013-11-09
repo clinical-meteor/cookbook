@@ -18,7 +18,7 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/filestructure.md) 
   - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/event-cycle.md) 
   - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/namespacing.md) 
-- [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md)
+- [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/layer-data.md)
   - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/collections.md)
   - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/data-transformations.md)
   - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/database-management.md)
