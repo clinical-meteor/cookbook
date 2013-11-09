@@ -1,3 +1,18 @@
+**Q:  Help! I've inherited a Mongo database!  How do I analyze the Collections in it?**  
+
+There's two great utilities you should check out.  First is variety.js, which will give you a great high-level overview.  Start with this one.  
+https://github.com/variety/variety
+````js
+mongo test --eval "var collection = 'users'" variety.js
+````
+
+The second is schema.js, which will let you dig into the collections for more detail on the individual fields.  
+http://skratchdot.com/projects/mongodb-schema/
+
+````js
+sudo mongo --shell schema.js 
+````
+
 **Q:  How do I import a JSON file into Meteor?**   
 
 ````js
