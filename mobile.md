@@ -56,6 +56,20 @@ You'll need to the edit the CDVViewController.m file, and tell PhoneGap to acces
         self.startPage = @"index.html";
     }
 ````
+#### Fixed Sized Windows
+
+There are a couple ways to handle fixed-sized windows.  The following method fixes the size of the window OUTSIDE of PhoneGap, giving a fixed-sized window on the desktop.  Sometimes it's easiest to manage user's expectations and UI design by limiting options!  
+````js
+// create a window of a specific size
+var w=window.open('','', 'width=100,height=100');
+w.resizeTo(500,500);
+ 
+// prevent window resize
+var size = [window.width,window.height];  //public variable
+$(window).resize(function(){
+    window.resizeTo(size[0],size[1]);
+});
+````
 
 #### Offline 
 
