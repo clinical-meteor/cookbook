@@ -9,6 +9,7 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - [Syntax](https://github.com/awatson1978/meteor-cookbook/blob/master/syntax.md)  
   - [Grammar](https://github.com/awatson1978/meteor-cookbook/blob/master/grammar.md)  
 - [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md)  
+  - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/quickstart.md)  
 - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md)  
   - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-development.md)  
   - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-production.md)  
