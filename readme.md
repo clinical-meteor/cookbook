@@ -10,7 +10,7 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - [Grammar](https://github.com/awatson1978/meteor-cookbook/blob/master/grammar.md)  
 - [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md)  
   - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/quickstart.md)  
-  - [Integrated Development Environment(Webstorm)](https://github.com/awatson1978/meteor-cookbook/blob/master/webstorm.md)
+  - [Integrated Development Environment](https://github.com/awatson1978/meteor-cookbook/blob/master/webstorm.md)
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md)  
 - Open Systems Interconnection Model
   - [Application Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
