@@ -14,7 +14,7 @@ parts install meteor
 ````
 
 **What's the best PaaS provider for Meteor apps?**    
-Modulus.io has bypassed Heroku as our favorite PaaS provider.  
+Modulus.io has bypassed Heroku as our favorite PaaS provider.  Check them out!  
 
 http://blog.modulus.io/deploying-meteor-apps-on-modulus  
 http://blog.modulus.io/demeteorizer  
