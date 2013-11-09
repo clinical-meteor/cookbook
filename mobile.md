@@ -47,9 +47,7 @@ And edit the project Cordova/TodosApp/config.xm file.
 
 #### Project Configuration for iFrame Method
 
-You'll need to the edit the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  
-
-CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m  
+You'll need to the edit the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m  
 ````Obj-C
     //self.wwwFolderName = @"www";
     self.wwwFolderName = @"http://todos.meteor.com";
