@@ -30,8 +30,9 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
 - [WebStorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/webstorm.md)
 
 **In Progress**  
-[Async & Futures](https://gist.github.com/possibilities/3443021)
-[Database Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/database-migrations.md)
+[Async & Futures](https://gist.github.com/possibilities/3443021)  
+[Database Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/database-migrations.md)  
+
 
 
 
