@@ -35,6 +35,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Fonts
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md)
     - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/collections.md)
+      - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md)  
+      - Images (GridFS)
+      - Geolocation
     - Document Schemas
     - Data Validation
     - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/data-transformations.md)
@@ -61,7 +64,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Mouse Controls
     - Mutlitouch
     - Sign Language
-- [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md)  
 - [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages.md)  
 - [Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/errors.md)  
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md)  
