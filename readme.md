@@ -16,12 +16,12 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
     - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/filestructure.md) 
     - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/event-cycle.md) 
     - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/namespacing.md) 
-    - App Structure
+    - [App Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
       - Models
       - Views
       - Controllers
 - Open Systems Interconnection Model
-  - [Application Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
+  - Application Layer
     - Routing
     - Workflow
       - Pages
