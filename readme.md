@@ -38,6 +38,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md)  
       - Images (GridFS)
       - Geolocation
+      - Analytics
     - Document Schemas
     - Data Validation
     - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/data-transformations.md)
@@ -69,7 +70,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md)  
   - Blog
   - Forum
-  - Mobile App
+  - Mobile Apps
   - Landing Page
   - Image Archive
   - Content Management System
@@ -77,6 +78,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Workqueues
   - Geolocation  
   - Resource Scheduling  
+  - Data Analytics  
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/breaking-news.md)  
 
 **In Progress**  
