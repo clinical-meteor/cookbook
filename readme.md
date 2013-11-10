@@ -12,8 +12,7 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/quickstart.md)  
   - [Integrated Development Environment](https://github.com/awatson1978/meteor-cookbook/blob/master/webstorm.md)
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md)  
-- Open Systems Interconnection Model
-  - [Application Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
+- Site Mechanics
     - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/filestructure.md) 
     - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/event-cycle.md) 
     - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/namespacing.md) 
@@ -21,6 +20,9 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
       - Models
       - Views
       - Controllers
+- Open Systems Interconnection Model
+  - [Application Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
+    - Routing
     - Workflow
       - Pages
       - Modal Dialogs
