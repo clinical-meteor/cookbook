@@ -22,8 +22,9 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
       - Views
       - Controllers
     - Workflow
-      - Errors & Alerts
+      - Pages
       - Modal Dialogs
+      - Errors & Alerts
   - Presentation Layer
     - Templates
     - Responsive Design
