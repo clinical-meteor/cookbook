@@ -59,6 +59,8 @@ Hi.  Welcome to my Meteor Cookbook, FAQ, and Tutorial, culled from about 9 month
   - Content Management System
   - Microblogging Framework
   - Workqueues
+  - Geolocation  
+  - Resource Scheduling  
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/breaking-news.md)  
 
 **In Progress**  
