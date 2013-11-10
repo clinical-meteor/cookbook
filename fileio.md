@@ -1,4 +1,5 @@
 ## File Input/Output
+For when you need to read and parse a file on the server disk drive.  Useful for persistent data-drops and initialization files.  Be careful, as this solution doens't scale horizontally.  So be sure that you're using a shared-nothing architecture.  
 
 ````js
 // Asynchronous Method.
