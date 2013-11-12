@@ -2,6 +2,7 @@
 
 Conceptually, it's really not all that hard to integrate 3rd party REST APIs.  However, there are a few steps to it, and you'll find that it may help to create a sandbox environment for the API before integrating it into your application.
 
+
 #### Create Sandbox Environment  
 This really can't be stressed enough.  If you try writing an API wrapper inside of another application, there's a good chance it's going to get confused with all the other features you're trying to implement.  When writing an API wrapper, the goal is to create a wrapper object which implements the API function locally within Meteor.  Implementing all the nifty application functionality comes later.  So, do yourself a favor... set up a new project to implement the API wrapper.  
 
@@ -54,6 +55,21 @@ Foo = {
 Meteor supports Http.get(), Http.post(), Http.put(), etc, so that's undoubtably the best way to call your REST API.
 http://docs.meteor.com/#http_get
 
+If the API is chatty and verbose, you may receive multiple packets; in which case you'll need to reassemble them.  This is a big hassle.  If you think the API is returning multiple packets, you're probably going to want to use the 'request' npm module on the server.  
+https://github.com/mikeal/request
+
+You'll want to use a ``Npm.require('request')``.
+
+#### Useful Tools  
+Some useful tools as you implement the API....
+
+Dev HTTP Client
+https://chrome.google.com/webstore/detail/dev-http-client/aejoelaoggembcahagimdiliamlcdmfm
+
+REST Client
+https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm/
+
+
 #### Include the API Package in your Application  
 At this point, you're still building your package, so you probably haven't published to atmosphere yet.  Manually add your package to your application by editing your smart.json file, like so:  
 ````js
@@ -80,4 +96,6 @@ Obviously you'll want to adjust function names, arguments, urls, and the like, t
 #### Publish to Atmosphere  
 After all that is done, you'll want to post to Atmosphere for the community to use, so people can simply run Add your ``mrt add foo-api-wrapper``.
 https://gist.github.com/awatson1978/7293949
+
+
 
