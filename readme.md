@@ -25,6 +25,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Pages
       - Modal Dialogs
       - Errors & Alerts
+    - Application Programming Interfaces
+      - Consuming a REST API
+      - Exposing a REST API
   - Presentation Layer
     - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
     - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
