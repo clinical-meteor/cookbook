@@ -30,7 +30,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Presentation Layer
     - Templates
     - Responsive Design
-    - Animations
+    - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
     - Page Transitions
     - Fonts
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
