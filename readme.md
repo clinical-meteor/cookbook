@@ -28,6 +28,11 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Application Programming Interfaces
       - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)  
       - Exposing a REST API
+    - User Interface Patterns
+      - Page Resize
+      - Drag and Drop
+      - Scroll Lists
+      - Isotope
   - Presentation Layer
     - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
     - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
