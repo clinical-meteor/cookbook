@@ -6,7 +6,7 @@ Using CSS3 transforms will allow you to run things on the GPU, and is generally 
 
 However, with Javascript and SVG, you can build beautiful data-driven animations using D3.js.  But they are very tricky and fickle to create.
 
-### CSS3 Transform Libraries  
+### Animations in the View/Presentation Layer    
 For basic GPU accelerated animations using CSS3 transforms, start with the following links...  
 
 https://www.webkit.org/blog/386/3d-transforms/  
