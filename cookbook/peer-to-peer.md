@@ -17,5 +17,8 @@ http://www.youtube.com/watch?v=gkb_x9ZN0Vo&feature=youtube_gdata_player
 Node Browserfy
 https://github.com/substack/node-browserify
 
-#### Websockets and RTC  
+**Q:  How do I enable/disable websockets?**  
 lorem ipsum...
+
+
+**Q:  How do I know if RTC is working?**  
