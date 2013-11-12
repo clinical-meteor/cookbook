@@ -57,7 +57,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
       - Network IO
       - Haptics IO
-    - PhoneGap
+    - Mobile Devices
       - Accelerometer
       - Camera
   - Physical Layer
