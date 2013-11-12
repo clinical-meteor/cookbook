@@ -54,22 +54,6 @@ Website with Facebook Login > Site URL:  http://might-river-5358.herokuapp.com
 http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor  
 
 
-
-
-
-**Q:  There are weird blue artifacts when using touch monitors.  How do I get rid of them?**  
-The tap events don't handle :hover pseudoclasses very well.  Trying sprinkling your application with the following CSS class:
-
-````
-.unselectable{
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-````
-
-
 **Q:  Is there a way to get a login-page, and not have a drop-down menu?'**  
 Check out this very clever package.  I haven't tried it, but it looks very promising.    
 https://atmosphere.meteor.com/package/accounts-entry  
