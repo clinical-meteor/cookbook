@@ -1,8 +1,14 @@
  
 ### Animations  
-Generally speaking, animations are part of the View and the Presentation Layer, since they're implemented using CSS.  Using Javascript to implement animations is not recommended, and will lead to flicker.  Use CSS3 transforms so you can run things on the GPU.  But be careful!  Be sure to audit your CSS files!  
+There are two approaches to creating animations:  either with CSS in the View/Presentation layer, or via Javascript in the Controller/Application layer.  
+
+Using CSS3 transforms will allow you to run things on the GPU, and is generally the easiest way to get flicker-free animations.  But be careful!  Be sure to audit your CSS files!  
+
+However, with Javascript and SVG, you can build beautiful data-driven animations using D3.js.  But they are very tricky and fickle to create.
 
 ### CSS3 Transform Libraries  
+For basic GPU accelerated animations using CSS3 transforms, start with the following links...  
+
 https://www.webkit.org/blog/386/3d-transforms/  
 http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm  
 http://bartaz.github.io/meetjs/css3d/  
