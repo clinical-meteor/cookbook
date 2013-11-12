@@ -1,13 +1,14 @@
  
 
-
-### Controller Libraries
-
+### Core Dependencies  
 **Q:  Is jQuery a core package?**  
 Sortof.  It's a dependency of Spark, and is included in pretty much all core applications.  Assume it's a core package.
 
 **Q:  I'm looking in myapp/.meteor/packages, and I don't see jQuery listed.  Why does my app act like it's loading jQuery?**  
 Because it's a dependency of Spark.  It's a hidden dependency.  The myapp/.meteor/packages is not a definitive list of dependencies.  Just the most immediate dependencies.
+
+
+### 3rd Party Libraries    
 
 **Q:  How do I add dependencies?**  
 If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/loca/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
