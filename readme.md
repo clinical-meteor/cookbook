@@ -28,7 +28,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Modal Dialogs
       - Errors & Alerts
   - Presentation Layer
-    - Templates
+    - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
     - Responsive Design
     - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
     - Page Transitions
