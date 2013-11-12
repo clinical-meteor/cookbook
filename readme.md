@@ -3,20 +3,20 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 
 **Index**  
 
-- [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/general-advice.md)  
-- [Language References](https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md)
-  - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/terminology.md)  
-  - [Syntax](https://github.com/awatson1978/meteor-cookbook/blob/master/syntax.md)  
-  - [Grammar](https://github.com/awatson1978/meteor-cookbook/blob/master/grammar.md)  
-- [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/installation.md)  
-  - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/quickstart.md)  
-  - [Integrated Development Environment](https://github.com/awatson1978/meteor-cookbook/blob/master/webstorm.md)
-  - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/test-driven-development.md)  
+- [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
+- [Language References](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)
+  - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
+  - [Syntax](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
+  - [Grammar](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/grammar.md)  
+- [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/installation.md)  
+  - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
+  - [Integrated Development Environment](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
+  - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
 - Site Mechanics
-    - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/filestructure.md) 
-    - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/event-cycle.md) 
-    - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/namespacing.md) 
-    - [App Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/appstructure.md) 
+    - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/filestructure.md) 
+    - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md) 
+    - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
+    - [App Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/appstructure.md) 
       - Models
       - Views
       - Controllers
@@ -33,28 +33,28 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Animations
     - Page Transitions
     - Fonts
-  - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/datalayer.md)
-    - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/collections.md)
-      - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/accounts.md)  
+  - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
+    - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)
+      - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
       - Images (GridFS)
       - Geolocation
       - Analytics
     - Document Schemas
     - Data Validation
-    - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/data-transformations.md)
-    - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/database-management.md)
+    - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-transformations.md)
+    - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
   - Transport Layer
     - Data Distribution Protocol
     - Clustering
   - Network Layer
-    - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/environments.md)  
-      - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-development.md)  
-      - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/environments-production.md)  
+    - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
+      - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-development.md)  
+      - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
     - Peer to Peer
     - Mesh Networking
   - Data-Link Layer
     - WebKit Browsers
-      - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/fileio.md)  
+      - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
       - Network IO
       - Haptics IO
     - PhoneGap
@@ -65,9 +65,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Mouse Controls
     - Mutlitouch
     - Sign Language
-- [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages.md)  
-- [Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/errors.md)  
-- [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/recipes.md)  
+- [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
+- [Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
+- [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
   - Blog
   - Forum
   - Mobile Apps
@@ -79,11 +79,11 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Geolocation  
   - Resource Scheduling  
   - Data Analytics  
-- [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/breaking-news.md)  
+- [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 
 **In Progress**  
 [Async & Futures](https://gist.github.com/possibilities/3443021)  
-[Database Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/database-migrations.md)  
+[Database Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-migrations.md)  
 
 
 
