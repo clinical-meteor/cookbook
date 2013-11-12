@@ -14,4 +14,8 @@ https://github.com/iceddev/node-chromify
 NodeJS in Chrome Packaged Apps  
 http://www.youtube.com/watch?v=gkb_x9ZN0Vo&feature=youtube_gdata_player  
 
+Node Browserfy
+https://github.com/substack/node-browserify
 
+#### Websockets and RTC  
+lorem ipsum...
