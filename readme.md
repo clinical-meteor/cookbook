@@ -26,7 +26,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Modal Dialogs
       - Errors & Alerts
     - Application Programming Interfaces
-      - [Integrating 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)  
+      - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)  
       - Exposing a REST API
   - Presentation Layer
     - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
