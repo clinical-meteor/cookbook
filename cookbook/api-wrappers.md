@@ -55,10 +55,10 @@ Foo = {
 Meteor supports Http.get(), Http.post(), Http.put(), etc, so that's undoubtably the best way to call your REST API.
 http://docs.meteor.com/#http_get
 
-If the API is chatty and verbose, you may receive multiple packets; in which case you'll need to reassemble them.  This is a big hassle.  If you think the API is returning multiple packets, you're probably going to want to use the 'request' npm module on the server.  
+If the API is chatty and verbose, you may receive multiple packets; in which case you'll need to reassemble them.  This is a big hassle.  If you think the API is returning multiple packets, you're probably going to want to use the 'request' npm module on the server.  You'll want to use a ``Npm.require('request')``.  
 https://github.com/mikeal/request
 
-You'll want to use a ``Npm.require('request')``.
+
 
 #### Useful Tools  
 Some useful tools as you implement the API....
