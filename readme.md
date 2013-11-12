@@ -29,8 +29,8 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Errors & Alerts
   - Presentation Layer
     - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
-    - Responsive Design
     - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
+    - Responsive Design
     - Page Transitions
     - Fonts
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
