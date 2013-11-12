@@ -64,7 +64,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Physical Layer
     - Keybindings
     - Mouse Controls
-    - Mutlitouch
+    - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
     - Sign Language
 - [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
 - [Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
