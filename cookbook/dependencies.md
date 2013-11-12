@@ -7,6 +7,23 @@ Sortof.  It's a dependency of Spark, and is included in pretty much all core app
 **Q:  I'm looking in myapp/.meteor/packages, and I don't see jQuery listed.  Why does my app act like it's loading jQuery?**  
 Because it's a dependency of Spark.  It's a hidden dependency.  The myapp/.meteor/packages is not a definitive list of dependencies.  Just the most immediate dependencies.
 
+### Dependency Load Ordering
+
+Something that really trips people up a lot with Meteor is load ordering and dependencies, particularly if they're accustomed to sequential or imperative style programming (i.e. coming from object-oriented languages and frameworks).  When it comes to the ordering and sequence of events, there are two phases.  First, there's the bundling of resource.  During bundling, as Meteor prepares your application for deployment, it gathers up all your resources and files, and puts them into a bundle according to rules on how **it** thinks things should be ordered.  So, the first step to getting load ordering right, is to learn to adjust your file directories and naming schemas to fit with the Meteor bundler.  
+
+The simple rule of thumb is that the bundler includes files in the deepest directories first (see following example).  You'll note that this bundling order has specifically influenced our previous discussion on 'where should we put files?' 
+
+````js
+// the bundling process output is such that libraries in the deepest directories will be loaded first    
+/client/lib/deepest/folder/library.js  
+/client/lib/deeper/library.js  
+/client/lib/library.js  
+
+// and libraries in the root directory will be loaded last
+/client/library.js  
+
+// meteor then bundles and deploys
+````
 
 ### 3rd Party Libraries    
 
@@ -84,20 +101,4 @@ Installing a 3rd party library doesn't have to be hard.  If you're having proble
 Note:  I'm being judgemental here, and saying certain approaches are 'good' and 'bad', which implies certain ways of coding things.  If you're used to using ``private`` and ``public`` keywords, you'll note that the ``var`` keyword acts like ``private``, and can be useful for encapsulation and preventing internal variables from being shared with outside scopes.  That's a good thing.   Proper encapsulation and scoping should be encouraged.  But for people debugging applications and trying to integrate 3rd party libraries, the default usage of the ``var`` keyword breaks a lot of things, and the bottom line is that they generally need to bring some of the private variables into a more global context.
 
 
-### Dependency Load Ordering
 
-Something that really trips people up a lot with Meteor is load ordering and dependencies, particularly if they're accustomed to sequential or imperative style programming (i.e. coming from object-oriented languages and frameworks).  When it comes to the ordering and sequence of events, there are two phases.  First, there's the bundling of resource.  During bundling, as Meteor prepares your application for deployment, it gathers up all your resources and files, and puts them into a bundle according to rules on how **it** thinks things should be ordered.  So, the first step to getting load ordering right, is to learn to adjust your file directories and naming schemas to fit with the Meteor bundler.  
-
-The simple rule of thumb is that the bundler includes files in the deepest directories first (see following example).  You'll note that this bundling order has specifically influenced our previous discussion on 'where should we put files?' 
-
-````js
-// the bundling process output is such that libraries in the deepest directories will be loaded first    
-/client/lib/deepest/folder/library.js  
-/client/lib/deeper/library.js  
-/client/lib/library.js  
-
-// and libraries in the root directory will be loaded last
-/client/library.js  
-
-// meteor then bundles and deploys
-````
