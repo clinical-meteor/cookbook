@@ -19,7 +19,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [App Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/appstructure.md) 
       - Models
       - Views
-      - Controllers
+      - [Controllers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/controllers.md)  
 - Open Systems Interconnection Model
   - Application Layer
     - Routing
