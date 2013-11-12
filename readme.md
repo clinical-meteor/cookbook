@@ -50,7 +50,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
       - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-development.md)  
       - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
-    - Peer to Peer
+    - [Peer to Peer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/peer-to-peer.md)  
     - Mesh Networking
   - Data-Link Layer
     - WebKit Browsers
