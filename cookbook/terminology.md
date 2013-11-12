@@ -5,6 +5,10 @@ https://github.com/meteor/meteor/wiki/Meteor-Style-Guide
 
 ## Terminology
 
+
+**ACID - Atomicity, Consistency, Isolation, Durability**  
+Generally speaking, when Meteor folks talk about ACID, they're talking about the fact that Mongo doesn't support traditional database transactions; they're not talking about the Acid2 browser compatibility tests.
+
 **DDP - Distributed Data Protocol**  
 This is simply the protocol that enables the Meteor.publish() and Meteor.subscribe() methods.  It does all the heavy lifting of data communications between the server and client.  
 http://meteor.com/blog/2012/03/21/introducing-ddp  
