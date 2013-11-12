@@ -1,8 +1,6 @@
 ------------------------------------------------------------------
 ### Namespacing
 
-As far as dependencies and namespaces go....  my best recommendation would be to make sure you're using an IDE that supports refactoring (ie. invest in a copy of WebStorm).  What you're going to find is that you're going to find some functionality that gets reused between projects, and you'll want to carry that functionality between projects, which will require refactoring bits and pieces of code out into packages, and then defining dependencies in the package.js files.  
-
 As for namespacing, there are three approaches to namespacing that I've seen in use.  
 
 **File System**  
