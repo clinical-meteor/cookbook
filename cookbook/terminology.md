@@ -24,8 +24,8 @@ http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
 
 **REST - Representation State Transfer**  
 When people talk about REST interfaces, they're talking about GET, POST, PUT, and DELETE commands that web browsers use to request data from a server.  
-https://en.wikipedia.org/wiki/Representational_state_transfer
-
+https://en.wikipedia.org/wiki/Representational_state_transfer  
+http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm  
 
 ## Reserved Keywords  
 
