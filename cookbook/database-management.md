@@ -13,6 +13,11 @@ http://skratchdot.com/projects/mongodb-schema/
 sudo mongo --shell schema.js 
 ````
 
+
+**Q:  How do I download the live database from *.meteor.com?**  
+Ask, and ye shall receive.  Check out this package...  
+https://github.com/AlexeyMK/meteor-download  
+
 **Q:  How do I import a JSON file into Meteor?**   
 
 ````js
