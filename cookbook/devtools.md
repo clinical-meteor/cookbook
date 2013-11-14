@@ -24,7 +24,8 @@ https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmi
 
 #### Database Tools
 **MacOSX Preference Page**  
-http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb
+http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb  
+https://github.com/remysaissy/mongodb-macosx-prefspane/raw/master/download/MongoDB.prefPane.zip  
 
 **Robo Mongo**    
 A sweet, sweet database management tool for when you start separating your application and database layers.  
