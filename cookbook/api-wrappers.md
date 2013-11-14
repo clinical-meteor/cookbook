@@ -63,10 +63,10 @@ https://github.com/mikeal/request
 #### Useful Tools  
 Some useful tools as you implement the API....
 
-Dev HTTP Client
+Dev HTTP Client  
 https://chrome.google.com/webstore/detail/dev-http-client/aejoelaoggembcahagimdiliamlcdmfm
 
-REST Client
+REST Client  
 https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm/
 
 
