@@ -1,6 +1,5 @@
 
 
-
  
  
 ------------------------------------------------------------------
@@ -8,12 +7,12 @@
 
 
 #### Integrated Development Environments  
-**WebStorm**  
-The most full featured IDE currently available for Meteor.
+**WebStorm**   
+The most full featured IDE currently available for Meteor.  
 http://www.jetbrains.com/webstorm/  
 
 **Sublime**  
-For something more light-weight and quick, try Sublime. 
+For something more light-weight and quick, try Sublime.   
 http://www.sublimetext.com/
 
 #### Cloud Development  
