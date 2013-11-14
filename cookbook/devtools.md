@@ -13,11 +13,9 @@ http://www.jetbrains.com/webstorm/
 For something more light-weight and quick, try Sublime.   
 http://www.sublimetext.com/
 
-#### Cloud Development  
 **Nitrous.io**    
 The best and only Cloud Development tool worth worrying about.  
 https://www.nitrous.io/  
-
 
 
 #### Mobile Device Simulators  
@@ -40,12 +38,6 @@ http://screenhero.com/download.html?src=btn
 
 **MadEye**  
 http://madeye.io/get-started  
-
-
-Run the following command in the Nitrous.io (web) command line to create a Meteor project.  
-````
-parts install meteor
-````
 
 #### REST Clients  
 **Dev HTTP Client**    
