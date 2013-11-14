@@ -48,18 +48,17 @@ parts install meteor
 ````
 
 #### REST Clients  
-Dev HTTP Client  
-https://chrome.google.com/webstore/detail/dev-http-client/aejoelaoggembcahagimdiliamlcdmfm
+**Dev HTTP Client**    
+https://chrome.google.com/webstore/detail/dev-http-client/aejoelaoggembcahagimdiliamlcdmfm  
 
-REST Client  
-https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm/
+**REST Client**    
+https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm/  
 
 
 #### Debuggers  
 **Firebug (Firefox)**    
 https://getfirebug.com/  
 
-#### Server Debugging
 **Node-Inspector**  
 https://github.com/node-inspector/node-inspector  
 http://howtonode.org/debugging-with-node-inspector  
