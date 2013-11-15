@@ -58,5 +58,48 @@ http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-fo
 Check out this very clever package.  I haven't tried it, but it looks very promising.    
 https://atmosphere.meteor.com/package/accounts-entry  
 
+**Q:  I'm having problems managing Meteor.users in my social app.  Help?**  
 
+The pattern for social apps involves two publications.  One for yourself, and one for other people.  You'll want something like the following:  
+
+````js
+Meteor.publish('userProfile', function (userId) {
+  try{
+    return Meteor.users.find({_id: this.userId}, {fields: {
+      '_id': true,
+      'username': true,
+      'profile': true,
+      'profile.name': true,
+      'profile.avatar': true,
+      'profile.username': true,
+      'emails': true,
+      'emails[0].address': true,
+      'emails.address': true
+    }});
+
+  }catch(error){
+    console.log(error);
+  }
+});
+
+// Publish users directory and user profile
+Meteor.publish("usersDirectory", function () {
+  try{
+    return Meteor.users.find({}, {fields: {
+      '_id': true,
+      'username': true,
+      'profile': true,
+      'createdAt': true,
+      'profile.name': true,
+      'profile.avatar': true,
+      'profile.username': true,
+      'emails': true,
+      'emails[0].address': true,
+      'emails.address': true
+    }});
+  }catch(error){
+    console.log(error);
+  }
+});
+````
 
