@@ -42,8 +42,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Transport Layer
     - Data Distribution Protocol
     - Clustering
-
-
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
     - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)
       - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
