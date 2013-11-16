@@ -43,6 +43,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
     - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)
       - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
+      - Aggregation
       - Images (GridFS)
       - Geolocation
       - Analytics
@@ -58,7 +59,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-development.md)  
       - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
     - [Peer to Peer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/peer-to-peer.md)  
-    - Mesh Networking
   - Data-Link Layer
     - WebKit Browsers
       - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
