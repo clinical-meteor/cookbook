@@ -30,6 +30,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - WebKit Browsers
       - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
       - Network IO
+      - Video IO
       - Haptics IO
     - Mobile Devices (PhoneGap)
       - Accelerometer
