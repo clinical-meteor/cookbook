@@ -20,6 +20,47 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md) 
     - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
 - Open Systems Interconnection Model
+  - Physical Layer
+    - Keybindings
+    - Console Logging
+    - Mouse Controls
+    - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
+    - Sign Language
+  - Data-Link Layer
+    - WebKit Browsers
+      - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
+      - Network IO
+      - Haptics IO
+    - Mobile Devices (PhoneGap)
+      - Accelerometer
+      - Camera
+  - Network Layer
+    - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
+      - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-development.md)  
+      - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
+    - [Peer to Peer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/peer-to-peer.md)  
+  - Transport Layer
+    - Data Distribution Protocol
+    - Clustering
+
+
+  - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
+    - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)
+      - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
+      - Aggregation
+      - Images (GridFS)
+      - Geolocation
+      - Analytics
+    - Document Schemas
+    - Data Validation
+    - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-transformations.md)
+    - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
+  - Presentation Layer
+    - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
+    - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
+    - Responsive Design
+    - Page Transitions
+    - Fonts
   - Application Layer
     - [Routing](https://github.com/EventedMind/iron-router)  
     - Workflow
@@ -34,44 +75,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Drag and Drop
       - Scroll Lists
       - Isotope
-  - Presentation Layer
-    - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
-    - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
-    - Responsive Design
-    - Page Transitions
-    - Fonts
-  - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
-    - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)
-      - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
-      - Aggregation
-      - Images (GridFS)
-      - Geolocation
-      - Analytics
-    - Document Schemas
-    - Data Validation
-    - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-transformations.md)
-    - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
-  - Transport Layer
-    - Data Distribution Protocol
-    - Clustering
-  - Network Layer
-    - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
-      - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-development.md)  
-      - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
-    - [Peer to Peer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/peer-to-peer.md)  
-  - Data-Link Layer
-    - WebKit Browsers
-      - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
-      - Network IO
-      - Haptics IO
-    - Mobile Devices
-      - Accelerometer
-      - Camera
-  - Physical Layer
-    - Keybindings
-    - Mouse Controls
-    - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
-    - Sign Language
+  - Business Layer
+    - User Accounts
+    - Monetization
 - [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
 - [Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
