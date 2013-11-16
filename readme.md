@@ -21,7 +21,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
 - Open Systems Interconnection Model
   - Application Layer
-    - Routing
+    - [Routing](https://github.com/EventedMind/iron-router)  
     - Workflow
       - Pages
       - Modal Dialogs
