@@ -26,15 +26,15 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Mouse Controls
     - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
     - Sign Language
+    - Mobile Devices (PhoneGap)
+      - Accelerometer
+      - Camera
   - Data-Link Layer
     - WebKit Browsers
       - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
       - Network IO
       - Video IO
       - Haptics IO
-    - Mobile Devices (PhoneGap)
-      - Accelerometer
-      - Camera
   - Network Layer
     - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
       - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-development.md)  
