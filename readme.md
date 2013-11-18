@@ -24,8 +24,10 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Physical Layer
     - [Keybindings](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/keybinding.md)  
     - [Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
-    - Mouse Controls
     - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
+    - Ethernet
+    - Mice
+    - Screen Pixels
     - Sign Language
     - Mobile Devices (PhoneGap)
       - Accelerometer
