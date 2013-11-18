@@ -23,7 +23,6 @@ meteor > my_app_log.log 2> my_app_err.log
 
 ### Application Patterns  
 
-**Common Meteor Logging Pattern**      
 Here's a breakdown of how I go about doing my console logging;
 ````js
 Template.landingPage.postsList = function(){
