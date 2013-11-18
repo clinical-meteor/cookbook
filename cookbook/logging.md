@@ -1,16 +1,16 @@
  
 
-#### Console Logging  
+
+### Client Side Logging Tools  
 If you haven't explored the console API, be prepared for a treat.  There's actually all sorts of things that you can do with console.log commands.  So much so, in fact, that you may find yourself not needing Winston or other logging frameworks.  
 
-## Client Side Logging  
 **Chrome Developer Tools**      
 https://developers.google.com/chrome-developer-tools/docs/console  
 
 **Firebug (Client)**    
 http://getfirebug.com/logging  
 
-## Server Side Logging  
+### Server Side Logging Tools  
 
 **Chrome DevTools Extension (Server)**  
 https://github.com/gandev-de/meteor-server-console  
@@ -20,6 +20,8 @@ A quick reminder that Node apps expose two outputs, std_out and std_err, and tha
 ````sh
 meteor > my_app_log.log 2> my_app_err.log
 ````
+
+### Application Patterns  
 
 **Common Meteor Logging Pattern**      
 Here's a breakdown of how I go about doing my console logging;
