@@ -25,9 +25,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Keybindings](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/keybinding.md)  
     - [Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
     - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
-    - Mice
     - Screen Pixels
-    - Sign Language
+    - Mice
+    - Leap
     - Mobile Devices (PhoneGap)
       - Accelerometer
       - Camera
