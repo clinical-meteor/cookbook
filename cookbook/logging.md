@@ -29,3 +29,34 @@ try{
   console.log(error);
 }
 ````
+
+**Common Meteor Logging Pattern**      
+Here's a breakdown of how I go about doing my console logging;
+````js
+Template.landingPage.postsList = function(){
+  // using a try/catch block to log an error if the database flaps
+  try{
+    return Posts.find();
+  }catch(error){
+    //color code the error (red)
+    console.error(error);
+  }
+}
+Template.landingPage.getId = function(){
+  // using a group block to illustrate function scoping
+  console.group('coolFunction');
+  
+  // inspect an object
+  console.log(JSON.stringify(this._id);
+
+  // close the function scope
+  console.groupEnd();
+  return this._id;
+}
+Template.landingPage.events({
+  'click .selectItemButton':function(){
+    // color code the user interaction (blue)
+    console.count('click .selectItemButton');
+  }
+});
+````
