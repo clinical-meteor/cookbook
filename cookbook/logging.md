@@ -19,17 +19,6 @@ A quick reminder that Node apps expose two outputs, std_out and std_err, and tha
 meteor > my_app_log.log 2> my_app_err.log
 ````
 
-
-**WebStorm LiveTemplate**      
-A useful code snippet for managing database flapping.  This is something of a stop-gap measure, and there are many people who will recommenda against using try/catch blocks.  So, be careful about it's use.  
-````js
-try{
-  // your code here ...
-}catch(error){
-  console.log(error);
-}
-````
-
 **Common Meteor Logging Pattern**      
 Here's a breakdown of how I go about doing my console logging;
 ````js
@@ -59,4 +48,15 @@ Template.landingPage.events({
     console.count('click .selectItemButton');
   }
 });
+````
+
+**WebStorm LiveTemplate**      
+A useful code snippet for managing database flapping.  This is something of a stop-gap measure, and there are many people who will recommenda against using try/catch blocks.  So, be careful about it's use.  The ``$SELECT$`` and ``$END$`` tags are WebStorm specific.  
+````js
+try{
+  $SELECT$
+}catch(error){
+  console.log(error);
+}
+$END$
 ````
