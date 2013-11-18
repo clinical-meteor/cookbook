@@ -10,8 +10,23 @@ https://developers.google.com/chrome-developer-tools/docs/console
 http://getfirebug.com/logging  
 
 
+
+
+
 **Pipe Server Log to File**    
 A quick reminder that Node apps expose two outputs, std_out and std_err, and that you can pipe those outputs to logfiles at runtime.  
 ````sh
 meteor > my_app_log.log 2> my_app_err.log
+````
+
+
+**WebStorm LiveTemplate**      
+A useful code snippet for managing database flapping.  This is something of a stop-gap measure, and there are many people who will recommenda against using try/catch blocks.  So, be careful about it's use.  
+````js
+try{
+  $SELECTION$
+}catch(error){
+  console.log(error);
+}
+$END$
 ````
