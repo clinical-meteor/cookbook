@@ -13,6 +13,10 @@ Generally speaking, when Meteor folks talk about ACID, they're talking about the
 This is simply the protocol that enables the Meteor.publish() and Meteor.subscribe() methods.  It does all the heavy lifting of data communications between the server and client.  
 http://meteor.com/blog/2012/03/21/introducing-ddp  
 
+**DDS - Data Distribution Service**  
+A data distribution protocol that has nothing to do with Meteor.  It just happens to be named very similarly to DDP.  
+http://en.wikipedia.org/wiki/Data_distribution_service  
+
 **MDG - Meteor Development Group**  
 Nickname for the wonderful folks who brought us Meteor.
 
