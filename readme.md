@@ -19,6 +19,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [App Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/appstructure.md) 
     - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md) 
     - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
+    - [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
 - Open Systems Interconnection Model
   - Physical Layer
     - [Keybindings](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/keybinding.md)  
@@ -77,8 +78,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Business Layer
     - User Accounts
     - Monetization
-- [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
-- [Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
+- [Error Referece](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
   - Blog
   - Forum
