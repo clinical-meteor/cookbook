@@ -27,7 +27,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
     - Screen Pixels
     - Mice
-    - Leap
+    - Sign Language
     - Mobile Devices (PhoneGap)
       - Accelerometer
       - Camera
