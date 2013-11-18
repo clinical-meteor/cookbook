@@ -57,7 +57,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Analytics
     - Document Schemas
     - Data Validation
-    - [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-transformations.md)
     - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
   - Presentation Layer
     - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
@@ -98,8 +97,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 
 **In Progress**  
-[Async & Futures](https://gist.github.com/possibilities/3443021)  
-[Database Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-migrations.md)  
+- [Async & Futures](https://gist.github.com/possibilities/3443021)  
+- [Database Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-migrations.md)  
+- [Data Transformations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-transformations.md)
 
 
 
