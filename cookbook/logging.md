@@ -24,9 +24,8 @@ meteor > my_app_log.log 2> my_app_err.log
 A useful code snippet for managing database flapping.  This is something of a stop-gap measure, and there are many people who will recommenda against using try/catch blocks.  So, be careful about it's use.  
 ````js
 try{
-  $SELECTION$
+  // your code here ...
 }catch(error){
   console.log(error);
 }
-$END$
 ````
