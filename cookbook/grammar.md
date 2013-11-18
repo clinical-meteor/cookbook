@@ -1,7 +1,7 @@
 ## Grammar  
 
 **Semicolons**  
-Obviously, everybody has their own opinions about grammar, and the Javascript specification (ECMA5 whatever) says that semicolons are option.  Fair enough.  But here's a reason to use semicolons:  eventmaps.
+Obviously, everybody has their own opinions about grammar, and the Javascript specification (ECMA5 whatever) says that semicolons are optional.  Fair enough.  But here's a reason to use semicolons:  eventmaps.
 
 ````js
 // eventmap will fail
