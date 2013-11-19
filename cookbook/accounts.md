@@ -58,6 +58,13 @@ http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-fo
 Check out this very clever package.  I haven't tried it, but it looks very promising.    
 https://atmosphere.meteor.com/package/accounts-entry  
 
+**Q:  How do I define a transform function on the users collection?**  
+
+Transform isn't official, and still has the underscore notation.  But Tom Coleman and folks recommend the following if you're willing to use unofficial functions...  
+````js
+Meteor.users._transform = X
+````
+
 **Q:  I'm having problems managing Meteor.users in my social app.  Help?**  
 
 The pattern for social apps involves two publications.  One for yourself, and one for other people.  You'll want something like the following:  
