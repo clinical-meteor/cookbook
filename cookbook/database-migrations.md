@@ -1,3 +1,4 @@
+````js
     // database migrations
     // http://stackoverflow.com/questions/10365496/meteor-how-to-perform-database-migrations
     // https://github.com/SachaG/Telescope/blob/master/server/migrations.js
@@ -107,3 +108,4 @@
         console.log("//----------------------------------------------------------------------//")
       }
     });
+````
