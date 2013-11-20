@@ -1,4 +1,3 @@
-
 **Q:  How do I crate a wizard dialog?**  
 This recipe assumes that your Model is an .html file, your View is a .css or .less file, and your Controller is a .js file.
 
@@ -36,7 +35,7 @@ Session.setDefault('selected_pane', 1);
 
 ````js
 Template.dialogStepOne.events({
-  'click #stepTwoButton:function(){
+  'click #stepTwoButton':function(){
     Session.set('selected_pane', 2);
   }
 });
