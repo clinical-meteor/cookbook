@@ -68,7 +68,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Fonts
   - Application Layer
     - [Routing](https://github.com/EventedMind/iron-router)  
-    - Workflow
+    - [Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
       - Pages
       - Modal Dialogs
       - Errors & Alerts
