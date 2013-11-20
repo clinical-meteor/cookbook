@@ -46,7 +46,7 @@ Template.dialogStepOne.events({
 ````js
 Template.dialogStepOne.stepOneVisibility = function(){
   if(Session.get('selected_pane') === 1){
-    return "visible;
+    return "visible";
   }else{
     return "hidden";
   }
