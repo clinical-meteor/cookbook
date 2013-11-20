@@ -67,3 +67,13 @@ sudo node-inspector &
 
 http://0.0.0.0:8080/debug?port=5858
 ````
+
+#### Code Analysis  
+
+**Meteor JSHint**  
+https://github.com/raix/Meteor-jshintrc  
+
+````sh
+npm install jshint -g
+jshint .
+````
