@@ -16,6 +16,7 @@ CloudBees provides a Meteor clickstart, software-as-a-service, unit testing, and
 https://github.com/CloudBees-community/meteor-clickstart  
 
 **Q:  How do I specify an external database using MONGO_URL?**  
+**Q:  How do I specify an external database using MONGO_URL?**  
 Okay, so you're starting to talk about separating your application layer from your database layer, and getting things ready for scale-out.  If you're looking for something quick and simple, try Modulus.io:  
 http://blog.modulus.io/demeteorizer  
 https://github.com/onmodulus/demeteorizer  
