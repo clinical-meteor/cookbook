@@ -69,7 +69,7 @@ Template.dialogStepOne.stepThreeVisibility = function(){
 
 7.  Create classes in your View.
 
-````less
+````css
 .visible{
   visibility: hidden;
 }
