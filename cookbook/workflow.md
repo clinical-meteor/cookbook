@@ -1,7 +1,7 @@
 **Q:  How do I crate a wizard dialog?**  
 This recipe assumes that your Model is an .html file, your View is a .css or .less file, and your Controller is a .js file.
 
-1.  Start by creating three templates objects in your (Document Object) Model:
+A.  Start by creating three templates objects in your (Document Object) Model:
 
 ````html
 <template name="dialogStepOne">
@@ -18,20 +18,20 @@ This recipe assumes that your Model is an .html file, your View is a .css or .le
 </template>
 ````
 
-2.  Add your content to the dialog-page class.  
-3.  Add navigation objects (i.e. buttons).
+B.  Add your content to the dialog-page class.  
+C.  Add navigation objects (i.e. buttons).
 
 ````html
 <div id="stepTwoButton" class="btn btn-default"></div>
 ````
 
-6.  Create a default Session variable in your Controller to handle which page you're on.
+D.  Create a default Session variable in your Controller to handle which page you're on.
 
 ````js
 Session.setDefault('selected_pane', 1);
 ````
 
-5.  Add event maps to your Controller file:
+E.  Add event maps to your Controller file:
 
 ````js
 Template.dialogStepOne.events({
@@ -41,7 +41,7 @@ Template.dialogStepOne.events({
 });
 ````
 
-6.  Add your template functions to your Controller file:
+F.  Add your template functions to your Controller file:
 
 ````js
 Template.dialogStepOne.stepOneVisibility = function(){
@@ -67,7 +67,7 @@ Template.dialogStepOne.stepThreeVisibility = function(){
 }
 ````
 
-7.  Create classes in your View.
+G.  Create classes in your View.
 
 ````css
 .visible{
