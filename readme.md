@@ -98,6 +98,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Geolocation  
   - Resource Scheduling  
   - Data Analytics  
+  - Tagging  
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 
 **In Progress**  
