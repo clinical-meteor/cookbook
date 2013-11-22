@@ -4,7 +4,7 @@
 http://colorschemedesigner.com/
 
 
-**Recommended File Types**  
-.PNG
-.JPG
+**Image Types**  
+.PNG  
+.JPG  
 
