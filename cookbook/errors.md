@@ -94,7 +94,8 @@ Check if you're trying to save into Session an object with circular references, 
 **"Unexpected mongo exit code 100. Restarting."**  
 Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongod.lock. If that fails do an meteor reset.  
 
-
+**EACCES, permission denied**  
+Permissions problem!  Try using ``sudo``, but the recommended fix is to reinstall Meteor and Meteorite.  
 
 
 ------------------------------------------------------------------
