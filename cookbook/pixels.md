@@ -1,4 +1,3 @@
-
 #### Color Pickers  
 
 **Color Scheme Designer**  
@@ -10,7 +9,7 @@ http://colorschemedesigner.com/
 .JPG  
 
 
-#### Adding Image Assets via Assets
+#### Adding Image Assets via Packages
 The package file...  
 ````js
 // packages/mybackgrounds/package.js
