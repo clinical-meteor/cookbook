@@ -4,9 +4,6 @@
 http://colorschemedesigner.com/
 
 
-**Image Types**  
-.PNG  
-.JPG  
 
 
 #### Adding Image Assets via Packages
