@@ -24,6 +24,7 @@ MONGO_URL=mongodb://localhost:27017/meteor meteor
 
 If this gives you any problems, nuke the permissions on the application directory with a ``sudo chmod -R username:groupname .``.  When Meteor uses an external Mongo instance via MONGO_URL, it needs to write temp files and log files that either don't exist, or already exist, in the Meteor provided instance of Mongo.  
 
+If that doesn't work, try nuking the build directory with ``sudo rm -rf .meteor/local``.
 
 **Q:  How do I horizontally scale my application layer?**  
 Okay, so you're starting to talk about separating your application layer from your database layer, and getting things ready for scale-out.  If you're looking for something quick and simple, try Modulus.io:  
