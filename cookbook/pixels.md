@@ -9,9 +9,8 @@ http://colorschemedesigner.com/
 .JPG  
 
 
-**Adding Image Assets via Assets**  
-
-The package file...
+#### Adding Image Assets via Assets
+The package file...  
 ````js
 // packages/mybackgrounds/package.js
 Package.describe({
@@ -22,6 +21,7 @@ Package.on_use(function (api) {
 });
 ````
 
+And then the View class...
 ````less
 body{
   background: url(packages/mybackgrounds/assets/background.jpg) no-repeat center center fixed;
