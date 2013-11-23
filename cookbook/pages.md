@@ -9,7 +9,7 @@
 /server
 ````
  
-#### The Document Object Model  
+##### The Document Object Model  
 /client/models/page.home.html  
 ````html
 <template name="homePage">
@@ -20,7 +20,7 @@
 </template>
 ````
 
-#### The View  
+##### The View  
 /client/views/page.home.css  
 ````less
 // 
@@ -30,7 +30,7 @@
 }
 ````
 
-#### The Controller
+##### The Controller
 ````js
 Template.homePage.getText = function(){
  return "Hello World";
