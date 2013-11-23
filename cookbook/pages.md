@@ -1,5 +1,4 @@
-
-#### File structure 
+##### File structure 
 ````sh
 /client
 /client/views/page.home.css
