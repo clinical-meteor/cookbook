@@ -12,7 +12,7 @@ So, there's lots of ways of writing code.  And lots of opinions on how to go abo
 - The View is encoded with cascading Style Sheets, using .css or .less files.
 - The Controller is encoded with Javascript, using .js files.
 
-Which suggests a basic directory structure like this....  
+This may seem backwards if you're not accustomed to looking at .html/.css/.js files this way.  But it works extremely well.  And it suggests the following basic directory structure....  
 ````sh
 /.scrap
 /client
