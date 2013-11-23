@@ -19,6 +19,7 @@ This may seem backwards if you're not accustomed to looking at .html/.css/.js fi
 /client/views/cascading.stylesheet.css
 /client/models/document.templates.html
 /client/controllers/javascript.libraries.js
+/client/modules/
 /packages
 /public/images
 /server
