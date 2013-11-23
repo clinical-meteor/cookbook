@@ -9,7 +9,7 @@
 /server
 ````
  
-##### The Document Object Model - /client/models/page.home.html  
+##### The Document Object Model (/client/models/page.home.html)  
 ````html
 <template name="homePage">
   <div id="homePage" class="page">
