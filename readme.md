@@ -82,7 +82,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Scroll Lists
       - Isotope
   - Business Layer
-    - User Accounts
     - Monetization
     - Marketing
     - Launches
