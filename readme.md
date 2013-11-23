@@ -70,7 +70,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - Application Layer
     - [Routing](https://github.com/EventedMind/iron-router)  
     - [Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
-      - Pages
+      - [Pages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.md)  
       - Modal Dialogs
       - Errors & Alerts
     - Application Programming Interfaces
