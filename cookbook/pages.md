@@ -2,13 +2,9 @@
 
 ##### File structure 
 ````sh
-/client
-/client/views/page.home.css
+/client/views/page.home.less
 /client/models/page.home.html
 /client/controllers/page.home.js
-/packages
-/public/images
-/server
 ````
  
 ##### The Document Object Model    
@@ -27,7 +23,7 @@ But wait! you might be saying.  There's so much redundancy!  We've repeated the 
 
 ##### The View    
 ````scss
-// client/views/page.home.css
+// client/views/page.home.less
 // the page class allows us to modify all the pages at the same time
 .page{
   margin-top: 50px;
@@ -62,17 +58,12 @@ Template.homePage.getText = function(){
 So, now that we've seen the pattern for a single-page, lets look at the multi-page example.
 ##### File structure 
 ````sh
-/client
-/client/views/app.layout.css
-/client/views/page.home.css
-/client/views/page.about.css
+/client/views/page.home.less
+/client/views/page.about.less
 /client/models/page.home.html
 /client/models/page.about.html
 /client/controllers/page.home.js
 /client/controllers/page.about.js
-/packages
-/public/images
-/server
 ````
 
 See how the binomial nomenclature helps us organize our stylesheets in the views folder?  How it organizes DOM templates in the models folder?  And our libraries in our Controllers folder?  When we start adding headers, footers, blocks, sidebars, dialogs, and other UI components, this binomial nomenclature will keep everything nice and tidy.  
@@ -105,7 +96,7 @@ As for the ``{{pageVisibiilty}}`` handlebars, we're going to do some cleverness 
 
 ##### The View  
 ````scss
-// client/views/app.layout.css
+// client/views/app.layout.less
 // here, we've moved the .tagline to the global scope
 .page{
   margin-top: 50px;
@@ -122,14 +113,14 @@ As for the ``{{pageVisibiilty}}`` handlebars, we're going to do some cleverness 
 }
 
 // and we finally get to use LESS nested objects to create namespacing hierarchy
-// client/views/page.home.css
+// client/views/page.home.less
 #homePage{
   h2{
     color: blue;
   }
 }
 
-// client/views/page.about.css
+// client/views/page.about.less
 #aboutPage{
   h2{
     color: red;
@@ -195,7 +186,7 @@ Nifty!  Now, all we need to do is go back to our template, and add some buttons.
 
 ##### Back to the DOM   
 ````html
-<!-- /client/models/page.home.html -->
+<!-- /client/models/app.navbars.html -->
 <template name="navbarHeader">
   <nav>
     <ul class="inline-group">
@@ -206,4 +197,30 @@ Nifty!  Now, all we need to do is go back to our template, and add some buttons.
 </template>
 ````
 
+So, our final file structure looks something like this:
+##### File structure 
+````sh
+/client/views/app.navbars.less
+/client/views/page.home.css
+/client/views/page.about.css
+/client/models/app.navbars.html
+/client/models/page.home.html
+/client/models/page.about.html
+/client/controllers/app.navbars.js
+/client/controllers/page.home.js
+/client/controllers/page.about.js
+````
 
+Which you might want to refactor to look like so:
+##### File structure 
+````sh
+/client/views/page.home.css
+/client/views/page.about.css
+/client/models/page.home.html
+/client/models/page.about.html
+/client/controllers/page.home.js
+/client/controllers/page.about.js
+/client/app.navbars.less
+/client/app.navbars.html
+/client/app.navbars.js
+````
