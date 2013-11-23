@@ -183,8 +183,6 @@ Template.navbarHeader.events({
 ````
 
 Nifty!  Now, all we need to do is go back to our template, and add some buttons.
-
-##### Back to the DOM   
 ````html
 <!-- /client/models/app.navbars.html -->
 <template name="navbarHeader">
@@ -198,7 +196,6 @@ Nifty!  Now, all we need to do is go back to our template, and add some buttons.
 ````
 
 So, our final file structure looks something like this:
-##### File structure 
 ````sh
 /client/views/app.navbars.less
 /client/views/page.home.css
@@ -212,7 +209,6 @@ So, our final file structure looks something like this:
 ````
 
 Which you might want to refactor to look like so:
-##### File structure 
 ````sh
 /client/views/page.home.css
 /client/views/page.about.css
