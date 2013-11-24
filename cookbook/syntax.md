@@ -1,5 +1,8 @@
  
 ## Syntax  
+ˈsinˌtaks/  
+- the arrangement of words and phrases to create well-formed sentences in a language.
+
 
 I found that I spend far, far more time working about establishing the correct syntax of LESS/CSS classes, than ever worrying about MVC structure nowdays.  By doing so, you can create code like the following:
 
