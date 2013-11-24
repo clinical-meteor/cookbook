@@ -33,6 +33,30 @@ Meteor.startup(function () {
 });
 ````
 
+## BindEnvironment Example  
+
+Sometimes you need to run some expensive functions while reading from Disk or Network.  If you find yourself running into IO problems, and suspect you're having fibers or sync/async problems, try using Meteor.bindEnvironment.  
+````js
+Meteor.methods({
+  convertFileToRecord: function(postId) {
+    if(postId) {
+      expensiveObject.ioIntensiveFunction(null, Meteor.bindEnvironment(function(result) {
+        Posts.update({_id: postId}, {$set: {text: result}});
+        console.log(result);
+        return result;
+      }, function(err) {
+        console.error(err.message);
+        return err.message;
+      }));
+    }else{
+      return 'no postId';
+    }
+  }
+});
+````
+
+
+
 ## Parsing XML  
 But maybe your data isn't in JSON format, and you can't simply call ``JSON.parse(data)``.  Maybe you have an XML file that you need to parse.  You'll need to do something like the following...     
 
