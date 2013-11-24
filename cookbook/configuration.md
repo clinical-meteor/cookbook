@@ -1,3 +1,4 @@
+## Site Configuration  
 A pattern for creating persistent site configuration.  
 
 ### Client
@@ -57,7 +58,6 @@ Settings.allow({
 
 ````js
 // server/initialize.settings.js
-
 Meteor.startup(function () {
   if (Settings.find().count() === 0) {
     console.info('no settings in database!  creating a configuration file.');
@@ -77,7 +77,7 @@ Meteor.startup(function () {
   }
 });
 
-// Publish site settings
+// server/publications.js
 Meteor.publish("settings", function () {
   try{
     return Settings.find({keyword: 'sysadmin'}, {fields: {
