@@ -72,11 +72,11 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Fonts
   - Application Layer
     - [Routing](https://github.com/EventedMind/iron-router)  
-    - [Pages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.md)  
-      - Single Page Design
-      - Multi-Page Design
-      - Multi-Page with Routing
+    - Pages
+      - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
+      - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)  
       - [Wizard Dialog](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
+      - Multi-Page with Routing
       - Page Transitions
       - Modal Dialogs
       - Errors & Alerts
