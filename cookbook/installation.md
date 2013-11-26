@@ -37,11 +37,11 @@ mrt --version
 
 Use the ``--release`` flag!  
 ````js
-// for deployment
-meteor bundle --release 0.6.1
-
 // for specifying meteor deployment target
-meteor update --release 0.6.1
+meteor update --release 0.6.5
+
+// for deployment
+meteor bundle --release 0.6.5
 ````
 
 
