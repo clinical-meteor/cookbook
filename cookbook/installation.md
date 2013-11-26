@@ -36,7 +36,7 @@ mrt --version
 **Q:  How do I run a specific version of Meteor?**  
 
 Use the ``--release`` flag!  
-````sh
+````js
 // for deployment
 meteor bundle --release 0.6.1
 
