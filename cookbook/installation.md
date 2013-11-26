@@ -33,6 +33,18 @@ meteor --version
 mrt --version
 ````
 
+**Q:  How do I run a specific version of Meteor?**  
+
+Use the ``--release`` flag!  
+````sh
+// for deployment
+meteor bundle --release 0.6.1
+
+// for specifying meteor deployment target
+meteor update --release 0.6.1
+````
+
+
 **Q:  Should I install Npm with Node Version Manager?**  
 That's really up to you.  However, in my experience, it's been a bit more trouble than it's been worth.  
 
