@@ -10,6 +10,7 @@ http://safety-harness.meteor.com/features
 **Tiny Tests**  
 Basic unit tests for writing Meteor packages.  
 http://stackoverflow.com/questions/10760601/how-do-you-run-the-meteor-tests  
+https://github.com/arunoda/travis-ci-meteor-packages
 
 **Mocha-Web**  
 Basic unit test runner and HTML reporter, that can be installed as a package.  
