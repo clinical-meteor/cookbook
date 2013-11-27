@@ -71,7 +71,8 @@ Meteor.startup(function () {
       tagline: 'Witty tagline for site...',
       installed: false,
       live: false,
-      maintenance: false
+      maintenance: false,
+      bootCount: 0
     });
     console.info('Configuration file created: ' + configurationId);
   }
@@ -86,7 +87,8 @@ Meteor.publish("settings", function () {
       'tagline': true,
       'installed': true,
       'live': true,
-      'maintenance': true
+      'maintenance': true,
+      'bootCount': true
     }});
   }catch(error){
     console.log(error);
@@ -94,3 +96,27 @@ Meteor.publish("settings", function () {
 });
 ````
 
+## Detecting if It's the First Time A Site Has Run
+
+````js
+// server/startup.js
+Meteor.startup(function () {
+  configurationSettings = Settings.find().fetch()[0];
+  newBootCount = configurationSettings.bootCount + 1;
+  Settings.update(configurationSettings._id, {$set: { bootCount: newBootCount }});
+
+  if(configurationSettings.live){
+    console.log('Success!  You're running a live site!');
+  }else{
+    console.log('Success!  You're running the site for the first time!  It's not live yet, however.');
+    console.log('Please go to admin panel, and configure the site.');
+  }
+});
+Meteor.methods({
+  setSiteLive: function(){
+    configurationSettings = Settings.find().fetch()[0];
+    Settings.update(configurationSettings._id, {$set: { live: true }});
+  }
+});
+
+````
