@@ -108,7 +108,7 @@ Meteor.startup(function () {
   if(configurationSettings.live){
     console.log('Success!  You're running a live site!');
   }else{
-    console.log('Success!  You're running the site for the first time!  It's not live yet, however.');
+    console.log('Success!  Youre running the site for the first time!  It's not live yet, however.');
     console.log('Please go to admin panel, and configure the site.');
   }
 });
