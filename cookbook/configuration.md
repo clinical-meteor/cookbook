@@ -106,7 +106,7 @@ Meteor.startup(function () {
   Settings.update(configurationSettings._id, {$set: { bootCount: newBootCount }});
 
   if(configurationSettings.live){
-    console.log('Success!  You're running a live site!');
+    console.log('Success!  Youre running a live site!');
   }else{
     console.log('Success!  Youre running the site for the first time!  It's not live yet, however.');
     console.log('Please go to admin panel, and configure the site.');
