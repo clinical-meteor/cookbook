@@ -34,7 +34,7 @@ Template.navbarHeader.navbarTitle = function(){
 
 
 ### /
-
+This is isomorphic code that needs to be run in the app root, outside of the /client or /server directories.  
 ````js
 // data.js or model.js file
 
