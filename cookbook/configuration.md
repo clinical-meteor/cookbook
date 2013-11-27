@@ -1,7 +1,7 @@
 ## Site Configuration  
 A pattern for creating persistent site configuration.  
 
-### Client
+### /client
 
 ````js
 // client/app.subscriptions.js
@@ -33,7 +33,7 @@ Template.navbarHeader.navbarTitle = function(){
 ````
 
 
-### Isomorphic
+### /
 
 ````js
 // data.js or model.js file
@@ -54,7 +54,7 @@ Settings.allow({
 ````
 
 
-### Server 
+### /server 
 
 ````js
 // server/initialize.settings.js
