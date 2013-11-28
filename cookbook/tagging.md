@@ -1,7 +1,29 @@
 ##  Tagging
 
 
+#### The Object Model
 
+````html
+<template name="taskItemTemplate">
+  <ul class="horizontal-tags">
+    {{#each tag_objs}}
+    <li class="tag removable_tag">
+      <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
+    </li>
+    {{/each}}
+    {{#if adding_tag}}
+    <li class="tag edittag">
+      <input type="text" id="edittag-input" value="" />
+    </li>
+    {{else}}
+    <li class="largish addtag pictograph">J</li>
+    {{/if}}
+  </ul>
+</template>
+
+````
+
+#### The Controller
 
 ````js
 Template.taskItemTemplate.tag_objs = function () {
