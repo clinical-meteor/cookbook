@@ -96,8 +96,9 @@ Meteor.publish("settings", function () {
 });
 ````
 
-## Detecting if It's the First Time A Site Has Run
+## Running Code At Startup
 
+####  Using persistent records in the database.    
 ````js
 // server/startup.js
 Meteor.startup(function () {
@@ -120,3 +121,23 @@ Meteor.methods({
 });
 
 ````
+
+#### Working Around Hot-Code Reloads in Development
+
+````js
+Meteor.startup(function () {
+  configurationSettings = Settings.find().fetch()[0];
+  var now = moment();
+  
+  if(now.diff(configurationSettings.keepAlive, 'minutes') > 1){
+    // do complicated stuff you want run on console startup
+    // but not during hot code reloads
+  }
+
+  // update the keepAlive once a minute        
+  setInterval(function(){
+    Settings.update(configurationSettings._id, {$set: { keepAlive: moment() }});
+  }, 1000)
+});
+````
+
