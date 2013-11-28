@@ -5,21 +5,13 @@
 
 ````js
 Template.taskItemTemplate.tag_objs = function () {
-    try{
-        var todo_id = this._id;
-        return _.map(this.tags || [], function (tag) {
-            return {todo_id: todo_id, tag: tag};
-        });
-    }catch(error){
-        console.log(error);
-    }
+    var todo_id = this._id;
+    return _.map(this.tags || [], function (tag) {
+        return {todo_id: todo_id, tag: tag};
+    });
 };
 Template.taskItemTemplate.adding_tag = function () {
-    try{
-        return Session.equals('editing_addtag', this._id);
-    }catch(err){
-        console.log(err);
-    }
+    return Session.equals('editing_addtag', this._id);
 };
 
 Template.taskItemTemplate.events({
@@ -31,12 +23,7 @@ Template.taskItemTemplate.events({
     'click .remove': function (evt) {
         var tag = this.tag;
         var id = this.todo_id;
-
-        evt.target.parentNode.style.opacity = 0;
-        // wait for CSS animation to finish
-        Meteor.setTimeout(function () {
-            Todos.update({_id: id}, {$pull: {tags: tag}});
-        }, 300);
+        Todos.update({_id: id}, {$pull: {tags: tag}});
         Meteor.flush();
     }
 });
