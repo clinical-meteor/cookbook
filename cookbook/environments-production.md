@@ -18,8 +18,9 @@ https://github.com/CloudBees-community/meteor-clickstart
 **Q:  How do I specify an external database using MONGO_URL?**  
 
 With the following syntax.  
-```
-MONGO_URL=mongodb://localhost:27017/meteor meteor
+```sh
+# MONGO_URL=mongodb://localhost:27017/meteor meteor
+export MONGO_URL='mongodb://192.168.0.38:27017/webusers' && PORT='3000' && node main.js
 ```
 
 If this gives you any problems, nuke the permissions on the application directory with a ``sudo chmod -R username:groupname .``.  When Meteor uses an external Mongo instance via MONGO_URL, it needs to write temp files and log files that either don't exist, or already exist, in the Meteor provided instance of Mongo.  
