@@ -76,20 +76,26 @@ Meteor.methods({
 
 ````
 
-**TypeError: Object # has no method 'require'**  
+**TypeError: Object #<Object> has no method 'find''**  
 
+Check if one of your collections is using a reserved keyword defined by the Meteor API.  In particular, you can't create a collection called Assets since 0.6.5.
 
-The following shamelessly ganked from @oortcloud's excellent unofficial FAQ.
-https://github.com/oortcloud/unofficial-meteor-faq
+````js
+// the following errors out; remove it
+Assets = new Meteor.Collection('assets');
+````
 
-**"Uncaught SyntaxError: Unexpected token Y"**  
-Client-side error caused by the server crashing and sending a message starting with "Your app is crashing. Here's the latest log."  
+**Error: A method named '/users/insert' is already defined**   
 
-**"TypeError: Object # has no method '_defineMutationMethods'"**  
-Server-side error. Most likely, you forgot to place "new" before a constructor call in the client. Read more.  
+You've defined a collection twice; in this particular example, the Users collection.  
+
+````js
+// check your code the following and remove it
+Users = new Meteor.Collection('users');
+````
 
 **"Uncaught TypeError: Converting circular structure to JSON"**  
-Check if you're trying to save into Session an object with circular references, such as a Collection. Read more.  
+Check if you're trying to save into Session an object with circular references, such as a Collection.
 
 **"Unexpected mongo exit code 100. Restarting."**  
 Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongod.lock. If that fails do an meteor reset.  
