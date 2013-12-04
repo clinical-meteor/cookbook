@@ -15,6 +15,11 @@ https://github.com/oortcloud/heroku-buildpack-meteorite
 CloudBees provides a Meteor clickstart, software-as-a-service, unit testing, and continuous integration.  It's a bit klunky, but if you're worried about continuous integration, it's the one to choose:  
 https://github.com/CloudBees-community/meteor-clickstart  
 
+**Q:  How do I monitor CPU utilization, memory utilization, etc?**  
+See this discussion.  
+https://groups.google.com/forum/#!topic/meteor-talk/91hcC87ch5k  
+
+
 **Q:  How do I specify an external database using MONGO_URL?**  
 
 With the following syntax.  
