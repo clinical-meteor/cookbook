@@ -3,7 +3,7 @@
 
 **Q:  How do I specify an external database using MONGO_URL?**  
 
-````js
+````sh
 #make sure you're running the node v0.10.21 or later
 sudo npm cache clean -f
 sudo npm install -g n
