@@ -10,13 +10,14 @@ https://github.com/onmodulus/demeteorizer
 sudo npm install -g demeteorizer
 sudo cd ~/path/myapp
 
-sudo demeteorizer -n 0.8.11
-sudo cd .demeteorized
+sudo demeteorizer 
 sudo modulus login
 sudo modulus deploy
 ````
 
 **Q:  How do I specify an external database using MONGO_URL?**  
+
+But if you're looking to do it yourself, you'll need to separate out your application layer from your database layer, and that means specifying the MONGO_URL.  Which means running your app through the bundle command, uncompressing it, setting environment variables, and then launching the project as a node app.  Here's how...  
 
 ````sh
 #make sure you're running the node v0.10.21 or later
