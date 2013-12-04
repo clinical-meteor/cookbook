@@ -30,6 +30,7 @@ export ROOT_URL='http://thinaire.net'
 
 # run the site
 node main.js
+````
 
 
 
