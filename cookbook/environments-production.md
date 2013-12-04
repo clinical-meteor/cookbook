@@ -20,33 +20,6 @@ See this discussion.
 https://groups.google.com/forum/#!topic/meteor-talk/91hcC87ch5k  
 
 
-**Q:  How do I specify an external database using MONGO_URL?**  
-
-With the following syntax.  
-```sh
-# MONGO_URL=mongodb://localhost:27017/meteor meteor
-export MONGO_URL='mongodb://192.168.0.38:27017/webusers' && PORT='3000' && node main.js
-```
-
-If this gives you any problems, nuke the permissions on the application directory with a ``sudo chmod -R username:groupname .``.  When Meteor uses an external Mongo instance via MONGO_URL, it needs to write temp files and log files that either don't exist, or already exist, in the Meteor provided instance of Mongo.  
-
-If that doesn't work, try nuking the build directory with ``sudo rm -rf .meteor/local``.
-
-**Q:  How do I horizontally scale my application layer?**  
-Okay, so you're starting to talk about separating your application layer from your database layer, and getting things ready for scale-out.  If you're looking for something quick and simple, try Modulus.io:  
-http://blog.modulus.io/demeteorizer  
-https://github.com/onmodulus/demeteorizer  
-
-````
-sudo npm install -g demeteorizer
-sudo cd ~/path/myapp
-
-sudo demeteorizer -n 0.8.11
-sudo cd .demeteorized
-sudo modulus login
-sudo modulus deploy
-````
-
 **Q:  What environment variables are supported?**  
 So far, the following variables have been seen in the wild:  
 
