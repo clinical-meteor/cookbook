@@ -1,6 +1,21 @@
  
 ## Scaling
 
+**Q:  How do I horizontally scale my application layer?**  
+Okay, so you're starting to talk about separating your application layer from your database layer, and getting things ready for scale-out.  If you're looking for something quick and simple, try Modulus.io:  
+http://blog.modulus.io/demeteorizer  
+https://github.com/onmodulus/demeteorizer  
+
+````
+sudo npm install -g demeteorizer
+sudo cd ~/path/myapp
+
+sudo demeteorizer -n 0.8.11
+sudo cd .demeteorized
+sudo modulus login
+sudo modulus deploy
+````
+
 **Q:  How do I specify an external database using MONGO_URL?**  
 
 ````sh
@@ -30,21 +45,4 @@ export ROOT_URL='http://thinaire.net'
 
 # run the site
 node main.js
-````
-
-
-
-**Q:  How do I horizontally scale my application layer?**  
-Okay, so you're starting to talk about separating your application layer from your database layer, and getting things ready for scale-out.  If you're looking for something quick and simple, try Modulus.io:  
-http://blog.modulus.io/demeteorizer  
-https://github.com/onmodulus/demeteorizer  
-
-````
-sudo npm install -g demeteorizer
-sudo cd ~/path/myapp
-
-sudo demeteorizer -n 0.8.11
-sudo cd .demeteorized
-sudo modulus login
-sudo modulus deploy
 ````
