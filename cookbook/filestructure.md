@@ -1,6 +1,21 @@
  
 ##Where should I put my files?  
-The following section was originally hosted on Oortcloud's excellent FAQ, but I must dissent and disagree with his particular recommended structure.  While Oortcloud's and my approach are very similar, there have been some changes in the bundler since he wrote his FAQ, and there have been a number of discussions surrounding load ordering... both of which suggest a slightly revised application template.  Long story short, here's the template I use in **my* applications.  Is it the best approach?  Or the only approach?  Of course not.  I merely find it to be more effective than any other approach I've encountered.  
+
+The first thing you need to know in structuring your apps is that the Meteor bundler has some directories that it is hardcoded to look for.  At a very basic level, the following directories are sort of baked into Meteor bundler, and is where you should begin with structuring larger applications.
+
+```js
+client/                                   // client application code
+client/compatibility/                    // legacy 3rd party javascript libraries
+lib/                                     // any common code for client/server.
+packages/                                // place for all your atmosphere packages
+private/                                 // static files that only the server knows about
+public/                                  // static files that are available to the client
+server/                                  // server code
+tests/                                   // unit test files (won't be loaded on client or server)
+
+```
+
+After you create those directories in your application folder, the next step is to create some structure for your MVC model, add subscriptions and publications, and build out the rest of your application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  I find that most of my applications are starting to use the following structure, which uses HTML/CSS/JS as my Model/View/Controller.  
 
 ```js
 .scrap                                    // keep a .scrap or .temp directory for scrap files
