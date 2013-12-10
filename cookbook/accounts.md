@@ -106,7 +106,6 @@ Meteor.publish("usersDirectory", function () {
       '_id': true,
       'username': true,
       'profile': true,
-      'createdAt': true,
       'profile.name': true,
       'profile.avatar': true,
       'profile.username': true,
@@ -120,4 +119,4 @@ Meteor.publish("usersDirectory", function () {
   }
 });
 ````
-
+Note that the profile details, such as address and theme preferences will only be visible to an individual user, and won't be visible to people browsing the user directory.  
