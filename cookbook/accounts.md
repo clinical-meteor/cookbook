@@ -70,6 +70,7 @@ Meteor.users._transform = X
 The pattern for social apps involves two publications.  One for yourself, and one for other people.  You'll want something like the following:  
 
 ````js
+// Publish a person's own user profile to themselves
 Meteor.publish('userProfile', function (userId) {
   try{
     return Meteor.users.find({_id: this.userId}, {fields: {
@@ -79,6 +80,15 @@ Meteor.publish('userProfile', function (userId) {
       'profile.name': true,
       'profile.avatar': true,
       'profile.username': true,
+
+      'profile.favoriteColor': true,
+      'profile.selectedTheme': true,
+
+      'profile.address': true,
+      'profile.city': true,
+      'profile.state': true,
+      'profile.zip': true,
+      
       'emails': true,
       'emails[0].address': true,
       'emails.address': true
@@ -89,7 +99,7 @@ Meteor.publish('userProfile', function (userId) {
   }
 });
 
-// Publish users directory and user profile
+// Publish the user directory which everbody can see
 Meteor.publish("usersDirectory", function () {
   try{
     return Meteor.users.find({}, {fields: {
