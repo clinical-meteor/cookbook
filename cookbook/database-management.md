@@ -18,6 +18,13 @@ sudo mongo --shell schema.js
 Ask, and ye shall receive.  Check out this package...  
 https://github.com/AlexeyMK/meteor-download  
 
+**Q:  How do I export the data from my Meteor development instance?**  
+
+````sh
+sudo mongodump --db meteor
+````
+
+
 **Q:  How do I import a JSON file into Meteor?**   
 
 ````js
