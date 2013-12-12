@@ -1,9 +1,21 @@
- 
-**Notes on Development Environments**    
-https://github.com/awatson1978/meteor-cookbook/blob/master/environments-development.md
 
-**Notes on Production Environments**  
-https://github.com/awatson1978/meteor-cookbook/blob/master/environments-production.md
+**Q:  What environment variables are supported?**  
+So far, the following variables have been seen in the wild:  
+
+PORT  
+MONGO_URL  
+ROOT_URL  
+OPLOG_URL  
+MONGO_OPLOG_URL
+METEOR_SETTINGS  
+NODE_OPTIONS  
+DISABLE_WEBSOCKETS  
+MAIL_URL  
+DDP_DEFAULT_CONNECTION_URL  
+HTTP_PROXY  
+HTTPS_PROXY  
+
+
 
 **Cloud Development**    
 https://www.nitrous.io/  
@@ -19,6 +31,5 @@ Modulus.io has bypassed Heroku as our favorite PaaS provider.  Check them out!
 http://blog.modulus.io/deploying-meteor-apps-on-modulus  
 http://blog.modulus.io/demeteorizer  
 https://github.com/onmodulus/demeteorizer  
-
 
 
