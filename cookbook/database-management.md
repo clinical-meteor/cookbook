@@ -83,3 +83,22 @@ meteor mongo --port 3002
 // copy collections from staging database into meteor database
 db.copyDatabase('test', 'meteor', 'localhost');
 ````
+
+**Q:  How can I compact a Mongo database?**  
+
+Some research on the Mongo preallocation...
+http://stackoverflow.com/questions/2966687/reducing-mongodb-database-file-size  
+http://stackoverflow.com/questions/9473850/mongo-prealloc-files-taking-up-room   
+
+````js
+// compact the database from within the Mongo shell
+db.runCommand( { compact : 'mycollectionname' } )
+
+// repair the database from the command line
+mongod --config /usr/local/etc/mongod.conf --repair --repairpath /Volumes/X/mongo_repair --nojournal
+
+// or dump and re-import from the command line
+mongodump -d databasename
+echo 'db.dropDatabase()' | mongo databasename
+mongorestore dump/databasename
+````
