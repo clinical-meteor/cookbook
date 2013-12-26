@@ -104,8 +104,17 @@ mongorestore dump/databasename
 ````
 
 **Q:  How do I rotate log files?**  
+
 Some links...  
 http://stackoverflow.com/questions/5004626/mongodb-log-file-growth  
+http://docs.mongodb.org/manual/tutorial/rotate-log-files/  
+
+Log files can be viewed with the following command...
+````js
+ls /var/log/mongodb/
+````
+
+But to set up log-file rotation, you'll need to do the following...  
 ````js
 // put the following in the /etc/logrotate.d/mongod file
 /var/log/mongo/*.log {
@@ -121,4 +130,8 @@ http://stackoverflow.com/questions/5004626/mongodb-log-file-growth
         /bin/kill -SIGUSR1 `cat /var/lib/mongo/mongod.lock 2> /dev/null` 2> /dev/null || true
     endscript
 }
+
+// to manually initiate a log file rotation, run from the Mongo shell
+use admin
+db.runCommand( { logRotate : 1 } )
 ````
