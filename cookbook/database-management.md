@@ -86,7 +86,7 @@ db.copyDatabase('test', 'meteor', 'localhost');
 
 **Q:  How can I compact a Mongo database?**  
 
-Some research on the Mongo preallocation...
+Some research on the Mongo preallocation...  
 http://stackoverflow.com/questions/2966687/reducing-mongodb-database-file-size  
 http://stackoverflow.com/questions/9473850/mongo-prealloc-files-taking-up-room   
 
