@@ -102,3 +102,23 @@ mongodump -d databasename
 echo 'db.dropDatabase()' | mongo databasename
 mongorestore dump/databasename
 ````
+
+**Q:  How do I rotate log files?**  
+Some links...  
+http://stackoverflow.com/questions/5004626/mongodb-log-file-growth  
+````js
+// put the following in the /etc/logrotate.d/mongod file
+/var/log/mongo/*.log {
+    daily
+    rotate 30
+    compress
+    dateext
+    missingok
+    notifempty
+    sharedscripts
+    copytruncate
+    postrotate
+        /bin/kill -SIGUSR1 `cat /var/lib/mongo/mongod.lock 2> /dev/null` 2> /dev/null || true
+    endscript
+}
+````
