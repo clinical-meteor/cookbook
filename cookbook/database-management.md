@@ -135,3 +135,7 @@ But to set up log-file rotation, you'll need to do the following...
 use admin
 db.runCommand( { logRotate : 1 } )
 ````
+
+**Q:  Ooops!  I messed up my replication set!  How do I reset it?**  
+Delete the local database files.  Just exit the Mongo shell, navigate to the dbpath, and delete the local files.   
+
