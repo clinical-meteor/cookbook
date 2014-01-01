@@ -1,6 +1,12 @@
 ## Collections
 
-  
+**Q:  Meteor is creating _id values with a non-standard format without ObjectIds!**  
+
+You can default to the normal Mongo format by defining your collections with the ``idGeneration`` field.  
+````
+MyCollection = new Meteor.Collection('mycollection', {idGeneration : 'MONGO'});
+````
+
 **Q:  How do I insert an { array | date | boolean | session } into a document record?**  
 This example should mostly cover it:
 
