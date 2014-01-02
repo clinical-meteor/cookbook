@@ -101,6 +101,7 @@ db.posts.find().forEach(function(doc){
 });
 `````
 
+#### unset specific field to null
 ````js
 db.posts.find().forEach(function(doc){
     if(doc.oldfield){
