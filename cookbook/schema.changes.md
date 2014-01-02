@@ -62,3 +62,86 @@ db.posts.find().forEach(function(doc){
     }
 });
 ````
+
+
+#### make sure field exists
+````js
+db.posts.find().forEach(function(doc){
+    if(!doc.foo){
+        db.posts.update({_id: doc._id}, {$set:{'foo':''}}, false, true);
+    }
+});
+````
+
+
+#### make sure field has specific value
+````js
+db.posts.find().forEach(function(doc){
+    if(!doc.foo){
+        db.posts.update({_id: doc._id}, {$set:{'foo':'bar'}}, false, true);
+    }
+});
+````
+
+#### remove record if specific field is specific value
+````js
+db.posts.find().forEach(function(doc){
+    if(doc.foo === 'bar'){
+        db.posts.remove({_id: doc._id});
+    }
+});
+````
+
+#### change specific value of field to new value
+````js
+db.posts.find().forEach(function(doc){
+    if(doc.foo === 'bar'){
+        db.posts.update({_id: doc._id}, {$set:{'foo':'squee'}}, false, true);
+    }
+});
+`````
+
+````js
+db.posts.find().forEach(function(doc){
+    if(doc.oldfield){
+        // the false, true at the end refers to $upsert, and $multi, respectively
+        db.accounts.update({_id: doc._id}, {$unset: {'oldfield': "" }}, false, true);
+    }
+});
+````
+
+#### convert ObjectId to string
+````js
+db.posts.find().forEach(function(doc){
+     db.accounts.update({_id: doc._id}, {$set: {'_id': doc._id.str }}, false, true);
+});
+````
+
+#### convert field values from numbers to strings
+````js
+var newvalue = "";
+db.posts.find().forEach(function(doc){
+     if(doc.foo){
+         newvalue = '"' + doc.foo + '"';
+         db.accounts.update({_id: doc._id}, {$set: {'doc.foo': newvalue}});
+     }
+});
+````
+
+#### convert field values from strings to numbers
+````js
+var newvalue = null;
+db.posts.find().forEach(function(doc){
+     if(doc.foo){
+         newvalue = '"' + doc.foo + '"';
+         db.accounts.update({_id: doc._id}, {$set: {'doc.foo': newvalue}});
+     }
+});
+````
+
+
+
+
+
+
+
