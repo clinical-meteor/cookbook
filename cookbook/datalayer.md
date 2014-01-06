@@ -98,6 +98,13 @@ Once that's done, you should be able to access logs in the usual places...
 /var/log/mongodb/server1.log
 ````
 
+Also, people have been mentioning the following MONGO_URL parameters as being useful...   
+````js
+?autoReconnect=true
+?replicaSet=meteor
+````
+
+
 **Q:  How should I go about designing my collections?**  
 Well, instead of telling you what you ought to do; how about I tell you how I go about designing *my* collection schemas.  I've been working with Mongo for a couple years now, and document oriented database for maybe 8 years now.  There are few rules I use nowdays when designing data storage collections:
 
