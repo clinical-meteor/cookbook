@@ -19,7 +19,7 @@ Here's a common pattern for submitting data to your app, instead of binding to t
 Template.navbarHeaderTemplate.events({
   'keyup #urlAddressBar': function(evt,tmpl){
      if(evt.keyCode == 13) {
-       // override the default behavior
+       // decide whether you want to prevent default behavior or not
        evt.preventDefault()
        
        // set client side session variable
