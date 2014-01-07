@@ -18,14 +18,19 @@ Here's a common pattern for submitting data to your app, instead of binding to t
 ````js
 Template.navbarHeaderTemplate.events({
   'keyup #urlAddressBar': function(evt,tmpl){
-    try{
-      if(evt.keyCode == 13) {
-        Session.set('browser_window_location', $('#urlAddressBar').val());
-        Meteor.flush();
-      }
-    }catch(err){
-      console.error(err);
-    }
+     if(evt.keyCode == 13) {
+       // override the default behavior
+       evt.preventDefault()
+       
+       // set client side session variable
+       Session.set('browser_window_location', $('#urlAddressBar').val());
+       
+       // or set something in the database
+       Meteor.users().update({_id: Meteor.userId()}, {$set: { 'profile.selectedUrl': $('#urlAddressBar').val() }})
+       
+       // and finally, maybe force the UI to redraw if necessary
+       Meteor.flush();
+     }
   }
 });
 ````
