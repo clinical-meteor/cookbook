@@ -7,3 +7,6 @@ Watch these videos for the future of Meteor video.io.  Specifically, Newcomb tal
   https://www.youtube.com/watch?v=ixASZtHYGKY  
   https://www.youtube.com/watch?v=zpebYhm8f2o  
   https://www.youtube.com/watch?v=OhfI2wFNKFQ  
+
+There's also the OpenTok framework, which a few different groups have used to make video solutions with.  
+http://tokbox.com/opentok
