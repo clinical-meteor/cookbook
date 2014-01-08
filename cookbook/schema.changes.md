@@ -140,8 +140,14 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
-
-
+#### create a timestamp from an ObjectID in the _id field
+````js
+db.posts.find().forEach(function(doc){
+    if(doc._id){
+        db.posts.update({_id: doc._id}, {$set:{ timestamp: new Date(parseInt(doc._id.str.slice(0,8), 16) *1000) }}, false, true);
+    }
+});
+````
 
 
 
