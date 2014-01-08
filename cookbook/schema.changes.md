@@ -152,7 +152,7 @@ db.posts.find().forEach(function(doc){
 #### find all the records that have items in a particular array  
 what we're doing here is referencing the array index using dot notation  
 ````js
-db.posts.find({"tags.1": {$exists: true }})
+db.posts.find({"tags.0": {$exists: true }})
 ````
 
 
