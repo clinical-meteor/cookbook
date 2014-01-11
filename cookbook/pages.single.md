@@ -45,7 +45,7 @@ The controller is fairly straight forward.
 ##### The Controller   
 ````js
 // client/views/page.home.js 
-Template.homePage.getText = function(){
+Template.homePage.getTitle = function(){
  return "Hello World";
 }
 Template.homePage.getText = function(){
