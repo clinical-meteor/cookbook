@@ -1,4 +1,4 @@
-## Data Transformations  
+## Data Shaping   
 ### A Guide to User Interface Design for Managers and C-Suite Executives  
 This page is a little different than some of the other pages in the Meteor Cookbook, as it is intended more for the UI designer or business executive.  Eventually, I hope to make it into an infographic poster.   
 
