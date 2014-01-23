@@ -1,6 +1,6 @@
   
 
-### Server Side REST APis
+#### Server Side REST APis
 
 https://github.com/EventedMind/iron-router/blob/master/lib/server/router.js 
 https://github.com/nooitaf/meteor-cfs-public-folder/blob/master/cfs-public-folder.js  
@@ -24,14 +24,14 @@ var testAction = function() {
 
 
 
-### References  
+#### References  
 
 **Meteor REST Collection**  
 http://stackoverflow.com/questions/13699126/meteor-rest-collection-api-and-auth  
 
 
 
-### Light Weight REST Api
+#### Light Weight REST Api
 
 **RestStop 2**  
 https://github.com/BeDifferential/reststop2  
@@ -40,7 +40,7 @@ https://github.com/BeDifferential/reststop2
 https://github.com/crazytoad/meteor-collectionapi  
 
 
-### REST APIs using GridFS
+#### REST APIs using GridFS
 
 **HTTP Publish**  
 https://github.com/CollectionFS/Meteor-http-publish  
