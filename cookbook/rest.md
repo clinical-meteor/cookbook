@@ -6,6 +6,24 @@ https://github.com/EventedMind/iron-router/blob/master/lib/server/router.js
 https://github.com/nooitaf/meteor-cfs-public-folder/blob/master/cfs-public-folder.js  
 
 
+````js
+// this is in the server directory
+Router.map(function () {
+  this.route("test-page", {path: "test.js", where: "server", action: testAction});
+});
+
+var testAction = function() {
+  console.log(this.params);
+  console.log(this.request);
+
+  this.response.statusCode = 200;
+  this.response.setHeader("Content-Type", "application/javascript");
+  this.response.end("console.log('hi!');");
+};
+````
+
+
+
 ### References  
 
 **Meteor REST Collection**  
