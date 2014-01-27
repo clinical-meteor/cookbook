@@ -1,6 +1,6 @@
   
 
-#### Server Side REST APis
+#### Server Side REST APIs
 
 https://github.com/EventedMind/iron-router/blob/master/lib/server/router.js 
 https://github.com/nooitaf/meteor-cfs-public-folder/blob/master/cfs-public-folder.js  
