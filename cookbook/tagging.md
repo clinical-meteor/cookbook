@@ -112,7 +112,7 @@ Template.blogPost.events({
 });
 ````
 
-#### Application View
+#### Application View (Optional)
 Lastly, we want to define some different Views for phone, tablet, and desktops; and some basic UI styling depending on user input.  
 
 ````css
