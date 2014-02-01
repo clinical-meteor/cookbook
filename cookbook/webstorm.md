@@ -26,7 +26,7 @@ Run ``meteor add less`` at the command line to include the LESS precompiler.  Th
 As per the Meteor style guide.  
 https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
 
-````
+````js
 // Tabs and Indents  
 Tab Size: 2  
 Indent: 2  
