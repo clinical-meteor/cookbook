@@ -1,7 +1,7 @@
  
  
 ------------------------------------------------------------------
-## Development Environment
+## Development Tools
 
 **Q:  What are best practices for setting up my development environment?**  
 Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  See below.  
