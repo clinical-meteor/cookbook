@@ -1,10 +1,11 @@
 ## Tagging
 
-**The Problem:**  You want to display a list of tags associated with a post or record.  
+### The Problem  
+You want to display a list of tags associated with a post or record.  
 
 
 
-#### UI Dependencies
+### UI Dependencies
 For this example, we're goign to use Bootstrap 3, Font Awesome, and the Less precompiler.  So be sure to run the following from the command prompt:
 
 ````sh
