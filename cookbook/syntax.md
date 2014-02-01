@@ -1,6 +1,5 @@
- 
 ## Syntax  
-__/ˈsinˌtaks/__  - the arrangement of words and phrases to create well-formed sentences in a language.  
+**- the arrangement of words and phrases to create well-formed sentences in a language.**    
 
 
 I found that I spend far, far more time working about establishing the correct syntax of LESS/CSS classes, than ever worrying about MVC structure nowdays.  By doing so, you can create code like the following:
@@ -23,3 +22,12 @@ I found that I spend far, far more time working about establishing the correct s
 ````
 
 And once you get to larger applications, that kind of syntax will be not just invaluable, it will be essential, to managing application complexity.  Note how the classes are bordering on being pseudo-english sentences.  If you can structure your css/less classes in that manner, you'll be able to offload commonly used functionality to hardware accelerated code, manage it with dependencies and includes/imports, and keep your application syntax super easy to read and maintain.   
+
+
+#### Semantic Libraries  
+At the very least, get yourself a UI kit, such as Bootstrap 3 or Zurb Foundation.  All the examples in the Meteor Cookbook use Bootstrap 3.  However, in the future, we're considering moving to something even more semantic, such as Semantic UI.  
+
+[Bootstrap](http://getbootstrap.com/)  
+[Semantic UI](http://semantic-ui.com/)  
+[Semantic HTML](http://www.w3schools.com/html/html5_semantic_elements.asp)
+
