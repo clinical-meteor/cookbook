@@ -6,7 +6,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Index  
 
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
-- Language References
+- Meteor Style Guide
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
   - [Syntax](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
   - [Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
