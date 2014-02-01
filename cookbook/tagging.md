@@ -1,5 +1,5 @@
-### The Application Layer
--------------------------------
+## The Application Layer
+
 
 #### The Object Model
 
@@ -63,8 +63,6 @@ Template.taskItemTemplate.events(okCancelEvents(
 }));
     
     
-    
-//-------------------------------------------------
 
 Template.taskDetailCardTemplate.tag_objs = function(){
     try{
@@ -82,4 +80,32 @@ Template.taskDetailCardTemplate.adding_tag = function(){
         console.log(error);
     }
 };
+````
+
+
+## The Database Layer
+
+````js
+// client/subscriptions.js
+Meteor.subscribe('posts');
+
+//lib/model.js
+Posts  = new Meteor.Collection("posts");
+Posts.allow({
+    insert: function(){
+        return true;
+    },
+    update: function () {
+        return true;
+    },
+    remove: function(){
+        return true;
+    }
+});
+
+
+// server.publications.js
+Meteor.publish('posts', function () {
+  return Posts.find();
+});
 ````
