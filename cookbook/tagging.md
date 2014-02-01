@@ -1,8 +1,6 @@
 ## Tagging
 
-### The Problem  
-You want to display a list of tags associated with a post or record.  
-
+**Q:  How do I add hashtags functionality?**  
 
 
 ### UI Dependencies
