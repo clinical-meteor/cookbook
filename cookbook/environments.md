@@ -16,7 +16,7 @@ HTTP_PROXY
 HTTPS_PROXY  
 METEOR_SETTINGS 
 
-**How do I specify application parameters based on environment?**    
+**Q:  How do I specify application parameters based on environment?**    
 ``METEOR_SETTINGS`` environment variable can accept JSON objects.
 
 ````js
@@ -28,19 +28,3 @@ These settings can then be accessed from ``Meteor.settings``.
 ````js
 Meteor.settings.public.ga.account
 ````
-**Cloud Development**    
-https://www.nitrous.io/  
-
-Quick deploy a meteor application on Nitrous.io using the following command... 
-````js
-parts install meteor
-````
-
-**What's the best PaaS provider for Meteor apps?**    
-Modulus.io has bypassed Heroku as our favorite PaaS provider.  Check them out!  
-
-http://blog.modulus.io/deploying-meteor-apps-on-modulus  
-http://blog.modulus.io/demeteorizer  
-https://github.com/onmodulus/demeteorizer  
-
-
