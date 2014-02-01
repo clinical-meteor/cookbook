@@ -1,12 +1,47 @@
 ## Syntax  
 **- the arrangement of words and phrases to create well-formed sentences in a language.**    
 
+Language syntax doesn't have to be hard.  But somehow it often is.  Meteor makes language syntax a breeze, if you're willing to use a few particular patterns.  
 
-I found that I spend far, far more time working about establishing the correct syntax of LESS/CSS classes, than ever worrying about MVC structure nowdays.  By doing so, you can create code like the following:
+####Semantic HTML
+Keep in mind that Meteor supports HTML5, which includes all of the following structural tags.  
+
+    <header>
+    <nav>
+    <section>
+    <article>
+    <aside>
+    <figure>
+    <figcaption>
+    <footer>
+    <details>
+    <summary>
+    <mark>
+    <time>
+    <dialog>
+    <command>
+    <meter>
+    <progress>
+    <canvas>
+    
+And there are also the folowing Media Tags.
+    
+    <video>
+    <audio>
+    <source>
+    <track>
+    <embed>
+    <canvas>
+    <svg>
+    
+[Semantic HTML](http://www.w3schools.com/html/html5_semantic_elements.asp)
+
+
+
 
 ````html
 <template name="userItemTemplate">
-    <li class="rounded-corners user-card without-padding">
+    <li class="user-card with rounded-corners without-padding">
         <img class="card-image with gray-border" src="{{ userImage }}" />
         <div class="card-data">
             <div class="card-northwest gray card-meta-data without-padding barcode">*{{ _id }}*</div>
@@ -29,5 +64,4 @@ At the very least, get yourself a UI kit, such as Bootstrap 3 or Zurb Foundation
 
 [Bootstrap](http://getbootstrap.com/)  
 [Semantic UI](http://semantic-ui.com/)  
-[Semantic HTML](http://www.w3schools.com/html/html5_semantic_elements.asp)
 
