@@ -1,5 +1,5 @@
-------------------------------------------------------------------
-### Namespacing
+## Namespacing
+**Q:  How do I do namespacing in Meteor?**  
 
 As for namespacing, there are three approaches to namespacing that I've seen in use.  
 
