@@ -14,7 +14,8 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 - [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/installation.md)  
   - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
   - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/devtools.md)
-  - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
+  - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)    
+  - - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
 - Site Mechanics
     - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/filestructure.md) 
@@ -35,7 +36,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [Video IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/video.md)  
   - Network Layer
     - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
-      - [Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-development.md)  
+      - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
       - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
       - [Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
     - [Peer to Peer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/peer-to-peer.md)  
