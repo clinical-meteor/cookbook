@@ -4,7 +4,7 @@
 
 
 ### UI Dependencies
-For this example, we're goign to use Bootstrap 3, Font Awesome, and the Less precompiler.  So be sure to run the following from the command prompt:
+For this recipe, we're goign to use Bootstrap 3, Font Awesome, and the Less precompiler.  So be sure to run the following from the command prompt:
 
 ````sh
   mrt add bootstrap-3
