@@ -3,9 +3,10 @@
 
 Language syntax doesn't have to be hard.  But somehow it often is.  Meteor makes language syntax a breeze, if you're willing to use a few particular patterns.  
 
-####Semantic HTML
+####Semantic HTML in Meteor
 Keep in mind that Meteor introduces the ``<template>`` tag, and supports [HTML5](http://www.w3schools.com/html/html5_semantic_elements.asp), which includes all of the following structural tags.  
 
+    <template>
     <header>
     <nav>
     <section>
