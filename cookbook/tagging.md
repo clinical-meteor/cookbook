@@ -1,5 +1,3 @@
-##  Tagging 
-
 ### The Application Layer
 -------------------------------
 
