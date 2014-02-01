@@ -1,4 +1,24 @@
  
+**Community Breaking News - 0.6.6**  
+
+As of 0.6.6, Package.register_extention() is now deprecated and breaks applications.  Please remove any such calls from your packages.
+
+````js
+// Depreciated as of Meteor 0.6.6  
+// Package.register_extension(
+//     "otf", function (bundle, source_path, serve_path, where) {
+//         bundle.add_resource({
+//             type: "static",
+//             path: '/fonts/' + serve_path.split('/').pop(),
+//             source_file: source_path,
+//             where: where
+//         });
+//     }
+// );
+````
+
+
+
 **Community Brekaing News - 0.6.5**  
 
 With the recent release of version 0.6.5, many applications and packages broke and people are seeing errors all over the place.  Here's a quick rundown on getting apps back up and running again.
