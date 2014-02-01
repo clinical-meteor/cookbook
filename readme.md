@@ -86,35 +86,16 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 
 
 
-##Sample Applets  
-New section.  Probably going to eventually wind up in the recipes.md page.  
+##Applet Demos
+Links to live versions of the examples in this cookbook.  
 
-Fonts & Calligraphy  
-http://fonts.meteor.com/  
-
-Data Sets  
-http://hubble.meteor.com/  
-
-Acceptance Testing  
-http://safety-harness.meteor.com/  
-
-Creating Forms  
-http://forms-kitchen-sink.meteor.com/  
-
-Understanding The Rendering Event Loop  
-http://reactive-rendering-tests.meteor.com/  
-
-Dictionary  
-http://dictionary.meteor.com/
-
-Mobile Devices - iOS in Particular  
-https://github.com/awatson1978/cordova-phonegap  
-
-**Useful Modules/Recipes**  
-
-Reactive Overlays  
-https://github.com/awatson1978/reactive-overlays  
-
+[Fonts & Calligraph](http://fonts.meteor.com/)    
+[Data Sets](http://hubble.meteor.com/)  
+[Acceptance Testing](http://safety-harness.meteor.com/)  
+[Creating Forms](http://forms-kitchen-sink.meteor.com/)  
+[Understanding The Rendering Event Loop](http://reactive-rendering-tests.meteor.com/)  
+[Dictionary](http://dictionary.meteor.com/)
+[Mobile Devices - iOS in Particular](https://github.com/awatson1978/cordova-phonegap)  
 
 
 ## Support
