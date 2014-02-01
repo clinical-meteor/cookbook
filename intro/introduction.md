@@ -1,4 +1,4 @@
-Hello, and welcome to the Automat (aka, the Meteor Cookbook).
+Hello, and welcome to the Meteor Cookbook.
 
 Before diving into this cookbook, please be aware of the following two conventions, which are used throughout these tutorials and examples.
 
