@@ -1,5 +1,9 @@
 ## Terminology
+**Q:  How do I use DDP instead of a REST API with an ORM?  Is that ACID compliant?**  
 
+
+#### Acronyms  
+Luckily, Meteor has been fairly good about not using too many acronyms.  But there are a few concept which you might not have run across, depending on your background, and how you came to Meteor. Here are a few relevant acronyms which people ask about from time to time...
 
 **ACID - Atomicity, Consistency, Isolation, Durability**  
 Generally speaking, when Meteor folks talk about ACID, they're talking about the fact that Mongo doesn't support traditional database transactions; they're not talking about the Acid2 browser compatibility tests.
