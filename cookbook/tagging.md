@@ -37,7 +37,7 @@ Meteor.publish('posts', function () {
 ````
 
 This example assumes the following document schema for the tagging pattern:
-````json
+````js
 {
   _id: "3xHCsDexdPHN6vt7P",
   title: "Sample Title",
@@ -83,7 +83,7 @@ Next, we want to set up some controllers to return data, implement some data inp
 // you will need to set the selectedPostId session variable 
 // somewhere else in your application
 Template.blogPost.selectedPost = function(){
-  return Posts.findOne({_id: Session.get('selectedPostId)});
+  return Posts.findOne({_id: Session.get('selectedPostId')});
 }
 
 // next, we use the _.map() function to read the array from our record
@@ -109,7 +109,7 @@ Template.blogPost.events({
 #### Application View
 Lastly, we want to define some different Views for phone, tablet, and desktops; and some basic UI styling depending on user input.  
 
-````less
+````css
 // default desktop view
 .fa-plus:hover{
   cursor: pointer;
