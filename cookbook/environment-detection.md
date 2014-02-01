@@ -1,4 +1,7 @@
+## Environment Detection
+
 **Q:  How do I detect the environment?**  
+
 ````js
 //------------------------------------------------------------------------------------------------------
 // server/server.js
