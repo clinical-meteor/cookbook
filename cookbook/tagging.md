@@ -1,4 +1,10 @@
-## UI Dependencies
+## Tagging
+
+**The Problem:**  You want to display a list of tags associated with a post or record.  
+
+
+
+#### UI Dependencies
 For this example, we're goign to use Bootstrap 3, Font Awesome, and the Less precompiler.  So be sure to run the following from the command prompt:
 
 ````sh
@@ -8,7 +14,7 @@ For this example, we're goign to use Bootstrap 3, Font Awesome, and the Less pre
 ````
 
 
-## The Database Layer
+### The Database Layer
 First, we want to set up the necessary Data Distribution Protocol controllers, to make sure that we can persist data to the database, and get it in the client.  Three files need to be created... one on the server, one on the client, and one shared between both.  
 
 ````js
@@ -46,7 +52,7 @@ This example assumes the following document schema for the tagging pattern:
 }
 ````
 
-## The Application Layer
+### The Application Layer
 
 #### Application Object Model
 Second, we want to create our object model in the application layer.   The following is how you would use a Bootstrap panel to render a post with title, text, and tags.  Note that ``selectedPost``, ``tagObjects``, and ``tag`` are all helper functions of the blogPost template.  ``title`` and ``text`` are fields from our document record.  
