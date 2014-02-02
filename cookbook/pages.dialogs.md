@@ -1,5 +1,5 @@
 ## Modal Dialogs  
-----------------------
+
 
 Setting up modal dialogs in Meteor is super easy, and there's no need to use an external library like jQuery.  
 
