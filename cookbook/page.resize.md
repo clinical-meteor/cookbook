@@ -13,3 +13,17 @@ $(window).resize(function(){
     window.resizeTo(size[0],size[1]);
 });
 ````
+
+#### define Chrome App window bounds
+http://developer.chrome.com/apps/first_app.html
+
+````js
+chrome.app.runtime.onLaunched.addListener(function() {
+  chrome.app.window.create('window.html', {
+    'bounds': {
+      'width': 400,
+      'height': 500
+    }
+  });
+});
+````
