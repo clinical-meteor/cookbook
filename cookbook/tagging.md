@@ -96,7 +96,7 @@ Template.blogPost.selectedPost = function(){
 Template.blogPost.tagObjects = function () {
     var post_id = this._id;
     return _.map(this.tags || [], function (tag) {
-        return {post_id: todo_id, tag: tag};
+        return {post_id: post_id, tag: tag};
     });
 };
 
