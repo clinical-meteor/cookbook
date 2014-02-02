@@ -15,7 +15,7 @@
   
 #### Database Tools
 [MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb)  
-[Robo Mongo](http://robomongo.org/) - A sweet, sweet database management tool for when you start separating your application and database layers.   
+[Robo Mongo](http://robomongo.org/) - A sweet, sweet database management tool.   
 [Mongo3](http://mongo3.com/) - It's in Ruby, but it will let you visualize replication sets.   
 
 
