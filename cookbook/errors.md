@@ -24,6 +24,7 @@ Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a
 ````
 
 
+
 **ReferenceError: ServiceConfiguration is not defined**     
 
 The first step to resolving 'is not defined' errors is to check to see if there's a core package available.  Be aware that sometimes you'll need to change naming schemas.  In this example, there's a core package in snake-case that gets converted to camelCase in the error message.
@@ -115,5 +116,6 @@ Gotta set the ``ROOT_URL`` to ``http://sub.domain.com``.  Be sure to include the
 Sometimes I see this error when I try to push an app while another version is already running.  Try stopping the app from the Modulus admin panel, then deploying.  Also, versions matter.  Using ``sudo demeteorizer -n 0.10.0`` seems to be a safe bet.
 https://github.com/onmodulus/demeteorizer/issues/14  
 
+**Error: Did not check() all arguments during call to 'fooBar'** 
 
 
