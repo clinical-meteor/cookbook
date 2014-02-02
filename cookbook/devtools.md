@@ -5,29 +5,17 @@
 
 
 #### Integrated Development Environments  
-[WebStorm](http://www.jetbrains.com/webstorm/)  
-The most full featured IDE currently available for Meteor.  
+[WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor. 
+[Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
+[Nitrous.io](https://www.nitrous.io/) - The best and only Cloud Development tool worth worrying about.  
   
-
-[Sublime](http://www.sublimetext.com/)   
-For something more light-weight and quick, try Sublime.   
-
-
-[Nitrous.io](https://www.nitrous.io/)  
-The best and only Cloud Development tool worth worrying about.  
-  
-
 
 #### Mobile Device Simulators  
 [Window Resizer (Chrome)](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)    
   
-
 #### Database Tools
-[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb) [Robo Mongo](http://robomongo.org/)     
-A sweet, sweet database management tool for when you start separating your application and database layers.  
-
-[Mongo3](http://mongo3.com/)  
-It's in Ruby, but it will let you visualize replication sets.  
+[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb) [Robo Mongo](http://robomongo.org/) - A sweet, sweet database management tool for when you start separating your application and database layers.   
+[Mongo3](http://mongo3.com/) - It's in Ruby, but it will let you visualize replication sets.   
 
 
 #### Pair Programming  
@@ -37,7 +25,6 @@ It's in Ruby, but it will let you visualize replication sets.
 
 #### REST Clients  
 [Dev HTTP Client](https://chrome.google.com/webstore/detail/dev-http-client/aejoelaoggembcahagimdiliamlcdmfm)      
-  
 [REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm/)      
   
 
