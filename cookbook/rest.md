@@ -7,7 +7,7 @@ https://github.com/nooitaf/meteor-cfs-public-folder/blob/master/cfs-public-folde
 
 
 ````js
-// this is in the server directory
+// serve up a virtual library
 Router.map(function () {
   this.route("test-page", {path: "test.js", where: "server", action: testAction});
 });
@@ -23,7 +23,7 @@ var testAction = function() {
 ````
 
 ````js
-// this is in the server directory
+// serve up a single page
 Router.map(function () {
   this.route("test-page", {path: "/post", where: "server", action: getPost});
 });
@@ -31,10 +31,12 @@ Router.map(function () {
 var getPost = function() {
   console.log(this.params);
   console.log(this.request);
+  var responseBody = "";
+  responseBody = JSON.stringify(Posts.find().fetch());
 
   this.response.statusCode = 200;
   this.response.setHeader("Content-Type", "application/javascript");
-  this.response.body("foo");
+  this.response.body(responseBody);
   this.response.end("console.log('hi!');");
 };
 ````
