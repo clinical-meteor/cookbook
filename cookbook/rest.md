@@ -22,6 +22,23 @@ var testAction = function() {
 };
 ````
 
+````js
+// this is in the server directory
+Router.map(function () {
+  this.route("test-page", {path: "/post", where: "server", action: getPost});
+});
+
+var getPost = function() {
+  console.log(this.params);
+  console.log(this.request);
+
+  this.response.statusCode = 200;
+  this.response.setHeader("Content-Type", "application/javascript");
+  this.response.body("foo");
+  this.response.end("console.log('hi!');");
+};
+````
+
 
 
 #### References  
