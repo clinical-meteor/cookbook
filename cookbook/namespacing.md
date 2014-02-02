@@ -5,7 +5,7 @@ There are four general approaches to creating namespaces in Meteor apps... the f
 
 
 **File System**  
-The most important  is to simply use the filesystem as a namespace.  Feel free to use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.
+The most important is to simply use the filesystem as a namespace.  Feel free to organize files in folders however makes sense for your app, and use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.  Meteor's bundler and minifier will combine all your files, and users and clients will never need to know how your internal files are organized.  Feel free to rename files and directories as often as it makes sense to keep things organized.
 ````sh
 /client/templates/page.home.html
 /client/templates/page.profile.html
@@ -18,33 +18,34 @@ The most important  is to simply use the filesystem as a namespace.  Feel free t
 
 
 **NPM Package Namespacing (Controller)**  
-And the most recent option for namespacing is with Npm packages:
+However, if you need to expose a namespace, or import a namespace, you'll probably need to use Javascript objects and the Npm namespacing system.  There are two steps in this process. The first is to expose a namespace via a Package. That is done with a ``package.js`` description file, which looks like this:
+
 ````js
 // package.js  
 Package.describe({
-  summary: "This is a sample package that doesn't actually do anything."
+  summary: "This is a sample package that exposes the Foo namespace."
 });
 
 // If you're bundling an NPM package, be sure to reference the package as a dependency
 Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
 
 Package.on_use(function (api) {
-  var path = Npm.require('path');
+  // we set a package global variable with some value
+  // in this case a JSON object
+  Foo = {label: "foo object", value: "foo"};
 
-  // sample_package.js  
+  // alternatively, we can reference an Npm package  
   Foo = Npm.require('sample_package');  
 
-  // export the object
+  // and we then export the Foo variable
   api.export('Foo');
 });
 ````
-Specifically, the ``Npm.depends()``, ``Npm.require()``, and ``Npm.export()`` commands define all the syntax you need to create a Javascript namespace.
-
-
+In particular, if you're trying to access Npm namespaces, the ``Npm.depends()``, ``Npm.require()``, and ``Npm.export()`` commands define all the syntax you need.
 
 
 **LESS Class Namespacing (View)**  
-The second approach to namespacing is to use LESS to create class structures like so:  
+The third most common approach to namespacing is to use LESS to create CSS class hierarchies and namespaces.  In the following example, the ``@import`` syntax defines a namespace hierarchy between LESS files; and the nested CSS classes define a hierarchical namespace in a tree format.  
 ````less
 @import "../mixins.less";
 
@@ -63,10 +64,10 @@ The second approach to namespacing is to use LESS to create class structures lik
   }
 }
 ````
-Specifically, the ``@import 'filename.less'`` gives you the necessary syntax to create CSS/LESS based namespaces. 
+
 
 **HTML Template Naming Conventions**  
-
+Lastly, you can create namespaces by simply creating and using naming convetions throughout your application. For instance, you might create a template naming convetion using camelCase.
 ````html
 <template name="pageGraph">
 <template name="pageProfile">
