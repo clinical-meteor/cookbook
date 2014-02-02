@@ -70,3 +70,12 @@ And just add an overlay mask to make the background transparent....
 ````
 
 As easy as that!  
+
+
+### Advanced Options
+
+````js
+Template.createDialog.error = function () {
+  return Session.get("createError");
+};
+````
