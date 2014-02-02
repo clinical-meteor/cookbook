@@ -70,7 +70,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - Exposing a REST API
     - User Interface Patterns
       - [Page Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/page.resize.md)  
-      - Page Freeze
       - Drag and Drop
 - [Error Referece](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
