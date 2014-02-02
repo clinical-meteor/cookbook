@@ -1,3 +1,6 @@
+##Device Detection  
+**Q:  How do I detect the mobile device?**  
+
 AgentString detection is a fairly standard approach, but has the problems of browser spoofing.  I've had fairly good success with mystor's device-detection package from Atmosphere.  
 
 Detecting touch-event support seems like it's a better approach, but remember that there are touch-screen desktop and wall monitors, ala Perceptive Pixel and the first generation versions of Microsoft Surface.  (We've all seen those huge multitouch monitors on news channels.)  So, that's where touch support falls apart. You can't assume that supporting multitouch means they're using a tablet or phone.  They could be sitting at a multitouch wall. And, increasingly, we'll be seeing multitouch interfaces making their way into kitchens, homes, bus-stops, cars, etc..  So the only thing that touch support tells you is that you need to render with UI designed for touch interfaces... meaning big buttons UI elements.  That, in turn, means assigning CSS classes. 
@@ -104,10 +107,12 @@ Now then, Morten, Alan, and I have been discussing Chrome Apps as a target compi
 
 The next thing I've been planning to experiment with, by way of Meteor and mobile, is taking the /bundle/programs/client directory, after running the bundler, and adding a manifest.json, background.js, and window.html file.  In theory, that directory is an ideal compilation point for hooking the Meteor toolchain to the Chrome App/Cordova toolchain.  If that works, it might be worth modifying the Meteor bundler, and adding options for compiling mobile specific versions of Meteor apps.  I dare say that there are lots of folks who would love the following options:
 
+````sh
 mrt bundle -mobile output.tar.gz
 mrt bundle -ios output.tar.gz
 mrt bundle -android output.tar.gz
 mrt bundle -all output.tar.gz
+````
 
 Or something like that.  Anyhow.  $0.02 of thoughts.  
 Abigail
