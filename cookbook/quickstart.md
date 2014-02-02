@@ -1,6 +1,7 @@
 ## Meteor Quickstart Installation
+**Q:  Why can't I run start my Meteor app?**    
 
-This quickstart is written for Mac OSX.  
+This quickstart is written for Mac OSX, and is a bit more verbose than other installation instructions.  
 
 ````sh
 # install meteor
