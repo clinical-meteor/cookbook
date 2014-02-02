@@ -2,7 +2,8 @@
 **Q:  What are best practices for setting up my development environment?**  
 Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  See below.  
 
-[WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.  [Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
+[WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.    
+[Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
 [Nitrous.io](https://www.nitrous.io/) - The best and only Cloud Development tool worth worrying about.  
   
 **Q:  My editor keeps crashing!  Help!**  
@@ -23,13 +24,6 @@ Add the myapp/.meteor directory to your ignore list.  Meteor takes your applicat
 
 [Screenhero](http://screenhero.com/download.html?src=btn)      
 [MadEye](http://madeye.io/get-started)  
-
-
-Run the following command in the Nitrous.io (web) command line to create a Meteor project.  
-````
-parts install meteor
-````
-
 
 
 
