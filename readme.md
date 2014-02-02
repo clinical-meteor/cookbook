@@ -69,7 +69,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)  
       - Exposing a REST API
     - User Interface Patterns
-      - Page Resize
+      - [Page Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/page.resize.md)  
       - Page Freeze
       - Drag and Drop
 - [Error Referece](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
