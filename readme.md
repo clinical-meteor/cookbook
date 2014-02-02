@@ -51,8 +51,8 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
     - [Data Validation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
     - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
+    - [Object Model Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
   - Presentation Layer
-    - [Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
     - [Images](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/images.md)  
     - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
   - Application Layer
