@@ -59,32 +59,8 @@ media_feature: width | min-width | max-width
 
 And the CSS4 specs include a 'pointer' type, for touchscreens, kinects, wii, styluses, touchpads, mice, etc.  So, for future browsers to be CSS4 compliant, they'll need to expose hardware input information via CSS (which is in keeping with traditional ideas about what MVC is, ala Xerox Parc, etc).  
 
-The other approach to detecting screen size is to do it in Javascript with a $(window).width() and $(window).height() detection.  (Basically doing it in the Controller, rather than the View). That's much more liable to introduce performance issues if done incorrectly.  I've found that the following pattern is the best way to handle orientationchange events, resize events, and so forth, and can be a great way to kick off screen-size specific controls.  And I wind up adding it to nearly every project.  So, if you're looking for some mobile functionality to bake into Meteor, detecting resize events would be a great start for a Mobile API.   
-````js
-Session.set("resize", null); 
-Meteor.startup(function () {
-    $(window).resize(function(evt) {
-                  Session.set("resize", new Date());
-    });
-});
-Template.homePage.resized = function(){
-  var width = $(window).width();
-  var height = $(window).height();
-  
-            doSomethingCool(width, height);
- 
-  return Session.get('resize');
-}; 
-````js
+The other approach to detecting screen size is to do it in Javascript with a $(window).width() and $(window).height() detection.  (Basically doing it in the Controller, rather than the View). That's much more liable to introduce performance issues if done incorrectly.  
 
-````html
-<template name="homePage">
-  <div class="panel">
-    random content... 
-  <div> 
-  <div class="hidden">{{ resize }}</div>
-</template>
-````
 
 Of course, the best way to detect mobile is for the hardware to notify you directly.  Cordova PhoneGap exposes a 'deviceready' event, that you can add an event listener to.  So, the cordova-phonegap package does the following:
 
