@@ -70,24 +70,10 @@ The third most common approach to namespacing is to use LESS to create CSS class
 Lastly, you can create namespaces by simply creating and using naming convetions throughout your application. For instance, you might create a template naming convetion, using camelCase, which matches with the id of the first <div> in each template.
 ````html
 <template name="pageGraph">
-  <div id="pageGraph"></div>
-<template>
 <template name="pageProfile">
-  <div id="pageProfile"></div>
-<template>
 <template name="pageHome">
-  <div id="pageHome"></div>
-<template>
 <template name="pageErrorNotFound">
-  <div id="pageErrorNotFound"></div>
-<template>
 <template name="pageErrorUnknownBrowser">
-  <div id="pageErrorUnknownBrowser"></div>
-<template>
 <template name="sidebarInspection">
-  <div id="sidebarInspection"></div>
-<template>
 <template name="sidebarNavigation">
-  <div id="sidebarNavigation"></div>
-<template>
 ````
