@@ -1,4 +1,4 @@
-## Page Resize
+## Window Resizing
 
 I've found that the following pattern is the best way to handle orientationchange events, resize events, and so forth, and can be a great way to kick off screen-size specific controls.  And I wind up adding it to nearly every project.  So, if you're looking for some mobile functionality to bake into Meteor, detecting resize events would be a great start for a Mobile API.   
 ````js
