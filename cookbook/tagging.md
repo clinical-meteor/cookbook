@@ -72,7 +72,7 @@ Second, we want to create our object model in the application layer.   The follo
           </li>
           {{/each}}
           <li class="tag edittag">
-            <input type="text" id="edittag-input" value="" /><i class="fa fa-plus"> X</span>
+            <input type="text" id="edittag-input" value="" /><i class="fa fa-plus"></span>
           </li>
         </ul>
       </div>
