@@ -68,11 +68,11 @@ Second, we want to create our object model in the application layer.   The follo
         <ul class="horizontal-tags">
           {{#each tagObjects }}
           <li class="tag removable_tag">
-            <div class="name">{{tag}}<i class="fa fa-times"> X</span></div>
+            <div class="name">{{tag}}<i class="fa fa-times"></i></div>
           </li>
           {{/each}}
           <li class="tag edittag">
-            <input type="text" id="edittag-input" value="" /><i class="fa fa-plus"></span>
+            <input type="text" id="edittag-input" value="" /><i class="fa fa-plus"></i>
           </li>
         </ul>
       </div>
