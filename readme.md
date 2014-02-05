@@ -54,7 +54,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
     - [Object Model Templates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
   - Presentation Layer
-    - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/images.md)  
+    - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
     - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
   - Application Layer
     - [Routing](https://github.com/EventedMind/iron-router)  
