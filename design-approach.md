@@ -4,14 +4,18 @@ Before diving into this cookbook, please be aware of the following two conventio
 
 #### The OSI Model  
 
-First, it's based on the Open Systems Interconnection (OSI) Model ((ISO/IEC 7498-1)).  
+First, it's generally structured around the Open Systems Interconnection (OSI) Model ((ISO/IEC 7498-1)).  
 http://en.wikipedia.org/wiki/OSI_model
 
-This model is typically used to model network communications.  But here's a nifty little bit of trivia for you:  the OSI model can also be used to describe video transmission.  Instead of Ethernet and network cables, the Physical and Data Link layers are video screens and pixels.  Instead of data packets, one can talk about JPG and PNG images (which are just pixel based data packets).  So, be forewarned:  the Meteor Cookbook adopts what may be some peculilar usage of the OSI model to describe client side haptics, device drivers, and the like.  
+This model is typically used to describe network communications, and how packets of data travel from one machine to the next.  It describes how a client request to the server travels down the protocol stack, through the database, getting assigned TCP/IP headers, onto the wire (ethernet or wi-fi, etc), to the other machine, and back up the network stack to the server application.  That's how 90% of people understand the OSI model.
 
-Where most people think of JPG and PNG images as Presentation Layer or Application Layer functionality, the cookbook will sometimes refer to them as Data Link layer.  Same thing goes with Mouse controls and Drag-and-Drop functionality.  Most people don't consider Mice to have anything to do with Networking, and consider them to be Application Layer functionality.  But if you think in terms of wireless and bluetooth communications, then the boundary of what's a 'network device' becomes a bit blurry.  The mouse is just a device on a wire (or bluetooth) that's communicating X,Y coordinates to the CPU.  So, from a systems interconnectivity model, Mice and Mouse Drivers can be modeled in the Physical and Data Link layers.  
+However, if you've worked with the OSI model **a lot**, you'll know that it can be used for a lot more.  In particular, it can also be used to model haptics, physical devices, and human-computer interfaces.  Because, in the end, physical devices like mice and printers are basically just other machines.  Very dumb ones.  But the principles of network communications still apply.  Your mouse is connected to your computer by a wire, and while it doesn't use the TCP/IP protocol, the {x,y} coordinates are still getting mapped to wire protocol.  And you can use the OSI model to describe that mapping.
 
-Run with it.  It works.   
+Similarly, the OSI model can also be used to describe video transmission...  video camera input, video output, and all the steps in-between, including analog RGBA signalling.   Instead of Ethernet and network cables, the Physical and Data Link layers are video screens and pixels.  Instead of data packets, one can talk about JPG and PNG images (which are just pixel based data packets).  And so forth.  
+
+And finally, if you take all of that one step further, and you make a couple of funky assumption about eyes being networked video camera's to a person's brain, you can model computer-human interfaces and interactions with the OSI model.  You really can.  It works.  
+
+So, be forewarned:  the Meteor Cookbook adopts a rather generous interpretation of the OSI model to describe client side devices, device drivers, haptics, and the like.  And rather than placing Mice and other client-side devices in the Application Layer, they're in the Physical and DataLink layer.  It's more of a mesh networking approach, in keeping with today's modern wireless input devices.  
 
 
 #### Model-View-Controller  
