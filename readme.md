@@ -5,6 +5,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 
 ##Index  
 
+- [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
 - Meteor Style Guide
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
