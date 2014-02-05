@@ -1,3 +1,5 @@
+## Image Assets  
+
 #### Adding Image Assets via Packages
 The package file...  
 ````js
