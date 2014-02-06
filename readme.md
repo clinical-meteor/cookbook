@@ -42,7 +42,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Peer to Peer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/peer-to-peer.md)  
   - Transport Layer
     - [Scaling](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
-    - Data Distribution Protocol
+    - [Data Distribution Protocol](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.md)  
     - Clustering
     - Websockets
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
