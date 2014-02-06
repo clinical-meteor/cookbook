@@ -30,13 +30,11 @@ Meteor.isServer(function(){
 });
 ````
 
-**Regular Expressions in Javascript**  
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
-
 ````html
 <input id="dictionarySearchInput" type="text" placeholder="Filter..." value="life"></input>
 ````
 
+[Regular Expressions in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)  
 
 
 #### Multi-User Patterns
