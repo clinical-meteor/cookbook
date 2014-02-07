@@ -18,6 +18,7 @@ Template.homePage.resized = function(){
 }; 
 ````js
 
+ddd
 ````html
 <template name="homePage">
   <div class="panel">
