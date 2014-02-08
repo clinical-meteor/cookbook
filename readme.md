@@ -28,12 +28,12 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 - Open Systems Interconnection Model
   - Physical Layer (Client Side)
     - [Keybindings](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/keybinding.md)  
-    - [Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
     - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
   - Data-Link Layer
     - WebKit Browsers
       - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
       - [Video IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/video.md)  
+      - [Disk IO / Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
   - Network Layer
     - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
       - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
