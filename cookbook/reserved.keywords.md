@@ -1,6 +1,18 @@
 ## Reserved Keywords  
 
-Be careful about the reserved keywords 'length' and 'name'.  They're used by the Spark templates and Mongo, respectively, and can cause unexpected problems in your application.  
+
+Be careful about using the following reserved keywords.  Meteor integrates a number of packages and libraries which extend the Javascript reserved keyword list.  Between Mongo and the Spark templates, people have reported having problems when using the following keywords in their applications.  
+
+````
+name
+length
+assets
+template
+match
+stats
+````
+
+And some relevant links for people who would like to know more:
 
 Template.foo.name  
 https://github.com/meteor/meteor/issues/703  
