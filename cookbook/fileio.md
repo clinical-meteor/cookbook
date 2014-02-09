@@ -6,7 +6,7 @@ For when you need to read and parse a file on the server disk drive.  Useful for
 Meteor.startup(function () {
     console.log('starting up');
  
-    var fs = __meteor_bootstrap__.require('fs');
+    var fs = Npm.require('fs');
     fs.readFile('file.json', 'utf8', function (err, data) {
         if (err) {
             console.log('Error: ' + err);
@@ -21,7 +21,7 @@ Meteor.startup(function () {
  
 // Synchronous Method.
 Meteor.startup(function () {
-    var fs = __meteor_bootstrap__.require('fs');
+    var fs = Npm.require('fs');
     var data = fs.readFileSync('public/datafile/flare.json', 'utf8');
  
     if (Icd10.find().count() === 0) {
