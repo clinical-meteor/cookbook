@@ -35,7 +35,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
       - [Video IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/video.md)  
       - Disk IO  
-- Network Layer
+  - Network Layer
     - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
       - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
       - [Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
