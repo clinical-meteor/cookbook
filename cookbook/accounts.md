@@ -1,8 +1,4 @@
-  
-
-
-------------------------------------------------------------------
-### Accounts
+## Accounts
 
 **Q: Is there any documentation on the User Profile?**  
 
