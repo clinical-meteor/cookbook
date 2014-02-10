@@ -2,6 +2,14 @@
 
 Alerts and errors really are nearly the simplest of all Meteor component patterns.  They're so simple, in fact, that they barely register as a pattern in of themselves.  Instead of adding FlashAlert modules or patterns, all you really need to do is style a Handlebar template appropriate, add a helper, and wire it up to a reactive Session variable.
 
+#### Prerequisites  
+
+The following code requires the LESS precompiler and Bootstrap-3, respectively.  You will need to run the following commands at the command prompt to get them to work.
+````
+meteor add less
+mrt add bootstrap-3
+````
+
 #### Object Model:  Define Alert Object
 Start by adding some elements to your document object model.  In this case, we want to create a div element for our alert, that's wired up to two Handlebar helpers.  
 
@@ -58,11 +66,6 @@ Then we want to go back to our CSS, and define two views of the postsPage elemen
 }
 ````
 
-Note: The above code requires the LESS precompiler, and uses nested class syntax to define client-side Views.
-````
-meteor add less
-````
-
 #### Controllers:  Triggering the Alert
 Lastly, we go back to our controllers, and we define an event controller, which will trigger our alert when clicked.  
 
@@ -74,3 +77,5 @@ Template.postsPage.events({
   }
 });
 ````
+
+And that's all there is to it!  Super simple, right?  
