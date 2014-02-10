@@ -1,7 +1,6 @@
- 
+## Console Logging
 
 
-### Client Side Logging Tools  
 If you haven't explored the console API, be prepared for a treat.  There's actually all sorts of things that you can do with console.log commands.  So much so, in fact, that you may find yourself not needing Winston or other logging frameworks.  
 
 **Chrome Developer Tools**      
