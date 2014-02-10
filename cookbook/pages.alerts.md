@@ -2,7 +2,7 @@
 
 Alerts and errors really are nearly the simplest of all Meteor component patterns.  They're so simple, in fact, that they barely register as a pattern in of themselves.  Instead of adding FlashAlert modules or patterns, all you really need to do is style a Handlebar template appropriate, add a helper, and wire it up to a reactive Session variable.
 
-### Object Model:  Define Alert Object
+#### Object Model:  Define Alert Object
 Start by adding some elements to your document object model.  In this case, we want to create a div element for our alert, that's wired up to two Handlebar helpers.  
 
 ````html
@@ -17,7 +17,7 @@ Start by adding some elements to your document object model.  In this case, we w
 </template>
 ````
 
-### Controller:  Define Template Helpers  
+#### Controller:  Define Template Helpers  
 Then we want to wire up some controllers that will populate the object model with data.  We do so with two reactive session variables, and two handlebar helpers.
 
 ````js
@@ -44,7 +44,7 @@ Template.postsPage.alertMessage = function(){
 ````
 
 
-### Views: Define DOM Visibilty
+#### Views: Define DOM Visibilty
 Then we want to go back to our CSS, and define two views of the postsPage element.  In the first View, we display all of the contents in our object model.  In the second view, only some of the contents of our object model are displayed.  
 
 ````css
@@ -58,7 +58,7 @@ Then we want to go back to our CSS, and define two views of the postsPage elemen
 }
 ````
 
-### Controllers:  Triggering the Alert
+#### Controllers:  Triggering the Alert
 Lastly, we go back to our controllers, and we define an event controller, which will trigger our alert when clicked.  
 
 ````js
