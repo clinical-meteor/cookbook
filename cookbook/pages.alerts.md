@@ -25,13 +25,13 @@ Session.setDefault('alertLevel', false);
 Session.setDefault('alertMessage', "");
 
 Template.postsPage.alertColor = function(){
- if(Session.get('alertColor) == "Success"){
+ if(Session.get('alertColor') == "Success"){
   return "alert alert-success";
- }else if(Session.get('alertColor) == "Info"){
+ }else if(Session.get('alertColor') == "Info"){
   return "alert alert-info";
- }else if(Session.get('alertColor) == "Warning"){
+ }else if(Session.get('alertColor') == "Warning"){
   return "alert alert-warning";
- }else if(Session.get('alertColor) == "Danger"){
+ }else if(Session.get('alertColor') == "Danger"){
   return "alert alert-danger";
  }else{
   return "alert alert-hidden"
@@ -56,6 +56,11 @@ Then we want to go back to our CSS, and define two views of the postsPage elemen
     display: none;
   }
 }
+````
+
+Note: The above code requires the LESS precompiler, and uses nested class syntax to define client-side Views.
+````
+meteor add less
 ````
 
 #### Controllers:  Triggering the Alert
