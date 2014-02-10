@@ -8,6 +8,13 @@ As far as Meteor goes, there are many, many options available.  Particularly if 
 
 If you haven't explored the console API, be prepared for a treat.  There's actually all sorts of things that you can do with the built in Console API that's native to every Chrome and Safari installation.  So much so, in fact, that you may find yourself not needing Winston or other logging frameworks.  
 
+The first thing you'll want to do is install client side logging and developer tools.  Chrome and Safari both ship with them, but Firefox requires the Firebug extension.  
+
+**Firebug Extension**      
+https://addons.mozilla.org/en-US/firefox/addon/firebug/  
+
+Then, you'll want to check out the Console API documentation.  The following two documents are invaluable resources for learning console logging.  
+
 **Chrome Developer Tools**      
 https://developers.google.com/chrome-developer-tools/docs/console  
 
