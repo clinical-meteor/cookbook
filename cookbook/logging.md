@@ -10,16 +10,16 @@ If you haven't explored the console API, be prepared for a treat.  There's actua
 
 The first thing you'll want to do is install client side logging and developer tools.  Chrome and Safari both ship with them, but Firefox requires the Firebug extension.  
 
-&nbsp;&nbsp;**Firebug Extension**      
-&nbsp;&nbsp;https://addons.mozilla.org/en-US/firefox/addon/firebug/  
+&nbsp;&nbsp;&nbsp;&nbsp;**Firebug Extension**      
+&nbsp;&nbsp;&nbsp;&nbsp;https://addons.mozilla.org/en-US/firefox/addon/firebug/  
 
 Then, you'll want to check out the Console API documentation.  The following two documents are invaluable resources for learning console logging.  
 
-&nbsp;&nbsp;**Chrome Developer Tools**      
-&nbsp;&nbsp;https://developers.google.com/chrome-developer-tools/docs/console  
+&nbsp;&nbsp;&nbsp;&nbsp;**Chrome Developer Tools**      
+&nbsp;&nbsp;&nbsp;&nbsp;https://developers.google.com/chrome-developer-tools/docs/console  
 
-&nbsp;&nbsp;**Firebug (Client)**    
-&nbsp;&nbsp;http://getfirebug.com/logging  
+&nbsp;&nbsp;&nbsp;&nbsp;**Firebug (Client)**    
+&nbsp;&nbsp;&nbsp;&nbsp;http://getfirebug.com/logging  
 
 ### Server Side Logging Tools  
 
