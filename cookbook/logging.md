@@ -76,8 +76,8 @@ https://github.com/gandev-de/meteor-server-console
 Once those pieces are in place, you're totally ready to start logging events in your application.  In practice, there are a half-dozen commands that are particularly useful.  Here are three quick example, showing some of the most frequently used console logging patterns in Meteor.
 
 ````js
+// EXAMPLE 1:  Logging an error if the data is not available
 Template.landingPage.postsList = function(){
-  // using a try/catch block to log an error if the database flaps
   try{
     return Posts.find();
   }catch(error){
@@ -85,6 +85,8 @@ Template.landingPage.postsList = function(){
     console.error(error);
   }
 }
+
+// EXAMPLE 2: Inspecting objects in a Handlebar template helper
 Template.landingPage.getId = function(){
   // using a group block to illustrate function scoping
   console.group('coolFunction');
@@ -99,6 +101,8 @@ Template.landingPage.getId = function(){
   console.groupEnd();
   return this._id;
 }
+
+// EXAMPLE 3:  Logging events and user interactions  
 Template.landingPage.events({
   'click .selectItemButton':function(){
     // color code and count the user interaction (blue)
