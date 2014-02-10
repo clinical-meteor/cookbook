@@ -73,7 +73,8 @@ https://github.com/gandev-de/meteor-server-console
 
 ### Application Patterns  
 
-Here's a breakdown of how I go about doing my console logging;
+Once those pieces are in place, you're totally ready to start logging events in your application.  In practice, there are a half-dozen commands that are particularly useful.  Here are three quick example, showing some of the most frequently used console logging patterns in Meteor.
+
 ````js
 Template.landingPage.postsList = function(){
   // using a try/catch block to log an error if the database flaps
@@ -88,7 +89,10 @@ Template.landingPage.getId = function(){
   // using a group block to illustrate function scoping
   console.group('coolFunction');
   
-  // inspect an object
+  // inspect the current data object that landingPage is using
+  console.log(this);
+
+  // inspect a specific field of the locally scoped data object
   console.log(JSON.stringify(this._id);
 
   // close the function scope
@@ -97,19 +101,12 @@ Template.landingPage.getId = function(){
 }
 Template.landingPage.events({
   'click .selectItemButton':function(){
-    // color code the user interaction (blue)
+    // color code and count the user interaction (blue)
     console.count('click .selectItemButton');
   }
 });
 ````
 
-**WebStorm LiveTemplate**      
-A useful code snippet for managing database flapping.  This is something of a stop-gap measure, and there are many people who will recommenda against using try/catch blocks.  So, be careful about it's use.  The ``$SELECT$`` and ``$END$`` tags are WebStorm specific.  
-````js
-try{
-  $SELECT$
-}catch(error){
-  console.log(error);
-}
-$END$
-````
+
+### Winston  
+Lastly, if you need something more powerful than the default logging options, you might want to look at a tool like Winston.  Go to [Atmosphere](https://atmosphere.meteor.com), and simply search for ``Winston`` to find the latest packages available.  Be warned, however - [Winston](https://github.com/flatiron/winston) is a sophisticated product, and while it exposes a lot of functionality, it will also add a layer of complexity to your application.  
