@@ -67,7 +67,7 @@ So, once you have both your server-side logging running, and your client side de
 https://github.com/gandev-de/meteor-server-console  
 
 
-    ![image](https://raw.github.com/gandev-de/meteor-server-console/screenshots/package-scope-functionality.png "Meteor Server Console")  
+![image](https://raw.github.com/gandev-de/meteor-server-console/screenshots/package-scope-functionality.png "Meteor Server Console")  
 
 
 
