@@ -73,7 +73,7 @@ https://github.com/gandev-de/meteor-server-console
 
 ### Application Patterns  
 
-Once those pieces are in place, you're totally ready to start logging events in your application.  In practice, there are a half-dozen commands that are particularly useful.  Here are three quick example, showing some of the most frequently used console logging patterns in Meteor.
+Once those pieces are in place, you're totally ready to start logging events in your application.  In practice, there are a half-dozen commands that are particularly useful.  Here are three quick examples illustrating very common logging patterns in Meteor.  
 
 ````js
 // EXAMPLE 1:  Logging an error if the data is not available
