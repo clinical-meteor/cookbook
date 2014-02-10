@@ -1,3 +1,6 @@
+## Cookbook Conventions
+
+
 Hello, and welcome to the Meteor Cookbook.
 
 Before diving into this cookbook, please be aware of the following two conventions, which are used throughout these tutorials and examples.
@@ -41,3 +44,8 @@ This is a discussion that had yet to begin in earnest.  Right now, it's a bit of
 Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  And there's a lot of reason for it.  Color coding.  Clarity of code.  Domain specific languages.  Domain specific tools.  But it's not the only approach to MVC patterns.  
 
 So, yeah... just be aware of all that as you use this cookbook.
+
+#### Browsers and Operating Systems  
+Generally speaking, the Cookbook caters to a Mac development environment, and WebKit browsers.  The official Meteor position is that Meteor is going to support Windows and SQL databases in version 1.1 or later.  The Meteor Cookbook is focused on Meteor 1.0, then. 
+
+
