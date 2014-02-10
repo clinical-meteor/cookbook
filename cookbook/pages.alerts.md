@@ -78,4 +78,4 @@ Template.postsPage.events({
 });
 ````
 
-And that's all there is to it!  Super simple, right?  
+And that's all there is to it!  Super simple, right?  You can now set the ``alertLevel`` and ``alertMessage`` session variables anywhere in your codebase, and your application will reactively show alerts and error messages!  :)
