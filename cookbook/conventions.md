@@ -3,7 +3,7 @@
 So, there's lots of ways of writing code.  And lots of opinions on how to go about it.  Here is one opinion on an approach that has worked very well for me in creating dozens of applets, and which produces extremely clean and concise code; allows for code reuse; and which created very straightforward and understandable Meteor code.  
 
 #### File Naming  
-- All files are given names using Binomial Nomenclature, using a contextualizing prefix.  For example: ``contextualizer.file.js``.
+- All files are given names using [Binomial Nomenclature](http://en.wikipedia.org/wiki/Binomial_nomenclature), using a contextualizing prefix.  For example: ``contextualizer.file.js``.
 
 
 
