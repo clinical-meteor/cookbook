@@ -66,12 +66,14 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
       - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)  
       - Multi-Page with Routing
-    - Application User Interface Patterns
+    - Meteor UI Components
       - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
       - [Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)    
       - [Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)  
       - [Tabs & Wizard Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
+      - [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)    
       - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
+      - Drop Down Menu
       - Drag and Drop
       - Page Transitions
     - Application Programming Interfaces
@@ -81,7 +83,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
   - Blog
   - Collection CRUD
-  - [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)    
   - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages-we-love.md)  
