@@ -1,1 +1,3 @@
-Meteor input uses a different paradigm for data input.  This page will be all about forms and data input. 
+Meteor input uses a [different paradigm for data input](https://groups.google.com/d/msg/meteor-talk/1Ghu3FnFAXg/LAlNzhmuJc8J).  This page will be all about forms and data input. 
+
+That explains why there aren't clear ["canonical" forms packages](http://stackoverflow.com/questions/18712225/is-there-a-canonical-meteor-js-forms-package) (though [parsley and auto-form](https://groups.google.com/forum/#!searchin/meteor-talk/forms/meteor-talk/CCRldyq9s8o/M3x2bTkhHtMJ) are somewhat popular), and why it's often a good idea to do it yourself, as [some have done](https://groups.google.com/forum/#!searchin/meteor-talk/forms/meteor-talk/PjWWMmTX7ko/br3IjRN5nlgJ).
