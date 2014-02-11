@@ -49,7 +49,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Clustering
     - Websockets
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
-    - Schema Design
+    - [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
     - Integrating 3rd Party Databases
     - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)
       - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
