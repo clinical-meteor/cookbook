@@ -1,4 +1,3 @@
-------------------------------------------------------------------
 ## Command Line Errors
 
 **run: You're not in a Meteor project directory.**  
@@ -9,7 +8,6 @@ iron-router
 less
 ````
 
-------------------------------------------------------------------
 ## Console Errors
 
 **Uncaught ReferenceError: Templates is not defined**  
