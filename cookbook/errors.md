@@ -103,7 +103,6 @@ Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongo
 Permissions problem!  Try using ``sudo``, but the recommended fix is to reinstall Meteor and Meteorite.  
 
 
-------------------------------------------------------------------
 ## Modulus Errors
 
 **Error: a route URL prefix must begin with a slash**  
