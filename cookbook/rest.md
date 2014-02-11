@@ -1,4 +1,6 @@
-  
+## Exposing A REST API
+
+Note:  I haven't gone through and tried this yet, but it's on my to-do list.  
 
 #### Server Side REST APIs
 
