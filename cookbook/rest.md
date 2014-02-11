@@ -1,6 +1,7 @@
 ## Exposing A REST API
 
-Note:  I haven't gone through and tried this yet, but it's on my to-do list.  
+Note:  I haven't gone through and tried this yet, but it's on my to-do list.  Here's a bunch of research on how to do REST APIs with Meteor.  Best of luck!  
+
 
 #### Server Side REST APIs
 
