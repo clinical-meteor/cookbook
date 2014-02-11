@@ -14,7 +14,7 @@ http://unicode-table.com/en/#control-character
 
 
 **Submitting Data**  
-Here's a common pattern for submitting data to your app, instead of binding to the ``submit`` event.  Basically, we're binding to the ``keyup`` event instead, looking for keycode 13, and if we detect it, setting a reactive Session variable.  This is a [preferred](https://github.com/meteor/meteor/blob/devel/examples/todos/client/todos.js#L59) [Meteor-centric](https://github.com/meteor/meteor/blob/devel/examples/wordplay/client/wordplay.js#L135) approach to submitting data in forms because [[TBD]].
+Here's a common pattern for submitting data to your app, instead of binding to the ``submit`` event.  Basically, we're binding to the ``keyup`` event instead, looking for keycode 13, and if we detect it, setting a reactive Session variable.  This is a [preferred](https://github.com/meteor/meteor/blob/devel/examples/todos/client/todos.js#L59) [Meteor-centric](https://github.com/meteor/meteor/blob/devel/examples/wordplay/client/wordplay.js#L135) approach to submitting data in forms because it uses minimongo, and gets all the benefits of client-side caching and cursors, such as latency compensation and reactive template updates.
 ````js
 Template.navbarHeaderTemplate.events({
   'keyup #urlAddressBar': function(evt,tmpl){
