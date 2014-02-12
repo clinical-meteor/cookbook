@@ -22,7 +22,6 @@ Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a
 ````
 
 
-
 **ReferenceError: ServiceConfiguration is not defined**     
 
 The first step to resolving 'is not defined' errors is to check to see if there's a core package available.  Be aware that sometimes you'll need to change naming schemas.  In this example, there's a core package in snake-case that gets converted to camelCase in the error message.
