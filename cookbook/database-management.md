@@ -1,3 +1,5 @@
+## Database Management  
+
 **Q:  Help! I've inherited a Mongo database!  How do I analyze the Collections in it?**  
 
 There's two great utilities you should check out.  First is variety.js, which will give you a great high-level overview.  Start with this one.  
