@@ -1,5 +1,6 @@
- 
-##Where should I put my files?  
+## Application File Structure
+**Where should I put my files?**    
+
 
 The first thing you need to know in structuring your apps is that the Meteor bundler has some directories that it is hardcoded to look for.  At a very basic level, the following directories are sort of baked into Meteor bundler, and is where you should begin with structuring larger applications.
 
