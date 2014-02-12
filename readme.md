@@ -70,7 +70,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
       - [Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)    
       - [Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)  
-      - [Tabs & Wizard Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
+      - [Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
       - [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)    
       - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
       - Drop Down Menu
