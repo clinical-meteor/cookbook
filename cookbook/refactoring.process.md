@@ -4,7 +4,7 @@ The following is a brief outline of the process of refactoring.  If you're an ex
 If you're only recently finding yourself writting larger programs that need refactoring, I hope this little reference gives you an overview of what refactoring feels like.  
 
 
-#### Step 1:  meteor create helloWorld
+#### A)  meteor create helloWorld
 ````
 helloWorld/
   helloWorld.html
@@ -12,7 +12,7 @@ helloWorld/
   helloWorld.js
 ````
 
-#### Step 2:  Refactor to Server/Client 
+#### B)  Refactor to Server/Client 
 ````
 helloWorld/
   client/
@@ -23,7 +23,7 @@ helloWorld/
     methods.js
 ````
 
-#### Separate our Model, View, and Controller into separate folders
+#### C)  Separate our Model, View, and Controller into separate folders
 ````
 helloWorld/
   client/
@@ -37,7 +37,7 @@ helloWorld/
     methods.js
 ````
 
-#### Add new Widgets and Gizmos
+#### D)  Add new Widgets and Gizmos
 ````
 helloWorld/
   client/
@@ -57,7 +57,7 @@ helloWorld/
     methods.js
 ````
 
-#### Reorganize According to Workflow or Features
+#### E)  Reorganize According to Workflow or Features
 ````
 helloWorld/
   client/
@@ -78,7 +78,7 @@ helloWorld/
     methods.js
 ````
 
-#### Extract and Modularize a Feature 
+#### F)  Extract and Modularize a Feature 
 ````
 helloWorld/
   client/
@@ -99,7 +99,7 @@ helloWorld/
     methods.js
 ````
 
-#### Prepare it for Publications
+#### G)  Prepare it for Publications
 ````
 helloWorld/
   client/
@@ -122,7 +122,7 @@ helloWorld/
     methods.js
 ````
 
-#### Publish the Feature
+#### H)  Publish the Feature
 ````
 coolWidget/
   coolWidget.html  
@@ -133,7 +133,7 @@ coolWidget/
 ````
 
 
-#### Code is Now Cleaner and More Modular
+#### I)  Code is Now Cleaner and More Modular
 ````
 helloWorld/
   client/
