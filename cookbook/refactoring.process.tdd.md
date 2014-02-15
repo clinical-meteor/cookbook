@@ -5,16 +5,17 @@ If you're only recently finding yourself writting larger programs that need refa
 
 
 #### A)  meteor create helloWorld
-````
+````js
+// initial repository
 helloWorld/
   helloWorld.html
   helloWorld.css
   helloWorld.js
-
 ````
 
 #### B)  Refactor to Server/Client 
-````
+````js
+// initial repository
 helloWorld/
   client/
     helloWorld.js
@@ -25,7 +26,8 @@ helloWorld/
 ````
 
 #### B1)  Tests Within the Repository (RTD)
-````
+````js
+// initial repository
 helloWorld/
   client/
     helloWorld.js
@@ -38,7 +40,8 @@ helloWorld/
 ````
 
 #### B2)  Tests In Separate Repository (Safety Harness)
-````
+````js
+// initial repository
 helloWorld/
   client/
     helloWorld.js
@@ -47,6 +50,7 @@ helloWorld/
   server/
     methods.js
 
+// testharness repository
 helloTests/
   helloTests.js
 ````
@@ -56,7 +60,8 @@ helloTests/
 
 
 #### Z1)  Advanced Tests Within the Repository (RTD)
-````
+````js
+// initial repository
 helloWorld/
   client/
     helloWorld/
@@ -80,6 +85,7 @@ helloWorld/
 
 #### Z2)  Advanced Tests In Separate Repository (Safety Harness)
 ````
+// initial repository
 helloWorld/
   client/
     helloWorld/
@@ -94,6 +100,7 @@ helloWorld/
   server/
     methods.js
 
+// testharness repository
 helloTestjs/
   helloTestjs.js
   niftyGizmoTests.js
