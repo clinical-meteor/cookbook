@@ -113,3 +113,54 @@ helloTestjs/
     niftyGizmoStub.js
     niftyGizmoDependencyInjections.js
 ````
+
+
+## Leaderboard Example  
+
+#### RDT and Web-Mocha Approach of Having Tests in the Same Repository  
+````feature  
+Feature: Player score can be increased manually
+
+  As a score keeper in some hyperthetical game
+  I want to manually give a player five points
+  So that I can publicly display a up-to-date scoreboard
+
+  Scenario: Give 5 points to a player
+    Given I authenticate
+    And "Grace Hopper" has a score of 10
+    When I give "Grace Hopper" 5 points
+    Then "Grace Hopper" has a score of 15
+````
+
+
+#### Selenium / Test Harness of External Tests  
+````feature  
+Feature: Player score can be increased manually
+
+  As a score keeper in some hyperthetical game
+  I want to manually give a player five points
+  So that I can publicly display a up-to-date scoreboard
+
+  Scenario: Give 5 points to a player
+    Given I can connect to page "http://leaderboard.meteor.com"
+    And "Grace Hopper" has a score of 10
+    When $(#'niftyWidgetButton').click()
+    foo = $(#'niftyWidgetText').val()
+    Then foo.should.have.value(20)
+````
+
+#### Acceptance Tests Have 3 Essential Key Features
+
+1.  Load a page  
+2.  Trigger an event / simulate a user interaction  
+3.  Inspect DOM elements  
+
+Which, when translated to JQuery (and a bit of Chai), look something like this:
+````js
+  $(window).open("http://leaderboard.meteor.com")
+  $(#'niftyWidgetButton').click()
+  $(#'niftyWidgetText').val().should.have.value(20)
+````  
+
+
+
