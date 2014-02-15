@@ -144,8 +144,8 @@ Feature: Player score can be increased manually
   Scenario: Give 5 points to a player
     Given I can connect to page "http://leaderboard.meteor.com"
     And "Grace Hopper" has a score of 10
-    When $(#'niftyWidgetButton').click()
-    foo = $(#'niftyWidgetText').val()
+    When $('#niftyWidgetButton').click()
+    foo = $('#niftyWidgetText').val()
     Then foo.should.have.value(20)
 ````
 
