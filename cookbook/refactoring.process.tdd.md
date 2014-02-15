@@ -144,8 +144,8 @@ Feature: Player score can be increased manually
   Scenario: Give 5 points to a player
     Given I can connect to page "http://leaderboard.meteor.com"
     And "Grace Hopper" has a score of 10
-    When $('#niftyWidgetButton').click()
-    foo = $('#niftyWidgetText').val()
+    When $("#niftyWidgetButton").click()
+    foo = $("#niftyWidgetText").val()
     Then foo.should.have.value(20)
 ````
 
@@ -158,9 +158,17 @@ Feature: Player score can be increased manually
 Which, when translated to JQuery (and a bit of Chai), look something like this:
 ````js
   $(window).open("http://leaderboard.meteor.com")
-  $(#'niftyWidgetButton').click()
-  $(#'niftyWidgetText').val().should.have.value(20)
+  $('#niftyWidgetButton').click()
+  $('#niftyWidgetText').val().should.have.value(20)
 ````  
 
+#### Same-Origin-Policy Messes Everything Up  
+The jQuery example is great, but it doesn't run on separate machines.  Which is why technologies like Selenium and PhantomJS have been invented.  So, what's needed is a stepping-stone between the jQuery and Selenium or PhantomJS tests.  Something that can translate the three acceptance tests features from jQuery, which is testing locally, and Selenium/PhantomJS which test remotely.  
 
 
+#### Testing Locally  
+[meteorServer] <===> [(meteorClient)jquery]  
+
+#### Testing Remotely
+[meteorServer] <===> ([meteorClient] <===> [phantomJS])selenium  
+ 
