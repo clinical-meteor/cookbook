@@ -1,15 +1,19 @@
 ## Refactoring Process
+The following is a brief outline of the process of refactoring.  If you're an experienced programmer, this will be second-nature to you already.  But it's useful to write them down sometimes so people can refer to them, particularly during design discussions.  
+
+If you're only recently finding yourself writting larger programs that need refactoring, I hope this little reference gives you an overview of what refactoring feels like.  
 
 
-````js
+#### Step 1:  meteor create helloWorld
+````
 helloWorld/
   helloWorld.html
   helloWorld.css
   helloWorld.js
 ````
 
-
-````js
+#### Step 2:  Refactor to Server/Client 
+````
 helloWorld/
   client/
     helloWorld.js
@@ -19,8 +23,8 @@ helloWorld/
     methods.js
 ````
 
-
-````js
+#### Separate our Model, View, and Controller into separate folders
+````
 helloWorld/
   client/
     html/
@@ -33,27 +37,28 @@ helloWorld/
     methods.js
 ````
 
-````js
+#### Add new Widgets and Gizmos
+````
 helloWorld/
   client/
     html/
       helloWorld.html  
-      newPage.html  
-      secondPage.html  
+      coolWidget.html  
+      niftyGizmo.html  
     js
       helloWorld.js
-      newPage.js  
-      secondPage.js
+      coolWidget.js  
+      niftyGizmo.js
     css      
       helloWorld.css
-      newPage.css  
-      secondPage.css
+      coolWidget.css  
+      niftyGizmo.css
   server/
     methods.js
 ````
 
-
-````js
+#### Reorganize According to Workflow or Features
+````
 helloWorld/
   client/
     helloWorld/
@@ -73,8 +78,8 @@ helloWorld/
     methods.js
 ````
 
-
-````js
+#### Extract and Modularize a Feature 
+````
 helloWorld/
   client/
     helloWorld/
@@ -94,7 +99,8 @@ helloWorld/
     methods.js
 ````
 
-````js
+#### Prepare it for Publications
+````
 helloWorld/
   client/
     helloWorld/
@@ -116,7 +122,19 @@ helloWorld/
     methods.js
 ````
 
-````js
+#### Publish the Feature
+````
+coolWidget/
+  coolWidget.html  
+  coolWidget.js  
+  coolWidget.css  
+  package.js
+  smart.json
+````
+
+
+#### Code is Now Cleaner and More Modular
+````
 helloWorld/
   client/
     helloWorld/
@@ -132,11 +150,3 @@ helloWorld/
     methods.js
 ````
 
-````js
-coolWidget/
-  coolWidget.html  
-  coolWidget.js  
-  coolWidget.css  
-  package.js
-  smart.json
-````
