@@ -1,3 +1,5 @@
+## Peer To Peer  
+
 **Q:  Is it possible to write a peer-to-peer app with Meteor?**  
 
 Interesting question.  Writing peer-to-peer apps involves putting the client and the server on the same box; which seems like it might be a natural fit for a single-language framework like Meteor.  Basically, it would involve running the browser on the server; or running a server out of the browser.  How would one go about doing that?  Well, the best bet would be a Node/Chrome solution, since they both use the V8 javascript engine.  After that, it becomes a question of running a browser from Node (PhantomJS as an example); or of running Node from the browser.. meaning from Chrome.  So, looking around, it looks like there are, indeed, such packages.  
@@ -16,10 +18,3 @@ http://www.youtube.com/watch?v=gkb_x9ZN0Vo&feature=youtube_gdata_player
 
 Node Browserfy
 https://github.com/substack/node-browserify
-
-**Q:  How do I enable/disable websockets?**  
-lorem ipsum...
-
-
-**Q:  How do I know if RTC is working?**  
-lorem ipsum...
