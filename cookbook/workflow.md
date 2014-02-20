@@ -10,33 +10,24 @@ Start by creating three templates objects in your Object Model...
 <template name="samplePage">
   <div id="samplePage" class="page">
     <ul class="nav nav-tabs">
-      <li id="firstPanelTab" class="active"><a href="#firstPanel" data-toggle="tab">First</a></li>
-      <li id="secondPanelTab"><a href="#secondPanel" data-toggle="tab">Second</a></li>
-      <li id="thirdPanelTab"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
+      <li id="firstPanelTab" class="{{firstPanelActive}}"><a href="#firstPanel" data-toggle="tab">First</a></li>
+      <li id="secondPanelTab" class="{{secondPanelActive}}"><a href="#secondPanel" data-toggle="tab">Second</a></li>
+      <li id="thirdPanelTab" class="{{thirdPanelActive}}"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
     </ul>
     
-    {{> firstPanel }}
-    {{> secondPanel }}
-    {{> thirdPanel }}
+    <div id="firstPanel" class="{{firstPanelVisibility}}">
+      {{> firstPanel }}
+    </div>
+    <div id="secondPanel" class="{{secondPanelVisibility}}">
+      {{> secondPanel }}
+    </div>
+    <div id="thirdPanel" class="{{thirdPanelVisibility}}">
+      {{> thirdPanel }}
+    </div>
 
   </div>
 </template>
 
-<template name="firstPanel">
-  <div id="firstPanel" class="{{firstPanelVisibility}} dialog-page">
-    <!-- content A -->
-  </div>
-</template>
-<template name="secondPanel">
-  <div id="secondPanel" class="{{secondPanelVisibility}} dialog-page">
-    <!-- content B -->
-  </div>
-</template>
-<template name="thirdPanel">
-  <div id="thirdPanel" class="{{thirdPanelVisibility}} dialog-page">
-    <!-- content C -->
-  </div>
-</template>
 ````
 
 
@@ -77,6 +68,27 @@ Template.thirdPanel.thirdPanelVisibility = function(){
     return "visible";
   }else{
     return "hidden;
+  }
+}
+Template.firstPanel.firstPanelActive = function(){
+  if(Session.get('selectedPanel') === 1){
+    return "active panel-tab";
+  }else{
+    return "panel-tab";
+  }
+}
+Template.secondPanel.secondPanelActive= function(){
+  if(Session.get('selectedPanel') === 2){
+    return "active panel-tab";
+  }else{
+    return "panel-tab";
+  }
+}
+Template.thirdPanel.thirdPanelActive = function(){
+  if(Session.get('selectedPanel') === 3){
+    return "active panel-tab";
+  }else{
+    return "panel-tab";
   }
 }
 ````
