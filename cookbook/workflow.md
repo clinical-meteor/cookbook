@@ -24,8 +24,6 @@ B.  Add your content to the dialog-page class.
 C.  Add navigation objects (i.e. buttons).
 
 ````html
-<div id="stepTwoButton" class="btn btn-default"></div>
-
 <ul class="nav nav-tabs">
   <li id="firstPanel" class="active"><a href="#firstPanel" data-toggle="tab">First</a></li>
   <li id="secondPanel"><a href="#secondPanel" data-toggle="tab">Second</a></li>
