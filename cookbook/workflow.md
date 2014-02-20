@@ -25,6 +25,12 @@ C.  Add navigation objects (i.e. buttons).
 
 ````html
 <div id="stepTwoButton" class="btn btn-default"></div>
+
+<ul class="nav nav-tabs">
+  <li id="firstPanel" class="active"><a href="#firstPanel" data-toggle="tab">First</a></li>
+  <li id="secondPanel"><a href="#secondPanel" data-toggle="tab">Second</a></li>
+  <li id="thirdPanel"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
+</ul>
 ````
 
 D.  Create a default Session variable in your Controller to handle which page you're on.
