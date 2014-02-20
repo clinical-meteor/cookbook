@@ -6,30 +6,38 @@ This recipe assumes that your Model is an .html file, your View is a .css or .le
 A.  Start by creating three templates objects in your (Document Object) Model:
 
 ````html
+<template name="samplePage">
+  <div id="samplePage" class="page">
+    <ul class="nav nav-tabs">
+      <li id="firstPanel" class="active"><a href="#firstPanel" data-toggle="tab">First</a></li>
+      <li id="secondPanel"><a href="#secondPanel" data-toggle="tab">Second</a></li>
+      <li id="thirdPanel"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
+    </ul>
+    
+    {{> dialogStepOne }}
+    {{> dialogStepTwo }}
+    {{> dialogStepThree }}
+
+  </div>
+</template>
+
 <template name="dialogStepOne">
   <div id="dialogStepOne" class="{{stepOneVisibility}} dialog-page">
+    <!-- content A -->
   </div>
 </template>
 <template name="dialogStepTwo">
   <div id="dialogStepTwo" class="{{stepTwoVisibility}} dialog-page">
+    <!-- content B -->
   </div>
 </template>
 <template name="dialogStepThree">
   <div id="dialogStepThree" class="{{stepThreeVisibility}} dialog-page">
+    <!-- content C -->
   </div>
 </template>
 ````
 
-B.  Add your content to the dialog-page class.  
-C.  Add navigation objects (i.e. buttons).
-
-````html
-<ul class="nav nav-tabs">
-  <li id="firstPanel" class="active"><a href="#firstPanel" data-toggle="tab">First</a></li>
-  <li id="secondPanel"><a href="#secondPanel" data-toggle="tab">Second</a></li>
-  <li id="thirdPanel"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
-</ul>
-````
 
 D.  Create a default Session variable in your Controller to handle which page you're on.
 
