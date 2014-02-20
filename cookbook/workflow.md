@@ -67,7 +67,7 @@ Template.thirdPanel.thirdPanelVisibility = function(){
   if(Session.get('selectedPanel') === 3){
     return "visible";
   }else{
-    return "hidden;
+    return "hidden";
   }
 }
 Template.firstPanel.firstPanelActive = function(){
