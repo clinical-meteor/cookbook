@@ -3,7 +3,8 @@
 **Q:  How do I crate a wizard dialog?**  
 This recipe assumes that your Model is an .html file, your View is a .css or .less file, and your Controller is a .js file.
 
-A.  Start by creating three templates objects in your (Document Object) Model:
+#### Object Model  
+Start by creating three templates objects in your Object Model...
 
 ````html
 <template name="samplePage">
@@ -39,8 +40,8 @@ A.  Start by creating three templates objects in your (Document Object) Model:
 ````
 
 
-
-F.  Add your template functions to your Controller file:
+#### Controllers  
+Add your template functions to your Controller file:
 
 ````js
 Session.setDefault('selected_pane', 1);
@@ -80,7 +81,8 @@ Template.thirdPanel.stepThreeVisibility = function(){
 }
 ````
 
-G.  Create classes in your View.
+#### View   
+Create classes in your View.
 
 ````css
 .visible{
