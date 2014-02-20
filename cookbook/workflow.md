@@ -9,71 +9,70 @@ A.  Start by creating three templates objects in your (Document Object) Model:
 <template name="samplePage">
   <div id="samplePage" class="page">
     <ul class="nav nav-tabs">
-      <li id="firstPanel" class="active"><a href="#firstPanel" data-toggle="tab">First</a></li>
-      <li id="secondPanel"><a href="#secondPanel" data-toggle="tab">Second</a></li>
-      <li id="thirdPanel"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
+      <li id="firstPanelTab" class="active"><a href="#firstPanel" data-toggle="tab">First</a></li>
+      <li id="secondPanelTab"><a href="#secondPanel" data-toggle="tab">Second</a></li>
+      <li id="thirdPanelTab"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
     </ul>
     
-    {{> dialogStepOne }}
-    {{> dialogStepTwo }}
-    {{> dialogStepThree }}
+    {{> firstPanel }}
+    {{> secondPanel }}
+    {{> thirdPanel }}
 
   </div>
 </template>
 
-<template name="dialogStepOne">
-  <div id="dialogStepOne" class="{{stepOneVisibility}} dialog-page">
+<template name="firstPanel">
+  <div id="firstPanel" class="{{firstPanelVisibility}} dialog-page">
     <!-- content A -->
   </div>
 </template>
-<template name="dialogStepTwo">
-  <div id="dialogStepTwo" class="{{stepTwoVisibility}} dialog-page">
+<template name="secondPanel">
+  <div id="secondPanel" class="{{secondPanelVisibility}} dialog-page">
     <!-- content B -->
   </div>
 </template>
-<template name="dialogStepThree">
-  <div id="dialogStepThree" class="{{stepThreeVisibility}} dialog-page">
+<template name="thirdPanel">
+  <div id="thirdPanel" class="{{thirdPanelVisibility}} dialog-page">
     <!-- content C -->
   </div>
 </template>
 ````
 
 
-D.  Create a default Session variable in your Controller to handle which page you're on.
-
-````js
-Session.setDefault('selected_pane', 1);
-````
-
-E.  Add event maps to your Controller file:
-
-````js
-Template.dialogStepOne.events({
-  'click #stepTwoButton':function(){
-    Session.set('selected_pane', 2);
-  }
-});
-````
 
 F.  Add your template functions to your Controller file:
 
 ````js
-Template.dialogStepOne.stepOneVisibility = function(){
-  if(Session.get('selected_pane') === 1){
+Session.setDefault('selected_pane', 1);
+
+Template.samplePage.events({
+  'click #firstPanelTab':function(){
+    Session.set('selectedPanel', 1);
+  },
+    'click #secondPanelTab':function(){
+    Session.set('selectedPanel', 2);
+  },
+    'click #thirdPanelTab':function(){
+    Session.set('selectedPanel', 3);
+  }
+});
+
+Template.firstPanel.stepOneVisibility = function(){
+  if(Session.get('selectedPanel') === 1){
     return "visible";
   }else{
     return "hidden";
   }
 }
-Template.dialogStepOne.stepTwoVisibility = function(){
-  if(Session.get('selected_pane') === 2){
+Template.secondPanel.stepTwoVisibility = function(){
+  if(Session.get('selectedPanel') === 2){
     return "visible";
   }else{
     return "hidden";
   }
 }
-Template.dialogStepOne.stepThreeVisibility = function(){
-  if(Session.get('selected_pane') === 3){
+Template.thirdPanel.stepThreeVisibility = function(){
+  if(Session.get('selectedPanel') === 3){
     return "visible";
   }else{
     return "hidden;
