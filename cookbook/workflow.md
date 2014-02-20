@@ -58,21 +58,21 @@ Template.samplePage.events({
   }
 });
 
-Template.firstPanel.stepOneVisibility = function(){
+Template.firstPanel.firstPanelVisibility = function(){
   if(Session.get('selectedPanel') === 1){
     return "visible";
   }else{
     return "hidden";
   }
 }
-Template.secondPanel.stepTwoVisibility = function(){
+Template.secondPanel.secondPanelVisibility = function(){
   if(Session.get('selectedPanel') === 2){
     return "visible";
   }else{
     return "hidden";
   }
 }
-Template.thirdPanel.stepThreeVisibility = function(){
+Template.thirdPanel.thirdPanelVisibility = function(){
   if(Session.get('selectedPanel') === 3){
     return "visible";
   }else{
