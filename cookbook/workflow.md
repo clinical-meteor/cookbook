@@ -50,10 +50,10 @@ Template.samplePage.events({
   'click #firstPanelTab':function(){
     Session.set('selectedPanel', 1);
   },
-    'click #secondPanelTab':function(){
+  'click #secondPanelTab':function(){
     Session.set('selectedPanel', 2);
   },
-    'click #thirdPanelTab':function(){
+  'click #thirdPanelTab':function(){
     Session.set('selectedPanel', 3);
   }
 });
