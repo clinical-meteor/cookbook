@@ -35,7 +35,7 @@ Start by creating three templates objects in your Object Model...
 Add your template functions to your Controller file:
 
 ````js
-Session.setDefault('selected_pane', 1);
+Session.setDefault('selectedPanel', 1);
 
 Template.samplePage.events({
   'click #firstPanelTab':function(){
