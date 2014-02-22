@@ -67,4 +67,10 @@ db.posts.find({user_id: selectedUserId}).forEach(function(doc){
 });
 ````
 
+### Basics of English Grammar  
+http://www.talkenglish.com/Grammar/
+
+
+### Natural Langauge Processig  
+http://www.chrisumbel.com/article/node_js_natural_language_nlp  
 
