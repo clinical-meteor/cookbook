@@ -1,10 +1,10 @@
 ## Natural Language Parsing  
 
 
-#### Reverse Polish Notation Libraries
+### Reverse Polish Notation Libraries
 
 
-### Sample 1  
+#### Sample 1  
 http://www.math.bas.bg/bantchev/place/rpn/rpn.javascript.html  
 ````js
 function evalrpn(s)  {
@@ -28,7 +28,7 @@ function evalrpn(s)  {
 }
 ````
 
-### Sample 2   
+#### Sample 2   
 http://kilon.org/blog/2012/06/javascript-rpn-calculator/  
 ````js
 function rpn( input ) {
@@ -52,7 +52,7 @@ function rpn( input ) {
 }
 ````
 
-#### Regex Patterns 
+### Regex Patterns 
 
 ````js
 db.posts.find({user_id: selectedUserId}).forEach(function(doc){
