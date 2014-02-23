@@ -27,3 +27,40 @@ Check out the following videos by Steve Newcomb, from Famo.us, regarding the imp
 ### Meteor UI & Famo.us?
 Yup!  They've recently announced a partnership to bring 60fps DOM manipulations to Meteor, using CSS matrix overrides!  <3  
 https://groups.google.com/forum/#!searchin/meteor-talk/famo.us/meteor-talk/LCZvyy99KiY/uTSYivlicH4J  
+
+
+### CSS Animations and Transitions  
+
+#### Small Icon Bump  
+````css
+position: absolute;
+text-align: left;
+top: 5px;
+left: 0;
+width: 48px;
+padding: 0 14px;
+margin: 0 auto;
+height: 90px;
+font-size: 48px;
+line-height: 67px;
+-webkit-transition-property: line-height;
+-moz-transition-property: line-height;
+-ms-transition-property: line-height;
+-o-transition-property: line-height;
+transition-property: line-height;
+-webkit-transition-duration: .08s;
+-moz-transition-duration: .08s;
+-ms-transition-duration: .08s;
+-o-transition-duration: .08s;
+transition-duration: .08s;
+-webkit-transition-timing-function: linear;
+-moz-transition-timing-function: linear;
+-ms-transition-timing-function: linear;
+-o-transition-timing-function: linear;
+transition-timing-function: linear;
+-webkit-transition-delay: 0s;
+-moz-transition-delay: 0s;
+-ms-transition-delay: 0s;
+-o-transition-delay: 0s;
+transition-delay: 0s;
+````
