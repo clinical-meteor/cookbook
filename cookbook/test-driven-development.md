@@ -34,9 +34,16 @@ RTD [plans to integrate Laika](https://github.com/xolvio/rtd/issues/63).
 ### [Laika](http://arunoda.github.io/laika/)
 Integration testing using a command line interface, with a [somewhat convoluted API](https://github.com/arunoda/laika/issues/97).  Handy for engineering extensions to Meteor itself.  [Doesn't provide code coverage](https://github.com/xolvio/rtd/issues/22#issuecomment-20442959).
 
-**Safety Harness**  
+* Creating a Meteor app + [Laika tutorial](http://mherman.org/blog/2014/01/29/meteor-dot-js-in-action-create-an-app-test-with-laika/)
+
+### Safety Harness
 Acceptance testing framework with HTML reporter.  
 http://safety-harness.meteor.com/
+
+## More
+
+* "Testing" section on [Best learning resources for Meteor.js](http://yauh.de/articles/376/best-learning-resources-for-meteorjs)
+* [Meteor test-driven development](http://stackoverflow.com/questions/12987525/meteor-test-driven-development) on StackOverflow
 
 ------------------------------------------------------------------
 ## Load Testing 
