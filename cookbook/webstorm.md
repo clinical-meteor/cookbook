@@ -1,4 +1,3 @@
- 
 ## WebStorm IDE
 
 
@@ -6,23 +5,23 @@
 ### Links, Installation
 Recommend version of WebStorm is currently 7.0.  
 http://www.jetbrains.com/webstorm/  
-http://www.jetbrains.com/webstorm/download/download_thanks.jsp?os=mac  
+http://www.jetbrains.com/webstorm/download/download_thanks.jsp
 
 
 ### Download the Settings.jar File  
-There's now a pre-compiled settings file which you can download and import directly into WebStorm, rather than following all the instructions in this document.  
+There's now a pre-compiled settings file which you can download and import directly into WebStorm, rather than following all the instructions in this document. It may be slightly out of date vs. this document, though.  
 https://github.com/awatson1978/webstorm-settings
 
 ### Implementing Meteor Styleguide
 https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
 
 
-### MVC Color Coding 
+### MVC Color Coding
 Run ``meteor add less`` at the command line to include the LESS precompiler.  Then use ``.less`` files instead of ``.css`` files.  Presto.  Your application should color code Model (Green), View (Blue), and Controller (Red) files.
 
 
 
-### Preferences > Code Style > Javascript
+### Settings > Code Style > Javascript
 As per the Meteor style guide.  
 https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
 
@@ -44,7 +43,7 @@ Function declaration parentheses
 
 ````
 
-### Preferences > Directories > Excluded
+### Settings > Directories > Excluded
 
 You want to exclude the ``.meteor`` file so that the Meteor build process doesn't crash your IDE.  This applies to most any IDE you use, and isn't specific to WebStorm.  
 ````
@@ -53,7 +52,7 @@ You want to exclude the ``.meteor`` file so that the Meteor build process doesn'
 ````
 
 
-### Preferences > File and Code Templates
+### Settings > File and Code Templates
 
 I find it very convenient to create a Less file template, using some default media styles to help with responsive mobile application design.  
 
@@ -143,12 +142,16 @@ Template.fooList.fooList = function(){
 
 ````
 
+### Settings > General
+"Save files on frame deactivation" and "Save files automatically" - you want this turned **off**.  It conflicts with Meteor's build process, and basically duplicates functionality found in Meteor.  Bundling and live editing will basically conflict with each other.
 
-### Preferences > Live Edit  
-You want this turned **off**.  It conflicts with Meteor's build process, and basically duplicates functionality found in Meteor.  Bundling and live editing will basically conflict with each other.  
+In older versions, thse could be found under Preferences > Live Edit.
+
+#### Settings > Editor > Editor Tabs
+Enable "Mark modified tabs with asterisk"
 
 
-### Preferences > Javascript > Code Quality Tools > JSLint
+### Settings > Javascript > Code Quality Tools > JSLint
 
 ````
 + Enable
@@ -156,8 +159,10 @@ You want this turned **off**.  It conflicts with Meteor's build process, and bas
 Indentation 2
 ````
 
+If [JSLint is too annoyingly strict](http://stackoverflow.com/questions/6803305/should-i-use-jslint-or-jshint-javascript-validation), enable JSHint instead.
 
-### Preferences > Javascript > Node.js  
+
+### Settings > Javascript > Node.js  
 ````
 chai  
 demeteorizer  
@@ -171,7 +176,7 @@ selenium-webdriver
 ````
 
 
-### Preferences > Version Control > Github
+### Settings > Version Control > Github
 
 ````
 Host: github.com  
@@ -180,7 +185,7 @@ Password: yourpassword
 ````
 
 
-### Preferences > Editor 
+### Settings > Editor 
 Editor preferences are going to vary wildly, particularly if you're accustomed to old school editors like Vim or Emacs.  However, if you'd like WebStorm to behave like a typical text editor, I'd recommend setting the following items.  In particular, allow placement of the caret after the end of line can be particularly confusing and frustrating.  
 ````
 - Honor 'CamelHumps'
@@ -196,12 +201,12 @@ Showing line numbers is obviously a personal preference, but it helps immeasurab
 + Show line numbers  
 ````
 
-### Preferences > Editor > Color & Fonts > Javascript
+### Settings > Editor > Color & Fonts > Javascript
 Another personal preference, but if you're into reducing eye strain, coding in low-light levels, anord saving energy, try changing to ``Darcula``.
 
 
 
-### Preferences > Live Templates
+### Settings > Live Templates
 
 try/catch block  
 ````js
@@ -283,20 +288,34 @@ new page template
 
 
 
-### Plugins  
-Unicode Browser  
-Code History Mining  
-Dummy Text Generator  
-Mongo Plugin    
-CodeGlance  
-Code Outline 2  
-Handlebars/Mustache  
-CamelCase  
-Git Flow Integration  
-SyncEdit 2  
+### Settings > Plugins  
 
+If you can't find plugins via the Settings -> Plugins -> Browse Repositories dialog, you can go to http://plugins.jetbrains.com, find the desired plugin, download it, then unpack the .zip into WebStorm's `plugins` directory.
 
+Some useful plugins:
 
+* [Mongo Plugin](https://github.com/dboissier/mongo4idea)
+* [Unicode Browser](http://plugins.jetbrains.com/plugin/6186)
+* [Code History Mining](http://plugins.jetbrains.com/plugin/7273)
+* [Dummy Text Generator](http://plugins.jetbrains.com/plugin/7216)
+* [CodeGlance](http://plugins.jetbrains.com/plugin/7275) - minimap similar to the one in Sublime
+* [Code Outline 2](http://plugins.jetbrains.com/plugin/6274)
+* [Handlebars/Mustache](http://plugins.jetbrains.com/plugin/6884)
+* [CamelCase](http://plugins.jetbrains.com/plugin/7160)
+* [Git Flow Integration](http://plugins.jetbrains.com/plugin/7315)
+* [SyncEdit 2](http://plugins.jetbrains.com/plugin/7147) - expanded word refactoring
 
+Some plugins enabled by default that don't apply to meteor development and you can disable to improve performance:
 
-
+* Database Support (doesn't support MongDB; use the [Mongo Plugin](https://github.com/dboissier/mongo4idea) instead)
+* ASP
+* CVS
+* Drupal
+* Framework MVC Structure
+* Google App Engine Support for PHP
+* hg4idea
+* Java Server Pages
+* PHP
+* SQL support
+* Subversion Integration
+* YAML
