@@ -64,7 +64,8 @@ jQuery.fn.toCSV = function() {
 }
 ````
 
-#### Third Example - Client
+#### Third Example - Client  
+Original description found here:  
 http://stackoverflow.com/questions/17836273/export-javascript-data-to-csv-file-without-server-interaction 
 ````js
 var A = [['n','sqrt(n)']];
