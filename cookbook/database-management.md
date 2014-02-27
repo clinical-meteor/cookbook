@@ -26,6 +26,17 @@ https://github.com/AlexeyMK/meteor-download
 sudo mongodump --db meteor
 ````
 
+**Q:  How do I restore the data from a dump?**  
+
+````sh
+# make sure your app is running
+sudo mrt
+
+# then import your data
+sudo mongorestore --port 3002 --db meteor /path/to/dump
+````
+
+
 
 **Q:  How do I import a JSON file into Meteor?**   
 
@@ -65,25 +76,7 @@ Ctrl-C
 // if your datafiles are a collection of json and bson objects 
 // from a mongodump command, use the following
 
-// run mongod so we can create a staging database
-// note that this is a separate instance from the meteor mongo and minimongo instances
-mongod
-
-// import the test database from a mongodump
-// http://docs.mongodb.org/v2.2/reference/mongorestore/
-mongorestore --db test dump/test/
-
-// navigate to your application
-cd myappdir
- 
-// run meteor and initiate it's database
-meteor
- 
-// connect to the meteor mongodb
-meteor mongo --port 3002
- 
-// copy collections from staging database into meteor database
-db.copyDatabase('test', 'meteor', 'localhost');
+mongorestore --port 3002 --db test dump/test/
 ````
 
 **Q:  How can I compact a Mongo database?**  
