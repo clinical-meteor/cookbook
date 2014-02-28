@@ -37,7 +37,7 @@ fooCount = 0;
 currentFooIndex = 0;
 ````
 
-The reason behind wanting to use long variable names has to do with the entropic information density of longer strings, which leads to less name collissions.  This is particularly useful when refactoring.  Sometimes you'll want to do a global Find And Replace on just 'foo' eleemnts, or just 'count' elements, or just 'current' elements, etc.  Having long names will help in refactoring, and prevent name collissions.  Short, concise names are prone to causing name collisions.  Also this rule-of-thumb about name lengths applies to function names too.
+The reason behind wanting to use long variable names has to do with the entropic information density of longer strings, which leads to less name collissions.  This is particularly useful when refactoring.  Sometimes you'll want to do a global Find And Replace on just 'foo' elements, or just 'count' elements, or just 'current' elements, etc.  Having long names will help in refactoring, and prevent name collisions.  Short, concise names are prone to causing name collisions.  Also this rule-of-thumb about name lengths applies to function names too.
 
 
 
