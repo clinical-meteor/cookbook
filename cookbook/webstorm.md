@@ -13,7 +13,7 @@ There's now a pre-compiled settings file which you can download and import direc
 https://github.com/awatson1978/webstorm-settings
 
 ### Implementing Meteor Styleguide
-https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
+https://github.com/meteor/meteor/dwiki/Meteor-Style-Guide  
 
 
 ### MVC Color Coding
@@ -147,7 +147,7 @@ Template.fooList.fooList = function(){
 
 In older versions, thse could be found under Preferences > Live Edit.
 
-#### Settings > Editor > Editor Tabs
+### Settings > Editor > Editor Tabs
 Enable "Mark modified tabs with asterisk"
 
 
@@ -319,3 +319,8 @@ Some plugins enabled by default that don't apply to meteor development and you c
 * SQL support
 * Subversion Integration
 * YAML
+
+
+### Debugging
+
+See [How to debug Meteor apps with WebStorm](http://stackoverflow.com/questions/14751080/how-can-i-debug-my-meteor-app-using-the-webstorm-ide).
