@@ -10,6 +10,7 @@ assets
 template
 match
 stats
+content
 ````
 
 And some relevant links for people who would like to know more:
