@@ -20,3 +20,6 @@ https://github.com/meteor/meteor/issues/703
 
 collection.insert({ owner: Meteor.userId(), length:3 });  
 https://github.com/meteor/meteor/issues/594#issuecomment-15441895  
+
+content  
+https://groups.google.com/forum/#!topic/meteor-talk/N4C6ZRv6zb8  
