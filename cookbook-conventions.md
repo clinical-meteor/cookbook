@@ -49,3 +49,8 @@ This is a discussion that had yet to begin in earnest.  Right now, it's a bit of
 Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  And there's a lot of reason for it.  Color coding.  Clarity of code.  Domain specific languages.  Domain specific tools.  But it's not the only approach to MVC patterns.  
 
 So, yeah... just be aware of all that as you use this cookbook.
+
+#### Miscellaneous Notes & Links  
+
+Some extra discussion on MVC vs PAC patterns...  
+http://www.garfieldtech.com/blog/mvc-vs-pac  
