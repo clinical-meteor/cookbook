@@ -104,6 +104,8 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples in this cookbook.  
 
+[REST API](http://rest-api.meteor.com/)  
+[REST API Testrunner](http://rest-api-testrunner.meteor.com/)    
 [GroupThink](http://groupthink.meteor.com/)  
 [Fonts & Calligraph](http://fonts.meteor.com/)    
 [Dictionary](http://dictionary.meteor.com/)  
