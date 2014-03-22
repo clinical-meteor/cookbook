@@ -82,6 +82,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - Application Programming Interfaces
       - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)  
       - [Exposing a REST API](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/rest.md)  
+    - Data Driven Documents (D3)  
 - [Error Referece](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
   - Blog
