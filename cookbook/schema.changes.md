@@ -149,6 +149,13 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
+#### create an ObjectID from a Date object
+````js
+var timestamp = Math.floor(new Date(1974, 6, 25).getTime() / 1000);
+var hex       = ('00000000' + timestamp.toString(16)).substr(-8); // zero padding
+var objectId  = new ObjectId(hex + new ObjectId().str.substring(8));
+````
+
 #### find all the records that have items in a particular array  
 what we're doing here is referencing the array index using dot notation  
 ````js
