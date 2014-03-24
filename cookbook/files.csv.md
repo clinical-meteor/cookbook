@@ -90,6 +90,10 @@ document.body.appendChild(a);
 a.click();
 ````
 
+
+#### Fourth Client-Side Example (with jsFiddle)  
+
+
 #### Server  
 
 ````js
