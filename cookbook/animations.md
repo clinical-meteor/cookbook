@@ -18,7 +18,7 @@ http://desandro.github.io/3dtransforms/
 ### Audit Your CSS!  
 Check out the following videos by Steve Newcomb, from Famo.us, regarding the importance of auditing your CSS libraries.  
 
-  http://www.youtube.com/watch?v=83MX4wsoMzU
+  http://www.youtube.com/watch?v=83MX4wsoMzU  
   https://www.youtube.com/watch?v=br1NhXeVD6Y  
   https://www.youtube.com/watch?v=ixASZtHYGKY  
   https://www.youtube.com/watch?v=zpebYhm8f2o  
