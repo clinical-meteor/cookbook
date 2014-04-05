@@ -11,7 +11,7 @@ https://github.com/onmodulus/demeteorizer
 The newest Meteor specific offering seems to be from stackful.io.  Check it out!  
 http://stackful.io/meteor.html
 
-**Cloud Development**    
+**Any recommendations for Cloud Development?**    
 https://www.nitrous.io/  
 
 Run the following command in the Nitrous.io (web) command line to create a Meteor project.  
