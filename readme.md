@@ -48,7 +48,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
     - [Scaling](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
     - [Data Distribution Protocol](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.md)  
     - Clustering
-    - Websockets
   - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)
     - [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
     - Integrating 3rd Party Databases
