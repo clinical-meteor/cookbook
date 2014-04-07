@@ -109,7 +109,7 @@ helloWorld/
 helloTestjs/
   helloTestjs.js
   niftyGizmoTests.js
-  /gizmo
+  niftyGizmo/  
     niftyGizmoStub.js
     niftyGizmoDependencyInjections.js
 ````
