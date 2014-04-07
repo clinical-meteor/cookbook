@@ -25,8 +25,8 @@ helloWorld/
 ````
 
 
-#### B1)  Tests In Same Repository (RDT)
-The one major difference between regular coding, and coding for test-driven-development (TDD) or behavior-driven-development (BDD), is that we don't want to have our tests actually be served up in production.  We want to separate out our tests from production code.  So, we need to create a separate directory for our tests.  
+#### B1)  Tests In Same Repository (RTD)
+The one major difference between regular coding, and coding for test-or-behavior-driven-development (TDD/BDD), is that we don't want to have our tests actually be served up in production.  We want to separate out our tests from production code.  So, we need to create a separate directory for our tests.  
 
 ````js
 // initial repository
