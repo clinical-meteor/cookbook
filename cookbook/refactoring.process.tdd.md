@@ -25,7 +25,7 @@ helloWorld/
 ````
 
 
-#### B1)  Tests In Same Repository (RTD)
+#### B1)  Tests In Same Repository (RTD, TinyTest, Mocha-Web)
 The one major difference between regular coding, and coding for test-or-behavior-driven-development (TDD/BDD), is that we don't want to have our tests actually be served up in production.  We want to separate out our tests from production code.  So, we need to create a separate directory for our tests.  
 
 ````js
@@ -41,7 +41,7 @@ helloWorld/
     helloTest.js
 ````
 
-#### B2)  Tests In Separate Repository (Safety Harness)
+#### B2)  Tests In Separate Repository (TestHarness, Safety Harness)
 However, we could also separate out our tests by putting them in an entirely different repository, and running them as a separate application altogether.  
 ````js
 // initial repository
@@ -61,7 +61,7 @@ helloTests/
 
 
 
-#### Z1)  Advanced Tests Within the Repository (RTD)
+#### Z1)  Advanced Tests Within the Repository (RTD, TinyTest, Mocha-Web)
 Our decision will affect how we later structure our code.  After a bit of time, we go to advanced topics, like stubbing and dependency injections.  
 
 ````js
@@ -87,7 +87,7 @@ helloWorld/
       niftyGizmoDependencyInjections.js
 ````
 
-#### Z2)  Advanced Tests In Separate Repository (Safety Harness)  
+#### Z2)  Advanced Tests In Separate Repository (TestHarness, Safety Harness)
 And we have the choice of having all those stubs and mock objects in our main application, or in a separate application.  
 ````js
 // initial repository
@@ -163,8 +163,18 @@ Be aware that most all acceptance testing can be boiled down to three essential 
 
 Which, when translated to JQuery (and a bit of Chai), look something like this:
 ````js
-  $(window).open("http://leaderboard.meteor.com")
-  $('#niftyWidgetButton').click()
-  $('#niftyWidgetText').val().should.have.value(20)
+  $(window).open("http://leaderboard.meteor.com");
+  $('#niftyWidgetButton').click();
+  $('#niftyWidgetText').val().should.have.value(20);
 ````  
 
+Sometimes, you'll want to adjust the timing of your tests, which is easily done by setting timeouts (in milliseconds).  
+````js
+  $(window).open("http://leaderboard.meteor.com");
+  setTimeout(function(){
+    $('#niftyWidgetButton').click();
+  }, 200);
+  setTimeout(function(){
+    $('#niftyWidgetText').val().should.have.value(20);
+  }, 500);
+````  
