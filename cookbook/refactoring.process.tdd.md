@@ -117,7 +117,9 @@ helloTestjs/
 
 ## Leaderboard Example  
 
-#### RDT and Web-Mocha Approach of Having Tests in the Same Repository  
+#### Business Use Cases and Regulatory Requirements  
+It's very convenient to begin writing your acceptance tests by looking at the business use cases and regulatory obligations.  Behavior Driven Develop (BDD) is very convenient for this.  As is writing Use Case Stories and Scenarios.  The following is an example of converting a Business Feature into a use case and testing scenario.  
+
 ````feature  
 Feature: Player score can be increased manually
 
@@ -133,7 +135,9 @@ Feature: Player score can be increased manually
 ````
 
 
-#### Selenium / Test Harness of External Tests  
+#### Converting Use Cases into Tests  
+Once you have your features, use cases, and scearios defined, begin translating them into acceptance tests, using CoffeeScript, jQuery, and Behavior Driven Development libraries, such as Chai. 
+
 ````feature  
 Feature: Player score can be increased manually
 
@@ -150,10 +154,12 @@ Feature: Player score can be increased manually
 ````
 
 #### Acceptance Tests Have 3 Essential Key Features
+Be aware that most all acceptance testing can be boiled down to three essential features:  querying a resource, reading data, and writing data.  When it comes to browsers and webpages, these three features basically boil down to the following:  
 
 1.  Load a page  
-2.  Trigger an event / simulate a user interaction  
-3.  Inspect DOM elements  
+2.  Inspect DOM elements  
+3.  Trigger an event / simulate a user interaction  
+
 
 Which, when translated to JQuery (and a bit of Chai), look something like this:
 ````js
@@ -162,13 +168,3 @@ Which, when translated to JQuery (and a bit of Chai), look something like this:
   $('#niftyWidgetText').val().should.have.value(20)
 ````  
 
-#### Same-Origin-Policy Messes Everything Up  
-The jQuery example is great, but it doesn't run on separate machines.  Which is why technologies like Selenium and PhantomJS have been invented.  So, what's needed is a stepping-stone between the jQuery and Selenium or PhantomJS tests.  Something that can translate the three acceptance tests features from jQuery, which is testing locally, and Selenium/PhantomJS which test remotely.  
-
-
-#### Testing Locally  
-[meteorServer] <===> [(meteorClient)jquery]  
-
-#### Testing Remotely
-[meteorServer] <===> ([meteorClient] <===> [phantomJS])selenium  
- 
