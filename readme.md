@@ -106,7 +106,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 Links to live versions of the examples associated with this cookbook.  
 
 [Panel Layout](http://panel-layout.meteor.com/)  
-[Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)
+[Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)  
 [REST API](http://rest-api.meteor.com/)  
 [REST API Testrunner](http://rest-api-testrunner.meteor.com/)    
 [GroupThink](http://groupthink.meteor.com/)  
