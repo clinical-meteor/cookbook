@@ -29,6 +29,12 @@ Yup!  They've recently announced a partnership to bring 60fps DOM manipulations 
 https://groups.google.com/forum/#!searchin/meteor-talk/famo.us/meteor-talk/LCZvyy99KiY/uTSYivlicH4J  
 
 
+Famo.us Render Tree  
+https://github.com/Famous/guides/blob/master/dev/2014-04-09-render-tree.md  
+
+Famo.us Documentation  
+https://github.com/Famous/guides/tree/master/dev
+
 ### CSS Animations and Transitions  
 
 #### Small Icon Bump  
