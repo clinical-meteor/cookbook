@@ -1,7 +1,7 @@
 ## Writing Acceptance Tests  
 
 #### Business Use Cases and Regulatory Requirements  
-It's very convenient to begin writing your acceptance tests by looking at the business use cases and regulatory obligations.  Behavior Driven Develop (BDD) is very convenient for this.  As is writing Use Case Stories and Scenarios.  The following is an example of converting a Business Feature into a use case and testing scenario.  
+It's very convenient to begin writing your acceptance tests by looking at the business use cases and regulatory obligations.  Behavior Driven Develop (BDD) is very convenient for this. The following example shows the process of converting a Business Feature into a use case and testing scenario.  
 
 ````feature  
 Feature: Player score can be increased manually
