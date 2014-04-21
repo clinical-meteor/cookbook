@@ -106,6 +106,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Green Eggs and Spam](https://github.com/awatson1978/green-eggs-and-spam)  
 [Workflow Routing](http://workflow-routing.meteor.com/)  
 [Panel Layout](http://panel-layout.meteor.com/)  
 [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)  
