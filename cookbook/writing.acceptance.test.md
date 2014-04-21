@@ -39,8 +39,8 @@ Feature: Player score can be increased manually
 #### Acceptance Tests Have 3 Essential Key Features
 Be aware that most all acceptance testing can be boiled down to three essential features:  querying a resource, reading data, and writing data.  When it comes to browsers and webpages, these three features basically boil down to the following:  
 
-1.  Load a page  
-2.  Inspect DOM elements  
+1.  Load a webpage or application view
+2.  Inspect user interface elements (i.e. DOM)  
 3.  Trigger an event / simulate a user interaction  
 
 
