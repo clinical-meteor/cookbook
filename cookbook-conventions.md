@@ -17,7 +17,7 @@ http://en.wikipedia.org/wiki/OSI_model
 
 This model is typically used to describe network communications, and how packets of data travel from one machine to the next.  It describes how a client request to the server travels down the protocol stack, through the database, getting assigned TCP/IP headers, onto the wire (ethernet or wi-fi, etc), to the other machine, and back up the network stack to the server application.  That's how 90% of people understand the OSI model.
 
-![Traditional OSI 7 Layer Model](http://1.bp.blogspot.com/-nNKt3OWzWI0/UDY0SMO6SZI/AAAAAAAAABU/XMUEpKU5RgQ/s1600/osi-model-1.jpg)  
+![Traditional OSI 7 Layer Model](http://i.technet.microsoft.com/dynimg/IC213395.gif)  
 
 However, if you've worked with the OSI model **a lot**, you'll know that it can be used for a lot more.  In particular, it can also be used to model haptics, physical devices, and human-computer interfaces.  Because, in the end, physical devices like mice and printers are basically just other machines.  Very dumb ones.  But the principles of network communications still apply.  Your mouse is connected to your computer by a wire, and while it doesn't use the TCP/IP protocol, the {x,y} coordinates are still getting mapped to wire protocol.  And you can use the OSI model to describe that mapping.  
 
