@@ -17,11 +17,9 @@ http://en.wikipedia.org/wiki/OSI_model
 
 This model is typically used to describe network communications, and how packets of data travel from one machine to the next.  It describes how a client request to the server travels down the protocol stack, through the database, getting assigned TCP/IP headers, onto the wire (ethernet or wi-fi, etc), to the other machine, and back up the network stack to the server application.  That's how 90% of people understand the OSI model.
 
-However, if you've worked with the OSI model **a lot**, you'll know that it can be used for a lot more.  In particular, it can also be used to model haptics, physical devices, and human-computer interfaces.  Because, in the end, physical devices like mice and printers are basically just other machines.  Very dumb ones.  But the principles of network communications still apply.  Your mouse is connected to your computer by a wire, and while it doesn't use the TCP/IP protocol, the {x,y} coordinates are still getting mapped to wire protocol.  And you can use the OSI model to describe that mapping.
+![Traditional OSI 7 Layer Model](http://1.bp.blogspot.com/-nNKt3OWzWI0/UDY0SMO6SZI/AAAAAAAAABU/XMUEpKU5RgQ/s1600/osi-model-1.jpg)  
 
-Similarly, the OSI model can also be used to describe video transmission...  video camera input, video output, and all the steps in-between, including analog RGBA signalling.   Instead of Ethernet and network cables, the Physical and Data Link layers are video screens and pixels.  Instead of data packets, one can talk about JPG and PNG images (which are just pixel based data packets).  And so forth.  
-
-And finally, if you take all of that one step further, and you make a couple of funky assumption about eyes being networked video camera's to a person's brain, you can model computer-human interfaces and interactions with the OSI model.  You really can.  It works.  
+However, if you've worked with the OSI model **a lot**, you'll know that it can be used for a lot more.  In particular, it can also be used to model haptics, physical devices, and human-computer interfaces.  Because, in the end, physical devices like mice and printers are basically just other machines.  Very dumb ones.  But the principles of network communications still apply.  Your mouse is connected to your computer by a wire, and while it doesn't use the TCP/IP protocol, the {x,y} coordinates are still getting mapped to wire protocol.  And you can use the OSI model to describe that mapping.  
 
 So, be forewarned:  the Meteor Cookbook adopts a rather generous interpretation of the OSI model to describe client side devices, device drivers, haptics, and the like.  And rather than placing Mice and other client-side devices in the Application Layer, they're in the Physical and DataLink layer.  It's more of a mesh networking approach, in keeping with today's modern wireless input devices.  
 
@@ -32,7 +30,11 @@ Second, the Meteor Cookbook makes an opinionated choice about how to treat MVC, 
 
 A little background to put this into context.  In the 1970s, Xerox PARC developed the first mouse interface and first GUI.  They used a Model-View-Controller paradigm, which was copied throughout most of the 1980s by Apple, SGI, Sun, and all the other computer tech companies of the era.  MVC was fairly well understood during those days.  
 
+![MVC History](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/300px-MVC-Process.svg.png)
+
 Then, in the 1990s, the Web came onto the scene, and people started building server-client applications. This caused a big schism in how people understood the MVC model.  The client-side developers continued to apply the same MVC models from before, which is how Web Browsers wound up ubiquitously using HTML, CSS, and JS to render pages.  
+
+![Browser Rendering Workflow](http://orm-chimera-prod.s3.amazonaws.com/1230000000545/images/hpbn_1001.png)  
 
 However, server developers tend not to focus so much on how a page renders.  By and large, there was a division of labor that occured, with back-end server developers worrying more about performance, databases, workflow, and so forth.  The division of labor happened such that they began to view anything related to CSS as being a 'graphics design' issue.  And, being removed from the View portion of the MVC model, they began reusing the 'View' in MVC to mean something slightly different.  
 
