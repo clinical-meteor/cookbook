@@ -107,6 +107,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Drag and Drop](http://drag-and-drop.meteor.com/)  
 [Green Eggs and Spam](https://github.com/awatson1978/green-eggs-and-spam)  
 [Workflow Routing](http://workflow-routing.meteor.com/)  
 [Panel Layout](http://panel-layout.meteor.com/)  
@@ -120,5 +121,4 @@ Links to live versions of the examples associated with this cookbook.
 [Hubble - CRUD & Datasets](http://hubble.meteor.com/)  
 [Acceptance Testing](http://safety-harness.meteor.com/)  
 [Creating Forms](http://forms-kitchen-sink.meteor.com/)  
-[Understanding The Rendering Event Loop](http://reactive-rendering-tests.meteor.com/)  
 [Mobile Devices - iOS in Particular](https://github.com/awatson1978/cordova-phonegap)  
