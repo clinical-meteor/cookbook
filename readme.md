@@ -107,6 +107,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Minimongo Table](https://github.com/awatson1978/minimongo-table)  
 [Drag and Drop](http://drag-and-drop.meteor.com/)  
 [Green Eggs and Spam](https://github.com/awatson1978/green-eggs-and-spam)  
 [Workflow Routing](http://workflow-routing.meteor.com/)  
