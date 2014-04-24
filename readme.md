@@ -107,11 +107,11 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
-[Leaderboard Frameable](https://github.com/awatson1978/leaderboard-frameable)  
-[Leaderboard Testrunner](https://github.com/awatson1978/leaderboard-testrunner)  
-[Minimongo Table](https://github.com/awatson1978/minimongo-table)  
+[Leaderboard Frameable](http://leaderboard-frameable.meteor.com)  
+[Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)  
+[Minimongo Table](https://minimongo-table.meteor.com)  
 [Drag and Drop](http://drag-and-drop.meteor.com/)  
-[Green Eggs and Spam](https://github.com/awatson1978/green-eggs-and-spam)  
+[Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)  
 [Workflow Routing](http://workflow-routing.meteor.com/)  
 [Panel Layout](http://panel-layout.meteor.com/)  
 [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)  
