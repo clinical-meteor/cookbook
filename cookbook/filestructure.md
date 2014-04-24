@@ -37,9 +37,9 @@ server/environment.js                     // configuration of server side packag
 server/methods.js                         // cMeteor.method() definitions
 server/initializations/                   // code for initializing collections
 
-libraries/                               // any common code for client/server.
-libraries/scehmas.js                     // schema validations and the like
-libraries/collections.js                 // collection definitions and allow/deny rules
+lib/                                      // any common code for client/server.
+lib/schemas.js                            // schema validations and the like
+lib/collections.js                        // collection definitions and allow/deny rules
 
 packages/                                // place for all your atmosphere packages
 
