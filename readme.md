@@ -106,6 +106,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)  
 [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)  
 [Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)  
 [Minimongo Table](https://minimongo-table.meteor.com)  
