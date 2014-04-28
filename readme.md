@@ -106,6 +106,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)  
 [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)  
 [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)  
 [Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)  
