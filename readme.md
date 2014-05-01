@@ -76,6 +76,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
       - [Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
       - [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)    
       - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
+      - [Theming](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/theming.md)  
       - Drop Down Menu
       - Date Picker
       - Progress Bar
