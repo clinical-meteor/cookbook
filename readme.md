@@ -107,6 +107,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Clinical UI Forms](http://clinical-ui-forms.meteor.com/)  
 [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)  
 [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)  
 [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)  
@@ -125,5 +126,4 @@ Links to live versions of the examples associated with this cookbook.
 [Collabtionary](http://collabtionary.meteor.com/)  
 [Hubble - CRUD & Datasets](http://hubble.meteor.com/)  
 [Acceptance Testing](http://safety-harness.meteor.com/)  
-[Creating Forms](http://forms-kitchen-sink.meteor.com/)  
 [Mobile Devices - iOS in Particular](https://github.com/awatson1978/cordova-phonegap)  
