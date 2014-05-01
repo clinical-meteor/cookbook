@@ -7,9 +7,11 @@
 **Q:  How do I add MVC to my application?**  
 It's already there, baked into the core of the framework.  The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  
 
-Model      - HTML       - What It Is Displayed  
-View       - CSS        - How It Is Displayed  
-Controller - Javascript - When It Is Displayed  
+````js
+Model          HTML         What It Is Displayed  
+View           CSS          How It Is Displayed  
+Controller     Javascript   When It Is Displayed  
+````
 
 If you stick with this convention, your IDE's like WebStorm will automatically color-code your file types for you, and provide out-of-the-box color-coded syntax highlighting for your Models, Views, and Controllers
 
@@ -25,58 +27,6 @@ Ah...  so you want to drive a Ford in your Porche, instead.  Mmhmmm.  See the qu
 
 
 
-
-
-
-
-
-
-### View Theming
-
-**Q:  How do I add themes to my application?**  
-Theming in Meteor is beautiful, because we have CSS precompilers at our disposal.  Start off with an html template: 
-
-````html
-<template name="foo">
-  <div class="{{current_theme_name}}">
-    <span class="t1">hello</span>
-  </div>
-</template>
-````
-
-And add a template function to update on a dynamic Session variable.
-````
-Template.foo.current_theme_name = function(){
-  if(Session.get('current_theme_name') == 'black'){
-    return "theme1";
-  }else{
-    return "theme2";
-  }
-}
-````
-
-Then add some LESS magic, using nested CSS classes and a custom namespacing:
-````
-theme1 {
-  t1 {background-color: black}
-}
-theme2 {
-  t1 {background-color: red}
-}
-````
-
-
-And wrap it all up with some controls to toggle the dynamic session variable.
-````
-Template.bar.events({
-  'click .button-black: function(){
-    Session.set('current_theme_name', 'black');
-  },
-  'click .button-red: function(){
-    Session.set('current_theme_name', 'red');
-  }
-})
-````
 
 
 
