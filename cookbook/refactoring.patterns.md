@@ -24,7 +24,7 @@ Template.promptModal.rendered = function(){
 
 And when you get a whole bunch of them, refactor, organize, and consolidate into the following syntax:  
 ````js
-Template.promptModal.events({
+Template.promptModal.helpers({
   getPromptTitle = function(){
     return Session.get('promptTitle');
   },
