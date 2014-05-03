@@ -60,11 +60,12 @@ https://github.com/meteor/meteor/pull/920
   
 #### Database Tools
 [MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb)  
-[Robo Mongo](http://robomongo.org/) - A sweet, sweet database management tool.  Highly recommended.   
+[Robomongo](http://robomongo.org/) - A sweet, sweet database management tool.  Highly recommended.   
 [MongoHub](http://mongohub.todayclose.com/) - Another Mongo GUI, similar to RoboMongo.
 [Mongo3](http://mongo3.com/) - It's in Ruby, but it will let you visualize replication sets.   
 
-
+[Mongo Monitoring Service](https://mms.mongodb.com/setup)  
+[JSON Generator](http://www.json-generator.com/)  
   
 
 #### REST Clients  
