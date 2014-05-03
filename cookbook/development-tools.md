@@ -14,16 +14,13 @@ Add the myapp/.meteor directory to your ignore list.  Meteor takes your applicat
 .meteor
 ````
 
-**Q:  Any recommendations on Browser Debugging?**  
-
-[Chrome - Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)    
-[Firefox - Firebug](https://getfirebug.com/)    
   
 
 **Q:  Any recommendations on pair-programming?**  
 
 [Screenhero](http://screenhero.com/download.html?src=btn)      
 [MadEye](http://madeye.io/get-started)  
+[Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  
 
 
 
@@ -55,8 +52,6 @@ https://github.com/meteor/meteor/pull/920
 
 
 
-#### Mobile Device Simulators  
-[Window Resizer (Chrome)](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)    
   
 #### Database Tools
 [MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb)  
@@ -75,6 +70,7 @@ https://github.com/meteor/meteor/pull/920
 
 
 #### Debuggers  
+[Firefox - Firebug](https://getfirebug.com/)    
 [Firebug (Firefox)](https://getfirebug.com/)   
 [Node-Inspector](https://github.com/node-inspector/node-inspector)    
   
@@ -88,6 +84,9 @@ sudo node-inspector &
 
 http://0.0.0.0:8080/debug?port=5858
 ````
+#### Mobile Device Simulators  
+[Chrome - Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)    
+
 
 #### Code Analysis  
 
