@@ -3,6 +3,7 @@
 
 Modulus.io has bypassed Heroku as our favorite PaaS provider.  Check them out!  
 
+https://modulus.io/codex/meteor_apps
 http://blog.modulus.io/deploying-meteor-apps-on-modulus  
 http://blog.modulus.io/demeteorizer  
 https://github.com/onmodulus/demeteorizer  
