@@ -25,32 +25,6 @@ Add the myapp/.meteor directory to your ignore list.  Meteor takes your applicat
 
 
 
-**Q:  How do I debug node.js itself?**  
-````
-npm install -g node-inspector
-
-export NODE_OPTIONS='--debug'
-sudo mrt run
-sudo node-inspector &
-
-http://0.0.0.0:8080/debug?port=5858
-````
-
-
-**Q:  Help!  I'm behind a proxy!  How can I install/run Meteor behind a reverse proxy?**  
-This is a networking issue related to your operating system and local network topology, something that the Meteor Development Group doesn't really have any control over.  Some people have had success updating their bash environment variables, and running the installer with curl, like so:
-````js
-// make sure your shell knows about your proxy
-export http_proxy=http://your.proxy.server:port/
-
-// install meteor manually
-curl https://install.meteor.com | sh
-````
-
-Also, watch follow this issue:  
-https://github.com/meteor/meteor/pull/920
-
-
 
   
 #### Database Tools
@@ -84,6 +58,20 @@ sudo node-inspector &
 
 http://0.0.0.0:8080/debug?port=5858
 ````
+
+
+**Q:  How do I debug node.js itself?**  
+````
+npm install -g node-inspector
+
+export NODE_OPTIONS='--debug'
+sudo mrt run
+sudo node-inspector &
+
+http://0.0.0.0:8080/debug?port=5858
+````
+
+
 #### Mobile Device Simulators  
 [Chrome - Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)    
 
