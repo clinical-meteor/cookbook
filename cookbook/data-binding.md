@@ -53,7 +53,7 @@ After you get through that, you can get creative with dynamically generated data
 
 And some cleverness like so:
 ````js
-var dynamicId = "#fooInput";
+var dynamicId = "fooInput";
 Template.helloWorld.getDynamicId = function(){
   return dynamicId;
 }
@@ -63,21 +63,21 @@ Template.helloWorld.events({
     Posts.update(postId,{$set: {foo: $(this._id).val()} });  
 
     // for more clever things like many-to-one mappings, multi-way databindings, etc.
-    Posts.update(postId,{$set: {foo: $(dynamicId).val() }});
+    Posts.update(postId,{$set: {foo: $('#' + dynamicId).val() }});
   }
 });
 ```
 
 Or get really clever with reactive Session variables.  
 ````js
-Session.setDefault('dynamic_id', "#fooInput");
+Session.setDefault('dynamic_id', "fooInput");
 Template.helloWorld.getDynamicId = function(){
   return Session.get('dynamic_id');
 }
 Template.helloWorld.events({
   'keyup button':function(){    
     // for contextually reactive 2-way data-binding
-    Posts.update(postId,{$set: {foo: $(Session.get('dynamic_id')).val() }});
+    Posts.update(postId,{$set: {foo: $('#' + Session.get('dynamic_id')).val() }});
   }
 });
 ```
