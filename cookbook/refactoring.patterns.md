@@ -50,7 +50,6 @@ Template.promptModal.helpers({
 And we now avoid having to write ``Template.promptModal`` over and over and over again.  It's a minor refactoring, but it keeps things tidy.
 
 #### Extracting and Registering a Template Helper
-
 Now lets say we find a helper that we're using in different templates...
 ````js
 // before refactoring
@@ -79,6 +78,41 @@ And now we save ourselves the retyping of ``Template.fooTemplate.helpers({getUse
 
 
 
+#### Convert Helper Functions Into an Isomorphically Shared Object  
+
+Syntax matters when refactoring code, and if you want to isomorphically share helper functions between server and client, you'll need to begin by refactoring your function declarations into anonymous function expressions.
+````js
+// function declaration, scoped to the local file  
+// client/main.js
+function getRandomNumber(){
+  return Math.random();
+}
+
+// anonymous function expression, can be shared between files on the client side
+// client/main.js
+getRandomNumber = function(){
+  return Math.random();
+}
+````
+
+Once your helper functions are converted to anonymous function expressions, it becomes easy to add them to an helper object.  It's mostly a question of punctuation, and converting some equal signs into colons, and putting the functions into a JSON object.  After that, simply instantiate a new instance of the object, and call it's method.
+
+````js
+// can be refactored and shared between files on the client side
+// shared/helpers.js
+LipsumGenerator = {
+  getRandomNumber: function(){
+    return Math.random();
+  },
+  getRandomString: function(){
+    return 'lorem ipsum...';
+  }
+}
+
+// client/main.js
+lipsumGenerator = new LipsumGenerator();
+lipsumGenerator.getRandomString();
+````
 
 
 
