@@ -103,9 +103,6 @@ Once your helper functions are converted to anonymous function expressions, it b
 LipsumGenerator = {
   getRandomNumber: function(){
     return Math.random();
-  },
-  getRandomString: function(){
-    return 'lorem ipsum...';
   }
 }
 
