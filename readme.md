@@ -110,6 +110,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)  
 [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)  
 [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)  
 [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)  
