@@ -33,13 +33,13 @@ Session.setDefault('alertLevel', false);
 Session.setDefault('alertMessage', "");
 
 Template.postsPage.alertColor = function(){
- if(Session.get('alertColor') == "Success"){
+ if(Session.get('alertLevel') == "Success"){
   return "alert alert-success";
- }else if(Session.get('alertColor') == "Info"){
+ }else if(Session.get('alertLevel') == "Info"){
   return "alert alert-info";
- }else if(Session.get('alertColor') == "Warning"){
+ }else if(Session.get('alertLevel') == "Warning"){
   return "alert alert-warning";
- }else if(Session.get('alertColor') == "Danger"){
+ }else if(Session.get('alertLevel') == "Danger"){
   return "alert alert-danger";
  }else{
   return "alert alert-hidden"
