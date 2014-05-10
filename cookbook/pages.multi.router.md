@@ -1,24 +1,42 @@
- 
+##Multi Page Example With Routing
+
+##### The Document Object Model 
+
 ````html
-<template name="pageGraph">
-  <div id="pageGraph"></div>
-<template>
-<template name="pageProfile">
-  <div id="pageProfile"></div>
-<template>
-<template name="pageHome">
-  <div id="pageHome"></div>
-<template>
-<template name="pageErrorNotFound">
-  <div id="pageErrorNotFound"></div>
-<template>
-<template name="pageErrorUnknownBrowser">
-  <div id="pageErrorUnknownBrowser"></div>
-<template>
-<template name="sidebarInspection">
-  <div id="sidebarInspection"></div>
-<template>
-<template name="sidebarNavigation">
-  <div id="sidebarNavigation"></div>
-<template>
+<!-- /client/models/page.home.html -->
+<template name="homePage">
+  <div id="homePage" class="{{pageVisibility}} page">
+    <h2>{{ getTitle }}<h2>
+    <p class="tagline">{{ getText }}<p>
+    <!-- insert home page content here-->
+  </div>
+</template>
+
+<!-- /client/models/page.about.html -->
+<template name="aboutPage">
+  <div id="aboutPage" class="{{pageVisibility}} page">
+    <h2>{{ getTitle }}<h2>
+    <p class="tagline">{{ getText }}<p>
+    <!-- insert about page content here-->
+  </div>
+</template>
 ````
+
+
+####Using Iron Router and onRun 
+
+```
+this.route('homePage', {
+	path: '/',
+	onRun: function() {
+		return Session.set('active_page', 'homePage');
+	}
+});
+
+this.route('aboutPage', {
+	path: 'about',
+	onRun: function() {
+		return Session.set('active_Page', 'aboutPage');
+	}
+)};
+```
