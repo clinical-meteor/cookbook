@@ -50,18 +50,17 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 - Application Layer
   - [Routing](https://github.com/EventedMind/iron-router)  
     - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
-    - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)  
+    - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
     - Multi-Page with Routing
     - [Page Not Found](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/routing.page-not-found.md)  
   - Meteor UI Components
-    - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
-    - [Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)    
-    - [Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)  
-    - [Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)  
-    - [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)    
-    - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
+    - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md
+    - [Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)   
+    - [Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)
+    - [Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)
+    - [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)
+    - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)
     - [Theming](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/theming.md)  
-
     - Drop Down Menu
     - Date Picker
     - Progress Bar
