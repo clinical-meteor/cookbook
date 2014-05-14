@@ -4,9 +4,9 @@
 
 The first thing you need to know in structuring your apps is that the Meteor bundler has some directories that it is hardcoded to look for.  At a very basic level, the following directories are sort of baked into Meteor bundler, and is where you should begin with structuring larger applications.
 
-```js
-client/                                   // client application code
-client/compatibility/                    // legacy 3rd party javascript libraries
+```sh
+client/                                  # client application code
+client/compatibility/                    # legacy 3rd party javascript libraries
 lib/                                     // any common code for client/server.
 packages/                                // place for all your atmosphere packages
 private/                                 // static files that only the server knows about
