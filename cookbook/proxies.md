@@ -10,6 +10,3 @@ export http_proxy=http://your.proxy.server:port/
 // install meteor manually
 curl https://install.meteor.com | sh
 ````
-
-Also, watch follow this issue:  
-https://github.com/meteor/meteor/pull/920
