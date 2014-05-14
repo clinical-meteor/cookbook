@@ -1,6 +1,4 @@
-## Data-Distribution Protocol
-
-#### Filtering by Regex
+#### Filtering Subscriptiosn With Regexes
 
 ````js
 
