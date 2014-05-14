@@ -46,9 +46,8 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
   - [Alternative Templating Engines](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/templates.md)  
   - Integrating 3rd Party Databases
-
 - Application Layer
-  - [Routing](https://github.com/EventedMind/iron-router)  
+  - [Routing](https://github.com/EventedMind/iron-router)
     - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
     - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
     - Multi-Page with Routing
