@@ -1,24 +1,23 @@
 Test Driven Development
 ================================
 
-For an introduction to different types of tests (unit, integration, functional, acceptance, regression, smoke tests), see these StackOverflow questions: 
-
-[unit/integration/functional/acceptance](http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test)  
-[integration/smoke/regression](http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test?lq=1)  
+So, the good news is that from when this document was first written, there's been a lot of work on test driven development frameworks for Meteor, and we finally have some solutions worth taking a serious look at.  
 
 ================================
-#### Frameworks
+#### Definitions 
 
-So, the bad news is that the test driven development in Meteor is still somewhat in its infancy.  The good news is that it's starting to mature, with a number of different approaches being investigated.  So, maybe it's more of a toddler than an infant.   
+For an introduction to different types of tests (unit, integration, functional, acceptance, regression, smoke tests), see these StackOverflow questions: 
 
-Regardless, if you'd like a comprehensive rundown of the options, keep tabs on the following feature comparison table:  
-http://safety-harness.meteor.com/comparison
+[What is the Difference Between Unit, Integration, and Acceptance Testing?](http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test)  
+[What are Unit, Integration, Regression, and Smoke Tests?](http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test?lq=1)  
+
+
 
 ================================
 #### TinyTest  
 [https://github.com/meteor/meteor/tree/devel/packages/tinytest](https://github.com/meteor/meteor/tree/devel/packages/tinytest)
 
-Meteor's [undocumented](https://www.meteor.com/blog/2013/04/04/meteor-060-brand-new-distribution-system-app-packages-npm-integration) but built-in basic unit testing for writing packages, with some [helpers](https://github.com/meteor/meteor/tree/devel/packages/test-helpers). You can test your app that way too if you package it as a Meteor package, which amounts to adding a `package.js file`, adding a reference to ``tinytest``, and then runnning ``meteor test-packages`` from the command line.    
+Meteor provides built in unit-testing through the  [undocumented](https://www.meteor.com/blog/2013/04/04/meteor-060-brand-new-distribution-system-app-packages-npm-integration) tinytest packages, with some [helpers](https://github.com/meteor/meteor/tree/devel/packages/test-helpers). You can test your app that way too if you package it as a Meteor package, which amounts to adding a `package.js file`, adding a reference to ``tinytest``, and then runnning ``meteor test-packages`` from the command line.    
 
 * [video tutorial on Eventedmind](https://www.eventedmind.com/tracks/feed-archive/meteor-testing-packages-with-tinytest) and [accompanying example](https://github.com/EventedMind/meteor-file) + [example of using the undocumented helpers for client testing](http://inconsistency.in/post/52547787175/flash-messages-package-and-testing-events-on-meteor). 
 * [Tinytest integration with Travis CI](https://github.com/arunoda/travis-ci-meteor-packages)
