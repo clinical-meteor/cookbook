@@ -23,10 +23,6 @@ Meteor's [undocumented](https://www.meteor.com/blog/2013/04/04/meteor-060-brand-
 * [video tutorial on Eventedmind](https://www.eventedmind.com/tracks/feed-archive/meteor-testing-packages-with-tinytest) and [accompanying example](https://github.com/EventedMind/meteor-file) + [example of using the undocumented helpers for client testing](http://inconsistency.in/post/52547787175/flash-messages-package-and-testing-events-on-meteor). 
 * [Tinytest integration with Travis CI](https://github.com/arunoda/travis-ci-meteor-packages)
 
-Mocha-Web  
-
-Basic unit test runner and HTML reporter, that can be installed as a package.  
-[Atmosphere](https://atmosphere.meteor.com/package/mocha-web) / [GitHub](https://github.com/mad-eye/meteor-mocha-web)
 
 ================================
 #### mUnit
@@ -71,7 +67,14 @@ RTD [plans to integrate Laika](https://github.com/xolvio/rtd/issues/63).
 Integration testing using a command line interface, with a [somewhat convoluted API](https://github.com/arunoda/laika/issues/97).  Handy for engineering extensions to Meteor itself.  [Doesn't provide code coverage](https://github.com/xolvio/rtd/issues/22#issuecomment-20442959).
 
 * Creating a Meteor app + [Laika tutorial](http://mherman.org/blog/2014/01/29/meteor-dot-js-in-action-create-an-app-test-with-laika/)
-* 
+
+================================
+####  Mocha-Web  
+
+Basic unit test runner and HTML reporter, that can be installed as a package.  
+[Atmosphere](https://atmosphere.meteor.com/package/mocha-web) / [GitHub](https://github.com/mad-eye/meteor-mocha-web)
+
+
 ------------------------------------------------------------------
 ## Load Testing 
 
