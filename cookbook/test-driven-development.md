@@ -29,7 +29,33 @@ Basic unit test runner and HTML reporter, that can be installed as a package.
 [Atmosphere](https://atmosphere.meteor.com/package/mocha-web) / [GitHub](https://github.com/mad-eye/meteor-mocha-web)
 
 ================================
-#### RTD
+#### mUnit
+Chai and Sinon hooks for TinyTest.
+[https://atmospherejs.com/package/munit](https://atmospherejs.com/package/munit)  
+
+
+================================
+#### Velocity
+The newest full-featured reactive test runner.  
+
+[Velocity Homepage](https://github.com/xolvio/velocity)
+[Velocity Core Mailing List](https://groups.google.com/forum/#!forum/velocity-core)  
+
+================================
+#### REST Testrunner  
+Acceptance testing framework with HTML reporter.  
+[http://rest-api-testrunner.meteor.com/](http://rest-api-testrunner.meteor.com/)  
+[http://github.com/awatson1978/rest-api-testrunner/](http://github.com/awatson1978/rest-api-testrunner/)   
+
+
+================================
+#### Other
+
+* "Testing" section on [Best learning resources for Meteor.js](http://yauh.de/articles/376/best-learning-resources-for-meteorjs)  
+* [Meteor test-driven development](http://stackoverflow.com/questions/12987525/meteor-test-driven-development) on StackOverflow  
+
+================================
+#### RTD - Deprecated
 [http://rtd.xolv.io](http://rtd.xolv.io)  
 In-depth unit testing and acceptance testing; relies on a command line interface, and requires the app code to live in an `app` directory. [Inpsired by](http://blog.madeye.io/2013/02/testing-meteor-here-at-madeye-were-big.html?showComment=1364314050448#c7796997551340499047) Mocha-Web.  
 
@@ -45,16 +71,7 @@ RTD [plans to integrate Laika](https://github.com/xolvio/rtd/issues/63).
 Integration testing using a command line interface, with a [somewhat convoluted API](https://github.com/arunoda/laika/issues/97).  Handy for engineering extensions to Meteor itself.  [Doesn't provide code coverage](https://github.com/xolvio/rtd/issues/22#issuecomment-20442959).
 
 * Creating a Meteor app + [Laika tutorial](http://mherman.org/blog/2014/01/29/meteor-dot-js-in-action-create-an-app-test-with-laika/)
-
-### Safety Harness
-Acceptance testing framework with HTML reporter.  
-http://safety-harness.meteor.com/
-
-#### More
-
-* "Testing" section on [Best learning resources for Meteor.js](http://yauh.de/articles/376/best-learning-resources-for-meteorjs)  
-* [Meteor test-driven development](http://stackoverflow.com/questions/12987525/meteor-test-driven-development) on StackOverflow  
-
+* 
 ------------------------------------------------------------------
 ## Load Testing 
 
