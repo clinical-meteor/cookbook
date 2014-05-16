@@ -22,6 +22,12 @@ Meteor provides built in unit-testing through the  [undocumented](https://www.me
 * [video tutorial on Eventedmind](https://www.eventedmind.com/tracks/feed-archive/meteor-testing-packages-with-tinytest) and [accompanying example](https://github.com/EventedMind/meteor-file) + [example of using the undocumented helpers for client testing](http://inconsistency.in/post/52547787175/flash-messages-package-and-testing-events-on-meteor). 
 * [Tinytest integration with Travis CI](https://github.com/arunoda/travis-ci-meteor-packages)
 
+Alternatively, you can run the following commands:
+
+````sh
+meteor add tinytest
+meteor test-packages
+````
 
 ================================
 #### mUnit
