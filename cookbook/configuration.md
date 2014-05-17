@@ -137,7 +137,7 @@ Meteor.startup(function () {
   // update the keepAlive once a minute        
   setInterval(function(){
     Settings.update(configurationSettings._id, {$set: { keepAlive: moment() }});
-  }, 1000)
+  }, 60*1000)
 });
 ````
 
