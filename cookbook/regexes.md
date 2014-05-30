@@ -3,7 +3,6 @@
 [8 Regular Expressions You Should Know](http://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149)  
 
 ````js
-
 // matching a username
 /^[a-z0-9_-]{3,16}$/
 
@@ -27,10 +26,6 @@
 
 // matching an html tag
 /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
-
-
-
-
 ````
 
 
