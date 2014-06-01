@@ -7,26 +7,30 @@ Before diving into this cookbook, please be aware of the following two conventio
 
 
 #### Browsers and Operating Systems  
-Generally speaking, the Cookbook caters to a Mac development environment, and WebKit browsers.  The official Meteor position is that Meteor is going to support Windows and SQL databases in version 1.1 or later.  The Meteor Cookbook is focused on Meteor 1.0, then. 
+Generally speaking, the Cookbook caters to a Mac development environment, WebKit browsers (specifically Chrome, but also Safari), a virtualized Ubuntu server hosting environment, and support of the iPad and iPhone.  
+
+The official Meteor position is that Meteor is going to support Windows and SQL databases in version 1.1 or later.   Until then, however, the fact of the matter is that Meteor basically only runs on Mac/Linux.  And since the Meteor Cookbook is focused on documenting Meteor 1.0, you can basically assume that all the examples in the Cookbook are written with Mac and Chrome in mind.
 
 
 #### The OSI Model  
 
-First, it's generally structured around the Open Systems Interconnection (OSI) Model ((ISO/IEC 7498-1)).  
+Older versions of the Cookbook were heavily structured around the Open Systems Interconnection (OSI) Model ((ISO/IEC 7498-1)).  
 http://en.wikipedia.org/wiki/OSI_model
 
 This model is typically used to describe network communications, and how packets of data travel from one machine to the next.  It describes how a client request to the server travels down the protocol stack, through the database, getting assigned TCP/IP headers, onto the wire (ethernet or wi-fi, etc), to the other machine, and back up the network stack to the server application.  That's how 90% of people understand the OSI model.
 
 ![Traditional OSI 7 Layer Model](http://i.technet.microsoft.com/dynimg/IC213395.gif)  
 
-However, if you've worked with the OSI model **a lot**, you'll know that it can be used for a lot more.  In particular, it can also be used to model haptics, physical devices, and human-computer interfaces.  Because, in the end, physical devices like mice and printers are basically just other machines.  Very dumb ones.  But the principles of network communications still apply.  Your mouse is connected to your computer by a wire, and while it doesn't use the TCP/IP protocol, the {x,y} coordinates are still getting mapped to wire protocol.  And you can use the OSI model to describe that mapping.  
+However, if you've worked with the OSI model **a lot**, you'll know that it can be used to describe haptics, video recording/broadcasting, human-computer interfaces, business logic, and more.  
 
-So, be forewarned:  the Meteor Cookbook adopts a rather generous interpretation of the OSI model to describe client side devices, device drivers, haptics, and the like.  And rather than placing Mice and other client-side devices in the Application Layer, they're in the Physical and DataLink layer.  It's more of a mesh networking approach, in keeping with today's modern wireless input devices.  
+Early versions of the Cookbook used this conceptual model to organize files, identify subsystems and modules, and to sort of 'reverse engineer' Meteor.  As time went on, however, it became increasingly apparent how Meteor was architected, and how it lived in layers 5 through 7, and how an indepth discussion of Model/View/Controller patterns was more important than OSI networking patterns.  
+
+So, going forward, we'll be seeing less of the OSI model.  But you may still run into references here and there, as we clean up the Cookbook.
 
 
 #### Model-View-Controller  
 
-Second, the Meteor Cookbook makes an opinionated choice about how to treat MVC, and tends towards a thick-click and desktop models of how MVC is structured. In particular, it avoids server-side Ruby and Angular MVC patterns, which treat a View as a collection of HTML and Javascript.  
+The Meteor Cookbook makes an opinionated choice about how to treat MVC, and tends towards a thick-click and desktop models of how MVC is structured. In particular, it avoids server-side Ruby and Angular MVC patterns, which treat a View as a collection of HTML and Javascript.  
 
 A little background to put this into context.  In the 1970s, Xerox PARC developed the first mouse interface and first GUI.  They used a Model-View-Controller paradigm, which was copied throughout most of the 1980s by Apple, SGI, Sun, and all the other computer tech companies of the era.  MVC was fairly well understood during those days.  
 
