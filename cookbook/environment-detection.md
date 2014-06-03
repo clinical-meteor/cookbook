@@ -46,7 +46,7 @@ Meteor.call("getEnvironment", function (result) {
  ````
 
 **Q:  How do I configure my app differently for each environment?**   
-Todo:  convert to javascript
+Todo:  convert coffeescript/pseudocode to javascript
 ````coffee
 environment = process.env.METEOR_ENV or "development"
 
