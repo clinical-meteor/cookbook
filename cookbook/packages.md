@@ -91,7 +91,7 @@ Once all that is done, you should have a Foo object which you can now use in you
 
 ````js
  // and now use the function like so:
- Foo.function();  
+ Foo.niftyFunction();  
 ````
 
 
