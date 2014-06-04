@@ -99,6 +99,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)  
 [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master)  
 [Clinical Support Forum](http://clinical-support-forum.meteor.com/)  
 [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)  
