@@ -35,10 +35,15 @@ https://github.com/Famous/guides/blob/master/dev/2014-04-09-render-tree.md
 Famo.us Documentation  
 https://github.com/Famous/guides/tree/master/dev
 
+
+-----------------------------------------
+
 ### CSS Animations and Transitions  
 
-#### Small Icon Bump  
 ````css
+// ----------------------------------------------------------------------------------------
+// small icon bump
+
 .icon:hover{
   position: absolute;
   text-align: left;
@@ -71,4 +76,46 @@ https://github.com/Famous/guides/tree/master/dev
   -o-transition-delay: 0s;
   transition-delay: 0s;
 }
+
+
+// ----------------------------------------------------------------------------------------
+// fadeIn
+ 
+.start-hidden {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in 200ms;
+  -moz-transition: opacity 200ms ease-in 200ms;
+  -o-transition: opacity 200ms ease-in 200ms;
+  transition:  opacity 300ms ease-in 200ms;
+}
+.fade-in{
+  opacity:1;
+}
+
+// ----------------------------------------------------------------------------------------
+// fadeIn
+
+.applicationLayout.content-overlay {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ width: auto;
+ height: auto;
+ cursor: pointer;
+}
+ 
+@media screen and (min-width: 768px)
+  .applicationLayout.content-overlay.open {
+  -webkit-transform: translate3d(20%, 0, 0) scale(0.5);
+  -moz-transform: translate3d(40%, 0, 0) scale(0.85);
+  -o-transform: translate3d(40%, 0, 0) scale(0.85);
+  -ms-transform: translate3d(40%, 0, 0) scale(0.85);
+  transform: translate3d(40%, 0, 0) scale(0.85);
+  z-index: 1;
+}
 ````
+
+
+TODO: Add more CSS animations.
