@@ -40,9 +40,10 @@ https://github.com/Famous/guides/tree/master/dev
 
 ### CSS Animations and Transitions  
 
-````css
-// ----------------------------------------------------------------------------------------
-// small icon bump
+````less
+/*----------------------------------------------------------------------------------------
+small icon bump
+*/
 
 .icon:hover{
   position: absolute;
