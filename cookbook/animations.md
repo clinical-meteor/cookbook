@@ -40,7 +40,7 @@ https://github.com/Famous/guides/tree/master/dev
 
 ### CSS Animations and Transitions  
 
-````less
+````css
 /*----------------------------------------------------------------------------------------
 small icon bump
 */
