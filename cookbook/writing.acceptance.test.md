@@ -34,9 +34,9 @@ Feature: Player score can be increased manually
 
   Scenario: Give 5 points to a player
     Given I authenticate
-    And "Grace Hopper" has a score of 10
+    And "Grace Hopper" has a score of 40
     When I give "Grace Hopper" 5 points
-    Then "Grace Hopper" has a score of 15
+    Then "Grace Hopper" has a score of 45
 ````
 
 
@@ -52,8 +52,71 @@ Feature: Player score can be increased manually
 
   Scenario: Give 5 points to a player
     Given I can connect to page "http://leaderboard.meteor.com"
-    And "Grace Hopper" has a score of 10
-    When $("#niftyWidgetButton").click()
-    foo = $("#niftyWidgetText").val()
-    Then foo.should.have.value(20)
+    And $('div.leaderboard div:nth-child(2) .score').val === 40
+    When $("input.inc").click()
+    Then $('div.leaderboard div:nth-child(2) .score').val === 45
+````
+
+Eventually, you'll need to decide whether you want to go through the effor of stubing And, When, and Then functions, and doing all the extra programming to maintain the Gherkin business level syntax for your acceptance tests.
+
+
+#### Using Nightwatch  
+
+The cleanest and simplist interface for getting up and running with acceptance testing with Meteor right now seems to the Nightwatch bridge to the Selenium browser automation server.  You install [selenium-nightwatch](http://github.com/awatson1978/selenium-nightwatch.git) by simply running ``sudo mrt add selenium-nightwatch`` in your application directory, and then using the [Nightwatch API](http://nightwatchjs.org/api) to write acceptance tests.  
+
+Ultimately, just like writing application code, you'll need to figure out what kind of tests you need, your tolerance for ease of installation, and hether you can tolerate acceptance tests written in code, pseudocode, or need domain specific business langauge.  But for getting up to speed quickly, Nightwatch can be installed inside of 5 minutes to a project, and lets you get acceptance test coverage of your application at an extremely rapid pace.
+
+Using the leaderboard example again, here is what the Nightwatch acceptance tests look like:
+
+````js
+browser
+    .url("http://localhost:3000")
+    .waitForElementVisible('body', 1000)
+    .waitForElementVisible('div#outer', 1000)
+    .waitForElementVisible('div.leaderboard', 1000)
+    .waitForElementVisible('.leaderboard .player', 1000)
+
+    .verify.containsText('div.leaderboard div:nth-child(1) .name', 'Ada Lovelace')
+    .verify.containsText('div.leaderboard div:nth-child(1) .score', '50')
+
+    .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Grace Hopper')
+    .verify.containsText('div.leaderboard div:nth-child(2) .score', '40')
+
+    .verify.containsText('div.leaderboard div:nth-child(3) .name', 'Claude Shannon')
+    .verify.containsText('div.leaderboard div:nth-child(3) .score', '35')
+
+    .verify.containsText('div.leaderboard div:nth-child(4) .name', 'Nikola Tesla')
+    .verify.containsText('div.leaderboard div:nth-child(4) .score', '25')
+
+    .verify.containsText('div.leaderboard div:nth-child(5) .name', 'Marie Curie')
+    .verify.containsText('div.leaderboard div:nth-child(5) .score', '20')
+
+    .verify.containsText('div.leaderboard div:nth-child(6) .name', 'Carl Friedrich Gauss')
+    .verify.containsText('div.leaderboard div:nth-child(6) .score', '5')
+
+
+    .verify.containsText('.none', 'Click a player to select')
+    .click('div.leaderboard div:nth-child(2)')
+    .pause(500)
+    .waitForElementVisible('input.inc', 1000)
+    .verify.attributeEquals('input.inc', 'value', 'Give 5 points')
+
+    .click('input.inc')
+    .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Grace Hopper')
+    .verify.containsText('div.leaderboard div:nth-child(2) .score', '45')
+
+    .click('input.inc')
+    .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Grace Hopper')
+    .verify.containsText('div.leaderboard div:nth-child(2) .score', '50')
+
+    .click('input.inc')
+    .verify.containsText('div.leaderboard div:nth-child(1) .name', 'Grace Hopper')
+    .verify.containsText('div.leaderboard div:nth-child(1) .score', '55')
+
+    .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Ada Lovelace')
+    .verify.containsText('div.leaderboard div:nth-child(2) .score', '50')
+
+    //.setValue('input[type=text]', 'nightwatch')
+
+    .end();
 ````
