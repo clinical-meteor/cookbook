@@ -23,7 +23,7 @@ Which, when translated to JQuery (and a bit of Chai), look something like this:
 
 
 #### Business Use Cases and Regulatory Requirements  
-It's very convenient to begin writing your acceptance tests by looking at the business use cases and regulatory obligations.  Behavior Driven Develop (BDD) is very convenient for this. The following example shows the process of converting a Business Feature into a use case and testing scenario using [http://docs.behat.org/guides/1.gherkin.html](Gherkin Script), a scripting language created by the Cucumber.js project.
+It's very convenient to begin writing your acceptance tests by looking at the business use cases and regulatory obligations.  Behavior Driven Develop (BDD) is very convenient for this. The following example shows the process of converting a Business Feature into a use case and testing scenario using [Gherkin Script](http://docs.behat.org/guides/1.gherkin.html), a scripting language created by the Cucumber.js project.
 
 ````feature  
 Feature: Player score can be increased manually
