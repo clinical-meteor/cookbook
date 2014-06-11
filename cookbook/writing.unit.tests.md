@@ -7,7 +7,7 @@ Unlike acceptance tests, which treat your application as a black-box closed syst
 
 #### Running Tinytest
 
-The simplest way to create unit tests is to use Tinytest, the native Meteor testing utility.  You'll need to add the ``tinytest`` package, and then use the custom ``mrt test-packages`` command.
+The simplest way to create unit tests is to use Tinytest, the native Meteor testing utility.  (Tinytest is not to be confused with TinyTestJS, which is a different library).  You'll need to add the ``tinytest`` package, and then use the custom ``mrt test-packages`` command.
 
 ````js
 // create your application
@@ -23,6 +23,21 @@ sudo mrt
 // open a second browser and run the test packages
 sudo mrt test-packages
 ````
+
+#### Tinytest API  
+
+test.equal(actual, expected, message, not)
+test.notEqual(actual, expected, message)
+test.instanceOf(obj, klass)
+test.matches(actual, regexp, message)
+test.isTrue(actual, msg)
+test.isFalse(actual, msg)
+test.isNull(actual, msg)
+test.isNotNull(actual, msg)
+test.isUndefined(actual, msg)
+test.isNaN(actual, msg)
+test.isUndefined(actual, msg)
+test.length(obj, expected_length, msg)
 
 
 #### Creating a Tinytest Package for Testing In-App Files
