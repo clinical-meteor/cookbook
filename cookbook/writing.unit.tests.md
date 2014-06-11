@@ -58,7 +58,7 @@ Package.on_test(function (api) {
   // and link to the unit tests for them
   api.add_files('leaderboard-tests.js', 'client');
 });
-
+````
 
 #### Add Stubs
 
