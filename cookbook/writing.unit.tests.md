@@ -84,3 +84,53 @@ Template = {
 Players = {};
 ````
 
+#### Write Your Unit Tests  
+Once you have your unit tests in place, you can begin writing actual unit tests.
+
+````js
+Tinytest.add('Template.leaderboard.players()', function (test) {
+
+  var someLocalCollectionCursor = {};
+  Players.find = function (selector, options) {
+      test.equal(options.sort.score, -1);
+      test.equal(options.sort.name, 1);
+      // expect(options.sort.score).toBe(-1);
+      // expect(options.sort.name).toBe(1);
+      return someLocalCollectionCursor;
+  };
+
+  test.equal(Template.leaderboard.players(), someLocalCollectionCursor);
+  //expect(Template.leaderboard.players()).toBe(someLocalCollectionCursor);
+});
+
+
+Tinytest.add('Template.leaderboard.selected_name()', function (test) {
+
+  // returns player when player is found and has a name
+  Players.findOne = function () {
+      return {name: 'Tom'};
+  };
+  test.equal(Template.leaderboard.selected_name(), "Tom");
+
+
+  // returns undefined when player.name isn't present
+  Players.findOne = function () {
+      return {};
+  };
+  test.equal(Template.leaderboard.selected_name(), undefined);
+
+  // returns undefined when player doesn't exist
+  Players.findOne = function () {
+      return undefined;
+  };
+  test.equal(Template.leaderboard.selected_name(), undefined);
+
+});
+````
+
+#### Leaderboard Example  
+
+You can find a complete example of unit tests for the Leaderboard example at the following [leaderboard-tinytests](https://github.com/awatson1978/leaderboard-tinytests) repository.
+
+
+
