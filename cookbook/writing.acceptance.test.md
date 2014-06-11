@@ -60,13 +60,54 @@ Feature: Player score can be increased manually
 Eventually, you'll need to decide whether you want to go through the effor of stubing And, When, and Then functions, and doing all the extra programming to maintain the Gherkin business level syntax for your acceptance tests.
 
 
-#### Using Nightwatch  
+#### Installing and Running Nightwatch  
 
-The cleanest and simplist interface for getting up and running with acceptance testing with Meteor right now seems to the Nightwatch bridge to the Selenium browser automation server.  You install [selenium-nightwatch](http://github.com/awatson1978/selenium-nightwatch.git) by simply running ``sudo mrt add selenium-nightwatch`` in your application directory, and then using the [Nightwatch API](http://nightwatchjs.org/api) to write acceptance tests.  
+The simplist interface for getting Meteor up and running with acceptance testing using a browser automation server, is to use the Nightwatch bridge to Selenium.  You install [selenium-nightwatch](http://github.com/awatson1978/selenium-nightwatch.git) by simply running ``sudo mrt add selenium-nightwatch`` in your application directory, and then using the [Nightwatch API](http://nightwatchjs.org/api) to write acceptance tests.  
 
-Ultimately, just like writing application code, you'll need to figure out what kind of tests you need, your tolerance for ease of installation, and hether you can tolerate acceptance tests written in code, pseudocode, or need domain specific business langauge.  But for getting up to speed quickly, Nightwatch can be installed inside of 5 minutes to a project, and lets you get acceptance test coverage of your application at an extremely rapid pace.
+````sh
+# Go to the root of your application
+terminal-a$  cd myappdir
 
-Using the leaderboard example again, here is what the Nightwatch acceptance tests look like:
+# Option A:  Install via Atmosphere
+terminal-a$  mrt add selenium-nightwatch
+
+# Go to the root of your application
+terminal-a$ cd myappdir
+
+# run the leaderboard application
+terminal-a$ sudo mrt
+
+# and then, in the same way that we run 'meteor mongo' in a separate terminal
+# while our application is already running,
+# we want to open up a new terminal, and run nightwatch
+terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
+terminal-b$ sudo ./run_nightwatch.sh
+````
+
+#### Writing Acceptance Tests  
+
+Ultimately, just like writing application code, you'll need to figure out what kind of tests are right for you, your tolerance for ease of installation, and hether you can tolerate acceptance tests written in code, pseudocode, or need domain specific business langauge.  But for getting up to speed quickly, Nightwatch can be installed inside of 5 minutes to a project, and lets you get acceptance test coverage of your application at an extremely rapid pace.
+
+
+Once Nightwatch is installed, simply create a file in the ``tests/`` directory (it doesn't matter what the name is), add the following code, and run ``sudo ./run_nightwatch.sh`` from the command line.  
+````js
+// tests/leaderboard-walkthrough.js
+module.exports = {
+  "Hello World" : function (client) {
+    client
+      .url("http://127.0.0.1:3000")
+      .waitForElementVisible("body", 1000)
+      .assert.title("Leaderboard")
+      .end();
+  }
+};
+````
+
+You should be up and running!
+
+####  Writing More Complicated Acceptance Tests
+
+Once you have your first test running green, check out the [Nightwatch API](http://nightwatchjs.org/api#assert-attributeEquals), and start creating more advanced tests, like this leaderboard test:
 
 ````js
 browser
@@ -120,3 +161,10 @@ browser
 
     .end();
 ````
+
+#### Leaderboard Example  
+
+You can find a complete example of acceptance tests for the Leaderboard example at the following [leaderboard-nightwatch](https://github.com/awatson1978/leaderboard-nightwatch) repository.
+
+
+
