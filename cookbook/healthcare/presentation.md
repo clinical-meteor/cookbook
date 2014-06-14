@@ -1,4 +1,4 @@
-Meteor Healthcare and Mobile Apps Presentation
+Healthcare and Mobile Apps Presentation
 ==================================
 
 
