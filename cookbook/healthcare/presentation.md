@@ -13,7 +13,7 @@ Healthcare and Mobile Apps Presentation
 
 #### MUMPS Sample Code
 
-````m
+````M
 ;;;; verbose
 hello()
   write "Hello, World!",!
