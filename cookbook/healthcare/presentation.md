@@ -18,6 +18,9 @@ Healthcare and Mobile Apps Presentation
 hello()
   write "Hello, World!",!
   quit
+  
+// concise
+hello() w "Hello, World!",! q
 
 ````
 
