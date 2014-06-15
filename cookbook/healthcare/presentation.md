@@ -49,4 +49,12 @@ Phase 4 - Federal HIPAA
   [Amazon Web Services - HIPAA Whitepaper](https://aws.amazon.com/about-aws/whats-new/2009/04/06/whitepaper-hipaa/)    
 
 
+####  FDA Validation Testing  
 
+``sudo mrt selenium-nightwatch``   
+
+[Selenium-Nightwatch Package](https://github.com/awatson1978/selenium-nightwatch)  
+[Writing Acceptance Tests with Nightwatch and Selenium](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
+[Writing Unit Tests with Tinytest](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
+[Leaderboard Unit Tests Example with Tinytest](https://github.com/awatson1978/leaderboard-tinytests)  
+[Leaderboard Acceptance Tests Example with Nightwatch/Selenium](https://github.com/awatson1978/leaderboard-nightwatch)  
