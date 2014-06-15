@@ -12,5 +12,12 @@ Healthcare and Mobile Apps Presentation
 
 
 
+````m
+hello()
+ 
+  write "Hello, World!",!
+ 
+  quit
 
+````
 
