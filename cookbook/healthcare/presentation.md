@@ -13,13 +13,13 @@ Healthcare and Mobile Apps Presentation
 
 #### MUMPS Sample Code
 
-````mumps
+````M
 ;; verbose
 hello()
   write "Hello, World!",!
   quit
   
-;; concise
+;; abbreviated
 hello() w "Hello, World!",! q
 
 ````
