@@ -33,9 +33,7 @@ git clone github.com/awatson1978/hippa-audit-log.git
 ####  HIPAA Compliant Scale Out Using Meteor
 
 Phase 1 - Development (1 server)  
-````sh 
-sudo meteor 
-````  
+``sudo meteor``  
 
 Phase 2 - Platform as a Service (2 to 10 servers)  
   [modulus.io - Node/Meteor App Hosting on AWS](https://modulus.io/)   
