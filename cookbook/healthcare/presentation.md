@@ -37,18 +37,18 @@ Phase 1 - Development (1 server)
 sudo meteor 
 ````  
 
-Phase 2 - Platform as a Service (2 to 10 servers)
-	[modulus.io - Node/Meteor App Hosting on AWS](https://modulus.io/)  
-	[MongoHQ - Mongo Hosting on AWS](http://www.mongohq.com/)
+Phase 2 - Platform as a Service (2 to 10 servers)  
+  [modulus.io - Node/Meteor App Hosting on AWS](https://modulus.io/)   
+  [MongoHQ - Mongo Hosting on AWS](http://www.mongohq.com/)  
 
 
-Phase 3 - Infrastructure as a Service (11+ servers)
-	[Amazon Web Services](http://aws.amazon.com/)  
+Phase 3 - Infrastructure as a Service (11+ servers)  
+  [Amazon Web Services](http://aws.amazon.com/)  
 
 
-Phase 4 - Federal HIPAA 
-	[Amazon Web Services - HIPAA/Federal Tier](http://aws.amazon.com/compliance/)  
-	[Amazon Web Services - HIPAA Whitepaper](https://aws.amazon.com/about-aws/whats-new/2009/04/06/whitepaper-hipaa/)  
+Phase 4 - Federal HIPAA   
+  [Amazon Web Services - HIPAA/Federal Tier](http://aws.amazon.com/compliance/)  
+  [Amazon Web Services - HIPAA Whitepaper](https://aws.amazon.com/about-aws/whats-new/2009/04/06/whitepaper-hipaa/)    
 
 
 
