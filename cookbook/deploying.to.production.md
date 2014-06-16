@@ -52,7 +52,7 @@ sudo rm -rf production-backup
 echo 'moving current production to backup'
 sudo mv production production-backup
 
-echo 'moving new version into proudction'
+echo 'moving new version into production'
 sudo mv bundle production
 
 echo 'removing temp files...'
