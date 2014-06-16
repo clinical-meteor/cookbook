@@ -25,8 +25,8 @@ mrt add accounts-ui-bootstrap-drop down
 mrt add roles
 
 # include an audit log
-mrt add hippa-audit-log
-git clone github.com/awatson1978/hippa-audit-log.git
+mrt add hipaa-audit-log
+git clone github.com/awatson1978/hipaa-audit-log.git
 ````
 
 
