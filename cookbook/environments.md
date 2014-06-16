@@ -16,15 +16,3 @@ HTTP_PROXY
 HTTPS_PROXY  
 METEOR_SETTINGS 
 
-**Q:  How do I specify application parameters based on environment?**    
-``METEOR_SETTINGS`` environment variable can accept JSON objects.
-
-````js
-{"public":{"ga":{"account":"UA-XXXXXXX-1"}}}
-````
-
-These settings can then be accessed from ``Meteor.settings``.  
-
-````js
-Meteor.settings.public.ga.account
-````
