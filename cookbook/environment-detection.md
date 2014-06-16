@@ -37,8 +37,7 @@ sudo mrt --settings settings.json
 sudo meteor bundle output.tar.gz
 tar -xzvf output.tar.gz
 cd output
-npm install fibers@1.0.1
-MONGO_URL=mongodb://127.0.0.1:27017 PORT=3000 METEOR_SETTINGS=settings.json node main.js
+MONGO_URL=mongodb://127.0.0.1:27017 PORT=3000 METEOR_SETTINGS=$(cat /path/to/settings.json) node main.js
 ````
 
 
