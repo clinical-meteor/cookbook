@@ -1,8 +1,4 @@
- 
-
-
-------------------------------------------------------------------
-## PRODUCTION ENVIRONMENT
+PRODUCTION ENVIRONMENT
 
 **Q:  Help!  Something broke in production!**  
 Did you check it with ``--debug``?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
