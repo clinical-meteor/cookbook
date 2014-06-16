@@ -125,3 +125,8 @@ Links to live versions of the examples associated with this cookbook.
 [Hubble - CRUD & Datasets](http://hubble.meteor.com/)  
 [Acceptance Testing](http://safety-harness.meteor.com/)  
 [Mobile Devices - iOS in Particular](https://github.com/awatson1978/cordova-phonegap)  
+
+
+##Diagrams  
+
+![Meteor Architecture](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Meteor%20Architecture%20-%20Basic.jpg)
