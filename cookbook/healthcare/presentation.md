@@ -60,7 +60,7 @@ Phase 4 - Federal HIPAA
 [Leaderboard Acceptance Tests Example with Nightwatch/Selenium](https://github.com/awatson1978/leaderboard-nightwatch)  
 
 
-#### Future Meteor Testing Frameworks
+#### Future Meteor Testing Frameworks  
 
 [velocity](https://github.com/xolvio/velocity)  
 [velocity-core mailing list](https://groups.google.com/forum/#!forum/velocity-core)  
