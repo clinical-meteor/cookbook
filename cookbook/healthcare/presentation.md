@@ -49,7 +49,7 @@ Phase 4 - Federal HIPAA
   [Amazon Web Services - HIPAA Whitepaper](https://aws.amazon.com/about-aws/whats-new/2009/04/06/whitepaper-hipaa/)    
 
 
-####  FDA Validation Testing  
+####  FDA Validation Testing Basics
 
 ``sudo mrt selenium-nightwatch``   
 
@@ -58,3 +58,127 @@ Phase 4 - Federal HIPAA
 [Writing Unit Tests with Tinytest](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
 [Leaderboard Unit Tests Example with Tinytest](https://github.com/awatson1978/leaderboard-tinytests)  
 [Leaderboard Acceptance Tests Example with Nightwatch/Selenium](https://github.com/awatson1978/leaderboard-nightwatch)  
+
+
+#### Future Meteor Testing Frameworks
+
+[velocity](https://github.com/xolvio/velocity)  
+[velocity-core mailing list](https://groups.google.com/forum/#!forum/velocity-core)  
+
+####  Mobile / Phonegap  
+
+[cordova-phonegap](https://github.com/awatson1978/cordova-phonegap)  
+[SpaceCapsule](https://github.com/SpaceCapsule/)  
+[Mobile detection](https://groups.google.com/forum/#!searchin/meteor-talk/mobile$20dgreenspan/meteor-talk/ku7kvNJp8ek/ai_lwh6V79oJ)  
+
+
+#### Famo.us
+
+[Steve Newcomb explains famo.us: Part 1](https://www.youtube.com/watch?v=br1NhXeVD6Y)
+[Steve Newcomb explains famo.us: Part 2](https://www.youtube.com/watch?v=ixASZtHYGKY)  
+[Steve Newcomb explains famo.us: Part 3](https://www.youtube.com/watch?v=zpebYhm8f2o)  
+[Steve Newcomb explains famo.us: Part 4](https://www.youtube.com/watch?v=OhfI2wFNKFQ)  
+[Steve Newcomb on 3D Physics for DOMies](http://www.youtube.com/watch?v=83MX4wsoMzU)
+
+[Famo.us Render Tree](https://github.com/Famous/guides/blob/master/dev/2014-04-09-render-tree.md)  
+
+#### Meteor + Famo.us Interations  
+[famono](http://atmospherejs.com/package/famono)      
+[famous-meteor](https://github.com/jperl/famous-meteor)  
+[famous-components](https://atmospherejs.com/package/famous-components)  
+
+[http://famous-components.meteor.com/](http://famous-components.meteor.com/)  
+
+#### IronRouter + Famo.us Recommendations  
+
+- Don't render templates using IronRouter  
+- Don't subscribe to collections in routes  
+- Don't use IronRouter helper methods  
+  - 'waitOn'
+	- 'data'
+	- 'template'
+
+
+- Do control page transitions by setting session variable in routes
+- Do let Famo render templates for you
+- Do let IronRouter parse URLs for you
+- Do subscribe at the app global level in Deps auto runs
+- Do control subscriptions by setting session variables in routes
+
+
+#### IronRouter + Famo.us - Basic Integration  
+
+
+````html
+{{#RenderController}}
+  {{> yield}}
+{{/RenderController}}
+
+<template name="rc_surface1">
+    {{#Surface class="red-bg" origin="[0,0]" size="[75,150]"}}
+        <div class="full">#1</div>
+    {{/Surface}}
+</template>
+````
+
+````js
+Template.views_RenderController.helpers({
+    'showTemplate': function() {
+        return Template[this.name];
+    }
+});
+Session.setDefault('currentTemplate', 'rc_surface1');
+Template.views_RenderController.currentTemplate = function() {
+    return Session.get('currentTemplate');
+}
+Template.rc_buttons.events({
+    'click button': function(event, tpl) {
+        Session.set('currentTemplate', this.valueOf());
+    }
+});
+````
+
+#### IronRouter + Famo.us - URL Parsing and Triggering Template Rendering  
+
+````js
+// vanilla IronRouter pattern
+
+Router.map(function() {
+  this.route('postRoute', {
+    path: '/posts/:id',
+    template: 'postPage',
+    onBeforeAction: function() {
+      Session.set('selected_post', this.params.id);
+    },
+    waitOn: function() {
+      Meteor.subscribe('posts', this.params.id);
+    },
+    data: function() {
+      return Campaigns.findOne({ _id: this.params.id });
+    }
+  });
+});
+
+// IronRouter + Famo.us
+
+Router.map(function(){
+  this.route('postRoute', {
+    path: '/posts/:id',
+    onBeforeAction: function() {
+      Session.set('selected_post', this.params.id);
+      Session.set(‘currentTemplate’, ‘postPage’);
+    }
+  });
+});
+````
+
+#### Online APIs  
+
+[http://www.programmableweb.com](http://www.programmableweb.com)  
+[meteor api wrapper](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)  
+[fitbit packages on atmosphere](http://atmospherejs.com/?q=fitbit)  
+
+
+
+
+
