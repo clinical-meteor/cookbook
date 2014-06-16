@@ -82,6 +82,12 @@ Phase 4 - Federal HIPAA
 
 [Famo.us Render Tree](https://github.com/Famous/guides/blob/master/dev/2014-04-09-render-tree.md)  
 
+#### Designing Medical UIs with Meteor and Famo.us
+[A Day Made of Glass](https://www.youtube.com/watch?v=6Cf7IL_eZ38&feature=kp)  
+[A Day Made of Glass 2](https://www.youtube.com/watch?v=jZkHpNnXLB0)  
+[A Day Made of Glass 2 - Medical Edit](https://www.youtube.com/watch?v=Muv3R_6AXls)  
+
+
 #### Meteor + Famo.us Interations  
 [famono](http://atmospherejs.com/package/famono)      
 [famous-meteor](https://github.com/jperl/famous-meteor)  
