@@ -115,26 +115,26 @@ Phase 4 - Federal HIPAA
 {{/RenderController}}
 
 <template name="rc_surface1">
-    {{#Surface class="red-bg" origin="[0,0]" size="[75,150]"}}
-        <div class="full">#1</div>
-    {{/Surface}}
+  {{#Surface class="red-bg" origin="[0,0]" size="[75,150]"}}
+    <div class="full">#1</div>
+  {{/Surface}}
 </template>
 ````
 
 ````js
 Template.views_RenderController.helpers({
-    'showTemplate': function() {
-        return Template[this.name];
-    }
+  'showTemplate': function() {
+    return Template[this.name];
+  }
 });
 Session.setDefault('currentTemplate', 'rc_surface1');
 Template.views_RenderController.currentTemplate = function() {
-    return Session.get('currentTemplate');
+  return Session.get('currentTemplate');
 }
 Template.rc_buttons.events({
-    'click button': function(event, tpl) {
-        Session.set('currentTemplate', this.valueOf());
-    }
+  'click button': function(event, tpl) {
+    Session.set('currentTemplate', this.valueOf());
+  }
 });
 ````
 
