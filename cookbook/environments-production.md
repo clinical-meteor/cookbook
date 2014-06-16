@@ -42,7 +42,7 @@ https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 **Q: How do I run the node.js app that Meteor produces as a service?**  
 http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/  
 
-
+=============================================
 #### Upstart Scripts  
 
 [Upstart - Getting Started](http://upstart.ubuntu.com/getting-started.html)  
@@ -51,14 +51,59 @@ http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/
 [Upstart Intro, Cookbook, and Best Practices](http://upstart.ubuntu.com/cookbook/)  
 
 
-
+=============================================
 #### Set Up Your Server
 
+Set up your server and copy your files to the necessary directories.  
 
+````sh
+cd /var/www
+sudo git clone http://github.com/myaccount/myapp.git
+cd /var/www/myapp
+````
+
+=============================================
+#### Set Up A Deployment Script
+
+You'll want to create some type of file similar to the following in your application, that you can run from the command line, and which will bundle your app, and copy files to the necessary location.  Create a file ``deploy_on_production.sh`` in your application's root, and put the following commands in it.  
+
+````sh
+# /deploy_on_production.sh
+BUNDLENAME=${PWD##*/}.$(date "+v%Y-%m-%d-%H-%M").tar.gz
+
+echo "bundling meteor application: " $BUNDLENAME
+sudo meteor bundle --debug $BUNDLENAME
+
+echo 'copying bundle to parent directory'
+mv $BUNDLENAME ..
+cd ..
+
+echo 'untarring bundle'
+sudo tar -xzvf $BUNDLENAME
+
+echo 'removing production backup'
+sudo rm -rf production-backup
+
+echo 'moving current production to backup'
+sudo mv production production-backup
+
+echo 'moving new version into proudction'
+sudo mv bundle production
+
+echo 'removing temp files...'
+sudo rm $BUNDLENAME
+
+echo 'that should be it. now try:'
+echo 'sudo service myapp restart'
+````
+
+=============================================
 #### Writing Your Upstart Script
 
-####
+Finally, create your upstart file in the ``/etc/init`` directory, and name it with your app's name, ending in ``.conf``.
+
 ````sh
+# /etc/init/myapp.conf
 description "myapp.mydomain.com"
 author      "somebody@gmail.com"
 
@@ -72,9 +117,13 @@ respawn
 respawn limit 99 5
 
 script
-    # Not sure why $HOME is needed, but we found that it is:
+    # upstart likes the $HOME variable to be specified
     export HOME="/root"
+    
+    # our example assumes you're using a replica set and/or oplog integreation
     export MONGO_URL='mongodb://mongo-a,mongo-b,mongo-c:27017/?replicaSet=meteor'
+    
+    # root_url and port are the other two important environment variables to set
     export ROOT_URL='http://myapp.mydomain.com'
     export PORT='80'
 
