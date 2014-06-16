@@ -107,6 +107,7 @@ Meteor.call("getEnvironment", function (result) {
 For more complex applications, you'll want to create larger ``settings.json`` objects with multiple configuration objects for each environment, pass it into your application at startup, detect the environment, and then set up your application.  
 
 ````js
+// this needs to be run on the server
 var environment, settings;
 
 environment = process.env.METEOR_ENV || "development";
