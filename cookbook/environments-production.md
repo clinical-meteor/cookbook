@@ -18,17 +18,6 @@ https://groups.google.com/forum/#!topic/meteor-talk/91hcC87ch5k
 
 
 
-------------------------------------------------------------------
-**Q:  Is there any documentation on the Meteor.settings?**    
-So far, the following setting parameters have been seen in the wild:  
-
-````
-Meteor.settings.privateKey == "MY_KEY"  
-Meteor.settings.public.publicKey == "MY_PUBLIC_KEY"   
-Meteor.settings.public.anotherPublicKey == "MORE_KEY"  
-````
-
-
 **Q:  What's the best practice for using content distribution networks (CDN)?**  
 Currently, there's not anything specific, other than putting static content on your CDN, and creating links to it from your app.  You may want to run the meteor bundle command, and take a peek in the resulting tar.gz file.
 ````
