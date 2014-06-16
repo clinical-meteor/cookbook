@@ -24,7 +24,6 @@ METEOR_SETTINGS
 The ``METEOR_SETTINGS`` environment variable can accept JSON objects, and will expose that object in ``Meteor.settings`` object.  First, add a ``settings.json`` to your app root with some configuration info.
 
 ````json
-// myapp/settings.json
 {"public":{"ga":{"account":"UA-XXXXXXX-1"}}}
 ````
 
