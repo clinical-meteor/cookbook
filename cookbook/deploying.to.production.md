@@ -6,7 +6,9 @@
 http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/  
 
 =============================================
-#### Upstart Scripts  
+#### Upstart Service  
+
+Info about using Ubuntu's Upstart service, which can launch other apps as services for you.  
 
 [Upstart - Getting Started](http://upstart.ubuntu.com/getting-started.html)  
 [Getting Started with Upstart Scripts on Ubuntu](http://buddylindsey.com/getting-started-with-and-understanding-upstart-scripts-on-ubuntu/)  
