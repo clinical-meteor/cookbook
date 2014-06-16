@@ -129,5 +129,4 @@ Links to live versions of the examples associated with this cookbook.
 
 ####Meteor Architecture  
 
-![Meteor Architecture](https://github.com/awatson1978/meteor-cookbook/blob/master/images/Meteor%20Architecture%20-%20Dev%20to%20Prod.jpg)
-
+![Meteor Architecture](https://github.com/awatson1978/meteor-cookbook/blob/master/images/Meteor%20Architecture%20-%20Dev%20to%20Prod.jpg)  
