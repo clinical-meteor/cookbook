@@ -116,3 +116,8 @@ Meteor.publish("usersDirectory", function () {
 });
 ````
 Note that the profile details, such as address and theme preferences will only be visible to an individual user, and won't be visible to people browsing the user directory.  
+
+**Q:  Authentication via Active Directory or LDAP protocol?**
+
+See this thread:  
+https://groups.google.com/forum/#!topic/meteor-talk/LCuA70wENRA
