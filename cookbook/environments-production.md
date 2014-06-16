@@ -43,7 +43,6 @@ https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/  
 
 
-------------------------------------------------------------------
 #### Upstart Scripts  
 
 [Upstart - Getting Started](http://upstart.ubuntu.com/getting-started.html)  
@@ -53,11 +52,9 @@ http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/
 
 
 
-------------------------------------------------------------------
 #### Set Up Your Server
 
 
-------------------------------------------------------------------
 #### Writing Your Upstart Script
 
 ####
