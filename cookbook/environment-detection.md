@@ -1,5 +1,30 @@
 ## Environment Detection
 
+**Q:  How do I specify application parameters based on environment?**    
+``METEOR_SETTINGS`` environment variable can accept JSON objects.
+
+````js
+{"public":{"ga":{"account":"UA-XXXXXXX-1"}}}
+````
+
+These settings can then be accessed from ``Meteor.settings``.  
+
+````js
+Meteor.settings.public.ga.account
+````
+
+
+------------------------------------------------------------------
+**Q:  Is there any documentation on the Meteor.settings?**    
+So far, the following setting parameters have been seen in the wild:  
+
+````
+Meteor.settings.privateKey == "MY_KEY"  
+Meteor.settings.public.publicKey == "MY_PUBLIC_KEY"   
+Meteor.settings.public.anotherPublicKey == "MORE_KEY"  
+````
+
+
 **Q:  How do I detect the environment?**  
 
 ````js
