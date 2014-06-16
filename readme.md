@@ -127,6 +127,7 @@ Links to live versions of the examples associated with this cookbook.
 [Mobile Devices - iOS in Particular](https://github.com/awatson1978/cordova-phonegap)  
 
 
-##Diagrams  
+####Meteor Architecture  
 
-![Meteor Architecture](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Meteor%20Architecture%20-%20Basic.jpg)
+![Meteor Architecture](https://github.com/awatson1978/meteor-cookbook/blob/master/images/Meteor%20Architecture%20-%20Dev%20to%20Prod.jpg)
+
