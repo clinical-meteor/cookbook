@@ -41,3 +41,52 @@ https://trello.com/card/speed-up-improve-app-loading/508721606e02bb9d570016ae/47
 
 **Q: How do I run the node.js app that Meteor produces as a service?**  
 http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/  
+
+
+------------------------------------------------------------------
+#### Upstart Scripts  
+
+[Upstart - Getting Started](http://upstart.ubuntu.com/getting-started.html)  
+[Getting Started with Upstart Scripts on Ubuntu](http://buddylindsey.com/getting-started-with-and-understanding-upstart-scripts-on-ubuntu/)  
+[UbuntuBootupHowTo](https://help.ubuntu.com/community/UbuntuBootupHowto)  
+[Upstart Intro, Cookbook, and Best Practices](http://upstart.ubuntu.com/cookbook/)  
+
+
+
+------------------------------------------------------------------
+#### Set Up Your Server
+
+
+------------------------------------------------------------------
+#### Writing Your Upstart Script
+
+####
+````sh
+description "myapp.mydomain.com"
+author      "somebody@gmail.com"
+
+# used to be: start on startup
+# until we found some mounts weren't ready yet while booting:
+start on started mountall
+stop on shutdown
+
+# Automatically Respawn:
+respawn
+respawn limit 99 5
+
+script
+    # Not sure why $HOME is needed, but we found that it is:
+    export HOME="/root"
+    export MONGO_URL='mongodb://mongo-a,mongo-b,mongo-c:27017/?replicaSet=meteor'
+    export ROOT_URL='http://myapp.mydomain.com'
+    export PORT='80'
+
+    exec /usr/local/bin/node /var/www/production/main.js >> /var/log/node.log 2>&1
+end script
+
+post-start script
+   # Optionally put a script here that will notifiy you node has (re)started
+   # /root/bin/hoptoad.sh "node.js has started!"
+end script
+````
+
