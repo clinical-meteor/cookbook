@@ -1,6 +1,7 @@
- 
+## Debugging  
 
-**Help!  My application has gotten slow and sluggish!**  
+
+#### Help!  My application has gotten slow and sluggish!  
 The good folks over at Project Richochet have a great writeup on this...  
 http://projectricochet.com/blog/meteor-js-performance#.Uov3V2Tk_fi  
 
@@ -11,7 +12,7 @@ Also, try the following things:
 - use SSD drives to eliminate disk IO times to the cache
 - host image assets on another server and hyperlink
 
-## Server Side Debugging  
+#### Server Side Debugging  
 
 [Oortcloud FAQ - How Do I Debug My Meteor App](https://github.com/oortcloud/unofficial-meteor-faq#how-do-i-debug-my-meteor-app)
 ]
