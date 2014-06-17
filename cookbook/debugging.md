@@ -10,3 +10,21 @@ Also, try the following things:
 - exclude the .meteor directory from your IDE
 - use SSD drives to eliminate disk IO times to the cache
 - host image assets on another server and hyperlink
+
+## Server Side Debugging  
+
+[Oortcloud FAQ - How Do I Debug My Meteor App](https://github.com/oortcloud/unofficial-meteor-faq#how-do-i-debug-my-meteor-app)
+]
+
+````sh
+# install node-inspector
+npm install -g node-inspector
+
+#start meteor
+NODE_OPTIONS='--debug-brk' mrt run
+
+# launch node-inspector
+node-inspector
+
+# go to the URL given by node-inspector
+````
