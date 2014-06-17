@@ -11,3 +11,5 @@ Also, try the following things:
 - exclude the .meteor directory from your IDE
 - use SSD drives to eliminate disk IO times to the cache
 - host image assets on another server and hyperlink
+
+[25 Javascript Performance Techniques](http://desalasworks.com/article/javascript-performance-techniques/)  
