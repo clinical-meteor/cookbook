@@ -26,7 +26,7 @@ Well, instead of telling you what you ought to do; how about I tell you how I go
 
 ````js
   // this naming convention works well
-  user_d  
+  user_id  
   user_key  
   user_tag
   
