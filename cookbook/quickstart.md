@@ -11,7 +11,7 @@ curl https://install.meteor.com | sh
 meteor --version
  
 # install node and npm
-curl http://npmjs.org/install.sh | sh
+curl -0 -L https://npmjs.org/install.sh | sh
  
 # check npm is installed correctly
 npm -version
