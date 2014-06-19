@@ -1,4 +1,4 @@
-Meteor Quickstart Installation
+Meteor Quickstart Installation - OSX Mavericks
 ===========================================
 
 This quickstart is written for Mac OSX, and is a bit more verbose than other installation instructions.  It should hopefully cover a few edge cases, such as setting your path, which can cause an installation to go awry.  
@@ -10,8 +10,13 @@ curl https://install.meteor.com | sh
 # check it's installed correctly
 meteor --version
  
-# install node and npm
-curl -0 -L https://npmjs.org/install.sh | sh
+# install node
+# as of OSX Mavericks, we need the GUI installer (?!)
+# when a good command line alternative is found, we'll post it
+http://nodejs.org/download/
+ 
+# install npm
+sudo curl -0 -L https://npmjs.org/install.sh | sh
  
 # check npm is installed correctly
 npm -version
