@@ -86,7 +86,7 @@ terminal-b$ sudo ./run_nightwatch.sh
 
 #### Writing Acceptance Tests  
 
-Ultimately, just like writing application code, you'll need to figure out what kind of tests are right for you, your tolerance for ease of installation, and hether you can tolerate acceptance tests written in code, pseudocode, or need domain specific business langauge.  But for getting up to speed quickly, Nightwatch can be installed inside of 5 minutes to a project, and lets you get acceptance test coverage of your application at an extremely rapid pace.
+Ultimately, just like writing application code, you'll need to figure out what kind of tests are right for you, your tolerance for ease of installation, and whether you can tolerate acceptance tests written in code, pseudocode, or need domain specific business langauge.  But for getting up to speed quickly, Nightwatch can be installed inside of 5 minutes to a project, and lets you get acceptance test coverage of your application at an extremely rapid pace.
 
 
 Once Nightwatch is installed, simply create a file in the ``tests/`` directory (it doesn't matter what the name is), add the following code, and run ``sudo ./run_nightwatch.sh`` from the command line.  
