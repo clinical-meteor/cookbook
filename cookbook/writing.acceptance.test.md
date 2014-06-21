@@ -2,7 +2,7 @@
 
 
 #### Acceptance Tests Have 3 Essential Key Features
-At it's most basic level, acceptance testing is essentially black-box testing, and is essentially concerned with testing inputs and outputs of a clossed system.  As such, there are three essential features to acceptance testing:  querying a resource, reading data, and writing data.  When it comes to browsers and webpages, these three features basically boil down to the following:  
+At it's most basic level, acceptance testing is essentially black-box testing, which is fundamentally concerned with testing inputs and outputs of a closed system.  As such, there are three essential features to acceptance testing:  querying a resource, reading data, and writing data.  When it comes to browsers and webpages, these three features basically boil down to the following:  
 
 1.  Load a webpage or application view
 2.  Inspect user interface elements (i.e. DOM)  
