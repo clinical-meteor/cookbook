@@ -1,14 +1,18 @@
 ## Offline
 
 
-Chrome Apps
+
+### Appcache 
 
 
+### Meteor.status()
 
-Appcache
+[Meteor.status()](http://docs.meteor.com/#meteor_status)  
 
 
-GroundDB
+### GroundDB
+
+
+### Chrome Apps
 
   
-[Meteor.status()](http://docs.meteor.com/#meteor_status)  
