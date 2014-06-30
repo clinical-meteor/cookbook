@@ -109,6 +109,25 @@ Template.landingPage.events({
     console.count('click .selectItemButton');
   }
 });
+
+// EXAMPLE 4:  Adding log levels
+// the best pattern I've found for setting debug and trace levels so far
+// this approach keeps file locations and line numbers correct in stack traces
+
+var DEBUG = false;
+var TRACE = false;
+Template.landingPage.events({
+  'click .selectItemButton':function(){
+    TRACE && console.count('click .selectItemButton');
+    
+    Meteor.call('niftyAction', function(errorMessage, result){
+        if(errorMessage){
+            DEBUG && console.error(errorMessage);    
+        }
+    });
+  }
+});
+
 ````
 
 
