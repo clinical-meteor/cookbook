@@ -48,17 +48,10 @@ A { B { C { D { E | E | E } C } B { C { D { E | E | E } B
 
 Make sense?  What's happening here is that a Meteor application has four or five 'layers' or 'scopes' that it needs to create to get the reactive rendering templates working.  And each scope has instructions to create it's children scopes.  So, as a person navigates through their application, they'll be building up and tearing down templates, navigating pages, and the like, and people will be going up and down these scopes.  
 
-If you're familiar with the OSI 7 Layer Model, it might help to think of the Event Cycle and templating engine in terms of going up and down a network protocol stack.  But, in this case, we're structuring the application UI around a 5 layer rendering stack.  
-http://en.wikipedia.org/wiki/OSI_model  
-http://www.soumyabrata.com/blog-images/osi-reference-model.png  
-
-Also, be on the lookout for what I refer to the 'bubble templating'.  I don't know how exactly to explain this, but the closest thing I can think of is a bubble sort.  The reactive templates work on a similar bubbling principle.  It's a side affect of the javascript's functional programming paradigm, and works similar to how anonymous functions don't have an intrinsic ordering.  The result is that refreshes and new data just bubble up to the templates.  
-
-The end result is that it works really well (I have *no* complaints about it, and never plan on going back, if I can help it), particularly when the templates are tied into Session variables.  But it's a very different approach than C, C#, ObjectiveC and Java.  Very different.  So don't worry about MVC in the traditional sense.  You won't be spending the weeks of drudgery doing plumbing and wiring like you're accustomed to.  And everything sitting in the global context... hasn't been an issue for me so far.  
 
 ### Event Hooks  
 
-I highly recommend checking out the event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.
+Check out the event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.
 
 Event Hooks  
 https://atmosphere.meteor.com/package/event-hooks  
