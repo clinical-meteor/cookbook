@@ -31,4 +31,5 @@ node-inspector
 http://localhost:8080/debug?port=5858
 ````
 
+[Walkthrough of Using Node Debugger](https://github.com/meteor/meteor/issues/1411)  
 
