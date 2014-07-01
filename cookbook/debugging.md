@@ -24,11 +24,23 @@ npm install -g node-inspector
 #start meteor
 NODE_OPTIONS='--debug-brk --debug' mrt run
 
+#some people report this syntax being better
+sudo NODE_OPTIONS='--debug' ROOT_URL=http://myapp.com meteor --port 80
+
 # launch node-inspector
 node-inspector
 
 # go to the URL given by node-inspector
 http://localhost:8080/debug?port=5858
+````
+
+You'll need to add ``debugger`` statements to your code:
+````js
+Meteor.methods({
+  doSomethingUself: function(){
+      debugger;
+      niftyFunction();
+  }})
 ````
 
 [Walkthrough of Using Node Debugger](https://github.com/meteor/meteor/issues/1411)  
