@@ -85,8 +85,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
   - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
   - Database Observers
-  - Blog
-  - Collection CRUD
   - Parsing File Types
     - [XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
     - [CSV](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.csv.md)  
