@@ -115,7 +115,7 @@ Phase 4 - Federal HIPAA
 - Do control subscriptions by setting session variables in routes
 
 
-#### IronRouter + Famo.us - Basic Integration  
+#### IronRouter Style Page Transitions
 
 
 ````html
