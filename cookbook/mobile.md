@@ -2,13 +2,15 @@
 
 #### Stand-Alone Blaze  
 
+Now that Stand-Alone Blaze has been extracted, we have a new option for creating Mobile Apps.  
 http://meteor.github.io/blaze/
 
-https://github.com/meteor/standalone-blaze-generator
+If you only want to bundle front-end client files, use the Meteor Export Packages script.  
+https://github.com/alexhancock/meteor-export-packages
 
-https://github.com/merunga/cordova-meteor-mashup
-
-
+Early examples of pipelines for extracting front end files and including them in PhoneGap.  
+https://github.com/meteor/standalone-blaze-generator  
+https://github.com/merunga/cordova-meteor-mashup  
 
 
 #### Page Layout on Different Devices
