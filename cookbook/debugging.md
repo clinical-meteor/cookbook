@@ -43,5 +43,5 @@ Meteor.methods({
   }})
 ````
 
-[Walkthrough of Using Node Debugger](https://github.com/meteor/meteor/issues/1411)  
+[Walkthrough with Screenshots of Using Node Inspector with Meteor](https://github.com/meteor/meteor/issues/1411)  
 
