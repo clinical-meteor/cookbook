@@ -1,17 +1,5 @@
 ## Mobile
 
-#### Stand-Alone Blaze  
-
-Now that Stand-Alone Blaze has been extracted, we have a new option for creating Mobile Apps.  
-http://meteor.github.io/blaze/
-
-If you only want to bundle front-end client files, use the Meteor Export Packages script.  
-https://github.com/alexhancock/meteor-export-packages
-
-Early examples of pipelines for extracting front end files and including them in PhoneGap.  
-https://github.com/meteor/standalone-blaze-generator  
-https://github.com/merunga/cordova-meteor-mashup  
-
 
 #### Page Layout on Different Devices
 
@@ -36,6 +24,20 @@ The holy grail of web-apps is a single code base across different platforms.  So
 
 ````
 
+#### Stand-Alone Blaze  
+
+Now that Stand-Alone Blaze has been extracted, we have a new option for creating Mobile Apps.  
+http://meteor.github.io/blaze/
+
+If you only want to bundle front-end client files, use the Meteor Export Packages script.  
+https://github.com/alexhancock/meteor-export-packages
+
+Early examples of pipelines for extracting front end files and including them in PhoneGap.  
+https://github.com/meteor/standalone-blaze-generator  
+https://github.com/merunga/cordova-meteor-mashup  
+
+
+
 #### X-Code Configuration
 
 The latest X-Code configuration settings for a PhoneGap application
@@ -57,6 +59,9 @@ And edit the project Cordova/TodosApp/config.xm file.
 <preference name="UIWebViewBounce" value="false" />
 ````
 
+
+
+
 #### Project Configuration for iFrame Method
 
 You'll need to the edit the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m  
@@ -68,20 +73,7 @@ You'll need to the edit the CDVViewController.m file, and tell PhoneGap to acces
         self.startPage = @"index.html";
     }
 ````
-#### Fixed Sized Windows
 
-There are a couple ways to handle fixed-sized windows.  The following method fixes the size of the window OUTSIDE of PhoneGap, giving a fixed-sized window on the desktop.  Sometimes it's easiest to manage user's expectations and UI design by limiting options!  
-````js
-// create a window of a specific size
-var w=window.open('','', 'width=100,height=100');
-w.resizeTo(500,500);
- 
-// prevent window resize
-var size = [window.width,window.height];  //public variable
-$(window).resize(function(){
-    window.resizeTo(size[0],size[1]);
-});
-````
 
 
 #### Scrolling
