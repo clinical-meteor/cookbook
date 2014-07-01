@@ -2,6 +2,18 @@
 
 The holy grail of web-apps is a single code base across different platforms.  In theory, this will drastically reduced maintenance costs and consistency of user experience across devices.  In practice, we're not quite there yet, but getting close.  But to create such an application, there are a lot of steps that one has to go through.
 
+#### Design Checklist
+
+- Do you need centralized hotcode pushes to all devices?  
+- Do you need to connect to device hardware?  
+- Are you targeting a specific platform?  
+- Will this app be inhouse or public?  
+- Will this app be in an appstore?  
+- Do you want to run it on the desktop as an app?  
+- Do you need native quality UI widgets and scrolling?
+- Which screen sizes do you want this app to run on?  
+- 
+
 #### Page Layout on Different Devices - CSS
 
 First of all, if your application is going to run on different devices, it's going to need to render each 'view' differently, based on the device size.  You can deal with this in two ways:  with javascript rules, or CSS media styles.  
