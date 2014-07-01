@@ -1,9 +1,10 @@
 ## Mobile
 
+The holy grail of web-apps is a single code base across different platforms.  In theory, this will drastically reduced maintenance costs and consistency of user experience across devices.  In practice, we're not quite there yet, but getting close.  But to create such an application, there are a lot of steps that one has to go through.
 
-#### Page Layout on Different Devices
+#### Page Layout on Different Devices - CSS
 
-The holy grail of web-apps is a single code base across different platforms.  So, part of that goal is to create a single page that can be displayed differently on different screen sizes.  That's where CSS media styles come into play.  The biggest issue you'll need to deal with is figuring out if you want to break the styles at 768px (portrait mode) or at 1024 pixels (landscape).  That's assuming your target mobile device is the iPad, which uses a 3:4 ratio.  Otherwise, you'll need to work out the aspect ratios of the devices you do want to target, and figure out the threshold levels from there.  
+First of all, if your application is going to run on different devices, it's going to need to render each 'view' differently, based on the device size.  You can deal with this in two ways:  with javascript rules, or CSS media styles.  
 
 ````css
 //----------------------------------------------------
@@ -24,15 +25,129 @@ The holy grail of web-apps is a single code base across different platforms.  So
 
 ````
 
+You'll need to figure out if you want to break the styles at 768px (portrait mode) or at 1024 pixels (landscape).  That's assuming your target mobile device is the iPad, which uses a 3:4 ratio.  Otherwise, you'll need to work out the aspect ratios of the devices you do want to target, and figure out the threshold levels from there.  
+
+
+#### Fixed Sized Windows
+
+If you're going to be designing layouts with fixed size screens for different mobile devices, you may want to mirror that design when running your app on a desktop.  The following method fixes the size of the window OUTSIDE of PhoneGap, giving a fixed-sized window on the desktop.  Sometimes it's easiest to manage user's expectations and UI design by limiting options!  
+
+````js
+// create a window of a specific size
+var w=window.open('','', 'width=100,height=100');
+w.resizeTo(500,500);
+ 
+// prevent window resize
+var size = [window.width,window.height];  //public variable
+$(window).resize(function(){
+    window.resizeTo(size[0],size[1]);
+});
+````
+
+#### 60fps Native Repsonse Widgets
+
+If you want 60fps native response in your widgets, animations, and page transitions, you're going to need to override the CSS rendering subsystem with a library like Famo.us (or Google Polymer).  
+
+````sh
+mrt add famono
+mrt add famono-components
+````
+
+#### Famo.us Style Page Transitions
+
+You'll then need to use Famo.us to do things like render page transitions, which should look something like this:  
+
+````html
+{{#RenderController}}
+  {{> yield}}
+{{/RenderController}}
+
+<template name="rc_surface1">
+  {{#Surface class="red-bg" origin="[0,0]" size="[75,150]"}}
+    <div class="full">#1</div>
+  {{/Surface}}
+</template>
+````
+
+````js
+Template.views_RenderController.helpers({
+  'showTemplate': function() {
+    return Template[this.name];
+  }
+});
+Session.setDefault('currentTemplate', 'rc_surface1');
+Template.views_RenderController.currentTemplate = function() {
+  return Session.get('currentTemplate');
+}
+Template.rc_buttons.events({
+  'click button': function(event, tpl) {
+    Session.set('currentTemplate', this.valueOf());
+  }
+});
+````
+
+#### IronRouter + Famo.us - URL Parsing and Triggering Template Rendering
+
+The next big issue in designing mobile apps is figuring out how to support the URL social contract and maintain fluid page-transitions.  Doing one or the other is easy.  Doing both URLs **and** page-transitions is difficult. You'll need to move away from subscribing to collections within the router function, because it will take too long for the data to be fetched.  Instead, do your data subscriptions in the root of your application, and use IronRouter to trigger Session variables that will trigger Famo.us to do page transitions.  
+
+````js
+// vanilla IronRouter pattern
+
+Router.map(function() {
+  this.route('postRoute', {
+    path: '/posts/:id',
+    template: 'postPage',
+    onBeforeAction: function() {
+      Session.set('selected_post', this.params.id);
+    },
+    waitOn: function() {
+      Meteor.subscribe('posts', this.params.id);
+    },
+    data: function() {
+      return Campaigns.findOne({ _id: this.params.id });
+    }
+  });
+});
+
+// IronRouter + Famo.us
+
+Router.map(function(){
+  this.route('postRoute', {
+    path: '/posts/:id',
+    onBeforeAction: function() {
+      Session.set('selected_post', this.params.id);
+      Session.set(‘currentTemplate’, ‘postPage’);
+    }
+  });
+});
+````
+
+#### Offline Caching  
+To get all of this to work, you'll probably need offline support, which means caching application data and user data.
+
+````sh
+sudo mrt add appcache
+sudo mrt add grounddb
+````
+
+#### Scrolling
+
+
+
+#### Multitouch & Gestures
+
+
+
+
 #### Stand-Alone Blaze  
 
-Now that Stand-Alone Blaze has been extracted, we have a new option for creating Mobile Apps.  
+Once you have your application all built, you'll need to bundle it into a PhoneGap wrapper.  We used to have to use iFrames to do this, but now that Stand-Alone Blaze has been released, we have a new option for creating Mobile Apps.  
 http://meteor.github.io/blaze/
 
 If you only want to bundle front-end client files, use the Meteor Export Packages script.  
 https://github.com/alexhancock/meteor-export-packages
 
-Early examples of pipelines for extracting front end files and including them in PhoneGap.  
+Early examples of pipelines for extracting front end files and including them in PhoneGap.  We'll be updating this more. 
 https://github.com/meteor/standalone-blaze-generator  
 https://github.com/merunga/cordova-meteor-mashup  
 
@@ -40,7 +155,7 @@ https://github.com/merunga/cordova-meteor-mashup
 
 #### X-Code Configuration
 
-The latest X-Code configuration settings for a PhoneGap application
+As you deploy your app to PhoneGap, you'll probably want to tweak the X-Code configuration settings a bit.  Usually this involves tweaking the architecture, and disabling UIWebViewBounce.
 
 ````sh
 # terminal commands in osx
@@ -62,10 +177,11 @@ And edit the project Cordova/TodosApp/config.xm file.
 
 
 
-#### Project Configuration for iFrame Method
+#### Project Configuration for iFrame Method (Not Recommended)
+If you're going to go with the older iFrames approach,you'll need to the edit the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  We recommend using the Stand Alone Blaze version rather than this iFrames approach. 
 
-You'll need to the edit the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m  
 ````Obj-C
+    // CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m  
     //self.wwwFolderName = @"www";
     self.wwwFolderName = @"http://todos.meteor.com";
     self.startPage = delegate.startPage;
@@ -75,11 +191,3 @@ You'll need to the edit the CDVViewController.m file, and tell PhoneGap to acces
 ````
 
 
-
-#### Scrolling
-
-
-#### Multitouch & Gestures
-
-
-#### Scroll Bouncing
