@@ -139,26 +139,14 @@ sudo mrt add grounddb
 
 
 
-#### Stand-Alone Blaze  
-
-Once you have your application all built, you'll need to bundle it into a PhoneGap wrapper.  We used to have to use iFrames to do this, but now that Stand-Alone Blaze has been released, we have a new option for creating Mobile Apps.  
-http://meteor.github.io/blaze/
-
-If you only want to bundle front-end client files, use the Meteor Export Packages script.  
-https://github.com/alexhancock/meteor-export-packages
-
-Early examples of pipelines for extracting front end files and including them in PhoneGap.  We'll be updating this more. 
-https://github.com/meteor/standalone-blaze-generator  
-https://github.com/merunga/cordova-meteor-mashup  
 
 
+#### PhoneGap Configuration with X-Code
 
-#### X-Code Configuration
-
-As you deploy your app to PhoneGap, you'll probably want to tweak the X-Code configuration settings a bit.  Usually this involves tweaking the architecture, and disabling UIWebViewBounce.
+As you get ready to deploy your PhoneGap application, you'll probably want to tweak the X-Code configuration settings a bit.  Usually this involves tweaking the architecture, and disabling UIWebViewBounce.
 
 ````sh
-# terminal commands in osx
+# terminal commands in osx to build a phonegap app
 cd phonegap-master/
 cd lib/ios/bin/
 ./create ~/Documents/Cordova/TodosApp com.pentasyllabic.TodosAdd TodosApp
@@ -175,10 +163,21 @@ And edit the project Cordova/TodosApp/config.xm file.
 ````
 
 
+#### Stand-Alone Blaze  
+
+Once you have your application all built, you'll need to bundle it into a PhoneGap wrapper.  We used to have to use iFrames to do this, but now that Stand-Alone Blaze has been released, we have a new option for creating Mobile Apps.  
+http://meteor.github.io/blaze/
+
+If you only want to bundle front-end client files, use the Meteor Export Packages script.  
+https://github.com/alexhancock/meteor-export-packages
+
+Early examples of pipelines for extracting front end files and including them in PhoneGap.  We'll be updating this more. 
+https://github.com/meteor/standalone-blaze-generator  
+https://github.com/merunga/cordova-meteor-mashup  
 
 
-#### Project Configuration for iFrame Method (Not Recommended)
-If you're going to go with the older iFrames approach,you'll need to the edit the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  We recommend using the Stand Alone Blaze version rather than this iFrames approach. 
+#### Project Configuration for iFrame Method
+Alternatively, if you're willing to manage cross-site security and want hot-code updates for your mobile apps, you'll want to use the iFrames approach.  This requires editing the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  
 
 ````Obj-C
     // CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m  
@@ -189,5 +188,3 @@ If you're going to go with the older iFrames approach,you'll need to the edit th
         self.startPage = @"index.html";
     }
 ````
-
-
