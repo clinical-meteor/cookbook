@@ -1,5 +1,15 @@
 ## Mobile
 
+#### Stand-Alone Blaze  
+
+http://meteor.github.io/blaze/
+
+https://github.com/meteor/standalone-blaze-generator
+
+https://github.com/merunga/cordova-meteor-mashup
+
+
+
 
 #### Page Layout on Different Devices
 
@@ -70,10 +80,6 @@ $(window).resize(function(){
     window.resizeTo(size[0],size[1]);
 });
 ````
-
-#### Offline 
-
-
 
 
 #### Scrolling
