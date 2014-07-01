@@ -84,6 +84,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
   - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
   - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
+  - [Healthcare Apps]
+  - [Internet of Things]
+  - [Card UI]
   - Database Observers
   - Parsing File Types
     - [XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
