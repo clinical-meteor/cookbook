@@ -83,6 +83,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - [Peer to Peer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/peer-to-peer.md)   
   - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
   - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
+  - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
   - Database Observers
   - Blog
   - Collection CRUD
