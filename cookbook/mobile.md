@@ -12,7 +12,7 @@ The holy grail of web-apps is a single code base across different platforms.  In
 - Do you want to run it on the desktop as an app?  
 - Do you need native quality UI widgets and scrolling?
 - Which screen sizes do you want this app to run on?  
-- 
+
 
 #### Page Layout on Different Devices - CSS
 
