@@ -41,6 +41,8 @@ Template.helloWorld.events({
 ```
 And that's it!  You're done!  
 
+Wait.  Really?  You might be thinking "that's not how I'm accustomed to doing data bindings.  Where are the data-* attributes?".  Well, the good news is that Meteor's client-side minimongo data store handles most all of the data synchronization for you, and exposes a data context along with your Blaze templates.  And that effectively eliminates the need to have data-* attributes.  The only thing you need to do is expose some hooks between the datastore and the template using a spacebars syntax, which is similar to PHP, moustache, and handlebars.  
+
 -------------
 
 
