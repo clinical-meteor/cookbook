@@ -38,36 +38,34 @@ mrt add iron-router
 
 ````
 
-After you create those directories in your application folder, the next step is to create some structure for your MVC model, add subscriptions and publications, and build out the rest of your application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  I find that most of my applications are starting to use the following structure, which uses HTML/CSS/JS as my Model/View/Controller.  
+After you create those directories in your application folder, the next step is to create some structure for your MVC model, add subscriptions and publications, and build out the rest of your application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  I find that most of my applications are starting to use the following structure.
 
 ```sh
 .scrap                                    # keep a .scrap or .temp directory for scrap files
 
-client/main.js                            # the main application javascript
-client/main.html                          # the main application html
-client/subscriptions.js                   # application subscriptions
-client/routes.js                          # application routes 
+client/app/app.startup.js                 # the main application javascript
+client/app/app.layout.html                # the main application html
+client/app/app.layout.js                  # the main application html
+client/app/app.layout.less                # the main application html
+client/app/app.subscriptions.js           # application subscriptions
+client/app/app.routes.js                  # application routes 
 
-client/compatibility/                     # legacy 3rd party javascript libraries
+client/app/workflows/                         
 
-client/templates/                         # html files (document object model)
-client/stylesheets/                       # css/less/styl files (view)
-client/controllers/                       # js files (controllers)
+server/app.publications.js                # Meteor.publish definitions
+server/app.startup.js                     # configuration of server side packages
+server/methods.collection.js              # cMeteor.method() definitions
+server/initialize.collection.js/          # code for initializing collections
 
-server/publications.js                    # Meteor.publish definitions
-server/environment.js                     # configuration of server side packages
-server/methods.js                         # cMeteor.method() definitions
-server/initializations/                   # code for initializing collections
+shared/                                   # any common code for client/server.
+shared/mehods.js                          # schema validations and the like
+shared/collections.js                     # collection definitions and allow/deny rules
 
-lib/                                      # any common code for client/server.
-lib/schemas.js                            # schema validations and the like
-lib/collections.js                        # collection definitions and allow/deny rules
+packages/                                 # place for all your atmosphere packages
 
-packages/                                # place for all your atmosphere packages
+public/                                   # static files that are served directly.
+public/images                             # will serve images as: '/images/foo.jpg'
 
-public/                                  # static files that are served directly.
-public/images                            # will serve images as: '/images/foo.jpg'
-
-tests/                                   # unit test files (won't be loaded on client or server)
-
+tests/                                    # unit test files (won't be loaded on client or server)
+tests/walkthough.js
 ```
