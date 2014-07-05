@@ -3,7 +3,7 @@
 Here are some general tips and advice on writing Meteor applications.
 
 #### More Growing, Less Engineering
-- Think more organically, and try to grow your application, rather than engineer it.  Discover the correct syntax through refactoring, rather than assume a 'best practices' approach or try to force Meteor to work like an object-oriented framework.  Meteor is a different breed of framework, and simply works differently than object-oriented LAMP stacks.  There's this whole concept of scoping, and you'll find yourself constantly moving things around to fit into different scopes.  That moving of things around makes refactoring tools invaluable.  
+- Think more organically, and try to grow your application, rather than engineer it.  Discover the correct syntax through refactoring, rather than assume a 'best practices' approach or try to force Meteor to work like an object-oriented framework.  Meteor is a different breed of framework, and simply works differently than object-oriented LAMP stacks.  There's a bunch of concepts around functional programming and scoping that you're going to need to get accustomed to, and you'll find yourself constantly moving code around to fit into different scopes.  That moving of things around makes refactoring tools invaluable.  
 
     ``Use tools that support refactoring, such as WebStorm or Sublime3``.  
 
