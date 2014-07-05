@@ -39,51 +39,50 @@ http://atmosphere.meteor.com
 
 **Q: How do I get 3rd-party-library.js work with Meteor?**  
 
-Installing a 3rd party library doesn't have to be hard.  If you're having problems, it's probably because the reactive templates are overwriting the objects you created.  There are a few ways to deal with this:
+Getting 3rd party libraries used to be a lot harder with the older Spark opt-out rendering model.  Nowdays, with Blaze's opt-in model, things are much easier.  
 
-1.  Move your code out of reactive templates.  Autorun() is a good event hook for creating objects in.
+1.  Add your code to a Template.foo.rendered block
 
     ```js
-    Deps.autorun(function(){  
-        // the timeline object is outside the scope of any reactive templates
-        timeline = new Timeline();            
+    Session.setDefault('receivedData', null);
+    
+    Template.fooPage.helpers({
+      customersList: function(){
+        // step 4:  everything within the customersList gets rerun
+        // which causes another session variable to be set
+        Session.set('receivedData', new Date());
+        
+        // step 3:  minimongo receives data and sets the functions referencing the reactive
+        // CustomersAccount cursor as being invalidated, which causes them to rerun
+        return CustomerAccounts.find();
+      },
+      rendered: function(){
+        // step 1:  the rendered function is a singleton and only gets run once
+        // which is where we create our table using our third party library
+        $('#exampleTable').tablesorter();
+        
+        // setp 2:  in the singleton, we're going to opt-into some reactive dependency
+        // which will continue after the singleton finishes
+        Deps.autorun(function(){
+          // step 5:  the reacitve receivedData session variable is updated, causing the functions
+          // referencing it to become invalidated, and for them to be rerun as well
+          console.log(Session.get('receivedData'))
+          
+          // step 6:  we wait a couple of milliseconds to let the cursor populate the table
+          setTimeout(function(){
+            // step 7:  we call an update function on our third party library
+            $("#exampleTable").trigger("update");
+          }, 100);
+        });
+      }
     });
     ```
 
 
-2.  check to see if your object already exists
-    ```js
-    Template.templateWithConstantRegion.rendered = function(){
-      // we simply add feature detection to see if the object already exists 
-      self.node = self.find("#timelineObject");
-      if (! self.handle) {
-        // don't get worked up about this Deps.autorun()
-        // it's an option addition to this pattern
-        self.handle = Deps.autorun(function(){
-            Timeline();            
-        });
-      };
-    };
 
-    // don't forget to complete the pattern by tearing down the object properly
-    Template.templateWithConstantRegion.destroyed = function () {
-      this.handle && this.handle.stop();
-    };
-    ```
+Note: to get third party libraries to work, you'll also want to audit them for `var` keywords.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  Actually, what's happening is that, behind the scenes, every Meteor application is wrapped in an application object.  That's what the ``Meteor`` API is.  The functions exposed on that parent container.  That means that most all of the javascript you write in Meteor apps aren't in the global scope.  And that causes the behavior of the `var` keyword to change.  
 
-3.  use a ``#constant`` region or a ``Template.frontPage.preserve()`` callback
-    ```html
-    <temlate name="templateWithConstantRegion">
-      <div>
-        {{#constant}}
-          <div id="timelineObject"></div>
-        {{/contant}}
-      </div>
-    </template>
-    ```
-
-
-4.  You'll also want to check for `var` keywords in your library.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  So, many libraries will use the 'var' keyword to simply define a variable to the global scope; but Meteor will interpret the 'var' to mean a variable specific to the local file.  This causes problems sometimes.
+So, many libraries will use the 'var' keyword to simply define a variable to the global scope; thinking that they're going to be run in the global scope as part of a web page.  But Meteor will interpret the 'var' to mean a variable specific to the local file, since it's running the library as a resource in a web application.  This causes problems sometimes.
 
     ````js
     // variable restricted to local file
