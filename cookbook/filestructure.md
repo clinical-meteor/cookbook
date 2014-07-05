@@ -13,8 +13,30 @@ private/                                 # static files that only the server kno
 public/                                  # static files that are available to the client
 server/                                  # server code
 tests/                                   # unit test files (won't be loaded on client or server)
-
 ```
+
+As such, I find myself running through the following commands whenever I'm creating a new applet, sandboxing some new functionality, or otherwise starting a new project.
+
+````sh
+meteor create myapp
+cd myapp
+mkdir client
+mkdir server
+mkdir public
+mkdir packages
+mkdir tests
+mkdir shared
+mkdir client/app
+mkdir client/app/sidebars
+mkdir client/app/headers
+mkdir client/app/modals
+mkdir client/app/workflows
+
+meteor add less
+mrt add bootstrap-3
+mrt add iron-router
+
+````
 
 After you create those directories in your application folder, the next step is to create some structure for your MVC model, add subscriptions and publications, and build out the rest of your application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  I find that most of my applications are starting to use the following structure, which uses HTML/CSS/JS as my Model/View/Controller.  
 
