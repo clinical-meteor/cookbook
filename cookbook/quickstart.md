@@ -103,7 +103,36 @@ terminal-a$ meteor
 
 Dock$ Robomongo > Create > localhost:3001
 
+# install node-inspector
+terminal-a$  npm install -g node-inspector
 
+# start meteor
+terminal-a$  cd helloworld
+terminal-a$  NODE_OPTIONS='--debug-brk --debug' mrt run
+
+# alternatively, some people report this syntax being better
+terminal-a$  sudo NODE_OPTIONS='--debug' ROOT_URL=http://helloworld.com meteor --port 80
+
+# launch node-inspector along side your running app
+terminal-b$  node-inspector
+
+# go to the URL given by node-inspector and check it's running
+http://localhost:8080/debug?port=5858
+
+# install jshint
+npm install -g jshint 
+
+# run code analysis on local directory
+cd helloworld
+jshint .
+
+````
+
+
+Meteor Application Quickstart
+===========================================
+
+````sh
 # install selenium-nightwatch
 terminal-a$ cd helloworld
 terminal-a$ sudo mrt add selenium-nightwatch
@@ -122,27 +151,5 @@ terminal-a$ mrt
 # install velocity html reporter, if you wish
 
 terminal-a$ mrt add velocity-html-reporter
-
-# install node-inspector
-terminal-a$  npm install -g node-inspector
-
-# start meteor
-terminal-a$  NODE_OPTIONS='--debug-brk --debug' mrt run
-
-# alternatively, some people report this syntax being better
-terminal-a$  sudo NODE_OPTIONS='--debug' ROOT_URL=http://myapp.com meteor --port 80
-
-# launch node-inspector along side your running app
-terminal-b$  node-inspector
-
-# go to the URL given by node-inspector
-http://localhost:8080/debug?port=5858
-
-# install jshint
-npm install -g jshint 
-
-# run code analysis on local directory
-cd helloworld
-jshint .
 
 ````
