@@ -129,27 +129,27 @@ jshint .
 ````
 
 
-Meteor Application Quickstart
+Meteor Test-Driven-Development Quickstart
 ===========================================
 
 ````sh
 # install selenium-nightwatch
-terminal-a$ cd helloworld
-terminal-a$ sudo mrt add selenium-nightwatch
-terminal-a$ sudo packages/selenium-nightwatch/setup.sh
-  2
-terminal-a$ sudo mrt
-
-terminal-b$ sudo ./run_nightwatch.js
+a$ cd helloworld
+a$ mrt add jasmine-unit
+a$ sudo mrt add selenium-nightwatch
+a$ sudo packages/selenium-nightwatch/setup.sh
+   2
+a$ sudo mrt
+b$ sudo ./run_nightwatch.js
 
 # install velocity
 
-terminal-a$ cd helloworld
-terminal-a$ mrt add velocity-quick-start
-terminal-a$ mrt
+a$ cd helloworld
+a$ mrt add velocity-quick-start
+a$ mrt
 
 # install velocity html reporter, if you wish
 
-terminal-a$ mrt add velocity-html-reporter
+a$ mrt add velocity-html-reporter
 
 ````
