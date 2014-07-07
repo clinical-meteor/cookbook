@@ -75,18 +75,19 @@ mkdir /data/
 mkdir /data/db
 sudo chown -R username:admin /data
 
-# run mongodb
+# run mongodb server
 mongodb
+ctrl-c
 
 # install mongodb admin panel
 http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb
 
-# check that you can launch stand alone mongo
+# check that you can connect to your meteor app with stand-alone mongo
 terminal-a$ meteor create helloworld
 terminal-a$ cd helloworld
 terminal-a$ meteor
 
-terminal-b$ mongo -p 3001
+terminal-b$ mongo -port 3001
 
 # install robomongo database admin tool and connect to port 3001
 http://robomongo.org/
