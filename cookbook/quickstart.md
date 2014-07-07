@@ -53,7 +53,7 @@ mrt --version
 ````
 
 
-Meteor Development Tools Quickstart - OSX Mavericks
+Meteor Development Tools Quickstart
 ===========================================
 
 ````
