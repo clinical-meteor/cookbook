@@ -42,7 +42,9 @@ Phase 2 - Platform as a Service (2 to 10 servers)
 
 Phase 3 - Infrastructure as a Service (11+ servers)  
   [Amazon Web Services](http://aws.amazon.com/)  
-
+  [Deploying a meteor app on Elastic Beanstalk](https://groups.google.com/forum/#!topic/meteor-talk/VxMQzpVFpME)  
+  
+  
 
 Phase 4 - Federal HIPAA   
   [Amazon Web Services - HIPAA/Federal Tier](http://aws.amazon.com/compliance/)  
