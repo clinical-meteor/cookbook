@@ -53,6 +53,8 @@ mrt --version
 ````
 
 
+
+
 Meteor Development Tools Quickstart
 ===========================================
 
@@ -66,9 +68,14 @@ tar -zxvf mongodb-osx-x86_64-2.6.3.tgz
 sudo mkdir -p /var/mongodb
 cp -R -n mongodb-osx-x86_64-2.6.3/* /usr/local/mongodb
 
-# make sure mongo is in your path
+# make sure mongo is in your local path
 sudo nano ~/.profile
-  export PATH=$PATH:/usr/local/bin
+  export PATH=$PATH:/usr/local/mongodb/bin
+  
+# or install it to the global path
+sudo nano /etc/paths
+  /usr/local/mongodb/bin
+  
 
 # create mongo database directory
 mkdir /data/
@@ -76,11 +83,8 @@ mkdir /data/db
 sudo chown -R username:admin /data
 
 # run mongodb server
-mongodb
+mongod
 ctrl-c
-
-# install mongodb admin panel
-http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb
 
 # check that you can connect to your meteor app with stand-alone mongo
 terminal-a$ meteor create helloworld
@@ -89,17 +93,56 @@ terminal-a$ meteor
 
 terminal-b$ mongo -port 3001
 
-# install robomongo database admin tool and connect to port 3001
+# install robomongo database admin tool 
 http://robomongo.org/
 
-# check you can connect to your mongo instance
+# check you can connect to your mongo instance with robomongo
 terminal-a$ meteor create helloworld
 terminal-a$ cd helloworld
 terminal-a$ meteor
 
+Dock$ Robomongo > Create > localhost:3001
 
-# install node-inspector for server side debugging
 
+# install selenium-nightwatch
+terminal-a$ cd helloworld
+terminal-a$ sudo mrt add selenium-nightwatch
+terminal-a$ sudo packages/selenium-nightwatch/setup.sh
+  2
+terminal-a$ sudo mrt
 
+terminal-b$ sudo ./run_nightwatch.js
+
+# install velocity
+
+terminal-a$ cd helloworld
+terminal-a$ mrt add velocity-quick-start
+terminal-a$ mrt
+
+# install velocity html reporter, if you wish
+
+terminal-a$ mrt add velocity-html-reporter
+
+# install node-inspector
+terminal-a$  npm install -g node-inspector
+
+# start meteor
+terminal-a$  NODE_OPTIONS='--debug-brk --debug' mrt run
+
+# alternatively, some people report this syntax being better
+terminal-a$  sudo NODE_OPTIONS='--debug' ROOT_URL=http://myapp.com meteor --port 80
+
+# launch node-inspector along side your running app
+terminal-b$  node-inspector
+
+# go to the URL given by node-inspector
+http://localhost:8080/debug?port=5858
+
+# install jshint
+npm install -g jshint 
+
+# run code analysis on local directory
+cd helloworld
+jshint .
 
 ````
