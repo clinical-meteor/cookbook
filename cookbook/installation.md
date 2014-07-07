@@ -71,7 +71,7 @@ And, if you're using mrt:
 ````
 {
   "meteor": {
-    "meteor.branch": "branchname",
+    "branch": "branchname",
     "git": "https://github.com/username/meteor.git"
   }
 }
