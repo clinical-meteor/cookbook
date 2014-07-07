@@ -14,12 +14,14 @@ Unofficially, yes. The last released version is 0.6.4.1. It can be found here:
 http://win.meteor.com/
 
 **Q:  When will Windows version become a first class citizen?**  
-Not in the immediate future, as it's slated to be included after the 1.0 release.  In the meantime, it's recommended to use a virtual machine for development.  You can read the roadmap and relevant disscussions here:
+After the 1.0 release.  In the meantime, it's recommended to use a virtual machine for development.  You can read the roadmap and relevant disscussions here:
+
 https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11  
 https://github.com/meteor/meteor/issues/867
 
 **Q:  Can Meteor run on Rasberry Pi?**  
 Daaah... maybe?  People seem to be working on it, but not much success yet.
+
 http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
 https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
 
@@ -46,7 +48,7 @@ meteor bundle --release 0.6.5
 
 
 **Q:  Should I install Npm with Node Version Manager?**  
-That's really up to you.  However, in my experience, it's been a bit more trouble than it's been worth.  
+Probably not.  One of the main features of Meteor is that it establishes a 'best practice' of which versions of libraries to use together, and does so by doing extensive unit tests and integration tests.  As part of that, it has opinions on which version of node you should be running, and will try to manage your version of node for you.  Running NVM breaks that process, and NVM winds up being more trouble than it's worth.  
 
 ````sh
 # to check what version of NVM is installed
