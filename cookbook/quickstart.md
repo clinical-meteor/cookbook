@@ -129,7 +129,7 @@ jshint .
 ````
 
 
-Meteor Test-Driven-Development Quickstart
+Test-Driven-Development Quickstart
 ===========================================
 
 ````sh
