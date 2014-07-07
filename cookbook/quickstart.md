@@ -51,3 +51,54 @@ sudo nano ~/.profile
 # check mrt is installed correctly
 mrt --version
 ````
+
+
+Meteor Development Tools Quickstart - OSX Mavericks
+===========================================
+
+````
+# install stand-alone mongo with the gui installer
+http://www.mongodb.org/dr//fastdl.mongodb.org/osx/mongodb-osx-x86_64-2.6.3.tgz/download
+
+# or install from command line
+curl http://downloads.mongodb.org/osx/mongodb-osx-x86_64-2.6.3.tgz > mongodb-osx-x86_64-2.6.3.tgz
+tar -zxvf mongodb-osx-x86_64-2.6.3.tgz
+sudo mkdir -p /var/mongodb
+cp -R -n mongodb-osx-x86_64-2.6.3/* /usr/local/mongodb
+
+# make sure mongo is in your path
+sudo nano ~/.profile
+  export PATH=$PATH:/usr/local/bin
+
+# create mongo database directory
+mkdir /data/
+mkdir /data/db
+sudo chown -R username:admin /data
+
+# run mongodb
+mongodb
+
+# install mongodb admin panel
+http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb
+
+# check that you can launch stand alone mongo
+terminal-a$ meteor create helloworld
+terminal-a$ cd helloworld
+terminal-a$ meteor
+
+terminal-b$ mongo -p 3001
+
+# install robomongo database admin tool and connect to port 3001
+http://robomongo.org/
+
+# check you can connect to your mongo instance
+terminal-a$ meteor create helloworld
+terminal-a$ cd helloworld
+terminal-a$ meteor
+
+
+# install node-inspector for server side debugging
+
+
+
+````
