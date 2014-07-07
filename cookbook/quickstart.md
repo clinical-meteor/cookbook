@@ -56,7 +56,7 @@ mrt --version
 Meteor Development Tools Quickstart
 ===========================================
 
-````
+````sh
 # install stand-alone mongo with the gui installer
 http://www.mongodb.org/dr//fastdl.mongodb.org/osx/mongodb-osx-x86_64-2.6.3.tgz/download
 
