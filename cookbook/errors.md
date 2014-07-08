@@ -8,6 +8,14 @@ iron-router
 less
 ````
 
+**Throw "There was a problem checking out " + self.checkoutType + ": " + (self.co**  
+Your ``.meteorite`` installation may be corrupted.  Delete and reinstall meteorite.  
+
+````sh
+sudo rm -rf ~/.meteorite
+sudo npm install -g meteorite
+````
+
 ## Console Errors
 
 **Uncaught ReferenceError: Templates is not defined**  
