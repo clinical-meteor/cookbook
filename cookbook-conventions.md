@@ -29,7 +29,16 @@ Then, in the 1990s, the Web came onto the scene, and people started building ser
 
 ![How HTML-CSS-JS Get Applied On The Browser](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20After%20Browser%20Recieves%20Files.jpg)
 
-![Browser Rendering Workflow](http://orm-chimera-prod.s3.amazonaws.com/1230000000545/images/hpbn_1001.png)  
+
+Unfortunately, most server side developers tend to forget about the CSS subsystem, or dismiss it 'graphic designer responsibilities' or 'just styling'.  And by using the default CSS stylesheets, their architectural designs tend to wind up looking like this:
+
+![Server Side MVC Approach](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20From%20the%20Server%20Devs%20Perspective.jpg)
+
+Which is how client-side MVC patterns and server-side MVC patterns diverged.  Nowdays, they look something like this:
+
+![Server vs Client Side MVC](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Results%20in%20Two%20Different%20MVC%20Models.jpg)
+
+
 
 However, server developers tend not to focus so much on how a page renders.  By and large, there was a division of labor that occured, with back-end server developers worrying more about performance, databases, workflow, and so forth.  The division of labor happened such that they began to view anything related to CSS as being a 'graphics design' issue.  And, being removed from the View portion of the MVC model, they began reusing the 'View' in MVC to mean something slightly different.  
 
@@ -69,3 +78,5 @@ So, going forward, we'll be seeing less of the OSI model.  But you may still run
 
 Some extra discussion on MVC vs PAC patterns...  
 http://www.garfieldtech.com/blog/mvc-vs-pac  
+
+![Browser Rendering Workflow](http://orm-chimera-prod.s3.amazonaws.com/1230000000545/images/hpbn_1001.png)  
