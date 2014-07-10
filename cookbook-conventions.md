@@ -42,18 +42,11 @@ In the end, by assuming the default CSS stylesheets as a given, the conceptual M
 
 ![Server Side MVC Approach](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20From%20the%20Server%20Devs%20Perspective.jpg)
 
-Which is how client-side MVC patterns and server-side MVC patterns diverged.  
-
-It should be noted that the server-side folks wills say that it's the client-side folks who've got it wrong.  And they'll point to Angular and Ruby and say "look how successful these projects are".  And "are you really questioning Google's MVC design?"  And the answer is... well, yeah.  Anybody who thinks that CSS isn't part of the View would be well served to revisit Knuth's Art of Computer Programming and the code for TeX and LaTeX, because Knuth has some things to say about font rendering.  
-
-Nowdays, they look something like this:
+Which is how client-side MVC patterns and server-side MVC patterns diverged.  Nowdays, these two different MVC models look something like this:
 
 ![Server vs Client Side MVC](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Results%20in%20Two%20Different%20MVC%20Models.jpg)
 
-
-
-
-
+It should be noted that the server-side folks wills say that it's the client-side folks who've got it wrong.  And they'll point to Angular and Ruby and say "look how successful these projects are".  And "are you really questioning Google's MVC design?"  And the answer is... well, yeah.  Anybody who thinks that CSS isn't part of the View would be well served to revisit Knuth's Art of Computer Programming and the code for TeX and LaTeX, because Knuth has some things to say about font rendering.  
 
 
 That being said, one could make the case that the Ruby/Angular MVC pattern is now the default MVC pattern for web apps.  And that the HTML/CSS/JS approach is more of a Model-Presentation-Control pattern (MPC), as per the OSI 7 Layer model.  At which point we can split hairs about naming conventions and terminology.
