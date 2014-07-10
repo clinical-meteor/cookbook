@@ -188,18 +188,6 @@ Once you have your unit tests in place, you can begin writing actual unit tests.
         });
 
     });
-
-    /*
-    describe("moment package", function () {
-
-      it("is stubbed properly", function () {
-        var may5 = cincoDeMayo()
-        console.log('XXX', typeof may5)
-        expect(may5).toBe("May, 05 2014");
-      });
-
-    });
-    */
 })();
 ````
 
