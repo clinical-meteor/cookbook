@@ -26,6 +26,8 @@ sudo mrt test-packages
 
 #### Tinytest API  
 
+Tinytest supports the following test syntax.  
+
 - test.equal(actual, expected, message, not)  
 - test.notEqual(actual, expected, message)  
 - test.instanceOf(obj, klass)  
@@ -38,7 +40,6 @@ sudo mrt test-packages
 - test.isNaN(actual, msg)  
 - test.isUndefined(actual, msg)  
 - test.length(obj, expected_length, msg)  
-
 
 #### Creating a Tinytest Package for Testing In-App Files
 
