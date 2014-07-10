@@ -30,20 +30,31 @@ The JS, HTML, and CSS files get shipped down to the client, and the HTML gets re
 ![How HTML-CSS-JS Get Applied On The Browser](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20After%20Browser%20Recieves%20Files.jpg)
 
 
-Unfortunately, most server side developers tend to forget about the CSS subsystem, or dismiss it 'graphic designer responsibilities' or 'just styling'.  And by using the default CSS stylesheets, their architectural designs tend to wind up looking like this:
+
+
+Unfortunately, most server side developers tend to forget about the CSS subsystem, or dismiss it 'graphic designer responsibilities' or 'just styling'.  
+
+This was caused, in large part, by a division of labor that occured throughout much of the tech industry over the past 10 years, as client/server architectures resulted in a division of labor between "back end developers" and "front end developers".  The division of labor happened such that back-end developers began to view anything related to CSS as being a 'graphics design' issue and not part of their responsibilities.
+
+However, they still knew that using an MVC model was a best practice, and they were all using default CSS stylesheets even if many of them forget they were.  And so, being removed from the View portion of the MVC model, that's how they began reusing the 'View' in MVC to mean something slightly different.  
+
+In the end, by assuming the default CSS stylesheets as a given, the conceptual MVC model shifted in much of the tech industry and wound up looking like this:
 
 ![Server Side MVC Approach](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20From%20the%20Server%20Devs%20Perspective.jpg)
 
-Which is how client-side MVC patterns and server-side MVC patterns diverged.  Nowdays, they look something like this:
+Which is how client-side MVC patterns and server-side MVC patterns diverged.  
+
+It should be noted that the server-side folks wills say that it's the client-side folks who've got it wrong.  And they'll point to Angular and Ruby and say "look how successful these projects are".  And "are you really questioning Google's MVC design?"  And the answer is... well, yeah.  Anybody who thinks that CSS isn't part of the View would be well served to revisit Knuth's Art of Computer Programming and the code for TeX and LaTeX, because Knuth has some things to say about font rendering.  
+
+Nowdays, they look something like this:
 
 ![Server vs Client Side MVC](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Results%20in%20Two%20Different%20MVC%20Models.jpg)
 
 
 
-However, server developers tend not to focus so much on how a page renders.  By and large, there was a division of labor that occured, with back-end server developers worrying more about performance, databases, workflow, and so forth.  The division of labor happened such that they began to view anything related to CSS as being a 'graphics design' issue.  And, being removed from the View portion of the MVC model, they began reusing the 'View' in MVC to mean something slightly different.  
 
 
-It should be noted that the server-side folks wills say that it's the client-side folks who've got it wrong.  And they'll point to Angular and Ruby and say "look how successful these projects are".  And "are you really questioning Google's MVC design?"  And the answer is... well, yeah.  Anybody who thinks that CSS isn't part of the View would be well served to revisit Knuth's Art of Computer Programming and the code for TeX and LaTeX, because Knuth has some things to say about font rendering.  
+
 
 That being said, one could make the case that the Ruby/Angular MVC pattern is now the default MVC pattern for web apps.  And that the HTML/CSS/JS approach is more of a Model-Presentation-Control pattern (MPC), as per the OSI 7 Layer model.  At which point we can split hairs about naming conventions and terminology.
 
