@@ -48,8 +48,15 @@ Which is how client-side MVC patterns and server-side MVC patterns diverged.  No
 
 It should be noted that the server-side folks wills say that it's the client-side folks who've got it wrong.  And they'll point to Angular and Ruby and say "look how successful these projects are".  And "are you really questioning Google's MVC design?"  And the answer is... well, yeah.  Anybody who thinks that CSS isn't part of the View would be well served to revisit Knuth's Art of Computer Programming and the code for TeX and LaTeX, because Knuth has some things to say about font rendering.  
 
+That being said, one could make the case that the Ruby/Angular MVC pattern is now the default MVC pattern for web apps.  And that the HTML/CSS/JS approach is more of a Model-Presentation-Control pattern (MPC), as per the OSI 7 Layer model.  
 
-That being said, one could make the case that the Ruby/Angular MVC pattern is now the default MVC pattern for web apps.  And that the HTML/CSS/JS approach is more of a Model-Presentation-Control pattern (MPC), as per the OSI 7 Layer model.  At which point we can split hairs about naming conventions and terminology.
+**MVCP**
+![View Model Controller Presentation](https://github.com/awatson1978/meteor-cookbook/blob/master/images/View-Model-Controller-Presentation.jpg)
+
+But that wouldn't be entirely correct.  What's really happening is that that the MVC models are actually two different models.  For convenience sake, lets call them View-Model-Controller-Presentation or MVCP, and Workflow-Model-View-Controller or WMVC. 
+
+**WMVC**
+[Workflow Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/images/Workflow-Model-View-Controller.jpg)
 
 Getting back to Meteor, the reason this is worth discussing is that Meteor has made the rather huge architectural decision to have both the client **and** the server written in the same language.  Principle 1:  Pure Javascript. It's huge.  It's elegant.  It's an oasis of sanity.  It makes a person unbelievably more productive.  
 
