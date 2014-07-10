@@ -30,10 +30,26 @@ sudo mrt
 
 Find the complete Jasmine API here:  [http://jasmine.github.io/](http://jasmine.github.io/)
 
-Tinytest supports the following test syntax.  
-
 ````js
+// expect() syntax 
 expect(foo).toBe(bar);
+expect(foo).not.toBe(null);
+expect(a.foo).toBeDefined();
+expect(a.bar).not.toBeDefined();
+expect(null).toBeNull();
+expect(foo).toBeNull();
+expect(foo).not.toBeNull();
+expect(foo).toBeTruthy();
+expect(a).toBeFalsy();
+expect(a).toContain("bar");
+expect(a).not.toContain("quux");
+expect(e).toBeLessThan(pi);
+expect(pi).not.toBeLessThan(e);
+expect(pi).toBeGreaterThan(e);
+expect(foo).toEqual(1);
+
+// spyOn() syntax   
+spyOn(Players, 'find').and.returnValue(cursor);
 ````
 
 #### Creating a Tinytest Package for Testing In-App Files
