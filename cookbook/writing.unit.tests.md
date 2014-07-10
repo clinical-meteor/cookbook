@@ -80,7 +80,6 @@ Package.on_test(function (api) {
 
 The trick with unit testing is understanding that you're trying to test *your* code, and not other people's code.  Ideally, you want to define empty functions for all of the external libraries and API calls that you use in your application.  We call these empty functions 'stubs'.  Once defined, they'll allow the Javascript interpreter to read and compile your code, but will also allow you to look behind the curtain at what's going on backstage.  
 
-Stub functions look like the following:
 
 ````js
 // leaderboard/packages/leaderboard-tinytests/test-stubs.js
@@ -101,7 +100,7 @@ Players = {};
 ````
 
 #### Write Your Unit Tests  
-Once you have your unit tests in place, you can begin writing actual unit tests.
+Once you have your stubs in place, you can begin writing actual unit tests.
 
 ````js
 Tinytest.add('Template.leaderboard.players()', function (test) {
