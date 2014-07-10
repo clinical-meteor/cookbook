@@ -56,7 +56,7 @@ That being said, one could make the case that the Ruby/Angular MVC pattern is no
 But that wouldn't be entirely correct.  What's really happening is that that the MVC models are actually two different models.  For convenience sake, lets call them View-Model-Controller-Presentation or MVCP, and Workflow-Model-View-Controller or WMVC. 
 
 **WMVC**
-[Workflow Model View Controller](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Workflow-Model-View-Controller.jpg)
+![Workflow Model View Controller](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Workflow-Model-View-Controller.jpg)
 
 Getting back to Meteor, the reason this is worth discussing is that Meteor has made the rather huge architectural decision to have both the client **and** the server written in the same language.  Principle 1:  Pure Javascript. It's huge.  It's elegant.  It's an oasis of sanity.  It makes a person unbelievably more productive.  
 
