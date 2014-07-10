@@ -55,6 +55,11 @@ Getting back to Meteor, the reason this is worth discussing is that Meteor has m
 
 Yet, despite all those good things, it requires mashing these two different domains together - server side development and client-side development.  Isomorphic javascript requires that the Meteor community reconciles the server-side MVC patterns used by the Rubyists, Node.js folks, and Angular folks, with the client-side thick-client MVC patterns used by WinForm, .NET, Unity, and Flash developers.  
 
+Because lets be real here...  MVC is a simplification.  If we were to diagram out what the render cycle *actually* looks like, it would be something more like this:  
+
+[What the Rendering Pipeline Really Looks Like](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/MVC%20Cycle%20-%20What%20it%20Really%20Looks%20Like.jpg)
+
+
 This is a discussion that had yet to begin in earnest.  Right now, it's a bit of a wild-west, with people exploring different patterns and designs.  CoffeeScript vs JavaScript.  Client-Side MVC vs Server-Side MVC.
 
 Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  And there's a lot of reason for it.  Color coding.  Clarity of code.  Domain specific languages.  Domain specific tools.  But it's not the only approach to MVC patterns.  
