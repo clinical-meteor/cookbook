@@ -12,21 +12,6 @@ Generally speaking, the Cookbook caters to a Mac development environment, WebKit
 The official Meteor position is that Meteor is going to support Windows and SQL databases in version 1.1 or later.   Until then, however, the fact of the matter is that Meteor basically only runs on Mac/Linux.  And since the Meteor Cookbook is focused on documenting Meteor 1.0, you can basically assume that all the examples in the Cookbook are written with Mac and Chrome in mind.
 
 
-#### The OSI Model  
-
-Older versions of the Cookbook were heavily structured around the Open Systems Interconnection (OSI) Model ((ISO/IEC 7498-1)).  
-http://en.wikipedia.org/wiki/OSI_model
-
-This model is typically used to describe network communications, and how packets of data travel from one machine to the next.  It describes how a client request to the server travels down the protocol stack, through the database, getting assigned TCP/IP headers, onto the wire (ethernet or wi-fi, etc), to the other machine, and back up the network stack to the server application.  That's how 90% of people understand the OSI model.
-
-![Traditional OSI 7 Layer Model](http://i.technet.microsoft.com/dynimg/IC213395.gif)  
-
-However, if you've worked with the OSI model **a lot**, you'll know that it can be used to describe haptics, video recording/broadcasting, human-computer interfaces, business logic, and more.  
-
-Early versions of the Cookbook used this conceptual model to organize files, identify subsystems and modules, and to sort of 'reverse engineer' Meteor.  As time went on, however, it became increasingly apparent how Meteor was architected, and how it lived in layers 5 through 7, and how an indepth discussion of Model/View/Controller patterns was more important than OSI networking patterns.  
-
-So, going forward, we'll be seeing less of the OSI model.  But you may still run into references here and there, as we clean up the Cookbook.
-
 
 #### Model-View-Controller  
 
@@ -55,6 +40,23 @@ This is a discussion that had yet to begin in earnest.  Right now, it's a bit of
 Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  And there's a lot of reason for it.  Color coding.  Clarity of code.  Domain specific languages.  Domain specific tools.  But it's not the only approach to MVC patterns.  
 
 So, yeah... just be aware of all that as you use this cookbook.
+
+
+#### The OSI Model  
+
+Older versions of the Cookbook were heavily structured around the Open Systems Interconnection (OSI) Model ((ISO/IEC 7498-1)).  
+http://en.wikipedia.org/wiki/OSI_model
+
+This model is typically used to describe network communications, and how packets of data travel from one machine to the next.  It describes how a client request to the server travels down the protocol stack, through the database, getting assigned TCP/IP headers, onto the wire (ethernet or wi-fi, etc), to the other machine, and back up the network stack to the server application.  That's how 90% of people understand the OSI model.
+
+![Traditional OSI 7 Layer Model](http://i.technet.microsoft.com/dynimg/IC213395.gif)  
+
+However, if you've worked with the OSI model **a lot**, you'll know that it can be used to describe haptics, video recording/broadcasting, human-computer interfaces, business logic, and more.  
+
+Early versions of the Cookbook used this conceptual model to organize files, identify subsystems and modules, and to sort of 'reverse engineer' Meteor.  As time went on, however, it became increasingly apparent how Meteor was architected, and how it lived in layers 5 through 7, and how an indepth discussion of Model/View/Controller patterns was more important than OSI networking patterns.  
+
+So, going forward, we'll be seeing less of the OSI model.  But you may still run into references here and there, as we clean up the Cookbook.
+
 
 #### Miscellaneous Notes & Links  
 
