@@ -60,8 +60,7 @@ The trick with unit testing is understanding that you're trying to test *your* c
 Stub functions look like the following:
 
 ````js
-// leaderboard/packages/leaderboard-tinytests/test-stubs.js
-
+// add the following stub functions
 Template = {
   leaderboard: {
     events: function(){ return; },
@@ -78,7 +77,7 @@ Players = {};
 ````
 
 #### Write Your Unit Tests  
-Once you have your unit tests in place, you can begin writing actual unit tests.
+Once you have your stubs in place, you can begin writing actual unit tests.
 
 ````js
 (function () {
