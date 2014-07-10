@@ -23,9 +23,9 @@ A little background to put this into context.  In the 1970s, Xerox PARC develope
 
 Then, in the 1990s, the Web came onto the scene, and people started building server-client applications. This caused a big schism in how people understood the MVC model.  The client-side developers continued to apply the same MVC models from before, which is how Web Browsers wound up ubiquitously using HTML, CSS, and JS to render pages.  
 
-![Basic Server-Client Technologies](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20Before%20Loading%20Page.jpg)
+![Basic Server-Client Technologies](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20Before%20Loading%20Page.jpg)  
 
-
+The JS, HTML, and CSS files get shipped down to the client, and the HTML gets rendered to the DOM, which then gets CSS applied to it in the render tree, which gets gets javascript applied to it, which gets shipped to the graphics buffer and displayed on the device screen.
 
 ![How HTML-CSS-JS Get Applied On The Browser](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20After%20Browser%20Recieves%20Files.jpg)
 
