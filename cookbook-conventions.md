@@ -57,7 +57,7 @@ Yet, despite all those good things, it requires mashing these two different doma
 
 Because lets be real here...  MVC is a simplification.  If we were to diagram out what the render cycle *actually* looks like, it would be something more like this:  
 
-[What the Rendering Pipeline Really Looks Like](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/MVC%20Cycle%20-%20What%20it%20Really%20Looks%20Like.jpg)
+![What the Rendering Pipeline Really Looks Like](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/MVC%20Cycle%20-%20What%20it%20Really%20Looks%20Like.jpg)  
 
 
 This is a discussion that had yet to begin in earnest.  Right now, it's a bit of a wild-west, with people exploring different patterns and designs.  CoffeeScript vs JavaScript.  Client-Side MVC vs Server-Side MVC.
