@@ -26,22 +26,15 @@ mrt add jasmine-unit
 sudo mrt
 ````
 
-#### Jasmien API  
+#### Jasmine API  
+
+Find the complete Jasmine API here:  [http://jasmine.github.io/](http://jasmine.github.io/)
 
 Tinytest supports the following test syntax.  
 
-- test.equal(actual, expected, message, not)  
-- test.notEqual(actual, expected, message)  
-- test.instanceOf(obj, klass)  
-- test.matches(actual, regexp, message)  
-- test.isTrue(actual, msg)  
-- test.isFalse(actual, msg)  
-- test.isNull(actual, msg)  
-- test.isNotNull(actual, msg)  
-- test.isUndefined(actual, msg)  
-- test.isNaN(actual, msg)  
-- test.isUndefined(actual, msg)  
-- test.length(obj, expected_length, msg)  
+````js
+expect(foo).toBe(bar);
+````
 
 #### Creating a Tinytest Package for Testing In-App Files
 
