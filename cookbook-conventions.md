@@ -19,7 +19,7 @@ The Meteor Cookbook makes an opinionated choice about how to treat MVC, and tend
 
 A little background to put this into context.  In the 1970s, Xerox PARC developed the first mouse interface and first GUI.  They used a Model-View-Controller paradigm, which was copied throughout most of the 1980s by Apple, SGI, Sun, and all the other computer tech companies of the era.  MVC was fairly well understood during those days.  
 
-![MVC History](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/300px-MVC-Process.svg.png)
+![MVC History](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/MVC%20Cycle%20-%20Traditional%20Model.jpg)
 
 Then, in the 1990s, the Web came onto the scene, and people started building server-client applications. This caused a big schism in how people understood the MVC model.  The client-side developers continued to apply the same MVC models from before, which is how Web Browsers wound up ubiquitously using HTML, CSS, and JS to render pages.  
 
