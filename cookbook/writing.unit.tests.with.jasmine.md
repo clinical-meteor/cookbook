@@ -11,8 +11,8 @@ The simplest way to create unit tests is to use Tinytest, the native Meteor test
 
 ````js
 // create your application
-meteor create helloworld
-cd helloworld
+meteor create leaderboard
+cd leaderboard
 
 // install velocity and reporters
 mrt add velocity
