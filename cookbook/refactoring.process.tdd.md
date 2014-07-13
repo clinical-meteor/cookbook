@@ -1,4 +1,4 @@
-## Refactoring With Test Driven Development
+Refactoring With Test Driven Development
 Refactoring test during test-driven-development is essentially the same as normal refactoring.  We're just moving code around between files and directories.  
 
 
