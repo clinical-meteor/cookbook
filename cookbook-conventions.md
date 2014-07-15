@@ -50,7 +50,7 @@ It should be noted that the server-side folks wills say that it's the client-sid
 
 That being said, one could make the case that the Ruby/Angular MVC pattern is now the default MVC pattern for web apps.  And that the HTML/CSS/JS approach is more of a Model-Presentation-Control pattern (MPC), as per the OSI 7 Layer model.  
 
-** Model View Controller Presentation (MVCP)**
+** Model View Controller Presentation (MVCP)**  
 ![View Model Controller Presentation](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/View-Model-Controller-Presentation.jpg)
 
 But that wouldn't be entirely correct.  What's really happening is that that the MVC models are actually two different models.  For convenience sake, lets call them View-Model-Controller-Presentation or MVCP, and Workflow-Model-View-Controller or WMVC. 
