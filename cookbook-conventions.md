@@ -1,4 +1,4 @@
-## Cookbook Conventions
+## Cookbook MVC Conventions
 
 
 Hello, and welcome to the Meteor Cookbook.
