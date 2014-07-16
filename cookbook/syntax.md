@@ -1,5 +1,4 @@
 ## Syntax  
-**- the arrangement of words and phrases to create well-formed sentences in a language.**    
 
 Language syntax doesn't have to be hard.  But somehow it often is.  Meteor makes language syntax a breeze, if you're willing to use a few particular patterns.  
 
@@ -59,3 +58,13 @@ At the very least, consider a semantic UI library of some sort, such as Bootstra
 [Bootstrap](http://getbootstrap.com/)  
 [Semantic UI](http://semantic-ui.com/)  
 
+You can install either of these packages with the following commands:
+
+````sh
+sudo mrt add bootstrap-3
+sudo mrt add semantic-ui
+````
+
+You can also find related packages on Atmosphere:  
+[Bootstrap-3 packages on Atmosphere](http://atmospherejs.com/?q=bootstrap)
+[Semantic UI packages on Atmosphere](http://atmospherejs.com/?q=semantic)
