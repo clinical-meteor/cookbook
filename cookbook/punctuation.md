@@ -9,23 +9,23 @@ To make a long story short, until you're fluent with javascript, and know all th
 
 
 ````js
-#example without semicolon
+//example without semicolon
 var myVar = 9
 if (myVar === 9) {
 
 }
 
-#when minified, may become:
+//when minified, may become:
 var myVar 9 if (myVar == 9) {}
 
 
-#same example with semicolon
+//same example with semicolon
 var myVar = 9;
 if (myVar == 9) {
 
 }
 
-#when minified, may become:
+//when minified, may become:
 var myVar 9; if (myVar == 9) {}
 
 ````
