@@ -66,5 +66,5 @@ sudo mrt add semantic-ui
 ````
 
 You can also find related packages on Atmosphere:  
-[Bootstrap-3 packages on Atmosphere](http://atmospherejs.com/?q=bootstrap)
-[Semantic UI packages on Atmosphere](http://atmospherejs.com/?q=semantic)
+[Bootstrap-3 packages on Atmosphere](http://atmospherejs.com/?q=bootstrap)  
+[Semantic UI packages on Atmosphere](http://atmospherejs.com/?q=semantic)  
