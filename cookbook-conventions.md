@@ -1,16 +1,11 @@
 ## Cookbook MVC Conventions
 
 
-Hello, and welcome to the Meteor Cookbook.
-
-Before diving into this cookbook, please be aware of the following two conventions, which are used throughout these tutorials and examples.
+Before diving into the Meteor cookbook, we should have a 
 
 
-#### Browsers and Operating Systems  
-Generally speaking, the Cookbook caters to a Mac development environment, WebKit browsers (specifically Chrome, but also Safari), a virtualized Ubuntu server hosting environment, and support of the iPad and iPhone.  
-
-The official Meteor position is that Meteor is going to support Windows and SQL databases in version 1.1 or later.   Until then, however, the fact of the matter is that Meteor basically only runs on Mac/Linux.  And since the Meteor Cookbook is focused on documenting Meteor 1.0, you can basically assume that all the examples in the Cookbook are written with Mac and Chrome in mind.
-
+Some extra discussion on MVC, MVVM, HMVC, PAC patterns...  
+http://www.garfieldtech.com/blog/mvc-vs-pac  
 
 
 #### Model-View-Controller  
@@ -74,9 +69,7 @@ Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  An
 So, yeah... just be aware of all that as you use this cookbook.
 
 
-#### Miscellaneous Notes & Links  
 
-Some extra discussion on MVC, MVVM, HMVC, PAC patterns...  
-http://www.garfieldtech.com/blog/mvc-vs-pac  
+
 
 
