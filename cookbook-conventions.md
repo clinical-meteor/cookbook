@@ -1,20 +1,12 @@
 ## Cookbook MVC Conventions
 
 
-Before diving into the Meteor cookbook, we should have a 
+Before diving into the Meteor Cookbook, we should have a short discussion about what people mean when they talk about 'MVC', since the Cookbook makes some opinionated choice about how to treat MVC. In particular, it avoids server-side Ruby and Angular MVC patterns, which treat a View as a collection of HTML and Javascript, and tends towards an old-school thick-client use of the term MVC.  
 
-
-Some extra discussion on MVC, MVVM, HMVC, PAC patterns...  
-http://www.garfieldtech.com/blog/mvc-vs-pac  
-
-
-#### Model-View-Controller  
-
-The Meteor Cookbook makes an opinionated choice about how to treat MVC, and tends towards a thick-click and desktop models of how MVC is structured. In particular, it avoids server-side Ruby and Angular MVC patterns, which treat a View as a collection of HTML and Javascript.  
-
-A little background to put this into context.  In the 1970s, Xerox PARC developed the first mouse interface and first GUI.  They used a Model-View-Controller paradigm, which was copied throughout most of the 1980s by Apple, SGI, Sun, and all the other computer tech companies of the era.  MVC was fairly well understood during those days.  
+What do we mean by 'old school'?  Well, a little background to put this into context.  In the 1970s, Xerox PARC developed the first mouse interface and first GUI.  They used a Model-View-Controller paradigm, which was copied and experimented with throughout most of the 1980s by Apple, SGI, Sun, and all the other computer tech companies of the era.  MVC was fairly well understood during those days, although there was quite a bit of experimenting with alternative architectures, such as [Presentation-Abstraction-Control(PAC)](http://en.wikipedia.org/wiki/Presentation-abstraction-control), [Hierarchical Model-View-Controller(HMVC)](http://en.wikipedia.org/wiki/Hierarchical_model%E2%80%93view%E2%80%93controller), and [Model-View-Presenter (MVP)](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter).  But most all of them wound up having something like the following flow:
 
 ![MVC History](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/MVC%20Cycle%20-%20Traditional%20Model.jpg)
+
 
 Then, in the 1990s, the Web came onto the scene, and people started building server-client applications. This caused a big schism in how people understood the MVC model.  The client-side developers continued to apply the same MVC models from before, which is how Web Browsers wound up ubiquitously using HTML, CSS, and JS to render pages.  
 
