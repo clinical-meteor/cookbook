@@ -56,9 +56,11 @@ Because lets be real here...  MVC is a simplification.  If we were to diagram ou
 
 This is a discussion that had yet to begin in earnest.  Right now, it's a bit of a wild-west, with people exploring different patterns and designs.  CoffeeScript vs JavaScript.  Client-Side MVC vs Server-Side MVC.
 
-Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  And there's a lot of reason for it.  Color coding.  Clarity of code.  Domain specific languages.  Domain specific tools.  But it's not the only approach to MVC patterns.  
+Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  And there's a lot of reason for it.  Color coding.  Clarity of code.  Domain specific languages.  Domain specific tools.  But it's not the only approach to the MVC pattern.    
 
-So, yeah... just be aware of all that as you use this cookbook.
+In the end, there's no 'correct' way to do MVC.  There are simpler approaches and more convoluted approaches.  Some approaches will save you effort and complexity on the front end and be more work to maintain later; while others will require more upfront effort and be easier to maintain later.  Some approaches will have cleaner semantic syntax; others will offer greater backwards compatibility with older libraries.  Ultimately, it will be about what kind of application you want to design.  
+
+But, as you start building your app, start thinking about how to reconcile your client-side and server-side MVC models.  They will differ in the beginning, because Meteor isn't an MVC framework.  It's not really even an MVVM framework.  It's maybe an MVCP or WMVC framework.  But it's probably better to to call it a CMVVMCP or MCVVCMP framework, or something.  
 
 
 
