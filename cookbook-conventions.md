@@ -76,7 +76,7 @@ So, yeah... just be aware of all that as you use this cookbook.
 
 #### Miscellaneous Notes & Links  
 
-Some extra discussion on MVC vs PAC patterns...  
+Some extra discussion on MVC, MVVM, HMVC, PAC patterns...  
 http://www.garfieldtech.com/blog/mvc-vs-pac  
 
 
