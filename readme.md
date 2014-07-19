@@ -106,7 +106,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
-[Leaflet Parties](https://github.com/awatson1978/leaflet-parties)  
+[Geolocated Parties](https://github.com/awatson1978/leaflet-parties)  
 [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)  
 [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master)  
 [Clinical Support Forum](http://clinical-support-forum.meteor.com/)  
