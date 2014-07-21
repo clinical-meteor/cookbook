@@ -15,7 +15,7 @@ http://stackful.io/meteor.html
 **Any recommendations for Cloud Development?**    
 https://www.nitrous.io/  
 
-Run the following command in the Nitrous.io (web) command line to create a Meteor project.  
+The last we heard, the following Nitrous.io command could be used to create a Meteor project.  
 ````
 parts install meteor
 ````
