@@ -8,7 +8,6 @@ http://blog.modulus.io/deploying-meteor-apps-on-modulus
 http://blog.modulus.io/demeteorizer  
 https://github.com/onmodulus/demeteorizer  
 
-
 The newest Meteor specific offering seems to be from stackful.io.  Check it out!  
 http://stackful.io/meteor.html
 
