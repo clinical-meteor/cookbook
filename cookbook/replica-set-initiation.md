@@ -30,6 +30,9 @@ start on started mountall
 stop on shutdown
 respawn
 respawn limit 99 5
+setuid mongodb
+setgid mongodb
+
 script
   exec /usr/bin/mongod --smallfiles --config /etc/mongodb.conf >> /data/logs/mongo-a.log 2>&1
 end script
