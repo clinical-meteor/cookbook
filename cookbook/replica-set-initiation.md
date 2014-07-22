@@ -60,8 +60,6 @@ sudo nano /etc/logrotate.d/mongod
     endscript
   }
 
-
-
 # make sure mongod service is started and running
 sudo service mongodb start
 sudo reboot
