@@ -76,3 +76,7 @@ mongo
   > rs.add("mongo-c")
   > rs.slaveOk()
 ````
+
+Oplog Tailing
+===============================
+http://blog.mongolab.com/2014/07/tutorial-scaling-meteor-with-mongodb-oplog-tailing/
