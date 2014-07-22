@@ -26,16 +26,17 @@ sudo mkdir /data/db
 sudo chown -R mongodb:mongodb /data
 
 # edit the mongo upstart file in /etc/init/mongodb.conf
-start on started mountall
-stop on shutdown
-respawn
-respawn limit 99 5
-setuid mongodb
-setgid mongodb
+sudo nano /etc/init/mongodb.conf
+  start on started mountall
+  stop on shutdown
+  respawn
+  respawn limit 99 5
+  setuid mongodb
+  setgid mongodb
+  script
+    exec /usr/bin/mongod --config /etc/mongodb.conf >> /data/logs/mongo-a.log 2>&1
+  end script
 
-script
-  exec /usr/bin/mongod --smallfiles --config /etc/mongodb.conf >> /data/logs/mongo-a.log 2>&1
-end script
 
 # edit mongodb configuration file
 sudo nano /etc/mongodb.conf
