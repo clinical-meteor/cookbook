@@ -21,7 +21,7 @@ Instead of relying on formal schemas, I'm just going to share some experience on
 13.  Document schemas are where you want to do your data modeling.  
 
 
-####Naming Fields  
+####Naming Conventions  
 And here are a few rules of thumb for database field naming conventions.  
 
 1.  Use camelCase or snake_case.  
