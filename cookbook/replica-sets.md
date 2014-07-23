@@ -1,7 +1,7 @@
 Replica Set Configuration 
 ===============================
 
-First, build yourself three servers using whatever physical or virtual hardware you wish.  (his tutorial assumes you're using Ubuntu as your operating system.)  Then repeat the following instructions three times... once for each server.  
+First, build yourself three servers using whatever physical or virtual hardware you wish.  (This tutorial assumes you're using Ubuntu as your operating system.)  Then repeat the following instructions three times... once for each server.  
 
 ````sh
 # add the names of each server to the host file of each server
