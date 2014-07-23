@@ -1,4 +1,4 @@
-Replica Set Configuration 
+Replica Set Server Builds 
 ===============================
 
 First, build yourself three servers using whatever physical or virtual hardware you wish.  (This tutorial assumes you're using Ubuntu as your operating system.)  Then repeat the following instructions three times... once for each server.  
@@ -67,8 +67,14 @@ sudo nano /etc/logrotate.d/mongod
 # make sure mongod service is started and running
 sudo service mongodb start
 sudo reboot
+````
 
-# then go into the mongo shell and initiate the replica set
+Replica Set Configuration 
+===============================
+
+Then go into the mongo shell and initiate the replica set, like so:
+
+````
 mongo
   > rs.initiate()
   > rs.add("mongo-a")
