@@ -25,6 +25,9 @@ Daaah... maybe?  People seem to be working on it, but not much success yet.
 http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
 https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
 
+Try using Tessel!
+https://www.trycelery.com/shop/TEC
+
 
 **Q:  How do I determine what version of Meteor is installed?**  
 
