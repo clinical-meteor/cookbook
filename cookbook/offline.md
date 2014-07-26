@@ -2,12 +2,6 @@
 
 
 
-#### Appcache 
-
-
-#### Meteor.status()
-
-[Meteor.status()](http://docs.meteor.com/#meteor_status)  
 
 
 #### GroundDB
@@ -21,7 +15,7 @@
 - Offline Access  
   - Appcache - Caches Application Static Code  
   - GroundDB - Caches Application Data
-  - Meteor.status() - Communicates to user Online status of application  
+  - [Meteor.status()](http://docs.meteor.com/#meteor_status)  
 - Device Detection (pick one)  
   - mrt add browser-detection  
   - mrt add bowser  
