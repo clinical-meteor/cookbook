@@ -1,14 +1,6 @@
 ## Offline
 
 
-
-
-
-#### GroundDB
-
-
-#### Chrome Apps
-
   
 [Latest on Cordova/PhoneGap](https://groups.google.com/forum/#!searchin/meteor-talk/morten$20meteor$20architecture$20build/meteor-talk/sZLCHH1Hd3I/wyTf21_smzkJ)
 
