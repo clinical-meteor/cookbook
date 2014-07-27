@@ -22,7 +22,7 @@ So, you want to create some tabbed workflow within a particular page.  If you're
 </template>
 ````
 
-**The Downside**  
+**The Disadvantage**  
 Data-toggle attributes aren't supported in all browsers, and tend to breakdown on mobile devices and when running automated tests.  So, if you're trying to get test coveragge for your applications, and have Selenium/Nightwatch walk through your application, this approach probably won't work.  
 
 ### The Meteor Spacebars Method
