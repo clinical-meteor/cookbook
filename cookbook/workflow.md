@@ -3,7 +3,7 @@ Tabbed Workflow
 
 So, you want to create some tabbed workflow within a particular page.  If you're familiar with Angular, Knockout, or Bootstrap, you may be tempted to use ``data-*`` attributes to toggle your panes, and are likely to wind up with code like the following.
 
-### The Angular/Knockout/Bootstrap Method
+### The Bootstrap/Angular/Knockout Method
 ````html
 <template name="samplePage">
   <div id="samplePage" class="page">
