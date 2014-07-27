@@ -12,7 +12,6 @@ Start by creating three templates objects in your Object Model...
     <ul class="nav nav-tabs">
       <li id="firstPanelTab" class="{{firstPanelActive}}"><a href="#firstPanel" data-toggle="tab">First</a></li>
       <li id="secondPanelTab" class="{{secondPanelActive}}"><a href="#secondPanel" data-toggle="tab">Second</a></li>
-      <li id="thirdPanelTab" class="{{thirdPanelActive}}"><a href="#thirdPanel" data-toggle="tab">Third</a></li>
     </ul>
     
     <div id="firstPanel" class="{{firstPanelVisibility}}">
@@ -20,9 +19,6 @@ Start by creating three templates objects in your Object Model...
     </div>
     <div id="secondPanel" class="{{secondPanelVisibility}}">
       {{> secondPanel }}
-    </div>
-    <div id="thirdPanel" class="{{thirdPanelVisibility}}">
-      {{> thirdPanel }}
     </div>
 
   </div>
@@ -43,9 +39,6 @@ Template.samplePage.events({
   },
   'click #secondPanelTab':function(){
     Session.set('selectedPanel', 2);
-  },
-  'click #thirdPanelTab':function(){
-    Session.set('selectedPanel', 3);
   }
 });
 
@@ -63,13 +56,6 @@ Template.secondPanel.secondPanelVisibility = function(){
     return "hidden";
   }
 }
-Template.thirdPanel.thirdPanelVisibility = function(){
-  if(Session.get('selectedPanel') === 3){
-    return "visible";
-  }else{
-    return "hidden";
-  }
-}
 Template.firstPanel.firstPanelActive = function(){
   if(Session.get('selectedPanel') === 1){
     return "active panel-tab";
@@ -79,13 +65,6 @@ Template.firstPanel.firstPanelActive = function(){
 }
 Template.secondPanel.secondPanelActive= function(){
   if(Session.get('selectedPanel') === 2){
-    return "active panel-tab";
-  }else{
-    return "panel-tab";
-  }
-}
-Template.thirdPanel.thirdPanelActive = function(){
-  if(Session.get('selectedPanel') === 3){
     return "active panel-tab";
   }else{
     return "panel-tab";
