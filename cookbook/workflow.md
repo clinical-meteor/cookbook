@@ -1,7 +1,28 @@
-## Tabbed Workflow  
+Tabbed Workflow  
+=========================================
 
-**Q:  How do I crate a wizard dialog?**  
-This recipe assumes that your Model is an .html file, your View is a .css or .less file, and your Controller is a .js file.
+So, you want to create 
+### The Angular/Ruby Method
+````html
+<template name="samplePage">
+  <div id="samplePage" class="page">
+    <ul class="nav nav-tabs">
+      <li><a href="#firstPanel" data-toggle="tab">First</a></li>
+      <li><a href="#secondPanel" data-toggle="tab">Second</a></li>
+    </ul>
+    
+    <div id="firstPanel" class="tab-pane">
+      {{> firstPanel }}
+    </div>
+    <div id="secondPanel" class="tab-pane">
+      {{> secondPanel }}
+    </div>
+  </div>
+</template>
+````
+
+### The Meteor Spacebars Method
+
 
 #### Object Model  
 Start by creating three templates objects in your Object Model...
@@ -10,8 +31,8 @@ Start by creating three templates objects in your Object Model...
 <template name="samplePage">
   <div id="samplePage" class="page">
     <ul class="nav nav-tabs">
-      <li id="firstPanelTab" class="{{firstPanelActive}}"><a href="#firstPanel" data-toggle="tab">First</a></li>
-      <li id="secondPanelTab" class="{{secondPanelActive}}"><a href="#secondPanel" data-toggle="tab">Second</a></li>
+      <li id="firstPanelTab"><a href="#firstPanel">First</a></li>
+      <li id="secondPanelTab"><a href="#secondPanel">Second</a></li>
     </ul>
     
     <div id="firstPanel" class="{{firstPanelVisibility}}">
@@ -56,20 +77,6 @@ Template.secondPanel.secondPanelVisibility = function(){
     return "hidden";
   }
 }
-Template.firstPanel.firstPanelActive = function(){
-  if(Session.get('selectedPanel') === 1){
-    return "active panel-tab";
-  }else{
-    return "panel-tab";
-  }
-}
-Template.secondPanel.secondPanelActive= function(){
-  if(Session.get('selectedPanel') === 2){
-    return "active panel-tab";
-  }else{
-    return "panel-tab";
-  }
-}
 ````
 
 #### View   
@@ -81,5 +88,30 @@ Create classes in your View.
 }
 .hidden{
   visibility: visible;
+}
+````
+
+
+####  Active Tab
+For added effect, you can extend this pattern by injecting classes to indicate the active 
+````html
+<li id="firstPanelTab" class="{{firstPanelActive}}"><a href="#firstPanel">First</a></li>
+<li id="secondPanelTab" class="{{secondPanelActive}}"><a href="#secondPanel">Second</a></li>
+````
+
+````js
+Template.firstPanel.firstPanelActive = function(){
+  if(Session.get('selectedPanel') === 1){
+    return "active";
+  }else{
+    return "";
+  }
+}
+Template.secondPanel.secondPanelActive= function(){
+  if(Session.get('selectedPanel') === 2){
+    return "active";
+  }else{
+    return "";
+  }
 }
 ````
