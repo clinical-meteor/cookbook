@@ -1,7 +1,8 @@
 Tabbed Workflow  
 =========================================
 
-So, you want to create 
+So, you want to create some tabbed workflow within a particular page.  
+
 ### The Angular/Ruby Method
 ````html
 <template name="samplePage">
