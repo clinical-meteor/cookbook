@@ -17,3 +17,50 @@ Mesosphere
 https://atmosphere.meteor.com/package/Mesosphere
 
 
+#### Basic Example  
+
+````html
+ <div class="form-group {{fooValidationColor}}">
+   <label id="fooLabel" for="fooInput" class="control-label">{{fooValidationText}}</label>
+   <input id="fooInput" type="text" class="form-control" placeholder="..." value="{{foo}}">
+ </div>
+````
+
+````js
+Session.setDefault('fooValidation', undefined);
+
+Template.samplePage.events({
+  'keyup #fooInput':function(){
+    if($('#fooInput').val() === ""){
+      Session.set('fooValidation', null);
+    }else{
+      if(Campaigns.find({name: $('#fooInput').val()}).count() > 0){
+        Session.set('fooValidation', true);
+      }else{
+        Session.set('fooValidation', false);
+      }      
+    }
+  }
+});
+
+
+Template.samplePage.helpers({
+  fooValidationText:function(){
+    if(Session.get('fooValidation')){
+      return "That value is already taken.";
+    }else{
+      return "Enter Foo Value";
+    }
+  },
+  fooValidationColor:function(){
+    if(Session.get('fooValidation') === true){
+      return "has-error";
+    }else if(Session.get('fooValidation') === false){
+      return "has-success";
+    }else{
+      return "";
+    }
+  }
+});
+
+````
