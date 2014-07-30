@@ -10,9 +10,6 @@ https://mail.google.com/mail/u/0/#search/%5Bmeteor%5D/13cfcabb30e80135
 **Date/Time - Moment**  
 https://github.com/possibilities/meteor-moment
 
-**REST Interface - Meteor-CollectionApi**  
-https://github.com/crazytoad/meteor-collectionapi
-
 **Clustering - Meteor-Cluster**    
 https://github.com/arunoda/meteor-cluster
 
@@ -24,9 +21,6 @@ https://atmosphere.meteor.com/package/device-detection
 
 **Browser Detection**  
 https://atmosphere.meteor.com/package/browser-detection  
-
-**Mocha-Web**  
-https://atmosphere.meteor.com/package/mocha-web   
 
 **Event Hooks**  
 https://atmosphere.meteor.com/package/event-hooks  
