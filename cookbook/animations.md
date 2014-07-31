@@ -35,6 +35,8 @@ https://github.com/Famous/guides/blob/master/dev/2014-04-09-render-tree.md
 Famo.us Documentation  
 https://github.com/Famous/guides/tree/master/dev
 
+### Advanced Interaction Design  
+http://www.google.com/design/spec/animation/meaningful-transitions.html#meaningful-transitions-visual-continuity
 
 -----------------------------------------
 
