@@ -105,9 +105,9 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
-
 [Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service)  
 [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription)  
+[Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing)  
 [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)  
 [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)  
 [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master)  
