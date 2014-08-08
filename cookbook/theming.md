@@ -2,7 +2,6 @@ Theming
 =================
 
 
-**Q:  How do I add themes to my application?**  
 Theming in Meteor is beautiful, because we have CSS precompilers at our disposal.  Start off with an html template: 
 
 ````html
