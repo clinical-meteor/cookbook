@@ -9,7 +9,7 @@ Horizontal Scaling
 
 
 =========================================
-Configuring a Replica Set to Use Oplogging
+#### Configuring a Replica Set to Use Oplogging
 
 ````sh
 mongo
@@ -20,7 +20,7 @@ PRIMARY> show users
 ````
 
 =========================================
-Oplog Upstart Script
+#### Oplog Upstart Script
 
 ````sh
 start on started mountall
