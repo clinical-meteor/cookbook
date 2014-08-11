@@ -9,6 +9,55 @@ Horizontal Scaling
 
 
 =========================================
+#### Connecting to an External Databae with MONGO_URL
+
+But if you're looking to do it yourself, you'll need to separate out your application layer from your database layer, and that means specifying the MONGO_URL.  Which means running your app through the bundle command, uncompressing it, setting environment variables, and then launching the project as a node app.  Here's how...  
+
+````sh
+#make sure you're running the node v0.10.21 or later
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n 0.10.21
+
+# bundle the app
+cd utility-collection-explorer
+sudo mrt bundle collectionExplorer.tar.gz
+
+# move the bundle to where it's going to be deployed; then unzip
+mv collectionExplorer.tar.gz ..
+cd ..
+mv collectionExplorer deployParentDirectory
+cd deployParentDirectort
+gunzip collectionExplorer.tar.gz
+tar -xvf collectionExplorer.tar.gz
+
+# make sure fibers is installed, as per the README
+rm -r programs/server/node_modules/fibers/
+npm install fibers@1.0.1
+export MONGO_URL='mongodb://192.168.0.38:27017/webusers'
+export PORT='3000'
+export ROOT_URL='http://thinaire.net'
+
+# run the site
+node main.js
+````
+
+===============================
+#### Replica Set Configuration 
+
+Then go into the mongo shell and initiate the replica set, like so:
+
+````
+mongo
+
+> rs.initiate()
+PRIMARY> rs.add("mongo-a")
+PRIMARY> rs.add("mongo-b")
+PRIMARY> rs.add("mongo-c")
+PRIMARY> rs.slaveOk()
+````
+
+=========================================
 #### Configuring a Replica Set to Use Oplogging
 
 ````sh
@@ -18,6 +67,7 @@ PRIMARY> use admin
 PRIMARY> db.addUser({user:"oplogger",pwd:"YOUR_PASSWORD",roles:[],otherDBRoles:{local:["read"]}});
 PRIMARY> show users
 ````
+
 
 =========================================
 #### Oplog Upstart Script
@@ -43,3 +93,8 @@ script
     exec /usr/local/bin/node /var/www/production/main.js >> /var/log/node.log 2>&1
 end script
 ````
+
+
+ 
+
+
