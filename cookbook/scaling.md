@@ -9,6 +9,16 @@ Scaling Quickstart with Platform as a Service
 
 
 =========================================
+#### Create Your Application  
+
+````sh
+meteor create helloworld
+cd helloworld
+meteor
+````
+
+
+=========================================
 #### Scaling the Application Layer (PaaS)
 
 Okay, so you're starting to talk about separating your application layer from your database layer, and getting things ready for scale-out.  If you're looking for something quick and simple, try Modulus.io:  
