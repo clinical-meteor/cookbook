@@ -2,9 +2,6 @@ Debugging
 ============================================
 
 
-============================================
-#### Client Side Debugging with Browser Debuggers
-
 Both Chrome and Safari have built in debuggers.  With Chrome, all you have to do is right-click on a web page and 'Inspect Element'.  With Safari, you'll have to go into Preferences > Advanced and click on 'Show Develop menu in menu bar'.  With Firefox, you'll need to [install Firebug](https://getfirebug.com/)
 
 
