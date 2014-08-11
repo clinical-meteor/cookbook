@@ -1,4 +1,4 @@
-Scaling Quickstart with Platform as a Service (PaaS)
+Scaling Quickstart with Platform as a Service
 =========================================
 
 [Oblog Observe Driver](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver)  
