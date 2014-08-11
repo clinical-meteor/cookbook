@@ -28,6 +28,6 @@ sudo modulus deploy
 #### Scaling the Databaes Layer (PaaS)
 
 
-[app.compose.io](https://www.compose.io/)
+[app.compose.io (formerly MongoHQ)](https://www.compose.io/)
 
 
