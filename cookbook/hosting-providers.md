@@ -18,3 +18,7 @@ The last we heard, the following Nitrous.io command could be used to create a Me
 ````
 parts install meteor
 ````
+
+
+Cloud9 has also recently announced Meteor support.
+[c9.io](https://c9.io/)
