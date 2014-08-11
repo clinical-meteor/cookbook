@@ -1,5 +1,5 @@
 
-Replica Sets
+Replica Set Quickstart
 ====================================
 
 
@@ -86,6 +86,3 @@ mongo
   PRIMARY> rs.slaveOk()
 ````
 
-Oplog Tailing
-===============================
-http://blog.mongolab.com/2014/07/tutorial-scaling-meteor-with-mongodb-oplog-tailing/
