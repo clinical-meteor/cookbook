@@ -31,7 +31,7 @@ respawn limit 99 5
 
 script
     # our example assumes you're using a replica set and/or oplog integreation
-    export MONGO_URL='mongodb://mongo-a:27017,mongo-b:27017,mongo-c:27017/?replicaSet=meteor'
+    export MONGO_URL='mongodb://mongo-a:27017,mongo-b:27017,mongo-c:27017/meteor'
 
     # here we configure our OPLOG URL
     export MONGO_OPLOG_URL='mongodb://oplogger:YOUR_PASSWORD@mongo-a:27017,mongo-b:27017,mongo-c:27017/local?authSource=admin'
@@ -57,7 +57,7 @@ respawn limit 99 5
 
 script
     # note how we're extending the MONGO_URL with a readPreference
-    export MONGO_URL='mongodb://mongo-a:27017,mongo-b:27017,mongo-c:27017/?replicaSet=meteor&readPreference=secondaryPreferred'
+    export MONGO_URL='mongodb://mongo-a:27017,mongo-b:27017,mongo-c:27017/meteor&readPreference=secondaryPreferred'
 
     export MONGO_OPLOG_URL='mongodb://oplogger:YOUR_PASSWORD@mongo-a:27017,mongo-b:27017,mongo-c:27017/local?authSource=admin'
     export ROOT_URL='http://myapp.mydomain.com'
