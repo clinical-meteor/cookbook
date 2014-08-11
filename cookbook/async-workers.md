@@ -2,7 +2,7 @@ Async Worker Scripts
 ======================================
 
 
-Excellent writeup by Kuba Wyrobek on StackOverflow
+Excellent writeup by Kuba Wyrobek on StackOverflow   
 http://stackoverflow.com/questions/24743402/how-to-get-an-async-data-in-a-function-with-meteor
 
 
