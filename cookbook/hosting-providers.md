@@ -20,5 +20,5 @@ parts install meteor
 ````
 
 
-Cloud9 has also recently announced Meteor support.
+Cloud9 has also recently announced Meteor support.  
 [c9.io](https://c9.io/)
