@@ -1,8 +1,14 @@
+Debugging
+============================================
+
+
+============================================
 #### Client Side Debugging with Browser Debuggers
 
 Both Chrome and Safari have built in debuggers.  With Chrome, all you have to do is right-click on a web page and 'Inspect Element'.  With Safari, you'll have to go into Preferences > Advanced and click on 'Show Develop menu in menu bar'.  With Firefox, you'll need to [install Firebug](https://getfirebug.com/)
 
 
+============================================
 #### Add Debugger Breakpoints to your App
 
 You'll need to add ``debugger`` statements to your code:
@@ -14,6 +20,7 @@ Meteor.methods({
   }})
 ````
 
+============================================
 #### Server Side Debugging with Node Inspector
 
 For server side debugging, you'll need to use a tool like Node Inspector.  Before you get started, check out some of these useful tutorials.  
@@ -45,6 +52,8 @@ http://localhost:8080/debug?port=5858
 
 [Walkthrough with Screenshots of Using Node Inspector with Meteor](https://github.com/meteor/meteor/issues/1411)  
 
+
+============================================
 #### Server Side Debugging with npm debug  
 
 Besides Node Inspector, some people have reported success with a npm utility called ``debug``.  
