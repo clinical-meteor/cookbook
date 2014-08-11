@@ -15,7 +15,7 @@ Horizontal Scaling
 mongo
 
 PRIMARY> use admin
-PRIMARY> db.addUser({user:'oplogger',pwd:'YOUR_PASSWORD',roles:[],otherDBRoles:{local:["read"]}})
+PRIMARY> db.addUser({user:"oplogger",pwd:"YOUR_PASSWORD",roles:[],otherDBRoles:{local:["read"]}});
 PRIMARY> show users
 ````
 
