@@ -96,11 +96,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages-we-love.md)  
 
-**In Progress**  
-- [Async & Futures](https://gist.github.com/possibilities/3443021)  
-- [Database Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-migrations.md)  
-- [Data Shaping](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-shaping.md)
-
 
 
 
