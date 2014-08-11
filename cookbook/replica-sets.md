@@ -77,11 +77,12 @@ Then go into the mongo shell and initiate the replica set, like so:
 
 ````
 mongo
+
   > rs.initiate()
-  > rs.add("mongo-a")
-  > rs.add("mongo-b")
-  > rs.add("mongo-c")
-  > rs.slaveOk()
+  PRIMARY> rs.add("mongo-a")
+  PRIMARY> rs.add("mongo-b")
+  PRIMARY> rs.add("mongo-c")
+  PRIMARY> rs.slaveOk()
 ````
 
 Oplog Tailing
