@@ -57,6 +57,12 @@ Todos = new GroundDB("todos")
   - mrt add bowser  
   - mrt add device-detection  
   - mrt add platform.js  
+- Multitouch  
+  - mrt add hammer  
+- Responsive Design  
+  - Bootstrap-3  
+  - LESS  
+  - Media Style Sheets  
 - Hardware Layer  
   - Cordova/Phonegap  
     - Riovine Mobile Container  
@@ -65,10 +71,6 @@ Todos = new GroundDB("todos")
     - [Maps](https://github.com/wf9a5m75/phonegap-googlemaps-plugin)    
   - Push Notifications  
     - Alerts  
-- Responsive Design  
-  - Bootstrap-3  
-  - LESS  
-  - Media Style Sheets  
 - Native Response - 60fps  
   - mrt add famono  
   - mrt add famo-components  
@@ -77,5 +79,3 @@ Todos = new GroundDB("todos")
     - Global Subscriptions  
     - Surface Templates  
     - Session Variables   
-- Multitouch  
-  - mrt add hammer  
