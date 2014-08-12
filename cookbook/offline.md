@@ -43,6 +43,20 @@ UI.body.getOnlineColor = function(){
 ````
 
 ----------------------------------
+####  Enable Appcache  
+
+One of the easier steps is adding the appcache.  Appcache will allow your application content to load even when there is no internet access.  You won't be able to get any data from your mongo servers, but the static content and assets will be available offline.
+
+````sh
+meteor add appcache
+````
+
+----------------------------------
+####  Enable GroundDB
+
+Next, we want to get some of our dynamic data to be stored offline.  
+
+----------------------------------
 ####  Overview
 
 - Offline Access  
