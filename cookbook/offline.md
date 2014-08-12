@@ -1,8 +1,36 @@
-## Offline
+Offline
+============================================
 
 
-  
-[Latest on Cordova/PhoneGap](https://groups.google.com/forum/#!searchin/meteor-talk/morten$20meteor$20architecture$20build/meteor-talk/sZLCHH1Hd3I/wyTf21_smzkJ)
+
+  [Latest on Cordova/PhoneGap](https://groups.google.com/forum/#!searchin/meteor-talk/morten$20meteor$20architecture$20build/meteor-talk/sZLCHH1Hd3I/wyTf21_smzkJ)
+
+----------------------------------
+####  Meteor.status()
+
+````js
+UI.body.getOnlineStatus = function(){
+  return Meteor.status().status;
+};
+UI.body.getOnlineColor = function(){
+  if(Meteor.status().status === "connected"){
+    return "green";
+  }else if(Meteor.status().status === "waiting"){
+    return "orange";
+  }else{
+    return "red";
+  }
+};
+````
+
+````html
+  <div id="onlineStatus" class="alert {{getOnlineColor}}">
+    {{getOnlineStatus}}
+  </div>
+````
+
+----------------------------------
+
 
 - Offline Access  
   - Appcache - Caches Application Static Code  
