@@ -35,6 +35,16 @@ meteor add appcache
 
 Next, we want to get some of our dynamic data to be stored offline.  
 
+
+````js
+
+//Lists = new Meteor.Collection("lists");
+//Todos = new Meteor.Collection("todos")
+
+Lists = new GroundDB("lists");
+Todos = new GroundDB("todos")
+````
+
 ----------------------------------
 ####  Overview
 
