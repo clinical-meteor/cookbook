@@ -43,10 +43,8 @@ If these things are unfamiliar and don't seem like second-nature to you, it mean
 ===========================
 ####Kadira
 
-Okay... so, you've compressed all your images, linted and optimized your javascript, reudced resource bottlenecks by using servers with SSD drives, audited all of your 3rd party libraries, used content-delivery-networks to cache image assets as close to your users as possible, written your application with timeouts and circuit-breakers... you've done all that, and your app is *still* slow.  It's not the website.  It's something with Meteor.  And you need an industrial-strength solution.
+Okay... so, you've compressed all your images, linted and optimized your javascript, reduced resource bottlenecks by using servers with SSD drives, audited all of your 3rd party libraries, used content-delivery-networks to cache image assets as close to your users as possible, written your application with timeouts and circuit-breakers... you've done all that, and your app is *still* slow.  It's not the website.  It's something with Meteor.  And you need an industrial-strength solution.
 
-
-
-https://kadira.io/
+You need [Kadira](https://kadira.io/)
 
 ![Kadira Screenshot](https://kadira.io/images/intro.png)  
