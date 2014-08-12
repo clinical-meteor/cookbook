@@ -7,6 +7,8 @@ For some review on this topic, start by reading the [Latest on Cordova/PhoneGap]
 ----------------------------------
 ####  Meteor.status()
 
+The first thing to do when taking your Meteor app offline is to create some visual indication of whether the local client app is connected to the server or not.  There are lots of ways to do this, but the simplest way is to probably do something like this:
+
 ````js
 UI.body.getOnlineStatus = function(){
   return Meteor.status().status;
@@ -28,6 +30,17 @@ UI.body.getOnlineColor = function(){
   </div>
 ````
 
+````css
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+.orange{
+  color: darkorange;
+}
+````
 
 ----------------------------------
 ####  Overview
