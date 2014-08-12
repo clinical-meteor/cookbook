@@ -12,12 +12,12 @@ Tutorials on Writing Performant Javascript
 [Performance Tips for JavaScript in V8](http://www.html5rocks.com/en/tutorials/speed/v8/)  
 [10 Javascript Performance Boosting Tip](http://jonraasch.com/blog/10-javascript-performance-boosting-tips-from-nicholas-zakas)  
 [Write Efficient JavaScript](http://oreilly.com/server-administration/excerpts/even-faster-websites/writing-efficient-javascript.html)  
-
+[Improving the Performance of your Meteor JS projects](http://projectricochet.com/blog/meteor-js-performance#.U-lvxo1dWnD)
 
 ===========================
 Designing and Deploying Production Ready Software  
 
-Also, all the best practices of typical web architecture still apply.  I recommend Michael Nygard's excelent book [Release It!  Design and Deploy Production-Ready Software](http://www.amazon.com/Release-It-Production-Ready-Pragmatic-Programmers/dp/0978739213).  It may be writen in Java, not Javascript, but it's coverage of patterns and antipatterns in designing large websites is invaluable. 
+Also, all the best practices of typical web architecture still apply.  As such, I recommend Michael Nygard's excellent, excellent book [Release It!  Design and Deploy Production-Ready Software](http://www.amazon.com/Release-It-Production-Ready-Pragmatic-Programmers/dp/0978739213).  Writing your app in Meteor doesn't absolve you of auditing third party libraries, writing circuit breakers, wrapping calls in timeouts, monitoring your resource pools, and all the rest.  If you want your application to perform well, you need to make sure you're using stability patterns, and avoiding anti-patterns.  
 
 **Stability Patterns**
 - Timeouts
@@ -38,21 +38,14 @@ Also, all the best practices of typical web architecture still apply.  I recomme
 - Excessive White Space
 - Data Eutropification
 
+If these things are unfamiliar and don't seem like second-nature to you, it means that you haven't brought bigger production systems online.  Buy a copy of the book.  It will be time and money well spent.  
+
 ===========================
 Kadira
 
+Okay... so, you've compressed all your images, linted and optimized your javascript, reudced resource bottlenecks by using servers with SSD drives, audited all of your 3rd party libraries, used content-delivery-networks to cache image assets as close to your users as possible, written your application with timeouts and circuit-breakers... you've done all that, and your app is *still* slow.  It's not the website.  It's something with Meteor.  And you need an industrial-strength solution.
+
+
 
 https://kadira.io/
-
-
-#### Help!  My application has gotten slow and sluggish!  
-The good folks over at Project Richochet have a great writeup on this...  
-http://projectricochet.com/blog/meteor-js-performance#.Uov3V2Tk_fi  
-
-Also, try the following things:  
-- install the appcache package
-- compress your images
-- exclude the .meteor directory from your IDE
-- use SSD drives to eliminate disk IO times to the cache
-- host image assets on another server and hyperlink
 
