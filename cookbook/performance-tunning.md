@@ -48,3 +48,5 @@ Okay... so, you've compressed all your images, linted and optimized your javascr
 You need [Kadira](https://kadira.io/)
 
 ![Kadira Screenshot](https://kadira.io/images/intro.png)  
+
+Kadira is a performance profiling application that can do wonders for optimizing your application.  But it's also an advanced tool that's maybe best used when your application gets a little larger and you're trying to get it into production.  When you start using it, your knowledge of Meteor will drastically improve.  Yet, at the same time, you'll also need an application of sufficient complexity for it to be useful.  And you'll need to make sure that the issues are with Meteor, and not all the other parts of your application.  For those reasons, it's a tool that's perhaps more useful at the middle and end of your development process, rather than at the beginning.
