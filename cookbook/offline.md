@@ -11,6 +11,10 @@ For some review on this topic, start by reading the [Latest on Cordova/PhoneGap]
   - [Meteor.status()](http://docs.meteor.com/#meteor_status)  
   - Appcache - Caches Application Static Code  
   - GroundDB - Caches Application Data
+- Responsive Design  
+  - Bootstrap-3  
+  - LESS  
+  - Media Style Sheets  
 - Device Detection (pick one)  
   - mrt add browser-detection  
   - mrt add bowser  
@@ -18,10 +22,6 @@ For some review on this topic, start by reading the [Latest on Cordova/PhoneGap]
   - mrt add platform.js  
 - Multitouch  
   - mrt add hammer  
-- Responsive Design  
-  - Bootstrap-3  
-  - LESS  
-  - Media Style Sheets  
 - Hardware Layer  
   - Cordova/Phonegap  
     - Riovine Mobile Container  
