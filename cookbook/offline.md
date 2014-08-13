@@ -5,6 +5,41 @@ Offline Meteor Apps
 For some review on this topic, start by reading the [Latest on Cordova/PhoneGap](https://groups.google.com/forum/#!searchin/meteor-talk/morten$20meteor$20architecture$20build/meteor-talk/sZLCHH1Hd3I/wyTf21_smzkJ).
 
 ----------------------------------
+####  Overview
+
+- Offline Access  
+  - [Meteor.status()](http://docs.meteor.com/#meteor_status)  
+  - Appcache - Caches Application Static Code  
+  - GroundDB - Caches Application Data
+- Device Detection (pick one)  
+  - mrt add browser-detection  
+  - mrt add bowser  
+  - mrt add device-detection  
+  - mrt add platform.js  
+- Multitouch  
+  - mrt add hammer  
+- Responsive Design  
+  - Bootstrap-3  
+  - LESS  
+  - Media Style Sheets  
+- Hardware Layer  
+  - Cordova/Phonegap  
+    - Riovine Mobile Container  
+    - Meteor Architecture Build Pipeline  
+  - Cordova Plugins  
+    - [Maps](https://github.com/wf9a5m75/phonegap-googlemaps-plugin)    
+  - Push Notifications  
+    - Alerts  
+- Native Response - 60fps  
+  - mrt add famono  
+  - mrt add famo-components  
+  - Scrolling  
+  - Page Transitions  
+    - Global Subscriptions  
+    - Surface Templates  
+    - Session Variables   
+
+----------------------------------
 ####  Meteor.status()
 
 The first thing to do when taking your Meteor app offline is to create some visual indication of whether the local client app is connected to the server or not.  There are lots of ways to do this, but the simplest way is to probably do something like this:
@@ -45,37 +80,3 @@ Lists = new GroundDB("lists");
 Todos = new GroundDB("todos")
 ````
 
-----------------------------------
-####  Overview
-
-- Offline Access  
-  - Appcache - Caches Application Static Code  
-  - GroundDB - Caches Application Data
-  - [Meteor.status()](http://docs.meteor.com/#meteor_status)  
-- Device Detection (pick one)  
-  - mrt add browser-detection  
-  - mrt add bowser  
-  - mrt add device-detection  
-  - mrt add platform.js  
-- Multitouch  
-  - mrt add hammer  
-- Responsive Design  
-  - Bootstrap-3  
-  - LESS  
-  - Media Style Sheets  
-- Hardware Layer  
-  - Cordova/Phonegap  
-    - Riovine Mobile Container  
-    - Meteor Architecture Build Pipeline  
-  - Cordova Plugins  
-    - [Maps](https://github.com/wf9a5m75/phonegap-googlemaps-plugin)    
-  - Push Notifications  
-    - Alerts  
-- Native Response - 60fps  
-  - mrt add famono  
-  - mrt add famo-components  
-  - Scrolling  
-  - Page Transitions  
-    - Global Subscriptions  
-    - Surface Templates  
-    - Session Variables   
