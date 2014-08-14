@@ -80,3 +80,8 @@ Lists = new GroundDB("lists");
 Todos = new GroundDB("todos")
 ````
 
+----------------------------------
+####  Responsive Design  
+
+
+
