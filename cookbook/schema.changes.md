@@ -5,6 +5,7 @@ It's often necessary to run maintenance scripts on your database.  Fields get re
 
 The 'how' is a little more unfamiliar.  For those people accustomed to SQL functions, the following database scripts will look strange.  But notice how they're all in javascript, and how they're using the same API as we use throughout Meteor, on both the server and client.  We have a consistent API through our database, server, and client.  Once you learn the syntax, you'll never want to go back to SQL.
 
+=================================
 
 #### Add Record Version Field To All Records in a Collection
 ````js
