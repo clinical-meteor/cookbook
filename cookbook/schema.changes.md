@@ -27,7 +27,7 @@ db.posts.find().forEach(function(doc){
 
 #### Rename Collection
 ````js
-db.originalName.renameCollection("newName );
+db.originalName.renameCollection("newName" );
 ````
 
 #### Find Field Containing Specific String
