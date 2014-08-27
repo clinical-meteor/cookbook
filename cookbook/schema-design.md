@@ -44,7 +44,7 @@ And here are a few rules of thumb for database field naming conventions.
   userName
 ````
 
-The camelCase solution is maybe a little better if you want tight databinding, and for your database fields to conform to camelCase naming conventions in the rest of your app.  
+snake_case is better if you're new to Meteor, and want a clear distinction between the database layer and application layer.  cameCase is better if you're a little more experienced, and want to be clever with dynamically generating templates and object attributes.  
 
 
 
