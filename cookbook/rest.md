@@ -5,8 +5,8 @@ Note:  I haven't gone through and tried this yet, but it's on my to-do list.  He
 
 #### Server Side REST APIs
 
-https://github.com/EventedMind/iron-router/blob/master/lib/server/router.js 
-https://github.com/nooitaf/meteor-cfs-public-folder/blob/master/cfs-public-folder.js  
+https://github.com/EventedMind/iron-router/blob/master/lib/server/router.js   
+https://github.com/nooitaf/meteor-cfs-public-folder/blob/master/cfs-public-folder.js   
 
 
 ````js
