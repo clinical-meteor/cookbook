@@ -1,4 +1,6 @@
-## Schema Design 
+Schema Design  
+====================================
+
 The bads news:  schema design totally depends on the kind of application you're going to build, so it totally varies.
 
 Further more, because Mongo is denormalized, we're not going to go through [database normalization](http://en.wikipedia.org/wiki/Database_normalization), meaning there aren't any formal schemas like [First Normal Form (1NF)](http://en.wikipedia.org/wiki/First_normal_form) or [Second Normal Form (2NF)](http://en.wikipedia.org/wiki/Second_normal_form). So, toss everything you know about 1NF and 2NF and keeping data DRY out the window.  
