@@ -15,7 +15,7 @@ Instead of relying on formal schemas, I'm just going to share some experience on
 5.  If its not worth storing a billion records, odds are that it doesn't actually need to be a collection.  
 6.  Collections with records containing only 2 or 3 fields are suspicious in the Mongo world.  
 7.  As are collections with only a dozen records.  
-8.  The exception are collections that contain unique configuration information, such as clients or stores.
+8.  The exception are collections that contain unique configuration information.
 9.  If a table is so small it can be converted into an enum, do so.    
 10.  Consolidate and merge tables when possible.  
 11.  Think in terms of document schemas, rather than table schemas.  
