@@ -2,6 +2,15 @@
 
 Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from over 18 months of emails and discussions from the [meteor] google group and my experiences rolling out packages and apps.  These documents are intended for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The focus is on helping the user grow accustomed to functional programming using document oriented databases.
 
+## Breaking News  
+
+A lot of people have reported problems with the auto-update feature in Meteor 0.9.  If you have an application in production that you'd like to prevent from auto-updating, there's reports of the following environment variable doing just that.
+
+````js
+export METEOR_TEST_UPDATE_MANIFEST="offline"
+````
+
+
 ## Index  
 
 - [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
