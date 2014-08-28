@@ -4,7 +4,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
 
 ## Breaking News  
 
-A lot of people have reported problems with the auto-update feature in Meteor 0.9.  If you have an application in production that you'd like to prevent from auto-updating, there's reports of the following environment variable doing just that.
+A lot of people have reported problems with the auto-update feature in Meteor 0.9.  If you have an application in production that you'd like to prevent from auto-updating, there's reports that the following environment variable will ensure that your app doesn't start into the auto-update script.
 
 ````js
 export METEOR_TEST_UPDATE_MANIFEST="offline"
