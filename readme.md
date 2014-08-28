@@ -10,7 +10,8 @@ A lot of people have reported problems with the auto-update feature in Meteor 0.
 export METEOR_TEST_UPDATE_MANIFEST="offline"
 ````
 And if you need to upgrade your packages to 0.9, here's a short tutorial:  
-https://hackpad.com/Add-Meteor-0.9-support-for-your-Existing-Packages-P0R7y1PiXlu  
+[Add Meteor 0.9 support for your Existing Packages](https://hackpad.com/Add-Meteor-0.9-support-for-your-Existing-Packages-P0R7y1PiXlu)  
+  
 
 
 ## Index  
