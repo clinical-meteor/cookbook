@@ -95,7 +95,7 @@ meteor add raix:grounddb
 //Todos = new Meteor.Collection("todos")
 
 Lists = new GroundDB("lists");
-Todos = new GroundDB("todos")
+Todos = new GroundDB("todos");
 ````
 
 ----------------------------------
