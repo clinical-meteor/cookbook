@@ -5,7 +5,7 @@ Offline Meteor Apps
 For some review on this topic, start by reading the [Latest on Cordova/PhoneGap](https://groups.google.com/forum/#!searchin/meteor-talk/morten$20meteor$20architecture$20build/meteor-talk/sZLCHH1Hd3I/wyTf21_smzkJ).
 
 ----------------------------------
-####  Overview
+####  Mobile Overview
 
 - Offline Access  
   - [Meteor.status()](http://docs.meteor.com/#meteor_status)  
