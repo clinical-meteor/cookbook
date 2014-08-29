@@ -51,7 +51,7 @@ UI.body.getOnlineStatus = function(){
 ````
 
 ````html
-  <div id="onlineStatus"">
+  <div id="onlineStatus">
     {{getOnlineStatus}}
   </div>
 ````
