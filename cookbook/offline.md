@@ -85,7 +85,7 @@ meteor add appcache
 
 Next, we want to get some of our dynamic data to be stored offline.  
 ````sh
-meteor add grounddb
+meteor add raix:grounddb
 ````
 
 
