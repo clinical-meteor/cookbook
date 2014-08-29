@@ -48,14 +48,29 @@ The first thing to do when taking your Meteor app offline is to create some visu
 UI.body.getOnlineStatus = function(){
   return Meteor.status().status;
 };
+UI.body.getOnlineColor = function(){
+  if(Meteor.status().status === "connected"){
+    return "green";
+  }else{
+    return "orange";
+  }
+};
 ````
 
 ````html
-  <div id="onlineStatus">
+  <div id="onlineStatus" class="{{getOnlineColor}}">
     {{getOnlineStatus}}
   </div>
 ````
 
+````less
+.green{
+  color: green;
+}
+.orange{
+  color: orange;
+}
+````
 ----------------------------------
 ####  Enable Appcache  
 
