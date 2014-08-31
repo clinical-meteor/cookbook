@@ -50,7 +50,7 @@ Make sense?  What's happening here is that a Meteor application has four or five
 
 
  
-### Iron Router
+### Event Cycle with Iron Router
 
 When you add Iron Router, it will add event hooks to the event cycle, and change the rendering cycle to look like the following:  
 
