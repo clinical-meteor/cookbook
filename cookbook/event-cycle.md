@@ -73,8 +73,8 @@ Meteor.startup();
           // F: and filled in with data 
           Template.foo.my_custom_field
 
-           // G: route rendering finished
-           Router.onAfterAction()
+            // G: route rendering finished
+            Router.onAfterAction()
   
       // D:  templates will finalize
       // we could also call this F, if we were doing things sequentially or imperatively
