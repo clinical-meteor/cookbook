@@ -77,13 +77,9 @@ Meteor.startup();
             Router.onAfterAction()
   
       // D:  templates will finalize
-      // we could also call this F, if we were doing things sequentially or imperatively
-      // but we call it C to represent the functional scope we're in
       Template.foo.destroyed
 
   // B:  and, eventually, the document will unload
-  // we could also call this G, if we were doing things sequentially or imperatively
-  // but we call it B to represent the functional scope we're in
   document.onunload
   
 // there is no matching Meteor.shutdown()
