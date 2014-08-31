@@ -49,9 +49,50 @@ A { B { C { D { E | E | E } C } B { C { D { E | E | E } B
 Make sense?  What's happening here is that a Meteor application has four or five 'layers' or 'scopes' that it needs to create to get the reactive rendering templates working.  And each scope has instructions to create it's children scopes.  So, as a person navigates through their application, they'll be building up and tearing down templates, navigating pages, and the like, and people will be going up and down these scopes.  
 
 
+ 
+### Iron Router
+
+When you add Iron Router, it will add event hooks to the event cycle, and change the rendering cycle to look like the following:  
+
+````js
+// A: meteor will startup
+Meteor.startup();  
+
+  // B: a page will load
+  document.onload
+   
+   // C:  route rendering begins
+   Router.onBeforeAction()
+
+      // D: templates be created
+      Template.foo.created
+  
+        // E: and then rendered
+        Template.foo.rendered
+  
+          // F: and filled in with data 
+          Template.foo.my_custom_field
+
+           // G: route rendering finished
+           Router.onAfterAction()
+  
+      // D:  templates will finalize
+      // we could also call this F, if we were doing things sequentially or imperatively
+      // but we call it C to represent the functional scope we're in
+      Template.foo.destroyed
+
+  // B:  and, eventually, the document will unload
+  // we could also call this G, if we were doing things sequentially or imperatively
+  // but we call it B to represent the functional scope we're in
+  document.onunload
+  
+// there is no matching Meteor.shutdown()
+````
+
+
 ### Event Hooks  
 
-Check out the event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.
+You can extend the event-cycle even further with the excellent event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.  Two highly recommended packages:  
 
 Event Hooks  
 https://atmosphere.meteor.com/package/event-hooks  
