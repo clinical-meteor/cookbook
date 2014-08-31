@@ -19,7 +19,7 @@ Meteor.startup();
       Template.foo.rendered
 
         // E: and filled in with data 
-        Template.foo.my_custom_field
+        Template.foo.my_custom_helper
 
     // C:  templates will finalize
     // we could also call this F, if we were doing things sequentially or imperatively
@@ -71,7 +71,7 @@ Meteor.startup();
         Template.foo.rendered
   
           // F: and filled in with data 
-          Template.foo.my_custom_field
+          Template.foo.my_custom_helper
 
             // G: route rendering finished
             Router.onAfterAction()
