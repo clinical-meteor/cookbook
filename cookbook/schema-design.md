@@ -7,6 +7,8 @@ Further more, because Mongo is denormalized, we're not going to go through [data
 
 However, the good news is that we **do** have a whole bunch of tools from the field of [cladistics](http://en.wikipedia.org/wiki/Cladistics) at our disposal for analyzing tree structures (which JSON records are structured as), such as [variety.js](https://github.com/variety/variety) and [schema.js](http://skratchdot.com/projects/mongodb-schema/).  If you've never studied cladistics...  well, lets just say that there is a *lot* of math behind the branching of trees, and they're very well known algorithms.  It's an entire area of study from the field of biology.  So plenty of things to learn!
 
+
+
 ####General Design Considerations  
 Instead of relying on formal schemas, I'm just going to share some experience on how I go about designing *my* collection schemas, having worked with document oriented database for some 10 odd years.  So, here are few guidelines I use nowdays when designing data storage collections:
 
@@ -24,6 +26,8 @@ Instead of relying on formal schemas, I'm just going to share some experience on
 12.  Collections schemas should be about performance.  
 13.  Document schemas are where you want to do your data modeling.  
 
+For more details, I highly recommend the following article on NoSQL data modeling techniques:  
+[NoSQL Data Modeling Techniques](http://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/)   
 
 ####Naming Conventions  
 And here are a few rules of thumb for database field naming conventions.  
