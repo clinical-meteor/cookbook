@@ -26,8 +26,11 @@ Here are some general tips and advice on writing Meteor applications.
     // a valid variable assignment that can be shared accross files
     foo = true; 
     
-    // entropy rich function name that is unlikely to case a name collission
-    toggleSessionObjects(objectId)
+    // reactive session variables that can also be shared across files
+    Session.set('is_sidebar_visible', true)
+
+    // entropy rich function name that is unlikely to cause a name collission
+    toggleSessionObjects(objectId);
     ````
 
 #### Less Objects, More Functions 
