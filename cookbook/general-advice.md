@@ -36,6 +36,19 @@ Here are some general tips and advice on writing Meteor applications.
 #### Less Objects, More Functions 
 - Rethink your usage of objects and inheritance.  Javascript is a functional language, at its core.  And, if you recall your functional programming, you'll remember that Monads are the functional equivalent to Classes.  Creating class hierarchies is a good way to get frustrated with Meteor.  You may be tempted to use Coffeescript because it supports Classes.  Just be aware that most of what you're trying to do with class inheritance, to create various types of widgets, can be done with a monad decorator pattern.  Generally speaking, the fewer objects you create on the heap, the less memory leaks you'll have; and the fewer class abstractions you have, the less speghetti code you'll have.  Less memory leaks and less speghetti code makes for happy developers.  So, for you own sake, go easy on classes and creating objects.  Instead, read up on monads, method chains, decorator patterns, and computation chains.  
 
+    ````js
+    // 1.  template helpers work like monads
+    Template.samplePage.getTitle = function(){
+    
+      // 3.  and the body contents of your function will run as monad computation side-effects
+      setCanvasHeight();
+      setCanvasWidth();
+      drawCanvasObjects();
+      
+      // 2.  just connect the return value to a reactive session variable
+      return Session.get('currentPageTitle');
+    }
+    ````
 
 #### Use the Filesystem for Workflow Components  
 - And finally, I recommend not using the filesystem as a namespace for Classes, as you may be accustomed to in object-oriented frameworks.  Use the filesystem as a namespace for Workflow components instead...  pages, modals, dialogs, importers, reports, etc.  I find that the workflow components namespace generally gets replicated three times... in the lib, stylesheets, and templates directories, respectively, and reflecting the MVC components.  When refactoring out a package, grab the appropriate file from each of the directories (ie. profile.html, profile.css, profile.js, for example), and put them into a single directory under the packages directory.  
