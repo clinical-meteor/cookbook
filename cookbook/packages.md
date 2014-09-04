@@ -1,8 +1,15 @@
-## PACKAGES
+##Packages
+=======================================================================
 
-**Q:  How do I install packages without Atmosphere?**  
+The packaging system has been updated in 0.9!  Please check out the following link for the latest news on the packaging system.
 
-Simple!  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the syntax described in the following code sample.  
+[Unipackage Hackpad](https://meteor.hackpad.com/Unipackage-tvas8pXYMOW)  
+
+
+================================================
+#### Installing Packages without Atmosphere  
+
+Adding a custom packages to your application is simple.  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the syntax described in the following code sample.  
 https://atmosphere.meteor.com/wtf/package  
 ````json
 {
@@ -32,8 +39,9 @@ https://atmosphere.meteor.com/wtf/package
 }
 ````
 
+================================================
+#### Creating a Package for Distribution  
 
-**Q:  How do I create a package for distribution?**  
 So, there isn't an official documented API for creating packages, as far as I'm aware.  The best we can do is sort of document all of the api calls we've seen in the wild.  The following example illustrates all the different syntax we've seen in creating packages.
 
 
