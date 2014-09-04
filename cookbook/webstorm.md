@@ -2,26 +2,31 @@
 
 
 
-### Links, Installation
+================================================
+## Links, Installation
 Recommend version of WebStorm is currently 7.0.  
 http://www.jetbrains.com/webstorm/  
 http://www.jetbrains.com/webstorm/download/download_thanks.jsp
 
 
-### Download the Settings.jar File  
+================================================
+## Download the Settings.jar File  
 There's now a pre-compiled settings file which you can download and import directly into WebStorm, rather than following all the instructions in this document. It may be slightly out of date vs. this document, though.  
 https://github.com/awatson1978/webstorm-settings
 
-### Implementing Meteor Styleguide
+================================================
+## Implementing Meteor Styleguide
 https://github.com/meteor/meteor/dwiki/Meteor-Style-Guide  
 
 
-### MVC Color Coding
+================================================
+## MVC Color Coding
 Run ``meteor add less`` at the command line to include the LESS precompiler.  Then use ``.less`` files instead of ``.css`` files.  Presto.  Your application should color code Model (Green), View (Blue), and Controller (Red) files.
 
 
 
-### Settings > Code Style > Javascript
+================================================
+## Settings > Code Style > Javascript
 As per the Meteor style guide.  
 https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
 
@@ -43,7 +48,8 @@ Function declaration parentheses
 
 ````
 
-### Settings > Directories > Excluded
+================================================
+## Settings > Directories > Excluded
 
 You want to exclude the ``.meteor`` file so that the Meteor build process doesn't crash your IDE.  This applies to most any IDE you use, and isn't specific to WebStorm.  
 ````
@@ -52,7 +58,8 @@ You want to exclude the ``.meteor`` file so that the Meteor build process doesn'
 ````
 
 
-### Settings > File and Code Templates
+================================================
+## Settings > File and Code Templates
 
 I find it very convenient to create a Less file template, using some default media styles to help with responsive mobile application design.  
 
@@ -142,16 +149,19 @@ Template.fooList.fooList = function(){
 
 ````
 
-### Settings > General
+================================================
+## Settings > General
 "Save files on frame deactivation" and "Save files automatically" - you want this turned **off**.  It conflicts with Meteor's build process, and basically duplicates functionality found in Meteor.  Bundling and live editing will basically conflict with each other.
 
 In older versions, thse could be found under Preferences > Live Edit.
 
-### Settings > Editor > Editor Tabs
+================================================
+## Settings > Editor > Editor Tabs
 Enable "Mark modified tabs with asterisk"
 
 
-### Settings > Javascript > Code Quality Tools > JSLint
+================================================
+## Settings > Javascript > Code Quality Tools > JSLint
 
 ````
 + Enable
@@ -162,7 +172,8 @@ Indentation 2
 If [JSLint is too annoyingly strict](http://stackoverflow.com/questions/6803305/should-i-use-jslint-or-jshint-javascript-validation), enable JSHint instead.
 
 
-### Settings > Javascript > Node.js  
+================================================
+## Settings > Javascript > Node.js  
 ````
 chai  
 demeteorizer  
@@ -176,7 +187,8 @@ selenium-webdriver
 ````
 
 
-### Settings > Version Control > Github
+================================================
+## Settings > Version Control > Github
 
 ````
 Host: github.com  
@@ -185,7 +197,8 @@ Password: yourpassword
 ````
 
 
-### Settings > Editor 
+================================================
+## Settings > Editor 
 Editor preferences are going to vary wildly, particularly if you're accustomed to old school editors like Vim or Emacs.  However, if you'd like WebStorm to behave like a typical text editor, I'd recommend setting the following items.  In particular, allow placement of the caret after the end of line can be particularly confusing and frustrating.  
 ````
 - Honor 'CamelHumps'
@@ -195,18 +208,20 @@ Editor preferences are going to vary wildly, particularly if you're accustomed t
 + Allowplacement of caret inside of tabs
 ````
 
-### Preferences > Editor > Appearance
+================================================
+## Preferences > Editor > Appearance
 Showing line numbers is obviously a personal preference, but it helps immeasurably in debugging stack traces.  If you're not using line numbers, you're very likely either a n00b or a guru.  Ask yourself if you're a n00b, a guru, or an intermediate programmer, and set accordingly.  
 ````
 + Show line numbers  
 ````
 
-### Settings > Editor > Color & Fonts > Javascript
+================================================
+## Settings > Editor > Color & Fonts > Javascript
 Another personal preference, but if you're into reducing eye strain, coding in low-light levels, anord saving energy, try changing to ``Darcula``.
 
 
-
-### Settings > Live Templates
+================================================
+## Settings > Live Templates
 
 try/catch block  
 ````js
@@ -287,8 +302,8 @@ new page template
 ````
 
 
-
-### Settings > Plugins  
+================================================
+## Settings > Plugins  
 
 If you can't find plugins via the Settings -> Plugins -> Browse Repositories dialog, you can go to http://plugins.jetbrains.com, find the desired plugin, download it, then unpack the .zip into WebStorm's `plugins` directory.
 
@@ -320,7 +335,18 @@ Some plugins enabled by default that don't apply to meteor development and you c
 * Subversion Integration
 * YAML
 
-
-### Debugging
+================================================
+## Debugging
 
 See [How to debug Meteor apps with WebStorm](http://stackoverflow.com/questions/14751080/how-can-i-debug-my-meteor-app-using-the-webstorm-ide).
+
+
+================================================
+## Webstorm Keeps Crashing! 
+
+Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
+
+````js
+// Webstore > Preferences > Directories > Excluded Directories
+.meteor
+````
