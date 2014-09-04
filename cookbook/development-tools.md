@@ -1,6 +1,6 @@
 ## Development Tools
 
-Lets get you started with Meteor fast, okay?
+You're going to need to set up a development environment if you want to program in Meteor.  There's a growing ecosystem of tools to use, so the focus in this document is on tools that are known to work together well.   
 
 ===============================================================
 ## Integrated Development Environments
