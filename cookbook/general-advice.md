@@ -37,10 +37,10 @@ Here are some general tips and advice on writing Meteor applications.
 - Rethink your usage of objects and inheritance.  Javascript is a functional language, at its core.  And, if you recall your functional programming, you'll remember that Monads are the functional equivalent to Classes.  Creating class hierarchies is a good way to get frustrated with Meteor.  You may be tempted to use Coffeescript because it supports Classes.  Just be aware that most of what you're trying to do with class inheritance, to create various types of widgets, can be done with a monad decorator pattern.  Generally speaking, the fewer objects you create on the heap, the less memory leaks you'll have; and the fewer class abstractions you have, the less speghetti code you'll have.  Less memory leaks and less speghetti code makes for happy developers.  So, for you own sake, go easy on classes and creating objects.  Instead, read up on monads, method chains, decorator patterns, and computation chains.  
 
     ````js
-    // 1.  template helpers work like monads
+    // 1.  template helpers with reactive data contexts behave like monads
     Template.samplePage.getTitle = function(){
     
-      // 3.  and the body contents of your function will run as monad computation side-effects
+      // 3.  and contents of your function will run as monad-like computational side-effects
       setCanvasHeight();
       setCanvasWidth();
       drawCanvasObjects();
