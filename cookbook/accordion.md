@@ -2,7 +2,7 @@
 
 
 ========================================================
-#### Non-Reactive Accordion  
+#### jQuery Accordion  
 
 ````html
 <template name="postsAccordian">
@@ -41,7 +41,7 @@ Template.postsAccordion.helpers({
 ````
 
 ========================================================
-#### Reactive Accordion  
+#### Pure Meteor Accordion  
 ````html
 <template name="postsAccordian">
   <div class="panel-group" id="postsAccordion">
