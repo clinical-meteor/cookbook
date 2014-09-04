@@ -1,7 +1,13 @@
 ## Development Tools
-**Q:  What are best practices for setting up my development environment?**  
+
+Lets get you started with Meteor fast, okay?
+
+===============================================================
+## Integrated Development Environments
+
 Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  See below.  
 
+[Atom](http://www.atom.io) - The javascript IDE that fully leverages Meteor's isomorphic javascript framework.  Recommended.
 [WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.    
 [Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
 [Nitrous.io](https://www.nitrous.io/) - The best and only Cloud Development tool worth worrying about.  
