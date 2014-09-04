@@ -41,7 +41,7 @@ Template.postsAccordion.helpers({
 ````
 
 ========================================================
-#### Pure Meteor Accordion  
+#### Pure Meteor/Isomorphic Accordion  
 ````html
 <template name="postsAccordian">
   <div class="panel-group" id="postsAccordion">
