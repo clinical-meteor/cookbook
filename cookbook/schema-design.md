@@ -28,6 +28,7 @@ Instead of relying on formal schemas, I'm just going to share some experience on
 
 For more details, I highly recommend the following article on NoSQL data modeling techniques:  
 [NoSQL Data Modeling Techniques](http://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/)   
+[MongoDB Applied Design Patterns](http://www.amazon.com/MongoDB-Applied-Design-Patterns-Copeland/dp/1449340040/ref=sr_1_3?s=books&ie=UTF8&qid=1409761891&sr=1-3&keywords=mongodb)  
 
 ####Naming Conventions  
 And here are a few rules of thumb for database field naming conventions.  
