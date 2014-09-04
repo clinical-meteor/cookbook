@@ -12,7 +12,7 @@ There's now a pre-compiled settings file which you can download and import direc
 https://github.com/awatson1978/webstorm-settings
 
 ================================================
-## Implementing Meteor Styleguide
+## Implementing Meteor Styleguide  
 https://github.com/meteor/meteor/dwiki/Meteor-Style-Guide  
 
 
@@ -23,7 +23,7 @@ Run ``meteor add less`` at the command line to include the LESS precompiler.  Th
 
 
 ================================================
-## Settings > Code Style > Javascript
+## Settings > Code Style > Javascript  
 As per the Meteor style guide.  
 https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
 
