@@ -1,9 +1,6 @@
 ## WebStorm IDE
 
 
-
-================================================
-## Links, Installation
 Recommend version of WebStorm is currently 7.0.  
 http://www.jetbrains.com/webstorm/  
 http://www.jetbrains.com/webstorm/download/download_thanks.jsp
