@@ -3,7 +3,7 @@
 You're going to need to set up a development environment if you want to program in Meteor.  There's a growing ecosystem of tools to use, so the focus in this document is on tools that are known to work together well.   
 
 ===============================================================
-## Integrated Development Environments
+#### Integrated Development Environments
 
 Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  See below.  
 
@@ -14,7 +14,7 @@ Well, you're going to need to select an Integrated Development Environment (IDE)
 [Cloud9](https://c9.io/)  - The newest Cloud Development offering that supports Meteor.
   
 ===============================================================
-## Pair Programming & Remote Teams    
+#### Pair Programming & Remote Teams    
 
 
 [Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  
@@ -25,7 +25,7 @@ Well, you're going to need to select an Integrated Development Environment (IDE)
 [MadEye](http://madeye.io/get-started)  
 
 
-  
+===============================================================
 #### Database Tools
 [MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb)  
 [Robomongo](http://robomongo.org/) - A sweet, sweet database management tool.  Highly recommended.   
@@ -35,23 +35,20 @@ Well, you're going to need to select an Integrated Development Environment (IDE)
 [Mongo Monitoring Service](https://mms.mongodb.com/setup)  
 [JSON Generator](http://www.json-generator.com/)  
   
-
+===============================================================
 #### REST Clients  
 [Dev HTTP Client](https://chrome.google.com/webstore/detail/dev-http-client/aejoelaoggembcahagimdiliamlcdmfm)      
 [REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm/)      
   
 
-
+===============================================================
 #### Debuggers  
 [Firefox - Firebug](https://getfirebug.com/)    
 [Firebug (Firefox)](https://getfirebug.com/)   
 [Node-Inspector](https://github.com/node-inspector/node-inspector)    
   
 
-#### Mobile Device Simulators  
-[Chrome - Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)    
-
-
+===============================================================
 #### Code Analysis  
 
 [Meteor JSHint](https://github.com/raix/Meteor-jshintrc)  
