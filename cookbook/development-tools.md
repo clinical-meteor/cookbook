@@ -10,8 +10,8 @@ Well, you're going to need to select an Integrated Development Environment (IDE)
 [Atom](http://www.atom.io) - The javascript IDE that fully leverages Meteor's isomorphic javascript framework.  Recommended.  
 [WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.    
 [Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
-[Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor. 
-[Cloud9](https://c9.io/)  - The newest Cloud Development offering that supports Meteor.
+[Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor.   
+[Cloud9](https://c9.io/)  - The newest Cloud Development offering that supports Meteor.  
   
 ===============================================================
 #### Pair Programming & Remote Teams    
