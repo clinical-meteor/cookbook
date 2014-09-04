@@ -30,3 +30,5 @@
   </div>
 </template>
 ````
+
+[jquery-ui/accordion.js](https://github.com/jquery/jquery-ui/blob/master/ui/accordion.js)  
