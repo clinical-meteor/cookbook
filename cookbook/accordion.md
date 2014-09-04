@@ -78,5 +78,5 @@ Template.postsAccordion.helpers({
 });
 ````
 
-
+[jquery accordion](http://jqueryui.com/accordion/)  
 [jquery-ui/accordion.js](https://github.com/jquery/jquery-ui/blob/master/ui/accordion.js)  
