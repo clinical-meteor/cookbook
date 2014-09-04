@@ -10,26 +10,19 @@ Well, you're going to need to select an Integrated Development Environment (IDE)
 [Atom](http://www.atom.io) - The javascript IDE that fully leverages Meteor's isomorphic javascript framework.  Recommended.  
 [WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.    
 [Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
-[Nitrous.io](https://www.nitrous.io/) - The best and only Cloud Development tool worth worrying about.  
+[Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor. 
+[Cloud9](https://c9.io/)  - The newest Cloud Development offering that supports Meteor.
   
-**Q:  My editor keeps crashing!  Help!**  
-Add the myapp/.meteor directory to your ignore list.  Meteor takes your application and goes through a process called bundling, where it prepares to host it as a node.js application.  It uses the .meteor directory as a temp directory, and will try to rebundle whenever there are changes to your code.  If your editor is watching that directory, it can cause your editor to lock up with the constant indexing and bundling. 
+===============================================================
+## Pair Programming & Remote Teams    
 
-````js
-// Webstore > Preferences > Directories > Excluded Directories
-.meteor
-````
 
-  
-
-**Q:  Any recommendations on pair-programming?**  
-
+[Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  
+[Slack](https://slack.com/)  
+[Meeting Hero](http://www.meetinghero.com/)  
+[Hackpad](https://hackpad.com)  
 [Screenhero](http://screenhero.com/download.html?src=btn)      
 [MadEye](http://madeye.io/get-started)  
-[Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  
-
-
-
 
 
   
