@@ -142,7 +142,17 @@ sudo mrt add appcache
 sudo mrt add grounddb
 ````
 
-#### Scrolling
+#### Disable Scroll-Bounce
+
+````js
+// prevent scrolling on the whole page
+// this is not meteorish; TODO: translate to meteor-centric code
+document.ontouchmove = function(e) {e.preventDefault()};
+
+// prevent scrolling on specific elements
+// this is not meteorish; TODO: translate to meteor-centric code
+scrollableDiv.ontouchmove = function(e) {e.stopPropagation()};
+````
 
 
 
