@@ -107,3 +107,30 @@ Template.helloWorld.events({
   }
 });
 ````
+
+#### Data-Toggle 
+
+A common issue that people run across is getting Bootstrap data-toggles to work.  The best way to handle data-toggles is to manually wire them up yourself.  Start by giving a unique ID to the relevant elements in your UI controls.
+
+````html
+<template name='dropDownWidget'>
+  <button id="openDropDown" class="btn btn-info"></button>
+  <ul id="dropDownMenu" class="list-group">
+    <li class="list-group-item">Item 1</li>
+    <li class="list-group-item">Item 2</li>
+  </ul>
+</template>
+````
+
+Then wire up a jQuery selector to toggle classes on the appropriate elements. 
+````js
+// then set up the databinding
+Template.dropDownWidget.events({
+  'click #openDropDown':function(){
+    // the jQuery toggle() function adds and removes the 'open' class
+    $('#dropDownMenu').toggle('open');
+  }
+});
+````
+
+
