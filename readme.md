@@ -9,9 +9,37 @@ A lot of people have reported problems with the auto-update feature in Meteor 0.
 ````js
 export METEOR_TEST_UPDATE_MANIFEST="offline"
 ````
-And if you need to upgrade your packages to 0.9, here's a short tutorial:  
-[Add Meteor 0.9 support for your Existing Packages](https://hackpad.com/Add-Meteor-0.9-support-for-your-Existing-Packages-P0R7y1PiXlu)  
+Otherwise, just be sure not to press ``ctrl-C`` when your app starts up.  The new package manager can run a different version of Meteor in different git branches in a project repository.  So if you just let it do it's thing, you should be good to go.  The initial problems have mostly been worked out.    
+
+#### Upgrading Apps and 0.9.x
+
+I've found the easiest way to upgrade apps is to create a new project from scratch, and copy all the files from the old directory to the new one, and then readd the necessary packages.
+
+````sh
+mv myapp myapp-0.8.3
+cd ..
+meteor update
+meteor create myapp
+meteor update
+cd ..
+cp -R myapp-0.8.3/* myapp
+meteor add iron:router
+meteor add mrt:bootstrap-3
+meteor add etc:etc
+````
   
+#### Upgrading Packages 0.9.x
+
+If you need to upgrade your packages to 0.9.x, start by reading the hackpad:  
+[Add Meteor 0.9 support for your Existing Packages](https://hackpad.com/Add-Meteor-0.9-support-for-your-Existing-Packages-P0R7y1PiXlu)  
+
+````sh
+meteor create --package mypackage
+cd mypackage
+# do stuff
+meteor publish --create
+meteor publish
+````
 
 
 ## Index  
