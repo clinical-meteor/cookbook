@@ -9,7 +9,7 @@ A lot of people have reported problems with the auto-update feature in Meteor 0.
 ````js
 export METEOR_TEST_UPDATE_MANIFEST="offline"
 ````
-Otherwise, just be sure not to press ``ctrl-C`` when your app starts up.  The new package manager can run a different version of Meteor in different git branches in a project repository.  So if you just let it do it's thing, you should be good to go.  The initial problems have mostly been worked out.    
+Otherwise, just be sure **not** to press ``ctrl-C`` when your app starts up.  The new package manager can run a different version of Meteor in different git branches in a project repository.  So if you just let it do it's thing, you should be good to go.  The initial problems have mostly been worked out.    
 
 #### Upgrading Apps and 0.9.x
 
