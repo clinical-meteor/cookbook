@@ -109,29 +109,45 @@ Meteor.methods({
 
 **[Cookbook Example:  Dropzone UI](https://github.com/awatson1978/dropzone-ui)**  
 
+````sh
+  meteor add iron:router
+  meteor add awatson1978:dropzone
+````
+
+````html
+  {{> dropzone url="/uploads" id="#creativeTagDropZone" }}
+````
+
 ````js
-// Create a Dropzone if we don't yet have one
-  // window.dropzone makes the whole body a dropzone
-  if(_.isUndefined(window.dropzone)) {
-    window.dropzone = new Dropzone(document.body, {
-      url: '/upload/tmp',
-      previewsContainer: '.dropzone',
-      clickable: '#upload_image .button',
-      acceptedFiles: '.jpg,.png,.gif',
-      init: function() {
-        this.on('success', function(file) {
-          $(file.previewElement).remove();
+Router.map(function () {
+    this.route('uploads', {
+      where: 'server',
+      action: function () {
+        var fs = Npm.require('fs');
+        var path = Npm.require('path');
+        var self = this;
+
+        ROOT_APP_PATH = fs.realpathSync('.');
+
+        // dropzone.js stores the uploaded file in the /tmp directory, which we access
+        fs.readFile(self.request.files.file.path, function (err, data) {
+
+          // and then write the file to the uploads directory
+          fs.writeFile(ROOT_APP_PATH + "/assets/app/uploads/" +self.request.files.file.name, data, 'binary', function (error, result) {
+            if(error){
+              console.error(error);
+            }
+            if(result){
+              console.log('Success! ', result);
+            }
+          });
         });
       }
     });
-  } else {
-    window.dropzone.previewsContainer = document.querySelector('.dropzone');
-    $('#upload_image .button').click(function() {
-      $('.dz-hidden-input').click();
-    });
-  }
-};
+  });
 ````
+
+
 
 ---------------------------------------
 #### Filepicker.io  
