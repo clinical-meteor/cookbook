@@ -4,7 +4,6 @@ File Uploads
 Uploading files can be easy or really complicated, depending on what you're wanting to do.  In general, transfering a file itself isn't all that difficult.  But there are lots of edge cases around attachments, binary files, and the like.  And the real sticking point is horizontal scaling, and creating a solution that works when the server is cloned a second, third, and nth time.  
 
 
-
 ---------------------------------------
 #### Server/Client
 
@@ -101,23 +100,31 @@ Meteor.methods({
 });
 ````
 
+That's sort of the bare-bones approach, and it leaves a lot to be desired.  It's maybe good for uploading a CSV file or something, but that's about it.  
 
 
 ---------------------------------------
 #### Dropzone 
 
+If we want something a bit more polished, with an integrated Dropzone UI and a REST endpoint, we're going to need to start adding custom REST routes and packages with UI helpers.
 
 **[Cookbook Example:  Dropzone UI](https://github.com/awatson1978/dropzone-ui)**  
+
+Lets begin by importing Iron Router and Dropzone.
 
 ````sh
   meteor add iron:router
   meteor add awatson1978:dropzone
 ````
 
+Add the Dropzone to our document object model.  
 ````html
+<div class="panel panel-default">
   {{> dropzone url="/uploads" id="#creativeTagDropZone" }}
+</div>
 ````
 
+And configure the ``uploads`` url route that's specified in the dropzone helper.  
 ````js
 Router.map(function () {
     this.route('uploads', {
@@ -147,15 +154,73 @@ Router.map(function () {
   });
 ````
 
-
+Cool!  We have a file uploader with snazzy UI and a programmable REST endpoint.  Unfortunately, this doesn't scale particularly well.
 
 ---------------------------------------
 #### Filepicker.io  
+
+To scale things, we have to stop using local storage on our server, and start using either a dedicated file storage service or implement a horizontal storage layer.  The easiest way to get started with scalable file storage is to use a solution like [Filepicker.io](http://filepicker.io), which supports S3, Azure, Rackspace, and Dropbox.  [loadpicker](https://atmospherejs.com/mrt/loadpicker) has been a popular Filerpicker unipackage for awhile
+
+````sh
+meteor add mrt:loadpicker
+````
+
 
 
 ---------------------------------------
 #### CollectionFS    
 
+However, if you're really serious about storage, and you want to store millions of images, you're going to need to leverage Mongo's GridFS infrastructure, and create yourself a storage layer.  For that, you're going to need the excellent CollectionFS subsystem.
+
+Start by adding the necessary packages.
+````sh
+meteor add cfs:standard-packages
+meteor add cfs:filesystem
+````
+
+And adding a file upload element to your object model.
+````html
+<template name="yourTemplate">
+    <input class="your-upload-class" type="file">
+</template>
+````
+
+Then add an event controller on the client.
+````js
+Template.yourTemplate.events({
+    'change .your-upload-class': function(event, template) {
+        FS.Utility.eachFile(event, function(file) {
+            var yourFile = new FS.File(file);
+            yourFile.creatorId = Meteor.userId(); // add custom data
+            YourFileCollection.insert(yourFile, function (err, fileObj) {
+                if (!err) {
+                   // do callback stuff
+                }
+            });
+        });
+    }
+});
+````
+
+And define your collections on your server:
+````js
+YourFileCollection = new FS.Collection("yourFileCollection", {
+    stores: [new FS.Store.FileSystem("yourFileCollection", {path: "~/meteor_uploads"})]
+});
+YourFileCollection.allow({
+    insert: function (userId, doc) {
+        return !!userId;
+    },
+    update: function (userId, doc) {
+        return doc.creatorId == userId
+    },
+    download: function (userId, doc) {
+        return doc.creatorId == userId
+    }
+});
+````
+
+Thanks to Raz for this excellent example.  You'll want to check out the complete [CollectionFS Documentation](https://github.com/CollectionFS/Meteor-CollectionFS) for more details on what all CollectionFS can do.  
 
 ---------------------------------------
 #### Additional References  
