@@ -7,7 +7,7 @@ Unlike acceptance tests, which treat your application as a black-box closed syst
 
 #### Running Tinytest
 
-The simplest way to create unit tests is to use Tinytest, the native Meteor testing utility.  (Tinytest is not to be confused with TinyTestJS, which is a different library).  You'll need to add the ``tinytest`` package, and then use the custom ``mrt test-packages`` command.
+The simplest way to create unit tests is to use Tinytest, the native Meteor testing utility.  (Tinytest is not to be confused with TinyTestJS, which is a different library).  You'll need to add the ``tinytest`` package, and then use the custom ``meteor test-packages`` command.
 
 ````js
 // create your application
@@ -18,10 +18,10 @@ cd helloworld
 meteor add tinytest
 
 // run your application
-sudo mrt
+meteor
 
 // open a second browser and run the test packages
-sudo mrt test-packages
+meteor test-packages
 ````
 
 #### Tinytest API  
@@ -47,8 +47,8 @@ Tinytest is designed to encourage application modularity, and runs as part of th
 
 ````sh
 cd packages
-mkdir leaderboard-tinytests
-nano packages/leaderboard-tinytests/packages.js
+meteor create --package leaderboard-tinytests
+cd leaderboard-tinytests
 ````
 
 Within the ``package.js`` file, you'll want to specify a ``Package.on_test`` directive, within which you'll define dependencies, stub functions, links to the libraries you want to test, and the unit tests themselves.
