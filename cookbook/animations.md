@@ -1,8 +1,11 @@
- 
-### Animations  
+Animations  
+========================================
+
 There are two approaches to creating animations:  the first is with with CSS in the View/Presentation layer; the second is with Javascript in the Controller/Application layer.  On the one hand, using CSS3 transforms gets you GPU optimized performance and mostly flicker-free animations, at the price of relying on a subsystem that's maybe over-engineered and constrained to element transformations.  On the other hand, using Javascript and SVG will get you beautiful data-driven animations using D3.js.  But they are very tricky and fickle to create.
 
-### Animations in the View/Presentation Layer    
+
+----------------------------------------
+#### Animations in the View/Presentation Layer    
 For basic GPU accelerated animations using CSS3 transforms, start with the following links and references.  
 
 [3D Transforms with Webkit](https://www.webkit.org/blog/386/3d-transforms/)  
@@ -11,7 +14,8 @@ For basic GPU accelerated animations using CSS3 transforms, start with the follo
 [Browser Support for 2D Transforms](http://css3.bradshawenterprises.com/transforms/)  
 [Intro to CSS 3D Transforms](http://desandro.github.io/3dtransforms/)  
 
-### Audit Your CSS!  
+----------------------------------------
+#### Audit Your CSS!  
 Once you've covered some of the basics, dig deeper into start-of-the-art animation research with these videos from Steve Newcomb, of [Famo.us](http://famo.us/).  Famo.us is positioning itself to be a Javascript alternative to the Flash and Unity rendering engines.
 
   http://www.youtube.com/watch?v=83MX4wsoMzU  
@@ -20,8 +24,11 @@ Once you've covered some of the basics, dig deeper into start-of-the-art animati
   https://www.youtube.com/watch?v=zpebYhm8f2o  
   https://www.youtube.com/watch?v=OhfI2wFNKFQ  
 
-### Meteor UI & Famo.us?
+
+----------------------------------------
+#### Meteor UI & Famo.us?
 Yup!  They've recently announced a partnership to bring 60fps DOM manipulations to Meteor, using CSS matrix overrides!  <3  
+
 https://groups.google.com/forum/#!searchin/meteor-talk/famo.us/meteor-talk/LCZvyy99KiY/uTSYivlicH4J  
 
 
@@ -35,8 +42,7 @@ https://github.com/Famous/guides/tree/master/dev
 http://www.google.com/design/spec/animation/meaningful-transitions.html#meaningful-transitions-visual-continuity
 
 -----------------------------------------
-
-### CSS Animations and Transitions  
+#### CSS Animations and Transitions  
 
 ````css
 /*
