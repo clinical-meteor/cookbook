@@ -1,22 +1,18 @@
  
 ### Animations  
-There are two approaches to creating animations:  either with CSS in the View/Presentation layer, or via Javascript in the Controller/Application layer.  
-
-Using CSS3 transforms will allow you to run things on the GPU, and is generally the easiest way to get flicker-free animations.  But be careful!  Be sure to audit your CSS files!  
-
-However, with Javascript and SVG, you can build beautiful data-driven animations using D3.js.  But they are very tricky and fickle to create.
+There are two approaches to creating animations:  the first is with with CSS in the View/Presentation layer; the second is with Javascript in the Controller/Application layer.  On the one hand, using CSS3 transforms gets you GPU optimized performance and mostly flicker-free animations, at the price of relying on a subsystem that's maybe over-engineered and constrained to element transformations.  On the other hand, using Javascript and SVG will get you beautiful data-driven animations using D3.js.  But they are very tricky and fickle to create.
 
 ### Animations in the View/Presentation Layer    
-For basic GPU accelerated animations using CSS3 transforms, start with the following links...  
+For basic GPU accelerated animations using CSS3 transforms, start with the following links and references.  
 
-https://www.webkit.org/blog/386/3d-transforms/  
-http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm  
-http://bartaz.github.io/meetjs/css3d/  
-http://css3.bradshawenterprises.com/transforms/  
-http://desandro.github.io/3dtransforms/  
+[3D Transforms with Webkit](https://www.webkit.org/blog/386/3d-transforms/)  
+[Hands On: 3D Transforms](http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm)  
+[A Very Short Intro to CSS3D Transforms](http://bartaz.github.io/meetjs/css3d/)  
+[Browser Support for 2D Transforms](http://css3.bradshawenterprises.com/transforms/)  
+[Intro to CSS 3D Transforms](http://desandro.github.io/3dtransforms/)  
 
 ### Audit Your CSS!  
-Check out the following videos by Steve Newcomb, from Famo.us, regarding the importance of auditing your CSS libraries.  
+Once you've covered some of the basics, dig deeper into start-of-the-art animation research with these videos from Steve Newcomb, of [Famo.us](http://famo.us/).  Famo.us is positioning itself to be a Javascript alternative to the Flash and Unity rendering engines.
 
   http://www.youtube.com/watch?v=83MX4wsoMzU  
   https://www.youtube.com/watch?v=br1NhXeVD6Y  
