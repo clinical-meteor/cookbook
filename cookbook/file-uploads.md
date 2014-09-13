@@ -106,6 +106,9 @@ Meteor.methods({
 ---------------------------------------
 #### Dropzone 
 
+
+**[Cookbook Example:  Dropzone UI](https://github.com/awatson1978/dropzone-ui)**  
+
 ````js
 // Create a Dropzone if we don't yet have one
   // window.dropzone makes the whole body a dropzone
