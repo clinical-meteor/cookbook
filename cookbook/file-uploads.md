@@ -164,7 +164,34 @@ To scale things, we have to stop using local storage on our server, and start us
 ````sh
 meteor add mrt:loadpicker
 ````
+The Filepicker pattern is rather different than the other solutions, because it's really about 3rd party integration.  Begin by adding a filepicker input, which you'll see relies heavily on ``data-*`` attributes, which is a fairly uncommon pattern in Meteor apps.
 
+````html
+<input type="filepicker"
+  id="filepickerAttachment"
+  data-fp-button-class="btn filepickerAttachment"
+  data-fp-button-text="Add image" 
+  data-fp-mimetypes="image/*"
+  data-fp-container="modal"
+  data-fp-maxsize="5000000" 
+  data-fp-services="COMPUTER,IMAGE_SEARCH,URL,DROPBOX,GITHUB,GOOGLE_DRIVE,GMAIL">
+````
+
+You'll walso want to set an API key, construct the filepicker widget, trigger it, and observe it's outputs.
+````js
+if(Meteor.isClient){
+  Meteor.startup(function() {
+    filepicker.setKey("YourFilepickerApiKey");
+  });
+  Template.yourTemplate.rendered = function(){
+    filepicker.constructWidget($("#filepickerAttachment"));
+  }
+  Template.yourTemplate.events({
+  'change #filepickerAttachment': function (evt) {
+    console.log("Event: ", evt, evt.fpfile, "Generated image url:", evt.fpfile.url);
+  });
+});
+````
 
 
 ---------------------------------------
