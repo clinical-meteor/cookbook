@@ -111,6 +111,7 @@ And if you need to upgrade your packages to 0.9, here's a short tutorial:
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+[Dropzone UI](https://github.com/awatson1978/dropzone-ui)  
 [Offline Todos](http://offline-todos.meteor.com)  
 [Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service)  
 [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription)  
