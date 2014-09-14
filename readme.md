@@ -27,6 +27,22 @@ meteor add iron:router
 meteor add mrt:bootstrap-3
 meteor add etc:etc
 ````
+
+Alternatively, you can try removing your existing packages, upgrading, and then adding the new ones.  With this method, there can be smart.json, smart.lock, .meteor/release, and other files that can sometimes get out-of-sync, and still reference the old packaging system.  That's why it's maybe better to start a new project clean and copy files over manually.
+
+````sh
+cd myapp
+mrt remove iron-router
+mrt remove bootstrap-3
+mrt remove nifty-widget
+mrt remove etc-etc
+meteor update
+meteor add iron:router
+meteor add mrt:bootstrap-3
+meteor search widget
+meteor add nifty:widget
+meteor add etc:etc
+````
   
 #### Upgrading Packages 0.9.x
 
