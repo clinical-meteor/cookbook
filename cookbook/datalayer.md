@@ -17,15 +17,15 @@ http://nedbatchelder.com/blog/200606/the_vietnam_of_computer_science.html
 **Q: Well, how am I suppose to use the data in my SQL database then?**  
 Through REST interfaces.  We put the ORM __outside__ of Meteor, as part of the interface.  So, the trick is to move your data from your SQL database into Meteor's Mongo database, and have Mongo act as an object store.
 
-http://stackoverflow.com/questions/10452431/how-do-you-make-a-rest-api-and-upload-files-in-meteor/13871399#13871399  
+http://stackoverflow.com/questions/10452431/how-do-you-make-a-rest-api-and-upload-files-in-meteor/13871399#13871399    
 http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/   
 https://groups.google.com/forum/#!searchin/meteor-talk/Re$3A$20Using$20meteor$20as$20JSON$20sink/meteor-talk/M7h-GbKNS88/9v1WxlwtL2kJ  
 
 Populating the underlying Mongo collections via REST calls is pretty straight forward, and uses Meteor to it's fullest potential.  Between different projects, I've verified using REST to insert and update documents into Mongo collections, and then Meteor to reactively update to underlying inserts and changes into the database.  Dror is right that the publication hooks are important to take care of.  Not difficult for simple new documents inserted into collections; but requires a bit more finess when updating fields of existing documents.
 
-http://docs.mongodb.org/ecosystem/tools/http-interfaces/
-http://stackoverflow.com/questions/7386740/does-mongodb-has-a-native-rest-interface
-http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/
+http://docs.mongodb.org/ecosystem/tools/http-interfaces/  
+http://stackoverflow.com/questions/7386740/does-mongodb-has-a-native-rest-interface  
+http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/  
 
 The reactive templates use a number of features that have to be addressed before alternate databases can be supported, the most important being native javascript objects in the data model.  Essentially, Mongo isn't just a 'document oriented database', it's also an object-oriented database, able to persistently store arbitrarily large javascript objects.  The reactive templates are wired up so as to use those javascript objects as-is, without any translation or modification.  This makes Meteor easy to program, very fast, very robust, and a data model to die for.
 
