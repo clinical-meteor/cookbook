@@ -69,3 +69,11 @@ public/images                             # will serve images as: '/images/foo.j
 tests/                                    # unit test files (won't be loaded on client or server)
 tests/walkthough.js
 ```
+
+------------------------------------
+#### File Permissions  
+
+````sh
+sudo chown username:wheel myapp
+sudo chown username:wheel ~/.meteorsession
+````
