@@ -75,5 +75,7 @@ tests/walkthough.js
 
 ````sh
 sudo chown username:wheel myapp
+sudo chown username:wheel .meteor
 sudo chown username:wheel ~/.meteorsession
+sudo chown username:wheel ~/.meteor
 ````
