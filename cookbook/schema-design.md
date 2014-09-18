@@ -64,6 +64,3 @@ And here are a few rules of thumb for database field naming conventions.
 snake_case is better if you're new to Meteor, and want a clear distinction between the database layer and application layer.  cameCase is better if you're a little more experienced, and want to be clever with dynamically generating templates and object attributes.  
 
 
-
-
-
