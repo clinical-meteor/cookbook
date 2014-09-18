@@ -31,6 +31,14 @@ Instead of relying on formal schemas, I'm just going to share some experience on
 12.  Collections schemas should be about performance.  
 13.  Document schemas are where you want to do your data modeling.  
 
+####Antipatterns
+1.  Importing normalized SQL schemas directly into Mongo.
+2.  Appending to arrays ad infinitum.
+
+####MongoDB 6 Rules of Thumb
+[6 Rules of THumb for MongoDB Schema Design: Part 1](http://blog.mongodb.org/post/87200945828/6-rules-of-thumb-for-mongodb-schema-design-part-1)  
+[6 Rules of Thumb for MongoDB Schema Design: Part 2](http://blog.mongodb.org/post/87892923503/6-rules-of-thumb-for-mongodb-schema-design-part-2)  
+[6 Rules of Thumb for MongoDB Schema Design: Part 3](http://blog.mongodb.org/post/88473035333/6-rules-of-thumb-for-mongodb-schema-design-part-3)  
 
 ####Naming Conventions  
 And here are a few rules of thumb for database field naming conventions.  
