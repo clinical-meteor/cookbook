@@ -28,9 +28,9 @@ mongod --noteablescan
 =========================================
 #### Vertical Scaling
 
-**Measure your working set and index sizes**
-db.serverStatus({workingSet:1}).workingSet
-db.stats().indexSize
+**Measure your working set and index sizes**  
+db.serverStatus({workingSet:1}).workingSet  
+db.stats().indexSize  
 
 [MongoDB Production Notes](http://docs.mongodb.org/manual/administration/production-notes/)  
 
