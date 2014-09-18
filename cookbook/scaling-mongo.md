@@ -32,6 +32,7 @@ mongod --noteablescan
 db.serverStatus({workingSet:1}).workingSet
 db.stats().indexSize
 
+[MongoDB Production Notes](http://docs.mongodb.org/manual/administration/production-notes/)  
 
 ````sh
 #ubuntu issues
@@ -45,4 +46,12 @@ readahead
 noatime
 ````
 
-[MongoDB Production Notes](http://docs.mongodb.org/manual/administration/production-notes/)  
+
+
+=========================================
+#### Horizontal Scaling
+
+
+shard-key selection
+
+
