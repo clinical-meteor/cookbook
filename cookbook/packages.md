@@ -52,13 +52,15 @@ So, there isn't an official documented API for creating packages, as far as I'm 
 Package.describe({
   // define a message to describe the package
   summary: "This is a sample package that doesn't actually do anything.",
-  
-  // for internal dependency packages, set the internal flag true
-  internal: false  
+  version: "1.2.1",
+  git: "http://github.com/myaccount/nifty-widget"
 });
 
 // If you're bundling an NPM package, be sure to reference the package as a dependency
-Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
+Npm.depends({
+  sample_package: "0.2.6", 
+  bar: '1.2.3'
+});
 
 Package.on_use(function (api) {
   
