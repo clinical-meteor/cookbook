@@ -198,6 +198,21 @@ https://github.com/meteor/standalone-blaze-generator
 https://github.com/merunga/cordova-meteor-mashup  
 
 
+
+
+#### Meteor Cordova Architecture Pipeline  
+
+Okay, now it's time to finally bust out the [Meteor Cordova Phonegap Integration](https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration) documentation.  
+
+````sh
+meteor list-platforms
+meteor add-platform ios
+meteor list-platforms
+meteor run ios
+````
+
+
+
 #### Project Configuration for iFrame Method
 Alternatively, if you're willing to manage cross-site security and want hot-code updates for your mobile apps, you'll want to use the iFrames approach.  This requires editing the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  
 
