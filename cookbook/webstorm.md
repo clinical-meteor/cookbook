@@ -1,6 +1,10 @@
 ## WebStorm IDE
 
+**Note:  WebStorm is no longer the Meteor-Cookbook recommended Editor or Development Environment.**   
+We now recommend [Atom.io](http://www.atom.io) since it's a pure-javascript editor, meaning we can extend the Meteor Isomorphic API to the Editor.  For an early preview, check out [Meteor API Code Snippets for Atom Editor](https://github.com/awatson1978/meteor-api-for-atom-editor).  
 
+================================================
+#### Version  
 Recommend version of WebStorm is currently 7.0.  
 http://www.jetbrains.com/webstorm/  
 http://www.jetbrains.com/webstorm/download/download_thanks.jsp
