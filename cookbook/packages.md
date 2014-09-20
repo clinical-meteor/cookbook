@@ -66,38 +66,39 @@ Npm.depends({
   bar: '1.2.3'
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
   
   var path = Npm.require('path');
   
-  // sample_package.js  
+  // expose an object from an Npm package by first referencing it
   Foo = Npm.require('sample_package');  
   
-  // export the object
+  // and then exporting it
   api.export('Foo');
   
-  api.add_files(path.join('audio', 'click1.wav'), 'client');
+  // add_files has been deprecated in favor of addFiles
+  api.addFiles(path.join('audio', 'click1.wav'), 'client');
     
   // define dependencies using api.use
   api.use('package_name', 'directory/to/install/into');
  
-  // add files to specific locations using api.add_files
-  api.add_files('library_name.js', 'directory/to/install/into');
+  // add files to specific locations using api.addFiles
+  api.addFiles('library_name.js', 'directory/to/install/into');
  
   // example: add multiple files to a location using an array
-  api.add_files(['first_library.js', 'second_library.js'], 'client');
+  api.addFiles(['first_library.js', 'second_library.js'], 'client');
  
   // example: add file to multiple locations using an array
-  api.add_files('other_library_name.js', ['client', 'server']);
+  api.addFiles('other_library_name.js', ['client', 'server']);
 });
  
-Package.on_test(function (api) {
+Package.onTest(function (api) {
  
   // define dependencies using api.use
   api.use('package_name');
  
   // add files to specific locations using api.add_files
-  api.add_files('library_name.js', 'directory/to/install/into');
+  api.addFiles('library_name.js', 'directory/to/install/into');
 });
 ````
 
