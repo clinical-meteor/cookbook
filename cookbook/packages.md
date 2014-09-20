@@ -52,7 +52,11 @@ So, there isn't an official documented API for creating packages, as far as I'm 
 Package.describe({
   // define a message to describe the package
   summary: "This is a sample package that doesn't actually do anything.",
+
+  // update this value before you run 'meteor publish'
   version: "1.2.1",
+  
+  // and add this value if you want people to access your code from Atmosphere
   git: "http://github.com/myaccount/nifty-widget"
 });
 
