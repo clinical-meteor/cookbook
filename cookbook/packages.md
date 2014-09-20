@@ -5,39 +5,32 @@ The packaging system has been updated in 0.9!  Please check out the following li
 
 [Unipackage Hackpad](https://meteor.hackpad.com/Unipackage-tvas8pXYMOW)  
 
-
 ================================================
-#### Installing Packages without Atmosphere  
+#### Adding and Managing Packages
 
-Adding a custom packages to your application is simple.  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the syntax described in the following code sample.  
-https://atmosphere.meteor.com/wtf/package  
-````json
-{
-  "meteor": {
-    "branch": "master"
-  },
-  "packages": {
-    "audio-click": {
-      "git": "https://github.com/awatson1978/audio-click.git"
-    },
-    "fonts-barcode": {
-      "git": "https://github.com/awatson1978/fonts-barcode.git"
-    },
-    "hipaa-audit-log": {
-      "git": "https://github.com/awatson1978/hipaa-audit-log.git"
-    },
-    "reactive-overlays": {
-      "git": "https://github.com/awatson1978/reactive-overlays.git"
-    },
-    "accounts-famous-dead-people": {
-      "git": "https://github.com/awatson1978/accounts-famous-dead-people.git"
-    },
-    "device-detection": {},
-    "cordova-phonegap": {},
-    "keybindings": {}
-  }
-}
-````
+````sh
+# figure out what packages are currently installed
+meteor list
+
+# search by namespace
+meteor search nifty
+
+# search by package name or keyword
+meteor search widget
+
+# add package
+meteor add nifty:widget
+
+# confirm that it's installed
+meteor list
+
+# if it has a * next to and needs upgrading
+meteor update nifty:widget
+
+# when you no longer want the package
+meteor remove nifty:widget
+
+`````
 
 ================================================
 #### Creating a Package for Distribution  
@@ -110,3 +103,35 @@ Once all that is done, you should have a Foo object which you can now use in you
 ````
 
 
+================================================
+#### Installing Packages without Atmosphere  
+
+Adding a custom packages to your application is simple.  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the syntax described in the following code sample.  
+https://atmosphere.meteor.com/wtf/package  
+````json
+{
+  "meteor": {
+    "branch": "master"
+  },
+  "packages": {
+    "audio-click": {
+      "git": "https://github.com/awatson1978/audio-click.git"
+    },
+    "fonts-barcode": {
+      "git": "https://github.com/awatson1978/fonts-barcode.git"
+    },
+    "hipaa-audit-log": {
+      "git": "https://github.com/awatson1978/hipaa-audit-log.git"
+    },
+    "reactive-overlays": {
+      "git": "https://github.com/awatson1978/reactive-overlays.git"
+    },
+    "accounts-famous-dead-people": {
+      "git": "https://github.com/awatson1978/accounts-famous-dead-people.git"
+    },
+    "device-detection": {},
+    "cordova-phonegap": {},
+    "keybindings": {}
+  }
+}
+````
