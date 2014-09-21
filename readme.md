@@ -2,14 +2,6 @@
 
 Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from over 18 months of emails and discussions from the [meteor] google group and my experiences rolling out packages and apps.  These documents are intended for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The focus is on helping the user grow accustomed to functional programming using document oriented databases.
 
-## Breaking News  
-
-A lot of people have reported problems with the auto-update feature in Meteor 0.9.  If you have an application in production that you'd like to prevent from auto-updating, there's reports that the following environment variable will ensure that your app doesn't start into the auto-update script.
-
-````js
-export METEOR_TEST_UPDATE_MANIFEST="offline"
-````
-Otherwise, just be sure **not** to press ``ctrl-C`` when your app starts up.  The new package manager can run a different version of Meteor in different git branches in a project repository.  So if you just let it do it's thing, you should be good to go.  The initial problems have mostly been worked out.    
 
 #### Upgrading Apps and 0.9.x
 
