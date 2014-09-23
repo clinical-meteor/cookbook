@@ -1,5 +1,5 @@
 Upgrading Apps and 0.9.x
-
+======================================
 
 I've found the easiest way to upgrade apps is to create a new project from scratch, and copy all the files from the old directory to the new one, and then readd the necessary packages.
 
