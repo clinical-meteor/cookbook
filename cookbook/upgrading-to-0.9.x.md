@@ -1,4 +1,5 @@
-#### Upgrading Apps and 0.9.x
+Upgrading Apps and 0.9.x
+
 
 I've found the easiest way to upgrade apps is to create a new project from scratch, and copy all the files from the old directory to the new one, and then readd the necessary packages.
 
@@ -31,6 +32,7 @@ meteor add nifty:widget
 meteor add etc:etc
 ````
   
+------------------------------------------  
 #### Upgrading Packages 0.9.x
 
 If you need to upgrade your packages to 0.9.x, start by reading the hackpad:  
