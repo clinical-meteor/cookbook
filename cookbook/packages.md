@@ -48,6 +48,9 @@ Package.describe({
 
   // update this value before you run 'meteor publish'
   version: "1.2.1",
+
+  // if this value isn't set, meteor will default to the directory name
+  name: "samplePackage",
   
   // and add this value if you want people to access your code from Atmosphere
   git: "http://github.com/myaccount/nifty-widget"
