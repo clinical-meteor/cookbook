@@ -58,33 +58,48 @@ Then add your template functions to your Controller file:
 // this variable controls which tab is displayed and associated application state
 Session.setDefault('selectedPanel', 1);
 
-// user inputs
-Template.samplePage.events({
-  'click #firstPanelTab':function(){
-    Session.set('selectedPanel', 1);
-  },
-  'click #secondPanelTab':function(){
-    Session.set('selectedPanel', 2);
+Template.samplePage.firstPanelVisibility = function(){
+  if(Session.get('selectedPanel') === 1){
+    return "visible";
+  }else{
+    return "hidden";
   }
-});
-
-// user interface output
-Template.firstPanel.helpers({
-  firstPanelVisibility: function(){
-    if(Session.get('selectedPanel') === 1){
-      return "visible";
-    }else{
-      return "hidden";
-    }
-  },
-  secondPanelVisibility: function(){
-    if(Session.get('selectedPanel') === 2){
-      return "visible";
-    }else{
-      return "hidden";
-    }
+}
+Template.samplePage.secondPanelVisibility = function(){
+  if(Session.get('selectedPanel') === 2){
+    return "visible";
+  }else{
+    return "hidden";
   }
-});
+}
+Template.samplePage.thirdPanelVisibility = function(){
+  if(Session.get('selectedPanel') === 3){
+    return "visible";
+  }else{
+    return "hidden";
+  }
+}
+Template.samplePage.firstPanelActive = function(){
+  if(Session.get('selectedPanel') === 1){
+    return "active panel-tab";
+  }else{
+    return "panel-tab";
+  }
+}
+Template.samplePage.secondPanelActive= function(){
+  if(Session.get('selectedPanel') === 2){
+    return "active panel-tab";
+  }else{
+    return "panel-tab";
+  }
+}
+Template.samplePage.thirdPanelActive = function(){
+  if(Session.get('selectedPanel') === 3){
+    return "active panel-tab";
+  }else{
+    return "panel-tab";
+  }
+}
 
 ````
 
@@ -92,11 +107,13 @@ Template.firstPanel.helpers({
 Create classes in your View.
 
 ````css
-.visible{
-  visibility: hidden;
+.show {
+  display: block !important;
+  visibility: visible !important;
 }
-.hidden{
-  visibility: visible;
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
 }
 ````
 
