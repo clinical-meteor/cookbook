@@ -46,7 +46,7 @@ In particular, if you're trying to access Npm namespaces, the ``Npm.depends()``,
 ============================================
 #### LESS Class Namespacing  
 The third most common approach to namespacing is to use LESS to create CSS class hierarchies and namespaces.  In the following example, the ``@import`` syntax defines a namespace hierarchy between LESS files; and the nested CSS classes define a hierarchical namespace in a tree format.  
-````less
+````css
 @import "../mixins.less";
 
 #homePage{
