@@ -1,4 +1,7 @@
-## Two-Way Data Binding
+Two-Way Data Binding
+==============================
+
+
 
 Start by setting up your document collections, publications, and subscriptions.  
 ````js
@@ -43,7 +46,7 @@ And that's it!  You're done!
 
 Wait.  Really?  You might be thinking "that's not how I'm accustomed to doing data bindings.  Where are the data-* attributes?".  Well, the good news is that Meteor's client-side minimongo data store handles most all of the data synchronization for you, and exposes a data context along with your Blaze templates.  And that effectively eliminates the need to have data-* attributes.  The only thing you need to do is expose some hooks between the datastore and the template using a spacebars syntax, which is similar to PHP, moustache, and handlebars.  
 
--------------
+============================================================
 #### Two-Way Data Binding  
 
 After you get through that, you can get creative with dynamically generated data-bindings like this:
@@ -87,6 +90,8 @@ Template.helloWorld.events({
 **warning**  
 Relying on Session variables reactivity can get out of control quickly.  Contextually reactive multi-way databinding can be super powerful, but be sure to have a test applet where you can study and confirm the behavior of the queries and templates you're trying to render.  This kind of approach can become combinatorially complex very quickly.
 
+
+============================================================
 #### Data-* Compatibility
 
 Okay, so maybe you have some backward compatibility issues or are migrating an application from Angular or Knockout to Meteor, and have a who bunch of data-* syntax that you have to deal with.  How to make Meteor play nicely with them?  Well, remember that you can place spacebar brackets pretty much anywhere in your HTML and CSS selectors can query by attribute type and there is the ``getAttribute`` method.  Your HTML will be a bit more cluttered than it needs to be, and your CSS selectors won't be as fast and can get overloaded; but you can make it work.
@@ -108,6 +113,7 @@ Template.helloWorld.events({
 });
 ````
 
+============================================================
 #### Data-Toggle 
 
 A common issue that people run across is getting Bootstrap data-toggles to work.  The best way to handle data-toggles is to manually wire them up yourself.  Start by giving a unique ID to the relevant elements in your UI controls.
