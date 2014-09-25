@@ -107,7 +107,7 @@ Template.samplePage.thirdPanelActive = function(){
 Create classes in your View.
 
 ````css
-.show {
+.visible {
   display: block !important;
   visibility: visible !important;
 }
