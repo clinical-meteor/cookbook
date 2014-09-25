@@ -1,10 +1,9 @@
 ## Namespacing
-**Q:  How do I do namespacing in Meteor?**  
 
 There are four general approaches to creating namespaces in Meteor apps... the file system, package dependencies, CSS class namespacing, and naming conventions.  
 
-
-**File System**  
+---------------------------------------
+#### File System  
 The most important is to simply use the filesystem as a namespace.  Feel free to organize files in folders however makes sense for your app, and use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.  Meteor's bundler and minifier will combine all your files, and users and clients will never need to know how your internal files are organized.  Feel free to rename files and directories as often as it makes sense to keep things organized.
 ````sh
 /client/templates/page.home.html
@@ -16,8 +15,8 @@ The most important is to simply use the filesystem as a namespace.  Feel free to
 /client/templates/sidebar.navigation.html
 ````
 
-
-**NPM Package Namespacing**  
+---------------------------------------
+#### NPM Package Namespacing  
 However, if you need to expose a namespace, or import a namespace, you'll probably need to use Javascript objects and the Npm namespacing system.  There are two steps in this process. The first is to expose a namespace via a Package. That is done with a ``package.js`` description file, which looks like this:
 
 ````js
@@ -44,7 +43,8 @@ Package.on_use(function (api) {
 In particular, if you're trying to access Npm namespaces, the ``Npm.depends()``, ``Npm.require()``, and ``Npm.export()`` commands define all the syntax you need.
 
 
-**LESS Class Namespacing**  
+---------------------------------------
+#### LESS Class Namespacing  
 The third most common approach to namespacing is to use LESS to create CSS class hierarchies and namespaces.  In the following example, the ``@import`` syntax defines a namespace hierarchy between LESS files; and the nested CSS classes define a hierarchical namespace in a tree format.  
 ````less
 @import "../mixins.less";
@@ -66,7 +66,8 @@ The third most common approach to namespacing is to use LESS to create CSS class
 ````
 
 
-**HTML Template Naming Conventions**  
+---------------------------------------
+#### HTML Template Naming Conventions  
 Lastly, you can create namespaces by simply creating and using naming convetions throughout your application. For instance, you might create a template naming convetion, using camelCase, which matches with the id of the first <div> in each template.
 ````html
 <template name="pageGraph">
