@@ -2,7 +2,7 @@
 
 There are four general approaches to creating namespaces in Meteor apps... the file system, package dependencies, CSS class namespacing, and naming conventions.  
 
---------------------------------------------------
+============================================
 #### File System  
 The most important is to simply use the filesystem as a namespace.  Feel free to organize files in folders however makes sense for your app, and use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.  Meteor's bundler and minifier will combine all your files, and users and clients will never need to know how your internal files are organized.  Feel free to rename files and directories as often as it makes sense to keep things organized.
 ````sh
