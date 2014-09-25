@@ -1,10 +1,11 @@
-## Console Logging
+## Logging
 
 If you're from a DevOps, Operations, or SysAdmin background, this is probably one of the first sections of the Meteor Cookbook that you looked into.  If you're from any other background, you may be surprised to find just how many tools are available for logging.  Many people consider log files to be one of the most important part of a running application, and I've seen few successful applications put into production that didn't have some type of logging available.  
 
 As far as Meteor goes, there are many, many options available.  Particularly if you dive into the [Npm repositories](https://npmjs.org/search?q=logging).  But one of the aims of the Meteor Cookbook is to use pure Meteor, when possible, and to advocate the using of the native tools.  Before looking to add extra packages and tools, lets start trying to learn the tools we already have.  
 
-### Server Side Logging Tools  
+============================================================
+#### Server Side Logging Tools  
 The first step to logging is simply to run Meteor from the shell, and you'll get the server logs in the command console.
 
 ````
@@ -41,7 +42,8 @@ script
 end script
 ````
 
-### Client Side Logging Tools
+============================================================
+#### Client Side Logging Tools
 
 Once you have your server side logging in place, it's time to hop over to the client side.  If you haven't explored the console API, be prepared for a treat.  There's actually all sorts of things that you can do with the built in Console API that's native to every Chrome and Safari installation.  So much so, in fact, that you may find yourself not needing Winston or other logging frameworks.  
 
@@ -70,8 +72,8 @@ https://github.com/gandev-de/meteor-server-console
 ![image](https://raw.github.com/gandev-de/meteor-server-console/screenshots/package-scope-functionality.png "Meteor Server Console")  
 
 
-
-### Application Patterns  
+============================================================
+#### Application Patterns  
 
 Once those pieces are in place, you're totally ready to start logging events in your application.  In practice, there are a half-dozen commands that are particularly useful.  Here are three quick examples illustrating very common logging patterns in Meteor.  
 
@@ -130,6 +132,6 @@ Template.landingPage.events({
 
 ````
 
-
-### Winston  
+============================================================
+#### Winston  
 Lastly, if you need something more powerful than the default logging options, you might want to look at a tool like Winston.  Go to [Atmosphere](https://atmosphere.meteor.com), and simply search for ``Winston`` to find the latest packages available.  Be warned, however - [Winston](https://github.com/flatiron/winston) is a sophisticated product, and while it exposes a lot of functionality, it will also add a layer of complexity to your application.  
