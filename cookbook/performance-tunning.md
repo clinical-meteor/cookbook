@@ -1,10 +1,12 @@
 Performance Optimization  
 ==============================
 
-First off, lets be clear that Meteor is simply Javascript and Node.js.  Yes, it's a very specific implementation of those two technologies, and has it's own unique ecosystem, and leverages isomorphic APIs and a JSON datastore to achieve some truly amazing results.  But, at the end of the day, Meteor is a web technology, and it's written in Javascript.  So all of your typical javascript performance techniques still apply.  
+First off, lets be clear that Meteor is simply Javascript and Node.js.  Yes, it's a very specific implementation of those two technologies, and has it's own unique ecosystem, and leverages isomorphic APIs and a JSON datastore to achieve some truly amazing results.  But, at the end of the day, Meteor is a web technology, and it's written in Javascript.  So all of your typical javascript performance techniques still apply.  Start there.
 
 ===========================
 ####Tutorials on Writing Performant Javascript
+
+If you're not sure how to optimize your javascript, here are some tutorials that we've found useful.  
 
 [25 Javascript Performance Techniques](http://desalasworks.com/article/javascript-performance-techniques/)  
 [Performance Optimizations for High Speed Javascript](http://www.webreference.com/programming/javascript/jkm3/index.html)  
