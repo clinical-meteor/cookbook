@@ -30,8 +30,8 @@ meteor test-packages
 ````
 
 ================================
-#### mUnit
-Chai and Sinon hooks for TinyTest.
+#### Nightwatch  
+A javascript wrapper for the Selenium automated browser testing server.  Supports Firefox, Chrome, PhantomJS browser automation (and more).  Integrates with Brows
 [https://atmospherejs.com/package/munit](https://atmospherejs.com/package/munit)  
 
 
@@ -42,11 +42,14 @@ The newest full-featured reactive test runner.
 [Velocity Homepage](https://github.com/xolvio/velocity)
 [Velocity Core Mailing List](https://groups.google.com/forum/#!forum/velocity-core)  
 
+
+
+
 ================================
-#### REST Testrunner  
-Acceptance testing framework with HTML reporter.  
-[http://rest-api-testrunner.meteor.com/](http://rest-api-testrunner.meteor.com/)  
-[http://github.com/awatson1978/rest-api-testrunner/](http://github.com/awatson1978/rest-api-testrunner/)   
+#### mUnit
+Chai and Sinon hooks for TinyTest.
+[https://atmospherejs.com/package/munit](https://atmospherejs.com/package/munit)  
+
 
 
 ================================
