@@ -5,10 +5,10 @@ We now recommend [Atom.io](http://www.atom.io) since it's a pure-javascript edit
 
 ================================================
 #### Version  
-Recommend version of WebStorm is currently 7.0.  
+Recommend version of WebStorm is currently ~9.0.  
 http://www.jetbrains.com/webstorm/  
 http://www.jetbrains.com/webstorm/download/download_thanks.jsp
-
+http://blog.jetbrains.com/webstorm/2014/09/webstorm-9-eap-138-1988-meteor-support-gulp-and-more/
 
 ================================================
 #### Download the Settings.jar File  
