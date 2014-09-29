@@ -133,5 +133,23 @@ Template.landingPage.events({
 ````
 
 ============================================================
+#### Disable Logging in Production
+
+When in production, you probably won't want logging to continue running, so 
+````js
+if (!DEBUG_MODE_ON) {
+    console = console || {};
+    console.log = function(){};
+    
+    console.log = function(){};
+    console.error = function(){};
+    console.count = function(){};
+    console.info = function(){};
+
+}
+````
+
+
+============================================================
 #### Winston  
 Lastly, if you need something more powerful than the default logging options, you might want to look at a tool like Winston.  Go to [Atmosphere](https://atmosphere.meteor.com), and simply search for ``Winston`` to find the latest packages available.  Be warned, however - [Winston](https://github.com/flatiron/winston) is a sophisticated product, and while it exposes a lot of functionality, it will also add a layer of complexity to your application.  
