@@ -135,7 +135,7 @@ Template.landingPage.events({
 ============================================================
 #### Disable Logging in Production
 
-When in production, you probably won't want logging to continue running, so 
+When in production, you probably won't want logging to continue running, so try overriding the console functions.  
 ````js
 if (!DEBUG_MODE_ON) {
     console = console || {};
@@ -145,7 +145,6 @@ if (!DEBUG_MODE_ON) {
     console.error = function(){};
     console.count = function(){};
     console.info = function(){};
-
 }
 ````
 
