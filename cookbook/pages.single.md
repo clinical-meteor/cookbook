@@ -2,9 +2,9 @@
 
 ##### File structure 
 ````sh
-/client/views/page.home.less
-/client/models/page.home.html
-/client/controllers/page.home.js
+/client/home/homePage.less
+/client/home/homePage.html
+/client/home/homePage.js
 ````
  
 ##### The Document Object Model    
@@ -23,7 +23,7 @@ But wait! you might be saying.  There's so much redundancy!  We've repeated the 
 
 ##### The View    
 ````scss
-// client/views/page.home.less
+// client/home/homePage.less
 // the page class allows us to modify all the pages at the same time
 .page{
   margin-top: 50px;
@@ -44,7 +44,7 @@ But wait! you might be saying.  There's so much redundancy!  We've repeated the 
 The controller is fairly straight forward.  
 ##### The Controller   
 ````js
-// client/views/page.home.js 
+// client/home/homePage.js 
 Template.homePage.getTitle = function(){
  return "Hello World";
 }
