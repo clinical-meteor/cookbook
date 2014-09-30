@@ -23,24 +23,60 @@ Test driven development is summarized by the phrase "Red, Green, Refactor".  Ill
 #### TinyTest  
 
 
-Meteor provides built in unit-testing through the  [undocumented](https://www.meteor.com/blog/2013/04/04/meteor-060-brand-new-distribution-system-app-packages-npm-integration) [tinytest packages](https://github.com/meteor/meteor/tree/devel/packages/tinytest), with some [helpers](https://github.com/meteor/meteor/tree/devel/packages/test-helpers). You can test your app that way too if you package it as a Meteor package, which amounts to adding a `package.js file`, adding a reference to ``tinytest``, and then runnning ``meteor test-packages`` from the command line.    
+Meteor provides built in unit-testing through the [tinytest packages](https://github.com/meteor/meteor/tree/devel/packages/tinytest).  As of Meteor 0.9.x, using Tinytest to add unit tests to your application begings with the following steps. 
+
+````sh
+cd myapp
+
+# create your package of unit tests
+mkdir packages
+cd packages
+meteor create --packages quality-control
+cd ..
+
+# add tinytest to your app
+meteor add tinytest
+
+# run your tests
+meteor test-packages
+
+# add/edit your tests and repeat
+nano packages/quality-control/quality-control-tests.js
+````
+
+There are some tutorials on how to use some older versions of Tinytest.  They should still mostly be up-to-date, as the Tinytest API hasn't changed drastically with the new package management system.  Let us know if you run into any discrepencies, and we'll update the Cookbook accordingly!  
 
 * [video tutorial on Eventedmind](https://www.eventedmind.com/tracks/feed-archive/meteor-testing-packages-with-tinytest)   
 * [accompanying example](https://github.com/EventedMind/meteor-file)  
 * [example of using the undocumented helpers for client testing](http://inconsistency.in/post/52547787175/flash-messages-package-and-testing-events-on-meteor).   
 * [Tinytest integration with Travis CI](https://github.com/arunoda/travis-ci-meteor-packages)  
 
-Alternatively, you can run the following commands:
 
-````sh
-meteor add tinytest
-meteor test-packages
-````
+
 
 ================================
-#### Nightwatch  
-A javascript wrapper for the Selenium automated browser testing server.  Supports Firefox, Chrome, PhantomJS browser automation (and more).  Integrates with Brows
-[https://atmospherejs.com/package/munit](https://atmospherejs.com/package/munit)  
+#### Nightwatch   
+[Nightwatch](https://github.com/awatson1978/clinical-nightwatch) is the favorite testing framework of the Meteor Cookbook, as it's an *acceptance testing* framework.  Nightwatch itself is a javascript wrapper around the excellent [Selenium](http://www.seleniumhq.org/) automation testing server.  Selenium is an industry standard, and used by most all the major, major tech companies, such as Google and Facebook.  It supports Firefox, Chrome, PhantomJS, and many more browsers, and integrates with Seleneium Grid deployments, such as [BrowserStack](http://www.browserstack.com/) and [SauceLabs](https://saucelabs.com/).  
+
+````sh
+# Go to the root of your application
+terminal-a$  cd myappdir
+terminal-a$  meteor add clinical:nightwatch
+
+# Go to the root of your application
+terminal-a$ cd myappdir
+
+# run the leaderboard application
+terminal-a$ meteor
+
+# In the same way that we run 'meteor mongo' in a separate terminal while our application is already running,
+# we want to open up a new terminal, and run nightwatch
+terminal-b$ ln -s .meteor/local/build/programs/server/assets/packages/clinical_nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
+terminal-b$ sudo ./run_nightwatch.sh
+
+# you might want to do something clever like pass in arguments and run specific tests
+terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
+````
 
 
 ================================
@@ -53,10 +89,11 @@ The newest full-featured reactive test runner.
 
 ================================
 #### mUnit
-Chai and Sinon hooks for TinyTest.
-[https://atmospherejs.com/package/munit](https://atmospherejs.com/package/munit)  
+[mUnit](https://atmospherejs.com/gfk/munit) is an independent testing framework, which took a very different approach to than Nightwatch and Velocity, and focused on providing Chai and Sinon hooks for TinyTest.  If you're looking for something lightweight that extends core Tinytest functionality, it's worth a look.  
 
-
+````sh
+meteor add gfk:munit
+````
 
 ================================
 #### Older/Deprecated Projects (Probablly Want to Avoid)  
