@@ -5,60 +5,56 @@ You're going to need to set up a development environment if you want to program 
 ===============================================================
 #### Integrated Development Environments
 
-Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  See below.  
+Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  Meteor Cookbook's recommendation is to start with either Atom or Webstorm.  
 
-[Atom](http://www.atom.io) - The javascript IDE that fully leverages Meteor's isomorphic javascript framework.  Recommended.  
+[Atom](http://www.atom.io) - Javascript IDE that can fully leverage Meteor's isomorphic javascript framework.  Recommended. 
 [WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.    
-[Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
+[Sublime](http://www.sublimetext.com/) - Light-weight and popular text editor.     
 [Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor.   
 [Cloud9](https://c9.io/)  - The newest Cloud Development offering that supports Meteor.  
 [MeteorPad](http://meteorpad.com/pad/J5Ls2Fc8imyXnz8yM)  - Lightweight cloud editing for mobile prototyping.  
 
 
 ===============================================================
-#### Project Management   
-
-[Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  
-[Slack](https://slack.com/)  
-[Meeting Hero](http://www.meetinghero.com/)  
-[Hackpad](https://hackpad.com)  
-
-  
-===============================================================
-#### Remote Teams    
-
-[Screenhero](http://screenhero.com/download.html?src=btn)      
-[MadEye](http://madeye.io/get-started)  
-
-===============================================================
 #### Database Tools
-[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb)  
-[Robomongo](http://robomongo.org/) - A sweet, sweet database management tool.  Highly recommended.   
-[MongoHub](http://mongohub.todayclose.com/) - Another Mongo GUI, similar to RoboMongo.
-[Mongo3](http://mongo3.com/) - It's in Ruby, but it will let you visualize replication sets.   
 
-[Mongo Monitoring Service](https://mms.mongodb.com/setup)  
-[JSON Generator](http://www.json-generator.com/)  
+Once you get past the 'Hello World' app, you'll need to start paying attention to your collection and document schemas, and will need some tools for managing your database.  Start with Robomongo.
+
+[Robomongo](http://robomongo.org/) - A sweet, sweet database management tool.  Highly recommended.   
+[JSON Generator](http://www.json-generator.com/) - Invaluable utility for generating sample datasets.   
+[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb)  
+[MongoHub](http://mongohub.todayclose.com/) - Another Mongo GUI, similar to RoboMongo.  
+[Mongo3](http://mongo3.com/) - It's in Ruby, but it will let you visualize replication sets.   
+[Mongo Monitoring Service](https://mms.mongodb.com/setup)  - Once you're ready to bring something into production.  
   
+  
+===============================================================
+#### Remote Collaboration Utilities for Distributed Developers
+
+Developing Meteor apps usually means testing multi-client reactivity, which requires collaboration tools.  The following tools have proven to be popular within the Meteor community.  
+
+[Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  - Video conferencing and chat.
+[Meeting Hero](http://www.meetinghero.com/)  - Collaborative meeting planning.  
+[Hackpad](https://hackpad.com)  Collaborative document editing.
+[Slack](https://slack.com/) - Collaborative project tracking feeds.    
+[MadEye](http://madeye.io/) - Collaborative web editor.    
+[Screenhero](http://screenhero.com) - Collaborative screen sharing.  
+
 ===============================================================
 #### REST Clients  
+
+If you want to integrate Meteor with an external API, it's likely that it's going to exposed as a REST interface.  We tend to use the following Chrome apps for testing REST APIs.  
+
 [Dev HTTP Client](https://chrome.google.com/webstore/detail/dev-http-client/aejoelaoggembcahagimdiliamlcdmfm)      
 [REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm/)      
   
 
 ===============================================================
 #### Debuggers  
+
+Most debugging happens in the terminal or in the Chrome or Safari develop tools, which are plenty sophisticated enough for 99% of your needs.  However, if you want to debug on Firefox or need extra server debugging functionality, there are a few extra utilities you can use.  
+
 [Firefox - Firebug](https://getfirebug.com/)    
 [Firebug (Firefox)](https://getfirebug.com/)   
 [Node-Inspector](https://github.com/node-inspector/node-inspector)    
   
-
-===============================================================
-#### Code Analysis  
-
-[Meteor JSHint](https://github.com/raix/Meteor-jshintrc)  
-
-````sh
-npm install jshint -g
-jshint .
-````
