@@ -7,7 +7,7 @@ You're going to need to set up a development environment if you want to program 
 
 Well, you're going to need to select an Integrated Development Environment (IDE), configure it so it works with Meteor, and set up debugging and profiling utilities.  Meteor Cookbook's recommendation is to start with either Atom or Webstorm.  
 
-[Atom](http://www.atom.io) - Javascript IDE that can fully leverage Meteor's isomorphic javascript framework.  Recommended. 
+[Atom](http://www.atom.io) - Javascript IDE that can fully leverage Meteor's isomorphic javascript framework.  Recommended.  
 [WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.    
 [Sublime](http://www.sublimetext.com/) - Light-weight and popular text editor.     
 [Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor.   
