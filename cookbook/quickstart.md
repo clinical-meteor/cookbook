@@ -19,7 +19,7 @@ http://nodejs.org/download/
 sudo curl -0 -L https://npmjs.org/install.sh | sh
 
 # check node is installed correctly
-node -version
+node --version
  
 # check npm is installed correctly
 npm -version
