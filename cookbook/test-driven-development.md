@@ -97,6 +97,7 @@ meteor add gfk:munit
 
 ================================
 #### Older/Deprecated Projects (Probablly Want to Avoid)  
+The following tools are first-generation testing frameworks.  They represent a lot of experimentation, and you may find some useful utilities in them.  Most of them are deprecated or rolled into the Velocity project.  
 
 [RTD](http://rtd.xolv.io)  
 [RTD Exampel Project](https://github.com/xolvio/meteor-rtd-example-project)  
@@ -105,13 +106,16 @@ meteor add gfk:munit
 [Laika tutorial](http://mherman.org/blog/2014/01/29/meteor-dot-js-in-action-create-an-app-test-with-laika/)  
 [Mocha-Web](https://atmosphere.meteor.com/package/mocha-web)   
 [Meteor-Mocha-Web](https://github.com/mad-eye/meteor-mocha-web)  
-
+[Safety-Harness](https://github.com/awatson1978/safety-harness)  
+[selenium-nightwatch](https://github.com/awatson1978/selenium-nightwatch-0.8.3)  
 
 ------------------------------------------------------------------
 #### Load Testing 
 
-Using PhantomJS:  
+Load testing is a cousin to unit-testing and acceptance testing, and involves driving large amounts of test traffic to a server, to see how an application performs under load.  This is a topic that's being actively researched and developed in the Meteor community, as many apps are going into production.  
+
+Using PhantomJS
 https://gist.github.com/awatson1978/5139909  
 
-Load Testing on AWS:  
+Load Testing on AWS  
 https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/meteor-talk/BJXA1FRuTzU/M2e9pCH4es0J  
