@@ -1,6 +1,6 @@
 ## Development Tools
 
-You're going to need to set up a development environment if you want to program in Meteor.  There's a growing ecosystem of tools to use, so the focus in this document is on tools that are known to work together well.   
+You're going to need to set up a development environment if you want to program in Meteor.  There's a growing ecosystem of tools to use, so the focus in this document is on tools that are known to work together well and are popular within the Meteor community.   
 
 ===============================================================
 #### Integrated Development Environments
@@ -12,18 +12,23 @@ Well, you're going to need to select an Integrated Development Environment (IDE)
 [Sublime](http://www.sublimetext.com/) -For something more light-weight and quick, try Sublime.   
 [Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor.   
 [Cloud9](https://c9.io/)  - The newest Cloud Development offering that supports Meteor.  
-  
-===============================================================
-#### Pair Programming & Remote Teams    
+[MeteorPad](http://meteorpad.com/pad/J5Ls2Fc8imyXnz8yM)  - Lightweight cloud editing for mobile prototyping.  
 
+
+===============================================================
+#### Project Management   
 
 [Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  
 [Slack](https://slack.com/)  
 [Meeting Hero](http://www.meetinghero.com/)  
 [Hackpad](https://hackpad.com)  
+
+  
+===============================================================
+#### Remote Teams    
+
 [Screenhero](http://screenhero.com/download.html?src=btn)      
 [MadEye](http://madeye.io/get-started)  
-
 
 ===============================================================
 #### Database Tools
