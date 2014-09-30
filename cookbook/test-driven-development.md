@@ -2,16 +2,21 @@ Test Driven Development
 ================================
 
 
-So, the good news is that from when this document was first written, there's been a lot of work on test driven development frameworks for Meteor, and we finally have some solutions worth taking a serious look at.  
+At some point, as your app grows, you will reach a point where it's complexity exceeds your ability to remember and comprehend everything that's going on in it.  When that happens, you'll make a change in one part of the program which breaks a feature in another part.  When that happens, bugs start to get introduced.  The single best technique for managing increasing complexity, and keeping bugs out of your application, is the practice of *test driven development*.  If you're not doing TDD already, you should begin learning.  If you're already doing TDD, here are the tools you need to get started in Meteor.  
 
 ================================
 #### Definitions 
 
-For an introduction to different types of tests (unit, integration, functional, acceptance, regression, smoke tests), see these StackOverflow questions: 
+For an introduction to different types of tests (unit, integration, functional, acceptance, regression, smoke tests), start with these StackOverflow articles, which do a fairly good job of covering terminology:   
 
 [What is the Difference Between Unit, Integration, and Acceptance Testing?](http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test)  
 [What are Unit, Integration, Regression, and Smoke Tests?](http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test?lq=1)  
 
+================================
+#### General Methodology - Red, Green, Refactor  
+
+Test driven development is summarized by the phrase "Red, Green, Refactor".  Illustrated below.  
+![Red, Green, Refactor](http://www.pathfindersolns.com/wp-content/uploads/2012/05/red-green-refactorFINAL2.png)  
 
 
 ================================
