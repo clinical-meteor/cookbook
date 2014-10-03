@@ -158,8 +158,7 @@ scrollableDiv.ontouchmove = function(e) {e.stopPropagation()};
 
 #### Multitouch & Gestures
 
-
-
+[FastClick](https://github.com/ftlabs/fastclick)  
 
 
 
