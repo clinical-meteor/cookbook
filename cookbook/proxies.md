@@ -18,5 +18,10 @@ curl https://install.meteor.com | sh
 ================================
 #### Setting up a Proxy Tier
 
-- HAProxy
-- nginx
+There are two proxy technologies that most people in the Meteor community seem to be looking at.  Official support is expected for one (or more, via packages) of these.  
+
+- [HAProxy](http://www.haproxy.org/)  
+- [nginx](http://nginx.org/)  
+ 
+
+
