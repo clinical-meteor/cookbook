@@ -1,5 +1,7 @@
 ## Single Page Example
 
+
+
 ##### File structure 
 ````sh
 /client/home/homePage.less
@@ -21,7 +23,7 @@
 But wait! you might be saying.  There's so much redundancy!  We've repeated the term 'page' in both template names, div containers, and filenames!  That sort of duplication confuses things.  Well, maybe it does, and maybe it doesn't.  There is, indeed a bit of redundancy going on.  However, I suggest this approach because it will eventually lead to code-completion functionality in IDEs and refactoring tools.  
 
 
-##### The View    
+##### Presentation States    
 ````scss
 // client/home/homePage.less
 // the page class allows us to modify all the pages at the same time
