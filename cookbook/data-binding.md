@@ -144,7 +144,7 @@ Template.dropDownWidget.events({
 
 For an even more advanced look at data-attribute binding, take a look at the following code snippet and this [data-binding](https://github.com/awatson1978/data-bindings) example.  No guarantees, but you might find something that approximates a Meteor version of ng-directives.
 
-````
+````js
 Meteor.startup(function(){
   $("input[data-name]").on("keyup", function( eventObject ) {
     var dataField = eventObject.target.getAttribute("data-field");
