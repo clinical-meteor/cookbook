@@ -139,4 +139,26 @@ Template.dropDownWidget.events({
 });
 ````
 
+============================================================
+#### Advanced Data-Attribute Parsing 
+
+For an even more advanced look at data-attribute binding, take a look at the following code snippet and this [data-binding](https://github.com/awatson1978/data-bindings) example.  No guarantees, but you might find something that approximates a Meteor version of ng-directives.
+
+````
+Meteor.startup(function(){
+  $("input[data-name]").on("keyup", function( eventObject ) {
+    var dataField = eventObject.target.getAttribute("data-field");
+    var dataCollection = eventObject.target.getAttribute("data-collection");
+    var dataId = eventObject.target.getAttribute("data-id");
+    var object = {};
+    object[dataName] = eventObject.target.value;
+    Session.set(dataName, object);
+    var locator = {_id: dataId};
+    var query = {$set: object};
+
+    Collections[dataCollection].find(locator, query);
+  });
+});
+
+````
 
