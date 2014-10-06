@@ -3,6 +3,9 @@
 **Q:  Which packages should I use in my application?**  
 So, with the growing number of packages available in Atmosphere, a question 
 
+**GAnalytics**  
+https://github.com/datariot/meteor-ganalytics  
+
 **Template Extension**
 https://github.com/aldeed/meteor-template-extension
 
