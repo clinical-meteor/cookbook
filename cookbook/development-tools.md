@@ -22,7 +22,7 @@ Once you get past the 'Hello World' app, you'll need to start paying attention t
 
 [Robomongo](http://robomongo.org/) - A sweet, sweet database management tool.  Highly recommended.   
 [JSON Generator](http://www.json-generator.com/) - Invaluable utility for generating sample datasets.   
-[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb) - Preferences GUI for MacOSX.
+[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb) - Preferences GUI for MacOSX.  
 [MongoHub](http://mongohub.todayclose.com/) - Another Mongo GUI, similar to RoboMongo.  
 [Mongo3](http://mongo3.com/) - It's in Ruby, but it will let you visualize replication sets.   
 [Mongo Monitoring Service](https://mms.mongodb.com/setup)  - Once you're ready to bring something into production.  
