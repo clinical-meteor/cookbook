@@ -109,6 +109,8 @@ Once all that is done, you should have a Foo object which you can now use in you
 ================================================
 #### Installing Packages without Atmosphere  
 
+** Deprecated - Pre 0.9.x **  
+
 Adding a custom packages to your application is simple.  Just add a smart.json file in the root of your project, and add the package in as a smart.json using the syntax described in the following code sample.  
 https://atmosphere.meteor.com/wtf/package  
 ````json
