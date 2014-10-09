@@ -91,7 +91,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and currated from
   - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
   - [Async Workers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/async-workers.md)  
   - [File Uploads](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/file-uploads.md)  
-  - [Healthcare Apps]
   - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
   - Parsing File Types
     - [XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
