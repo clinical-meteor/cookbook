@@ -2,6 +2,7 @@
 
 The holy grail of web-apps is a single code base across different platforms.  In theory, this will drastically reduced maintenance costs and consistency of user experience across devices.  In practice, we're not quite there yet, but getting close.  But to create such an application, there are a lot of steps that one has to go through.
 
+=============================================
 #### Design Checklist
 
 - Do you need centralized hotcode pushes to all devices?  
@@ -14,6 +15,7 @@ The holy grail of web-apps is a single code base across different platforms.  In
 - Which screen sizes do you want this app to run on?  
 
 
+=============================================
 #### Page Layout on Different Devices - CSS
 
 First of all, if your application is going to run on different devices, it's going to need to render each 'view' differently, based on the device size.  You can deal with this in two ways:  with javascript rules, or CSS media styles.  
@@ -40,6 +42,7 @@ First of all, if your application is going to run on different devices, it's goi
 You'll need to figure out if you want to break the styles at 768px (portrait mode) or at 1024 pixels (landscape).  That's assuming your target mobile device is the iPad, which uses a 3:4 ratio.  Otherwise, you'll need to work out the aspect ratios of the devices you do want to target, and figure out the threshold levels from there.  
 
 
+=============================================
 #### Fixed Sized Windows
 
 If you're going to be designing layouts with fixed size screens for different mobile devices, you may want to mirror that design when running your app on a desktop.  The following method fixes the size of the window OUTSIDE of PhoneGap, giving a fixed-sized window on the desktop.  Sometimes it's easiest to manage user's expectations and UI design by limiting options!  
@@ -56,6 +59,7 @@ $(window).resize(function(){
 });
 ````
 
+=============================================
 #### 60fps Native Repsonse Widgets
 
 If you want 60fps native response in your widgets, animations, and page transitions, you're going to need to override the CSS rendering subsystem with a library like Famo.us (or Google Polymer).  
@@ -65,6 +69,8 @@ mrt add famono
 mrt add famono-components
 ````
 
+
+=============================================
 #### Famo.us Style Page Transitions
 
 You'll then need to use Famo.us to do things like render page transitions, which should look something like this:  
@@ -98,6 +104,7 @@ Template.rc_buttons.events({
 });
 ````
 
+=============================================
 #### IronRouter + Famo.us - URL Parsing and Triggering Template Rendering
 
 The next big issue in designing mobile apps is figuring out how to support the URL social contract and maintain fluid page-transitions.  Doing one or the other is easy.  Doing both URLs **and** page-transitions is difficult. You'll need to move away from subscribing to collections within the router function, because it will take too long for the data to be fetched.  Instead, do your data subscriptions in the root of your application, and use IronRouter to trigger Session variables that will trigger Famo.us to do page transitions.  
@@ -156,12 +163,14 @@ scrollableDiv.ontouchmove = function(e) {e.stopPropagation()};
 
 
 
+=============================================
 #### Multitouch & Gestures
 
 [FastClick](https://github.com/ftlabs/fastclick)  
 
 
 
+=============================================
 #### PhoneGap Configuration with X-Code
 
 As you get ready to deploy your PhoneGap application, you'll probably want to tweak the X-Code configuration settings a bit.  Usually this involves tweaking the architecture, and disabling UIWebViewBounce.
@@ -184,6 +193,7 @@ And edit the project Cordova/TodosApp/config.xm file.
 ````
 
 
+=============================================
 #### Stand-Alone Blaze  
 
 Once you have your application all built, you'll need to bundle it into a PhoneGap wrapper.  We used to have to use iFrames to do this, but now that Stand-Alone Blaze has been released, we have a new option for creating Mobile Apps.  
@@ -199,6 +209,7 @@ https://github.com/merunga/cordova-meteor-mashup
 
 
 
+=============================================
 #### Meteor Cordova Architecture Pipeline  
 
 Okay, now it's time to finally bust out the [Meteor Cordova Phonegap Integration](https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration) documentation.  
@@ -212,6 +223,7 @@ meteor run ios
 
 
 
+=============================================
 #### Project Configuration for iFrame Method
 Alternatively, if you're willing to manage cross-site security and want hot-code updates for your mobile apps, you'll want to use the iFrames approach.  This requires editing the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  
 
