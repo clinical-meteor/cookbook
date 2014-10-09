@@ -69,6 +69,7 @@ mrt add famono
 mrt add famono-components
 ````
 
+[Meteor-Cordova-Famous - The Chill Way To Build Apps](https://www.discovermeteor.com/blog/meteor-cordova-famous-the-chill-way-to-build-apps/)  
 
 =============================================
 #### Famo.us Style Page Transitions
