@@ -224,3 +224,8 @@ Alternatively, if you're willing to manage cross-site security and want hot-code
         self.startPage = @"index.html";
     }
 ````
+
+--------------------------------------------
+#### Chrome Apps  
+
+http://thebakery.io/blog/meteor-spotting-building-a-chrome-extension-using-meteor/
