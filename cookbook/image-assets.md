@@ -1,7 +1,8 @@
 ## Image Assets  
 
+
+==========================================
 #### Adding Image Assets via Packages
-The package file...  
 ````js
 // packages/mybackgrounds/package.js
 Package.describe({
@@ -12,7 +13,8 @@ Package.on_use(function (api) {
 });
 ````
 
-And then the View class...
+==========================================
+#### Cover Images  
 ````less
 body{
   background: url(packages/mybackgrounds/assets/background.jpg) no-repeat center center fixed;
@@ -22,3 +24,12 @@ body{
   background-size: cover;
 }
 ````
+
+==========================================
+#### Parallax Images  
+
+[Simple Parallax Scrolling Tutorial](https://ihatetomatoes.net/simple-parallax-scrolling-tutorial/)  
+[How To Create a Parallax Website](https://ihatetomatoes.net/how-to-create-a-parallax-scrolling-website-part-2/)  
+[How to Make a Parallax Website Responsive](https://ihatetomatoes.net/make-parallax-website-responsive/)  
+
+
