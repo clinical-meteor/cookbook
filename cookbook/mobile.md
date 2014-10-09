@@ -237,7 +237,3 @@ Alternatively, if you're willing to manage cross-site security and want hot-code
     }
 ````
 
-=============================================
-#### Chrome Apps  
-
-http://thebakery.io/blog/meteor-spotting-building-a-chrome-extension-using-meteor/
