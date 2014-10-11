@@ -19,7 +19,7 @@ This approach developed in large part because the client-side developers were us
 ![How HTML-CSS-JS Get Applied On The Browser](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20After%20Browser%20Recieves%20Files.jpg)
 
 
-Unfortunately, along the way, most server side developers wound up dealing with CSS and graphis buffering less and less, to the point that it became common for people to consider CSS a 'graphic designer responsibility' or 'just styling'.  
+Unfortunately, along the way, most server side developers wound up dealing with CSS and graphics buffering less and less, to the point that it became common for people to consider CSS a 'graphic designer responsibility' or 'just styling'.  
 
 This was caused, in large part, by a division of labor that occured throughout much of the tech industry over the past 10 years, as client/server architectures resulted in a division of labor between "back end developers" and "front end developers".  The division of labor happened such that back-end developers began to view anything related to CSS as being a 'graphics design' issue and not part of their responsibilities. This is quite unfortunate, and has caused countless miscommunications since.  
 
