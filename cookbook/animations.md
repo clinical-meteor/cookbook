@@ -45,6 +45,9 @@ http://www.google.com/design/spec/animation/meaningful-transitions.html#meaningf
 #### CSS Animations and Transitions  
 
 ````css
+
+
+
 /*
 ----------------------------------------------------------------------------------------
 small icon bump
@@ -124,6 +127,21 @@ content overlay
   transform: translate3d(40%, 0, 0) scale(0.85);
   z-index: 1;
 }
+
+
+/*
+----------------------------------------------------------------------------------------
+generic fadein/fadeout
+*/
+
+.fluidfade {
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition:  all 200ms ease-in;
+}
+
 ````
 
 
