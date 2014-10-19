@@ -44,7 +44,7 @@ Of the different databases you mention, CouchDB would probably be the easiest to
 
 
 **Q:  Are there any recommended admin interfaces for MongoDB?**  
-For internal development use, you may get some milage out of Genghis, even though it's written in Ruby:  
+For internal development use, you may get some mileage out of Genghis, even though it's written in Ruby:  
 http://genghisapp.com/   
 
 You can also use the mongo command to connect to a remote instance on the meteor.com domain.
@@ -111,5 +111,5 @@ Timeout.  You're still thinking in terms of normalizing data, not repeating your
 
 **Q: I have a pre-existing SQL database, and simply must have an ORM**  
 Well, you might want to check out Sails.js.  It looks like a very promising framework that has an ORM and is database agnostic.
-http://sailsjs.org/#!
+http://sailsjs.org
 
