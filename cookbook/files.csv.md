@@ -6,7 +6,7 @@ Often, one needs to export data from an application.  Comma-separated-value file
 
 ````js
 Template.fooPage.events({
-  'click #downloadButton:function(){
+  "click #downloadButton":function(){
       var dataString = "";
       var csvContent = "data:text/csv;charset=utf-8,\n";
       csvContent += "timestamp, text, title\n";
