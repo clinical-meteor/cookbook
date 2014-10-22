@@ -1,27 +1,32 @@
 ## CSV  
 
+Often, one needs to export data from an application.  Comma-separated-value files are a ubiquitous format for such data exports.  The most difficult part of this pattern is saving the file as something other than ``download.csv``.   
+
 #### First Example - Client
 
 ````js
-   var dataString = "";
-   var csvContent = "data:text/csv;charset=utf-8,\n";
-   csvContent += "timestamp, text, title\n";
+Template.fooPage.events({
+  'click #downloadButton:function(){
+      var dataString = "";
+      var csvContent = "data:text/csv;charset=utf-8,\n";
+      csvContent += "timestamp, text, title\n";
 
-   Posts.find().forEach(function(record, index){
-      dataString = record.createdAt.toString() + "," +record.text.toString() + "," + record.title.toString();
-      csvContent += index < Posts.find().count() ? dataString + "\n" : dataString;
-   });
+      Posts.find().forEach(function(record, index){
+         dataString = record.createdAt.toString() + "," +record.text.toString() + "," + record.title.toString();
+         csvContent += index < Posts.find().count() ? dataString + "\n" : dataString;
+      });
 
-   var encodedUri = encodeURI(csvContent);
-   window.open(encodedUri);
-   var encodedUri = encodeURI(csvContent);
+      var encodedUri = encodeURI(csvContent);
+      window.open(encodedUri);
+      var encodedUri = encodeURI(csvContent);
    
-   //var link = document.createElement("a");
-   //link.setAttribute("href", encodedUri);
-   //link.setAttribute("download", "my_data.csv");
-
-   //link.click(); // This will download the data file named "my_data.csv".
-
+      // 
+      //var link = document.createElement("a");
+      //link.setAttribute("href", encodedUri);
+      //link.setAttribute("download", "my_data.csv");
+      //link.click(); // This will download the data file named "my_data.csv".
+  }
+});
 ````
 
 #### Alternative Example - Client  
