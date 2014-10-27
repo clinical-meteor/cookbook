@@ -1,4 +1,5 @@
-## Command Line Errors
+============================================
+#### Command Line Errors  
 
 **run: You're not in a Meteor project directory.**  
 Try creating a ``.meteor/packages`` file.  Sometimes it gets corrupted.  Most of my apps have the following as a base.
@@ -15,8 +16,26 @@ Your ``.meteorite`` installation may be corrupted.  Delete and reinstall meteori
 sudo rm -rf ~/.meteorite
 sudo npm install -g meteorite
 ````
+============================================
+## Console Errors  
 
-## Console Errors
+
+**Exception in queued task: MongoError: invalid query**  
+You have a bad Mongo query.  Add the following snippet to your application, which will create a log of all the queries.  The query before the error is what you need to fix.  
+
+````js
+Meteor.startup(function () {
+    var wrappedFind = Meteor.Collection.prototype.find;
+
+    console.log('[startup] wrapping Collection.find')
+    
+    Meteor.Collection.prototype.find = function () {
+      console.log(this._name + '.find', JSON.stringify(arguments))
+      return wrappedFind.apply(this, arguments);
+    }
+})
+````
+
 
 **Uncaught ReferenceError: Templates is not defined**  
 Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a common typo.  Also check that your templates are references with a right arrow ``>``, like so:
@@ -109,8 +128,8 @@ Mongo was killed without cleaning itself up. Try removing .meteor/local/db/mongo
 **EACCES, permission denied**  
 Permissions problem!  Try using ``sudo``, but the recommended fix is to reinstall Meteor and Meteorite.  
 
-
-## Modulus Errors
+============================================
+#### Modulus Errors  
 
 **Error: a route URL prefix must begin with a slash**  
 Gotta set the ``ROOT_URL`` to ``http://sub.domain.com``.  Be sure to include the http:// prefix.
