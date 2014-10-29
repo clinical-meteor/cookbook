@@ -1,7 +1,7 @@
 ## Grammar  
 
 **Semicolons**  
-For those people new to Javascript and coming from other languages, lets talk grammar for a moment.  Specifically, lets talk about semicolons.  Now, technically speaking, the Javascript ECMA5 specifications state that semicolons are optional.  However, in practice, there are two important steps in the Meteor code deployment process where semicolons come into play.  The first is Meteor's bundling and minification process, and the second is the V8 javascript runtime interpreter.  Both of these technologies will parse your javascript.  One is attempting to optimize it; the other is attempting to run it.  In both processes, they need to parse the javascript, and determine where the end of each statement is.
+For those people new to Javascript and coming from other languages, lets talk grammar for a moment.  Specifically, lets talk about semicolons.  Now, technically speaking, the Javascript ECMA5 specifications state that semicolons are optional.  However, in practice, there are two important steps in the Meteor code deployment process where semicolons come into play.  The first is Meteor's bundling and minification process, and the second is the V8 Javascript runtime interpreter.  Both of these technologies will parse your Javascript.  One is attempting to optimize it; the other is attempting to run it.  In both processes, they need to parse the Javascript, and determine where the end of each statement is.
 
 ````js
 //example without semicolon
@@ -24,7 +24,7 @@ if (myVar === 9) {
 var myVar 9; if (myVar == 9) {}
 ````
 
-To make a long story short, until you're fluent with javascript, and know all the rules of how both the Meteor compiler will lint and minify your code, and how the V8 compiler will do semicolon insertion, the safest bet is to treat the Javascript environment as if it randomly inserts semicolons.  It's not actually inserting them randomly - there are quite specific rules on how it inserts them - but until you learn those rules, it will seem as though it's random.  As such, in order to avoid the javascript interpreter from randomly inserting semicolons into your code, it's best that you be explicit about putting the semicolons in yourself.  
+To make a long story short, until you're fluent with Javascript, and know all the rules of how both the Meteor compiler will lint and minify your code, and how the V8 compiler will do semicolon insertion, the safest bet is to treat the Javascript environment as if it randomly inserts semicolons.  It's not actually inserting them randomly - there are quite specific rules on how it inserts them - but until you learn those rules, it will seem as though it's random.  As such, in order to avoid the Javascript interpreter from randomly inserting semicolons into your code, it's best that you be explicit about putting the semicolons in yourself.  
 
 ````js
 // good
@@ -46,7 +46,7 @@ return; // Semicolon inserted, believing the statement has finished. Returns und
 ````
 
 
-In practice, you'll find that the majority of instances where semicolons are important involve linters, minification, eventmaps, and code involving anonymous functions.  Here are some extra links for additional reading and research if you're interested.  But suffice it to say... until you learn the rules of how the javascript V8 interpreter inserts semicolons, save yourself a bunch of headaches and add them in yourself.
+In practice, you'll find that the majority of instances where semicolons are important involve linters, minification, eventmaps, and code involving anonymous functions.  Here are some extra links for additional reading and research if you're interested.  But suffice it to say... until you learn the rules of how the Javascript V8 interpreter inserts semicolons, save yourself a bunch of headaches and add them in yourself.
 
 [Stackoverflow - Why Use Semicolons](http://stackoverflow.com/questions/2399935/why-use-semicolon)  
 [Javascript Semicolon Tutorial](http://www.howtocreate.co.uk/tutorials/javascript/semicolons)  
@@ -72,7 +72,7 @@ fooCount = 0;
 currentFooIndex = 0;
 ````
 
-The reason behind wanting to use long variable names has to do with the entropic information density of longer strings, which leads to less name collissions.  This is particularly useful when refactoring.  Sometimes you'll want to do a global Find And Replace on just 'foo' elements, or just 'count' elements, or just 'current' elements, etc.  Having long names will help in refactoring, and prevent name collisions.  Short, concise names are prone to causing name collisions.  Also this rule-of-thumb about name lengths applies to function names too.
+The reason behind wanting to use long variable names has to do with the entropic information density of longer strings, which leads to less name collisions.  This is particularly useful when refactoring.  Sometimes you'll want to do a global Find And Replace on just 'foo' elements, or just 'count' elements, or just 'current' elements, etc.  Having long names will help in refactoring, and prevent name collisions.  Short, concise names are prone to causing name collisions.  Also this rule-of-thumb about name lengths applies to function names too.
 
 
 
