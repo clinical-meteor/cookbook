@@ -190,6 +190,11 @@ Router.map(function(){
 [fitbit packages on atmosphere](http://atmospherejs.com/?q=fitbit)  
 
 
+#### Clinical Meteor Track  
+http://practicalmeteor.com/using-meteor-publish-release-to-extend-the-meteor-command-line-tool/
 
 
-
+#### ScrollTo  
+https://atmospherejs.com/natestrauser/jquery-scrollto
+http://demos.flesler.com/jquery/scrollTo/
+http://wrapbootstrap.com/preview/WB0918103
