@@ -31,7 +31,7 @@ cd myapp
 # create your package of unit tests
 mkdir packages
 cd packages
-meteor create --packages quality-control
+meteor create --package quality-control
 cd ..
 
 # add tinytest to your app
