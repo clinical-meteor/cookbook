@@ -133,7 +133,6 @@ Links to live versions of the examples associated with this cookbook.
 [Dictionary](http://dictionary.meteor.com/)  
 [Collabtionary](http://collabtionary.meteor.com/)  
 [Hubble - CRUD & Datasets](http://hubble.meteor.com/)  
-[Mobile Devices - iOS in Particular](https://github.com/awatson1978/cordova-phonegap)  
 
 
 ####Meteor Architecture  
