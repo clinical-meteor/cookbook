@@ -120,16 +120,14 @@ Links to live versions of the examples associated with this cookbook.
 
 | Tables        | Meteor Version| Meteor Version  |
 | ------------- |:-------------:| ---------------:|
-
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui)     | right-aligned |  <1.0 |
-| [Offline Todos](http://offline-todos.meteor.com)      | right-aligned |  <1.0 |
-| [Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service)   | right-aligned |  <1.0 |
-| [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription)   | right-aligned |  <1.0 |
-| [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing)      | right-aligned |  <1.0 |
+| [Offline Todos](http://offline-todos.meteor.com)              | right-aligned |  <1.0 |
+| [Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service)  | right-aligned |  <1.0 |
+| [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | right-aligned |  <1.0 |
+| [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | right-aligned |  <1.0 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | right-aligned |  <1.0 |
 | [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)       | right-aligned |  <1.0 |
 | [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | right-aligned |  <1.0 |
-
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | right-aligned |  <1.0 |
 | [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | right-aligned |  <1.0 |
 | [Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)      | right-aligned |  <1.0 |
