@@ -105,19 +105,6 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 Links to live versions of the examples associated with this cookbook.  
 
 
-
-
-
-
- 
-
-
-
-
-  
-
-####Table Test  
-
 | Live Demo     | Source Available?|  Documented     | Meteor Version  |
 | ------------- |:----------------:| ----------------|---------------:|
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  0.9.1 | 
