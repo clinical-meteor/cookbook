@@ -136,11 +136,11 @@ Links to live versions of the examples associated with this cookbook.
 
 ####Table Test  
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Tables        | Meteor Version| Meteor Version  |
+| ------------- |:-------------:| ---------------:|
+| [Dictionary](http://dictionary.meteor.com/)             | right-aligned | $1600 |
+| [Collabtionary](http://collabtionary.meteor.com/)       | centered      |   $12 |
+| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | are neat      |    $1 |
 
 ####Meteor Architecture  
 
