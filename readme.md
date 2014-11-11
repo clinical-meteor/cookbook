@@ -134,6 +134,13 @@ Links to live versions of the examples associated with this cookbook.
 [Collabtionary](http://collabtionary.meteor.com/)  
 [Hubble - CRUD & Datasets](http://hubble.meteor.com/)  
 
+####Table Test  
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ####Meteor Architecture  
 
