@@ -123,29 +123,29 @@ Links to live versions of the examples associated with this cookbook.
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  0.9.1 | 
 | [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | no | 0.9.0.1 |
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | <0.9 |
-| [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | right-aligned |  unknown |  <1.0 |
-| [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | right-aligned |  unknown | <1.0 |
-| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | right-aligned | unknown | <1.0 |
-| [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)       | right-aligned | unknown | <1.0 |
-| [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | right-aligned |  unknown | <1.0 |
-| [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | right-aligned |  unknown |<1.0 |
-| [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | right-aligned | unknown | <1.0 |
-| [Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)      | right-aligned |  unknown |<1.0 |
-| [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)     | right-aligned | unknown | <1.0 |
-| [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | right-aligned |  unknown |<1.0 |
-| [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | right-aligned | unknown | <1.0 |
-| [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)     | right-aligned | unknown | <1.0 |
-| [Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)       | right-aligned |  unknown |<1.0 |
-| [Minimongo Table](https://minimongo-table.meteor.com)      | right-aligned | unknown | <1.0 |
-| [Drag and Drop](http://drag-and-drop.meteor.com/)        | right-aligned | unknown | <1.0 |
-| [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | right-aligned | unknown | <1.0 |
-| [Workflow Routing](http://workflow-routing.meteor.com/)      | right-aligned |  unknown |<1.0 |
-| [Panel Layout](http://panel-layout.meteor.com/)         | right-aligned | unknown | <1.0 |
-| [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)     | right-aligned | unknown | <1.0 |
-| [REST API](http://rest-api.meteor.com/)               | right-aligned | unknown | <1.0 |
-| [REST API Testrunner](http://rest-api-testrunner.meteor.com/)   | right-aligned |  unknown |<1.0 |
-| [GroupThink](http://groupthink.meteor.com/)             | right-aligned |unknown |  <1.0 |
-| [Fonts & Calligraph](http://fonts.meteor.com/)   | right-aligned |  unknown |<1.0 |
+| [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | --- |  unknown |  <1.0 |
+| [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | --- |  unknown | <1.0 |
+| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | --- | unknown | <1.0 |
+| [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)       | --- | unknown | <1.0 |
+| [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | --- |  unknown | <1.0 |
+| [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | --- |  unknown |<1.0 |
+| [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | --- | unknown | <1.0 |
+| [Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)      | --- |  unknown |<1.0 |
+| [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)     | --- | unknown | <1.0 |
+| [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | --- |  unknown |<1.0 |
+| [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | --- | unknown | <1.0 |
+| [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)     | --- | unknown | <1.0 |
+| [Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)       | --- |  unknown |<1.0 |
+| [Minimongo Table](https://minimongo-table.meteor.com)      | --- | unknown | <1.0 |
+| [Drag and Drop](http://drag-and-drop.meteor.com/)        | --- | unknown | <1.0 |
+| [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | --- | unknown | <1.0 |
+| [Workflow Routing](http://workflow-routing.meteor.com/)      | --- |  unknown |<1.0 |
+| [Panel Layout](http://panel-layout.meteor.com/)         | --- | unknown | <1.0 |
+| [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)     | --- | unknown | <1.0 |
+| [REST API](http://rest-api.meteor.com/)               | --- | unknown | <1.0 |
+| [REST API Testrunner](http://rest-api-testrunner.meteor.com/)   | --- |  unknown |<1.0 |
+| [GroupThink](http://groupthink.meteor.com/)             | --- |unknown |  <1.0 |
+| [Fonts & Calligraph](http://fonts.meteor.com/)   | --- |  unknown |<1.0 |
 | [Dictionary](http://dictionary.meteor.com/)             | --- |  unknown |<1.0 |
 | [Collabtionary](http://collabtionary.meteor.com/)       | ---      |  unknown | <1.0 |
 | [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | ---      |  unknown |<1.0 |
