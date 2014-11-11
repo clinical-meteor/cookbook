@@ -104,43 +104,53 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
-[Dropzone UI](https://github.com/awatson1978/dropzone-ui)  
-[Offline Todos](http://offline-todos.meteor.com)  
-[Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service)  
-[Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription)  
-[Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing)  
-[Geolocated Parties](https://github.com/awatson1978/leaflet-parties)  
-[Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)  
-[Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master)  
-[Clinical Support Forum](http://clinical-support-forum.meteor.com/)  
-[Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)  
-[Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)  
-[Clinical UI Forms](http://clinical-ui-forms.meteor.com/)  
-[Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)  
-[Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)  
-[Leaderboard Frameable](http://leaderboard-frameable.meteor.com)  
-[Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)  
-[Minimongo Table](https://minimongo-table.meteor.com)  
-[Drag and Drop](http://drag-and-drop.meteor.com/)  
-[Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)  
-[Workflow Routing](http://workflow-routing.meteor.com/)  
-[Panel Layout](http://panel-layout.meteor.com/)  
-[Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)  
-[REST API](http://rest-api.meteor.com/)  
-[REST API Testrunner](http://rest-api-testrunner.meteor.com/)    
-[GroupThink](http://groupthink.meteor.com/)  
-[Fonts & Calligraph](http://fonts.meteor.com/)    
-[Dictionary](http://dictionary.meteor.com/)  
-[Collabtionary](http://collabtionary.meteor.com/)  
-[Hubble - CRUD & Datasets](http://hubble.meteor.com/)  
+
+
+
+
+
+ 
+
+
+
+
+  
 
 ####Table Test  
 
 | Tables        | Meteor Version| Meteor Version  |
 | ------------- |:-------------:| ---------------:|
-| [Dictionary](http://dictionary.meteor.com/)             | right-aligned | $1600 |
-| [Collabtionary](http://collabtionary.meteor.com/)       | centered      |   $12 |
-| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | are neat      |    $1 |
+
+| [Dropzone UI](https://github.com/awatson1978/dropzone-ui)     | right-aligned |  <1.0 |
+| [Offline Todos](http://offline-todos.meteor.com)      | right-aligned |  <1.0 |
+| [Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service)   | right-aligned |  <1.0 |
+| [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription)   | right-aligned |  <1.0 |
+| [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing)      | right-aligned |  <1.0 |
+| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | right-aligned |  <1.0 |
+| [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)       | right-aligned |  <1.0 |
+| [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | right-aligned |  <1.0 |
+
+| [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | right-aligned |  <1.0 |
+| [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | right-aligned |  <1.0 |
+| [Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)      | right-aligned |  <1.0 |
+| [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)     | right-aligned |  <1.0 |
+| [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | right-aligned |  <1.0 |
+| [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | right-aligned |  <1.0 |
+| [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)     | right-aligned |  <1.0 |
+| [Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)       | right-aligned |  <1.0 |
+| [Minimongo Table](https://minimongo-table.meteor.com)      | right-aligned |  <1.0 |
+| [Drag and Drop](http://drag-and-drop.meteor.com/)        | right-aligned |  <1.0 |
+| [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | right-aligned |  <1.0 |
+| [Workflow Routing](http://workflow-routing.meteor.com/)      | right-aligned |  <1.0 |
+| [Panel Layout](http://panel-layout.meteor.com/)         | right-aligned |  <1.0 |
+| [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)     | right-aligned |  <1.0 |
+| [REST API](http://rest-api.meteor.com/)               | right-aligned |  <1.0 |
+| [REST API Testrunner](http://rest-api-testrunner.meteor.com/)   | right-aligned |  <1.0 |
+| [GroupThink](http://groupthink.meteor.com/)             | right-aligned |  <1.0 |
+| [Fonts & Calligraph](http://fonts.meteor.com/)   | right-aligned |  <1.0 |
+| [Dictionary](http://dictionary.meteor.com/)             | right-aligned |  <1.0 |
+| [Collabtionary](http://collabtionary.meteor.com/)       | centered      |  <1.0 |
+| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | are neat      |  <1.0 |
 
 ####Meteor Architecture  
 
