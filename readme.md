@@ -127,7 +127,7 @@ Links to live versions of the examples associated with this cookbook.
 | [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | --- |  --- | <1.0 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | --- | --- | <1.0 |
 | [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)       | --- | --- | <1.0 |
-| [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | --- |  unknown | <1.0 |
+| [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | --- |  --- | <1.0 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | --- |  --- |<1.0 |
 | [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | --- | --- | <1.0 |
 | [Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)      | --- |  --- |<1.0 |
