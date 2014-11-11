@@ -146,9 +146,9 @@ Links to live versions of the examples associated with this cookbook.
 | [REST API Testrunner](http://rest-api-testrunner.meteor.com/)   | right-aligned |  unknown |<1.0 |
 | [GroupThink](http://groupthink.meteor.com/)             | right-aligned |unknown |  <1.0 |
 | [Fonts & Calligraph](http://fonts.meteor.com/)   | right-aligned |  unknown |<1.0 |
-| [Dictionary](http://dictionary.meteor.com/)             | right-aligned |  unknown |<1.0 |
-| [Collabtionary](http://collabtionary.meteor.com/)       | centered      |  unknown | <1.0 |
-| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | are neat      |  unknown |<1.0 |
+| [Dictionary](http://dictionary.meteor.com/)             | --- |  unknown |<1.0 |
+| [Collabtionary](http://collabtionary.meteor.com/)       | ---      |  unknown | <1.0 |
+| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | ---      |  unknown |<1.0 |
 
 ####Meteor Architecture  
 
