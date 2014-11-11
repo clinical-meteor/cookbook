@@ -120,9 +120,9 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source Available?|  Documented     | Meteor Version  |
 | ------------- |:----------------:| ----------------|---------------:|
-| [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [Source](https://github.com/awatson1978/dropzone-ui) | no |  <1.0 | 
+| [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [Source](https://github.com/awatson1978/dropzone-ui) | yes |  <1.0 | 
 | [Offline Todos](http://offline-todos.meteor.com) | [Source](https://github.com/awatson1978/offline-todos) | no | <1.0 |
-| [Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service)  | right-aligned | unknown | <1.0 |
+| [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [Stripe Payments - Per Service ](https://github.com/awatson1978/payment-per-service) | basic | <1.0 |
 | [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | right-aligned |  unknown |  <1.0 |
 | [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | right-aligned |  unknown | <1.0 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | right-aligned | unknown | <1.0 |
