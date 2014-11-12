@@ -113,7 +113,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | --- |  --- |  <1.0 |
 | [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | --- |  --- | <1.0 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | --- | --- | <1.0 |
-| [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)       | --- | --- | <1.0 |
 | [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | --- |  --- | <1.0 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | --- |  --- |<1.0 |
 | [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | --- | --- | <1.0 |
@@ -121,8 +120,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)     | --- | --- | <1.0 |
 | [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | --- |  --- |<1.0 |
 | [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | --- | --- | <1.0 |
-| [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)     | --- | --- | <1.0 |
-| [Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)       | --- |  --- |<1.0 |
 | [Minimongo Table](https://minimongo-table.meteor.com)      | --- | --- | <1.0 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | --- | --- | <1.0 |
 | [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | --- | --- | <1.0 |
@@ -130,7 +127,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Panel Layout](http://panel-layout.meteor.com/)         | --- | --- | <1.0 |
 | [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)     | --- | --- | <1.0 |
 | [REST API](http://rest-api.meteor.com/)               | --- | --- | <1.0 |
-| [REST API Testrunner](http://rest-api-testrunner.meteor.com/)   | --- |  --- |<1.0 |
 | [GroupThink](http://groupthink.meteor.com/)             | --- |--- |  <1.0 |
 | [Fonts & Calligraph](http://fonts.meteor.com/)   | --- |  --- |<1.0 |
 | [Dictionary](http://dictionary.meteor.com/)             | --- |  --- |<1.0 |
