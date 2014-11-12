@@ -76,9 +76,9 @@ list » network
 list » sidebar  
 
 
-### Layout Transformations
-
+## Layout Transformations
 ![Data Shaping - Divs](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Data%20Shaping-Divs.png)  
+===============================
 
 div » image  
 div » panel  
