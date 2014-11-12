@@ -60,3 +60,7 @@ meteor add ground:db
 Lists = new GroundDB("lists");
 Todos = new GroundDB("todos");
 ````
+
+============================================
+####  Further Research  
+http://www.html5rocks.com/en/tutorials/indexeddb/todo/
