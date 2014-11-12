@@ -1,7 +1,6 @@
 
 | Article       | Meteor 1.0       |  Diagram        | Meteor Version |
 | ------------- |:----------------:| ----------------|---------------:|
-
 | Cookbook Conventions | --- | yes |  < 1.0 | 
 | General Advice | --- | --- |  < 1.0 | 
 | Meteor Style Guide | --- | --- |  < 1.0 | 
