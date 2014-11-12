@@ -1,4 +1,4 @@
-## Packages We Love And Should be Included Meteor Core  
+## Packages We Love And Should be Included Meteor:Clinical
 
 | Package       | UI | Clinical  | Contributor | Version  |
 | ------------- |:----------------:| :----------------: |  :----------------: |---------------:|
