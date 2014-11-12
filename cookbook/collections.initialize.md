@@ -1,4 +1,5 @@
-##Collection
+## Defining a Collection 
+
 
 
 ````js
