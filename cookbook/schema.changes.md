@@ -7,7 +7,7 @@ The 'how' is a little more unfamiliar.  For those people accustomed to SQL funct
 
 =================================
 
-#### Add Record Version Field To All Records in a Collection
+#### Add Version Field To All Records in a Collection
 ````js
 db.posts.find().forEach(function(doc){
     db.posts.update({_id: doc._id}, {$set:{'version':'v1.0'}}, false, true);
@@ -15,7 +15,7 @@ db.posts.find().forEach(function(doc){
 ````
 
 
-#### Remove Array From Records In A Collection
+#### Remove Array From All Records In A Collection
 ````js
 db.posts.find().forEach(function(doc){
     if(doc.arrayOfObjects){
@@ -36,7 +36,7 @@ With the power of regex comes great responsibility....
 db.posts.find({'text': /.*foo.*|.*bar.*/i})
 ````
 
-#### Create New Field From Old Field
+#### Create New Field From Old  
 ````js
 db.posts.find().forEach(function(doc){
     if(doc.oldField){
@@ -70,7 +70,7 @@ db.posts.find().forEach(function(doc){
 ````
 
 
-#### make sure field exists
+#### Make Sure Field Exists
 ````js
 db.posts.find().forEach(function(doc){
     if(!doc.foo){
@@ -80,7 +80,7 @@ db.posts.find().forEach(function(doc){
 ````
 
 
-#### make sure field has specific value
+#### Make Sure Field has Specific Value
 ````js
 db.posts.find().forEach(function(doc){
     if(!doc.foo){
