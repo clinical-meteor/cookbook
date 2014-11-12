@@ -1,44 +1,6 @@
 Offline Meteor Apps
 ============================================
 
-As if Meteor 0.9.2, Meteor now supports native Cordova integration.  
-
-----------------------------------
-####  Mobile Overview
-
-- Offline Access  
-  - [Meteor.status()](http://docs.meteor.com/#meteor_status)  
-  - Appcache - Caches Application Static Code  
-  - GroundDB - Caches Application Data
-- Responsive Design  
-  - Bootstrap-3  
-  - LESS  
-  - Media Style Sheets  
-- Device Detection (pick one)  
-  - mrt add browser-detection  
-  - mrt add bowser  
-  - mrt add device-detection  
-  - mrt add platform.js  
-- Multitouch  
-  - mrt add hammer  
-- Hardware Layer  
-  - Cordova/Phonegap  
-    - Riovine Mobile Container  
-    - Meteor Architecture Build Pipeline  
-  - Cordova Plugins  
-    - [Maps](https://github.com/wf9a5m75/phonegap-googlemaps-plugin)    
-  - Push Notifications  
-    - Alerts  
-- Native Response - 60fps  
-  - mrt add famono  
-  - mrt add famo-components  
-  - Scrolling  
-  - Page Transitions  
-    - Global Subscriptions  
-    - Surface Templates  
-    - Session Variables   
-
-----------------------------------
 ####  Meteor.status()
 
 The first thing to do when taking your Meteor app offline is to create some visual indication of whether the local client app is connected to the server or not.  There are lots of ways to do this, but the simplest way is to probably do something like this:
@@ -96,9 +58,3 @@ meteor add raix:grounddb
 Lists = new GroundDB("lists");
 Todos = new GroundDB("todos");
 ````
-
-----------------------------------
-####  Responsive Design  
-
-
-
