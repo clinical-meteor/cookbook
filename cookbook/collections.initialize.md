@@ -67,9 +67,9 @@ var postSchema = new SimpleSchema({
         optional: true
     },
 });
-
 Posts.attachSchema(postSchema);
 
+// access control for our collection  
 Posts.allow({
     insert: function(userId, doc) {
         return userId ? true : false;
