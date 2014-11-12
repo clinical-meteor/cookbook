@@ -80,6 +80,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 - Data Driven Documents (D3)  
 - [Error Referece](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
+  - [Offline Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)    
   - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
   - [Proxies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/proxies.md)  
   - [Email](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/email.md)  
