@@ -5,7 +5,7 @@
 ````js
 Posts = new Mongo.Collection("posts");
 
-var schemas = new SimpleSchema({
+var postSchema = new SimpleSchema({
     title: {
         type: String,
         label: "Title",
@@ -68,7 +68,7 @@ var schemas = new SimpleSchema({
     },
 });
 
-Posts.attachSchema(schemas);
+Posts.attachSchema(postSchema);
 
 Posts.allow({
     insert: function(userId, doc) {
@@ -82,10 +82,10 @@ Posts.allow({
     },
 });
 
-//activate groundDB for posts collection to work offline
+// activate groundDB for posts collection to work offline
 GroundDB(Posts);
 
-/* register helper for default relations */
+// register helper for default relations 
 UI.registerHelper('post', function() {
     return Posts.findOne(this.postId);
 });
