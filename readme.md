@@ -53,7 +53,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
     - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
     - [Multi User Publications](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.multiuser.publications.md)    
     - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
-    - [Filters](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
+    - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
     - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
   - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
   - [Data Validation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
