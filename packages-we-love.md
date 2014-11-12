@@ -11,7 +11,7 @@
 | [Device Detection](https://atmosphere.meteor.com/package/device-detection)  | none | no |  ? | ? |    
 | [Browser Detection](https://atmosphere.meteor.com/package/browser-detection ) | none | no |  ? | ? |  
 | [Event Hooks](https://atmosphere.meteor.com/package/event-hooks)  | none | no |  ? | ? |  
-| [Collection2](https://atmosphere.meteor.com/package/collection2)  
+| [Collection2](https://atmosphere.meteor.com/package/collection2)  | none | no |  ? | ? |  
 | [cron](https://atmosphere.meteor.com/package/cron)  | none | no |  ? | ? |    
 | [Mesosphere](https://atmosphere.meteor.com/package/Mesosphere)  | none | no |  ? | ? |  
 | [Login Page](https://atmosphere.meteor.com/package/accounts-entry)  | bootstrap3 | no |  ? | ? |     
