@@ -3,7 +3,7 @@
 Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from over 2 years of emails and discussions from the [meteor] google group and my experiences rolling out packages and apps.  These documents are intended for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The focus is on helping the user grow accustomed to functional programming using document oriented databases.
 
 
-[Upgrading Legacy Apps to Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrading-to-0.9.x.md)  
+![ActiveRecord](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/ActiveRecord.png)  
 
 
 ## Index  
@@ -37,6 +37,8 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
     - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md) 
     - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
     - [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
+      - [Upgrading Legacy Apps to Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrading-to-0.9.x.md)  
+      - [Clinical Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)  
     - [Site Configuration](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/configuration.md)  
     - [Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
     - [Debugging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/debugging.md)  
