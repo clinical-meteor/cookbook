@@ -65,3 +65,9 @@ Todos = new GroundDB("todos");
 ####  Further Appcache Research   
 http://www.html5rocks.com/en/tutorials/indexeddb/todo/  
 http://grinninggecko.com/2011/04/22/increasing-chromes-offline-application-cache-storage-limit/  
+http://www.html5rocks.com/en/tutorials/offline/quota-research/  
+https://developers.google.com/chrome/apps/docs/developers_guide?csw=1#installing  
+https://developers.google.com/chrome/apps/docs/developers_guide?csw=1#manifest
+
+
+
