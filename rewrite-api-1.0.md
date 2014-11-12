@@ -1,6 +1,4 @@
 
-````js
-
 | Article       | Meteor 1.0       |  Diagram        | Meteor Version |
 | ------------- |:----------------:| ----------------|---------------:|
 
@@ -94,5 +92,3 @@
 | Breaking Changes | --- | --- |  < 1.0 | 
 | Recommended Packages | --- | --- |  < 1.0 | 
 | Applet Demos | --- | --- |  < 1.0 | 
-
-````
