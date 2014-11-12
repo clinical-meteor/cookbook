@@ -1,4 +1,4 @@
-Offline Meteor Apps
+Offline Apps
 ============================================
 
 ####  Meteor.status()
