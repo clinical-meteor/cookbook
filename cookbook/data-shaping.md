@@ -28,7 +28,7 @@ So, if you want to create a multiuser application, first you have to implement i
 ### Identity Data Transformations 
 
 0 = false = #000000 = black  
-0 = true  = #000000 = white  
+1 = true  = #ffffff = white  
   
 ### Basic Data Type Transformations 
 
