@@ -4,11 +4,20 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 
 ========================================
 #### Build A Weblog!
+With version 1.0 of Meteor having been released, the Meteor Cookbook is getting a rewrite to bring all of it's examples and recipes up to 1.0 status.  The default application that all the examples build towards is creating a weblog; which can then be used as the basis of self-publishing, online journals & diarys, advocacy platforms, branding, electronic medical records, personal health & fitness records, quantified-self applications, or any other application that might need a weblog.  
 
 ![Weblog](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Weblog%20Wireframes.jpg)  
 
 
-## Index  
+========================================
+#### Clinical Meteor Track  
+
+Meteor Cookbook is the official documentation of the Clinical Meteor Track project...  a version of Meteor designed for biomedical, clinical, and healthcare applications.  Check out the project page to learn more, and be aware that these two projects are being run in parallel.  
+
+http://clinical.meteor.com/
+
+========================================
+#### Index  
 
 - [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
