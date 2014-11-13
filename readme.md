@@ -3,8 +3,6 @@
 Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from over 2 years of emails and discussions from the [meteor] google group and my experiences rolling out packages and apps.  These documents are intended for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The focus is on helping the user grow accustomed to functional programming using document oriented databases.
 
 
-![ActiveRecord](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/ActiveRecord.png)  
-
 
 ## Index  
 
@@ -55,7 +53,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
     - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
     - [Multi User Publications](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.multiuser.publications.md)    
     - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
-    - [Filters](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
+    - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
     - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
   - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
   - [Data Validation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
@@ -82,6 +80,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 - Data Driven Documents (D3)  
 - [Error Referece](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
+  - [Offline Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)    
   - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
   - [Proxies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/proxies.md)  
   - [Email](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/email.md)  
@@ -109,13 +108,12 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source Available?|  Documented     | Meteor Version  |
 | ------------- |:----------------:| ----------------|---------------:|
+| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | 1.0 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  0.9.1 | 
-| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | no | 0.9.0.1 |
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | <0.9 |
 | [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | --- |  --- |  <1.0 |
 | [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | --- |  --- | <1.0 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | --- | --- | <1.0 |
-| [Leaderboard Nightwatch](https://github.com/awatson1978/leaderboard-nightwatch)       | --- | --- | <1.0 |
 | [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | --- |  --- | <1.0 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | --- |  --- |<1.0 |
 | [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | --- | --- | <1.0 |
@@ -123,8 +121,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)     | --- | --- | <1.0 |
 | [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | --- |  --- |<1.0 |
 | [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | --- | --- | <1.0 |
-| [Leaderboard Frameable](http://leaderboard-frameable.meteor.com)     | --- | --- | <1.0 |
-| [Leaderboard Testrunner](http://leaderboard-testrunner.meteor.com)       | --- |  --- |<1.0 |
 | [Minimongo Table](https://minimongo-table.meteor.com)      | --- | --- | <1.0 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | --- | --- | <1.0 |
 | [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | --- | --- | <1.0 |
@@ -132,7 +128,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Panel Layout](http://panel-layout.meteor.com/)         | --- | --- | <1.0 |
 | [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)     | --- | --- | <1.0 |
 | [REST API](http://rest-api.meteor.com/)               | --- | --- | <1.0 |
-| [REST API Testrunner](http://rest-api-testrunner.meteor.com/)   | --- |  --- |<1.0 |
 | [GroupThink](http://groupthink.meteor.com/)             | --- |--- |  <1.0 |
 | [Fonts & Calligraph](http://fonts.meteor.com/)   | --- |  --- |<1.0 |
 | [Dictionary](http://dictionary.meteor.com/)             | --- |  --- |<1.0 |
