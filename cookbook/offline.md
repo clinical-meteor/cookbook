@@ -53,7 +53,7 @@ meteor add appcache
 ============================================
 ####  Enable GroundDB
 
-Next, we want to get some of our dynamic data to be stored offline.  
+Finally, we want to get some of our dynamic data to be stored offline.  
 ````sh
 meteor add ground:db
 ````
@@ -67,6 +67,13 @@ meteor add ground:db
 Lists = new GroundDB("lists");
 Todos = new GroundDB("todos");
 ````
+
+============================================
+####  Things to Be Careful Of  
+
+- The appcache will cause some confusion in your development workflow, because it hides Meteor's auto-updating features.  When you turn off the server component of your app, the client portion in your browser will continue working.  This is a good thing!  But, you don't get the immediate feedback that your app has been turned off, or that there have been updates.   
+- Try using Chrome's Incognito Mode when developing your app, because it *doesn't* use appcache.  
+- GroundDB doesn't work particularly well with IronRouter.  
 
 ============================================
 ####  Further Appcache Research   
