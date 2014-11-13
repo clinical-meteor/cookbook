@@ -1,6 +1,10 @@
 Offline Apps
 ============================================
 
+[Offline Todos Demo](http://offline-todos.meteor.com/#/lists/9H6FFW5qAnoP68c8K)  
+[Offline Todos Source Code](https://github.com/awatson1978/offline-todos)  
+
+============================================
 ####  Meteor.status()
 
 The first thing to do when taking your Meteor app offline is to create some visual indication of whether the local client app is connected to the server or not.  There are lots of ways to do this, but the simplest way is to probably do something like this:
