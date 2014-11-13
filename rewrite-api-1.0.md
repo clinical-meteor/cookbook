@@ -73,6 +73,7 @@
 | Data Driven Documents (D3) | --- | --- |  < 1.0 | 
 | Error Referece | --- | --- |  < 1.0 | 
 | Recipes | --- | --- |  < 1.0 | 
+| Offline Apps | yes | no |  1.0 | 
 | Two-Way Data Binding | --- | --- |  < 1.0 | 
 | Proxies | --- | --- |  < 1.0 | 
 | Email | --- | --- |  < 1.0 | 
