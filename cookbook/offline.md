@@ -61,12 +61,11 @@ meteor add ground:db
 ````
 
 ````js
+Lists = new Meteor.Collection("lists");
+GroundDB(Lists);
 
-//Lists = new Meteor.Collection("lists");
-//Todos = new Meteor.Collection("todos")
-
-Lists = new GroundDB("lists");
-Todos = new GroundDB("todos");
+Todos = new Meteor.Collection("todos")
+GroundDB(Todos);
 ````
 
 ============================================
