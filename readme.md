@@ -108,8 +108,8 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source Available?|  Documented     | Meteor Version  |
 | ------------- |:----------------:| ----------------|---------------:|
+| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | 1.0 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  0.9.1 | 
-| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | no | 0.9.0.1 |
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | <0.9 |
 | [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | --- |  --- |  <1.0 |
 | [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | --- |  --- | <1.0 |
