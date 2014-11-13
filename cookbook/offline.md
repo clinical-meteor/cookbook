@@ -25,7 +25,7 @@ Template.registerHelper('getOnlineColor', function(){
 
 ````
 
-````mustache
+````html
   <div id="onlineStatus" class="{{getOnlineColor}}">
     {{getOnlineStatus}}
   </div>
