@@ -4,7 +4,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 
 ========================================
 #### Build A Weblog!
-With version 1.0 of Meteor having been released, the Meteor Cookbook is getting a rewrite to bring all of it's examples and recipes up to 1.0 status.  The default application that all the examples build towards is creating a weblog; which can then be used as the basis of self-publishing, online journals & diaries, advocacy platforms, branding, electronic medical records, personal health & fitness records, quantified-self applications, or any other application that might need a weblog.  
+With version 1.0 of Meteor having been released, the Meteor Cookbook is getting a rewrite to bring all of it's examples and recipes up to 1.0 status.  The default application that all the examples build towards is creating a weblog; which can then be used as the basis of self-publishing, online journals & diaries, bulletin board systems, chat rooms, advocacy platforms, electronic medical records, personal health & fitness records, quantified-self applications, or any other application that might need a weblog.  
 
 ![Weblog](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Weblog%20Wireframes.jpg)  
 
