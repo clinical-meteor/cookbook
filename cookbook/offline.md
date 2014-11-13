@@ -11,16 +11,18 @@ Offline Apps
 The first thing to do when taking your Meteor app offline is to create some visual indication of whether the local client app is connected to the server or not.  There are lots of ways to do this, but the simplest way is to probably do something like this:
 
 ````js
-UI.body.getOnlineStatus = function(){
+Template.registerHelper('getOnlineStatus', function(){
   return Meteor.status().status;
-};
-UI.body.getOnlineColor = function(){
+});
+
+Template.registerHelper('getOnlineColor', function(){
   if(Meteor.status().status === "connected"){
     return "green";
   }else{
     return "orange";
   }
-};
+});
+
 ````
 
 ````html
