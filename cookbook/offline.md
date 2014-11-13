@@ -1,7 +1,9 @@
 Offline Apps
 ============================================
 
-  
+Taking an app offline involves using the browser's cache to store application assets, enabling localstorage so we can ground our minimongo collection, and adding some UI elements so that people know when they're online or not.  
+
+For a full demo, check out the following links.  
 [Offline Todos Demo](http://offline-todos.meteor.com/#/lists/9H6FFW5qAnoP68c8K)  
 [Offline Todos Source Code](https://github.com/awatson1978/offline-todos)  
 
@@ -57,7 +59,6 @@ Finally, we want to get some of our dynamic data to be stored offline.
 ````sh
 meteor add ground:db
 ````
-
 
 ````js
 
