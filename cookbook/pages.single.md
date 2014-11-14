@@ -47,10 +47,12 @@ The controller is fairly straight forward.
 ##### The Controller   
 ````js
 // client/home/homePage.js 
-Template.homePage.getTitle = function(){
- return "Hello World";
-}
-Template.homePage.getText = function(){
- return "lorem ipsum, dolar sit amet...";
-}
+Template.homePage.helpers({
+  getTitle:function(){
+    return "Hello World";
+  },
+  getTitle:function(){
+    return "lorem ipsum, dolar sit amet...";
+  }
+});
 ````
