@@ -55,7 +55,8 @@ Template.samplePage.events({
     if($('#fooInput').val() === ""){
       Session.set('fooValidation', null);
     }else{
-      if(Campaigns.find({name: $('#fooInput').val()}).count() > 0){
+      // we check if there is another post with the same title
+      if(Posts.find({title: $('#fooInput').val()}).count() > 0){
         Session.set('fooValidation', true);
       }else{
         Session.set('fooValidation', false);
