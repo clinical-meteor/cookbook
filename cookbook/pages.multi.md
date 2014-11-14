@@ -3,12 +3,13 @@
 So, now that we've seen the pattern for a single-page, lets look at the multi-page example.
 ##### File structure 
 ````sh
-/client/views/page.home.less
-/client/views/page.about.less
-/client/models/page.home.html
-/client/models/page.about.html
-/client/controllers/page.home.js
-/client/controllers/page.about.js
+/client/homePage/homePage.less
+/client/homePage/homePage.html
+/client/homePage/homePage.js
+
+/client/aboutPage/aboutPage.less
+/client/aboutPage/aboutPage.html
+/client/aboutPage/aboutPage.js
 ````
 
 See how the binomial nomenclature helps us organize our stylesheets in the views folder?  How it organizes DOM templates in the models folder?  And our libraries in our Controllers folder?  When we start adding headers, footers, blocks, sidebars, dialogs, and other UI components, this binomial nomenclature will keep everything nice and tidy.  
@@ -76,7 +77,34 @@ As for the ``{{pageVisibiilty}}`` handlebars, we're going to do some cleverness 
 The less compiler will take the above code, and compile it to ``#homePage h2`` and ``#aboutPage h2`` rules, which is fairly straight forward.  But that object nesting is super useful when creating more complex views; primarily because you can mimic your DOM structure.  
 
 
-##### The Controller   
+##### Web App Controller   
+
+````js
+// client/views/page.home.js 
+Router.route('/home', function(){
+  
+});
+````
+
+So far, the controllers for a multipage app are fairly straightforward.  But now we're going to start doing something interesting.  
+
+````js
+// client/views/page.about.js 
+Template.aboutPage.helpers({
+  getText: function(){
+    return "About This Site";
+  },
+  pageVisibility: function(){
+    if(Session.get('active_page', 'about')){
+      return 'visible';
+    }else{
+      return 'hidden';
+    }
+  }
+});
+````
+
+##### Video Game & Canvas Controller   
 ````js
 // client/views/page.home.js 
 Template.homePage.helpers({
