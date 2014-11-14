@@ -1,4 +1,4 @@
-## Single Page Example
+## SinglePage Example
 
 
 
