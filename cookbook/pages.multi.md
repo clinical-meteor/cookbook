@@ -40,7 +40,7 @@ Now, we have nicely defined IDs for each page objects in our application.  This 
 As for the ``{{pageVisibiilty}}`` handlebars, we're going to do some cleverness in a bit that allows us to navigate pages, enable page transitions, and the like by adding ``.visible`` and ``.hidden`` classes.  
 
 ##### The View  
-````scss
+````css
 // client/views/app.layout.less
 // here, we've moved the .tagline to the global scope
 .page{
