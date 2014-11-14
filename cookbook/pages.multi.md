@@ -181,32 +181,22 @@ Nifty!  Now, all we need to do is go back to our template, and add some buttons.
 
 Alternatively, we could set the session variable by using a URL route.  
 ````js
-// client/views/page.home.js 
 Router.route('/home', function(){
-  this.render('Items', function(){
-    Session.set('active_page', 'home')
-  });
+  Session.set('active_page', 'home')
 });
-Router.route('/home', function(){
-  this.render('Items', function(){
-    Session.set('active_page', 'home')
-  });
+Router.route('/about', function(){
+  Session.set('active_page', 'home')
 });
 ````
 
-##### Web App Controller   
+##### Web Page Controller   
 
 Or we could use a template, and let the router manage page state.  
 ````js
-// client/views/homePage.js 
 Router.route('/home', function(){
-  this.render('Items', function(){
-    Session.set('active_page', 'home')
-  });
+  this.render('homePage');
 });
-Router.route('/home', function(){
-  this.render('Items', function(){
-    Session.set('active_page', 'home')
-  });
+Router.route('/about', function(){
+  this.render('aboutPage');
 });
 ````
