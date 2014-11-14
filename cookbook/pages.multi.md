@@ -14,6 +14,17 @@ So, now that we've seen the pattern for a single-page, lets look at the multi-pa
 
 See how the binomial nomenclature helps us organize our stylesheets in the views folder?  How it organizes DOM templates in the models folder?  And our libraries in our Controllers folder?  When we start adding headers, footers, blocks, sidebars, dialogs, and other UI components, this binomial nomenclature will keep everything nice and tidy.  
 
+
+````sh
+/client/homePage/homePage.less
+/client/homePage/homePage.html
+/client/homePage/homePage.js
+
+/client/aboutPage/aboutPage.less
+/client/aboutPage/aboutPage.html
+/client/aboutPage/aboutPage.js
+````
+
  
 ##### The Document Object Model   
 ````html
@@ -77,14 +88,7 @@ As for the ``{{pageVisibiilty}}`` handlebars, we're going to do some cleverness 
 The less compiler will take the above code, and compile it to ``#homePage h2`` and ``#aboutPage h2`` rules, which is fairly straight forward.  But that object nesting is super useful when creating more complex views; primarily because you can mimic your DOM structure.  
 
 
-##### Web App Controller   
 
-````js
-// client/views/page.home.js 
-Router.route('/home', function(){
-  
-});
-````
 
 So far, the controllers for a multipage app are fairly straightforward.  But now we're going to start doing something interesting.  
 
@@ -104,7 +108,7 @@ Template.aboutPage.helpers({
 });
 ````
 
-##### Video Game & Canvas Controller   
+##### Canvas Controller (Suitable for Video Games & Apps)
 ````js
 // client/views/page.home.js 
 Template.homePage.helpers({
@@ -172,28 +176,37 @@ Nifty!  Now, all we need to do is go back to our template, and add some buttons.
 </template>
 ````
 
-So, our final file structure looks something like this:
-````sh
-/client/views/app.navbars.less
-/client/views/page.home.css
-/client/views/page.about.css
-/client/models/app.navbars.html
-/client/models/page.home.html
-/client/models/page.about.html
-/client/controllers/app.navbars.js
-/client/controllers/page.home.js
-/client/controllers/page.about.js
+
+##### Web App Controller   
+
+Alternatively, we could set the session variable by using a URL route.  
+````js
+// client/views/page.home.js 
+Router.route('/home', function(){
+  this.render('Items', function(){
+    Session.set('active_page', 'home')
+  });
+});
+Router.route('/home', function(){
+  this.render('Items', function(){
+    Session.set('active_page', 'home')
+  });
+});
 ````
 
-Which you might want to refactor to look like so:
-````sh
-/client/views/page.home.css
-/client/views/page.about.css
-/client/models/page.home.html
-/client/models/page.about.html
-/client/controllers/page.home.js
-/client/controllers/page.about.js
-/client/app.navbars.less
-/client/app.navbars.html
-/client/app.navbars.js
+##### Web App Controller   
+
+Or we could use a template, and let the router manage page state.  
+````js
+// client/views/homePage.js 
+Router.route('/home', function(){
+  this.render('Items', function(){
+    Session.set('active_page', 'home')
+  });
+});
+Router.route('/home', function(){
+  this.render('Items', function(){
+    Session.set('active_page', 'home')
+  });
+});
 ````
