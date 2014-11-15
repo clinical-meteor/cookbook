@@ -127,6 +127,7 @@ Links to live versions of the examples associated with this cookbook.
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | --- | bootstrap3 | 0.7.1.2 |
 | [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  --- | bootstrap3 | 0.8.0 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | --- | bootstrap3 | 0.8.0.1 |
+| [ActiveRecord List](http://clinical-ui-crud-list.meteor.com/)      | [clinical-ui-crud-list](https://github.com/awatson1978/clinical-ui-crud-list) |  --- | bootstrap3 | 0.8.0.1 |
 | [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | bootstrap3 | 1.0 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes | bootstrap3 |  0.9.1 | 
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | bootstrap3 | 0.6.5 |
@@ -136,7 +137,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | bootstrap3 | 0.8.1.3 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | --- | bootstrap3 | 0.8.0 |
 | [ActiveRecord Table](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-table](https://github.com/awatson1978/clinical-ui-crud-table) |  --- | bootstrap3 | 0.8.2 |
-| [ActiveRecord List](http://clinical-ui-crud-list.meteor.com/)      | [clinical-ui-crud-list](https://github.com/awatson1978/clinical-ui-crud-list) |  --- | bootstrap3 | 0.8.0.1 |
 | [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | [clinical-ui-forms](https://github.com/awatson1978/clinical-ui-forms) | --- | bootstrap3 | 0.6.5 |
 | [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | [panel-layout](https://github.com/awatson1978/panel-layout) |  --- | bootstrap3 | 0.8.0.1 |
 | [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | [rest-analytics-pipeline](https://github.com/awatson1978/rest-analytics-pipeline) | --- | bootstrap3 | 0.9.1 |
