@@ -153,24 +153,6 @@ Template.homePage.helpers({
 });
 ````
 
-So far, the controllers for a multipage app are fairly straightforward.  But now we're going to start doing something interesting.  
-
-````js
-// client/views/page.about.js 
-Template.aboutPage.helpers({
-  getText: function(){
-    return "About This Site";
-  },
-  pageVisibility: function(){
-    if(Session.get('active_page', 'about')){
-      return 'visible';
-    }else{
-      return 'hidden';
-    }
-  }
-});
-````
-
 See how we're adding classes to the pages based on Session state?  This is going to give very nice functionality down the line, as we toggled UI elements on and off in the page.  Specifically, we have a Controller that's adding different View classes to our Object Model, based on a Session state.
 
 But how do we change the session state?
