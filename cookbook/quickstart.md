@@ -30,7 +30,13 @@ which npm
 # make sure npm is in your path
 sudo nano ~/.profile
   export PATH=$PATH:/usr/local/bin
- 
+ ````
+
+Meteorite Installation (Depcrated)
+===========================================
+Meteorite is mostly deprecated, and only used for research, bleeding-edge development, and backwards compatibility for old apps.
+
+````sh
 # install meteorite
 npm install -g meteorite
  
@@ -51,8 +57,6 @@ sudo nano ~/.profile
 # check mrt is installed correctly
 mrt --version
 ````
-
-
 
 
 Meteor Development Tools Quickstart
