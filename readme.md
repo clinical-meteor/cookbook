@@ -135,10 +135,10 @@ Links to live versions of the examples associated with this cookbook.
 | [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) |  --- | 0.6.5 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | --- | 0.7.0.1 |
 | [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | 0.8.1.3 |
-| [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | --- |  --- |<1.0 |
-| [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | --- | --- | <1.0 |
-| [Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)      | --- |  --- |<1.0 |
-| [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)     | --- | --- | <1.0 |
+| [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | --- | 0.8.0 |
+| [ActiveRecord Table](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-table](https://github.com/awatson1978/clinical-ui-crud-table) |  --- | 0.8.2 |
+| [ActiveRecord List](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-list](https://github.com/awatson1978/clinical-ui-crud-list) |  --- | 0.8.0.1 |
+| [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | --- | --- | <1.0 |
 | [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | --- |  --- |<1.0 |
 | [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | --- | --- | <1.0 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | --- | --- | <1.0 |
