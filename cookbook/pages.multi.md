@@ -1,30 +1,57 @@
 ## MultiPage Example
 
 So, now that we've seen the pattern for a single-page, lets look at the multi-page example.
-##### File structure 
+
+##### File structure  
+There's a few different approaches to organizes files in a multi-page application.  
+
 ````sh
+
+// when we run `meteor create`, three files are made (MVC)
+/helloWorld.css
+/helloWorld.html
+/helloWorld.js
+
+
+// we usually then put those files into a client directory
+/client/helloWorld.css
+/client/helloWorld.html
+/client/helloWorld.js
+
+// adding a second page is as simple as replicating those files
+/client/homePage.less
+/client/homePage.html
+/client/homePage.js
+
+// and to organize things, people often create a directory
+// to keep the MVC of each component together
 /client/homePage/homePage.less
 /client/homePage/homePage.html
 /client/homePage/homePage.js
-
 /client/aboutPage/aboutPage.less
 /client/aboutPage/aboutPage.html
 /client/aboutPage/aboutPage.js
+
+// sometimes, however, people will organize by file extension
+// which naturally leads to stylesheet, template, and library directories
+
+/client/stylesheets/homePage.less
+/client/stylesheets/aboutPage.less
+/client/templates/homePage.html
+/client/templates/aboutPage.html
+/client/libraries/homePage.js
+/client/libraries/aboutPage.js
+
+// this sturcture is sometimes given a MVC naming convention
+// and you'll see naming structures like this
+/client/view/homePage.less
+/client/view/aboutPage.less
+/client/model/homePage.html
+/client/model/aboutPage.html
+/client/controller/homePage.js
+/client/controller/aboutPage.js
 ````
-
-See how the binomial nomenclature helps us organize our stylesheets in the views folder?  How it organizes DOM templates in the models folder?  And our libraries in our Controllers folder?  When we start adding headers, footers, blocks, sidebars, dialogs, and other UI components, this binomial nomenclature will keep everything nice and tidy.  
-
-
-````sh
-/client/homePage/homePage.less
-/client/homePage/homePage.html
-/client/homePage/homePage.js
-
-/client/aboutPage/aboutPage.less
-/client/aboutPage/aboutPage.html
-/client/aboutPage/aboutPage.js
-````
-
+The important thing to keep in mind when building your application is that there's no one *correct* way to organize your files.  Use whatever organization helps you be productive.  It's very common for an app to go back and forth between these different organization approaches as it grows or shrinks (ie. as packages are extracted from an app).  
  
 ##### The Document Object Model   
 ````html
