@@ -1,4 +1,4 @@
-## Packages We Love And Should be Included Meteor:Clinical
+## Recommended/Popular Community Packages 
 
 | Package       | UI | Clinical  | Contributor | Scaffold | Version  |
 | ------------- |:----------------:| :----------------: |  :----------------: | :----------------: | -------------:|
