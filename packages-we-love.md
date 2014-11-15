@@ -25,9 +25,9 @@
 
 | Package       | Source   | Interface | Meta | Scaffold | Component | Version  |
 | ------------- |:------------:| :-----------: |  :-------: | :--------: | :--------: | -------------:|
-| [clinical:nightwatch] | [clinical-nightwatch](https://github.com/awatson1978/clinical-nightwatch) |  bootstrap3 | no | no | no | 1.4.0 |
-| [clinical:hipaa] | [clinical-hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | no |  no | 1.4.0 |
-| [clinical:hipaa-audit-log] | [clinical-hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | no | yes | no | 1.4.0 |
+| clinical:nightwatch | [clinical-nightwatch](https://github.com/awatson1978/clinical-nightwatch) |  bootstrap3 | no | no | no | 1.4.0 |
+| clinical:hipaa | [clinical-hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | no |  no | --- |
+| clinical:hipaa-audit-log | [clinical-hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | no | yes | no | 1.0.1 |
 
 
 **Version refers to recommended version of the package.** 
