@@ -48,7 +48,7 @@
 | Aggregation | --- | --- |  --- | 
 | Filters | --- | --- |  --- | 
 | Observers | --- | --- |  --- | 
-| Schema Migrations | --- | --- |  --- | 
+| Schema Migrations | yes | no |  1.0 | 
 | Data Validation | --- | --- |  --- | 
 | Database Management | --- | --- |  --- | 
 | Replica Sets | --- | --- |  --- | 
