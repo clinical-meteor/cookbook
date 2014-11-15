@@ -122,7 +122,7 @@ Links to live versions of the examples associated with this cookbook.
 | ------------- |:----------------:| ----------------|---------------:|
 | [REST API](http://rest-api.meteor.com/)               | --- | --- | <1.0 |
 | [Workflow Routing](http://workflow-routing.meteor.com/)      | --- |  --- |<1.0 |
-| [Minimongo Table](https://minimongo-table.meteor.com)      | --- | --- | <1.0 |
+| [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | --- | 0.8.0.1 |
 | [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | 1.0 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  0.9.1 | 
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | <0.9 |
