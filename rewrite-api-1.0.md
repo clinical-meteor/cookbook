@@ -9,7 +9,7 @@
 | Punctuation | --- | --- |  < 1.0 | 
 | Reserved Keywords | --- | --- |  < 1.0 | 
 | Installation | --- | --- |  < 1.0 | 
-| Quickstart | --- | --- |  < 1.0 | 
+| Quickstart | yes | --- |  1.0 | 
 | Development Tools | --- | --- |  < 1.0 | 
 | Atom Editor | --- | --- |  < 1.0 | 
 | Webstorm IDE | --- | --- |  < 1.0 | 
