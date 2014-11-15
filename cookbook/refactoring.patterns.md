@@ -47,7 +47,7 @@ Template.promptModal.helpers({
   }
 });
 ````
-And we now avoid having to write ``Template.promptModal`` over and over and over again. 
+And we now avoid having to write ``Template.promptModal`` over and over and over again, and we're now ready for the latest versions of the Blaze rendering engine.
 
 #### Extracting and Registering a Template Helper
 Now lets say we find a helper that we're using in different templates...
