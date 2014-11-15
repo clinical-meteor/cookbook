@@ -167,7 +167,7 @@ helloWorld/
 ````
 
 #### G)  Prepare it for Publications  
-And then adding the necessary ``package.js`` and ``smart.json`` files to publish it.  
+And then adding the necessary ``package.js`` file to publish it.  
 ````
 helloWorld/
   client/
@@ -185,7 +185,6 @@ helloWorld/
       coolWidget.js  
       coolWidget.css  
       package.js
-      smart.json
   server/
     methods.js
 ````
@@ -198,7 +197,6 @@ coolWidget/
   coolWidget.js  
   coolWidget.css  
   package.js
-  smart.json
 ````
 
 
