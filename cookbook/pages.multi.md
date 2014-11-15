@@ -53,6 +53,8 @@ There's a few different approaches to organizes files in a multi-page applicatio
 The important thing to keep in mind when building your application is that there's no one *correct* way to organize your files.  Use whatever organization helps you be productive.  It's very common for an app to go back and forth between these different organization approaches as it grows or shrinks (ie. as packages are extracted from an app).  
  
 ##### The Document Object Model   
+So, lets dive into our two pages, and take a look at their document object models.  
+
 ````html
 <!-- /client/models/page.home.html -->
 <template name="homePage">
