@@ -120,6 +120,9 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source Available?|  Documented     | Meteor Version  |
 | ------------- |:----------------:| ----------------|---------------:|
+| [REST API](http://rest-api.meteor.com/)               | --- | --- | <1.0 |
+| [Workflow Routing](http://workflow-routing.meteor.com/)      | --- |  --- |<1.0 |
+| [Minimongo Table](https://minimongo-table.meteor.com)      | --- | --- | <1.0 |
 | [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | 1.0 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  0.9.1 | 
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | <0.9 |
@@ -133,14 +136,10 @@ Links to live versions of the examples associated with this cookbook.
 | [Clinical UI Forms](http://clinical-ui-forms.meteor.com/)     | --- | --- | <1.0 |
 | [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | --- |  --- |<1.0 |
 | [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | --- | --- | <1.0 |
-| [Minimongo Table](https://minimongo-table.meteor.com)      | --- | --- | <1.0 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | --- | --- | <1.0 |
 | [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | --- | --- | <1.0 |
-| [Workflow Routing](http://workflow-routing.meteor.com/)      | --- |  --- |<1.0 |
 | [Panel Layout](http://panel-layout.meteor.com/)         | --- | --- | <1.0 |
 | [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)     | --- | --- | <1.0 |
-| [REST API](http://rest-api.meteor.com/)               | --- | --- | <1.0 |
-| [GroupThink](http://groupthink.meteor.com/)             | --- |--- |  <1.0 |
 | [Fonts & Calligraph](http://fonts.meteor.com/)   | --- |  --- |<1.0 |
 | [Dictionary](http://dictionary.meteor.com/)             | --- |  --- |<1.0 |
 | [Collabtionary](http://collabtionary.meteor.com/)       | ---      |  --- | <1.0 |
