@@ -4,6 +4,10 @@
 
 ## Model, View, Controllers
 
+The First Rule of MVC is "Don't trust anybody who tries to re-invent the MVC pattern."  
+
+They're not going to do better than the browser designers themselves.  And web browsers have evolved over 20 years with their own MVC models, which have spawned entire domain languages.  Any open-source project that has 1,000 or 10,000 stars is peanuts compared to 20 years of Netscape and Internet Explorer, and their billion+ downloads.  
+
 **Q:  How do I add MVC to my application?**  
 It's already there, baked into the core of the framework.  The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  
 
