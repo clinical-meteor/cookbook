@@ -77,7 +77,11 @@ http://clinical.meteor.com/
 - [Routing](https://github.com/EventedMind/iron-router)
   - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
   - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
-  - [Page Not Found](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/routing.page-not-found.md)  
+  - [Page Not Found](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/routing.page-not-found.md) - [ActiveRecord]  
+  - [Basic Pattern]
+  - [Upsert Pattern]
+  - [DoublePage Pattern]  
+  - [SinglePage Pattern]  
 - Meteor UI Components
   - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
   - [Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)   
