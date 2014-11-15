@@ -32,7 +32,7 @@ sudo nano ~/.profile
   export PATH=$PATH:/usr/local/bin
  ````
 
-Meteorite Installation (Depcrated)
+Meteorite Installation (Deprecated)
 ===========================================
 Meteorite is mostly deprecated, and only used for research, bleeding-edge development, and backwards compatibility for old apps.
 
