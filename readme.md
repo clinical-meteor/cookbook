@@ -146,7 +146,7 @@ Links to live versions of the examples associated with this cookbook.
 | [Fonts & Calligraph](http://fonts.meteor.com/)   | [fonts-site](https://github.com/awatson1978/fonts-site) |  no |0.6.5.1 |
 | [Dictionary](http://dictionary.meteor.com/)             | [dictionary](https://github.com/awatson1978/dictionary) |  --- | 0.6.5 |
 | [Collabtionary](http://collabtionary.meteor.com/)       | [collabtionary](https://github.com/awatson1978/collabtionary)      |  --- | 0.6.5 |
-| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  --- | 0.6.5 |
+| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  yes | 0.6.5 |
 
 ####Meteor Architecture  
 
