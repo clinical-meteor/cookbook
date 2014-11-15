@@ -14,8 +14,8 @@
 | Atom Editor | --- | --- |  --- | 
 | Webstorm IDE | --- | --- |  --- | 
 | Test Driven Development | --- | --- |  --- | 
-| The Refactoring Process | --- | --- |  --- | 
-| Refactoring Patterns | --- | --- |  --- | 
+| The Refactoring Process | yes | no |  1.0 | 
+| Refactoring Patterns | yes | no |  1.0 | 
 | Refactoring With Test Driven Development | --- | --- |  --- | 
 | Writing Acceptance Tests (with Nightwatch) | --- | --- |  --- | 
 | Writing Unit Tests (with Tinytest) | --- | --- |  --- | 
