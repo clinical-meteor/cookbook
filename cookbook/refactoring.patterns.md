@@ -70,7 +70,7 @@ Template.confirmModal.helpers({
 We can extract that function, and share it across **all** our templates, by doing the following:  
 ````js
 // after refactoring
-UI.registerHelper('getUserName', function(){
+Template.registerHelper('getUserName', function(){
   return Meteor.user().profile.name;
 });
 ````
