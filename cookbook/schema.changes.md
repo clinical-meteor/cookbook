@@ -59,7 +59,7 @@ db.posts.find().forEach(function(doc){
 ````
 
 
-#### Blob Record From One Collection Into Another Collection (ie. Remove Join & Flatten Schema)
+#### Blob Record From One Collection Into Another Collection (ie. Remove Join & Flatten)
 ````js
 db.posts.find().forEach(function(doc){
     if(doc.commentsBlobId){
