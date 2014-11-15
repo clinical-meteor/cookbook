@@ -3,7 +3,7 @@ Refactoring Patterns
 
 
 #### Combining Template Helpers
-Begin with a number of helper functions...
+The following refactoring pattern is particularly important for people with pre 0.8 Meteor apps.  Since Blaze, we've no longer been allowed to attach helper functions directly on the template object.  Instead, we have a ``helpers()`` method which accepts a JSON object which we decorate with methods.  So, to upgrade from <0.8 to Meteor 1.0, we need to refactor our helper functions into a JSON object.  Here's how:
 ````js
 // before refactoring
 Template.promptModal.getPromptTitle = function(){
