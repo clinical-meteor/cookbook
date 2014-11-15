@@ -128,7 +128,7 @@ Links to live versions of the examples associated with this cookbook.
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | --- | bootstrap3 | 0.7.1.2 |
 | [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  --- | bootstrap3 | 0.8.0 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | --- | bootstrap3 | 0.8.0.1 |
-| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | bootstrap-3 | 1.0 |
+| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | bootstrap3 | 1.0 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes | bootstrap3 |  0.9.1 | 
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | bootstrap3 | 0.6.5 |
 | [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  --- | bootstrap3 |  0.6.5 |
