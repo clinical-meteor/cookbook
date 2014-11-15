@@ -31,6 +31,16 @@
 | clinical:hipaa | [clinical-hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | no |  no | --- |
 | clinical:hipaa-audit-log | [clinical-hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | no | yes | no | 1.0.1 |
 
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
+| clinical:stripe    |    | bootstrap3 | no | no | no | ---  |
 ==============================
 
 **Version refers to recommended version of the package.** 
