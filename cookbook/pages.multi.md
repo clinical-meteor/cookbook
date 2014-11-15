@@ -1,4 +1,4 @@
-## Multi Page Example
+## MultiPage Example
 
 So, now that we've seen the pattern for a single-page, lets look at the multi-page example.
 ##### File structure 
