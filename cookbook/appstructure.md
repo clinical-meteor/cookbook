@@ -4,7 +4,7 @@
 
 ## Model, View, Controllers
 
-The First Rule of MVC is "**Be wary of anybody who tries to re-invent the MVC pattern.**"  
+The First Rule of MVC:  **Be wary of anybody who tries to re-invent the MVC pattern.** 
 
 The MVC pattern that's used on the web is governed by both standards bodies (IEEE, WC3, etc) and the community involvement of a billion people on this planet.  Over 20 years, MVC has evolved on the web into entire domain languages, which everybody collectively knows as HTML, CSS, and Javascript.  Any open-source project that has 1,000 or 10,000 stars on GitHub is peanuts compared to 20 years of Netscape and Internet Explorer, and their billion+ downloads.  So, be wary of Backbone, Ember, Angular, Knockout, Isotope, Famo.us, and any other MVC, MVVM, MVP, or other pattern you run across.  They're re-inventing wheels. 
 
