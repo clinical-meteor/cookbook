@@ -132,9 +132,9 @@ Links to live versions of the examples associated with this cookbook.
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  0.9.1 | 
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | 0.6.5 |
 | [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  --- |  0.6.5 |
-| [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing)) |  --- | 0.6.5 |
-| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | --- | --- | <1.0 |
-| [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | --- |  --- | <1.0 |
+| [Stripe Payments - Crowdsourcing Workflow](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) |  --- | 0.6.5 |
+| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | --- | 0.7.0.1 |
+| [Run Command Line Program From UI](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | 0.8.1.3 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/)      | --- |  --- |<1.0 |
 | [Clinical UI Crud List](http://clinical-ui-crud-list.meteor.com/)    | --- | --- | <1.0 |
 | [Clinical UI Crud Table](http://clinical-ui-crud-table.meteor.com/)      | --- |  --- |<1.0 |
