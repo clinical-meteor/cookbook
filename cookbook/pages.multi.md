@@ -53,7 +53,7 @@ There's a few different approaches to organizes files in a multi-page applicatio
 The important thing to keep in mind when building your application is that there's no one *correct* way to organize your files.  Use whatever organization helps you be productive.  It's very common for an app to go back and forth between these different organization approaches as it grows or shrinks (ie. as packages are extracted from an app).  
  
 ##### The Document Object Model   
-So, lets dive into our two pages, and take a look at their object models.  Each template is going to have an inner div with a unique ID.  
+So, lets dive into our two pages, and take a look at their object models.  The template tags are going to be invisible in the final rendered HTML, so we put an inner div with a unique ID (that's the same as the template name) inside of each template.  This is going to allow us to query the DOM component once it's written to our HTML.
 
 ````html
 <!-- /client/models/page.home.html -->
@@ -75,7 +75,7 @@ So, lets dive into our two pages, and take a look at their object models.  Each 
 </template>
 ````
 
-Now, we have nicely defined IDs for each page objects in our application.  This is going to be useful on a bunch of levels when we get to the views and page transitions, because we can now attach styling and animation rules directly to our page object.    
+Now that we have nicely defined IDs for each page objects in our application, we can start thinking about creating more complex views, by adding visibility rules, sizing rules, animations, and page transitions.  Those IDs will be the anchors that allow us to attach styling and animation rules directly to our page object.    
 
 As for the ``{{pageVisibiilty}}`` handlebars, we're going to do some cleverness in a bit that allows us to navigate pages, enable page transitions, and the like by adding ``.visible`` and ``.hidden`` classes.  
 
