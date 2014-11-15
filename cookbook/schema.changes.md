@@ -89,7 +89,7 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
-#### remove record if specific field is specific value
+#### Remove Record if Specific Field is Specific Value
 ````js
 db.posts.find().forEach(function(doc){
     if(doc.foo === 'bar'){
@@ -98,7 +98,7 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
-#### change specific value of field to new value
+#### Change Specific Value of Field to New Value
 ````js
 db.posts.find().forEach(function(doc){
     if(doc.foo === 'bar'){
@@ -107,7 +107,7 @@ db.posts.find().forEach(function(doc){
 });
 `````
 
-#### unset specific field to null
+#### Unset Specific Field to Null
 ````js
 db.posts.find().forEach(function(doc){
     if(doc.oldfield){
@@ -117,14 +117,14 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
-#### convert ObjectId to string
+#### Convert ObjectId to String
 ````js
 db.posts.find().forEach(function(doc){
      db.accounts.update({_id: doc._id}, {$set: {'_id': doc._id.str }}, false, true);
 });
 ````
 
-#### convert field values from numbers to strings
+#### Convert Field Values from Numbers to Strings
 ````js
 var newvalue = "";
 db.posts.find().forEach(function(doc){
@@ -135,7 +135,7 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
-#### convert field values from strings to numbers
+#### Convert Field Values from Strings to Numbers
 ````js
 var newvalue = null;
 db.posts.find().forEach(function(doc){
@@ -146,7 +146,7 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
-#### create a timestamp from an ObjectID in the _id field
+#### Create a Timestamp from an ObjectID in the _id Field
 ````js
 db.posts.find().forEach(function(doc){
     if(doc._id){
@@ -155,14 +155,14 @@ db.posts.find().forEach(function(doc){
 });
 ````
 
-#### create an ObjectID from a Date object
+#### Create an ObjectID from a Date Object
 ````js
 var timestamp = Math.floor(new Date(1974, 6, 25).getTime() / 1000);
 var hex       = ('00000000' + timestamp.toString(16)).substr(-8); // zero padding
 var objectId  = new ObjectId(hex + new ObjectId().str.substring(8));
 ````
 
-#### find all the records that have items in a particular array  
+#### Aind All the Records that Have Items in an Array  
 what we're doing here is referencing the array index using dot notation  
 ````js
 db.posts.find({"tags.0": {$exists: true }})
