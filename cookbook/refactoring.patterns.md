@@ -47,7 +47,7 @@ Template.promptModal.helpers({
   }
 });
 ````
-And we now avoid having to write ``Template.promptModal`` over and over and over again.  It's a minor refactoring, but it keeps things tidy.
+And we now avoid having to write ``Template.promptModal`` over and over and over again. 
 
 #### Extracting and Registering a Template Helper
 Now lets say we find a helper that we're using in different templates...
