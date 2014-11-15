@@ -41,7 +41,7 @@ http://clinical.meteor.com/
 - Site Mechanics
     - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/filestructure.md)
     - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
-    - [App Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/appstructure.md) 
+    - [Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/appstructure.md) 
       - [Non Standard Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/non-standard-architectures.md)     
       - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
       - [Offline](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)  
