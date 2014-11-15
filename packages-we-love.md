@@ -22,4 +22,13 @@
 | [miguelvalverde:font-awesome-4.1.0]() | none | no |  ? | No | ? |  
 | [mrt:jquery-csv]() | none | no |  ? | No | ? |  
 
-http://js.leapmotion.com/examples  
+
+| Package       | Source   | Interface | Meta | Scaffold | Component | Version  |
+| ------------- |:------------:| :-----------: |  :-------: | :--------: | :--------: | -------------:|
+| [clinical:nightwatch] | [clinical-nightwatch](https://github.com/awatson1978/clinical-nightwatch) |  bootstrap3 | no | no | no | 1.4.0 |
+| [clinical:hipaa] | [clinical-hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | no |  no | 1.4.0 |
+| [clinical:hipaa-audit-log] | [clinical-hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | no | yes | no | 1.4.0 |
+
+
+**Version refers to recommended version of the package.** 
+
