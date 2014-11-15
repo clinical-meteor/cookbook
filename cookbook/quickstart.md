@@ -1,4 +1,4 @@
-Meteor Quickstart Installation
+Meteor 1.0 Quickstart Installation
 ===========================================
 
 This quickstart is written for Mac OSX Mavericks, and is a bit more verbose than other installation instructions.  It should hopefully cover a few edge cases, such as setting your path, which can cause an installation to go awry.  
