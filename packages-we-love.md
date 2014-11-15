@@ -22,6 +22,7 @@
 | [miguelvalverde:font-awesome-4.1.0]() | none | no |  ? | No | ? |  
 | [mrt:jquery-csv]() | none | no |  ? | No | ? |  
 
+==============================
 
 | Package       | Source   | Interface | Meta | Scaffold | Component | Version  |
 | ------------- |:------------:| :-----------: |  :-------: | :--------: | :--------: | -------------:|
@@ -29,6 +30,7 @@
 | clinical:hipaa | [clinical-hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | no |  no | --- |
 | clinical:hipaa-audit-log | [clinical-hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | no | yes | no | 1.0.1 |
 
+==============================
 
 **Version refers to recommended version of the package.** 
 
