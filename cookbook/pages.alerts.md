@@ -7,7 +7,7 @@ Alerts and errors really are nearly the simplest of all Meteor component pattern
 The following code requires the LESS precompiler and Bootstrap-3, respectively.  You will need to run the following commands at the command prompt to get them to work.
 ````
 meteor add less
-mrt add bootstrap-3
+meteor add ian:bootstrap-3 
 ````
 
 #### Object Model:  Define Alert Object
