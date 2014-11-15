@@ -115,6 +115,7 @@ The less compiler will take the above code, and compile it to ``#homePage h2`` a
 
 
 
+##### Canvas Controller (Suitable for Video Games & Apps)
 
 So far, the controllers for a multipage app are fairly straightforward.  But now we're going to start doing something interesting.  
 
@@ -134,7 +135,6 @@ Template.aboutPage.helpers({
 });
 ````
 
-##### Canvas Controller (Suitable for Video Games & Apps)
 ````js
 // client/views/page.home.js 
 Template.homePage.helpers({
