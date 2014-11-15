@@ -1,4 +1,4 @@
-##Multi Page Example With Routing
+##MultiPage With Routing
 
 ##### The Document Object Model 
 
