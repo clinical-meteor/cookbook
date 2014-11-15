@@ -138,17 +138,15 @@ Links to live versions of the examples associated with this cookbook.
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | --- | 0.8.0 |
 | [ActiveRecord Table](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-table](https://github.com/awatson1978/clinical-ui-crud-table) |  --- | 0.8.2 |
 | [ActiveRecord List](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-list](https://github.com/awatson1978/clinical-ui-crud-list) |  --- | 0.8.0.1 |
-| [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | --- | --- | <1.0 |
-| [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | --- |  --- |<1.0 |
-| [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | --- | --- | <1.0 |
-| [Drag and Drop](http://drag-and-drop.meteor.com/)        | --- | --- | <1.0 |
-| [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | --- | --- | <1.0 |
-| [Panel Layout](http://panel-layout.meteor.com/)         | --- | --- | <1.0 |
-| [Panel Layout Testrunner](http://panel-layout-testrunner.meteor.com/)     | --- | --- | <1.0 |
-| [Fonts & Calligraph](http://fonts.meteor.com/)   | --- |  --- |<1.0 |
-| [Dictionary](http://dictionary.meteor.com/)             | --- |  --- |<1.0 |
-| [Collabtionary](http://collabtionary.meteor.com/)       | ---      |  --- | <1.0 |
-| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | ---      |  --- |<1.0 |
+| [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | [clinical-ui-forms](https://github.com/awatson1978/clinical-ui-forms) | --- | 0.6.5 |
+| [Clinical UI Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | [panel-layout](https://github.com/awatson1978/panel-layout) |  --- | 0.8.0.1 |
+| [Realtime Analytics Pipeline](http://realtime-analytics-pipeline.meteor.com/)      | [rest-analytics-pipeline](https://github.com/awatson1978/rest-analytics-pipeline) | --- | 0.9.1 |
+| [Drag and Drop](http://drag-and-drop.meteor.com/)        | [drag-and-drop](https://github.com/awatson1978/drag-and-drop) | --- | 0.8.0 |
+| [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | [green-eggs-and-spam](https://github.com/awatson1978/green-eggs-and-spam) | --- | 0.8.0 |
+| [Fonts & Calligraph](http://fonts.meteor.com/)   | [fonts-site](https://github.com/awatson1978/fonts-site) |  no |0.6.5.1 |
+| [Dictionary](http://dictionary.meteor.com/)             | [dictionary](https://github.com/awatson1978/dictionary) |  --- | 0.6.5 |
+| [Collabtionary](http://collabtionary.meteor.com/)       | [collabtionary](https://github.com/awatson1978/collabtionary)      |  --- | 0.6.5 |
+| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  --- | 0.6.5 |
 
 ####Meteor Architecture  
 
