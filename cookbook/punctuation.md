@@ -33,7 +33,7 @@ return {
 };
 
 // bad!
-return
+return  // we're being lazy and taking a chance by skipping the semicolon here!
 {
   text : "As indeterminate as Schroedinger's Cat!"
 };
