@@ -125,7 +125,7 @@ Links to live versions of the examples associated with this cookbook.
 | Live Demo     | Source Available?|  Documented     | Interface   | Meteor Version  |
 | ------------- |:----------------:| ----------------|----------------| ---------------:|
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | --- | bootstrap3 | 0.7.1.2 |
-| [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  --- | bootstrap3 | 0.8.0 |
+| [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  basic | bootstrap3 | 1.0 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | --- | bootstrap3 | 0.8.0.1 |
 | [ActiveRecord List](http://clinical-ui-crud-list.meteor.com/)      | [clinical-ui-crud-list](https://github.com/awatson1978/clinical-ui-crud-list) |  --- | bootstrap3 | 0.8.0.1 |
 | [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | bootstrap3 | 1.0 |
