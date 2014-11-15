@@ -30,6 +30,7 @@
 [clinical:nightwatch](https://github.com/awatson1978/clinical-nightwatch) |  bootstrap3 | --- | --- | --- | 1.4.0 |
 [clinical:hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | --- |  --- | --- |
 [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | --- | yes | --- | 1.0.1 |
+| clinical:static-pages(https://github.com/awatson1978/clinical-static-pages)  | bootstrap3 | --- | yes | --- | ---  |
 | clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
 | clinical:accounts-stripe  | none | --- | --- | --- | ---  |
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  |
