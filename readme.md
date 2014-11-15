@@ -41,10 +41,7 @@ http://clinical.meteor.com/
 - Site Mechanics
     - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/filestructure.md)
     - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
-    - [Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/appstructure.md) 
-      - [Non Standard Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/non-standard-architectures.md)     
-      - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
-      - [Offline](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)  
+    - [Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/model-view-controller.md) 
     - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md) 
     - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
     - [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
@@ -110,6 +107,8 @@ http://clinical.meteor.com/
   - [Async Workers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/async-workers.md)  
   - [File Uploads](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/file-uploads.md)  
   - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
+  - [Non Standard Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/non-standard-architectures.md)     
+  - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
   - Parsing File Types
     - [XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
     - [CSV](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.csv.md)  
