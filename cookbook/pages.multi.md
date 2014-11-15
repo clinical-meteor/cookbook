@@ -5,8 +5,7 @@ So, now that we've seen the pattern for a single-page, lets look at the multi-pa
 ##### File structure  
 There's a few different approaches to organizes files in a multi-page application.  
 
-````sh
-
+````less
 // when we run `meteor create`, three files are made (MVC)
 /helloWorld.css
 /helloWorld.html
