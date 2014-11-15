@@ -53,7 +53,7 @@ Package.describe({
   name: "samplePackage",
   
   // and add this value if you want people to access your code from Atmosphere
-  git: "http://github.com/myaccount/nifty-widget"
+  git: "http://github.com/myaccount/nifty-widget.git"
 });
 
 // If you're bundling an NPM package, be sure to reference the package as a dependency
