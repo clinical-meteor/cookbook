@@ -27,21 +27,21 @@ var myVar 9; if (myVar == 9) {}
 To make a long story short, until you're fluent with Javascript, and know all the rules of how both the Meteor compiler will lint and minify your code, and how the V8 compiler will do semicolon insertion, the safest bet is to treat the Javascript environment as if it randomly inserts semicolons.  It's not actually inserting them randomly - there are quite specific rules on how it inserts them - but until you learn those rules, it will seem as though it's random.  As such, in order to avoid the Javascript interpreter from randomly inserting semicolons into your code, it's best that you be explicit about putting the semicolons in yourself.  
 
 ````js
-// good
+// good; return a JSON object
 return {
-	javascript : "fantastic"
+  text : "Fantastic!"
 };
 
 // bad!
 return
 {
-	javascript : "fantastic"
+  text : "As indeterminate as Schroedinger's Cat!"
 };
 
 // interpreted bad code
 return; // Semicolon inserted, believing the statement has finished. Returns undefined
 { // Considered to be an anonymous block, doing nothing
-	javascript : "fantastic"
+   text : "Danger, Will Robinson!  Danger!"
 };
 ````
 
