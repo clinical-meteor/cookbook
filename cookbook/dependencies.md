@@ -46,7 +46,7 @@ Getting 3rd party libraries used to be a lot harder with the older Spark opt-out
 
 **Note:  the non-sequential ordering here (4,3,1,2,5,6,7) is correct.  Follow the steps in order...  1,2,3,4,5,6,7 to follow how this gets parsed. Be mindful of steps three and four, which are particularly tricky, as step 4 is what is known as a side-effect.  If it doesn't make sense, reread and study it until it does.
 
-    ```js
+    ````js
     Session.setDefault('receivedData', null);
     
     Template.postsTablePage.helpers({
