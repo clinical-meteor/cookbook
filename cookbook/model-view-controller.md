@@ -52,7 +52,7 @@ If you stick with this convention, your IDE's like WebStorm will automatically c
 
 Color-coding is a powerful way to organize and understand your code.  Run ``meteor add less`` at the command line to include the LESS precompiler.  Then use ``.less`` files instead of ``.css`` files.  Presto.  If you're using WebStorm, your Model files should now be colored Green, your View files colored Blue, and your Controller files colored Red.
 
-If you're using Atom, you can try searching for and installing ``filetype-color``, or running ``apm add filetype-color`` at the command prompt.
+If you're using Atom, you can try searching for and installing ``filetype-color``, or running ``apm add filetype-color`` at the command prompt.  Also, adding ``minimap`` can give you a nice overview of your file.  Here are some screenshots of what Atom looks like with filetype-color and minimap added, enabling robust color coding of the Meteor API and our Model/View/Controller files.
 
 ![ColorCoding](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/ColorCoding.jpg)  
 
