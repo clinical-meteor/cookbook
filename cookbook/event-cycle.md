@@ -1,9 +1,9 @@
  
 ### The Event Cycle
 
-Once people get their files loaded correctly, they'll then need to step into the Event Cycle, and start triggering events.  Unlike sequential imperative style programming, this style of programming involves an Application Event Loop that gets run.  Just think of it as the engine of your application.  The motor that's constantly turning and making your application run and your templates reactive.  But, unlike a simmple shells script or an imperative object-oriented program in C# or Java, our Meteor application is going to have parts of it that run over-and-over-and-over again, as part of our Event Cycle.
+Once people get their files loaded correctly, they'll then need to step into the Event Cycle, and start triggering events.  Unlike sequential imperative style programming, this style of programming involves an Application Event Loop that gets run.  Just think of it as the engine of your application.  The motor that's constantly turning and making your application run and your templates reactive.  Other people like to think of the event cycle as a bicycle chain, or a jet engine.  Whichever model you use, think of it as something that cycles over-and-over very fast.  And unlike simple shells script or imperative object-oriented program in C# or Java, our Meteor application is going to continuously run over-and-over-and-over again.
 
-Different parts of your application will exist in different parts of the Event Cycle.  So, what does the Event Cycle look like?  Well, that's a difficult question.  The following is an imperfect representation, but it should get you started.   
+So, what does the Event Cycle look like?  The following is an imperfect representation, but should get you started with conceptualizing what's going on:   
 
 ````js
 // A: meteor will startup
