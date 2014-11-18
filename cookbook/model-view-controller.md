@@ -8,7 +8,7 @@ The First Rule of MVC:  **Be wary of anybody who tries to re-invent the MVC patt
 
 The MVC pattern that's used on the web is governed by both standards bodies (IEEE, WC3, etc) and the community involvement of a billion people on this planet.  Over 20 years, MVC has evolved on the web into entire domain languages, which everybody collectively knows as HTML, CSS, and Javascript.  
 
-Any open-source project that has 1,000 or 10,000 stars on GitHub is peanuts compared to 20 years of Netscape and Internet Explorer, and their billion+ downloads.  So, be wary of Backbone, Ember, Angular, Knockout, Famo.us, and any other MVC, MVVM, MVP, or other pattern you run across.  They're re-inventing wheels, and applying an MVC abstraction on top of existing MVC abstractions.  
+Any open-source project that has 1,000 or 10,000 stars on GitHub is peanuts compared to 20 years of Netscape and Internet Explorer, and their billion+ downloads.  So, be wary of Backbone, Ember, Angular, Knockout, Famo.us, and any other MVC, MVVM, MVP, or other pattern you run across.  They're re-inventing wheels, and applying an MVC abstraction on top of existing MVC models.  
 
 That's not to say you shouldn't use those libraries.  Just be wary of of the terms Model View Controller, and use with a grain of salt (or a saltshaker, really).  There's no consensus on what these terms mean, with developers of competing libraries using the term 'View' and 'Controller' to mean whatever they conceive it to mean.
 
