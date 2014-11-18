@@ -64,7 +64,7 @@ If you're using Atom, you can try searching for and installing ``filetype-color`
 **Q:  Can I add Ember into my Meteor Application?**  
 Sure you could add Ember or Angular in, but dear lord, why?  Ember and Meteor are essentially the same. As someone on the mailing lists once put it, saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  It simply adds an MVC abstraction layer on top of an existing MVC model.  
 
-(Although, strictly speaking, the Blaze.View is open to the same criticism of being an an MVC model added to an existing MVC model.  The Browser offers the initial MVC model via HTML, JS, and CSS files.  And Blaze.View adds a second MVC model on top of that.  The suggestion to add Ember would either replace Blaze as the second MVC model; or it would be added as a third MVC model.
+(Although, strictly speaking, the Blaze.View is open to the same criticism of being an an MVC model added to an existing MVC model.  The Browser offers the initial MVC model via HTML, JS, and CSS files.  And Blaze.View adds a second MVC model on top of that.  The suggestion to add Ember would either replace Blaze as the second MVC model; or it would be added as a third MVC model.)
 
 
 
