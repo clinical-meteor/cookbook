@@ -23,6 +23,8 @@ To provide some specific examples, lets take a look at how Blaze, SemanticUI and
 
 See the problem?  There's no consistency.  The terms Model, View, and Controller are **NOT** isomorphic and standard across libraries.  They mean different things in different contexts.  And that's the essential thing to understand when applying MVC structure to your app.  
 
+
+
 ===============================================
 #### Default MVC Patterns  
 
@@ -60,10 +62,12 @@ If you're using Atom, you can try searching for and installing ``filetype-color`
 ####Ember and Angular    
 
 **Q:  Can I add Ember into my Meteor Application?**  
-Sure you could add Ember in, but dear lord, why?  Ember and Meteor are essentially the same. Saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  
+Sure you could add Ember or Angular in, but dear lord, why?  Ember and Meteor are essentially the same. As someone on the mailing lists once put it, saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  It simply adds an MVC abstraction layer on top of an existing MVC model.  
 
-**Q:  What about Angular.js?  Wouldn't Angular and Meteor work great together?**  
-Ah...  so you want to drive a Ford in your Porche, instead.  Mmhmmm.  See the question above about Ember.  Angular.js is redundant.  Don't overcomplicate things with Ember.js, Angular.js, Knockout.js, or any of the other MVC frameworks.  When needed, Meteor will use Backbone.js for it's MVC.  
+(Although, strictly speaking, the Blaze.View is open to the same criticism of being an an MVC model added to an existing MVC model.  The Browser offers the initial MVC model via HTML, JS, and CSS files.  And Blaze.View adds a second MVC model on top of that.  In fact, Blaze.View works as something of a ModelController as far as the Browser is concerned with rendering Views to the ViewPort.  (Which just goes to show how convoluted this all is.)  The suggestion to add Ember would either replace Blaze as the second MVC model; or it would be added as a third MVC model.
+
+
+
 
 
 
