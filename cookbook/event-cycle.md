@@ -1,5 +1,4 @@
- 
-### The Event Cycle
+## The Event Cycle
 
 Once people get their files loaded correctly, they'll then need to step into the Event Cycle, and start triggering events.  Unlike sequential imperative style programming, this style of programming involves an Application Event Loop that gets run.  Just think of it as the engine of your application.  The motor that's constantly turning and making your application run and your templates reactive.  Other people like to think of the event cycle as a bicycle chain, or a jet engine.  Whichever model you use, think of it as something that cycles over-and-over very fast.  And unlike simple shells script or imperative object-oriented program in C# or Java, our Meteor application is going to continuously run over-and-over-and-over again.
 
@@ -51,7 +50,9 @@ See how it move into the outer scopes ``B`` and ``C``?  This is similar to shift
 
 What's happening here is that a Meteor application has four or five 'layers' or 'scopes' that it needs to create to get the reactive rendering templates working.  And each scope has instructions to create it's children scopes.  So, as a person navigates through their application, they'll be building up and tearing down templates, navigating pages, and the like, and people will be going up and down these scopes.  
  
-### Event Cycle with Iron Router
+ 
+================================
+#### Event Cycle with Iron Router
 
 When you add Iron Router, it will add event hooks to the event cycle, and change the rendering cycle to look like the following:  
 
@@ -86,8 +87,8 @@ Meteor.startup();
 // there is no matching Meteor.shutdown()
 ````
 
-
-### Event Hooks  
+================================
+#### Event Hooks  
 
 You can extend the event-cycle even further with the excellent event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.  Two highly recommended packages:  
 
@@ -98,3 +99,9 @@ Collection Hooks
 https://atmosphere.meteor.com/package/collection-hooks    
 
 
+================================
+#### Event Cycle Diagrams    
+
+For an advanced dive into this topic, take a look at the following event-cycle diagrams, which are loosely inspired by [Feynman diagrams](https://www.google.com/search?q=Feynman+diagrams&espv=2&biw=1888&bih=1061&source=lnms&tbm=isch&sa=X&ei=nsRrVIWVCfHjsASltYLwCw&ved=0CAYQ_AUoAQ) and where drawn while trying to integrate Tokbox, a 3rd party Web RTC video-conferencing library.  These diagrams were drawn during 0.6.5 days, before Blaze changed the reactive rendering from an opt-out model to an opt-in model.  So, most of the references to a Singleton now refer to a Tracker object.  Otherwise, the diagrams seem to be fairly acurate models of the event cycle.
+
+![EventCycle](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/EventCycle.jpg)  
