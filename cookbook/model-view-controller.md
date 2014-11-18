@@ -56,6 +56,9 @@ If you're using Atom, you can try searching for and installing ``filetype-color`
 
 ![ColorCoding](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/ColorCoding.jpg)  
 
+===============================================
+####Ember and Angular    
+
 **Q:  Can I add Ember into my Meteor Application?**  
 Sure you could add Ember in, but dear lord, why?  Ember and Meteor are essentially the same. Saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  
 
