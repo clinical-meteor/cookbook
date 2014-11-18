@@ -2,7 +2,7 @@
 **Where should I put my files?**    
 
 
-The first thing you need to know in structuring your apps is that the Meteor bundler has some directories that it is hardcoded to look for.  At a very basic level, the following directories are sort of baked into Meteor bundler, and is where you should begin with structuring larger applications.
+The first thing you need to know in structuring your apps is that the Meteor bundler has some directories that it is hardcoded to look for.  At a very basic level, the following directories are sort of baked into the Meteor bundler, and is where you should begin with structuring larger applications.
 
 ```sh
 client/                                  # client application code
@@ -33,12 +33,12 @@ mkdir client/app/modals
 mkdir client/app/workflows
 
 meteor add less
-mrt add bootstrap-3
-mrt add iron-router
+meteor add mrt:bootstrap-3
+meteor add iron:router
 
 ````
 
-After you create those directories in your application folder, the next step is to create some structure for your MVC model, add subscriptions and publications, and build out the rest of your application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  I find that most of my applications are starting to use the following structure.
+After creating those directories in the application folder, the next step is to create some structure for the MVC model, adding subscriptions and publications, and building out the rest of the application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  I find that most of my applications are starting to use the following structure.
 
 ```sh
 .scrap                                    # keep a .scrap or .temp directory for scrap files
@@ -72,9 +72,11 @@ tests/walkthough.js
 
 ------------------------------------
 #### File Permissions  
+If you're having any problems bundling your app, it's sometimes useful to check the permissions on your directory structure.  Here is a short audit script that will hopefully help get your directory permissions sorted out.
 
 ````sh
-sudo chown username:wheel myapp
+sudo chmod -R g+w myapp
+sudo chown -R username:wheel myapp
 sudo chown username:wheel .meteor
 sudo chown username:wheel ~/.meteorsession
 sudo chown username:wheel ~/.meteor
