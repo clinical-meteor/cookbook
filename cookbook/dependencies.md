@@ -42,31 +42,31 @@ http://atmosphere.meteor.com
 =========================================
 #### Getting 3rd-party-library.js to work with Meteor  
 
-Getting 3rd party libraries used to be a lot harder with the older Spark opt-out rendering model.  Nowdays, with Blaze's opt-in model, things are much easier.  
+Getting 3rd party libraries used to be a lot harder with the older Spark opt-out rendering model.  Nowdays, with Blaze's opt-in model, things are much easier.  But the order-of-sequence is decidedly non-linear and can be quite confusing at first.  The following example shows how to wrap a third-party table-sorting library in a reactive Tracking object.  The Blaze template renders a table of posts from the Posts collection, and the Tracker object reruns the tablesorter() function whenever new data arrives to the minimongo cursor.  The end result being that, as data is received from the server, the client will update the table and sort it with our 3rd part library.
 
-1.  Add your code to a Template.foo.rendered block
+**Note:  the non-sequential ordering here (4,3,1,2,5,6,7) is correct.  Follow the steps in order...  1,2,3,4,5,6,7 to follow how this gets parsed. Be mindful of steps three and four, which are particularly tricky, as step 4 is what is known as a side-effect.  If it doesn't make sense, reread and study it until it does.
 
     ```js
     Session.setDefault('receivedData', null);
     
-    Template.fooPage.helpers({
-      customersList: function(){
+    Template.postsTablePage.helpers({
+      postsList: function(){
         // step 4:  everything within the customersList gets rerun
         // which causes another session variable to be set
         Session.set('receivedData', new Date());
         
         // step 3:  minimongo receives data and sets the functions referencing the reactive
         // CustomersAccount cursor as being invalidated, which causes them to rerun
-        return CustomerAccounts.find();
+        return Posts.find();
       },
       rendered: function(){
         // step 1:  the rendered function is a singleton and only gets run once
         // which is where we create our table using our third party library
-        $('#exampleTable').tablesorter();
+        $('#postsTable').tablesorter();
         
         // setp 2:  in the singleton, we're going to opt-into some reactive dependency
         // which will continue after the singleton finishes
-        Deps.autorun(function(){
+        Tracker.autorun(function(){
           // step 5:  the reacitve receivedData session variable is updated, causing the functions
           // referencing it to become invalidated, and for them to be rerun as well
           console.log(Session.get('receivedData'))
@@ -74,7 +74,7 @@ Getting 3rd party libraries used to be a lot harder with the older Spark opt-out
           // step 6:  we wait a couple of milliseconds to let the cursor populate the table
           setTimeout(function(){
             // step 7:  we call an update function on our third party library
-            $("#exampleTable").trigger("update");
+            $("#postsTable").trigger("update");
           }, 100);
         });
       }
@@ -83,9 +83,9 @@ Getting 3rd party libraries used to be a lot harder with the older Spark opt-out
 
 
 
-Note: to get third party libraries to work, you'll also want to audit them for `var` keywords.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  Actually, what's happening is that, behind the scenes, every Meteor application is wrapped in an application object.  That's what the ``Meteor`` API is.  The functions exposed on that parent container.  That means that most all of the javascript you write in Meteor apps aren't in the global scope.  And that causes the behavior of the `var` keyword to change.  
+Note: to get third party libraries to work, you'll also want to audit them for `var` keywords.  Unlike most other Javascript frameworks, Meteor uses the 'var' keyword in a very specific way to restrict the scope of a variable to a single file.  Actually, what's happening is that, behind the scenes, every Meteor application is wrapped in an application object.  The Meteor API is simply (and strictly) defined as the functions exposed on the Meteor object, which itself acts as the parent container for your app.  That means that most all of the javascript you write in Meteor apps aren't in the global scope.  Rather, they are in the Meteor scope.  And that causes the behavior of the `var` keyword to change.  
 
-So, many libraries will use the 'var' keyword to simply define a variable to the global scope; thinking that they're going to be run in the global scope as part of a web page.  But Meteor will interpret the 'var' to mean a variable specific to the local file, since it's running the library as a resource in a web application.  This causes problems sometimes.
+So, many libraries will use the 'var' keyword to simply define a variable to the global scope; thinking that they're going to be run in the global scope as part of a basic static web page.  But Meteor will interpret the 'var' to mean a variable specific to the local file, since it's running the library as a resource in a web application.  This causes problems sometimes.  So, when using the 'var' keyword, keep the following things in mind...
 
 ````js
 // variable restricted to local file
@@ -107,4 +107,4 @@ function createStoryJS(){ ... }
 createStoryJS = function (){ ... }
 ````
 
-Note:  I'm being judgemental here, and saying certain approaches are 'good' and 'bad', which implies certain ways of coding things.  If you're used to using ``private`` and ``public`` keywords, you'll note that the ``var`` keyword acts like ``private``, and can be useful for encapsulation and preventing internal variables from being shared with outside scopes.  That's a good thing.   Proper encapsulation and scoping should be encouraged.  But for people debugging applications and trying to integrate 3rd party libraries, the default usage of the ``var`` keyword breaks a lot of things, and the bottom line is that they generally need to bring some of the private variables into a more global context.
+Note:  The Meteor Cookbook is being judgemental here, and saying certain approaches are 'good' and 'bad', which implies certain ways of coding things.  If you're used to using ``private`` and ``public`` keywords, you'll note that the ``var`` keyword acts like ``private``, and can be useful for encapsulation and preventing internal variables from being shared with outside scopes.  That's a good thing.   Proper encapsulation and scoping should be encouraged.  But for people debugging applications and trying to integrate 3rd party libraries, the default usage of the ``var`` keyword breaks a lot of things, and the bottom line is that they generally need to bring some of the private variables into a more global context.
