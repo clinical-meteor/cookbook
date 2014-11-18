@@ -3,7 +3,7 @@ Schema Design
 
 The bads news:  schema design totally depends on the kind of application you're going to build, so it totally varies.
 
-Further more, because Mongo is denormalized, we're not going to go through [database normalization](http://en.wikipedia.org/wiki/Database_normalization), meaning there aren't any formal schemas like [First Normal Form (1NF)](http://en.wikipedia.org/wiki/First_normal_form) or [Second Normal Form (2NF)](http://en.wikipedia.org/wiki/Second_normal_form). So, toss everything you know about 1NF and 2NF and keeping data DRY out the window.  
+Furthermore, because Mongo is denormalized, we're not going to go through [database normalization](http://en.wikipedia.org/wiki/Database_normalization), meaning there aren't any formal schemas like [First Normal Form (1NF)](http://en.wikipedia.org/wiki/First_normal_form) or [Second Normal Form (2NF)](http://en.wikipedia.org/wiki/Second_normal_form). So, toss everything you know about 1NF and 2NF and keeping data DRY out the window.  
 
 However, the good news is that we **do** have a whole bunch of tools from the field of [cladistics](http://en.wikipedia.org/wiki/Cladistics) at our disposal for analyzing tree structures (which JSON records are structured as), such as [variety.js](https://github.com/variety/variety) and [schema.js](http://skratchdot.com/projects/mongodb-schema/).  If you've never studied cladistics...  well, lets just say that there is a *lot* of math behind the branching of trees, and they're very well known algorithms.  It's an entire area of study from the field of biology.  So plenty of things to learn!
 
