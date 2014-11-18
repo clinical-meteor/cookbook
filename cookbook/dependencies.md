@@ -1,22 +1,24 @@
-### Core Dependencies  
+## Core Dependencies  
+
 **Q:  Is jQuery a core package?**  
 Basically, yes.  It's a dependency of Blaze, and is included in pretty much all core applications.  In the new [Blaze UI, jQuery is used for event handling](https://github.com/meteor/meteor/wiki/Using-Blaze#events-use-jquery). If you go through the effort of writing your own DDP client or exposing a REST interface with Iron-Router, you could use another front-end templating library that maybe doesn't use jQuery.  Otherwise, assume it's a core package.
 
 **Q:  I'm looking in myapp/.meteor/packages, and I don't see jQuery listed.  Why does my app act like it's loading jQuery?**  
-Because it's a dependency of Blaze.  The ``.meteor/packages`` file only lists top level dependencies, and not sub-dependencies.  
+Because it's a dependency of Blaze.  The ``.meteor/packages`` file only lists top level dependencies, and not sub-dependencies.  Check the ``.meteor/versions`` file to find the jquery reference.
 
-### Dependency Load Ordering
+=========================================
+#### Dependency Load Ordering
 
 Something that really trips people up a lot with Meteor is load ordering and dependencies, particularly if they're accustomed to sequential or imperative style programming (i.e. coming from object-oriented languages and frameworks).  Meteor is a lot of things, and one of the most important aspects of Meteor is that it provides **a development pipeline** to you as a developer.  When you use the ``meteor`` and ``meteor create`` and ``meteor deploy`` commands, you're actually running a whole slew of other commands and tasks in the background, which prepare your application for development, stage databases, bundle and optimize code, and so forth.  And for many people who are accustomed to simply copying a directory of files to a server and have them hosted, this pipeline is a new type of development.
 
 The major thing to keep in mind is that the code you write isn't the code that gets delivered to the server.  There's a process called 'bundling' which is part of the deployment process, and it includes the gather and minification and optimization of all your javascript files, html files, and css files.  When it does this, the Meteor bundler will combine your files according to two rules:  
 
 First, it includes files that are deepest in your directory stucture first.  
-Second, it will read in files alphabeticallys.
+Second, it will read in files alphabetically.
 
-As it parses through your files, it does various optimizations and minifications, to make your application run faster and to standardize it to Node hosting environments.  In doing this parsing, it will read the files in according to those two rules.  And if you've written your code such that the order of files is important, your app will break.  So, the challenge is to learn how to write your code so that it can be moved around and put anywhere in the application directory and still work.  
+As it parses through your files, it does various optimizations and minifications to make your application run faster and to standardize it for Node hosting environments.  In doing this parsing, it will parse the files according to the two rules mentioned above.  Therefore, if you've written your code such that the order of files is important, your app will break.  So, the challenge is to learn how to write your code so that it can be moved around and put anywhere in the application directory and still work.  
 
-Can that be done?  Absolutely.  Mostly, you just have to be cautious about wrapping all your code in Meteor APIs or encapsulating your code in well formed objects.
+Can that be done?  Absolutely.  Mostly, you just have to be cautious about wrapping all your code in Meteor APIs, encapsulating your code in well formed objects (or creating global variables and functions, for those of you willing to make peace with and embrace the global namespace).  Once you figure out those few conventions, load ordering will become a non-issue.
 
 ````js
 // the bundling process output is such that libraries in the deepest directories will be loaded first    
@@ -30,14 +32,15 @@ Can that be done?  Absolutely.  Mostly, you just have to be cautious about wrapp
 
 // meteor then bundles and deploys
 ````
-
-### 3rd Party Libraries    
+=========================================
+#### 3rd Party Libraries    
 
 **Q:  How do I add dependencies?**  
 If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/loca/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
 http://atmosphere.meteor.com  
 
-**Q: How do I get 3rd-party-library.js work with Meteor?**  
+=========================================
+#### Getting 3rd-party-library.js to work with Meteor  
 
 Getting 3rd party libraries used to be a lot harder with the older Spark opt-out rendering model.  Nowdays, with Blaze's opt-in model, things are much easier.  
 
