@@ -43,23 +43,24 @@ After creating those directories in the application folder, the next step is to 
 ```sh
 .scrap                                    # keep a .scrap or .temp directory for scrap files
 
-client/app/app.startup.js                 # the main application javascript
-client/app/app.layout.html                # the main application html
-client/app/app.layout.js                  # the main application html
-client/app/app.layout.less                # the main application html
-client/app/app.subscriptions.js           # application subscriptions
-client/app/app.routes.js                  # application routes 
+client/app/appStartup.js                  # the main application javascript
+client/app/appLayout.html                 # the main application html
+client/app/appLayout.js                   # the main application html
+client/app/appLayout.less                 # the main application html
+client/app/appsSubscriptions.js           # application subscriptions
+client/app/clientRoutes.js                # application routes 
 
 client/app/workflows/                         
 
-server/app.publications.js                # Meteor.publish definitions
-server/app.startup.js                     # configuration of server side packages
-server/methods.collection.js              # cMeteor.method() definitions
+server/appPublications.js                # Meteor.publish definitions
+server/appStartup.js                     # configuration of server side packages
+server/methods.collection.js              # Meteor.method() definitions
 server/initialize.collection.js/          # code for initializing collections
 
 shared/                                   # any common code for client/server.
-shared/mehods.js                          # schema validations and the like
+shared/methods.js                         # schema validations and the like
 shared/collections.js                     # collection definitions and allow/deny rules
+shared/routes.js                          # shared server/client routes
 
 packages/                                 # place for all your atmosphere packages
 
@@ -67,7 +68,7 @@ public/                                   # static files that are served directl
 public/images                             # will serve images as: '/images/foo.jpg'
 
 tests/                                    # unit test files (won't be loaded on client or server)
-tests/walkthough.js
+tests/nightwatch/walkthough.js            # nightwatch specific tests
 ```
 
 ------------------------------------
