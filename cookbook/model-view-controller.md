@@ -19,7 +19,7 @@ To provide some specific examples, lets take a look at how Blaze, SemanticUI and
 
 - **Blaze** - Interprets a View as a Javascript object which manipulates a chunk of HTML.
 - **Semantic-UI** - View is a specific set of CSS applied to a specific chunk of HTML.  
-- **Browser** - Responsible for applying CSS to DOM, and rendering a View to the Viewport, according to CSS Media rules.
+- **Browser** - Responsible for applying CSS to HTML, and rendering a View to the Viewport, according to CSS Media rules.
 
 See the problem?  There's no consistency.  The terms Model, View, and Controller are **NOT** isomorphic and standard across libraries.  They mean different things in different contexts.  And that's the essential thing to understand when applying MVC structure to your app.  
 
