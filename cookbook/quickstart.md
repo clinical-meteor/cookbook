@@ -34,7 +34,7 @@ sudo nano ~/.profile
 
 Meteorite Installation (Deprecated)
 ===========================================
-Meteorite is mostly deprecated, and only used for research, bleeding-edge development, and backwards compatibility for old apps.
+Meteorite is mostly deprecated utility and package management system used in pre 0.9 days.  Nowadays, it's mostly only used for research, bleeding-edge development, and backwards compatibility for old apps.  If you haven't been a regular user of Meteroite, you probably don't need it.  
 
 ````sh
 # install meteorite
@@ -61,6 +61,8 @@ mrt --version
 
 Meteor Development Tools Quickstart
 ===========================================
+Here's the script the author uses when setting up a new development workstation.  It's certainly not the only environment setup script, and it's by no means authoritative.  It's simply what seems to work.
+
 
 ````sh
 # install stand-alone mongo with the gui installer
@@ -79,7 +81,6 @@ sudo nano ~/.profile
 # or install it to the global path
 sudo nano /etc/paths
   /usr/local/mongodb/bin
-  
 
 # create mongo database directory
 mkdir /data/
@@ -135,6 +136,7 @@ jshint .
 
 Test-Driven-Development Quickstart
 ===========================================
+Test-driven development is essential for building larger and more complex apps.  The following script will get you up-and-running with automated browser walkthroughs using the Nightwatch bridge to a Selenium Server.  Be aware that this script won't create tests for you.  You will need to create a tests/nightwatch directory with walkthroughs in it.
 
 ````sh
 # install clinical-nightwatch
@@ -147,7 +149,10 @@ terminal-b$ ln -s .meteor/local/build/programs/server/assets/packages/clinical_n
 terminal-b$ sudo chmod +x run_nightwatch.sh
 terminal-b$ sudo ./run_nightwatch.sh
 
-# you might want to do something clever like pass in arguments and run specific tests
-terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
+# add some tests and repeat until passing green...
+terminal-b$ sudo ./run_nightwatch.sh
+
+# as you develop tests, you might want to do something clever like pass in arguments and run specific tests
+terminal-b$ sudo ./run_nightwatch.sh -t tests/nightwatch/walkthrough.js
 
 ````
