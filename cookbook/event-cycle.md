@@ -39,16 +39,17 @@ Basically, what happens is that the application will step through sequences A { 
 ````
 A { B { C { D { E | E | E | E } D { E | E | E } D | D | D { E | E | E | E | E } B
 ````
+See how ``A`` only gets run once?  And how the app spends a lot of time rendering ``E`` over and over?  And how it the majority of the time it never goes back to the B or C scope?  That's a normal pattern of how Blaze works to update page components while a person is clicking around on a user interface.  The application is in the template scope, and is happy to stay there.  (To use an automobile metaphore, it's in 5th gear, humming along on the highway.)
 
-But, if you navigate to a new page with the router, or press 'refresh', you'll close out templates, and it will look something like this:
+But what happens if you navigate to a new page, or press 'refresh'?  Templates will close out, and the event cycle will move out of the Template scope, and move into the Meteor or document scope.  
 
 ````
 A { B { C { D { E | E | E } C } B { C { D { E | E | E } B
 ````
 
-Make sense?  What's happening here is that a Meteor application has four or five 'layers' or 'scopes' that it needs to create to get the reactive rendering templates working.  And each scope has instructions to create it's children scopes.  So, as a person navigates through their application, they'll be building up and tearing down templates, navigating pages, and the like, and people will be going up and down these scopes.  
+See how it move into the outer scopes ``B`` and ``C``?  This is similar to shifting down to 2nd or 3rd gear to make a turn in a car, and then accellerating back to 5th gear.  
 
-
+What's happening here is that a Meteor application has four or five 'layers' or 'scopes' that it needs to create to get the reactive rendering templates working.  And each scope has instructions to create it's children scopes.  So, as a person navigates through their application, they'll be building up and tearing down templates, navigating pages, and the like, and people will be going up and down these scopes.  
  
 ### Event Cycle with Iron Router
 
