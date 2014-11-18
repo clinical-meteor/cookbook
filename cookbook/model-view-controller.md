@@ -10,7 +10,7 @@ The MVC pattern that's used on the web is governed by both standards bodies (IEE
 
 Any open-source project that has 1,000 or 10,000 stars on GitHub is peanuts compared to 20 years of Netscape and Internet Explorer, and their billion+ downloads.  So, be wary of Backbone, Ember, Angular, Knockout, Famo.us, and any other MVC, MVVM, MVP, or other pattern you run across.  They're re-inventing wheels, and applying an MVC abstraction on top of existing MVC models.  
 
-That's not to say you shouldn't use those libraries.  Just be wary of of the terms Model View Controller, and use with a grain of salt (or a saltshaker, really).  There's no consensus on what these terms mean, with developers of competing libraries using the term 'View' and 'Controller' to mean whatever they conceive it to mean.
+That's not to say you shouldn't use those libraries.  Just be wary of of the terms Model View Controller, and use with a grain of salt (or a saltshaker, really).  There's no consensus on what these terms mean, with developers of competing libraries using the term 'View' and 'Controller' to mean whatever they conceive it to mean.   In fact, Blaze.View works as something of a ModelController as far as the Browser is concerned with rendering Views to the ViewPort.  (Which just goes to show how convoluted this all is.)  Meteor strives to be an isomorphic technology stack, meaning that the same APIs are run on server, client, database, and elsewhere.  But MVC models are one area where things are *not* isomorphic (yet).  
 
 ===============================================
 ####Different MVC Paradigms In the Wild  
@@ -64,7 +64,7 @@ If you're using Atom, you can try searching for and installing ``filetype-color`
 **Q:  Can I add Ember into my Meteor Application?**  
 Sure you could add Ember or Angular in, but dear lord, why?  Ember and Meteor are essentially the same. As someone on the mailing lists once put it, saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  It simply adds an MVC abstraction layer on top of an existing MVC model.  
 
-(Although, strictly speaking, the Blaze.View is open to the same criticism of being an an MVC model added to an existing MVC model.  The Browser offers the initial MVC model via HTML, JS, and CSS files.  And Blaze.View adds a second MVC model on top of that.  In fact, Blaze.View works as something of a ModelController as far as the Browser is concerned with rendering Views to the ViewPort.  (Which just goes to show how convoluted this all is.)  The suggestion to add Ember would either replace Blaze as the second MVC model; or it would be added as a third MVC model.
+(Although, strictly speaking, the Blaze.View is open to the same criticism of being an an MVC model added to an existing MVC model.  The Browser offers the initial MVC model via HTML, JS, and CSS files.  And Blaze.View adds a second MVC model on top of that.  The suggestion to add Ember would either replace Blaze as the second MVC model; or it would be added as a third MVC model.
 
 
 
