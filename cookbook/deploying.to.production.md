@@ -1,9 +1,6 @@
 ## Deploying to Production  
 
-
-
-**Q: How do I run the node.js app that Meteor produces as a service?**  
-http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/  
+This deployment guide assumes an Ubuntu server.
 
 =============================================
 #### Upstart Service  
@@ -14,7 +11,7 @@ Info about using Ubuntu's Upstart service, which can launch other apps as servic
 [Getting Started with Upstart Scripts on Ubuntu](http://buddylindsey.com/getting-started-with-and-understanding-upstart-scripts-on-ubuntu/)  
 [UbuntuBootupHowTo](https://help.ubuntu.com/community/UbuntuBootupHowto)  
 [Upstart Intro, Cookbook, and Best Practices](http://upstart.ubuntu.com/cookbook/)  
-
+[Run NodeJS As a Service on Ubuntu Karmic](http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/  )  
 
 =============================================
 #### Set Up Your Server
