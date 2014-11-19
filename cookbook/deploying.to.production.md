@@ -23,53 +23,31 @@ cd /var/www
 sudo git clone http://github.com/myaccount/myapp.git
 cd /var/www/myapp
 meteor build --directory ../myapp-production
+sudo service myapp restart
 ````
 
 =============================================
 #### Bundle Then Copy To Server
 
-You'll want to create some type of file similar to the following in your application, that you can run from the command line, and which will bundle your app, and copy files to the necessary location.  Create a file ``deploy_on_production.sh`` in your application's root, and put the following commands in it.  
+Alternatively, you may want to build your application, and then deploy it..  
 
 ````sh
-# /deploy_on_production.sh
-BUNDLENAME=${PWD##*/}.$(date "+v%Y-%m-%d-%H-%M").tar.gz
-
-echo "bundling meteor application: " $BUNDLENAME
-sudo meteor bundle --debug $BUNDLENAME
-
-echo 'copying bundle to parent directory'
-mv $BUNDLENAME ..
+cd myapp
+meteor build --directory ../output
 cd ..
-
-echo 'untarring bundle'
-sudo tar -xzvf $BUNDLENAME
-
-echo 'removing production backup'
-sudo rm -rf production-backup
-
-echo 'moving current production to backup'
-sudo mv production production-backup
-
-echo 'moving new version into production'
-sudo mv bundle production
-
-echo 'removing temp files...'
-sudo rm $BUNDLENAME
-
-echo 'that should be it. now try:'
-echo 'sudo service myapp restart'
+scp output -r username@destination_host:/var/www/myapp-production
 ````
 
 
 =============================================
 #### Writing Your Upstart Script
 
-If you've gotten to the point where you're running things in production, or want your application running continuously, you can set up your logs by running [Ubuntu's upstart command](http://upstart.ubuntu.com/) or [OSX System Starter](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/SystemStarter.8.html).  An Ubuntu upstart script which generates log files from a Meteor app in production looks like this:  
+You'll need an upstart script in your ``/etc/init/`` directory.  Name it with your app's name, ending in ``.conf``, such as ``/etc/init/myapp.conf``.  The basic upstart script looks something like this:    
 
 ````sh
-## /etc/init/helloworld.conf
-description "hello world"
-author      "awatson1978"
+## /etc/init/myapp.conf
+description "myapp.mydomain.com"
+author      "somebody@gmail.com"
 
 # Automatically Run on Startup
 start on started mountall
@@ -81,11 +59,11 @@ respawn limit 99 5
 
 script
     export HOME="/root"
-    export MONGO_URL='mongodb://helloworld.mongohq.com:27017/meteor'
-    export ROOT_URL='http://helloworld.meteor.com'
+    export MONGO_URL='mongodb://myapp.compose.io:27017/meteor'
+    export ROOT_URL='http://myapp.mydomain.com'
     export PORT='80'
 
-    exec /usr/local/bin/node /var/www/helloworld/main.js >> /var/log/helloworld.log 2>&1
+    exec /usr/local/bin/node /var/www/myapp/main.js >> /var/log/myapp.log 2>&1
 end script
 ````
 
@@ -93,7 +71,7 @@ end script
 =============================================
 #### Upstart Script For Replica Sets  
 
-Finally, create your upstart file in the ``/etc/init`` directory, and name it with your app's name, ending in ``.conf``.
+If you're running a replica set or have a need to shard your database, you'll want an upstart script that looks something like this:  
 
 ````sh
 # /etc/init/myapp.conf
@@ -122,10 +100,14 @@ script
 
     exec /usr/local/bin/node /var/www/production/main.js >> /var/log/node.log 2>&1
 end script
+````
 
-post-start script
-   # Optionally put a script here that will notifiy you node has (re)started
-   # /root/bin/hoptoad.sh "node.js has started!"
-end script
+=============================================
+#### Running Your Upstart Script  
+
+Finally, you'll need to start the Upstart daemon, and initialize your app as a service.  
+
+````sh
+sudo service myapp start
 ````
 
