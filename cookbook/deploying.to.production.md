@@ -111,3 +111,37 @@ Finally, you'll need to start the Upstart daemon, and initialize your app as a s
 sudo service myapp start
 ````
 
+
+=============================================
+#### Frequently Asked Questions  
+
+**Q:  Help!  Something broke in production!**  
+Did you check it with ``--debug``?  There is a minification library that will parse your CSS and Javascript.  Check that it hasn't mangled your application by running your app with --debug.
+
+**Q:  How do I deploy to Heroku?**  
+Sadly, just don't.  Prior to 0.6.0, lots of people were using the Oortcloud Heroku Buildpack with much success.  As of 0.6.0, it seems to have broken, however.  And it's a moot point, because Heroku doesn't support Sticky Sessions, and won't scale up or support fail-over configurations.  Instead, use Meteor.com, CloudBees, or Modulus.io.  
+https://github.com/oortcloud/heroku-buildpack-meteorite
+
+**Q:  Are there any cloud hosting providers that provide unit testing?**  
+CloudBees provides a Meteor clickstart, software-as-a-service, unit testing, and continuous integration.  It's a bit klunky, but if you're worried about continuous integration, it's the one to choose:  
+https://github.com/CloudBees-community/meteor-clickstart  
+
+**Q:  How do I monitor CPU utilization, memory utilization, etc?**  
+See this discussion.  
+https://groups.google.com/forum/#!topic/meteor-talk/91hcC87ch5k  
+
+**Q:  What's the best practice for using content distribution networks (CDN)?**  
+Currently, there's not anything specific, other than putting static content on your CDN, and creating links to it from your app.  You may want to run the meteor bundle command, and take a peek in the resulting tar.gz file.
+````
+meteor bundle
+````
+
+=============================================
+#### Monitoring a Production Database  
+https://mms.mongodb.com/
+
+=============================================
+#### Database Backups  
+https://mms.mongodb.com/
+
+
