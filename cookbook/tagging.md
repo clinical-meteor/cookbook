@@ -1,19 +1,15 @@
 ## Tagging
 
-**Q:  How do I add hashtags functionality?**  
-
-
-### UI Dependencies
 For this recipe, we're goign to use Bootstrap 3, Font Awesome, and the Less precompiler.  So be sure to run the following from the command prompt:
 
 ````sh
-  mrt add bootstrap-3
-  mrt add font-awesome
   meteor add less
+  meteor add mizzao:bootstrap-3 
+  meteor add miguelvalverde:font-awesome-4.1.0
 ````
 
-
-### The Database Layer
+===================================
+#### The Database Layer
 First, we want to set up the necessary Data Distribution Protocol controllers, to make sure that we can persist data to the database, and get it in the client.  Three files need to be created... one on the server, one on the client, and one shared between both.  
 
 ````js
@@ -51,8 +47,7 @@ This example assumes the following document schema for the tagging pattern:
 }
 ````
 
-### The Application Layer
-
+===================================
 #### Application Object Model
 Second, we want to create our object model in the application layer.   The following is how you would use a Bootstrap panel to render a post with title, text, and tags.  Note that ``selectedPost``, ``tagObjects``, and ``tag`` are all helper functions of the blogPost template.  ``title`` and ``text`` are fields from our document record.  
 
@@ -81,6 +76,7 @@ Second, we want to create our object model in the application layer.   The follo
 </template>
 ````
 
+===================================
 #### Application Controller
 Next, we want to set up some controllers to return data, implement some data input, and so forth.
 
@@ -111,6 +107,7 @@ Template.blogPost.events({
 });
 ````
 
+===================================
 #### Application View (Optional)
 Lastly, we want to define some different Views for phone, tablet, and desktops; and some basic UI styling depending on user input.  
 
