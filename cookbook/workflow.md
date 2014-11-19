@@ -23,7 +23,7 @@ So, you want to create some tabbed workflow within a particular page.  If you're
 ````
 
 **The Disadvantage**  
-Data-toggle attributes aren't supported in all browsers, and tend to breakdown on mobile devices and when running automated tests.  So, if you're trying to get test coveragge for your applications, and have Selenium/Nightwatch walk through your application, this approach probably won't work.  
+Data-toggle attributes aren't supported in all browsers, and tend to breakdown on mobile devices and when running automated tests.  So, if you're trying to get test coverage for your applications, and have Selenium/Nightwatch walk through your application, this approach probably won't work.  
 
 ### The Meteor Spacebars Method
 
@@ -133,7 +133,7 @@ Template.firstPanel.firstPanelActive = function(){
     return "";
   }
 }
-Template.secondPanel.secondPanelActive= function(){
+Template.secondPanel.secondPanelActive = function(){
   if(Session.get('selectedPanel') === 2){
     return "active";
   }else{
