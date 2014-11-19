@@ -11,8 +11,8 @@
 | Installation | --- | --- |  --- | 
 | Quickstart | yes | no |  1.0 | 
 | Development Tools | --- | --- |  --- | 
-| Atom Editor | --- | --- |  --- | 
-| Webstorm IDE | --- | --- |  --- | 
+| Atom Editor | yes | yes | 1.0 | 
+| Webstorm IDE | yes | no | 1.0 | 
 | Test Driven Development | --- | --- |  --- | 
 | The Refactoring Process | yes | no |  1.0 | 
 | Refactoring Patterns | yes | no |  1.0 | 
