@@ -91,7 +91,7 @@ As for the ``{{pageVisibility}}`` handlebars, we're going to do some cleverness 
   color: gray;
 }
 .visible{
-  visibiilty: visible;
+  visibility: visible;
 }
 .hidden{
   visibility: hidden;
