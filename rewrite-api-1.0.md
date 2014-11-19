@@ -21,13 +21,10 @@
 | Writing Unit Tests (with Tinytest) | --- | --- |  --- | 
 | Writing Unit Tests (with Jasmine Unit and Velocity) | --- | --- |  --- | 
 | Site Mechanics | --- | --- |  --- | 
-| File Structure | --- | --- |  --- | 
-| Dependencies | --- | --- |  --- | 
-| App Structure | --- | --- |  --- | 
-| Non Standard Architectures | --- | --- |  --- |  
-| Mobile Apps | --- | --- |  --- | 
-| Offline | --- | --- | --- | 
-| Event Cycle | --- | --- |  --- | 
+| File Structure | yes | yes |  1.0 | 
+| Dependencies | yes | yes |  1.0 | 
+| Model View Controller | yes | yes | 1.0 | 
+| Event Cycle | yes | yes |  1.0 | 
 | Namespacing | --- | --- |  --- | 
 | Packages | --- | --- |  --- | 
 | Site Configuration | --- | --- |  --- | 
@@ -36,7 +33,7 @@
 | Performance Tuning | --- | --- |  --- | 
 | Environments | --- | --- | --- | 
 | Hosting Providers | --- | --- |  --- | 
-| Deploying to Production | --- | --- | --- | 
+| Deploying to Production | yes | no | 1.0 | 
 | Running in Production | --- | --- |  --- | 
 | Environment Detection | --- | --- |  --- | 
 | Scaling Quickstart | --- | --- |  --- | 
@@ -92,3 +89,6 @@
 | Breaking Changes | --- | --- |  --- | 
 | Recommended Packages | --- | --- |  --- | 
 | Applet Demos | --- | --- |  --- | 
+| Non Standard Architectures | --- | --- |  --- |  
+| Mobile Apps | --- | --- |  --- | 
+| Offline | --- | --- | --- | 
