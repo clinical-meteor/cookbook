@@ -38,7 +38,7 @@
 | Environment Detection | --- | --- |  --- | 
 | Scaling Quickstart | --- | --- |  --- | 
 | Data Layer | --- | --- |  --- | 
-| Schema Design | --- | --- |  --- | 
+| Schema Design | yes | no |  1.0 | 
 | Collections | --- | --- |  --- | 
 | User Accounts | --- | --- |  --- | 
 | Multi User Publications | --- | --- |  --- | 
