@@ -17,31 +17,6 @@ The next step is to pipe the contents of ``std_out`` and ``std_err`` to a logfil
 meteor > my_app_log.log 2> my_app_err.log
 ````
 
-If you've gotten to the point where you're running things in production, or want your application running continuously, you can set up your logs by running [Ubuntu's upstart command](http://upstart.ubuntu.com/) or [OSX System Starter](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/SystemStarter.8.html).  An Ubuntu upstart script which generates log files from a Meteor app in production looks like this:  
-
-````sh
-## /etc/init/helloworld.conf
-description "hello world"
-author      "awatson1978"
-
-# Automatically Run on Startup
-start on started mountall
-stop on shutdown
-
-# Automatically Respawn:
-respawn
-respawn limit 99 5
-
-script
-    export HOME="/root"
-    export MONGO_URL='mongodb://helloworld.mongohq.com:27017/meteor'
-    export ROOT_URL='http://helloworld.meteor.com'
-    export PORT='80'
-
-    exec /usr/local/bin/node /var/www/helloworld/main.js >> /var/log/helloworld.log 2>&1
-end script
-````
-
 ============================================================
 #### Client Side Logging Tools
 
