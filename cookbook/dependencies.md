@@ -36,7 +36,7 @@ Can that be done?  Absolutely.  Mostly, you just have to be cautious about wrapp
 #### 3rd Party Libraries    
 
 **Q:  How do I add dependencies?**  
-If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/loca/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
+If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/local/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
 http://atmosphere.meteor.com  
 
 =========================================
