@@ -1,11 +1,11 @@
 ## Deploying to Production  
 
-This deployment guide assumes an Ubuntu server.
+There are two steps that need to be done to get a Meteor app into production.  Building your app, getting the application files to your server, and making sure the server automatically runs the built app.  You can do these three steps in a couple of different ways, but they all need to be done eventually.
 
 =============================================
 #### Upstart Service  
 
-Info about using Ubuntu's Upstart service, which can launch other apps as services for you.  
+This deployment guide assumes you're using an Ubuntu server, and are either self-hosting or using an Infrastructure as a Service (IaaS) provider, such as Amazon Web Services or Rackspace.  Your Ubuntu server needs to be running a daemon for launching other apps, for which we recommend the Upstart service.  You can find more about Upstart with the following links:    
 
 [Upstart - Getting Started](http://upstart.ubuntu.com/getting-started.html)  
 [Getting Started with Upstart Scripts on Ubuntu](http://buddylindsey.com/getting-started-with-and-understanding-upstart-scripts-on-ubuntu/)  
@@ -14,18 +14,19 @@ Info about using Ubuntu's Upstart service, which can launch other apps as servic
 [Run NodeJS As a Service on Ubuntu Karmic](http://kvz.io/blog/2009/12/15/run-nodejs-as-a-service-on-ubuntu-karmic/  )  
 
 =============================================
-#### Set Up Your Server
+#### Copying Files To Your Server Then Build
 
-Set up your server and copy your files to the necessary directories.  
+One favored approach to deploying to a server is to use Git or GitHub.  This basically involves logging into your server, moving to the directory you want to run your app from, then cloning your files directly from GitHub.  You then build your app on the server.  This approach ensures that platform specific files get built correctly, but requires that Meteor is installed on the server (500+ MB), and can result in slightly different builds wind up in production if your servers are slightly different.  
 
 ````sh
 cd /var/www
 sudo git clone http://github.com/myaccount/myapp.git
 cd /var/www/myapp
+meteor build --directory ../myapp-production
 ````
 
 =============================================
-#### Set Up A Deployment Script
+#### Bundle Then Copy To Server
 
 You'll want to create some type of file similar to the following in your application, that you can run from the command line, and which will bundle your app, and copy files to the necessary location.  Create a file ``deploy_on_production.sh`` in your application's root, and put the following commands in it.  
 
