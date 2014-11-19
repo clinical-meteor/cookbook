@@ -41,7 +41,7 @@ There's a few different approaches to organizes files in a multi-page applicatio
 /client/libraries/homePage.js
 /client/libraries/aboutPage.js
 
-// this sturcture is sometimes given a MVC naming convention
+// this structure is sometimes given a MVC naming convention
 // and you'll see naming structures like this
 /client/view/homePage.less
 /client/view/aboutPage.less
@@ -77,7 +77,7 @@ So, lets dive into our two pages, and take a look at their object models.  The t
 
 Now that we have nicely defined IDs for each page objects in our application, we can start thinking about creating more complex views, by adding visibility rules, sizing rules, animations, and page transitions.  Those IDs will be the anchors that allow us to attach styling and animation rules directly to our page object.    
 
-As for the ``{{pageVisibiilty}}`` handlebars, we're going to do some cleverness in a bit that allows us to navigate pages, enable page transitions, and the like by adding ``.visible`` and ``.hidden`` classes.  
+As for the ``{{pageVisibility}}`` handlebars, we're going to do some cleverness in a bit that allows us to navigate pages, enable page transitions, and the like by adding ``.visible`` and ``.hidden`` classes.  
 
 ##### The View  
 ````less
