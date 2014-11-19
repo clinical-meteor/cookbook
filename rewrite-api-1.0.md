@@ -10,7 +10,7 @@
 | Reserved Keywords | --- | --- |  --- | 
 | Installation | --- | --- |  --- | 
 | Quickstart | yes | no |  1.0 | 
-| Development Tools | --- | --- |  --- | 
+| Development Tools | no | no |  1.0 | 
 | Atom Editor | yes | yes | 1.0 | 
 | Webstorm IDE | yes | no | 1.0 | 
 | Test Driven Development | --- | --- |  --- | 
