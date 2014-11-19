@@ -101,7 +101,7 @@ http://clinical.meteor.com/
   - [File IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
   - [Video IO](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/video.md)  
   - [Keybindings](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/keybinding.md)  
-  - [Mutlitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
+  - [Multitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
   - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
   - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
   - [Async Workers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/async-workers.md)  
