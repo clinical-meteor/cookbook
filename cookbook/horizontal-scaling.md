@@ -1,7 +1,7 @@
 Horizontal Scaling
 =========================================
 
-[Oblog Observe Driver](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver)  
+[Oplog Observe Driver](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver)  
 [Meteor.js and MongoDB Replica Set for Oplog Tailing](http://www.manuel-schoebel.com/blog/meteorjs-and-mongodb-replica-set-for-oplog-tailing)  
 [Meteor #10: Set up Oplog Tialing on Ubuntu](http://journal.gentlenode.com/meteor-10-set-up-oplog-tailing-on-ubuntu/)  
 [Let's Scale Meteor - Using MongoDB Oplog](https://meteorhacks.com/lets-scale-meteor.html)  
@@ -9,7 +9,7 @@ Horizontal Scaling
 
 
 =========================================
-#### Connecting to an External Databae with MONGO_URL
+#### Connecting to an External Database with MONGO_URL
 
 But if you're looking to do it yourself, you'll need to separate out your application layer from your database layer, and that means specifying the MONGO_URL.  Which means running your app through the bundle command, uncompressing it, setting environment variables, and then launching the project as a node app.  Here's how...  
 

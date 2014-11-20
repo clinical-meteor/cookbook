@@ -62,7 +62,7 @@ https://mms.10gen.com/user/login
 **Q: How do you import data into the Mongo database?**  
 
 ````js
-// download mongodb from 10gen, and start a stand-along instance
+// download mongodb from 10gen, and start a stand-alone instance
 mongod
 
 // import the json data into a staging database

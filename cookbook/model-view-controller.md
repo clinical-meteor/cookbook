@@ -42,12 +42,12 @@ Many people have asked 'How do I add MVC to my Meteor app?' over the past two ye
 The MVC pattern in Meteor is dead simple.  The Model is coded up in HTML, the Controller is coded in Javascript, and the View is coded up in CSS.  It's that simple.  
 
 ````js
-Model          HTML         What It Is Displayed       
+Model          HTML         What Is Displayed       
 View           CSS          How It Is Displayed        
 Controller     Javascript   When It Is Displayed        
 ````
 
-If you stick with this convention, your IDE's like WebStorm will automatically color-code your file types for you, and provide out-of-the-box color-coded syntax highlighting for your Models, Views, and Controllers.  
+If you stick with this convention, your IDEs like WebStorm will automatically color-code your file types for you, and provide out-of-the-box color-coded syntax highlighting for your Models, Views, and Controllers.  
 
 ===============================================
 #### Color Coding MVC  
@@ -62,7 +62,7 @@ If you're using Atom, you can try searching for and installing ``filetype-color`
 ####Ember and Angular    
 
 **Q:  Can I add Ember into my Meteor Application?**  
-Sure you could add Ember or Angular in, but dear lord, why?  Ember and Meteor are essentially the same. As someone on the mailing lists once put it, saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porche".  It simply adds an MVC abstraction layer on top of an existing MVC model.  
+Sure you could add Ember or Angular in, but dear lord, why?  Ember and Meteor are essentially the same. As someone on the mailing lists once put it, saying "I want to use Ember in Meteor" is like saying, "I want to drive a Mazda in my Porsche".  It simply adds an MVC abstraction layer on top of an existing MVC model.  
 
 (Although, strictly speaking, the Blaze.View is open to the same criticism of being an an MVC model added to an existing MVC model.  The Browser offers the initial MVC model via HTML, JS, and CSS files.  And Blaze.View adds a second MVC model on top of that.  The suggestion to add Ember would either replace Blaze as the second MVC model; or it would be added as a third MVC model.)
 

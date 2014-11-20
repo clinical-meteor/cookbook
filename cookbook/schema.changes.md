@@ -162,8 +162,8 @@ var hex       = ('00000000' + timestamp.toString(16)).substr(-8); // zero paddin
 var objectId  = new ObjectId(hex + new ObjectId().str.substring(8));
 ````
 
-#### Aind All the Records that Have Items in an Array  
-what we're doing here is referencing the array index using dot notation  
+#### Find All the Records that Have Items in an Array  
+What we're doing here is referencing the array index using dot notation  
 ````js
 db.posts.find({"tags.0": {$exists: true }})
 ````
