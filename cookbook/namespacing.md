@@ -68,7 +68,7 @@ The third most common approach to namespacing is to use LESS to create CSS class
 
 ============================================
 #### HTML Template Naming Conventions  
-Lastly, you can create namespaces by simply creating and using naming convetions throughout your application. For instance, you might create a template naming convetion, using camelCase, which matches with the id of the first <div> in each template.
+Lastly, you can create namespaces by simply creating and using naming conventions throughout your application. For instance, you might create a template naming convention, using camelCase, which matches with the id of the first ``<div>`` in each template.
 ````html
 <template name="pageGraph">
 <template name="pageProfile">

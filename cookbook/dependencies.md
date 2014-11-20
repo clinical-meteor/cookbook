@@ -36,17 +36,17 @@ Can that be done?  Absolutely.  Mostly, you just have to be cautious about wrapp
 #### 3rd Party Libraries    
 
 **Q:  How do I add dependencies?**  
-If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/loca/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
+If you haven't run across Meteorite and Atmosphere and the mrt command utility, do some research on those terms.  In the /usr/local/meteor/packages directory, you'll find all the source code for the packages themselves, and take a gander at the package.js files.  Those, in conjunction with the 'meteor add package-name' syntax is how Meteor handles much of the dependency type stuff.  Of course, the dependency management requires that a package is built in the first place.  
 http://atmosphere.meteor.com  
 
 =========================================
 #### Getting 3rd-party-library.js to work with Meteor  
 
-Getting 3rd party libraries used to be a lot harder with the older Spark opt-out rendering model.  Nowdays, with Blaze's opt-in model, things are much easier.  But the order-of-sequence is decidedly non-linear and can be quite confusing at first.  The following example shows how to wrap a third-party table-sorting library in a reactive Tracking object.  The Blaze template renders a table of posts from the Posts collection, and the Tracker object reruns the tablesorter() function whenever new data arrives to the minimongo cursor.  The end result being that, as data is received from the server, the client will update the table and sort it with our 3rd part library.
+Getting 3rd party libraries used to be a lot harder with the older Spark opt-out rendering model.  Nowadays, with Blaze's opt-in model, things are much easier.  But the order-of-sequence is decidedly non-linear and can be quite confusing at first.  The following example shows how to wrap a third-party table-sorting library in a reactive Tracking object.  The Blaze template renders a table of posts from the Posts collection, and the Tracker object reruns the tablesorter() function whenever new data arrives to the minimongo cursor.  The end result being that, as data is received from the server, the client will update the table and sort it with our 3rd party library.
 
 **Note:  the non-sequential ordering here (4,3,1,2,5,6,7) is correct.  Follow the steps in order...  1,2,3,4,5,6,7 to follow how this gets parsed. Be mindful of steps three and four, which are particularly tricky, as step 4 is what is known as a side-effect.  If it doesn't make sense, reread and study it until it does.
 
-    ````js
+````js
     Session.setDefault('receivedData', null);
     
     Template.postsTablePage.helpers({
@@ -79,7 +79,7 @@ Getting 3rd party libraries used to be a lot harder with the older Spark opt-out
         });
       }
     });
-    ```
+````
 
 
 

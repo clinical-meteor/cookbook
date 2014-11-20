@@ -47,7 +47,7 @@ $(window).resize(function(){
 ````
 
 #### define Chrome App window bounds
-And you can avoid programatic hacks by using a Chrome App, and defining the size of your apps explicitely.  
+And you can avoid programmatic hacks by using a Chrome App, and defining the size of your apps explicitly.  
 http://developer.chrome.com/apps/first_app.html
 
 ````js
