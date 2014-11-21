@@ -1,4 +1,6 @@
 ## Site Configuration  
+*note:  This file has become somewhat outdated, and probably isn't a recommended best-practice.  This approach still works, but is a bit wonky.**  
+
 A pattern for creating persistent site configuration.  
 
 ### /client
