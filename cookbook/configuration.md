@@ -1,5 +1,5 @@
 ## Site Configuration  
-*note:  This file has become somewhat outdated, and probably isn't a recommended best-practice.  This approach still works, but is a bit wonky.**  
+*note:  This file has become somewhat outdated, and probably isn't a recommended best-practice.  This approach still works, but is a bit wonky.  Working on updating this section.  **  
 
 A pattern for creating persistent site configuration.  
 
