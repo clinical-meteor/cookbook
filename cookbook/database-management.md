@@ -16,9 +16,27 @@ mongo --shell schema.js
 ````
 
 
+**Q:  How do I connect the live database from *.meteor.com?**  
+
+Try the ``--url`` flag!  It's quite simple actually.  The only tricky thing is that there's only a 60 second window to authenticate, and then the username/password randomly resets.  So be sure to have robomongo open and ready to configure a new connection when you run the command.  
+
+````sh
+# get the MONGO_URL string for your app  
+meteor mongo --url $METEOR_APP_URL
+````
+
 **Q:  How do I download the live database from *.meteor.com?**  
-Ask, and ye shall receive.  Check out this package...  
-https://github.com/AlexeyMK/meteor-download  
+
+Same thing as before, but you have to copy the info into the mongodump command.  You have to run the following commands rediculously fast, and it requires hand/eye coordination.  Be warned!  This is a rediculously hacky!  But fun!  Think of it as a video game!  :D
+
+````sh
+# get the MONGO_URL string for your app  
+meteor mongo --url $METEOR_APP_URL
+
+# then quickly copy all the info into the following command
+mongodump -u username -p password --port 27017 --db meteor_app_url_com --host production-db-b1.meteor.io
+````
+
 
 **Q:  How do I export the data from my Meteor development instance?**  
 
