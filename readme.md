@@ -133,7 +133,7 @@ Links to live versions of the examples associated with this cookbook.
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | bootstrap3 | --- | 0.6.5 |
 | [Stripe Payments - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  --- | bootstrap3 |  --- | 0.6.5 |
 | [Stripe Payments - Crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) |  --- | bootstrap3 | --- | 0.6.5 |
-| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | --- | bootstrap3 | no | 0.7.0.1 |
+| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | --- | bootstrap3 | --- | 0.7.0.1 |
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | bootstrap3 | --- | 0.8.1.3 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | --- | bootstrap3 | --- | 0.8.0 |
 | [ActiveRecord Table](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-table](https://github.com/awatson1978/clinical-ui-crud-table) |  --- | bootstrap3 | --- | 0.8.2 |
