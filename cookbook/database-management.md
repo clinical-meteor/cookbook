@@ -12,7 +12,7 @@ The second is schema.js, which will let you dig into the collections for more de
 http://skratchdot.com/projects/mongodb-schema/
 
 ````js
-sudo mongo --shell schema.js 
+mongo --shell schema.js 
 ````
 
 
@@ -23,17 +23,17 @@ https://github.com/AlexeyMK/meteor-download
 **Q:  How do I export the data from my Meteor development instance?**  
 
 ````sh
-sudo mongodump --db meteor
+mongodump --db meteor
 ````
 
 **Q:  How do I restore the data from a dump?**  
 
 ````sh
 # make sure your app is running
-sudo mrt
+meteor
 
 # then import your data
-sudo mongorestore --port 3002 --db meteor /path/to/dump
+mongorestore --port 3002 --db meteor /path/to/dump
 ````
 
 
