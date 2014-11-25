@@ -23,7 +23,7 @@ Test driven development is summarized by the phrase "Red, Green, Refactor".  Ill
 #### TinyTest  
 
 
-Meteor provides built in unit-testing through the [tinytest packages](https://github.com/meteor/meteor/tree/devel/packages/tinytest).  As of Meteor 0.9.x, using Tinytest to add unit tests to your application begings with the following steps. 
+Meteor provides built in unit-testing through the [tinytest packages](https://github.com/meteor/meteor/tree/devel/packages/tinytest).  As of Meteor 0.9.x, using Tinytest to add unit tests to your application begins with the following steps. 
 
 ````sh
 cd myapp
