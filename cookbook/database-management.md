@@ -1,6 +1,7 @@
 ## Database Management  
 
-**Q:  Help! I've inherited a Mongo database!  How do I analyze the Collections in it?**  
+===========================================
+#### Analyzing An Inherited Database  
 
 There's two great utilities you should check out.  First is variety.js, which will give you a great high-level overview.  Start with this one.  
 https://github.com/variety/variety
@@ -16,7 +17,8 @@ mongo --shell schema.js
 ````
 
 
-**Q:  How do I connect the live database from *.meteor.com?**  
+===========================================
+#### Connect To A Database on *.meteor.com?**  
 
 Try the ``--url`` flag!  It's quite simple actually.  The only tricky thing is that there's only a 60 second window to authenticate, and then the username/password randomly resets.  So be sure to have robomongo open and ready to configure a new connection when you run the command.  
 
@@ -25,7 +27,8 @@ Try the ``--url`` flag!  It's quite simple actually.  The only tricky thing is t
 meteor mongo --url $METEOR_APP_URL
 ````
 
-**Q:  How do I download the live database from *.meteor.com?**  
+===========================================
+#### Download a Database from *.meteor.com?**  
 
 Same thing as before, but you have to copy the info into the mongodump command.  You have to run the following commands rediculously fast, and it requires hand/eye coordination.  Be warned!  This is a rediculously hacky!  But fun!  Think of it as a video game!  :D
 
@@ -37,14 +40,15 @@ meteor mongo --url $METEOR_APP_URL
 mongodump -u username -p password --port 27017 --db meteor_app_url_com --host production-db-b1.meteor.io
 ````
 
-
-**Q:  How do I export the data from my Meteor development instance?**  
+===========================================
+####  Export Data from local Meteor development instance?  
 
 ````sh
 mongodump --db meteor
 ````
 
-**Q:  How do I restore the data from a dump?**  
+===========================================
+#### Restore Data from a Dumpfile
 
 ````sh
 # make sure your app is running
@@ -55,8 +59,8 @@ mongorestore --port 3002 --db meteor /path/to/dump
 ````
 
 
-
-**Q:  How do I import a JSON file into Meteor?**   
+===========================================
+#### Import a JSON File into Meteor
 
 ````js
 // This gist is meant to help you load a json datafile into a Meteor application.  More specifically, it's useful to migrate or bootstrap a Mongo datacollection.
@@ -97,7 +101,8 @@ Ctrl-C
 mongorestore --port 3002 --db test dump/test/
 ````
 
-**Q:  How can I compact a Mongo database?**  
+===========================================
+#### Compact a Mongo Database on an Ubuntu Box
 
 Some research on the Mongo preallocation...  
 http://stackoverflow.com/questions/2966687/reducing-mongodb-database-file-size  
@@ -116,7 +121,8 @@ echo 'db.dropDatabase()' | mongo databasename
 mongorestore dump/databasename
 ````
 
-**Q:  How do I rotate log files?**  
+===========================================
+#### Rotate Log Files on an Ubuntu Box
 
 Some links...  
 http://stackoverflow.com/questions/5004626/mongodb-log-file-growth  
@@ -148,7 +154,7 @@ But to set up log-file rotation, you'll need to do the following...
 use admin
 db.runCommand( { logRotate : 1 } )
 ````
-
-**Q:  Ooops!  I messed up my replication set!  How do I reset it?**  
+===========================================
+#### Reset a Replica Set  
 Delete the local database files.  Just exit the Mongo shell, navigate to the dbpath, and delete the local files.   
 
