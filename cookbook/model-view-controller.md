@@ -23,7 +23,9 @@ To provide some specific examples, lets take a look at how Blaze, SemanticUI and
 
 See the problem?  There's no consistency.  The terms Model, View, and Controller are **NOT** isomorphic and standard across libraries.  They mean different things in different contexts.  And that's the essential thing to understand when applying MVC structure to your app.  
 
+To explain a little more what's going on with these different approaches, it's important to realize that the original MVC pattern was developed on desktops and workstations and had no server/client component to them.  They implemented classes with various names like 'ListView' or 'TableView' and were responsible for rendering streams of BMP images to the ViewPort.  Later, when web browsers came along, a 'WebView' or 'UIWebView' was introduced, which was also responsible for rendering a stream of BMP images to the ViewPort, but which also had a Javascript interpreter and could parse code that was delivered from a website.  And in an attempt to replicate the naming conventions of earlier programmers, people started using 'View' to describe code that was being generated on the server and ran within the UIWebView. 
 
+So, Chrome and Firefox and other web browsers, they have their internal sense of what a UIWebView, which involves applying CSS to some HTML and rendering a stream of BMP images to the ViewPort.  Semantic-UI takes a similar approach, but sort of precompiles that CSS/HTML code and makes it available from the server.  Whereas Blaze (and Ember, and Angular, and any number of other modern 'MVC' framework) are trying to replicate client-side MVC on the server, and are using View to refer to what might be better understood as Components.
 
 ===============================================
 #### Default MVC Patterns  
