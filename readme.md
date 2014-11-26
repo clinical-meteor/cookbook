@@ -81,6 +81,7 @@ http://clinical.meteor.com/
   - [DoublePage Pattern]  
   - [SinglePage Pattern]  
 - Meteor UI Components
+  - [Navbars](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/navbars.md)  
   - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
   - [Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)   
   - [Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)
