@@ -25,17 +25,17 @@ Template.registerHelper("hasPostsControls", function(argument) {
   <footer id="navbarFooter">
     <nav id="navbarFooterNav" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
       {{#if isLoggedIn }}
-            <ul class="nav navbar-nav">
-              {{#if hasPostsControls }}
-                <li><a id="addPostLink"><u>A</u>dd Post</a></li>
-                <li><a id="editPostLink"><u>E</u>dit Post</a></li>
-                <li><a id="deletePostLink"><u>D</u>elete Post</a></li>
-              {{/if}}
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a id="helpLink"><u>H</u>elp</a></li>
-            </ul>
-            {{/if}}
+        <ul class="nav navbar-nav">
+          {{#if hasPostsControls }}
+            <li><a id="addPostLink"><u>A</u>dd Post</a></li>
+            <li><a id="editPostLink"><u>E</u>dit Post</a></li>
+            <li><a id="deletePostLink"><u>D</u>elete Post</a></li>
+          {{/if}}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a id="helpLink"><u>H</u>elp</a></li>
+        </ul>
+      {{/if}}
     </nav>
   </footer>
 </template>
