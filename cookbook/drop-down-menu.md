@@ -2,6 +2,14 @@
 
 There are many ways to do a drop down menu.  This is one of them that works particularly well, with regards to mobile/responsive design, page layout, and whatnot.    
 
+=================================
+#### Dependencies  
+
+````sh
+meteor add ian:bootstrap-3
+````
+
+=================================
 #### Object Model
 
 ````html
@@ -25,7 +33,7 @@ There are many ways to do a drop down menu.  This is one of them that works part
 ````
 
 
-
+=================================
 #### Controllers  
 ````js
 Template.examplePage.helpers({
