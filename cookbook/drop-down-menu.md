@@ -1,5 +1,7 @@
 ## Drop Down Menu  
 
+There are many ways to do a drop down menu.  This is one of them that works particularly well, with regards to mobile/responsive design, page layout, and whatnot.    
+
 #### Object Model
 
 ````html
