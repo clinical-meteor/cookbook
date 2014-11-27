@@ -83,6 +83,7 @@ http://clinical.meteor.com/
 - Meteor UI Components
   - [Navbars](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/navbars.md)  
   - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
+  - [Drop Down Menus](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/drop-down-menu.md)  
   - [Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)   
   - [Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)
   - [Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)
