@@ -3,78 +3,49 @@
 #### Object Model
 
 ````html
-<template name="dropDownWidget">
-  <div id="dropDownWidgetName" class="{{dropDownWidgetVisible}}">
+<nav class="nav navbar-nav">
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{getSelectedValue}} <span class="glyphicon glyphicon-user pull-right"></span></a>
+    <ul class="fullwidth dropdown-menu">
+      <li id="firstOption" class="fullwidth"><a href="#">15 Minutes <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+      <li class="divider"></li>
+      <li id="secondOption"><a href="#">30 Minutes <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+      <li class="divider"></li>
+      <li id="thirdOption"><a href="#">1 Hour <span class="badge pull-right"> 42 </span></a></li>
+      <li class="divider"></li>
+      <li id="fourthOption"><a href="#">4 Hour <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+      <li class="divider"></li>
+      <li id="fifthOption"><a href="#">8 Hours <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+    </ul>
+  </li>
+</nav>
 
-  </div>
-</template>
 ````
 
 
 
 #### Controllers  
 ````js
-Session.setDefault('isDropDownMenuVisible', false);
-
-Template.dropDownWidgetName.dropDownWidgetVisible = function(){
-  return "visible";
-};
-Template.dropDownWidgetName.events({
-  'click #accountSettingsMenu':function(){
-    if(Session.get('isDropDownMenuVisible')){
-      Session.set('isDropDownMenuVisible', false);
-    }else{
-      Session.set('isDropDownMenuVisible', true);
-    }
+Template.examplePage.helpers({
+  getSelectedValue:function(){
+    return Session.get('selectedValue');
   }
 });
+Template.dropDownWidgetName.events({
+  'click #firstOption':function(){
+    Session.set('selectedValue', 1);
+  },
+  'click #secondOption':function(){
+    Session.set('selectedValue', "blue");
+  },
+  'click #thirdOption':function(){
+    Session.set('selectedValue', $('#thirdOption').innerText);
+  },
+  'click #fourthOption':function(){
+    Session.set('selectedValue', Session.get('otherValue'));
+  },
+  'click #fifthOption':function(){
+    Session.set('selectedValue', Posts.findOne(Session.get('selectedPostId')).title);
+  },
+});
 ````
-
-
-#### Views  
-
-````css
-#dropDownWidgetName{
-  .visible{
-    display: block;
-  }
-  .hidden{
-    display: none;
-  }
-}
-````
-
-````css
-#dropDownWidgetName{
-  .visible{
-    display: block;
-  }
-  .hidden{
-    display: none;
-  }
-}
-
-// landscape orientation
-@media only screen and (min-width: 768px) {
-  #dropDownWidgetName{
-
-
-  }
-}
-
-// portrait orientation
-@media only screen and (max-width: 768px) {
-  #dropDownWidgetName{
-
-
-  }
-}
-@media only screen and (max-width: 480px) {
-  #dropDownWidgetName{
-
-
-  }
-}
-````
-
-
