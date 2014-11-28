@@ -35,9 +35,7 @@ meteor remove nifty:widget
 ================================================
 #### Creating a Package for Distribution  
 
-So, there isn't an official documented API for creating packages, as far as I'm aware.  The best we can do is sort of document all of the api calls we've seen in the wild.  The following example illustrates all the different syntax we've seen in creating packages.
-
-[Official package.js API](http://docs.meteor.com/#/full/packagejs)  
+For a long time, the package.js API was undocumented, and the following was an attempt to fill in the missing pieces of the documentation.  MDG has recently published an [official API for the package.js file](http://docs.meteor.com/#/full/packagejs), however, making the following documentation unnecessary.  It's being left in the cookbook for the time being, because it's been in here for ages.  But this section is liable to be removed at some point in the future.
 
 ````js
 // package.js  
