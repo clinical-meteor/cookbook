@@ -37,6 +37,7 @@ meteor remove nifty:widget
 
 So, there isn't an official documented API for creating packages, as far as I'm aware.  The best we can do is sort of document all of the api calls we've seen in the wild.  The following example illustrates all the different syntax we've seen in creating packages.
 
+[Official package.js API](http://docs.meteor.com/#/full/packagejs)  
 
 ````js
 // package.js  
@@ -67,7 +68,7 @@ Package.onUse(function (api) {
   var path = Npm.require('path');
   
   // expose an object from an Npm package by first referencing it
-  Foo = Npm.require('sample_package');  
+  // Foo = Npm.require('sample_package');  
   
   // and then exporting it
   api.export('Foo');
