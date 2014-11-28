@@ -7,7 +7,7 @@ Unlike acceptance tests, which treat your application as a black-box closed syst
 
 #### Running Tinytest
 
-The simplest way to create unit tests is to use Tinytest, the native Meteor testing utility.  (Tinytest is not to be confused with TinyTestJS, which is a different library).  You'll need to add the ``tinytest`` package, and then use the custom ``meteor test-packages`` command.
+The simplest way to create unit tests is to use [Tinytest](https://github.com/meteor/meteor/tree/devel/packages/tinytest), the native Meteor testing utility.  (Tinytest is not to be confused with TinyTestJS, which is a different library).  You'll need to add the ``tinytest`` package, and then use the custom ``meteor test-packages`` command.
 
 ````js
 // create your application
@@ -26,20 +26,26 @@ meteor test-packages
 
 #### Tinytest API  
 
-Tinytest supports the following test syntax.  
+Tinytest supports the following [test syntax](https://github.com/meteor/meteor/blob/devel/packages/tinytest/tinytest.js).
 
-- test.equal(actual, expected, message, not)  
-- test.notEqual(actual, expected, message)  
-- test.instanceOf(obj, klass)  
-- test.matches(actual, regexp, message)  
-- test.isTrue(actual, msg)  
-- test.isFalse(actual, msg)  
-- test.isNull(actual, msg)  
-- test.isNotNull(actual, msg)  
-- test.isUndefined(actual, msg)  
-- test.isNaN(actual, msg)  
-- test.isUndefined(actual, msg)  
-- test.length(obj, expected_length, msg)  
+- test.equal(actual, expected, message, not)
+- test.notEqual(actual, expected, message)
+- test.instanceOf(obj, klass)
+- test.matches(actual, regexp, message)
+- test.include(haystack, needle, message)  // works for items in arrays, keys in objects, substrings in strings
+- test.isTrue(actual, message)  
+- test.isFalse(actual, message)
+- test.isNull(actual, message)
+- test.isNotNull(actual, message)
+- test.isUndefined(actual, message)
+- test.isNaN(actual, message)
+- test.isUndefined(actual, message)
+- test.length(obj, expected_length, message)
+- test.ok({message: ..., key1: ..., })
+- test.fail({message: ..., key1: ..., })
+- test.exception(exception)  // fail with an exception
+- test.throws(func, exception)
+- test.runId()  // returns a unique id of this test run
 
 #### Creating a Tinytest Package for Testing In-App Files
 
@@ -51,14 +57,14 @@ meteor create --package leaderboard-tinytests
 cd leaderboard-tinytests
 ````
 
-Within the ``package.js`` file, you'll want to specify a ``Package.on_test`` directive, within which you'll define dependencies, stub functions, links to the libraries you want to test, and the unit tests themselves.
+Within the ``package.js`` file, you'll want to specify a ``Package.onTest`` directive, within which you'll define dependencies, stub functions, links to the libraries you want to test, and the unit tests themselves.
 
 ````js
 // leaderboard/packages/leaderboard-tinytests/packages.js
 
 Package.describe({ summary: "Provides unit tests for leaderboard application." });
 
-Package.on_test(function (api) {
+Package.onTest(function (api) {
   // add package dependencies
   api.use(["spacebars", "tinytest", "test-helpers"]);
 
@@ -66,13 +72,13 @@ Package.on_test(function (api) {
   api.use("templating", "client");
 
   // add stubs
-  api.add_files('test-stubs.js', 'client');
+  api.addFiles('test-stubs.js', 'client');
 
   // reference the application files you want to test
-  api.add_files('../../leaderboard.js', 'client');
+  api.addFiles('../../leaderboard.js', 'client');
 
   // and link to the unit tests for them
-  api.add_files('leaderboard-tests.js', 'client');
+  api.addFiles('leaderboard-tests.js', 'client');
 });
 ````
 
@@ -146,6 +152,4 @@ Tinytest.add('Template.leaderboard.selected_name()', function (test) {
 #### Leaderboard Example  
 
 You can find a complete example of unit tests for the Leaderboard example at the following [leaderboard-tinytests](https://github.com/awatson1978/leaderboard-tinytests) repository.
-
-
 
