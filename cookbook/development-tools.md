@@ -43,6 +43,7 @@ Developing Meteor apps usually means testing multi-client reactivity, which requ
 [HuBoard](https://huboard.com) - Kanban boards for GitHub.   
 [Zapier](https://zapier.com/) - The best apps.  Together.  
 [Teamwork.com](https://www.teamwork.com/) - Traditional project management & gannt charts.   
+[Sprint.ly](https://sprint.ly/) - More kanban boards and sprint planning that works with GitHub.  
 
 ===============================================================
 #### REST Clients  
