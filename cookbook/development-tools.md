@@ -13,7 +13,9 @@ Start by selecting an Integrated Development Environment (IDE), configuring it s
 [Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor.   
 [Cloud9](https://c9.io/)  - The newest Cloud Development offering that supports Meteor, with a [tutorial](http://simpleprogrammer.com/2014/10/13/getting-started-meteor-tutorial-cloud/).  
 [MeteorPad](http://meteorpad.com/pad/J5Ls2Fc8imyXnz8yM)  - Lightweight cloud editing for mobile prototyping.  
-
+[HuBoard](https://huboard.com) - Kanban boards for GitHub.   
+[Zapier](https://zapier.com/) - The best apps.  Together.
+[Teamwork.com](https://www.teamwork.com/) - Traditional project management & gannt charts.   
 
 ===============================================================
 #### Database Tools
