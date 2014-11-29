@@ -41,7 +41,7 @@ Developing Meteor apps usually means testing multi-client reactivity, which requ
 [InVision](https://projects.invisionapp.com/d/main#/projects) - Collaborative wireframing and prototyping.  
 [Proto.io](https://proto.io/)  Wireframing and prototyping.  
 [HuBoard](https://huboard.com) - Kanban boards for GitHub.   
-[Zapier](https://zapier.com/) - The best apps.  Together.
+[Zapier](https://zapier.com/) - The best apps.  Together.  
 [Teamwork.com](https://www.teamwork.com/) - Traditional project management & gannt charts.   
 
 ===============================================================
