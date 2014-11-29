@@ -2,8 +2,6 @@
 
 | Source   | Interface | Meta | Scaffold | Component | Stable Version  |
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
-
-
 [clinical:auto-resizing](https://github.com/awatson1978/clinical-auto-resizing)  | --- | --- | --- | --- | 0.0.1  |
 [clinical:barcode](https://github.com/awatson1978/clinical-barcode)  | --- | --- | --- | --- | 2.0.2  |
 [clinical:graphs](https://github.com/awatson1978/clinical-graphs)  | bootstrap3 | --- | --- | yes | 0.0.3  |
