@@ -104,6 +104,13 @@ Once all that is done, you should have a Foo object which you can now use in you
  Foo.niftyFunction();  
 ````
 
+================================================
+#### Creating Configurable Packages  
+
+Nemo64 gets a gold-star for figuring out a really fantastic pattern for letting you configure which parts of a package you want installed via a .json configuration file.  Disect the meteor-bootstrap package for the pattern. 
+
+https://github.com/Nemo64/meteor-bootstrap/
+
 
 ================================================
 #### Installing Packages without Atmosphere  
