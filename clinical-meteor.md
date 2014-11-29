@@ -24,7 +24,6 @@
 | clinical:profile  | bootstrap3 | --- | yes | --- | ---  |
 | clinical:entry  | bootstrap3 | --- | yes | --- | ---  |
 | clinical:famous-dead-people    | --- | --- | yes | --- | ---  |
-| clinical:ui-vocabulary  | --- | yes | --- | --- | ---  |
 | clinical:snomed    | bootstrap3 | --- | --- | yes | ---  |
 | clinical:icd10 | bootstrap3 | --- | --- | yes | ---  |
 | clinical:syntax   | --- | --- | --- | --- | ---  |
@@ -32,14 +31,10 @@
 | clinical:hl7 | --- | --- | yes | --- | ---  |
 | clinical:sidebars   | semantic | --- | yes | --- | ---  |
 | clinical:template-helpers  | --- | --- | --- | --- | ---  |
-| clinical:barcodes    | bootstrap3 | --- | --- | --- | ---  |
 | clinical:active-record  | bootstrap3 | yes | --- | --- | ---  |
 | clinical:forms  | bootstrap3 | --- | yes | --- | ---  |
 | clinical:form-components  | bootstrap3 | --- | --- | yes | ---  |
 | clinical:graphing   | --- | yes | --- | --- | ---  |
-| clinical:graphs   | --- | --- | yes | --- | ---  |
-| clinical:nvd3   | --- | --- | --- | yes | ---  |
-| clinical:d3  | --- | --- | --- | --- | ---  |
 | clinical:multitouch   | --- | --- | --- | --- | ---  |
 | clinical:keybindings  | bootstrap3 | --- | yes | yes | ---  |
 | clinical:leap | --- | --- | --- | --- | ---  |
