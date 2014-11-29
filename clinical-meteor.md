@@ -5,7 +5,7 @@
 [clinical:auto-resizing](https://github.com/awatson1978/clinical-auto-resizing)  | --- | --- | --- | --- | 0.0.1  |
 [clinical:barcode](https://github.com/awatson1978/clinical-barcode)  | --- | --- | --- | --- | 2.0.2  |
 [clinical:graphs](https://github.com/awatson1978/clinical-graphs)  | bootstrap3 | --- | --- | yes | 0.0.3  |
-[clinical:hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | --- |  --- | --- [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | --- | yes | --- | 1.0.1 |
+[clinical:hipaa](https://github.com/awatson1978/clinical-hipaa) |  bootstrap3 | yes | --- |  --- | --- | [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | --- | yes | --- | 1.0.1 |
 [clinical:nightwatch](https://github.com/awatson1978/clinical-nightwatch) |  bootstrap3 | --- | --- | --- | 1.4.0 |
 [clinical:nvd3](https://github.com/awatson1978/clinical-nvd3)  | --- | --- | --- | --- | 0.0.3  |
 [clinical:sidebars](https://github.com/awatson1978/clinical-ui-sidebars)  | semantic | --- | --- | yes | 0.0.3  |
