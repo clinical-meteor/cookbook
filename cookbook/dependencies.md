@@ -67,7 +67,7 @@ Getting 3rd party libraries used to be a lot harder with the older Spark opt-out
         // setp 2:  in the singleton, we're going to opt-into some reactive dependency
         // which will continue after the singleton finishes
         Tracker.autorun(function(){
-          // step 5:  the reacitve receivedData session variable is updated, causing the functions
+          // step 5:  the reactive receivedData session variable is updated, causing the functions
           // referencing it to become invalidated, and for them to be rerun as well
           console.log(Session.get('receivedData'))
           
