@@ -17,7 +17,7 @@ https://github.com/awatson1978/webstorm-settings
 
 ================================================
 #### Implementing Meteor Styleguide  
-https://github.com/meteor/meteor/dwiki/Meteor-Style-Guide  
+https://github.com/meteor/meteor/wiki/Meteor-Style-Guide  
 
 
 ================================================
