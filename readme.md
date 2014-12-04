@@ -138,7 +138,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | --- | bootstrap3 | --- |  0.8.0.1 |
 | [ActiveRecord List](http://clinical-ui-crud-list.meteor.com/)      | [clinical-ui-crud-list](https://github.com/awatson1978/clinical-ui-crud-list) |  --- | bootstrap3 | --- | 0.8.0.1 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes | bootstrap3 |  --- | 0.9.1 | 
-
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | bootstrap3 | --- | 0.8.1.3 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | --- | bootstrap3 | --- | 0.8.0 |
 | [ActiveRecord Table](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-table](https://github.com/awatson1978/clinical-ui-crud-table) |  --- | bootstrap3 | --- | 0.8.2 |
