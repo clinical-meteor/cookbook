@@ -134,6 +134,21 @@ https://github.com/merunga/cordova-meteor-mashup
 Okay, now it's time to finally bust out the [Meteor Cordova Phonegap Integration](https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration) documentation.  
 
 ````sh
+
+# clone and rebuild the ios-sim locally
+git clone https://github.com/phonegap/ios-sim.git
+cd ios-sim
+rake build
+
+# copy the new build into Meteor locations
+for i in `find ~/.meteor/packages/meteor-tool/ -name ios-sim -type f`; do
+  cp -R ./build/Release/ios-sim "$i"
+done
+
+# not sure if we need ios-sim, but some people have reported needing it
+# sudo npm -g install ios-sim
+# ios-sim start
+
 meteor list-platforms
 meteor add-platform ios
 meteor list-platforms
