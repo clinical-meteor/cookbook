@@ -182,20 +182,6 @@ App.launchScreens({
 ````
 
 
-=============================================
-#### Project Configuration for iFrame Method
-
-Alternatively, if you're willing to manage cross-site security and want hot-code updates for your mobile apps, you'll want to use the iFrames approach.  This requires editing the CDVViewController.m file, and tell PhoneGap to access an external website to get it's www directory.  
-
-````Obj-C
-    // CordovaLib.xcodeproj > Classes > Cleaver > CDVViewController.m  
-    //self.wwwFolderName = @"www";
-    self.wwwFolderName = @"http://todos.meteor.com";
-    self.startPage = delegate.startPage;
-    if (self.startPage == nil) {
-        self.startPage = @"index.html";
-    }
-````
 
 
 
