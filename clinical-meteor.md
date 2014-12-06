@@ -10,7 +10,8 @@
 [clinical:nvd3](https://github.com/awatson1978/clinical-nvd3)  | --- | --- | --- | --- | 0.0.3  |
 [clinical:sidebars](https://github.com/awatson1978/clinical-ui-sidebars)  | semantic | --- | --- | yes | 0.1.1  |
 [clinical:static-pages](https://github.com/awatson1978/clinical-static-pages)  | bootstrap3 | --- | yes | --- | 1.0.4|
-[clinical:clinical-ui-vocabulary](https://github.com/awatson1978/clinical-ui-vocabulary)  | semantic | --- | --- | yes | 1.0.5  |
+[clinical:ui-vocabulary](https://github.com/awatson1978/clinical-ui-vocabulary)  | semantic | --- | --- | --- | 1.0.5  |
+[clinical:ui-alert-panel](https://github.com/awatson1978/clinical-ui-alert-panel)  | bootstrap3 | yes | --- | yes | 1.0.5  |
 | clinical:hipaa |  bootstrap3 | yes | --- |  --- | --- | | clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
 | clinical:accounts-stripe  | none | --- | --- | --- | ---  |
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  |
