@@ -12,7 +12,7 @@ Then, in the 1990s, the Web came onto the scene, and people started building ser
 
 ![Basic Server-Client Technologies](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20Before%20Loading%20Page.jpg)  
 
-After a few years of experimenting, a common trend emerged where JS, HTML, and CSS files are resent from the server to the client, and the HTML gets rendered to the DOM, which then gets CSS applied to it in the render tree, which gets Javascript applied to it, which all gets shipped to the graphics buffer and displayed on the device screen.
+After a few years of experimenting, a common trend emerged where JS, HTML, and CSS files are sent from the server to the client, and the HTML gets rendered to the DOM, which then gets CSS applied to it in the render tree, which gets Javascript applied to it, which all gets shipped to the graphics buffer and displayed on the device screen.
 
 This approach developed in large part because the client-side developers were using the same MVC and PAC models from pre-internet days to build the first web browsers.  And, along the way, those concepts of Model/View/Controller or Presentation/Abstraction/Controller got turned into the domain languages that we know now as Hypertext Markup Language, Cascading Style Sheets, and Javascript.  Or rather, hypertext expanded to become an object model abstraction, cascading style sheets expanded to create digital presentation views, and javascript expanded to become a general purpose controller langauage.
 
