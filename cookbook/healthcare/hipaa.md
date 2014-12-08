@@ -27,7 +27,7 @@ Phase 1 - Development (1 server)
 
 Phase 2 - Platform as a Service (2 to 10 servers)  
   [modulus.io - Node/Meteor App Hosting on AWS](https://modulus.io/)   
-  [MongoHQ - Mongo Hosting on AWS](http://www.mongohq.com/)  
+  [compose.io - Mongo Hosting on AWS](http://www.mongohq.com/)  
 
 
 Phase 3 - Infrastructure as a Service (11+ servers)  
