@@ -38,7 +38,6 @@ Tinytest supports the following test syntax.
 - test.isNotNull(actual, msg)  
 - test.isUndefined(actual, msg)  
 - test.isNaN(actual, msg)  
-- test.isUndefined(actual, msg)  
 - test.length(obj, expected_length, msg)  
 
 #### Creating a Tinytest Package for Testing In-App Files
