@@ -3,7 +3,7 @@
 So, now that we've seen the pattern for a single-page, lets look at the multi-page example.
 
 ##### File structure  
-There are a few different approaches to organizes files in a multi-page application.  
+There are a few different approaches to organize files in a multi-page application.  
 
 ````less
 // when we run `meteor create`, three files are made (MVC)
