@@ -133,27 +133,46 @@ https://github.com/merunga/cordova-meteor-mashup
 
 Okay, now it's time to finally bust out the [Meteor Cordova Phonegap Integration](https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration) documentation.  
 
-````sh
+Since that documentation was written, XCode and Yosemite have been released, which has caused some hiccups in installation.  Here are the steps we had to go through to get Meteor compiled to an iOS device.
 
-# clone and rebuild the ios-sim locally
+1.  Upgrade to Yosemite.
+2.  Delete XCode (drag from Applications folder to Trashcan)
+3.  Install XCode 6.1 from app store.  
+4.  Agree to various terms and conditions.
+
+````sh
+# 5.  clone and rebuild the ios-sim locally
+#     (this step will not be needed in future releases)
 git clone https://github.com/phonegap/ios-sim.git
 cd ios-sim
 rake build
 
-# copy the new build into Meteor locations
+# 6.  make sure we can update the .meteor/packages locations
+#     (this step will not be needed in future releases)
+sudo chmod -R 777 ~/.meteor/packages
+
+# 7.  copy the new build into Meteor locations
+#     (this step will not be needed in future releases)
 for i in `find ~/.meteor/packages/meteor-tool/ -name ios-sim -type f`; do
   cp -R ./build/Release/ios-sim "$i"
 done
 
-# not sure if we need ios-sim, but some people have reported needing it
-# sudo npm -g install ios-sim
-# ios-sim start
-
+# 8.  install the ios platform to your app
+cd myapp
 meteor list-platforms
 meteor add-platform ios
 meteor list-platforms
+
+# 9.  make sure there are correct permissions on the application (important!)
+sudo chmod -R 777 .meteor/local/
+
+# 10.  run app
 meteor run ios
 ````
+
+XCode should launch during the process.  Select your simulator and press the 'Play' button.  
+
+
 
 
 =============================================
