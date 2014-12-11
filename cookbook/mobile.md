@@ -5,20 +5,20 @@ The holy grail of web-apps is a single code base across different platforms.  In
 =============================================
 #### Design Checklist
 
-- Do you need centralized hotcode pushes to all devices?  
-- Do you need to connect to device hardware?  
 - Are you targeting a specific platform?  
-- Will this app be inhouse or public?  
-- Will this app be in an appstore?  
+- Do you need to connect to device hardware?  
 - Do you want to run it on the desktop as an app?  
-- Do you need native quality UI widgets and scrolling?
+- Will this app be in an appstore?  
+- Will this app be inhouse or public?  
 - Which screen sizes do you want this app to run on?  
+- Do you need native quality UI widgets and scrolling?
+- Do you need centralized hotcode pushes to all devices?  
 
 
 =============================================
 #### Page Layout on Different Devices - CSS
 
-First of all, if your application is going to run on different devices, it's going to need to render each 'view' differently, based on the device size.  You can deal with this in two ways:  with javascript rules, or CSS media styles.  
+First of all, if your application is going to run on different devices, it's going to need to render to different ViewPorts, based on the device size.  You can deal with this in two ways:  with javascript rules, or CSS media styles.  If you've been using a MVC or MVVM library, such as Angular or Ember (or Blaze, for that matter) and have only been targeting a single device or hardware platform, you may need to rethink your MVC model as different hardware ViewPorts are introduced to your application.
 
 ````css
 //----------------------------------------------------
@@ -64,11 +64,15 @@ $(window).resize(function(){
 To get all of this to work, you'll probably need offline support, which means caching application data and user data.
 
 ````sh
-sudo mrt add appcache
-sudo mrt add grounddb
+meteor add appcache
+meteor add grounddb
 ````
 
+For more information, see the [Offline Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md) section of the Cookbook.
+
 #### Disable Scroll-Bounce
+
+On desktop apps, you may want to disable scroll-bounce, to give your app a more native feel.  You can do this with javascript, by disabling how the browser controls the DOM:   
 
 ````js
 // prevent scrolling on the whole page
@@ -80,14 +84,59 @@ document.ontouchmove = function(e) {e.preventDefault()};
 scrollableDiv.ontouchmove = function(e) {e.stopPropagation()};
 ````
 
+Alternatively, you can use css, and the ``overflow`` and ``scrolling`` styles.  
 
+````less
+#appBody {
+  overflow: hidden;
+}
+
+#contentContainer {
+  .content-scrollable {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+````
+
+The object model needed for the above to work looks something like this:  
+````html
+<div id="appBody">
+  <div id="contentContainer">
+    <div class="content-scrollable">
+      <!-- content -->
+    </div>
+  </div>
+</div>
+````
 
 =============================================
 #### Multitouch & Gestures
 
-[FastClick](https://github.com/ftlabs/fastclick)  
+Mobile devices generally don't have keyboards, so you'll need to add some haptic controllers to your application.  The two popular packages that people seem to be using is [FastClick](https://github.com/ftlabs/fastclick) and [Hammer](https://atmospherejs.com/hammer/hammer).  Installation is easy.
 
+````sh
+meteor add fastclick
+meteor add hammer:hammer
+````
 
+FastClick requires nearly no configuration, while Hammer requires a bit of work to wire up.  The cononical example from the Todos app looks like this:
+
+````js
+Template.appBody.rendered = function() {
+  if (Meteor.isCordova) {
+    // set up a swipe left / right handler
+    this.hammer = new Hammer(this.find('#appBody'));
+    this.hammer.on('swipeleft swiperight', function(event) {
+      if (event.gesture.direction === 'right') {
+        Session.set(MENU_KEY, true);
+      } else if (event.gesture.direction === 'left') {
+        Session.set(MENU_KEY, false);
+      }
+    });
+  }
+};
+````
 
 =============================================
 #### PhoneGap Configuration with X-Code
