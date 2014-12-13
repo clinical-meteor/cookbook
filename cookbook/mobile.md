@@ -221,8 +221,27 @@ meteor list-platforms
 # 9.  make sure there are correct permissions on the application (important!)
 sudo chmod -R 777 .meteor/local/
 
-# 10.  run app
+# 10.  and that there aren't dead processes
+ps -ax 
+kill -9 <pid>
+
+# 11.  run app
 meteor run ios
+
+# 12.  if that doesn't work, clear the directory
+sudo rm -rf .meteor/local
+
+# 13a.  run meteor again to create the default browser build
+meteor
+
+# 13b.  run it a second time so bootstrap and other packages get downloaded into the browser build
+ctrl-x
+meteor
+
+# 14.  then run the ios version
+ctrl-x
+meteor run ios
+
 ````
 
 XCode should launch during the process.  Select your simulator and press the 'Play' button.  
