@@ -9,7 +9,7 @@ As far as Meteor goes, there are many, many options available.  Particularly if 
 The first step to logging is simply to run Meteor from the shell, and you'll get the server logs in the command console.
 
 ````
-sudo meteor
+meteor
 ````
 The next step is to pipe the contents of ``std_out`` and ``std_err`` to a logfile, like so:
 
@@ -127,3 +127,12 @@ if (!DEBUG_MODE_ON) {
 ============================================================
 #### Winston  
 Lastly, if you need something more powerful than the default logging options, you might want to look at a tool like Winston.  Go to [Atmosphere](https://atmosphere.meteor.com), and simply search for ``Winston`` to find the latest packages available.  Be warned, however - [Winston](https://github.com/flatiron/winston) is a sophisticated product, and while it exposes a lot of functionality, it will also add a layer of complexity to your application.  
+
+
+
+============================================================
+#### LogLevel
+
+The latest community development in logging is the LogLevel package.  It appears to strike a balance between being light weight and simple to use while working well with Meteor's bundle pipeline and preserving line numbers and filenames.  Keep an eye on this one as a potential community best practice.
+
+https://atmospherejs.com/practicalmeteor/loglevel
