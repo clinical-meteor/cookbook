@@ -10,4 +10,11 @@ The tap events don't handle :hover pseudoclasses very well.  Trying sprinkling y
   -webkit-user-select: none;
   user-select: none;
 }
+
+.selectable{
+  -moz-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
+}
 ````
