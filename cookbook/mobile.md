@@ -218,14 +218,15 @@ meteor list-platforms
 meteor add-platform ios
 meteor list-platforms
 
-# 9.  make sure there are correct permissions on the application (important!)
-sudo chmod -R 777 .meteor/local/
-
-# 10.  and that there aren't dead processes
+# 9.  and that there aren't dead processes
 ps -ax 
 kill -9 <pid>
 # /Users/abigailwatson/.meteor/packages/meteor-tool/.1.0.35.wql4jh++os.osx.x86_64+web.browser+web.cordova/meteor-tool-os.osx.x86_64/dev_bundle/mongodb/bin/mongod
 # tail -f /Users/abigailwatson/Code/Medstar/dart/webapp/.meteor/local/cordova-build/platforms/ios/cordova/console.log
+
+# 10.  make sure there are correct permissions on the application (important!)
+sudo chmod -R 777 .meteor/local/
+
 # 11.  run app
 meteor run ios
 
