@@ -42,6 +42,7 @@
 | clinical:audio  | --- | --- | --- | --- | ---  |
 | clinical:video-streaming  | --- | --- | --- | --- | ---  |
 | clinical:near-field-communications | --- | --- | --- | --- | ---  |
+| clinical:release-notes | --- | --- | --- | --- | --- |
 
 ==============================
 
