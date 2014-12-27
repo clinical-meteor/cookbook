@@ -56,3 +56,13 @@ http://localhost:8080/debug?port=5858
 Besides Node Inspector, some people have reported success with a npm utility called ``debug``.  
 [MeteorHacks - Debugging Meteor with npm debug](http://meteorhacks.com/debugging-meteor-packages-and-apps.html)  
 
+============================================
+#### Meteor Shell (New!)  
+
+As of Meteor 1.0.2, there's a new command shell which you can use to do interactive debugging and manage your app from the server side, just like you do with the Chrome Console on the client side!  Check it out:  
+
+````sh
+meteor shell
+````
+
+
