@@ -21,3 +21,4 @@
 | [mrt:moment]() | none | no |  possibiliies | No | ? |  
 | [miguelvalverde:font-awesome-4.1.0]() | none | no |  ? | No | ? |  
 | [mrt:jquery-csv]() | none | no |  ? | No | ? |  
+| [rzymek:fullcalendar](https://atmospherejs.com/rzymek/fullcalendar) ] custom | no | rzymek  | no | ? |
