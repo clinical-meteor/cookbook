@@ -126,6 +126,7 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source Available?|  Documented     | Interface   | Acceptance Tests | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------- | ---------------:|
+| [Image Link Archive](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | yes | bootstrap3 | --- | 1.0 |
 | [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) | yes | bootstrap3 | --- | 1.0 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | yes | bootstrap | yes | 1.0 |
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | yes | bootstrap3 | 10 | 1.0 |
