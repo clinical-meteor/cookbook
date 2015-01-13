@@ -32,7 +32,7 @@ First of all, if your application is going to run on different devices, it's goi
 }
 
 // portrait orientation
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
 }
 
 ````
