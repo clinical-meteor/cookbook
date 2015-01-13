@@ -23,17 +23,15 @@ First of all, if your application is going to run on different devices, it's goi
 ````css
 //----------------------------------------------------
 
+// desktop 
+@media only screen and (min-width: 960px) {
+}
+
 // landscape orientation
 @media only screen and (min-width: 768px) {
-
 }
 
 // portrait orientation
-@media only screen and (max-width: 768px) {
-  #homePage{
-    //...
-  }
-}
 @media only screen and (max-width: 480px) {
 }
 
