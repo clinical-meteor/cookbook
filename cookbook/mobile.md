@@ -247,3 +247,22 @@ meteor run ios
 XCode should launch during the process.  Select your simulator and press the 'Play' button.  
 
 
+=============================================
+#### IOS Development  
+
+- Register your Apple Developer Account  
+- Register an App ID for your app
+- Register the UUID of your testing devices
+- Generate an iOS App Development provisioning profile
+  - Generate a CertificateSigningRequest from KeychainAccess
+  - Submit CertificateSigningRequest to https://developer.apple.com/account/ios/profile/profileCreate.action
+  - Download and doubleclick the certificate to import into Keychain
+- Go to XCode > Preferences > Accounts and register your Apple Developer Account
+
+=============================================
+#### IOS Device Testing  
+
+-  Make sure your development workstation and iPhone are connected to the same WiFi network.  Tethering, hotspots, and other ad-hoc networking won't work.    
+-  Run ``sudo meteor run ios-device``  
+-  Deploy to your device!  
+  
