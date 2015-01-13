@@ -20,7 +20,7 @@ The holy grail of web-apps is a single code base across different platforms.  In
 
 First of all, if your application is going to run on different devices, it's going to need to render to different ViewPorts, based on the device size.  You can deal with this in two ways:  with javascript rules, or CSS media styles.  If you've been using a MVC or MVVM library, such as Angular or Ember (or Blaze, for that matter) and have only been targeting a single device or hardware platform, you may need to rethink your MVC model as different hardware ViewPorts are introduced to your application.
 
-````css
+````less
 //----------------------------------------------------
 
 // desktop 
