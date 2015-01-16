@@ -1,7 +1,12 @@
 
-Replica Set Quickstart
+Replica Sets (aka Shards)  
 ====================================
 
+First some definitions.  For those not familiar, a _Replica Set_ is defined as a redundant configuration of three servers.   A _Sharded Database_ is defined as a horizintally scalled database, where each _Shard_ is defined as a Replica Set.  Therefore, a sharded Mongo cluster involves a minimum of 11 servers for a 2 shard cluster, and increases by three servers for each additional shard.  So, a sharded cluster always has 11, 14, 17, 20, 23, etc server instances.  That is, there's 2 shards of 3 servers each, 3 more config controllers, and 2 routers.  11 servers total for a 2 shard cluster.  
+
+
+===============================
+#### Replica Set Quickstart
 
 First, build yourself three servers using whatever physical or virtual hardware you wish.  (This tutorial assumes you're using Ubuntu as your operating system.)  Then repeat the following instructions three times... once for each server.  
 
