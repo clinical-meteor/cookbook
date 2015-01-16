@@ -1,17 +1,18 @@
 ## Database Management  
 
+As far as databases go, Mongo delivers an excellent cost of ownership.  Arguably much higher than SQL systems.  But, at the end of the day, it's still an enterprise-grade database.  And, unfortunately, there's no such thing as a free lunch.  So, despite it being very easy to manage compared to SQL based systems, there's still quite a bit involved.  The following is a grab-bag of various scripts and recipes for managing your Mongo database.    
+
 ===========================================
 #### Analyzing An Inherited Database  
 
-There's two great utilities you should check out.  First is variety.js, which will give you a great high-level overview.  Start with this one.  
-https://github.com/variety/variety
+There's two great utilities you should check out.  First is variety.js, which will give you a great high-level overview.  The second is schema.js, which will let you dig into the collections for more detail on the individual fields.  
+
+[https://github.com/variety/variety](https://github.com/variety/variety)  
 ````js
 mongo test --eval "var collection = 'users'" variety.js
 ````
 
-The second is schema.js, which will let you dig into the collections for more detail on the individual fields.  
-http://skratchdot.com/projects/mongodb-schema/
-
+[http://skratchdot.com/projects/mongodb-schema/](http://skratchdot.com/projects/mongodb-schema/)
 ````js
 mongo --shell schema.js 
 ````
@@ -20,7 +21,7 @@ mongo --shell schema.js
 ===========================================
 #### Connect To A Database on *.meteor.com?**  
 
-Try the ``--url`` flag!  It's quite simple actually.  The only tricky thing is that there's only a 60 second window to authenticate, and then the username/password randomly resets.  So be sure to have robomongo open and ready to configure a new connection when you run the command.  
+Try the ``--url`` flag.  It's quite simple actually.  The only tricky thing is that there's only a 60 second window to authenticate, and then the username/password randomly resets.  So be sure to have robomongo open and ready to configure a new connection when you run the command.  
 
 ````sh
 # get the MONGO_URL string for your app  
@@ -156,7 +157,7 @@ db.runCommand( { logRotate : 1 } )
 ````
 ===========================================
 #### Reset a Replica Set  
-Delete the local database files.  Just exit the Mongo shell, navigate to the dbpath, and delete the local files.   
+Delete the local database files.  Just exit the Mongo shell, navigate to the ``/dbpath`` (wherever you set it up), and delete the files within that directory.   
 
 
 ===========================================
