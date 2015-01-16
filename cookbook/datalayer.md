@@ -65,7 +65,8 @@ Yup.  That's exactly what you should do.  Think in terms of query patterns and w
 Yup.  A great solution is to use the [collection-hooks](https://atmospherejs.com/matb33/collection-hooks) package, and to implement an AuthoritativeCollection pattern using the ``after.insert``, ``after.update``, and ``after.remove`` hooks.  
 
 **Q:  How do I create a reactive JOIN in Meteor?**  
-You're just aren't paying attention, are you?
+You're just aren't paying attention, are you?  Ah well.  Good luck with that.   
+https://atmospherejs.com/reywood/publish-composite
 
 **Q: I have a pre-existing SQL database, and simply must have an ORM**  
 Well, you might want to check out Sails or Ember.  Sails is a very promising framework that has an ORM and is database agnostic.  And Ember is a mature framework at this point.  
