@@ -158,3 +158,70 @@ db.runCommand( { logRotate : 1 } )
 #### Reset a Replica Set  
 Delete the local database files.  Just exit the Mongo shell, navigate to the dbpath, and delete the local files.   
 
+
+===========================================
+#### Mongo Admin Interfaces
+
+For internal development use, you may get some mileage out of Genghis, even though it's written in Ruby:  
+http://genghisapp.com/   
+
+You can also use the mongo command to connect to a remote instance on the meteor.com domain.
+````
+meteor mongo --url YOURSITE.meteor.com
+````
+
+But for scalable production use, get yourself to MongoHQ.    
+http://www.mongohq.com/  
+
+Also, the Mongo Monitoring Service, from 10Gen, the makers of Mongo:  
+https://mms.10gen.com/user/login
+
+
+===========================================
+#### Import Data into a Mongo Database  
+
+````js
+// download mongodb from 10gen, and start a stand-alone instance
+mongod
+
+// import the json data into a staging database
+// jsonArray is a useful command, particularly if you're migrating from SQL
+mongoimport -d staging -c assets < data.json --jsonArray
+ 
+// navigate to your application
+cd myappdir
+ 
+// run meteor and initiate it's database
+meteor
+ 
+// connect to the meteor mongodb
+meteor mongo --port 3002
+ 
+// copy collections from staging database into meteor database
+db.copyDatabase('staging', 'meteor', 'localhost');
+ 
+// shut down the staging database
+Ctrl-C
+````
+
+===========================================
+#### Meteor Local Mongo Log Files 
+
+They're not easily accessible.  If you run the 'meteor bundle' command, you can generate a tar.gz file, and then run your app manually.  Doing that, you should be able to access the mongo logs... probably in the .meteor/db directory.  
+
+If you really need to access mongodb log files, set up a regular mongodb instance, and then connect Meteor to an external mongo instance, by setting the MONGO_URL environment variable:  
+````
+MONGO_URL='mongodb://user:password@host:port/databasename'
+````
+
+Once that's done, you should be able to access logs in the usual places...  
+````
+/var/log/mongodb/server1.log
+````
+
+Also, people have been mentioning the following MONGO_URL parameters as being useful...   
+````js
+?autoReconnect=true
+?replicaSet=meteor
+````
+
