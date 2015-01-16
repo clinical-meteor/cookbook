@@ -44,11 +44,34 @@ Of the different databases mentioned, ask which ones require an ORM mapping laye
 
 
 **Q:  How do I create a JOIN in Meteor?**  
-Timeout.  You're still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.  This is bad juju magic, and will cause bad application design.  Take a timeout and do some more research and reading before moving forward with your application.
+Timeout.  You're still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.  This is a bad data model for NoSQL based applications.  Take a timeout and do some more research and reading before moving forward with your application.
+
+**Q:  Seriously.  How do I do a JOIN in Meteor?**  
+
+Each collection cursor has a half dozen or so query functions... ``find()``, ``findOne()``, ``insert()``, ``update()``, ``upsert()``, ``remove()``.   They're going to happen whenever you query more than one collection within a function.  So, in the following ``getComments`` function, we join the Posts and Comments collection.  The function blocks for ~20ms to ~50ms on the Posts lookup, then blocks again for another ~20ms to ~50ms for the Comments lookup.  We also wind up writing the ``posts`` variable on the memeory heap.  This will get cleaned up by the garbage collector.  But in high volume usage, this will cause a performance bottleneck similar to a memory leak, and will eventually blow up.  This type of join doesn't scale well.
+
+````js
+Template.singlePost.helpers({
+  getComments: function(){
+    var posts = Posts.findOne({_id: Session.get('selectedPost'});
+    return Comments.find({_id: {$in: posts.comments }});
+  }
+});
+````
+**Q:  So, what do you suggest?  Putting all those comments into the Posts object? **   
+Yup.  That's exactly what you should do.  Think in terms of query patterns and what kind of object you want to receive.  Store the object as you want to receive it.  Already mapped and assembled.  
+
+**Q:  But isn't that going to require updating points of data all over the place? **   
+Yup.  A great solution is to use the [collection-hooks](https://atmospherejs.com/matb33/collection-hooks) package, and to implement an AuthoritativeCollection pattern using the ``after.insert``, ``after.update``, and ``after.remove`` hooks.  
+
+**Q:  How do I create a reactive JOIN in Meteor?**  
+You're just aren't paying attention, are you?
 
 **Q: I have a pre-existing SQL database, and simply must have an ORM**  
-Well, you might want to check out Sails.js.  It looks like a very promising framework that has an ORM and is database agnostic.
-http://sailsjs.org
+Well, you might want to check out Sails or Ember.  Sails is a very promising framework that has an ORM and is database agnostic.  And Ember is a mature framework at this point.  
+
+http://sailsjs.org  
+http://emberjs.com/
 
 **Q: Why are you so anti-SQL?**  
 
