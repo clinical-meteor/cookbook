@@ -43,13 +43,16 @@ Not officially.  It's basically the same issue as supporting SQL databases.  The
 Of the different databases mentioned, ask which ones require an ORM mapping layer, and which ones can support native JSON objects.  Redis was the second official database to be supported.  CouchDB and PostgreSQL are probably next on the list.  CouchDB is very similar to Mongo, but is not widely used.  Postgres has the same general problems of needing an ORM that other flavors of SQL have to deal with; but does have a native JSON storage mode.  So that may help migrations.   And, as mentioned above, not only does it introduce an extra layer of ORM, it introduces an entire extra language to support... SQL.  One of the entire philosophical goals behind Meteor is to have a single language across client, server, and database and writing isomorphic APIs.  Mongo's interface is written in Javascript.  Which streamlines and simplifies development.  SQL is it's own language (Structured Query Language) and steps away from the concept of isomorphic APIs and single-language frameworks.  So that needs to be worked through.
 
 
-
-
-
 **Q:  How do I create a JOIN in Meteor?**  
 Timeout.  You're still thinking in terms of normalizing data, not repeating yourself, and creating a collection for each data table.  This is bad juju magic, and will cause bad application design.  Take a timeout and do some more research and reading before moving forward with your application.
 
 **Q: I have a pre-existing SQL database, and simply must have an ORM**  
 Well, you might want to check out Sails.js.  It looks like a very promising framework that has an ORM and is database agnostic.
 http://sailsjs.org
+
+**Q: Why are you so anti-SQL?**  
+
+Imagine that you're working in a hospital.  Imagine that patient Jane Doe is brought into the emergency room who's been in a car wreck.  And that they have no ID on them, and somebody is shouting at you that "THEYRE IN THE SYSTEM.  BUT WE CANT FIND THEIR RECORDS.  WE HAVE TO GET TO THE OR.  WHATS THEIR BLOOD TYPE???".  And you have approximately 5 to 10 minutes to write an ad-hoc query to find their medical records adn blood type.  You don't know this yet, but Jane Doe recently got married and the reason nobdoy can find her records is because her name has been changed.  Or her medical insurance has expired.  Or a dozen other reasons.  Regardless, you have 5 to 10 minutes to write an ad-hoc database query while people are shouting at you.  In SQL.  
+
+No thank you.  I've had that experience.  And it's why I quit doing healthcare IT support for Oracle/SQL based systems, such as Cerner, Merge, Amicas, OsiriX, and the like.  And it's why I develop in Meteor nowdays.  
 
