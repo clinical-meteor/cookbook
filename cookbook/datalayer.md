@@ -8,8 +8,8 @@ Not officially.
 The position of the Meteor Cookbook is that it's a mistake for Meteor to natively support SQL.  So, hopefully not any time soon.  However, Meteor Cookbook is an unofficial resource, and MDG is going for widest possible appeal, so that means including SQL support.  If/when they do add SQL support, it's going to be a major big-ticket item that's going to likely take months to implement.  
 
 In the meantime, there are some community packages for SQL support, which seems to be MDG's preferred solution for SQL support.  
-https://github.com/numtel/meteor-mysql
-https://atmospherejs.com/?q=sql
+[meteor-sql](https://github.com/numtel/meteor-mysql)  
+[sql on atmosphere](https://atmospherejs.com/?q=sql)  
 
 **Q: Why is that?  Why doesn't Meteor support SQL, the most common database on the internet?**  
 The problem with introducing other databases, such as SQL, are the database management layers between the database and serving up the javascript objects ready to be used. Other than trivial single-table database examples, supporting SQL will require an ORM to map tables together during JOINS and to produce the necessary javascript objects for the templates. Which sort of completely defeats the purpose of using Mongo in the first place. Nobody on the core Dev team wants those headaches of supporting an SQL/ORM layer, and it breaks the philosophy of javascript-everywhere.  But don't take my word for it. Here are some nice articles on ORMs and the perception that they are the 'Vietnam War' of computer science. Meteor is specifically architected to avoid ORM headaches.
