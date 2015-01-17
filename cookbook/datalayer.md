@@ -62,10 +62,10 @@ Template.singlePost.helpers({
   }
 });
 ````
-**Q:  So, what do you suggest?  Putting all those comments into the Posts object? **   
+**Q:  So, what do you suggest?  Putting all those comments into the Posts object?**   
 Yup.  That's exactly what you should do.  Think in terms of query patterns and what kind of object you want to receive.  Store the object as you want to receive it.  Already mapped and assembled.  
 
-**Q:  But isn't that going to require updating points of data all over the place? **   
+**Q:  But isn't that going to require updating points of data all over the place?**   
 Yup.  A great solution is to use the [collection-hooks](https://atmospherejs.com/matb33/collection-hooks) package, and to implement an AuthoritativeCollection pattern using the ``after.insert``, ``after.update``, and ``after.remove`` hooks.  
 
 **Q:  How do I create a reactive JOIN in Meteor?**  
