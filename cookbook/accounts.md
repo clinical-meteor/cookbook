@@ -52,7 +52,11 @@ http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-fo
 
 **Q:  Is there a way to get a login-page, and not have a drop-down menu?'**  
 Check out this very clever package.  I haven't tried it, but it looks very promising.    
-https://atmosphere.meteor.com/package/accounts-entry  
+https://atmospherejs.com/useraccounts/core
+
+Previously another project had a very big success
+https://atmospherejs.com/joshowens/accounts-entry
+...but it seems it is going to be abandoned (see [this post](https://github.com/Differential/accounts-entry/issues/326#issuecomment-65813192) by the original author)
 
 **Q:  How do I define a transform function on the users collection?**  
 
