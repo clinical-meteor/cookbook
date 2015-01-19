@@ -1,13 +1,14 @@
 ## Writing Unit Tests with Jasmine and Velocity
 
 
-#### Unit Tests  
+#### Unit Tests
+
 Unlike acceptance tests, which treat your application as a black-box closed system, and only test inputs and outputs; unit testing treats your application as an open system, and has access to all the internals of your application.  As such, it needs a different kind of testing, called unit testing.
 
+The simplest way to create unit tests is to use Tinytest, the native Meteor testing utility.  
+See [Writing Unit Tests with TinyTest for details](/cookbook/writing.unit.tests.md) for details.
 
 #### Running Jasmine with Velocity
-
-The simplest way to create unit tests is to use Tinytest, the native Meteor testing utility.  (Tinytest is not to be confused with TinyTestJS, which is a different library).  You'll need to add the ``tinytest`` package, and then use the custom ``mrt test-packages`` command.
 
 ````js
 // create your application
@@ -15,15 +16,15 @@ meteor create leaderboard
 cd leaderboard
 
 // install velocity and reporters
-mrt add velocity
-mrt add velocity-html-reporter
-mrt add moment
+meteor add velocity:core
+meteor add velocity:html-reporter
+meteor add momentjs:moment
 
 // install jasmine-unit
-mrt add jasmine-unit
+meteor add sanjo:jasmine
 
 // run your application
-sudo mrt
+sudo meteor
 ````
 
 #### Jasmine API  
