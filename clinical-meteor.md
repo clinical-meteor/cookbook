@@ -12,7 +12,8 @@
 [clinical:static-pages](https://github.com/awatson1978/clinical-static-pages)  | bootstrap3 | --- | yes | --- | 1.0.4|
 [clinical:ui-vocabulary](https://github.com/awatson1978/clinical-ui-vocabulary)  | semantic | --- | --- | --- | 1.0.5  |
 [clinical:ui-alert-panel](https://github.com/awatson1978/clinical-ui-alert-panel)  | bootstrap3 | yes | --- | yes | 1.0.5  |
-| clinical:hipaa |  bootstrap3 | yes | --- |  --- | --- | | clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
+| [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | no | --- | 1.0.0  |
+| [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | yes | --- |  --- | --- | | clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
 | clinical:accounts-stripe  | none | --- | --- | --- | ---  |
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  |
 | clinical:medical-icons | --- | --- | --- | --- | ---  |
@@ -24,7 +25,6 @@
 | clinical:users  | bootstrap3 | --- | yes | --- | ---  |
 | clinical:profile  | bootstrap3 | --- | yes | --- | ---  |
 | clinical:entry  | bootstrap3 | --- | yes | --- | ---  |
-| clinical:famous-dead-people    | --- | --- | yes | --- | ---  |
 | clinical:snomed    | bootstrap3 | --- | --- | yes | ---  |
 | clinical:icd10 | bootstrap3 | --- | --- | yes | ---  |
 | clinical:syntax   | --- | --- | --- | --- | ---  |
