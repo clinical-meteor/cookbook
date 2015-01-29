@@ -147,9 +147,17 @@ tests/nightwatch/walkthough.js            # nightwatch specific tests
 If you're having any problems bundling your app, it's sometimes useful to check the permissions on your directory structure.  Here is a short audit script that will hopefully help get your directory permissions sorted out.
 
 ````sh
-sudo chmod -R g+w myapp
+# make sure myapp works
+sudo chmod -R 777 myapp
 sudo chown -R username:wheel myapp
-sudo chown username:wheel .meteor
+
+# make sure meteor works
 sudo chown username:wheel ~/.meteorsession
 sudo chown username:wheel ~/.meteor
+sudo chmod -R 777 ~/.meteorsession
+sudo chmod -R 777 ~/.meteor
+
+# make sure npm has the right permissions
+sudo chown username:wheel ~/.npm
+sudo chmod -R 777 ~/.npm
 ````
