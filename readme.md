@@ -126,16 +126,16 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source Available?|  Documented     | Acceptance Tests | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
-| [ Grays Anatomy Images ](http://image-link-archive.meteor.com/) | [image-link-archive](https://github.com/awatson1978/image-link-archive) |  --- |  --- | 1.0.2.1 |
-| [Stripe - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  --- |  --- | 1.0 |
-| [Image Link Archive](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | yes | --- | 1.0 |
-| [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) | yes | --- | 1.0 |
-| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | yes | yes | 1.0 |
-| [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | yes | 10 | 1.0 |
-| [Rest Analytics Pipeline](http://rest-analytics-pipeline.meteor.com/)      | [rest-analytics-pipeline](https://github.com/awatson1978/rest-analytics-pipeline) | yes | 52 | 1.0 |
-| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | 93 | 1.0 |
-| [Fonts & Calligraphy](http://fonts.meteor.com/)   | [fonts-site](https://github.com/awatson1978/fonts-site) |  yes  | 15 | 1.0 |
-| [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  basic | --- | 1.0 |
+| [ Grays Anatomy Images ](http://image-link-archive.meteor.com/) | [image-link-archive](https://github.com/awatson1978/image-link-archive) |  --- |  --- | 1.0.x |
+| [Stripe - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  --- |  --- | 1.0.x |
+| [Image Link Archive](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | yes | --- | 1.0.x |
+| [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) | yes | --- | 1.0.x |
+| [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | yes | yes | 1.0.x |
+| [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | yes | 10 | 1.0.x |
+| [Rest Analytics Pipeline](http://rest-analytics-pipeline.meteor.com/)      | [rest-analytics-pipeline](https://github.com/awatson1978/rest-analytics-pipeline) | yes | 52 | 1.0.x |
+| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | yes | 93 | 1.0.x |
+| [Fonts & Calligraphy](http://fonts.meteor.com/)   | [fonts-site](https://github.com/awatson1978/fonts-site) |  yes  | 15 | 1.0.x |
+| [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  basic | --- | 1.0.x |
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | --- | 0.6.5 |
 | [Stripe Payments - Crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) |  --- | --- | 0.6.5 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | --- | --- |  0.8.0.1 |
