@@ -126,6 +126,7 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source Available?|  Documented     | Acceptance Tests | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
+| [ Grays Anatomy Images ](http://image-link-archive.meteor.com/) | [image-link-archive](https://github.com/awatson1978/image-link-archive) |  --- |  --- | 1.0.2.1 |
 | [Stripe - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  --- |  --- | 1.0 |
 | [Image Link Archive](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | yes | --- | 1.0 |
 | [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) | yes | --- | 1.0 |
