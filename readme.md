@@ -123,10 +123,12 @@ http://clinical.meteor.com/
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
 
+https://github.com/awatson1978/minimongo-table
 
 | Live Demo     | Source Available?|  Documented     | Acceptance Tests | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
-| [ Grays Anatomy Images ](http://image-link-archive.meteor.com/) | [image-link-archive](https://github.com/awatson1978/image-link-archive) |  yes |  --- | 1.0 |
+| [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | yes | 78 |  1.0.3.1 |
+| [ Grays Anatomy Images ](http://image-link-archive.meteor.com/) | [image-link-archive](https://github.com/awatson1978/image-link-archive) |  yes |  --- | 1.0.2.1 |
 | [Stripe - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  yes |  --- | 1.0 |
 | [Image Link Archive](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | yes | --- | 1.0 |
 | [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) | yes | --- | 1.0 |
@@ -138,7 +140,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  basic | --- | 1.0 |
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | basic | --- | 0.6.5 |
 | [Stripe Payments - Crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) |  --- | --- | 0.6.5 |
-| [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | --- | --- |  0.8.0.1 |
 | [ActiveRecord List](http://clinical-ui-crud-list.meteor.com/)      | [clinical-ui-crud-list](https://github.com/awatson1978/clinical-ui-crud-list) |  --- | --- | 0.8.0.1 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | yes |  --- | 0.9.1 | 
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | --- | 0.8.1.3 |
