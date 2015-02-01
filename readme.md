@@ -121,7 +121,7 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
-| [Clinical ActiveRecord](https://clinical-activerecord.meteor.com)  | [clinical-activerecord](https://github.com/awatson1978/clinical-activerecord) | 78 | ![travisci](https://travis-ci.org/awatson1978/clinical-activerecord.svg) |  1.0.3.1 |
+| [Clinical ActiveRecord](https://clinical-activerecord.meteor.com)  | [clinical-activerecord](https://github.com/awatson1978/clinical-activerecord) | 296 | ![travisci](https://travis-ci.org/awatson1978/clinical-activerecord.svg) |  1.0.3.1 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | 78 | ![travisci](https://travis-ci.org/awatson1978/minimongo-table.svg) |  1.0.3.1 |
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | 10 | ![travisci](https://travis-ci.org/awatson1978/rest-api.svg) | 1.0 |
 | [Rest Analytics Pipeline](http://rest-analytics-pipeline.meteor.com/)      | [rest-analytics-pipeline](https://github.com/awatson1978/rest-analytics-pipeline) | 52 | ![travisci](https://travis-ci.org/awatson1978/rest-api.svg) | 1.0 |
