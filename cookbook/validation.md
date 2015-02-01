@@ -95,3 +95,4 @@ Template.samplePage.helpers({
 [Regular Expression Tutorial](http://www.regular-expressions.info/tutorial.html)  
 [Regular Expression Cheat Sheet](http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)  
 [Regular Expressions in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)  
+[8 Regular Expressions You Should Know](http://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149)  
