@@ -4,6 +4,7 @@ Data Validation
 
 
 
+
 ------------------------------ 
 #### Match API  
 
@@ -86,3 +87,11 @@ Template.samplePage.helpers({
 });
 
 ````
+
+
+------------------------------ 
+#### Regular Expressions  
+
+[Regular Expression Tutorial](http://www.regular-expressions.info/tutorial.html)  
+[Regular Expression Cheat Sheet](http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)  
+[Regular Expressions in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)  
