@@ -139,7 +139,6 @@ Links to live versions of the examples associated with this cookbook.
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | --- |  --- | 0.9.1 | 
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | --- | 0.8.1.3 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | --- | --- | 0.8.0 |
-| [ActiveRecord Table](http://clinical-ui-crud-table.meteor.com/)      | [clinical-ui-crud-table](https://github.com/awatson1978/clinical-ui-crud-table) |  --- | --- | 0.8.2 |
 | [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | [clinical-ui-forms](https://github.com/awatson1978/clinical-ui-forms) | ---  | --- | 0.6.5 |
 | [ClinicalFramework Boilerplate](http://clinical-ui-boilerplate.meteor.com/)      | [panel-layout](https://github.com/awatson1978/panel-layout) |  ---  | --- | 0.8.0.1 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | [drag-and-drop](https://github.com/awatson1978/drag-and-drop) | ---  | --- | 0.8.0 |
