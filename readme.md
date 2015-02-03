@@ -3,7 +3,7 @@
 Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from over 2 years of emails and discussions from the [meteor] google group and my experiences rolling out packages and apps.  These documents are intended for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The focus is on helping the user grow accustomed to functional programming using document oriented databases.  
 
 
-**[TABLE OF CONTENTS](https://github.com/awatson1978/meteor-cookbook/blob/master/table-of-contents.md)**    
+##[TABLE OF CONTENTS](https://github.com/awatson1978/meteor-cookbook/blob/master/table-of-contents.md)  
 
 
 
