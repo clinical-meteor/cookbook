@@ -1,4 +1,3 @@
-========================================
 #### Table of Contents  
 
 - [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
