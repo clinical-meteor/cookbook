@@ -5,19 +5,10 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 
 **[TABLE OF CONTENTS](https://github.com/awatson1978/meteor-cookbook/blob/master/table-of-contents.md)**    
 
-========================================
-#### Clinical Meteor Track  
-
-Meteor Cookbook is the official documentation of the Clinical Meteor Track project...  a version of Meteor designed for biomedical, clinical, and healthcare applications.  Check out the project page to learn more, and be aware that these two projects are being run in parallel.  
-
-http://clinical.meteor.com/
-
-
 
 
 ##Applet Demos
 Links to live versions of the examples associated with this cookbook.  
-
  
 
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
@@ -48,13 +39,17 @@ Links to live versions of the examples associated with this cookbook.
 | [Collabtionary](http://collabtionary.meteor.com/)       | [collabtionary](https://github.com/awatson1978/collabtionary)      |  ---  | --- | 0.6.5 |
 | [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  ---  | --- | 0.6.5 |
 
+
+========================================
+#### Clinical Meteor Track  
+
+If you'd like to learn more, check out the Clinical Meteor Track project...  a version of Meteor designed for biomedical, clinical, and healthcare applications.  Check out the project page to learn more, and be aware that these two projects are being run in parallel.  
+
+http://clinical.meteor.com/
+
 ####Meteor Architecture  
 
 ![Meteor Architecture](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Meteor%20Architecture%20-%20Dev%20to%20Prod.jpg)  
 
 
-========================================
-#### Build A Weblog!
-With version 1.0 of Meteor having been released, the Meteor Cookbook is getting a rewrite to bring all of it's examples and recipes up to 1.0 status.  The default application that all the examples build towards is creating a weblog; which can then be used as the basis of self-publishing, online journals & diaries, bulletin board systems, chat rooms, advocacy platforms, electronic medical records, personal health & fitness records, quantified-self applications, or any other application that might need a weblog.  (Edit:  the rewrite is still in progress, and all the pieces of the weblog are still being put together.  Expect a finished weblog example in mid February!)
 
-![Weblog](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Weblog%20Wireframes.jpg)  
