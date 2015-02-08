@@ -16,7 +16,6 @@ Links to live versions of the examples associated with this cookbook.
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
 | [Panel Layout](https://panel-layout.meteor.com)  | [panel-layout](https://github.com/awatson1978/panel-layout) | 24 | ![travis-build](https://travis-ci.org/awatson1978/panel-layout.svg?branch=master)   |  1.0.3.1 |
-| [Clinical ActiveRecord](https://clinical-activerecord.meteor.com)  | [clinical-activerecord](https://github.com/awatson1978/clinical-activerecord) | 296 | ![travisci](https://travis-ci.org/awatson1978/clinical-activerecord.svg) |  1.0.3.1 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | 78 | ![travisci](https://travis-ci.org/awatson1978/minimongo-table.svg) |  1.0.3.1 |
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | 10 | ![travisci](https://travis-ci.org/awatson1978/rest-api.svg?branch=master) | 1.0.3.1 |
 | [Rest Analytics Pipeline](http://rest-analytics-pipeline.meteor.com/)      | [rest-analytics-pipeline](https://github.com/awatson1978/rest-analytics-pipeline) | 52 | ![travis-build](https://travis-ci.org/awatson1978/rest-analytics-pipeline.svg?branch=master) | 1.0.3.1 |
@@ -25,11 +24,10 @@ Links to live versions of the examples associated with this cookbook.
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | 8 | ![travis-build](https://travis-ci.org/awatson1978/leaflet-parties.svg?branch=master) | 1.0.3.1 |
 | [Stripe - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  7 |  ![travis-build](https://travis-ci.org/awatson1978/payment-subscription.svg?branch=master) | 1.0.3.1 |
 | [Medical Illustration Library](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | 7 | ![travis-build](https://travis-ci.org/awatson1978/image-link-archive.svg?branch=master) | 1.0.3.1 |
-| [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) |  7 | ![Travis Build](https://travis-ci.org/awatson1978/clinical-scheduling.svg?branch=master) | 1.0.3.1 |
 | [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  7 | ![travis-build](https://travis-ci.org/awatson1978/workflow-routing.svg?branch=master) | 1.0.3.1 |
 | [Weblog](http://clinical-ui-crud-list.meteor.com/)      | [clinical-weblog](https://github.com/awatson1978/clinical-ui-crud-list) |  7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-weblog.svg?branch=master) | 1.0.3.1 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | 7 |  ![travis-build](https://travis-ci.org/awatson1978/dropzone-ui.svg?branch=master) | 1.0.3.1 | 
-| [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | 7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-support-forum.svg?branch=master) | 1.0.3.1 |
+![travis-build](https://travis-ci.org/awatson1978/clinical-support-forum.svg?branch=master) | 1.0.3.1 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | [drag-and-drop](https://github.com/awatson1978/drag-and-drop) | 7 | ![travis-build](https://travis-ci.org/awatson1978/drag-and-drop.svg?branch=master) | 1.0.3.1 |
 | [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | [green-eggs-and-spam](https://github.com/awatson1978/green-eggs-and-spam) | 7  | ![travis-build](https://travis-ci.org/awatson1978/green-eggs-and-spam.svg?branch=master) | 1.0.3.1 |
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | --- | --- | 0.6.5 |
@@ -41,12 +39,26 @@ Links to live versions of the examples associated with this cookbook.
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | --- | 0.8.1.3 |
 
 
+
 ========================================
 ###Clinical Meteor Track  
 
 If you'd like to learn more, check out the Clinical Meteor Track project...  a version of Meteor designed for biomedical, clinical, and healthcare applications.  Check out the project page to learn more, and be aware that these two projects are being run in parallel.  
 
 http://clinical.meteor.com/
+
+========================================
+###Clinical Demos  
+Links to live versions of the examples associated with this cookbook.  
+ 
+
+| Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
+| ------------- |:----------------:| ----------------| ---------------- | ---------------:|
+| [Clinical ActiveRecord](https://clinical-activerecord.meteor.com)  | [clinical-activerecord](https://github.com/awatson1978/clinical-activerecord) | 296 | ![travisci](https://travis-ci.org/awatson1978/clinical-activerecord.svg) |  1.0.3.1 |
+| [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) |  7 | ![Travis Build](https://travis-ci.org/awatson1978/clinical-scheduling.svg?branch=master) | 1.0.3.1 |
+| [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | 7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-support-forum.svg?branch=master) | 1.0.3.1 |
+
+
 
 ========================================
 ###Meteor Architecture  
