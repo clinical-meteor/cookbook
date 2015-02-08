@@ -28,7 +28,7 @@ Links to live versions of the examples associated with this cookbook.
 | [Image Link Archive](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | --- | --- | 1.0 |
 | [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) |  7 | ![Travis Build](https://travis-ci.org/awatson1978/clinical-scheduling.svg?branch=master) | 1.0.3.1 |
 | [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  --- | --- | 1.0 |
-| [Weblog](http://clinical-ui-crud-list.meteor.com/)      | [clinical-weblog](https://github.com/awatson1978/clinical-ui-crud-list) |  7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-weblog.svg?branch=master) | 0.8.0.1 |
+| [Weblog](http://clinical-ui-crud-list.meteor.com/)      | [clinical-weblog](https://github.com/awatson1978/clinical-ui-crud-list) |  7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-weblog.svg?branch=master) | 1.0.3.1 |
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | --- |  --- | 0.9.1 | 
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  --- | --- | 0.8.1.3 |
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | 7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-support-forum.svg?branch=master) | 1.0.3.1 |
