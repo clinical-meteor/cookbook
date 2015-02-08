@@ -150,6 +150,7 @@ If you're having any problems bundling your app, it's sometimes useful to check 
 # make sure myapp works
 sudo chmod -R 777 myapp
 sudo chown -R username:wheel myapp
+sudo chmod -R 777 myapp/.meteor
 
 # make sure meteor works
 sudo chown username:wheel ~/.meteorsession
