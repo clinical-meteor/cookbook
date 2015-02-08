@@ -29,7 +29,7 @@ Links to live versions of the examples associated with this cookbook.
 | [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) |  7 | ![Travis Build](https://travis-ci.org/awatson1978/clinical-scheduling.svg?branch=master) | 1.0.3.1 |
 | [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  --- | --- | 1.0 |
 | [Weblog](http://clinical-ui-crud-list.meteor.com/)      | [clinical-weblog](https://github.com/awatson1978/clinical-ui-crud-list) |  7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-weblog.svg?branch=master) | 1.0.3.1 |
-| [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | --- |  --- | 0.9.1 | 
+| [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | 7 |  ![travis-build](https://travis-ci.org/awatson1978/dropzone-ui.svg?branch=master) | 1.0.3.1 | 
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | 7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-support-forum.svg?branch=master) | 1.0.3.1 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | [drag-and-drop](https://github.com/awatson1978/drag-and-drop) | 7 | ![travis-build](https://travis-ci.org/awatson1978/drag-and-drop.svg?branch=master) | 1.0.3.1 |
 | [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | [green-eggs-and-spam](https://github.com/awatson1978/green-eggs-and-spam) | ---  | --- | 0.8.0 |
