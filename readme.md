@@ -31,7 +31,7 @@ Links to live versions of the examples associated with this cookbook.
 | [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | 7 |  ![travis-build](https://travis-ci.org/awatson1978/dropzone-ui.svg?branch=master) | 1.0.3.1 | 
 | [Clinical Support Forum](http://clinical-support-forum.meteor.com/) | [clinical-support-forum](https://github.com/awatson1978/clinical-support-forum) | 7 | ![travis-build](https://travis-ci.org/awatson1978/clinical-support-forum.svg?branch=master) | 1.0.3.1 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | [drag-and-drop](https://github.com/awatson1978/drag-and-drop) | 7 | ![travis-build](https://travis-ci.org/awatson1978/drag-and-drop.svg?branch=master) | 1.0.3.1 |
-| [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | [green-eggs-and-spam](https://github.com/awatson1978/green-eggs-and-spam) | ---  | --- | 0.8.0 |
+| [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | [green-eggs-and-spam](https://github.com/awatson1978/green-eggs-and-spam) | 7  | ![travis-build](https://travis-ci.org/awatson1978/green-eggs-and-spam.svg?branch=master) | 1.0.3.1 |
 | [Stripe Payments - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | --- | --- | 0.6.5 |
 | [Stripe Payments - Crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) |  --- | --- | 0.6.5 |
 | [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | [clinical-ui-forms](https://github.com/awatson1978/clinical-ui-forms) | ---  | --- | 0.6.5 |
