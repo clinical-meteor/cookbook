@@ -34,7 +34,7 @@ Links to live versions of the examples associated with this cookbook.
 | [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | [clinical-ui-forms](https://github.com/awatson1978/clinical-ui-forms) | ---  | --- | 0.6.5 |
 | [Dictionary](http://dictionary.meteor.com/)             | [dictionary](https://github.com/awatson1978/dictionary) |  ---  | --- | 0.6.5 |
 | [Collabtionary](http://collabtionary.meteor.com/)       | [collabtionary](https://github.com/awatson1978/collabtionary)      |  ---  | --- | 0.6.5 |
-| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  ---  | --- | 0.6.5 |
+| [Hubble - CRUD & Datasets](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  7  | ![travis-build](https://travis-ci.org/awatson1978/hubble.svg?branch=master) | 1.0.3.1 |
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  7 | ![travis-build](https://travis-ci.org/awatson1978/exec-command-line-from-ui.svg?branch=master) | 1.0.3.1 |
 
 
