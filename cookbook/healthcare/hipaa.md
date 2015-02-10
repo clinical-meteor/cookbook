@@ -39,7 +39,7 @@ Phase 4 - Federal HIPAA
   [Amazon Web Services - HIPAA Whitepaper](https://aws.amazon.com/about-aws/whats-new/2009/04/06/whitepaper-hipaa/)    
 
 ================================================
-####  HIPAA Compliant Scale Out Using Meteor
+####  Is Meteor HIPAA Compliant?
 
 The thing to remember about HIPAA is that it was enacted in 1996.   Windows95 was only a year old, and the previous decade had seen an explosion in the personal computer market, with DOS, MacOS, and various hobby operating systems like Commodore64 and Atari.  The thing to remember is that HIPAA was enacted as a response to DOS and single-user operating systems.  The essence of HIPAA is simply "don't use DOS, MacOS, Commodore64 or similar single-person operating systems to build an electronic medical record or health device".  That's all it's really saying.  
 
