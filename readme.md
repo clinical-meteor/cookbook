@@ -92,10 +92,6 @@ Links to live versions of the examples associated with this cookbook.
 ========================================
 ###More Great Demos  
 
-========================================
-###Clinical Demos  
-Links to live versions of the examples associated with this cookbook.  
- 
 
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
