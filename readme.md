@@ -82,16 +82,26 @@ Links to live versions of the examples associated with this cookbook.
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  |
 | clinical:sesssion-extended-api   | --- | --- | --- | --- | ---  |
 
-==============================
-
-**Version refers to recommended version of the package.** 
-
-
 
 ========================================
 ###Meteor Architecture  
 
 ![Meteor Architecture](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Meteor%20Architecture%20-%20Dev%20to%20Prod.jpg)  
+
+
+========================================
+###More Great Demos  
+
+========================================
+###Clinical Demos  
+Links to live versions of the examples associated with this cookbook.  
+ 
+
+| Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
+| ------------- |:----------------:| ----------------| ---------------- | ---------------:|
+| [iTunes Library](http://itunes.meteor.com/album/291183)  | [reactconf](https://github.com/mitar/reactconf-2015-HYPE) | --- | --- |  1.0.3.1 |
+
+
 
 
 
