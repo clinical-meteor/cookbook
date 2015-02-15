@@ -1,6 +1,7 @@
 #### Table of Contents  
 
 - [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
+- [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
 - Meteor Style Guide
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
