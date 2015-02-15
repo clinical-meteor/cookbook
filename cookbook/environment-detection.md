@@ -17,7 +17,6 @@ MAIL_URL
 DDP_DEFAULT_CONNECTION_URL  
 HTTP_PROXY  
 HTTPS_PROXY  
-METEOR_SETTINGS 
 
 
 #### Specifying application parameters based on setting files.  
