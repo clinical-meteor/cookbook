@@ -5,7 +5,7 @@ I've found that the following pattern is the best way to handle orientationchang
 ````js
 Session.set("resize", null); 
 Meteor.startup(function () {
-  $(window).resize(function(evt) {
+  window.addEventListener('resize', function(){
     Session.set("resize", new Date());
   });
 });
