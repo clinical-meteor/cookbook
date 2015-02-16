@@ -1,6 +1,7 @@
 
 
-In response to the classic article [Why You Should Never Use MongoDB](http://crater.io/posts/TYmdcGm5NayDJXD2k).
+I was recently asked about the article [Why You Should Never Use MongoDB](http://crater.io/posts/TYmdcGm5NayDJXD2k), and jotted down a few notes.
+
 
 ####1.  Established & Enterprise Grade  
 
