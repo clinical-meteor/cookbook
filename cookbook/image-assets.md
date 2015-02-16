@@ -1,6 +1,8 @@
 ## Image Assets  
 
-[Background Images and Wallpapers](http://hdwallsource.com/)
+[Background Images and Wallpapers](http://hdwallsource.com/)  
+[Subtle Patterns](http://subtlepatterns.com/)  
+[Webtexture.net](http://www.webtexture.net/)  
 
 ==========================================
 #### Adding Image Assets via Packages
