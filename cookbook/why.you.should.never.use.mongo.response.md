@@ -1,5 +1,7 @@
 
 
+In response to the classic article [Why You Should Never Use MongoDB](http://crater.io/posts/TYmdcGm5NayDJXD2k).
+
 ####1.  Established & Enterprise Grade  
 
 First, of all, lets just understand that documented oriented databases are more than 40 years old, and an extremely established technology in some industries.  Specifically, the first electronic medical record (ie. the healthcare industry) ever written was the Massachusetts General Hospital Multi-Programming System, back in 1966.  That's before the SQL movement took off.
