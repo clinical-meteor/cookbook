@@ -15,11 +15,11 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
+| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | 90+ | ![travisci](https://travis-ci.org/awatson1978/offline-todos.svg) | 1.0.3.1 |
 | [Panel Layout](https://panel-layout.meteor.com)  | [panel-layout](https://github.com/awatson1978/panel-layout) | 24 | ![travis-build](https://travis-ci.org/awatson1978/panel-layout.svg?branch=master)   |  1.0.3.1 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | 78 | ![travisci](https://travis-ci.org/awatson1978/minimongo-table.svg) |  1.0.3.1 |
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | 10 | ![travisci](https://travis-ci.org/awatson1978/rest-api.svg?branch=master) | 1.0.3.1 |
 | [Rest Analytics Pipeline](http://rest-analytics-pipeline.meteor.com/)      | [rest-analytics-pipeline](https://github.com/awatson1978/rest-analytics-pipeline) | 52 | ![travis-build](https://travis-ci.org/awatson1978/rest-analytics-pipeline.svg?branch=master) | 1.0.3.1 |
-| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | 93 | ![travisci](https://travis-ci.org/awatson1978/offline-todos.svg) | 1.0 |
 | [Fonts & Calligraphy](http://fonts.meteor.com/)   | [fonts-site](https://github.com/awatson1978/fonts-site) |  15  | ![travisci](https://travis-ci.org/awatson1978/fonts-site.svg?branch=master) | 1.0.3.1 |
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | 8 | ![travis-build](https://travis-ci.org/awatson1978/leaflet-parties.svg?branch=master) | 1.0.3.1 |
 | [Stripe - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  7 |  ![travis-build](https://travis-ci.org/awatson1978/payment-subscription.svg?branch=master) | 1.0.3.1 |
