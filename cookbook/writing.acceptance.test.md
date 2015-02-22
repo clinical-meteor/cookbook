@@ -110,7 +110,9 @@ You should be up and running!
 Once you have your first test running green, check out the [Nightwatch API](http://nightwatchjs.org/api#assert-attributeEquals), and start creating more advanced tests, like this leaderboard test:
 
 ````js
-browser
+module.exports = {
+  "Hello World" : function (browser) {
+    browser
     .url("http://localhost:3000")
     .waitForElementVisible('body', 1000)
     .waitForElementVisible('div#outer', 1000)
@@ -160,6 +162,8 @@ browser
     //.setValue('input[type=text]', 'nightwatch')
 
     .end();
+  }
+};
 ````
 
 #### Leaderboard Example  
