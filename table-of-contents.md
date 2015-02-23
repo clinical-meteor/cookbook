@@ -47,6 +47,8 @@
     - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
     - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
     - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
+    - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
+    - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
   - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
   - [Data Validation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
   - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
