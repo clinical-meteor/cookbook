@@ -2,8 +2,10 @@
 
 The holy grail of web-apps is a single code base across different platforms.  In theory, this will drastically reduced maintenance costs and consistency of user experience across devices.  In practice, we're not quite there yet, but getting close.  But to create such an application, there are a lot of steps that one has to go through.
 
-[how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-1  ](http://www.raywenderlich.com/8003/how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-1)  
-[how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-2](http://www.raywenderlich.com/8045/how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-2)  
+[How to Submit Your App to Apple from No Account to App  Store - Part 1  ](http://www.raywenderlich.com/8003/how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-1)  
+[How to Submit Your App to Apple from No Account to App  Store - Part 2](http://www.raywenderlich.com/8045/how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-2)  
+[Beta Testing Your iOS App](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html)  
+[iTunesConnect](https://itunesconnect.apple.com)  
 
 
 
