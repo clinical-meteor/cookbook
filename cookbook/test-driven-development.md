@@ -114,8 +114,11 @@ The following tools are first-generation testing frameworks.  They represent a l
 
 Load testing is a cousin to unit-testing and acceptance testing, and involves driving large amounts of test traffic to a server, to see how an application performs under load.  This is a topic that's being actively researched and developed in the Meteor community, as many apps are going into production.  
 
-Using PhantomJS  
-https://gist.github.com/awatson1978/5139909  
+Meteor Down
+https://github.com/meteorhacks/meteor-down
+
+Using PhantomJS/CasperJS
+https://github.com/yauh/meteor-parties-stresstest 
 
 Load Testing on AWS  
 https://groups.google.com/forum/?fromgroups=#!searchin/meteor-talk/load$20test/meteor-talk/BJXA1FRuTzU/M2e9pCH4es0J  
