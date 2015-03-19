@@ -34,9 +34,12 @@ sudo modulus login
 sudo modulus deploy
 ````
 
+Once you get it up and running on Modulus, simply deploy extra server instances.
+
 =========================================
 #### Scaling the Databaes Layer (PaaS)
 
+When your database grows to the point that you've outgrown the default Mongo instance provided by Modulus, you'll want to think about migrating your data to something that's sharded.  In that case, you'll want to point your MONGO_URL towards something Compose.io (formerly known as MongoHQ) or a similar service.
 
 [app.compose.io (formerly MongoHQ)](https://www.compose.io/)
 
