@@ -1,10 +1,15 @@
+Basic Async Recipes
+======================================
+
+https://gist.github.com/possibilities/3443021
+
+
 Async Worker Scripts
 ======================================
 
 
 Excellent writeup by Kuba Wyrobek on StackOverflow   
 http://stackoverflow.com/questions/24743402/how-to-get-an-async-data-in-a-function-with-meteor
-
 
 ============================================
 #### Client Side
