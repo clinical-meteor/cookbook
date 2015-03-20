@@ -15,7 +15,6 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
-| [Offline Todos](http://offline-todos.meteor.com) | [offline-todos](https://github.com/awatson1978/offline-todos) | 90+ | ![travisci](https://travis-ci.org/awatson1978/offline-todos.svg) | 1.0.3.1 |
 | [Panel Layout](https://panel-layout.meteor.com)  | [panel-layout](https://github.com/awatson1978/panel-layout) | 24 | ![travis-build](https://travis-ci.org/awatson1978/panel-layout.svg?branch=master)   |  1.0.3.1 |
 | [Minimongo Table](https://minimongo-table.meteor.com)  | [minimongo-table](https://github.com/awatson1978/minimongo-table) | 78 | ![travisci](https://travis-ci.org/awatson1978/minimongo-table.svg) |  1.0.3.1 |
 | [REST API](http://rest-api.meteor.com/)  | [rest-api](https://github.com/awatson1978/rest-api) | 10 | ![travisci](https://travis-ci.org/awatson1978/rest-api.svg?branch=master) | 1.0.3.1 |
@@ -53,6 +52,7 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
+| [Clinical Checklists](http://clinical-checklists.meteor.com/) | [clinical-checklists](https://github.com/awatson1978/clinical-checklists) | 90+ | ![travisci](https://travis-ci.org/awatson1978/clinical-checklists.svg?branch=master) | 1.0.3.1 |
 | [Clinical Trials](http://clinical-trials.meteor.com/) | [clinical-trials](https://github.com/awatson1978/clinical-trials) | 800+ | ![travis-build](https://travis-ci.org/awatson1978/clinical-trials.svg?branch=master) | 0.9.4 |
 | [Clinical ActiveRecord](https://clinical-activerecord.meteor.com)  | [clinical-activerecord](https://github.com/awatson1978/clinical-activerecord) | 296 | ![travisci](https://travis-ci.org/awatson1978/clinical-activerecord.svg) |  1.0.3.1 |
 | [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) |  7 | ![Travis Build](https://travis-ci.org/awatson1978/clinical-scheduling.svg?branch=master) | 1.0.3.1 |
