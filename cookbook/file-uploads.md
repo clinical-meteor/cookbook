@@ -252,7 +252,7 @@ Thanks to Raz for this excellent example.  You'll want to check out the complete
 ---------------------------------------
 #### Additional References  
 
-[Filepicker.io Uploads and Image Conversion](https://meteor.hackpad.com/Meteor-Cookbook-Filepicker.io-Uploads-and-Image-Conversion-hIpSwJQV3HJ)
+[Filepicker.io Uploads and Image Conversion](https://meteor.hackpad.com/Meteor-Cookbook-Filepicker.io-Uploads-and-Image-Conversion-hIpSwJQV3HJ)  
 [Dario's Save File Pattern](https://gist.github.com/dariocravero/3922137)  
 [Micha Roon's File Upload Pattern](https://coderwall.com/p/7tpa8w)  
 [EventedMind File Upload Package](https://www.eventedmind.com/feed/meteor-build-a-file-upload-package)  
