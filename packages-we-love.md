@@ -2,6 +2,8 @@
 
 | Package       | UI | Clinical  | Contributor | Scaffold | Version  |
 | ------------- |:----------------:| :----------------: |  :----------------: | :----------------: | -------------:|
+
+| [Meteor.isDevelopment()](https://atmospherejs.com/jboulhous/dev)| none | no |  jboulhous | no | ? |
 | [GAnalytics](https://github.com/datariot/meteor-ganalytics) | none | no |  datariot | yes | ? |
 | [Template Extended API](https://github.com/aldeed/meteor-template-extension)  | ? | no |  aldeed | No | ? |
 | [Session Extended API](https://github.com/awatson1978/session-extended-api)  | ? | no |  awatson1978 | No | ? |
@@ -22,3 +24,6 @@
 | [miguelvalverde:font-awesome-4.1.0]() | none | no |  ? | No | ? |  
 | [mrt:jquery-csv]() | none | no |  ? | No | ? |  
 | [rzymek:fullcalendar](https://atmospherejs.com/rzymek/fullcalendar) | custom | no | rzymek  | no | ? |
+| [peerlibrary/meteor-blaze-components](https://github.com/peerlibrary/meteor-blaze-components) | no | no | ---  | no | ? |
+| [numtel/meteor-webcomponent](https://github.com/numtel/meteor-webcomponent) | no | no | ---  | no | ? |
+| [DispatchMe:mgp](https://github.com/DispatchMe/mgp) | no | no | ---  | no | ? |
