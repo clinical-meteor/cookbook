@@ -2,7 +2,6 @@
 
 | Package       | UI | Clinical  | Contributor | Scaffold | Version  |
 | ------------- |:----------------:| :----------------: |  :----------------: | :----------------: | -------------:|
-
 | [Meteor.isDevelopment()](https://atmospherejs.com/jboulhous/dev)| none | no |  jboulhous | no | ? |  
 | [GAnalytics](https://github.com/datariot/meteor-ganalytics) | none | no |  datariot | yes | ? |  
 | [Template Extended API](https://github.com/aldeed/meteor-template-extension)  | ? | no |  aldeed | No | ? |  
