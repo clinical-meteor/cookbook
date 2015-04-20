@@ -146,3 +146,16 @@ https://atmosphere.meteor.com/wtf/package
   }
 }
 ````
+
+================================================
+#### Bulk Package Deployments
+
+https://www.npmjs.com/package/mrtbulkrelease
+
+
+================================================
+#### Private Packages
+
+https://github.com/DispatchMe/mgp
+
+
