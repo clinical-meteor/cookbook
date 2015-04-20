@@ -28,4 +28,4 @@
 | [DispatchMe:mgp](https://github.com/DispatchMe/mgp) | no | ---  | no | 
 | [grigio:babel](https://atmospherejs.com/grigio/babel) | --- | ---  | --- | 
 | [grove:less](https://atmospherejs.com/grove/less) | ---| ---  | --- | 
-| [rahul:animate-everything(https://atmospherejs.com/rahul/animate-everything) | --- | ---  | --- | 
+| [rahul:animate-everything](https://atmospherejs.com/rahul/animate-everything) | --- | ---  | --- | 
