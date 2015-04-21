@@ -3,7 +3,7 @@
 Language syntax doesn't have to be hard.  But somehow it often is.  Meteor makes language syntax a breeze, if you're willing to use a few particular patterns.  
 
 ####Semantic HTML in Meteor
-Keep in mind that Meteor introduces the ``<template>`` tag, and supports [HTML5](http://www.w3schools.com/html/html5_semantic_elements.asp), which includes all of the following structural tags.  
+Meteor introduces the ``<template>`` tag, and supports [HTML5](http://www.w3schools.com/html/html5_semantic_elements.asp), which includes [all of the following structural tags](http://www.w3schools.com/tags/default.asp).
 
     <template>
     <header>
@@ -28,7 +28,7 @@ Keep in mind that Meteor introduces the ``<template>`` tag, and supports [HTML5]
     <embed>
     <svg>
     
-These should all be valid tags in your application.  The more you use them, the cleaner and more concise your application will be.
+These should all be valid tags in your application.  The more you use them, the cleaner and more concise your application will be.  
 
 But, eventually, you'll want to start extending those tags with classes.  How you go about doing that can dramatically affect how well your program runs, and how easy it is to implement new features. Suffice it to say that it drastically helps to keep your code as semantic as possible.  Ideally, you'll find yourself writing code similar to the following, or better.
 
