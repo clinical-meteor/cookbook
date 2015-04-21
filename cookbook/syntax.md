@@ -53,7 +53,7 @@ If you can structure your css/less classes in this manner, you'll be able to off
 
 
 #### Semantic Libraries  
-At the very least, consider a semantic UI library of some sort, such as Bootstrap 3 or Zurb Foundation (they're the oldest, and have been around the longest).  All the examples in the Meteor Cookbook use Bootstrap 3.  However, in the future, we're considering moving to something even more semantic, such as Semantic UI.  
+To get started, you may want to consider a semantic UI library of some sort, such as Bootstrap 3 or Zurb Foundation (they're the oldest, and have been around the longest).  
 
 [Bootstrap](http://getbootstrap.com/)  
 [Semantic UI](http://semantic-ui.com/)  
@@ -61,8 +61,8 @@ At the very least, consider a semantic UI library of some sort, such as Bootstra
 You can install either of these packages with the following commands:
 
 ````sh
-sudo mrt add bootstrap-3
-sudo mrt add semantic-ui
+meteor add nemo64:bootstrap
+meteor add semantic:ui-css
 ````
 
 You can also find related packages on Atmosphere:  
