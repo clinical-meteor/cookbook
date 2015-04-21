@@ -79,8 +79,6 @@ Links to live versions of the examples associated with this cookbook.
 [clinical:ui-alert-panel](https://github.com/awatson1978/clinical-ui-alert-panel)  | bootstrap3 | yes | --- | yes | 1.0.5  |
 | [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | no | --- | 1.0.0  |
 | [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | yes | --- |  --- | --- | | clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
-| clinical:grays-anatomy  | --- | --- | --- | --- | ---  |
-| clinical:sesssion-extended-api   | --- | --- | --- | --- | ---  |
 
 
 ========================================
