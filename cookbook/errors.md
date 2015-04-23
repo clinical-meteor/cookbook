@@ -48,6 +48,16 @@ Check that you haven't mispelled the word ``Template`` as ``Templates``.  It's a
 {{ customTemplate }}
 ````
 
+Also, make sure that if you're defining templates in a package, that you specify ``['client']``, and don't specify the server with ``['client', 'server']`` or by omitting the location.  The proper syntax should be: 
+
+````js
+  api.use([
+    'templating',
+    'iron:router',
+    'grove:less'
+  ], ['client']);
+````
+
 
 **ReferenceError: ServiceConfiguration is not defined**     
 
