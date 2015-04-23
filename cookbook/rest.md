@@ -8,6 +8,7 @@ https://github.com/EventedMind/iron-router/blob/master/lib/server/router.js
 https://github.com/nooitaf/meteor-cfs-public-folder/blob/master/cfs-public-folder.js   
 
 
+
 ````js
 // serve up a virtual library
 Router.map(function () {
@@ -46,25 +47,20 @@ var getPost = function() {
 
 
 #### References  
+[Official Rest API support in Meteor](https://forums.meteor.com/t/official-rest-api-support-in-meteor/2864/19)  
+[meteor-rest-collection-api-and-auth](http://stackoverflow.com/questions/13699126/meteor-rest-collection-api-and-auth)
+[Meteor Hack Week: REST APIs with Meteor](https://meteor.hackpad.com/Meteor-Hack-Week-REST-APIs-with-Meteor-XK2NNXqhUvj)  
 
-**Meteor REST Collection**  
-http://stackoverflow.com/questions/13699126/meteor-rest-collection-api-and-auth  
+#### Current Best Practices and MDG Encouraged Solutions  
+[restivus](https://atmospherejs.com/nimble/restivus)  
+[cfs:http-publish](https://atmospherejs.com/cfs/http-publish)
+[cfs:http-methods](https://atmospherejs.com/cfs/http-methods)
+
+#### Other Projects Related to Exposing REST APIs
+
+[reststop2](https://github.com/BeDifferential/reststop2)    
+[meteor-collectionapi](https://github.com/crazytoad/meteor-collectionapi)  
+[meteor-http-publish](https://github.com/CollectionFS/Meteor-http-publish)  
+[meteor-http-publish](https://github.com/CollectionFS/Meteor-http-methods)  
 
 
-
-#### Light Weight REST Api
-
-**RestStop 2**  
-https://github.com/BeDifferential/reststop2  
-
-**Meteor - Collection API**    
-https://github.com/crazytoad/meteor-collectionapi  
-
-
-#### REST APIs using GridFS
-
-**HTTP Publish**  
-https://github.com/CollectionFS/Meteor-http-publish  
-
-**HTTP Methods**  
-https://github.com/CollectionFS/Meteor-http-methods  
