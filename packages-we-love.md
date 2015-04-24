@@ -29,3 +29,7 @@
 | [grigio:babel](https://atmospherejs.com/grigio/babel) | --- | ---  | --- | 
 | [grove:less](https://atmospherejs.com/grove/less) | ---| ---  | --- | 
 | [rahul:animate-everything](https://atmospherejs.com/rahul/animate-everything) | --- | ---  | --- | 
+| [yogiben/pretty-emails](https://atmospherejs.com/yogiben/pretty-emails) | --- | ---  | --- | 
+
+
+
