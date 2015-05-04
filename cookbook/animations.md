@@ -3,6 +3,11 @@ Animations
 
 There are two approaches to creating animations:  the first is with with CSS in the View/Presentation layer; the second is with Javascript in the Controller/Application layer.  On the one hand, using CSS3 transforms gets you GPU optimized performance and mostly flicker-free animations, at the price of relying on a subsystem that's maybe over-engineered and constrained to element transformations.  On the other hand, using Javascript and SVG will get you beautiful data-driven animations using D3.js.  But they are very tricky and fickle to create.
 
+----------------------------------------
+#### _uihooks   
+
+https://groups.google.com/forum/#!msg/meteor-core/1kUoG2mcaRw/j4bNvXu36IoJ
+https://github.com/tmeasday/transition-helper/blob/master/transition-helper.js
 
 ----------------------------------------
 #### Animations in the View/Presentation Layer    
