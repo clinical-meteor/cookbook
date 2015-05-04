@@ -8,6 +8,7 @@ There are two approaches to creating animations:  the first is with with CSS in 
 
 https://groups.google.com/forum/#!msg/meteor-core/1kUoG2mcaRw/j4bNvXu36IoJ
 https://github.com/tmeasday/transition-helper/blob/master/transition-helper.js
+https://gist.github.com/benstr/1ed39b35bb0b8e4c5de6
 
 ----------------------------------------
 #### Animations in the View/Presentation Layer    
