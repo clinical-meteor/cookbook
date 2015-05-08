@@ -2,9 +2,9 @@
 
 | Package       | UI  | Contributor | Scaffold   |
 | ------------- | :----------------: |  :----------------: | :----------------: |
-| [Meteor.isDevelopment()](https://atmospherejs.com/jboulhous/dev)| none  |  jboulhous | no | 
-| [GAnalytics](https://github.com/datariot/meteor-ganalytics) | none  |  datariot | yes | 
-| [Template Extended API](https://github.com/aldeed/meteor-template-extension)  | ?  |  aldeed | No | 
+| [jboulhous/dev](https://atmospherejs.com/jboulhous/dev)| none  |  jboulhous | no | 
+| [datariot/meteor-ganalytics](https://github.com/datariot/meteor-ganalytics) | none  |  datariot | yes | 
+| [aldeed/meteor-template-extension](https://github.com/aldeed/meteor-template-extension)  | ?  |  aldeed | No | 
 | [Session Extended API](https://github.com/awatson1978/session-extended-api)  | ? |  awatson1978 | No | 
 | [Payments - Stripe](https://atmosphere.meteor.com/package/stripe) | none |  ? | Yes | 
 | [Date/Time - Moment](https://github.com/possibilities/meteor-moment)  | none |  possibilities | No | 
@@ -31,5 +31,4 @@
 | [rahul:animate-everything](https://atmospherejs.com/rahul/animate-everything) | --- | ---  | --- | 
 | [yogiben:pretty-emails](https://atmospherejs.com/yogiben/pretty-emails) | --- | ---  | --- | 
 | [gfk:notifications](https://atmospherejs.com/gfk/notifications) | --- | ---  | --- | 
-
-
+| [CodeAdventure:meteor-space](https://atmospherejs.com/CodeAdventure/meteor-space) | --- | ---  | --- | 
