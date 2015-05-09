@@ -10,13 +10,7 @@ Hi.  Welcome to the Meteor Cookbook; a FAQ and tutorial culled and curated from 
 ###[Example Apps](https://github.com/awatson1978/meteor-cookbook/tree/master/examples)  
 ###[Example Apps - Clinical Track](https://github.com/awatson1978/meteor-cookbook/tree/master/examples-clinical)   
 
-========================================
-### Get the Example Apps 
 
-````sh
-git clone http://github.com/awatson1978/meteor-cookbook
-cd meteor-cookbook/examples
-````
 ========================================
 ### Install the StarryNight Utility  
 
