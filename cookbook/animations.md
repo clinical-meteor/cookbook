@@ -200,3 +200,4 @@ generic fadein/fadeout
 
 
 TODO: Add more CSS animations.
+https://github.com/grigio/todomvc-meteor-react/blob/master/client/example-animation.css
