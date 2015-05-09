@@ -1,4 +1,3 @@
-========================================
 Examples & Demos
 ===============================
 
@@ -12,6 +11,11 @@ Examples & Demos
 | [Geolocated Parties](https://github.com/awatson1978/leaflet-parties)   | [leaflet-parties](https://github.com/awatson1978/leaflet-parties) | 8 | ![travis-build](https://travis-ci.org/awatson1978/leaflet-parties.svg?branch=master) | 1.0.3.1 |
 | [Medical Illustration Library](http://image-link-archive.meteor.com) | [image-link-archive](https://github.com/awatson1978/image-link-archive) | 7 | ![travis-build](https://travis-ci.org/awatson1978/image-link-archive.svg?branch=master) | 1.0.3.1 |
 | [Run Command Line Script](https://github.com/awatson1978/exec-command-line-from-ui/tree/master) | [exec-commaind-line-from-ui](https://github.com/awatson1978/exec-command-line-from-ui) |  7 | ![travis-build](https://travis-ci.org/awatson1978/exec-command-line-from-ui.svg?branch=master) | 1.0.3.1 |
+
+
+
+===============================
+#### Other Demos
 
 
 Links to live versions of the examples associated with this cookbook.  
