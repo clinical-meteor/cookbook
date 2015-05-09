@@ -38,3 +38,11 @@ Additional examples that may be of interest to people.
 | [Dictionary](http://dictionary.meteor.com/)             | [dictionary](https://github.com/awatson1978/dictionary) |  7  | ![travis-build](https://travis-ci.org/awatson1978/dictionary.svg?branch=master) | 0.6.5 |
 | [Collabtionary](http://collabtionary.meteor.com/)       | [collabtionary](https://github.com/awatson1978/collabtionary)      |  7  | ![travis-build](https://travis-ci.org/awatson1978/collabtionary.svg?branch=master) | 0.6.5 |
 | [Hubble (Datasets Demo)](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  7  | ![travis-build](https://travis-ci.org/awatson1978/hubble.svg?branch=master) | 1.0.3.1 |
+
+========================================
+###More Great Demos  
+
+
+| Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
+| ------------- |:----------------:| ----------------| ---------------- | ---------------:|
+| [iTunes Library](http://itunes.meteor.com/album/291183)  | [reactconf](https://github.com/mitar/reactconf-2015-HYPE) | --- | --- |  1.0.3.1 |
