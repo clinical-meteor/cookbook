@@ -1,7 +1,7 @@
 Clinical Track Packages
 =================================
 
-Please note:  most of the packages in this directory are stubs.  I hope to get through them and get them published within the next month!
+Please note:  most of the packages in this directory are stubs.  I hope to get through them and get them under QA and published within the next month!
 
 ========================================
 ### Clinical:Meteor Packages
