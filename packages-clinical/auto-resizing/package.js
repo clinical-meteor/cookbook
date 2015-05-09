@@ -1,22 +1,13 @@
 Package.describe({
-  name: 'clinical:auto-resizing',
+  summary: 'Hooks for resizing UI elements.',
   version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  name: 'clinical:auto-resizing',
+  git: 'http://github.com/awatson1978/clinical-auto-resizing.git'
 });
 
-Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
-  api.addFiles('auto-resizing.js');
-});
+Package.on_use(function (api) {
+  api.versionsFrom('1.0');
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('clinical:auto-resizing');
-  api.addFiles('auto-resizing-tests.js');
+  api.addFiles('resizing.js', 'client');
+  api.addFiles('resizing.css', 'client');
 });

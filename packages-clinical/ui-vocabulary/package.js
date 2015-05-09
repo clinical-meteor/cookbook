@@ -1,22 +1,27 @@
 Package.describe({
-  name: 'clinical:ui-vocabulary',
-  version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  summary: "UI vocabulary for ClinicalFramework.",
+  version: "1.0.5",
+  git: "http://github.com/awatson1978/clinical-ui-vocabulary.git",
+  name: "clinical:ui-vocabulary"
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
-  api.addFiles('ui-vocabulary.js');
+  api.versionsFrom('METEOR@1.0');
+  api.use('less@1.0.0');
+  api.use('ian:bootstrap-3@3.3.1');
+
+  api.addFiles('anchoring.less', 'client');
+  api.addFiles('borders.less', 'client');
+  api.addFiles('colors.less', 'client');
+  api.addFiles('fonts.less', 'client');
+  api.addFiles('haptics.less', 'client');
+  api.addFiles('padding.less', 'client');
+  api.addFiles('pages.less', 'client');
+  api.addFiles('sizing.less', 'client');
+  api.addFiles('text.less', 'client');
+
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('clinical:ui-vocabulary');
-  api.addFiles('ui-vocabulary-tests.js');
 });
