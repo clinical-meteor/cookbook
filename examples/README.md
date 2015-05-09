@@ -46,3 +46,5 @@ Additional examples that may be of interest to people.
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
 | [iTunes Library](http://itunes.meteor.com/album/291183)  | [reactconf](https://github.com/mitar/reactconf-2015-HYPE) | --- | --- |  1.0.3.1 |
+| ---  | [todomvc-meteor-react-with-router-animations](https://forums.meteor.com/t/todomvc-meteor-react-with-router-animations/3328) | --- | --- |  --- |
+
