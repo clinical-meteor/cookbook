@@ -15,14 +15,6 @@ Template.promptModal.getPromptMessage = function(){
 Template.promptModal.getUserName = function(){
   return Meteor.user().profile.name;
 };
-Template.promptModal.rendered = function(){
-  $("#promptModal").modal({                    
-    "backdrop"  : "static",
-    "keyboard"  : true,
-    "show"      : false                     
-  });
-};
-
 ````
 
 And when you get a whole bunch of them, refactor, organize, and consolidate into the following syntax:  
@@ -37,13 +29,6 @@ Template.promptModal.helpers({
   },
   getUserName = function(){
     return Meteor.user().profile.name;
-  },
-  rendered: function(){
-    $("#promptModal").modal({                    
-      "backdrop"  : "static",
-      "keyboard"  : true,
-      "show"      : false                     
-    });
   }
 });
 ````
