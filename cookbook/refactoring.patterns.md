@@ -113,7 +113,7 @@ starrynight publish --create my:package --from /path/to/component
 
 #### Converting CSS/HTML to JS
 
-````
+````js
 // starrynight convert --toJss /path/to/file.css
 // starrynight convert --toJson /path/to/file.html
 ````
