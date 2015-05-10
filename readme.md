@@ -20,7 +20,7 @@ npm install starrynight -g
 
 ========================================
 ###[Example Apps](https://github.com/awatson1978/meteor-cookbook/tree/master/examples)  
-The recipes in the Cookbook are great, but often times it's just best to go look at actual applications to see how everything fits together.  Here you'll find nearly two dozen applets (and more in the works!) to help you get started building your own apps!
+The recipes in the Cookbook are great, but often times it's just best to go look at actual applications to see how everything fits together.  Here you'll find nearly two dozen applets (and more in the works!) to help you get started building your own apps.  
 
 
 
