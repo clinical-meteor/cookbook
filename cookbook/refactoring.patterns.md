@@ -78,7 +78,7 @@ And now we save ourselves the retyping of ``Template.fooTemplate.helpers({getUse
 
 
 
-#### Convert Helper Functions Into an Isomorphically Shared Object  
+#### Convert Helper Functions Into an Isomorphic Object  
 
 Syntax matters when refactoring code, and if you want to isomorphically share helper functions between server and client, you'll need to begin by refactoring your function declarations into anonymous function expressions.
 ````js
@@ -112,5 +112,22 @@ lipsumGenerator.getRandomString();
 ````
 
 
+#### Sharing Events and Helpers Between Templates  
+
+````
+meteor add [aldeed:template-extension](https://github.com/aldeed/meteor-template-extension)  
+````
 
 
+#### Extracting Packages
+
+````
+starrynight publish --create my:package --from /path/to/component
+````
+
+#### Converting CSS/HTML to JS
+
+````
+// starrynight convert --toJss /path/to/file.css
+// starrynight convert --toJson /path/to/file.html
+````
