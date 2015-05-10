@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'foo',
+  name: 'foo:foo-edit-page',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -12,11 +12,14 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles('foo.js');
+  api.addFiles('fooEditPage.html');
+  api.addFiles('fooEditPage.js');
+  api.addFiles('fooEditPage.less');
+
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('foo');
-  api.addFiles('foo-tests.js');
+  api.use('foo:foo-edit-page');
+  api.addFiles('foo-edit-page-tests.js');
 });
