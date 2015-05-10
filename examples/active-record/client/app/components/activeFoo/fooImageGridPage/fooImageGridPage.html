@@ -1,0 +1,21 @@
+<template name="fooImageGridPage">
+  <article id="fooImageGridPage" class="page">
+    {{> pageNavHeader}}
+
+    <input id="fooSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." />
+
+    <ul id="fooImageGrid">
+      {{#each lists}}
+        <li>
+          <img class="fooImage" src="{{imageUrl}}" />
+        </li>
+      {{/each}}
+      <li id="addNewFoo" class="addNewFoo">
+          <img class="fooImage" src="{{imageUrl}}" />
+      </li>
+    </ul>
+    <footer class="cardFooter">
+      <h3 class="addFooIcon"><i class="fa fa-sun-o"></i></h3>
+    </footer>
+  </article>
+</template>
