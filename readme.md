@@ -45,6 +45,12 @@ This section is in the works, and will document the architecture behind creating
 
 
 
+========================================
+###Contributing  
+
+Pull requests with typo corrections and copyediting are nearly always accepted.  
+
+Most of the main development right now is in migrating cookbook recipes into components, packaging them up, and/or moving them into the StarryNight utility.  The cookbook is on it's way to becoming the documentation for a Clinical Framework running on Meteor.  
 
 
 
