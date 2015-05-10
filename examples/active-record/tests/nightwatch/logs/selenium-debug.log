@@ -1,0 +1,89 @@
+22:07:39.766 INFO - Launching a standalone server
+Setting system property webdriver.chrome.driver to selenium/chromedriver
+22:07:39.802 INFO - Java: Apple Inc. 20.65-b04-466.1
+22:07:39.803 INFO - OS: Mac OS X 10.10.2 x86_64
+22:07:39.812 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+22:07:39.885 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+22:07:39.918 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+22:07:39.919 INFO - Version Jetty/5.1.x
+22:07:39.920 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+22:07:39.921 INFO - Started HttpContext[/selenium-server,/selenium-server]
+22:07:39.921 INFO - Started HttpContext[/,/]
+22:07:39.972 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@643c0007
+22:07:39.972 INFO - Started HttpContext[/wd,/wd]
+22:07:39.979 INFO - Started SocketListener on 0.0.0.0:4444
+22:07:39.979 INFO - Started org.openqa.jetty.jetty.Server@acfec48
+22:07:40.204 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])
+22:07:40.214 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]
+22:07:43.339 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]]
+22:07:43.355 INFO - Executing: [get: http://localhost:3000])
+22:07:43.887 INFO - Done: [get: http://localhost:3000]
+22:07:43.893 INFO - Executing: [set window size])
+22:07:44.087 INFO - Done: [set window size]
+22:07:44.093 INFO - Executing: [find element: By.cssSelector: body])
+22:07:44.218 INFO - Done: [find element: By.cssSelector: body]
+22:07:44.223 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+22:07:44.258 INFO - Done: [find element: By.cssSelector: #mainPanel]
+22:07:44.261 INFO - Executing: [find element: By.cssSelector: #transparentPanel])
+22:07:44.324 INFO - Done: [find element: By.cssSelector: #transparentPanel]
+22:07:44.329 INFO - Executing: [find element: By.cssSelector: #mainPage])
+22:07:44.373 INFO - Done: [find element: By.cssSelector: #mainPage]
+22:07:44.376 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (f6cd6bbd-d22c-7e46-872a-76f23ab1e74c)] -> css selector: #mainPage]])
+22:07:44.425 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (f6cd6bbd-d22c-7e46-872a-76f23ab1e74c)] -> css selector: #mainPage]]
+22:07:44.428 INFO - Executing: [delete session: 2990f0f0-dd61-49a2-9073-1dbf6d0d0701])
+22:07:44.560 INFO - Done: [delete session: 2990f0f0-dd61-49a2-9073-1dbf6d0d0701]
+22:07:44.687 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]])
+22:07:44.690 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]
+22:07:47.884 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]]
+22:07:47.890 INFO - Executing: [set window size])
+22:07:48.020 INFO - Done: [set window size]
+22:07:48.028 INFO - Executing: [switch to frame: null])
+22:07:48.073 INFO - Done: [switch to frame: null]
+22:07:48.079 INFO - Executing: [find element: By.cssSelector: body])
+22:07:48.164 INFO - Done: [find element: By.cssSelector: body]
+22:07:48.168 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]])
+22:07:48.217 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]]
+22:07:48.222 INFO - Executing: [find element: By.cssSelector: body])
+22:07:48.271 INFO - Done: [find element: By.cssSelector: body]
+22:07:48.275 INFO - Executing: [get: http://localhost:3000])
+22:07:48.767 INFO - Done: [get: http://localhost:3000]
+22:07:48.774 INFO - Executing: [find element: By.cssSelector: #mainPage])
+22:07:48.894 INFO - Done: [find element: By.cssSelector: #mainPage]
+22:07:48.898 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #mainPage]])
+22:07:48.961 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #mainPage]]
+22:07:48.965 INFO - Executing: [take screenshot])
+22:07:49.491 INFO - Done: [take screenshot]
+22:07:49.561 INFO - Executing: [switch to frame: null])
+22:07:49.575 INFO - Done: [switch to frame: null]
+22:07:49.580 INFO - Executing: [find element: By.cssSelector: body])
+22:07:49.620 INFO - Done: [find element: By.cssSelector: body]
+22:07:49.623 INFO - Executing: [is displayed: 2 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]])
+22:07:49.668 INFO - Done: [is displayed: 2 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]]
+22:07:49.673 INFO - Executing: [find element: By.cssSelector: body])
+22:07:49.725 INFO - Done: [find element: By.cssSelector: body]
+22:07:49.728 INFO - Executing: [get: http://localhost:3000/marketing])
+22:07:50.042 INFO - Done: [get: http://localhost:3000/marketing]
+22:07:50.047 INFO - Executing: [find element: By.cssSelector: #marketingPage])
+22:07:50.118 INFO - Done: [find element: By.cssSelector: #marketingPage]
+22:07:50.121 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #marketingPage]])
+22:07:50.173 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #marketingPage]]
+22:07:50.176 INFO - Executing: [take screenshot])
+22:07:50.665 INFO - Done: [take screenshot]
+22:07:50.762 INFO - Executing: [get: http://localhost:3000/support])
+22:07:51.030 INFO - Done: [get: http://localhost:3000/support]
+22:07:51.035 INFO - Executing: [find element: By.cssSelector: #supportPage])
+22:07:51.109 INFO - Done: [find element: By.cssSelector: #supportPage]
+22:07:51.112 INFO - Executing: [is displayed: 4 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #supportPage]])
+22:07:51.163 INFO - Done: [is displayed: 4 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #supportPage]]
+22:07:51.167 INFO - Executing: [take screenshot])
+22:07:52.147 INFO - Done: [take screenshot]
+22:07:52.466 INFO - Executing: [get: http://localhost:3000/privacy])
+22:07:52.737 INFO - Done: [get: http://localhost:3000/privacy]
+22:07:52.745 INFO - Executing: [find element: By.cssSelector: #privacyPage])
+22:07:52.815 INFO - Done: [find element: By.cssSelector: #privacyPage]
+22:07:52.818 INFO - Executing: [is displayed: 5 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #privacyPage]])
+22:07:52.872 INFO - Done: [is displayed: 5 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #privacyPage]]
+22:07:52.876 INFO - Executing: [take screenshot])
+22:07:53.608 INFO - Done: [take screenshot]
+22:07:53.793 INFO - Executing: [delete session: 5cc942a7-bbd5-4aa3-85a9-3b0ee58eaefc])
+22:07:53.880 INFO - Done: [delete session: 5cc942a7-bbd5-4aa3-85a9-3b0ee58eaefc]

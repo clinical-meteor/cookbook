@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="itunes.connect"
+    errors="0" failures="0" hostname="" id="" package="itunes.connect" skipped="0"
+    tests="1" time="9.201" timestamp="Wed, 29 Apr 2015 03:07:44 GMT">
+  
+    <testcase name="iTunesConnect" time="9.201" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
