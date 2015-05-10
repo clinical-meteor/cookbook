@@ -32,3 +32,5 @@
 | [yogiben:pretty-emails](https://atmospherejs.com/yogiben/pretty-emails) | --- | ---  | --- | 
 | [gfk:notifications](https://atmospherejs.com/gfk/notifications) | --- | ---  | --- | 
 | [CodeAdventure:meteor-space](https://atmospherejs.com/CodeAdventure/meteor-space) | --- | ---  | --- | 
+| [meteorhacks:sikka](https://github.com/meteorhacks/sikka) | --- | ---  | --- | 
+

@@ -6,6 +6,11 @@ There are two approaches to creating animations:  the first is with with CSS in 
 ----------------------------------------
 #### _uihooks   
 
+
+https://github.com/gwendall/meteor-ui-hooks  
+https://github.com/gwendall/meteor-template-animations  
+http://template-animations.meteor.com/  
+
 https://groups.google.com/forum/#!msg/meteor-core/1kUoG2mcaRw/j4bNvXu36IoJ
 https://github.com/tmeasday/transition-helper/blob/master/transition-helper.js
 https://gist.github.com/benstr/1ed39b35bb0b8e4c5de6
@@ -195,3 +200,5 @@ generic fadein/fadeout
 
 
 TODO: Add more CSS animations.
+https://github.com/grigio/todomvc-meteor-react/blob/master/client/example-animation.css
+https://github.com/grigio/todomvc-meteor-react/blob/master/client/vendor/animate.css
