@@ -11,7 +11,7 @@ The Meteor Cookbook is a FAQ and tutorial culled and curated from nearly 3 years
 ========================================
 ### [The StarryNight Utility](http://starrynight.meteor.com/)    
 
-Eventually, there were so many scripts in the Cookbook that it made sense to start putting them into a utility.  StarryNight has dozens of bells-and-whistles that the core Meteor tool lacks... tools to help the package authoring workflow, refactoring code, installing tools, testing your app, and so forth.  
+Eventually, there were so many scripts in the Cookbook that it made sense to start putting them into a utility.  StarryNight has dozens of bells-and-whistles that aren't in the core platform... tools to help the package authoring workflow, refactoring code, installing tools, testing your app, and so forth.  Think of StarryNight as a framework utility that extends the core platform tools.
 
 ````sh
 npm install starrynight -g
