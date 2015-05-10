@@ -1,7 +1,6 @@
 #### Table of Contents  
 
 - [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
-- [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
 - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
@@ -95,4 +94,5 @@
     - [CSV](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.csv.md)  
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
+- [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 
