@@ -114,8 +114,9 @@ lipsumGenerator.getRandomString();
 
 #### Sharing Events and Helpers Between Templates  
 
+[aldeed:template-extension](https://github.com/aldeed/meteor-template-extension)  
 ````
-meteor add [aldeed:template-extension](https://github.com/aldeed/meteor-template-extension)  
+meteor add aldeed:template-extension
 ````
 
 
