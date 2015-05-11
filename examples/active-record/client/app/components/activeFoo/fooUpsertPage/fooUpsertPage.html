@@ -3,9 +3,16 @@
     <header class="pageHeader">
       <i class="indexButton fa fa-chevron-left"></i>
       <h4 class="recordId barcode">{{_id}}</h4>
-      <i class="imageGridButton fa fa-th"></i>
-      <i class="listButton fa fa-list"></i>
-      <i class="tableButton fa fa-table"></i>
+      <button id="fooImageGridButton">
+        <i class="imageGridButton fa fa-th"></i>
+      </button>
+      <button id="fooListButton">
+        <i class="listButton fa fa-list"></i>
+      </button>
+      <button id="fooTableButton">
+        <i class="tableButton fa fa-table"></i>
+      </button>
+
       {{#if _id}}
         <i class="lockButton fa {{getLockIcon}}"></i>
       {{/if}}
@@ -25,7 +32,7 @@
       <textarea id="fooDescriptionInput"  class="glass form-control" rows="10" placeholder="Lorem ipsum dolar set et..." {{isReadOnly}}>{{description}}</textarea><br>
     </div>
 
-    <footer class="cardFooter">
+    <footer class="pageFooter">
       <button id="saveFooButton">
         <i class="fa fa-dot-circle-o"></i>
         <i class="fa fa-dot-circle-o"></i>

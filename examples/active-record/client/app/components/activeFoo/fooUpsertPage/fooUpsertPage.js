@@ -80,6 +80,7 @@ Template.fooUpsertPage.events({
   },
   "click #saveFooButton": function(){
     Template.fooUpsertPage.saveFoo(this);
+    Session.set('fooReadOnly', true);
   },
   "click .barcode": function(){
     // TODO:  refactor to Session.toggle('fooReadOnly')
@@ -100,7 +101,7 @@ Template.fooUpsertPage.events({
       Session.set('fooReadOnly', true);
     }
   },
-  "click .listButton": function(event, template){
+  "click #fooListButton": function(event, template){
     Router.go('/list/foos');
   },
   "click .imageGridButton": function(event, template){
@@ -113,7 +114,7 @@ Template.fooUpsertPage.events({
     Router.go('/customer/' + this._id);
   },
   'click #upsertFooButton': function() {
-    console.log('creating new user...');
+    console.log('creating new foo...');
     Template.fooUpsertPage.saveFoo(this);
   }
 });
@@ -133,7 +134,10 @@ Template.fooUpsertPage.saveFoo = function(record){
 
 
   if(record._id){
-    Foo.update({_id: record._id}, {$set: customerObject });
+    Foo.update({_id: record._id}, {$set: customerObject }, function(error, result){
+      if(error) console.log(error);
+      Router.go('/view/foo/' + record._id);
+    });
   }else{
     Foo.insert(customerObject, function(error, result){
       if(error) console.log(error);

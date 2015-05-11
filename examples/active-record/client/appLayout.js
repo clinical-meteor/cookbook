@@ -41,7 +41,7 @@ Template.appLayout.helpers({
 
 
 Template.appLayout.layout = function(){
-    Session.set('transparencyDivHeight', $('#innerPanel').height() + 50);
+    Session.set('transparencyDivHeight', $('#innerPanel').height() + 40);
     if(Session.get('appWidth') > 768){
       Session.set('transparencyDivLeft', (Session.get('appWidth') - 768) * 0.5);
     }else{

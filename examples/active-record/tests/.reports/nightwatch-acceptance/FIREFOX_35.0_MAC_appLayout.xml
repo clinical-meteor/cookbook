@@ -5,9 +5,9 @@
 
   <testsuite name="appLayout"
     errors="0" failures="0" hostname="" id="" package="appLayout" skipped="0"
-    tests="1" time="4.526" timestamp="Wed, 29 Apr 2015 03:07:39 GMT">
+    tests="1" time="4.352" timestamp="Mon, 11 May 2015 03:02:30 GMT">
   
-    <testcase name="Layout &amp; Static Pages" time="4.526" assertions="4">
+    <testcase name="Layout &amp; Static Pages" time="4.352" assertions="4">
 
     
 
@@ -17,6 +17,9 @@
 
     
     </testcase>
+      <system-err>
+        Unable to locate element: &quot;#noResultsMessage&quot; using: css selector
+      </system-err>
   
   
   </testsuite>
