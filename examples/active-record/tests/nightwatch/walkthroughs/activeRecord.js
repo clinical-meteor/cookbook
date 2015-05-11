@@ -70,5 +70,26 @@ module.exports = {
       .reviewFoosListPage(false, false, false, true)
 
       .end();
+  },
+
+  "FooTable Walkthrough" : function (client) {
+    client
+      .url("http://localhost:3000/list/foos")
+      .resizeWindow(1024, 768)
+      .reviewMainPanel()
+
+
+      .end();
+  },
+
+  "FooImageGrid Walkthrough" : function (client) {
+    client
+      .url("http://localhost:3000/list/foos")
+      .resizeWindow(1024, 768)
+      .reviewMainPanel()
+
+
+      .end();
   }
+
 };
