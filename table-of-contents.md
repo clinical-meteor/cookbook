@@ -3,7 +3,6 @@
 ========================
 #### Part I - Getting Started
 
-- [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
 - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
@@ -135,3 +134,4 @@
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
 - [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
+- [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
