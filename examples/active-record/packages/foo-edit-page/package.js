@@ -12,14 +12,28 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles('fooEditPage.html');
-  api.addFiles('fooEditPage.js');
-  api.addFiles('fooEditPage.less');
+  api.addFiles('fooEditPage.html', ['client']);
+  api.addFiles('fooEditPage.js' ['client']);
+  api.addFiles('fooEditPage.less', ['client']);
 
+  api.use('meteor-platform');
+  api.use([
+    'templating',
+    'grove:less',
+  ], ['client']);
+  api.use('iron:router@1.0.4')
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
+
+  api.use('meteor-platform');
+  api.use([
+    'templating',
+    'grove:less',
+  ], ['client']);
+  api.use('iron:router@1.0.4');
+
   api.use('foo:foo-edit-page');
   api.addFiles('foo-edit-page-tests.js');
 });
