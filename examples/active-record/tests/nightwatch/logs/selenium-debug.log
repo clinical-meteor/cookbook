@@ -1,89 +1,787 @@
-22:07:39.766 INFO - Launching a standalone server
+00:39:47.269 INFO - Launching a standalone server
 Setting system property webdriver.chrome.driver to selenium/chromedriver
-22:07:39.802 INFO - Java: Apple Inc. 20.65-b04-466.1
-22:07:39.803 INFO - OS: Mac OS X 10.10.2 x86_64
-22:07:39.812 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
-22:07:39.885 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
-22:07:39.918 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-22:07:39.919 INFO - Version Jetty/5.1.x
-22:07:39.920 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-22:07:39.921 INFO - Started HttpContext[/selenium-server,/selenium-server]
-22:07:39.921 INFO - Started HttpContext[/,/]
-22:07:39.972 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@643c0007
-22:07:39.972 INFO - Started HttpContext[/wd,/wd]
-22:07:39.979 INFO - Started SocketListener on 0.0.0.0:4444
-22:07:39.979 INFO - Started org.openqa.jetty.jetty.Server@acfec48
-22:07:40.204 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])
-22:07:40.214 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]
-22:07:43.339 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]]
-22:07:43.355 INFO - Executing: [get: http://localhost:3000])
-22:07:43.887 INFO - Done: [get: http://localhost:3000]
-22:07:43.893 INFO - Executing: [set window size])
-22:07:44.087 INFO - Done: [set window size]
-22:07:44.093 INFO - Executing: [find element: By.cssSelector: body])
-22:07:44.218 INFO - Done: [find element: By.cssSelector: body]
-22:07:44.223 INFO - Executing: [find element: By.cssSelector: #mainPanel])
-22:07:44.258 INFO - Done: [find element: By.cssSelector: #mainPanel]
-22:07:44.261 INFO - Executing: [find element: By.cssSelector: #transparentPanel])
-22:07:44.324 INFO - Done: [find element: By.cssSelector: #transparentPanel]
-22:07:44.329 INFO - Executing: [find element: By.cssSelector: #mainPage])
-22:07:44.373 INFO - Done: [find element: By.cssSelector: #mainPage]
-22:07:44.376 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (f6cd6bbd-d22c-7e46-872a-76f23ab1e74c)] -> css selector: #mainPage]])
-22:07:44.425 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (f6cd6bbd-d22c-7e46-872a-76f23ab1e74c)] -> css selector: #mainPage]]
-22:07:44.428 INFO - Executing: [delete session: 2990f0f0-dd61-49a2-9073-1dbf6d0d0701])
-22:07:44.560 INFO - Done: [delete session: 2990f0f0-dd61-49a2-9073-1dbf6d0d0701]
-22:07:44.687 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]])
-22:07:44.690 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]
-22:07:47.884 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]]
-22:07:47.890 INFO - Executing: [set window size])
-22:07:48.020 INFO - Done: [set window size]
-22:07:48.028 INFO - Executing: [switch to frame: null])
-22:07:48.073 INFO - Done: [switch to frame: null]
-22:07:48.079 INFO - Executing: [find element: By.cssSelector: body])
-22:07:48.164 INFO - Done: [find element: By.cssSelector: body]
-22:07:48.168 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]])
-22:07:48.217 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]]
-22:07:48.222 INFO - Executing: [find element: By.cssSelector: body])
-22:07:48.271 INFO - Done: [find element: By.cssSelector: body]
-22:07:48.275 INFO - Executing: [get: http://localhost:3000])
-22:07:48.767 INFO - Done: [get: http://localhost:3000]
-22:07:48.774 INFO - Executing: [find element: By.cssSelector: #mainPage])
-22:07:48.894 INFO - Done: [find element: By.cssSelector: #mainPage]
-22:07:48.898 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #mainPage]])
-22:07:48.961 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #mainPage]]
-22:07:48.965 INFO - Executing: [take screenshot])
-22:07:49.491 INFO - Done: [take screenshot]
-22:07:49.561 INFO - Executing: [switch to frame: null])
-22:07:49.575 INFO - Done: [switch to frame: null]
-22:07:49.580 INFO - Executing: [find element: By.cssSelector: body])
-22:07:49.620 INFO - Done: [find element: By.cssSelector: body]
-22:07:49.623 INFO - Executing: [is displayed: 2 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]])
-22:07:49.668 INFO - Done: [is displayed: 2 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: body]]
-22:07:49.673 INFO - Executing: [find element: By.cssSelector: body])
-22:07:49.725 INFO - Done: [find element: By.cssSelector: body]
-22:07:49.728 INFO - Executing: [get: http://localhost:3000/marketing])
-22:07:50.042 INFO - Done: [get: http://localhost:3000/marketing]
-22:07:50.047 INFO - Executing: [find element: By.cssSelector: #marketingPage])
-22:07:50.118 INFO - Done: [find element: By.cssSelector: #marketingPage]
-22:07:50.121 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #marketingPage]])
-22:07:50.173 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #marketingPage]]
-22:07:50.176 INFO - Executing: [take screenshot])
-22:07:50.665 INFO - Done: [take screenshot]
-22:07:50.762 INFO - Executing: [get: http://localhost:3000/support])
-22:07:51.030 INFO - Done: [get: http://localhost:3000/support]
-22:07:51.035 INFO - Executing: [find element: By.cssSelector: #supportPage])
-22:07:51.109 INFO - Done: [find element: By.cssSelector: #supportPage]
-22:07:51.112 INFO - Executing: [is displayed: 4 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #supportPage]])
-22:07:51.163 INFO - Done: [is displayed: 4 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #supportPage]]
-22:07:51.167 INFO - Executing: [take screenshot])
-22:07:52.147 INFO - Done: [take screenshot]
-22:07:52.466 INFO - Executing: [get: http://localhost:3000/privacy])
-22:07:52.737 INFO - Done: [get: http://localhost:3000/privacy]
-22:07:52.745 INFO - Executing: [find element: By.cssSelector: #privacyPage])
-22:07:52.815 INFO - Done: [find element: By.cssSelector: #privacyPage]
-22:07:52.818 INFO - Executing: [is displayed: 5 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #privacyPage]])
-22:07:52.872 INFO - Done: [is displayed: 5 [[FirefoxDriver: firefox on MAC (a5dd2800-6220-b84a-b980-66a50548f400)] -> css selector: #privacyPage]]
-22:07:52.876 INFO - Executing: [take screenshot])
-22:07:53.608 INFO - Done: [take screenshot]
-22:07:53.793 INFO - Executing: [delete session: 5cc942a7-bbd5-4aa3-85a9-3b0ee58eaefc])
-22:07:53.880 INFO - Done: [delete session: 5cc942a7-bbd5-4aa3-85a9-3b0ee58eaefc]
+00:39:47.305 INFO - Java: Apple Inc. 20.65-b04-466.1
+00:39:47.305 INFO - OS: Mac OS X 10.10.2 x86_64
+00:39:47.314 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+00:39:47.405 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+00:39:47.450 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+00:39:47.451 INFO - Version Jetty/5.1.x
+00:39:47.452 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+00:39:47.452 INFO - Started HttpContext[/selenium-server,/selenium-server]
+00:39:47.453 INFO - Started HttpContext[/,/]
+00:39:47.510 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@3dbbd23f
+00:39:47.510 INFO - Started HttpContext[/wd,/wd]
+00:39:47.516 INFO - Started SocketListener on 0.0.0.0:4444
+00:39:47.516 INFO - Started org.openqa.jetty.jetty.Server@6262937c
+00:39:47.741 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Active Record}]])
+00:39:47.751 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Active Record}]
+00:39:51.037 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Active Record}]]
+00:39:51.050 INFO - Executing: [get: http://localhost:3000/list/foos])
+00:39:51.723 INFO - Done: [get: http://localhost:3000/list/foos]
+00:39:51.730 INFO - Executing: [set window size])
+00:39:51.901 INFO - Done: [set window size]
+00:39:51.907 INFO - Executing: [find element: By.cssSelector: body])
+00:39:52.011 INFO - Done: [find element: By.cssSelector: body]
+00:39:52.015 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+00:39:52.073 INFO - Done: [find element: By.cssSelector: #mainPanel]
+00:39:52.077 INFO - Executing: [find element: By.cssSelector: #transparentPanel])
+00:39:52.123 INFO - Done: [find element: By.cssSelector: #transparentPanel]
+00:39:52.127 INFO - Executing: [switch to frame: null])
+00:39:52.172 INFO - Done: [switch to frame: null]
+00:39:52.177 INFO - Executing: [find element: By.cssSelector: body])
+00:39:52.232 INFO - Done: [find element: By.cssSelector: body]
+00:39:52.237 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:39:52.284 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:39:52.307 INFO - Executing: [find element: By.cssSelector: body])
+00:39:52.415 INFO - Done: [find element: By.cssSelector: body]
+00:39:52.421 INFO - Executing: [find element: By.cssSelector: #foosListPage])
+00:39:52.468 INFO - Done: [find element: By.cssSelector: #foosListPage]
+00:39:52.473 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavHeader])
+00:39:52.527 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavHeader]
+00:39:52.534 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+00:39:52.588 INFO - Done: [find element: By.cssSelector: #fooSearchInput]
+00:39:52.594 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList])
+00:39:52.640 INFO - Done: [find element: By.cssSelector: #foosUnorderedList]
+00:39:52.644 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+00:39:52.697 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)]
+00:39:52.702 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+00:39:52.754 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article]
+00:39:52.758 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavFooter])
+00:39:52.807 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavFooter]
+00:39:52.812 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage])
+00:39:52.868 INFO - Done: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage]
+00:39:52.873 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList .addFooItem])
+00:39:52.924 INFO - Done: [find element: By.cssSelector: #foosUnorderedList .addFooItem]
+00:39:52.928 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2)])
+00:39:54.439 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+Command duration or timeout: 51 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 2241dcc0-121d-c340-b8dc-e6115e75999e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+00:39:54.443 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+00:39:54.786 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2) article])
+00:39:55.802 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2) article"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2) article}
+Session ID: 2241dcc0-121d-c340-b8dc-e6115e75999e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2) article"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+00:39:55.803 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2) article"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+00:39:56.086 INFO - Executing: [find element: By.cssSelector: #noResultsMessage])
+00:39:56.094 INFO - Done: [find element: By.cssSelector: #noResultsMessage]
+00:39:56.100 INFO - Executing: [click: 7 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1)]])
+00:39:56.269 INFO - Done: [click: 7 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1)]]
+00:39:56.577 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+00:39:56.587 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+00:39:56.590 INFO - Executing: [is displayed: 10 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUpsertPage]])
+00:39:56.643 INFO - Done: [is displayed: 10 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUpsertPage]]
+00:39:56.647 INFO - Executing: [switch to frame: null])
+00:39:56.696 INFO - Done: [switch to frame: null]
+00:39:56.701 INFO - Executing: [find element: By.cssSelector: body])
+00:39:56.751 INFO - Done: [find element: By.cssSelector: body]
+00:39:56.754 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:39:56.804 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:39:56.808 INFO - Executing: [find element: By.cssSelector: body])
+00:39:56.861 INFO - Done: [find element: By.cssSelector: body]
+00:39:56.866 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+00:39:56.915 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+00:39:56.918 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+00:39:56.964 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+00:39:56.968 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+00:39:57.014 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+00:39:57.018 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+00:39:57.069 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+00:39:57.073 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+00:39:57.127 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+00:39:57.130 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:39:57.183 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:39:57.187 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:39:57.238 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:39:57.242 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:39:57.298 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:39:57.302 INFO - Executing: [find element: By.cssSelector: #fooImage])
+00:39:57.373 INFO - Done: [find element: By.cssSelector: #fooImage]
+00:39:57.379 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:39:57.422 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:39:57.425 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+00:39:57.469 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+00:39:57.473 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:39:57.518 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:39:57.520 INFO - Executing: [switch to frame: null])
+00:39:57.565 INFO - Done: [switch to frame: null]
+00:39:57.568 INFO - Executing: [find element: By.cssSelector: body])
+00:39:57.611 INFO - Done: [find element: By.cssSelector: body]
+00:39:57.614 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:39:57.656 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:39:57.659 INFO - Executing: [find element: By.cssSelector: body])
+00:39:57.707 INFO - Done: [find element: By.cssSelector: body]
+00:39:57.710 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:39:57.753 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:39:57.755 INFO - Executing: [clear: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput]])
+00:39:57.810 INFO - Done: [clear: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput]]
+00:39:57.812 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:39:57.857 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:39:57.860 INFO - Executing: [send keys: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], [O, c, t, o, c, a, t]])
+00:39:57.930 INFO - Done: [send keys: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], [O, c, t, o, c, a, t]]
+00:39:57.933 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:39:57.979 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:39:57.981 INFO - Executing: [clear: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput]])
+00:39:58.035 INFO - Done: [clear: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput]]
+00:39:58.039 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:39:58.084 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:39:58.088 INFO - Executing: [send keys: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, e, n, ., w, i, k, i, p, e, d, i, a, ., o, r, g, /, w, i, k, i, /, O, c, t, o, c, a, t]])
+00:39:58.181 INFO - Done: [send keys: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, e, n, ., w, i, k, i, p, e, d, i, a, ., o, r, g, /, w, i, k, i, /, O, c, t, o, c, a, t]]
+00:39:58.185 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:39:58.231 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:39:58.233 INFO - Executing: [clear: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput]])
+00:39:58.292 INFO - Done: [clear: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput]]
+00:39:58.295 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:39:58.374 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:39:58.384 INFO - Executing: [send keys: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]])
+00:39:58.510 INFO - Done: [send keys: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]]
+00:39:58.513 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:39:58.561 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:39:58.564 INFO - Executing: [clear: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput]])
+00:39:58.629 INFO - Done: [clear: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput]]
+00:39:58.634 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:39:58.688 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:39:58.708 INFO - Executing: [send keys: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]])
+00:39:59.142 INFO - Done: [send keys: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]]
+00:39:59.145 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:39:59.193 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:39:59.196 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:39:59.240 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:39:59.243 INFO - Executing: [mousemove: 21 true])
+00:39:59.296 INFO - Done: [mousemove: 21 true]
+00:39:59.299 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:39:59.366 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:39:59.372 INFO - Executing: [is displayed: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]])
+00:39:59.416 INFO - Done: [is displayed: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]]
+00:39:59.419 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:39:59.464 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:39:59.468 INFO - Executing: [click: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]])
+00:39:59.689 INFO - Done: [click: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]]
+00:39:59.993 INFO - Executing: [switch to frame: null])
+00:40:02.622 INFO - Done: [switch to frame: null]
+00:40:02.625 INFO - Executing: [find element: By.cssSelector: body])
+00:40:02.680 INFO - Done: [find element: By.cssSelector: body]
+00:40:02.683 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:40:02.729 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:40:02.733 INFO - Executing: [find element: By.cssSelector: body])
+00:40:02.778 INFO - Done: [find element: By.cssSelector: body]
+00:40:02.781 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+00:40:02.825 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+00:40:02.829 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+00:40:02.874 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+00:40:02.877 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+00:40:02.923 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+00:40:02.926 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+00:40:02.974 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+00:40:02.977 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+00:40:03.022 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+00:40:03.025 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:03.070 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:03.072 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:03.119 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:03.122 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:03.169 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:03.173 INFO - Executing: [find element: By.cssSelector: #fooImage])
+00:40:03.221 INFO - Done: [find element: By.cssSelector: #fooImage]
+00:40:03.224 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:03.270 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:03.274 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:03.320 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:03.322 INFO - Executing: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value])
+00:40:03.393 INFO - Done: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value]
+00:40:03.396 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:03.441 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:03.444 INFO - Executing: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value])
+00:40:03.488 INFO - Done: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value]
+00:40:03.492 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:03.536 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:03.539 INFO - Executing: [get element attribute: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value])
+00:40:03.584 INFO - Done: [get element attribute: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value]
+00:40:03.587 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:03.636 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:03.639 INFO - Executing: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value])
+00:40:03.684 INFO - Done: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value]
+00:40:03.687 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+00:40:03.731 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+00:40:03.734 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:03.780 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:03.784 INFO - Executing: [switch to frame: null])
+00:40:03.831 INFO - Done: [switch to frame: null]
+00:40:03.835 INFO - Executing: [find element: By.cssSelector: body])
+00:40:03.881 INFO - Done: [find element: By.cssSelector: body]
+00:40:03.884 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:40:03.929 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:40:03.932 INFO - Executing: [find element: By.cssSelector: body])
+00:40:03.981 INFO - Done: [find element: By.cssSelector: body]
+00:40:03.984 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+00:40:04.033 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+00:40:04.035 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+00:40:04.081 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+00:40:04.083 INFO - Executing: [click: 22 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUpsertPage .barcode]])
+00:40:04.188 INFO - Done: [click: 22 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUpsertPage .barcode]]
+00:40:04.494 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:04.503 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:04.507 INFO - Executing: [clear: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput]])
+00:40:04.560 INFO - Done: [clear: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput]]
+00:40:04.562 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:04.610 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:04.613 INFO - Executing: [send keys: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+00:40:04.688 INFO - Done: [send keys: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+00:40:04.690 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:04.739 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:04.742 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:04.786 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:04.789 INFO - Executing: [mousemove: 21 true])
+00:40:04.851 INFO - Done: [mousemove: 21 true]
+00:40:04.853 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:04.910 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:04.912 INFO - Executing: [is displayed: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]])
+00:40:04.958 INFO - Done: [is displayed: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]]
+00:40:04.960 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:05.007 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:05.011 INFO - Executing: [click: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]])
+00:40:05.141 INFO - Done: [click: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]]
+00:40:05.446 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+00:40:05.455 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+00:40:05.457 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+00:40:05.506 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+00:40:05.509 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+00:40:05.554 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+00:40:05.558 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+00:40:05.608 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+00:40:05.611 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+00:40:05.656 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+00:40:05.658 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:05.704 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:05.707 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:05.751 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:05.754 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:05.802 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:05.805 INFO - Executing: [find element: By.cssSelector: #fooImage])
+00:40:05.849 INFO - Done: [find element: By.cssSelector: #fooImage]
+00:40:05.853 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:05.898 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:05.901 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:05.945 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:05.947 INFO - Executing: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value])
+00:40:05.991 INFO - Done: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value]
+00:40:05.994 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:06.041 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:06.043 INFO - Executing: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value])
+00:40:06.087 INFO - Done: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value]
+00:40:06.090 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:06.135 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:06.137 INFO - Executing: [get element attribute: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value])
+00:40:06.183 INFO - Done: [get element attribute: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value]
+00:40:06.185 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:06.232 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:06.234 INFO - Executing: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value])
+00:40:06.278 INFO - Done: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value]
+00:40:06.282 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+00:40:06.335 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+00:40:06.353 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:06.392 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:06.395 INFO - Executing: [switch to frame: null])
+00:40:06.439 INFO - Done: [switch to frame: null]
+00:40:06.442 INFO - Executing: [find element: By.cssSelector: body])
+00:40:06.486 INFO - Done: [find element: By.cssSelector: body]
+00:40:06.488 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:40:06.531 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:40:06.534 INFO - Executing: [find element: By.cssSelector: body])
+00:40:06.580 INFO - Done: [find element: By.cssSelector: body]
+00:40:06.583 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+00:40:06.630 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+00:40:06.633 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+00:40:06.678 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+00:40:06.681 INFO - Executing: [click: 22 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUpsertPage .barcode]])
+00:40:06.793 INFO - Done: [click: 22 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUpsertPage .barcode]]
+00:40:07.100 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:07.108 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:07.110 INFO - Executing: [clear: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput]])
+00:40:07.163 INFO - Done: [clear: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput]]
+00:40:07.166 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:07.213 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:07.216 INFO - Executing: [send keys: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+00:40:07.290 INFO - Done: [send keys: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+00:40:07.292 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:07.357 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:07.372 INFO - Executing: [clear: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput]])
+00:40:07.434 INFO - Done: [clear: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput]]
+00:40:07.438 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:07.490 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:07.494 INFO - Executing: [send keys: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, w, w, w, ., h, e, l, l, o, -, c, t, h, u, l, h, u, ., c, o, m, /]])
+00:40:07.587 INFO - Done: [send keys: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, w, w, w, ., h, e, l, l, o, -, c, t, h, u, l, h, u, ., c, o, m, /]]
+00:40:07.591 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:07.639 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:07.641 INFO - Executing: [clear: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput]])
+00:40:07.698 INFO - Done: [clear: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput]]
+00:40:07.701 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:07.748 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:07.753 INFO - Executing: [send keys: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]])
+00:40:07.868 INFO - Done: [send keys: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]]
+00:40:07.871 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:07.919 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:07.921 INFO - Executing: [clear: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput]])
+00:40:07.976 INFO - Done: [clear: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput]]
+00:40:07.979 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:08.030 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:08.046 INFO - Executing: [send keys: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]])
+00:40:08.285 INFO - Done: [send keys: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]]
+00:40:08.290 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:08.351 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:08.368 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:08.416 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:08.422 INFO - Executing: [mousemove: 21 true])
+00:40:08.478 INFO - Done: [mousemove: 21 true]
+00:40:08.480 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:08.541 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:08.545 INFO - Executing: [is displayed: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]])
+00:40:08.602 INFO - Done: [is displayed: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]]
+00:40:08.606 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:08.654 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:08.656 INFO - Executing: [click: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]])
+00:40:08.790 INFO - Done: [click: 21 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #saveFooButton]]
+00:40:09.096 INFO - Executing: [switch to frame: null])
+00:40:09.609 INFO - Done: [switch to frame: null]
+00:40:09.612 INFO - Executing: [find element: By.cssSelector: body])
+00:40:09.662 INFO - Done: [find element: By.cssSelector: body]
+00:40:09.665 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:40:09.710 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:40:09.713 INFO - Executing: [find element: By.cssSelector: body])
+00:40:09.758 INFO - Done: [find element: By.cssSelector: body]
+00:40:09.761 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+00:40:09.806 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+00:40:09.809 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+00:40:09.858 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+00:40:09.862 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+00:40:09.925 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+00:40:09.931 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+00:40:10.005 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+00:40:10.010 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+00:40:10.071 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+00:40:10.075 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:10.121 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:10.125 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:10.171 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:10.174 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:10.220 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:10.222 INFO - Executing: [find element: By.cssSelector: #fooImage])
+00:40:10.268 INFO - Done: [find element: By.cssSelector: #fooImage]
+00:40:10.271 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:10.318 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:10.321 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:10.386 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:10.388 INFO - Executing: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value])
+00:40:10.433 INFO - Done: [get element attribute: 15 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value]
+00:40:10.452 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:10.481 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:10.483 INFO - Executing: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value])
+00:40:10.531 INFO - Done: [get element attribute: 16 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value]
+00:40:10.533 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:10.578 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:10.580 INFO - Executing: [get element attribute: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value])
+00:40:10.633 INFO - Done: [get element attribute: 17 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value]
+00:40:10.637 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:10.691 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:10.694 INFO - Executing: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value])
+00:40:10.740 INFO - Done: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value]
+00:40:10.743 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+00:40:10.793 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+00:40:10.796 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:10.843 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:10.846 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+00:40:10.890 INFO - Done: [find element: By.cssSelector: #fooListButton]
+00:40:10.892 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+00:40:10.937 INFO - Done: [find element: By.cssSelector: #fooListButton]
+00:40:10.939 INFO - Executing: [is displayed: 23 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooListButton]])
+00:40:10.987 INFO - Done: [is displayed: 23 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooListButton]]
+00:40:10.990 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+00:40:11.036 INFO - Done: [find element: By.cssSelector: #fooListButton]
+00:40:11.039 INFO - Executing: [mousemove: 23 true])
+00:40:11.096 INFO - Done: [mousemove: 23 true]
+00:40:11.098 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+00:40:11.150 INFO - Done: [find element: By.cssSelector: #fooListButton]
+00:40:11.153 INFO - Executing: [click: 23 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooListButton]])
+00:40:11.310 INFO - Done: [click: 23 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooListButton]]
+00:40:11.813 INFO - Executing: [switch to frame: null])
+00:40:11.823 INFO - Done: [switch to frame: null]
+00:40:11.826 INFO - Executing: [find element: By.cssSelector: body])
+00:40:11.874 INFO - Done: [find element: By.cssSelector: body]
+00:40:11.875 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:40:11.925 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:40:11.928 INFO - Executing: [find element: By.cssSelector: body])
+00:40:11.977 INFO - Done: [find element: By.cssSelector: body]
+00:40:11.981 INFO - Executing: [find element: By.cssSelector: #foosListPage])
+00:40:12.030 INFO - Done: [find element: By.cssSelector: #foosListPage]
+00:40:12.033 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavHeader])
+00:40:12.079 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavHeader]
+00:40:12.082 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+00:40:12.131 INFO - Done: [find element: By.cssSelector: #fooSearchInput]
+00:40:12.134 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList])
+00:40:12.177 INFO - Done: [find element: By.cssSelector: #foosUnorderedList]
+00:40:12.181 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+00:40:12.231 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)]
+00:40:12.233 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+00:40:12.279 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article]
+00:40:12.281 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavFooter])
+00:40:12.343 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavFooter]
+00:40:12.351 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+00:40:12.400 INFO - Done: [find element: By.cssSelector: #fooSearchInput]
+00:40:12.402 INFO - Executing: [clear: 26 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooSearchInput]])
+00:40:12.452 INFO - Done: [clear: 26 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooSearchInput]]
+00:40:12.454 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+00:40:12.498 INFO - Done: [find element: By.cssSelector: #fooSearchInput]
+00:40:12.501 INFO - Executing: [send keys: 26 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooSearchInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+00:40:12.607 INFO - Done: [send keys: 26 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooSearchInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+00:40:12.911 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+00:40:12.919 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)]
+00:40:12.922 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+00:40:12.969 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article]
+00:40:12.971 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .barcode])
+00:40:13.019 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .barcode]
+00:40:13.021 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .titleText])
+00:40:13.067 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .titleText]
+00:40:13.069 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .descriptionText])
+00:40:13.114 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .descriptionText]
+00:40:13.117 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .titleText])
+00:40:13.162 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .titleText]
+00:40:13.164 INFO - Executing: [get text: 32 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1) .titleText]])
+00:40:13.211 INFO - Done: [get text: 32 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1) .titleText]]
+00:40:13.214 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .descriptionText])
+00:40:13.258 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .descriptionText]
+00:40:13.260 INFO - Executing: [get text: 33 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1) .descriptionText]])
+00:40:13.309 INFO - Done: [get text: 33 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1) .descriptionText]]
+00:40:13.312 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2)])
+00:40:14.613 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+Command duration or timeout: 68 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 2241dcc0-121d-c340-b8dc-e6115e75999e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+00:40:14.614 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+00:40:15.420 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+00:40:15.430 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)]
+00:40:15.436 INFO - Executing: [click: 28 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1)]])
+00:40:15.619 INFO - Done: [click: 28 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #foosUnorderedList li:nth-child(1)]]
+00:40:15.926 INFO - Executing: [switch to frame: null])
+00:40:15.934 INFO - Done: [switch to frame: null]
+00:40:15.937 INFO - Executing: [find element: By.cssSelector: body])
+00:40:15.982 INFO - Done: [find element: By.cssSelector: body]
+00:40:15.984 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:40:16.029 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:40:16.032 INFO - Executing: [find element: By.cssSelector: body])
+00:40:16.076 INFO - Done: [find element: By.cssSelector: body]
+00:40:16.080 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+00:40:16.130 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+00:40:16.134 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+00:40:16.184 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+00:40:16.187 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+00:40:16.237 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+00:40:16.240 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+00:40:16.288 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+00:40:16.292 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+00:40:16.356 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+00:40:16.363 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:16.406 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:16.409 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:16.458 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:16.461 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:16.505 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:16.508 INFO - Executing: [find element: By.cssSelector: #fooImage])
+00:40:16.553 INFO - Done: [find element: By.cssSelector: #fooImage]
+00:40:16.556 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:16.605 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:16.608 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+00:40:16.656 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+00:40:16.658 INFO - Executing: [get element attribute: 39 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value])
+00:40:16.705 INFO - Done: [get element attribute: 39 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooTitleInput], value]
+00:40:16.708 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+00:40:16.753 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+00:40:16.756 INFO - Executing: [get element attribute: 40 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value])
+00:40:16.801 INFO - Done: [get element attribute: 40 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooUrlInput], value]
+00:40:16.803 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+00:40:16.848 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+00:40:16.850 INFO - Executing: [get element attribute: 41 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value])
+00:40:16.895 INFO - Done: [get element attribute: 41 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooImageUrlInput], value]
+00:40:16.901 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+00:40:16.941 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+00:40:16.944 INFO - Executing: [get element attribute: 43 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value])
+00:40:16.987 INFO - Done: [get element attribute: 43 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #fooDescriptionInput], value]
+00:40:16.990 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+00:40:17.035 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+00:40:17.038 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+00:40:17.082 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+00:40:17.085 INFO - Executing: [find element: By.cssSelector: #removeFooButton])
+00:40:17.130 INFO - Done: [find element: By.cssSelector: #removeFooButton]
+00:40:17.132 INFO - Executing: [mousemove: 46 true])
+00:40:17.188 INFO - Done: [mousemove: 46 true]
+00:40:17.191 INFO - Executing: [find element: By.cssSelector: #removeFooButton])
+00:40:17.239 INFO - Done: [find element: By.cssSelector: #removeFooButton]
+00:40:17.241 INFO - Executing: [click: 46 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #removeFooButton]])
+00:40:17.418 INFO - Done: [click: 46 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: #removeFooButton]]
+00:40:17.723 INFO - Executing: [switch to frame: null])
+00:40:17.731 INFO - Done: [switch to frame: null]
+00:40:17.734 INFO - Executing: [find element: By.cssSelector: body])
+00:40:17.779 INFO - Done: [find element: By.cssSelector: body]
+00:40:17.781 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]])
+00:40:17.835 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (2241dcc0-121d-c340-b8dc-e6115e75999e)] -> css selector: body]]
+00:40:17.838 INFO - Executing: [find element: By.cssSelector: body])
+00:40:17.884 INFO - Done: [find element: By.cssSelector: body]
+00:40:17.887 INFO - Executing: [find element: By.cssSelector: #foosListPage])
+00:40:17.935 INFO - Done: [find element: By.cssSelector: #foosListPage]
+00:40:17.938 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavHeader])
+00:40:17.986 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavHeader]
+00:40:17.989 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+00:40:18.037 INFO - Done: [find element: By.cssSelector: #fooSearchInput]
+00:40:18.039 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList])
+00:40:18.088 INFO - Done: [find element: By.cssSelector: #foosUnorderedList]
+00:40:18.091 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+00:40:18.140 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)]
+00:40:18.142 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+00:40:18.186 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article]
+00:40:18.189 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavFooter])
+00:40:18.234 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavFooter]
+00:40:18.236 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage])
+00:40:18.284 INFO - Done: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage]
+00:40:18.286 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList .addFooItem])
+00:40:18.354 INFO - Done: [find element: By.cssSelector: #foosUnorderedList .addFooItem]
+00:40:18.361 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2)])
+00:40:19.642 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+Command duration or timeout: 46 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 2241dcc0-121d-c340-b8dc-e6115e75999e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+00:40:19.643 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2)"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+00:40:20.428 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2) article])
+00:40:21.678 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2) article"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2) article}
+Session ID: 2241dcc0-121d-c340-b8dc-e6115e75999e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2) article"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous1737759184361637993webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+00:40:21.679 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#foosUnorderedList li:nth-child(2) article"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+00:40:22.487 INFO - Executing: [delete session: e3bb427a-4a57-451d-a94f-386dee7320b7])
+00:40:22.571 INFO - Done: [delete session: e3bb427a-4a57-451d-a94f-386dee7320b7]

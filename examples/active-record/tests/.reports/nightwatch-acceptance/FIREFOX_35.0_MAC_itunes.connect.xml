@@ -5,9 +5,9 @@
 
   <testsuite name="itunes.connect"
     errors="0" failures="0" hostname="" id="" package="itunes.connect" skipped="0"
-    tests="1" time="9.201" timestamp="Wed, 29 Apr 2015 03:07:44 GMT">
+    tests="1" time="9.876" timestamp="Mon, 11 May 2015 03:02:35 GMT">
   
-    <testcase name="iTunesConnect" time="9.201" assertions="8">
+    <testcase name="iTunesConnect" time="9.876" assertions="8">
 
     
 
@@ -25,6 +25,9 @@
 
     
     </testcase>
+      <system-err>
+        Unable to locate element: &quot;#noResultsMessage&quot; using: css selector
+      </system-err>
   
   
   </testsuite>
