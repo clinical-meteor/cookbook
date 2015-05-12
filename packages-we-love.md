@@ -30,6 +30,8 @@
 | [grove:less](https://atmospherejs.com/grove/less) | ---| ---  | --- | 
 | [rahul:animate-everything](https://atmospherejs.com/rahul/animate-everything) | --- | ---  | --- | 
 | [yogiben:pretty-emails](https://atmospherejs.com/yogiben/pretty-emails) | --- | ---  | --- | 
+| [msavin:mongol](https://github.com/msavin/mongol) | --- | ---  | --- | 
+| [msavin:jetsetter](https://github.com/msavin/jetsetter) | --- | ---  | --- | 
 
 
 
