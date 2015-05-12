@@ -2,6 +2,8 @@
 
 | Package       | UI  | Contributor | Scaffold   |
 | ------------- | :----------------: |  :----------------: | :----------------: |
+| [msavin:mongol](https://github.com/msavin/mongol) | --- | ---  | --- | 
+| [msavin:jetsetter](https://github.com/msavin/jetsetter) | --- | ---  | --- | 
 | [jboulhous/dev](https://atmospherejs.com/jboulhous/dev)| none  |  jboulhous | no | 
 | [datariot/meteor-ganalytics](https://github.com/datariot/meteor-ganalytics) | none  |  datariot | yes | 
 | [aldeed/meteor-template-extension](https://github.com/aldeed/meteor-template-extension)  | ?  |  aldeed | No | 
