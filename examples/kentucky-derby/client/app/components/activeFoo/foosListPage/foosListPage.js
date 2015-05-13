@@ -24,7 +24,10 @@ Router.map(function(){
 // TEMPLATE INPUTS
 
 Template.foosListPage.events({
-  'click .addFooItem':function(){
+  /*'click .addFooItem':function(){
+    Router.go('/insert/foo');
+  },*/
+  'click .addFooIcon':function(){
     Router.go('/insert/foo');
   },
   'click .fooItem':function(){
