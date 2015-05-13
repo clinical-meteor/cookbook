@@ -16,26 +16,15 @@ tests/                                   # unit test files (won't be loaded on c
 
 As such, I find myself running through the following commands whenever I'm creating a new applet, sandboxing some new functionality, or otherwise starting a new project.
 
-````sh
+```sh
 meteor create myapp
 cd myapp
-mkdir client
-mkdir server
-mkdir public
-mkdir packages
-mkdir tests
-mkdir shared
-mkdir client/app
-mkdir client/app/sidebars
-mkdir client/app/headers
-mkdir client/app/modals
-mkdir client/app/workflows
+mkdir -p client/app/sidebars client/app/headers client/app/modals client/app/workflows
+mkdir server public packages tests shared
 
-meteor add less
-meteor add mrt:bootstrap-3
-meteor add iron:router
+meteor add less twbs:bootstrap iron:router
 
-````
+```
 
 After creating those directories in the application folder, the next step is to create some structure for the MVC model, adding subscriptions and publications, and building out the rest of the application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  
 
