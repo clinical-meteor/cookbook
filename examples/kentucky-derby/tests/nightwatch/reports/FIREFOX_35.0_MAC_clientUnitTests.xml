@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="0">
+
+  <testsuite name="clientUnitTests"
+    errors="0" failures="0" hostname="" id="" package="clientUnitTests" skipped="0"
+    tests="0" time="0.000" timestamp="Mon, 11 May 2015 11:14:12 GMT">
+  
+  
+  </testsuite>
+</testsuites>
