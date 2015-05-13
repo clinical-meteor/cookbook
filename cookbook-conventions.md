@@ -12,7 +12,7 @@ Atom is written in Chrome/Javascript, and is therefore isomorphic to the rest of
 
 
 ====================================  
-#### 3.  Blaze Components instead of MVC Frameworks 
+#### 3.  Component/Microservice Architecture
 
 The terms Model, View, and Controller are used so much that they've become meaningless.  Or, rather, everybody has a different interpretation.  The Cookbook holds the stance that modern browsers have a CSS subsystems which renders to the ViewPort, and an HTML subsystem which creates a Document Object Model, and that HTML/CSS/JS are the natural Model/View/Controller paradigm.  But it also recognizes that the CSS and HTML subsystems are implemented in JS, and everything can eventually be reduced to Javascript (which is more performant).  So, the Cookbook is leaning towards Component architectures, which are somewhat agnostic/neutral to the whole MVC argument, and are focused on the pure-Javascript approach.
 
