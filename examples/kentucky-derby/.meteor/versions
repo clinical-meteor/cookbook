@@ -42,6 +42,7 @@ mobile-status-bar@1.0.3
 mongo@1.1.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
+percolate:synced-cron@1.2.1
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5

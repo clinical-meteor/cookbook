@@ -12,3 +12,4 @@ fortawesome:fontawesome
 clinical:barcode
 iron:router
 grove:less
+percolate:synced-cron

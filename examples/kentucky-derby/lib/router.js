@@ -15,7 +15,7 @@ Router.route('/', {
   template: "mainPage",
   name: "mainPage",
   onAfterAction: function(){
-    Template.appLayout.layout();
+    Template.appLayout.delayedLayout(100);
   }
 });
 

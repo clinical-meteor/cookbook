@@ -172,20 +172,25 @@ var derbyHorses = [
 
 
 Meteor.startup(function(){
-  if(Foo.find().count() === 0){
-    console.log("Couldn't find any horses; adding some...");
-    derbyHorses.forEach(function(horse){
-      var horseRecord = {
-        title: horse.name,
-        description: horse.description,
-        url: horse.url,
-        imageUrl: horse.imageUrl
-      }
+  Meteor.call('addHorses');
+});
 
-      Foo.insert(horseRecord);
-    });
-  }else{
-    console.log("Found " + Foo.find().count() + " horses.");
+Meteor.methods({
+  'addHorses':function(){
+    if(Foo.find().count() === 0){
+      console.log("Couldn't find any horses; adding some...");
+      derbyHorses.forEach(function(horse){
+        var horseRecord = {
+          title: horse.name,
+          description: horse.description,
+          url: horse.url,
+          imageUrl: horse.imageUrl
+        }
+
+        Foo.insert(horseRecord);
+      });
+    }else{
+      console.log("Found " + Foo.find().count() + " horses.");
+    }
   }
-
-})
+});
