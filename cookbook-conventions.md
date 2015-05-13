@@ -1,6 +1,6 @@
 ## Cookbook Conventions
 
-They say the best way to win an argument is to avoid it.  Editor choice, testing framework choice, language choice...  so many opportunities for people to argue for their favorite technology.  Before you dive into the rest of the Cookbook, lets be clear of a few conventions so we can avoid arguments.
+They say the best way to win an argument is to avoid it.  Editor choice, testing framework choice, language choice...  so many opportunities for people to argue for their favorite technology.  Before you dive into the rest of the Cookbook, lets be clear on a few conventions so we can avoid arguments.
 
 ====================================  
 #### 1.  Javascript instead of CoffeeScript  
