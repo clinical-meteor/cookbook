@@ -162,3 +162,27 @@ Meteor.startup(function(){
 
 ````
 
+
+============================================================
+#### data-schema-key
+Another data-schema-key binding approach.
+
+````html
+<form id="fooUpsertForm" data-collection="Foo" data-record-id="{{_id"}}> 
+  <input id="fooId" type="text" data-schema-key="foo" value={{foo}} /> 
+<form>
+````
+
+````js
+Template.exampleComponent.events({
+  'keyup input':function(){
+    var newObject = {};
+    var dataSchemaKey = $("#fooId").attr("data-schema-key")[0];
+    var recordId = $('form').attr("id");
+    
+    newObject[dataSchemaKey] = $("#fooId).val();
+    
+    Foo.update({_id: recordId}, {$set: newObject});
+  }
+});
+````
