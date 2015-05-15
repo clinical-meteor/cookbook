@@ -198,7 +198,16 @@ generic fadein/fadeout
 
 ````
 
+----------------------------------------
+#### _uihooks   
 
 TODO: Add more CSS animations.
 https://github.com/grigio/todomvc-meteor-react/blob/master/client/example-animation.css
 https://github.com/grigio/todomvc-meteor-react/blob/master/client/vendor/animate.css
+
+
+----------------------------------------
+#### Background Animations  
+
+http://jsfiddle.net/kidino/4mbpR/  
+
