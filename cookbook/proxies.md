@@ -24,8 +24,7 @@ curl https://install.meteor.com | sh
 
 - [How to Deploy a Meteor JS App on Ubuntu with Nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-meteor-js-application-on-ubuntu-14-04-with-nginx)  
 
+[How to Install an SSL Certificate from a Commercial Certificate Authority](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)  
 
-
-
-
+[NameCheap SSL Certificates](https://www.namecheap.com/security/ssl-certificates/)  
 
