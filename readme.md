@@ -14,7 +14,11 @@ The Meteor Cookbook is a FAQ and tutorial culled and curated from nearly 3 years
 Eventually, there were so many scripts in the Cookbook that it made sense to start putting them into a utility.  StarryNight has dozens of bells-and-whistles that aren't in the core platform... tools to help the package authoring workflow, refactoring code, installing a dev environment, testing your app, security/performance auditing, and so forth.  Think of StarryNight as a framework utility that extends the core platform tools.
 
 ````sh
+# install the utility
 npm install starrynight -g
+
+# run tests as needed
+starrynight run-framework nightwatch
 ````
 
 
