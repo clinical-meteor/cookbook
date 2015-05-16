@@ -17,6 +17,9 @@ Eventually, there were so many scripts in the Cookbook that it made sense to sta
 # install the utility
 npm install starrynight -g
 
+# add the necessary test files
+starrynight scaffold --framework nightwatch
+
 # run tests as needed
 starrynight run-framework nightwatch
 ````
