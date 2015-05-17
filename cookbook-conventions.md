@@ -20,5 +20,4 @@ The terms Model, View, and Controller are used so much that they've become meani
  
 ====================================  
 #### 4.  Starrynight instead of Velocity  
-The Cookbook uses the StarryNight utility instead of Velocity for testing.  
-
+The Cookbook uses the StarryNight utility instead of Velocity for testing.  There are lots of reasons for this decision, but it basically boils down to the need to have something we can rely on and can contribute changes to when we need things changed.  The Velocity project was way to instable for our needs, and people running it actively worked to exclude any changes or contributions that we tried to submit.  
