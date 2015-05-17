@@ -1,6 +1,6 @@
 ## Cookbook Conventions
 
-They say the best way to win an argument is to avoid it.  Preferred language, best editor, testing framework choice...  so many opportunities for people to argue for their favorite technology.  So, before diving into the Cookbook, lets go over some of the conventions.  
+They say the best way to win an argument is to avoid it.  Preferred language, best editor, testing framework choice...  so many opportunities for people to argue for their favorite technology.  So, before diving into the Cookbook, lets go over some conventions that are used.  These conventions are how I choose to write this cookbook.  If you disagree with any of them, please write your own Cookbook.  
 
 ====================================  
 #### 1.  Pure Javascript instead of CoffeeScript
@@ -15,7 +15,8 @@ Atom is written in Chrome/Javascript, and is therefore isomorphic to the rest of
 ====================================  
 #### 3.  Component/Microservice Architecture instead of MVC 
 
-The terms Model, View, and Controller are used so much that they've become meaningless.  Or, rather, everybody has a different interpretation.  The Cookbook holds the stance that modern browsers have a CSS subsystems which renders to the ViewPort, and an HTML subsystem which creates a Document Object Model, and that HTML/CSS/JS are the natural Model/View/Controller paradigm.  But it also recognizes that the CSS and HTML subsystems are implemented in JS, and everything can eventually be reduced to Javascript (which is more performant).  So, the Cookbook is leaning towards Component architectures, which are somewhat agnostic/neutral to the whole MVC argument, and are focused on the pure-Javascript approach.
+The terms Model, View, and Controller are used in so many different ways that the terms have become meaningless.  Every MVC library that we've run across (Backbone, Blaze, Ember, Angular, Famo.us, React, WebComponents, Semantic) are each reinventing the wheel, trying to get around the MVC model that the client-side HTML and CSS subsystems impose, and repurposing the terms Model, View, and Controller.  Suffice it to say that, after thinking on this issue for a year or two, the Cookbook is leaning towards an MVC-agnostic approach by using a component/microservice architecture (a mash-up of WebComponents, React, Blaze Components, and Famo.us).  If there's one rule about MVC, it's don't use MVC.  
+ 
  
 ====================================  
 #### 4.  Starrynight instead of Velocity  
