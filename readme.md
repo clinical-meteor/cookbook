@@ -1,6 +1,6 @@
 #Meteor Cookbook  
 
-The Cookbook is growing!  And on it's way to becoming a framework/distro, specializing in biomedical, healthcare, and clinical apps!  
+The Cookbook is growing!  And on it's way to becoming a framework/distro, specializing in biomedical, healthcare, and clinical apps!  We're contemplating renaming this repo as this project becomes more of a framework/distro, so stay tuned!  
 
 
 
