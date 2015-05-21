@@ -1,8 +1,8 @@
 Package.describe({
   name: 'starrynight:glass-ui',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Inspired by the Day Made of Glass videos....',
   // URL to the Git repository containing the source code for this package.
   git: 'http://github.com/awatson1978/meteor-cookbook/packages/glass-ui',
   // By default, Meteor will default to using README.md for documentation.
