@@ -1,0 +1,34 @@
+14:54:29.008 INFO - Launching a standalone server
+Setting system property webdriver.chrome.driver to selenium/chromedriver
+14:54:29.069 INFO - Java: Apple Inc. 20.65-b04-466.1
+14:54:29.069 INFO - OS: Mac OS X 10.10.2 x86_64
+14:54:29.088 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+14:54:29.183 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+14:54:29.268 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+14:54:29.270 INFO - Version Jetty/5.1.x
+14:54:29.271 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+14:54:29.272 INFO - Started HttpContext[/selenium-server,/selenium-server]
+14:54:29.272 INFO - Started HttpContext[/,/]
+14:54:29.349 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@75e845c2
+14:54:29.349 INFO - Started HttpContext[/wd,/wd]
+14:54:29.391 INFO - Started SocketListener on 0.0.0.0:4444
+14:54:29.391 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
+14:54:29.724 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])
+14:54:29.741 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]
+14:54:34.575 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]]
+14:54:34.585 INFO - Executing: [get: http://localhost:3000])
+14:54:35.133 INFO - Done: [get: http://localhost:3000]
+14:54:35.143 INFO - Executing: [set window size])
+14:54:35.592 INFO - Done: [set window size]
+14:54:35.601 INFO - Executing: [find element: By.cssSelector: body])
+14:54:35.803 INFO - Done: [find element: By.cssSelector: body]
+14:54:35.810 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+14:54:35.884 INFO - Done: [find element: By.cssSelector: #mainPanel]
+14:54:35.889 INFO - Executing: [find element: By.cssSelector: #transparentPanel])
+14:54:36.001 INFO - Done: [find element: By.cssSelector: #transparentPanel]
+14:54:36.006 INFO - Executing: [find elements: By.cssSelector: #mainPage])
+14:54:36.075 INFO - Done: [find elements: By.cssSelector: #mainPage]
+14:54:36.079 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (027bac3b-f903-8b43-8c18-490c0aecd772)] -> css selector: #mainPage]])
+14:54:36.138 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (027bac3b-f903-8b43-8c18-490c0aecd772)] -> css selector: #mainPage]]
+14:54:36.143 INFO - Executing: [delete session: 3105f714-663b-4498-9664-940e5c4cf42c])
+14:54:36.289 INFO - Done: [delete session: 3105f714-663b-4498-9664-940e5c4cf42c]
