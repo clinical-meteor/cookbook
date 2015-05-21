@@ -1,26 +1,32 @@
 
 <template name="foosListPage">
   <div id="foosListPage" class="page">
-    {{> pageNavHeader}}
+    {{> pageNavHeader }}
 
     <input id="fooSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." />
     <ul id="foosUnorderedList">
-      {{#each foosList}}
-        <li class="fooItem">
-          <article>
-            <h2 class="titleText">{{title}}</h2>
-            <span class="pull-right barcode gray idText">{{_id}}</span><br>
-            <span class="descriptionText">{{description}}</span>
+      {{#if hasNoContent}}
+        <li id="noResultsMessage" class="addFooItem">
+          <article class="noResultsMessage">
+            <span>There are no results!  Click to add one.</span>
           </article>
           <div class="fadeAway"></div>
         </li>
-      {{/each}}
-        <li class="addFooItem">
-          <article>
-            <h3 class="addFooIcon"><i class="fa fa-dot-circle-o"></i></h3>
-          </article>
-          <div class="fadeAway"></div>
-        </li>
+
+      {{else}}
+        {{#each foosList}}
+          <li class="fooItem">
+            <article>
+              <h2 class="titleText">{{title}}</h2>
+              <span class="pull-right barcode gray idText">{{_id}}</span><br>
+              <span class="descriptionText">{{description}}</span>
+            </article>
+            <div class="fadeAway"></div>
+          </li>
+        {{/each}}
+      {{/if}}
+
     </ul>
+    {{> pageNavFooter }}
   </div>
 </template>
