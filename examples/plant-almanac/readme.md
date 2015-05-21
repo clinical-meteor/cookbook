@@ -21,4 +21,8 @@ starrynight scaffold --boilerplate mobile-app
 starrynight scaffold --boilerplate client-server
 starrynight scaffold --boilerplate active-record
 
+starrynight refactor --from Plants --to Plants
+starrynight refactor --from plant --to plants
+
+meteor add clinical:dataset-plants
 ````
