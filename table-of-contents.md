@@ -1,7 +1,8 @@
-#### Table of Contents  
+## Table of Contents  
 
-- [Cookbook Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
-- [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
+========================
+#### Part I - Getting Started
+
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
 - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
@@ -13,13 +14,10 @@
   - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
     - [Atom Editor](https://github.com/awatson1978/meteor-api)  
     - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
-  - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
-    - [The Refactoring Process](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
-    - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
-    - [Refactoring With Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.tdd.md)   
-    - [Writing Acceptance Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
-    - [Writing Unit Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
-    - [Writing Unit Tests (with Jasmine Unit and Velocity)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.with.jasmine.md)  
+
+========================
+#### Part II - Basic Architecture
+
 - Site Mechanics
     - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/filestructure.md)
     - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
@@ -33,12 +31,23 @@
     - [Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
       - [Upgrading Legacy Apps to Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrading-to-0.9.x.md)  
       - [Clinical Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)  
+
+
+========================
+#### Part III - Deployment Environments    
+
 - [Environments](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
   - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
   - [Deploying to Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/deploying.to.production.md)
   - [Running in Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
   - [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
   - [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
+  - [Proxies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/proxies.md)  
+
+
+========================
+#### Part IV - Data Layer  
+
 - [Data Layer](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/datalayer.md)  
   - [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
   - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
@@ -55,11 +64,24 @@
   - [Replica Sets (aka Shards)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/replica-sets.md)  
   - [Horizontal Scaling](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/horizontal-scaling.md)  
   - [Integrating 3rd Party Databases](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/orm.layers.md)  
-- [Routing](https://github.com/EventedMind/iron-router)
-  - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
-  - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
-  - [Page Not Found](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/routing.page-not-found.md)
-- Meteor UI Components
+
+
+========================
+#### Part V - Test Driven Development  
+
+
+  - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
+    - [The Refactoring Process](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
+    - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
+    - [Refactoring With Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.tdd.md)   
+    - [Writing Acceptance Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
+    - [Writing Unit Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
+
+
+
+
+========================
+#### Part VI - User Interface Components
   - [Navbars](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/navbars.md)  
   - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
   - [Drop Down Menus](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/drop-down-menu.md)  
@@ -70,11 +92,14 @@
   - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)
   - [Theming](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/theming.md)  
 - Application Programming Interfaces
+
+
+========================
+#### Part VI - Recipes  
+
+- [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
   - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)
   - [Exposing a REST API](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/rest.md)
-- Data Driven Documents (D3)  
-- [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
-- [Recipes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/recipes.md)  
   - [Offline Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)    
   - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
   - [Email](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/email.md)  
@@ -89,10 +114,24 @@
   - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
   - [Non Standard Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/non-standard-architectures.md)     
   - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
-  - [Proxies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/proxies.md)  
   - Parsing File Types
     - [XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
     - [CSV](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.csv.md)  
+  - [Autogenerated Content](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/content.md)  
+
+
+========================
+#### Part VI - Miscellaneous
+
+
+- [Routing](https://github.com/EventedMind/iron-router)
+  - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
+  - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
+  - [Page Not Found](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/routing.page-not-found.md)
+
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
-
+- [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
+- [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
+- [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
+- [Writing Unit Tests (with Jasmine Unit and Velocity)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.with.jasmine.md)  
