@@ -50,6 +50,13 @@ Template.foosListPage.rendered = function(){
 
 
 Template.foosListPage.helpers({
+  hasNoContent: function(){
+    if(Foo.find().count() === 0){
+      return true;
+    }else{
+      return false;
+    }
+  },
   foosList: function() {
     // this triggers a refresh of data elsewhere in the table
     // step C:  receive some data and set our reactive data variable with a new value

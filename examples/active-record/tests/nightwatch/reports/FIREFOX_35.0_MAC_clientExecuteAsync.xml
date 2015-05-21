@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="clientExecuteAsync"
+    errors="0" failures="1" hostname="" id="" package="clientExecuteAsync" skipped="0"
+    tests="2" time="8.716" timestamp="Mon, 11 May 2015 11:14:03 GMT">
+  
+    <testcase name="Execute Return" time="3.320" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Execute Async" time="5.396" assertions="1">  <failure message="Failed [equal]: ({&quot;message&quot;:&quot;Timed out waiting for async script result after 3ms\nBuild info: version: &#39;2.45.0&#39;, revision: &#39;5017cb8&#39;, time: &#39;2015 == 0.95)">Failed [equal]: ({&quot;message&quot;:&quot;Timed out waiting for async script result after 3ms\nBuild info: version: &#39;2.45.0&#39;, revision: &#39;5017cb8&#39;, time: &#39;2015 == 0.95): Expected &quot;0.95&quot; but got: &quot;[object Object]&quot;
+    at Object.equal (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/api.js:66:24)
+    at Object.&lt;anonymous&gt; (/Users/abigailwatson/Code/StarryNight/meteor-cookbook/examples/active-record/tests/nightwatch/walkthroughs/clientExecuteAsync.js:30:23)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
+    at HttpRequest.emit (events.js:98:17)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
+    at HttpRequest.emit (events.js:106:17)
+    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:943:16
+    at process._tickCallback (node.js:419:13)</failure>
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
