@@ -15,14 +15,6 @@ Template.promptModal.getPromptMessage = function(){
 Template.promptModal.getUserName = function(){
   return Meteor.user().profile.name;
 };
-Template.promptModal.rendered = function(){
-  $("#promptModal").modal({                    
-    "backdrop"  : "static",
-    "keyboard"  : true,
-    "show"      : false                     
-  });
-};
-
 ````
 
 And when you get a whole bunch of them, refactor, organize, and consolidate into the following syntax:  
@@ -37,13 +29,6 @@ Template.promptModal.helpers({
   },
   getUserName = function(){
     return Meteor.user().profile.name;
-  },
-  rendered: function(){
-    $("#promptModal").modal({                    
-      "backdrop"  : "static",
-      "keyboard"  : true,
-      "show"      : false                     
-    });
   }
 });
 ````
@@ -78,7 +63,7 @@ And now we save ourselves the retyping of ``Template.fooTemplate.helpers({getUse
 
 
 
-#### Convert Helper Functions Into an Isomorphically Shared Object  
+#### Convert Helper Functions Into an Isomorphic Object  
 
 Syntax matters when refactoring code, and if you want to isomorphically share helper functions between server and client, you'll need to begin by refactoring your function declarations into anonymous function expressions.
 ````js
@@ -112,5 +97,23 @@ lipsumGenerator.getRandomString();
 ````
 
 
+#### Sharing Events and Helpers Between Templates  
+
+[aldeed:template-extension](https://github.com/aldeed/meteor-template-extension)  
+````
+meteor add aldeed:template-extension
+````
 
 
+#### Extracting Packages
+
+````
+starrynight publish --create my:package --from /path/to/component
+````
+
+#### Converting CSS/HTML to JS
+
+````js
+// starrynight convert --toJss /path/to/file.css
+// starrynight convert --toJson /path/to/file.html
+````
