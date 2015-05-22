@@ -23,20 +23,20 @@ var plantsArray = [
 
 
 Meteor.startup(function(){
-  if(Plants.find().count() === 0){
-    plantsArray.forEach(function(dataRow){
+  if(Plants.find().count() == 0){
+    plantsArray.forEach(function(plant){
       var newPlant = {
-        commonName: dataRow[0],
-        variety: dataRow[1],
-        latinName: dataRow[2],
+        commonName: plant[0],
+        variety: plant[1],
+        latinName: plant[2],
         growCycle: {
-          duration: dataRow[3],
-          germination: dataRow[5]
+          duration: plant[3],
+          germination: plant[5]
         },
-        whenToPlant: dataRow[4],
-        spacing: dataRow[6]
+        whenToPlant: plant[4],
+        spacing: plant[6]
       }
       Plants.insert(newPlant);
-    });    
+    });
   }
 });

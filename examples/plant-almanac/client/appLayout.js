@@ -17,6 +17,9 @@ Session.setDefault('transparencyDivHeight', 100);
 Session.setDefault('transparencyDivLeft', 0);
 
 
+Meteor.startup(function(){
+  Template.appLayout.layout();
+});
 
 
 //==================================================================================================
@@ -47,6 +50,23 @@ Template.appLayout.layout = function(){
     Session.set('transparencyDivLeft', 0);
   }
 }
+
+
+
+Template.appLayout.events({
+  "click #homePageBadge": function(){
+     Router.go("/");
+  },
+  "click #listBadge": function(){
+     Router.go("/list/plants");
+  },
+  "click #tableBadge": function(){
+     Router.go("/table/plants");
+  },
+  "click #backLeafBadge": function(event, template){
+     Router.go("/grid/plants");
+  }
+});
 
 
 //==================================================================================================

@@ -1,11 +1,24 @@
-<head>
+<!-- <head>
   <commonName>AppTitle</commonName>
-</head>
+</head> -->
 
 <template name="appLayout">
   {{> navbarHeader}}
 
+  <div id="appLayout">
     <div class="hidden">{{resized}}</div>
+
+    <div id="video-container">
+      <video autoplay loop class="fillWidth">
+        <source src="/gardenDesign.mp4" type="video/mp4" />
+        Your browser does not support the video tag.  Upgrade your browser?
+      </video>
+    </div>
+
+    <button id="homePageBadge" class="leafThemed mega homePageBadge"><i class="fa fa-leaf"></i></button>
+    <button id="tableBadge" class="leafThemed super tableBadge"><i class="fa fa-table"></i></button>
+    <button id="listBadge" class="leafThemed super listBadge"><i class="fa fa-list"></i></button>
+    <button id="backLeafBadge" class="leafThemed super imageGridBadge"><i class="fa fa-th"></i></button>
 
     <div id="transparentPanel" class="container" style="{{getStyle}}"></div>
     <div id="mainPanel" class="padded container helveticas" style="{{getStyle}}">
@@ -15,6 +28,7 @@
 
       </div>
     </div>
+  </div>
 
   {{> navbarFooter}}
 </template>
