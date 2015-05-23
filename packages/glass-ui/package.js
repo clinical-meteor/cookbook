@@ -1,6 +1,6 @@
 Package.describe({
   name: 'starrynight:glass-ui',
-  version: '0.0.4',
+  version: '0.1.0',
   // Brief, one-line summary of the package.
   summary: 'Inspired by the Day Made of Glass videos....',
   // URL to the Git repository containing the source code for this package.
@@ -13,6 +13,13 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use("less");
+
+  api.use("fortawesome:fontawesome@4.3.0");
+  api.use("awatson1978:fonts-helveticas@1.0.4");
+  api.use("clinical:barcode@2.0.2");
+  api.use("grove:less@0.1.1");
+
+
   api.addFiles('glass-ui.less');
 });
 
