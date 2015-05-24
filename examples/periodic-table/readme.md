@@ -1,7 +1,7 @@
-Plant Almanac
+Periodic Table
 ===========================================
 
-The Old-Farmers' Almanac meets seed-packet inventory meets botanical latin learning app meets hydroponics utility meets garden planner.  
+Periodic Table using Meteor and Famo.us Mixed Mode.
 
 
 ==========================================
@@ -13,23 +13,23 @@ The Old-Farmers' Almanac meets seed-packet inventory meets botanical latin learn
 #### Build Recipe  
 
 ````
-meteor create plant-almanac
-cd plant-almanac
+meteor create periodic-table
+cd periodic-table
 
 meteor add less
 meteor add grigio:babel
 
 starrynight scaffold --framework nightwatch
 starrynight scaffold --boilerplate project-homepage
-rm -rf plant-almanac.*
+rm -rf periodic-table.*
 
 starrynight scaffold --boilerplate iron-router
 starrynight scaffold --boilerplate mobile-app
 starrynight scaffold --boilerplate client-server
 starrynight scaffold --boilerplate active-record
 
-starrynight refactor --from Plants --to Plants
-starrynight refactor --from plant --to plants
+starrynight refactor --from record --to elements
+starrynight refactor --from Record --to Elements
 
 mkdir packages
 cd packages
