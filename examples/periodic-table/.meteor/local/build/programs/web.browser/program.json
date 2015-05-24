@@ -678,9 +678,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.appLayout.js?f628702aa5e20f1fbbe43f9e78f44e63a1ac603b",
-      "size": 1608,
-      "hash": "f628702aa5e20f1fbbe43f9e78f44e63a1ac603b"
+      "url": "/client/template.appLayout.js?4ef4552727f996386580d13facdf8909aaee73fd",
+      "size": 1656,
+      "hash": "4ef4552727f996386580d13facdf8909aaee73fd"
     },
     {
       "path": "app/lib/collections.js",
@@ -1187,15 +1187,15 @@
       "hash": "b08f287bbf348fec1281651a3cbf09c8732cb86e"
     },
     {
-      "path": "fcec2448071143dd0413d18e412099d3750b76c9.css",
+      "path": "881811d3d23b32a09e9fa2e616ceca74dc626232.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/fcec2448071143dd0413d18e412099d3750b76c9.css",
-      "sourceMap": "fcec2448071143dd0413d18e412099d3750b76c9.css.map",
-      "sourceMapUrl": "/fcec2448071143dd0413d18e412099d3750b76c9.map",
-      "size": 40392,
-      "hash": "fcec2448071143dd0413d18e412099d3750b76c9"
+      "url": "/881811d3d23b32a09e9fa2e616ceca74dc626232.css",
+      "sourceMap": "881811d3d23b32a09e9fa2e616ceca74dc626232.css.map",
+      "sourceMapUrl": "/881811d3d23b32a09e9fa2e616ceca74dc626232.map",
+      "size": 40530,
+      "hash": "881811d3d23b32a09e9fa2e616ceca74dc626232"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
@@ -1444,7 +1444,7 @@
       "path": "head.html",
       "where": "internal",
       "type": "head",
-      "hash": "4d2e8e008742f140ab94ac6751505b56516c80f1"
+      "hash": "cfcf18248477baaff36d6d9bc8579cf2bb97af80"
     }
   ]
 }
