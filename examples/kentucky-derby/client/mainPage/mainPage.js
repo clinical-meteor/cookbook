@@ -1,4 +1,11 @@
 
+Router.route('/', {
+  template: "mainPage",
+  name: "mainPage",
+  onAfterAction: function(){
+    Template.appLayout.delayedLayout(100);
+  }
+});
 
 
 Template.mainPage.rendered = function(){
