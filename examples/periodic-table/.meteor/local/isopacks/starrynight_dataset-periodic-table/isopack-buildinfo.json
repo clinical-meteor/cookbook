@@ -3,21 +3,21 @@
   "unibuildDependencies": {
     "os.json": {
       "files": {
-        "/Users/abigailwatson/Code/meteor-cookbook/examples/periodic-table/packages/dataset-periodic-table/package.js": "2d658d616d9ffd99abd2af2910d4c6fd7b369880",
+        "/Users/abigailwatson/Code/meteor-cookbook/examples/periodic-table/packages/dataset-periodic-table/package.js": "2a9727ba0d5f6b6dfe5b44080d7099c21dabc1c0",
         "/Users/abigailwatson/Code/meteor-cookbook/examples/periodic-table/packages/dataset-periodic-table/dataset-periodic-table.js": "171b0625ce270a8a7ca54456e025354d35054cf1"
       },
       "directories": []
     },
     "web.browser.json": {
       "files": {
-        "/Users/abigailwatson/Code/meteor-cookbook/examples/periodic-table/packages/dataset-periodic-table/package.js": "2d658d616d9ffd99abd2af2910d4c6fd7b369880"
+        "/Users/abigailwatson/Code/meteor-cookbook/examples/periodic-table/packages/dataset-periodic-table/package.js": "2a9727ba0d5f6b6dfe5b44080d7099c21dabc1c0"
       },
       "directories": []
     }
   },
   "pluginDependencies": {
     "files": {
-      "/Users/abigailwatson/Code/meteor-cookbook/examples/periodic-table/packages/dataset-periodic-table/package.js": "2d658d616d9ffd99abd2af2910d4c6fd7b369880"
+      "/Users/abigailwatson/Code/meteor-cookbook/examples/periodic-table/packages/dataset-periodic-table/package.js": "2a9727ba0d5f6b6dfe5b44080d7099c21dabc1c0"
     },
     "directories": []
   },

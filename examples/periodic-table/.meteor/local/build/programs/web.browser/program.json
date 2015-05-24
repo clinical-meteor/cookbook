@@ -642,9 +642,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/components/infoPage/template.infoPage.js?3aeac6712db072aa8406c225f2be7462082c85dd",
-      "size": 1269,
-      "hash": "3aeac6712db072aa8406c225f2be7462082c85dd"
+      "url": "/client/components/infoPage/template.infoPage.js?2ca95c7c50d8e8606ea6103808afbf5df92eff1b",
+      "size": 1124,
+      "hash": "2ca95c7c50d8e8606ea6103808afbf5df92eff1b"
     },
     {
       "path": "app/client/components/navbarFooter/template.navbarFooter.js",
@@ -1187,15 +1187,15 @@
       "hash": "b08f287bbf348fec1281651a3cbf09c8732cb86e"
     },
     {
-      "path": "569c48879ce3e0e2c0e4d5f0f4096303ad36474e.css",
+      "path": "7630e33ac73c94aa98f3c98439f2427ed8fe1edf.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/569c48879ce3e0e2c0e4d5f0f4096303ad36474e.css",
-      "sourceMap": "569c48879ce3e0e2c0e4d5f0f4096303ad36474e.css.map",
-      "sourceMapUrl": "/569c48879ce3e0e2c0e4d5f0f4096303ad36474e.map",
-      "size": 40006,
-      "hash": "569c48879ce3e0e2c0e4d5f0f4096303ad36474e"
+      "url": "/7630e33ac73c94aa98f3c98439f2427ed8fe1edf.css",
+      "sourceMap": "7630e33ac73c94aa98f3c98439f2427ed8fe1edf.css.map",
+      "sourceMapUrl": "/7630e33ac73c94aa98f3c98439f2427ed8fe1edf.map",
+      "size": 40420,
+      "hash": "7630e33ac73c94aa98f3c98439f2427ed8fe1edf"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
@@ -1414,6 +1414,15 @@
       "hash": "c67d52bb5b29fd0cf1ea901eea7048f83fa89256"
     },
     {
+      "path": "app/bg.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/bg.jpg",
+      "size": 38179,
+      "hash": "45c0a074dd147589f70e03a21736ebc12f4704a1"
+    },
+    {
       "path": "app/colorful-background-29.jpg",
       "where": "client",
       "type": "asset",
@@ -1421,6 +1430,15 @@
       "url": "/colorful-background-29.jpg",
       "size": 945401,
       "hash": "468ca15ac965ec3c21aac99c419c3a37b43b53a7"
+    },
+    {
+      "path": "app/panel-item-ticks-hq.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/panel-item-ticks-hq.png",
+      "size": 3453,
+      "hash": "8427487c2a87e772b7c5c464c752d921527a4d0b"
     },
     {
       "path": "head.html",

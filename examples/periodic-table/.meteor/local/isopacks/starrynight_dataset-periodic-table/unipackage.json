@@ -1,6 +1,6 @@
 {
   "name": "starrynight:dataset-periodic-table",
-  "summary": "",
+  "summary": "Dataset of atomic elements for use in a periodic table.",
   "version": "0.0.1",
   "isTest": false,
   "plugins": [],
