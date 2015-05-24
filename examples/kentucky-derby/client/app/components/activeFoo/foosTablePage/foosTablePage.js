@@ -12,7 +12,10 @@ Session.setDefault('skipCount', 0);
 Router.map(function(){
   this.route('foosTablePage', {
     path: '/table/foos',
-    template: 'foosTablePage'
+    template: 'foosTablePage',
+    onAfterAction: function(){
+      Template.appLayout.layout();
+    }
   });
 });
 

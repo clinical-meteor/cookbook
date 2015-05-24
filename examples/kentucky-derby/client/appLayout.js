@@ -21,6 +21,9 @@ Session.setDefault('transparencyDivHeight', 100);
 Session.setDefault('transparencyDivLeft', 0);
 
 
+Meteor.startup(function(){
+  Template.appLayout.layout();
+});
 
 
 //==================================================================================================
