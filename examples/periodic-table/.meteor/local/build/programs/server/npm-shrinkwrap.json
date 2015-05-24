@@ -1,0 +1,40 @@
+{
+  "name": "meteor-dev-bundle",
+  "version": "0.0.0",
+  "dependencies": {
+    "fibers": {
+      "version": "1.0.5",
+      "from": "fibers@1.0.5",
+      "resolved": "https://registry.npmjs.org/fibers/-/fibers-1.0.5.tgz"
+    },
+    "semver": {
+      "version": "4.1.0",
+      "from": "semver@4.1.0",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-4.1.0.tgz"
+    },
+    "source-map-support": {
+      "version": "0.2.8",
+      "from": "source-map-support@0.2.8",
+      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.2.8.tgz",
+      "dependencies": {
+        "source-map": {
+          "version": "0.1.32",
+          "from": "source-map@0.1.32",
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.32.tgz",
+          "dependencies": {
+            "amdefine": {
+              "version": "0.1.0",
+              "from": "amdefine@>=0.0.4",
+              "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-0.1.0.tgz"
+            }
+          }
+        }
+      }
+    },
+    "underscore": {
+      "version": "1.5.2",
+      "from": "underscore@1.5.2",
+      "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.5.2.tgz"
+    }
+  }
+}

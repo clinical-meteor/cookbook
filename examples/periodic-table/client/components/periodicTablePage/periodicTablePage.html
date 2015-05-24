@@ -1,0 +1,45 @@
+<template name="periodicTablePage">
+  <article id="periodicTablePage" class="page">
+
+    <input id="elementSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getElementSearchFilter}}" />
+
+    <ul id="elementImageGrid">
+      {{#each lists}}
+      <li class="helveticas">
+        <span class="atomicNumberText">{{atomicNumber}}</span><br>
+        <h1 class="center">{{symbol}}</h1>
+        <h5 class="center">
+          {{name}}<br>
+          {{atomicMass}}<br>
+        </h5>
+        <!-- {{#ContainerSurface size='[150, 150]' perspective=500}}
+            {{#Flipper}}
+              {{>Surface target="front" template="flipper_front"
+                class="red-bg" size="[150,150]" align="[.5,.5]" origin="[.5,.5]"}}
+              {{>Surface target="back" template="flipper_back"
+                class="blue-bg" size="[150,150]" align="[.5,.5]" origin="[.5,.5]"}}
+            {{/Flipper}}
+          {{/ContainerSurface}} -->
+      </li>
+      {{/each}}
+    </ul>
+    <footer class="pageFooter">
+      <h3 class="addElementIcon"><i class="fa fa-sun-o"></i></h3>
+    </footer>
+  </article>
+</template>
+
+
+
+<template name="flipper_front">Front
+  <span class="atomicNumberText">{{atomicNumber}}</span><br>
+  <h1 class="center">{{symbol}}</h1>
+  <h5 class="center">
+    {{name}}<br>
+    {{atomicMass}}<br>
+  </h5>
+</template>
+
+<template name="flipper_back">
+  Back
+</template>

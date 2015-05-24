@@ -1,0 +1,20 @@
+{
+  "name": "starrynight:dataset-periodic-table",
+  "summary": "",
+  "version": "0.0.1",
+  "isTest": false,
+  "plugins": [],
+  "unibuilds": [
+    {
+      "kind": "main",
+      "arch": "os",
+      "path": "os.json"
+    },
+    {
+      "kind": "main",
+      "arch": "web.browser",
+      "path": "web.browser.json"
+    }
+  ],
+  "format": "unipackage-pre2"
+}

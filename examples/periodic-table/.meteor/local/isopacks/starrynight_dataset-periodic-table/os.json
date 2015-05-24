@@ -1,0 +1,19 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/starrynight_dataset-periodic-table.js",
+      "length": 58571,
+      "offset": 0,
+      "servePath": "/packages/starrynight_dataset-periodic-table.js",
+      "sourceMap": "os/packages/starrynight_dataset-periodic-table.js.map"
+    }
+  ]
+}
