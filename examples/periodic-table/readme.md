@@ -33,6 +33,6 @@ starrynight refactor --from Record --to Elements
 
 mkdir packages
 cd packages
-meteor create --package clinical:dataset-plants
-meteor add clinical:dataset-plants
+meteor create --package clinical:dataset-periodic-table
+meteor add clinical:dataset-periodic-table
 ````
