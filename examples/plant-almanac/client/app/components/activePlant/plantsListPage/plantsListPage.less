@@ -1,0 +1,93 @@
+#plantsListPage{
+  ul{
+    list-style-type: none;
+  }
+  li{
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    padding-bottom: 20px;
+    min-height: 90px;
+    overflow-y: hidden;
+    padding: 0px;
+    position: relative;
+    text-align: justify;
+    text-overflow: ellipsis;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .noResultsMessage{
+      text-align: center;
+    }
+  }
+  li:hover{
+    color: maroon;
+    border-top: 1px solid maroon !important;
+    cursor: pointer;
+  }
+
+  li.plantsUnorderedList.notificationHidden {
+    display: none;
+    visibility: visible;
+  }
+
+  .pull-right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .descriptionText{
+    position: absolute;
+    top: 25px;
+  }
+  .fadeAway{
+    height: 10px;
+    width: 100%;
+    //opacity: .8;
+    //background-color: red;
+    bottom: 0px;
+    position: absolute;
+    background: inherit;
+    // background: linear-gradient(180deg, transparent, inherit);
+    //background: -webkit-linear-gradient(180deg, transparent, inherit);
+  }
+  .addPlantIcon{
+    text-align: center;
+  }
+}
+.off-screen{
+  padding-right: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mobile phone layout
+@media only screen and (max-width: 480px) {
+
+}
+
+// portrait orientation
+@media only screen and (max-width: 768px) {
+
+}
+
+// landscape orientation
+@media only screen and (min-width: 768px) {
+
+}

@@ -1,0 +1,51 @@
+<template name="plantUpsertPage">
+  <div id="plantUpsertPage" class="page">
+    <header class="pageHeader">
+      <i class="indexButton fa fa-chevron-left"></i>
+      <h4 class="recordId barcode">{{_id}}</h4>
+      <button id="plantImageGridButton">
+        <i class="imageGridButton fa fa-th"></i>
+      </button>
+      <button id="plantListButton">
+        <i class="listButton fa fa-list"></i>
+      </button>
+      <button id="plantTableButton">
+        <i class="tableButton fa fa-table"></i>
+      </button>
+
+      {{#if _id}}
+        <i class="lockButton fa {{getLockIcon}}"></i>
+      {{/if}}
+    </header>
+
+    <div id="plantUpsertCard" class="card-contents">
+
+      <div id="plantMetaData">
+        <div id="plantMetaInputs">
+          <input id="plantCommonNameInput" class="glass form-control" type="text" placeholder="Common Name" value="{{commonName}}" {{isReadOnly}}><br>
+          <input id="plantLatinNameInput" class="glass form-control" type="text" placeholder="Latin Name" value="{{latinName}}" {{isReadOnly}}><br>
+          <input id="plantUrlInput"  class="glass form-control" type="url" placeholder="http://www.widget.com" value="{{url}}" {{isReadOnly}}>
+          <input id="plantImageUrlInput"  class="glass form-control" type="url" placeholder="http://www.widget.com/cog.jpg" value="{{imageUrl}}" {{isReadOnly}}>
+
+        </div>
+        <img id="plantImage" src="{{imageUrl}}" />
+      </div>
+      <textarea id="plantDescriptionInput"  class="glass form-control" rows="10" placeholder="Lorem ipsum dolar set et..." {{isReadOnly}}>{{notes}}</textarea><br>
+    </div>
+
+    <footer class="pageFooter">
+      <button id="savePlantButton">
+        <i class="fa fa-dot-circle-o"></i>
+        <i class="fa fa-dot-circle-o"></i>
+        <i class="fa fa-dot-circle-o"></i>
+      </button>
+      {{#if _id}}
+        <button id="removePlantButton">
+          <i class="fa fa-times"></i>
+          <i class="fa fa-times"></i>
+          <i class="fa fa-times"></i>
+        </button>
+      {{/if}}
+    </footer>
+  </div>
+</template>
