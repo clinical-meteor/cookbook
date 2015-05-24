@@ -1,0 +1,15 @@
+{
+	"library/meteor/core/PageView": [
+		"famous/views/Scrollview",
+		"library/meteor/core/Surface"
+	],
+	"library/meteor/core/ReactiveEntity": [],
+	"library/meteor/core/Surface": [
+		"famous/core/Surface"
+	],
+	"library/meteor/core/ViewSequence": [
+		"famous/core/ViewSequence",
+		"library/meteor/core/Surface",
+		"library/meteor/core/ReactiveEntity"
+	]
+}

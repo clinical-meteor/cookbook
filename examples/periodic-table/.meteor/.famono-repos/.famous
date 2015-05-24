@@ -1,0 +1,433 @@
+{
+	"famous/core/Context": [
+		"famous/core/RenderNode",
+		"famous/core/EventHandler",
+		"famous/core/ElementAllocator",
+		"famous/core/Transform",
+		"famous/transitions/Transitionable"
+	],
+	"famous/core/ElementAllocator": [],
+	"famous/core/ElementOutput": [
+		"famous/core/Entity",
+		"famous/core/EventHandler",
+		"famous/core/Transform"
+	],
+	"famous/core/Engine": [
+		"famous/core/Context",
+		"famous/core/EventHandler",
+		"famous/core/OptionsManager"
+	],
+	"famous/core/Entity": [],
+	"famous/core/EventEmitter": [],
+	"famous/core/EventHandler": [
+		"famous/core/EventEmitter"
+	],
+	"famous/core/Group": [
+		"famous/core/Context",
+		"famous/core/Transform",
+		"famous/core/Surface"
+	],
+	"famous/core/Modifier": [
+		"famous/core/Transform",
+		"famous/transitions/Transitionable",
+		"famous/transitions/TransitionableTransform"
+	],
+	"famous/core/OptionsManager": [
+		"famous/core/EventHandler"
+	],
+	"famous/core/RenderNode": [
+		"famous/core/Entity",
+		"famous/core/SpecParser"
+	],
+	"famous/core/Scene": [
+		"famous/core/Transform",
+		"famous/core/Modifier",
+		"famous/core/RenderNode"
+	],
+	"famous/core/SpecParser": [
+		"famous/core/Transform"
+	],
+	"famous/core/Surface": [
+		"famous/core/ElementOutput"
+	],
+	"famous/core/Transform": [],
+	"famous/core/View": [
+		"famous/core/EventHandler",
+		"famous/core/OptionsManager",
+		"famous/core/RenderNode",
+		"famous/utilities/Utility"
+	],
+	"famous/core/ViewSequence": [],
+	"famous/core/famous": [],
+	"famous/events/EventArbiter": [
+		"famous/core/EventHandler"
+	],
+	"famous/events/EventFilter": [
+		"famous/core/EventHandler"
+	],
+	"famous/events/EventMapper": [
+		"famous/core/EventHandler"
+	],
+	"famous/inputs/Accumulator": [
+		"famous/core/EventHandler",
+		"famous/transitions/Transitionable"
+	],
+	"famous/inputs/DesktopEmulationMode": [],
+	"famous/inputs/FastClick": [],
+	"famous/inputs/GenericSync": [
+		"famous/core/EventHandler"
+	],
+	"famous/inputs/MouseSync": [
+		"famous/core/EventHandler",
+		"famous/core/OptionsManager"
+	],
+	"famous/inputs/PinchSync": [
+		"famous/inputs/TwoFingerSync",
+		"famous/core/OptionsManager"
+	],
+	"famous/inputs/RotateSync": [
+		"famous/inputs/TwoFingerSync",
+		"famous/core/OptionsManager"
+	],
+	"famous/inputs/ScaleSync": [
+		"famous/inputs/TwoFingerSync",
+		"famous/core/OptionsManager"
+	],
+	"famous/inputs/ScrollSync": [
+		"famous/core/EventHandler",
+		"famous/core/Engine",
+		"famous/core/OptionsManager"
+	],
+	"famous/inputs/TouchSync": [
+		"famous/inputs/TouchTracker",
+		"famous/core/EventHandler",
+		"famous/core/OptionsManager"
+	],
+	"famous/inputs/TouchTracker": [
+		"famous/core/EventHandler"
+	],
+	"famous/inputs/TwoFingerSync": [
+		"famous/core/EventHandler"
+	],
+	"famous/math/Matrix": [
+		"famous/math/Vector"
+	],
+	"famous/math/Quaternion": [
+		"famous/math/Matrix"
+	],
+	"famous/math/Random": [],
+	"famous/math/Utilities": [],
+	"famous/math/Vector": [],
+	"famous/modifiers/Draggable": [
+		"famous/core/Transform",
+		"famous/transitions/Transitionable",
+		"famous/core/EventHandler",
+		"famous/math/Utilities",
+		"famous/inputs/GenericSync",
+		"famous/inputs/MouseSync",
+		"famous/inputs/TouchSync"
+	],
+	"famous/modifiers/Fader": [
+		"famous/transitions/Transitionable",
+		"famous/core/OptionsManager"
+	],
+	"famous/modifiers/ModifierChain": [],
+	"famous/modifiers/StateModifier": [
+		"famous/core/Modifier",
+		"famous/core/Transform",
+		"famous/transitions/Transitionable",
+		"famous/transitions/TransitionableTransform"
+	],
+	"famous/physics/PhysicsEngine": [
+		"famous/core/EventHandler"
+	],
+	"famous/physics/bodies/Body": [
+		"famous/physics/bodies/Particle",
+		"famous/core/Transform",
+		"famous/math/Vector",
+		"famous/math/Quaternion",
+		"famous/math/Matrix",
+		"famous/physics/integrators/SymplecticEuler"
+	],
+	"famous/physics/bodies/Circle": [
+		"famous/physics/bodies/Body",
+		"famous/math/Matrix"
+	],
+	"famous/physics/bodies/Particle": [
+		"famous/math/Vector",
+		"famous/core/Transform",
+		"famous/core/EventHandler",
+		"famous/physics/integrators/SymplecticEuler"
+	],
+	"famous/physics/bodies/Rectangle": [
+		"famous/physics/bodies/Body",
+		"famous/math/Matrix"
+	],
+	"famous/physics/constraints/Collision": [
+		"famous/physics/constraints/Constraint",
+		"famous/math/Vector"
+	],
+	"famous/physics/constraints/Constraint": [
+		"famous/core/EventHandler"
+	],
+	"famous/physics/constraints/Curve": [
+		"famous/physics/constraints/Constraint",
+		"famous/math/Vector"
+	],
+	"famous/physics/constraints/Distance": [
+		"famous/physics/constraints/Constraint",
+		"famous/math/Vector"
+	],
+	"famous/physics/constraints/Snap": [
+		"famous/physics/constraints/Constraint",
+		"famous/math/Vector"
+	],
+	"famous/physics/constraints/Surface": [
+		"famous/physics/constraints/Constraint",
+		"famous/math/Vector"
+	],
+	"famous/physics/constraints/Wall": [
+		"famous/physics/constraints/Constraint",
+		"famous/math/Vector"
+	],
+	"famous/physics/constraints/Walls": [
+		"famous/physics/constraints/Constraint",
+		"famous/physics/constraints/Wall",
+		"famous/math/Vector"
+	],
+	"famous/physics/forces/Drag": [
+		"famous/physics/forces/Force"
+	],
+	"famous/physics/forces/Force": [
+		"famous/math/Vector",
+		"famous/core/EventHandler"
+	],
+	"famous/physics/forces/Repulsion": [
+		"famous/physics/forces/Force",
+		"famous/math/Vector"
+	],
+	"famous/physics/forces/RotationalDrag": [
+		"famous/physics/forces/Drag"
+	],
+	"famous/physics/forces/RotationalSpring": [
+		"famous/physics/forces/Force",
+		"famous/physics/forces/Spring",
+		"famous/math/Quaternion"
+	],
+	"famous/physics/forces/Spring": [
+		"famous/physics/forces/Force",
+		"famous/math/Vector"
+	],
+	"famous/physics/forces/VectorField": [
+		"famous/physics/forces/Force",
+		"famous/math/Vector"
+	],
+	"famous/physics/integrators/SymplecticEuler": [],
+	"famous/surfaces/CanvasSurface": [
+		"famous/core/Surface"
+	],
+	"famous/surfaces/ContainerSurface": [
+		"famous/core/Surface",
+		"famous/core/Context"
+	],
+	"famous/surfaces/FormContainerSurface": [
+		"famous/surfaces/ContainerSurface"
+	],
+	"famous/surfaces/ImageSurface": [
+		"famous/core/Surface"
+	],
+	"famous/surfaces/InputSurface": [
+		"famous/core/Surface"
+	],
+	"famous/surfaces/SubmitInputSurface": [
+		"famous/surfaces/InputSurface"
+	],
+	"famous/surfaces/TextareaSurface": [
+		"famous/core/Surface"
+	],
+	"famous/surfaces/VideoSurface": [
+		"famous/core/Surface"
+	],
+	"famous/transitions/CachedMap": [],
+	"famous/transitions/Easing": [],
+	"famous/transitions/MultipleTransition": [
+		"famous/utilities/Utility"
+	],
+	"famous/transitions/SnapTransition": [
+		"famous/physics/PhysicsEngine",
+		"famous/physics/bodies/Particle",
+		"famous/physics/constraints/Snap",
+		"famous/math/Vector"
+	],
+	"famous/transitions/SpringTransition": [
+		"famous/physics/PhysicsEngine",
+		"famous/physics/bodies/Particle",
+		"famous/physics/forces/Spring",
+		"famous/math/Vector"
+	],
+	"famous/transitions/Transitionable": [
+		"famous/transitions/MultipleTransition",
+		"famous/transitions/TweenTransition"
+	],
+	"famous/transitions/TransitionableTransform": [
+		"famous/transitions/Transitionable",
+		"famous/core/Transform",
+		"famous/utilities/Utility"
+	],
+	"famous/transitions/TweenTransition": [],
+	"famous/transitions/WallTransition": [
+		"famous/physics/PhysicsEngine",
+		"famous/physics/bodies/Particle",
+		"famous/physics/forces/Spring",
+		"famous/physics/constraints/Wall",
+		"famous/math/Vector"
+	],
+	"famous/utilities/KeyCodes": [],
+	"famous/utilities/Timer": [
+		"famous/core/Engine"
+	],
+	"famous/utilities/Utility": [],
+	"famous/views/ContextualView": [
+		"famous/core/Entity",
+		"famous/core/Transform",
+		"famous/core/EventHandler",
+		"famous/core/OptionsManager"
+	],
+	"famous/views/Deck": [
+		"famous/core/Transform",
+		"famous/core/OptionsManager",
+		"famous/transitions/Transitionable",
+		"famous/utilities/Utility",
+		"famous/views/SequentialLayout"
+	],
+	"famous/views/DrawerLayout": [
+		"famous/core/RenderNode",
+		"famous/core/Transform",
+		"famous/core/OptionsManager",
+		"famous/transitions/Transitionable",
+		"famous/core/EventHandler"
+	],
+	"famous/views/EdgeSwapper": [
+		"famous/transitions/CachedMap",
+		"famous/core/Entity",
+		"famous/core/EventHandler",
+		"famous/core/Transform",
+		"famous/views/RenderController"
+	],
+	"famous/views/FlexibleLayout": [
+		"famous/core/Entity",
+		"famous/core/Transform",
+		"famous/core/OptionsManager",
+		"famous/core/EventHandler",
+		"famous/transitions/Transitionable"
+	],
+	"famous/views/Flipper": [
+		"famous/core/Transform",
+		"famous/transitions/Transitionable",
+		"famous/core/RenderNode",
+		"famous/core/OptionsManager"
+	],
+	"famous/views/GridLayout": [
+		"famous/core/Entity",
+		"famous/core/RenderNode",
+		"famous/core/Transform",
+		"famous/core/ViewSequence",
+		"famous/core/EventHandler",
+		"famous/core/Modifier",
+		"famous/core/OptionsManager",
+		"famous/transitions/Transitionable",
+		"famous/transitions/TransitionableTransform"
+	],
+	"famous/views/HeaderFooterLayout": [
+		"famous/core/Entity",
+		"famous/core/RenderNode",
+		"famous/core/Transform",
+		"famous/core/OptionsManager"
+	],
+	"famous/views/Lightbox": [
+		"famous/core/Transform",
+		"famous/core/Modifier",
+		"famous/core/RenderNode",
+		"famous/utilities/Utility",
+		"famous/core/OptionsManager",
+		"famous/transitions/Transitionable",
+		"famous/transitions/TransitionableTransform"
+	],
+	"famous/views/RenderController": [
+		"famous/core/Modifier",
+		"famous/core/RenderNode",
+		"famous/core/Transform",
+		"famous/transitions/Transitionable",
+		"famous/core/View"
+	],
+	"famous/views/ScrollContainer": [
+		"famous/surfaces/ContainerSurface",
+		"famous/core/EventHandler",
+		"famous/views/Scrollview",
+		"famous/utilities/Utility",
+		"famous/core/OptionsManager"
+	],
+	"famous/views/Scroller": [
+		"famous/core/Entity",
+		"famous/core/Group",
+		"famous/core/OptionsManager",
+		"famous/core/Transform",
+		"famous/utilities/Utility",
+		"famous/core/ViewSequence",
+		"famous/core/EventHandler"
+	],
+	"famous/views/Scrollview": [
+		"famous/physics/PhysicsEngine",
+		"famous/physics/bodies/Particle",
+		"famous/physics/forces/Drag",
+		"famous/physics/forces/Spring",
+		"famous/core/EventHandler",
+		"famous/core/OptionsManager",
+		"famous/core/ViewSequence",
+		"famous/views/Scroller",
+		"famous/utilities/Utility",
+		"famous/inputs/GenericSync",
+		"famous/inputs/ScrollSync",
+		"famous/inputs/TouchSync"
+	],
+	"famous/views/SequentialLayout": [
+		"famous/core/OptionsManager",
+		"famous/core/Entity",
+		"famous/core/Transform",
+		"famous/core/ViewSequence",
+		"famous/utilities/Utility"
+	],
+	"famous/views/SizeAwareView": [
+		"famous/core/View",
+		"famous/core/Entity",
+		"famous/core/Transform"
+	],
+	"famous/widgets/NavigationBar": [
+		"famous/core/Scene",
+		"famous/core/Surface",
+		"famous/core/Transform",
+		"famous/core/View"
+	],
+	"famous/widgets/Slider": [
+		"famous/core/Surface",
+		"famous/surfaces/CanvasSurface",
+		"famous/core/Transform",
+		"famous/core/EventHandler",
+		"famous/math/Utilities",
+		"famous/core/OptionsManager",
+		"famous/inputs/MouseSync",
+		"famous/inputs/TouchSync",
+		"famous/inputs/GenericSync"
+	],
+	"famous/widgets/TabBar": [
+		"famous/utilities/Utility",
+		"famous/core/View",
+		"famous/views/GridLayout",
+		"famous/widgets/ToggleButton"
+	],
+	"famous/widgets/ToggleButton": [
+		"famous/core/Surface",
+		"famous/core/EventHandler",
+		"famous/views/RenderController"
+	]
+}

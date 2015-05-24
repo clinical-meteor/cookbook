@@ -1,0 +1,18 @@
+<template name="plantPreviewPage">
+  <div id="plantPreviewPage" class="fullheight padded page">
+    <header class="pageHeader">
+      <i class="indexButton fa fa-chevron-left"></i>
+      <h4 class="recordId barcode">{{_id}}</h4>
+      <i class="imageGridButton fa fa-th"></i>
+      <i class="listButton fa fa-list"></i>
+      <i class="tableButton fa fa-table"></i>
+    </header>
+
+      <div id="plantPreviewCard" class="card-contents">
+        <h2 id="plantTitleText">{{commonName}}</h2>
+        <p id="notesText">
+          {{notes}}
+        </p>
+      </div>
+  </div>
+</template>

@@ -1,0 +1,10 @@
+{
+	"famous.polyfills/classList": [],
+	"famous.polyfills/functionPrototypeBind": [],
+	"famous.polyfills/index": [
+		"famous.polyfills/classList",
+		"famous.polyfills/functionPrototypeBind",
+		"famous.polyfills/requestAnimationFrame"
+	],
+	"famous.polyfills/requestAnimationFrame": []
+}

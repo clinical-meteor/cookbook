@@ -1,0 +1,66 @@
+
+<template name="plantsTablePage">
+  <article id="plantsTablePage" class="page">
+    {{> pageNavHeader}}
+
+    <input id="plantSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getPlantSearchFilter}}" />
+
+    <table id="plantsTable" class=" table table-striped tablesorter">
+      <thead>
+        <tr class="plantHeaderRow">
+          <th>
+            <i class="fa fa-check"></i>
+          </th>
+          <!-- <th>_id</th> -->
+          <th>
+            <i class="fa fa-image"></i>
+          </th>
+          <th>Title</th>
+          <th>Latin</th>
+          <!-- <th>Stars</th> -->
+          <!-- <th>Url</th> -->
+          <th>
+            <i class="fa fa-recycle"></i>
+          </th>
+          <th>
+            <i class="fa fa-times"></i>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each plantsList}}
+          <tr class="plantRow {{isGrayedOut}}">
+            <td class="checkbox">
+              <i class="fa {{checkedIcon}}"></i>
+            </td>
+            <!-- <td class="barcode">{{_id}}</td> -->
+            <td class="avatar">
+              {{#if imageUrl}}
+              <i class="fa fa-image"></i>
+              {{/if}}
+            </td>
+            <td>{{commonName}}</td>
+            <td>{{latinName}}</td>
+            <!-- <td>
+              <i class="starA fa {{starA}}"></i>
+              <i class="starB fa {{starB}}"></i>
+              <i class="starC fa {{starC}}"></i>
+              <i class="starD fa {{starD}}"></i>
+              <i class="starE fa {{starE}}"></i>
+            </td> -->
+            <!-- <td>{{url}}</td> -->
+            <td class="flag">
+              <i class="fa fa-recycle {{flaggedIcon}}"></i>
+            </td>
+            <td class="delete">
+              <i class="fa fa-times"></i>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <footer class="pageFooter">
+      <h3 class="addPlantIcon"><i class="fa fa-leaf"></i></h3>
+    </footer>
+  </article>
+</template>

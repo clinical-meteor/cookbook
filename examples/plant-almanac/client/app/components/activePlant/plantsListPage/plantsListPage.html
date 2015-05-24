@@ -1,0 +1,32 @@
+
+<template name="plantsListPage">
+  <div id="plantsListPage" class="page">
+    {{> pageNavHeader }}
+
+    <input id="plantSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getPlantSearchFilter}}" />
+    <ul id="plantsUnorderedList">
+      {{#if hasNoContent}}
+        <li id="noResultsMessage" class="addPlantItem">
+          <article class="noResultsMessage">
+            <span>There are no results!  Click to add one.</span>
+          </article>
+          <div class="fadeAway"></div>
+        </li>
+
+      {{else}}
+        {{#each plantsList}}
+          <li class="plantItem">
+            <article>
+              <h2 class="commonNameText">{{commonName}}</h2>
+              <span class="pull-right barcode gray idText">{{_id}}</span><br>
+              <span class="descriptionText">{{notes}}</span>
+            </article>
+            <div class="fadeAway"></div>
+          </li>
+        {{/each}}
+      {{/if}}
+
+    </ul>
+    {{> pageNavFooter }}
+  </div>
+</template>

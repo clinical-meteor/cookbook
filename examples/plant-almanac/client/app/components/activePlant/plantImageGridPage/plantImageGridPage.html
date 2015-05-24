@@ -1,0 +1,21 @@
+<template name="plantImageGridPage">
+  <article id="plantImageGridPage" class="page">
+    {{> pageNavHeader}}
+
+    <input id="plantSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getPlantSearchFilter}}" />
+
+    <ul id="plantImageGrid">
+      {{#each lists}}
+        <li>
+          <img class="plantImage" src="{{imageUrl}}" />
+        </li>
+      {{/each}}
+      <li id="addNewPlant" class="addNewPlant">
+          <img class="plantImage" src="{{imageUrl}}" />
+      </li>
+    </ul>
+    <footer class="pageFooter">
+      <h3 class="addPlantIcon"><i class="fa fa-leaf"></i></h3>
+    </footer>
+  </article>
+</template>
