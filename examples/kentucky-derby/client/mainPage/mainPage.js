@@ -3,7 +3,9 @@ Router.route('/', {
   template: "mainPage",
   name: "mainPage",
   onAfterAction: function(){
+    Template.appLayout.delayedLayout(10);
     Template.appLayout.delayedLayout(100);
+    Template.appLayout.delayedLayout(1000);
   }
 });
 
