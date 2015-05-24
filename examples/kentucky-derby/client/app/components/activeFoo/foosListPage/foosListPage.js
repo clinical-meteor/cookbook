@@ -15,6 +15,9 @@ Router.map(function(){
     template: 'foosListPage',
     data: function(){
       return Foo.find();
+    },
+    onAfterAction: function(){
+      Template.appLayout.layout();
     }
   });
 });

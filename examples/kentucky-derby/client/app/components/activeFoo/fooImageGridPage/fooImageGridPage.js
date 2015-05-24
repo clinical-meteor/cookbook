@@ -1,6 +1,9 @@
 Router.route("/grid/foos", {
   template: "fooImageGridPage",
-  name: "fooImageGridPage"
+  name: "fooImageGridPage",
+  onAfterAction: function(){
+    Template.appLayout.delayedLayout(10);
+  }
 });
 
 
