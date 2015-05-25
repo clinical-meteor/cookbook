@@ -77,6 +77,9 @@ Meteor.startup();
 
             // G: route rendering finished
             Router.onAfterAction()
+
+              // H: router data function occurs
+              data: function(){... }
   
       // D:  templates will finalize
       Template.foo.destroyed
