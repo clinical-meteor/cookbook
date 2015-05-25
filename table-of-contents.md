@@ -71,7 +71,7 @@
 
 
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
-    - [The Refactoring Process](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
+    - [Refactoring Files and Directories](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
     - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
     - [Refactoring MVC to Components](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.mvc.to.components.md)  
     - [Refactoring With Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.tdd.md)   
