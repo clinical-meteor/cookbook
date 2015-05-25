@@ -17,18 +17,7 @@ Session.setDefault('transparencyDivHeight', 100);
 Session.setDefault('transparencyDivLeft', 0);
 
 
-//==================================================================================================
-// FAMO.US
 
-Transform = null;
-
-FView.ready(function() {
-  Transform = famous.core.Transform;
-
-  // Famono: load famo.us shims and CSS
-  famous.polyfills;
-  famous.core.famous; // CSS
-});
 
 //==================================================================================================
 

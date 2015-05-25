@@ -3,7 +3,7 @@
 // Global Configuration
 
 Router.configure({
-  layoutTemplate: 'appLayout',
+  //layoutTemplate: 'appLayout',
   yieldTemplates: {
     'navbarHeader': {to: 'header'},
     'navbarFooter': {to: 'footer'}
@@ -19,6 +19,12 @@ Router.route('/', {
 Router.route('/info', {
   template: "infoPage",
   name: "infoPage"
+});
+
+
+Router.route('/demo', {
+  template: "famoDemo",
+  name: "famoDemo"
 });
 
 })();

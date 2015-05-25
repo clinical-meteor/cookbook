@@ -2,7 +2,7 @@
 
 Router = Package['iron:router'].Router;
 RouteController = Package['iron:router'].RouteController;
-Famono = Package['raix:famono'].Famono;
+famous = Package.famous.famous;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 main = Package.webapp.main;

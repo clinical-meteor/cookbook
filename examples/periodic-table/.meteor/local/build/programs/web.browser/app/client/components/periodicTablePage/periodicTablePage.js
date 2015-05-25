@@ -25,10 +25,10 @@ Template.periodicTablePage.events({
 });
 
 
-function flipSurface(event, fview) {
+/*function flipSurface(event, fview) {
   fview.parent.view.flip({ curve : 'easeOutBounce', duration : 500});
 }
 Template.flipper_front.famousEvents({ 'click': flipSurface });
-Template.flipper_back.famousEvents({ 'click': flipSurface });
+Template.flipper_back.famousEvents({ 'click': flipSurface });*/
 
 })();

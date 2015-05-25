@@ -305,15 +305,9 @@
       "path": "packages/starrynight_dataset-periodic-table.js"
     },
     {
-      "node_modules": "npm/raix_famono/node_modules",
-      "sourceMap": "packages/raix_famono.js.map",
+      "sourceMap": "packages/famous.js.map",
       "sourceMapRoot": "packages",
-      "path": "packages/raix_famono.js"
-    },
-    {
-      "sourceMap": "packages/gadicohen_famous-views.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/gadicohen_famous-views.js"
+      "path": "packages/famous.js"
     },
     {
       "sourceMap": "packages/session.js.map",

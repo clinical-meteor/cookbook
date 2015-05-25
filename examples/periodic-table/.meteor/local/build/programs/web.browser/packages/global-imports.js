@@ -2,8 +2,7 @@
 
 Router = Package['iron:router'].Router;
 RouteController = Package['iron:router'].RouteController;
-Famono = Package['raix:famono'].Famono;
-FView = Package['gadicohen:famous-views'].FView;
+famous = Package.famous.famous;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 Log = Package.logging.Log;

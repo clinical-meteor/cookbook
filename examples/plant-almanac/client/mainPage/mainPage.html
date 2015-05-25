@@ -28,52 +28,63 @@
     <hr>
     <div class="code">
       <code>
-        vestibulum ante ipsum
+        $ git clone http://github.com/awatson1978/meteor-cookbook/examples/plant-almanac<br>
+        $ cd examples/plant-almanac<br>
+        $ meteor
       </code>
     </div>
 
 
-    <h2>Usage</h2>
+
+
+    <h2>Build Script</h2>
     <hr>
     <div class="code">
       <code class="monospace">
-        <span class="gray">//Etiam</span><br>
-        $ fermentum <br>
+        meteor create plant-almanac<br>
+        cd plant-almanac<br>
+        <br><br>
+        meteor add less<br>
+        meteor add grigio:babel<br>
+        <br><br>
+        starrynight scaffold --framework nightwatch<br>
+        starrynight scaffold --boilerplate project-homepage<br>
+        rm -rf plant-almanac.*<br>
+        <br><br>
+        starrynight scaffold --boilerplate iron-router<br>
+        starrynight scaffold --boilerplate mobile-app<br>
+        starrynight scaffold --boilerplate client-server<br>
+        starrynight scaffold --boilerplate active-record<br>
+        <br><br>
+        starrynight refactor --from Plants --to Plants<br>
+        starrynight refactor --from plant --to plants<br>
         <br>
-        <span class="gray">//Morbi</span><br>
-        -vitae <br>
-        -laoreet <br>
-        -dapibus <br>
-        -hendrerit <br>
-        -dignissim  <br>
+        mkdir packages<br>
+        cd packages<br>
+        meteor create --package clinical:dataset-plants<br>
+        meteor add clinical:dataset-plants<br>
       </code>
     </div>
 
 
-    <h2>Examples</h2>
+
+    <h2>Get the Data</h2>
     <hr>
-    <div class="code">
-      <code class="monospace">
-        <span class="gray"># gravida sed sapien vitae</span><br>
-        $ rhoncus nisl interdum<br>
-        <br>
+    <p>
+      <button id="getTheDataButton" type="button" class="centered large green button">Get The Raw Data (JSON)</button>
+    </p>
 
-        <span class="gray"># donec luctus est lorem</span><br>
-        $ pharetra augue sagittis<br>
-        <br>
-
-        <span class="gray"># maximus purus hendrerit</span><br>
-        $ ante ipsum primis<br>
-        <br>
-
-      </code>
-    </div>
-
-
-    <h2>Get the Lipsum</h2>
+    <!-- <h2>Download the Dataset</h2>
     <hr>
-    <p class="large">
-      <a href="http://lipsum.org/"><i class="fa fa-world"></i> http://lipsum.org/</a>
+    <button id="downloadJsonButton" type="button" class="centered large green button">Download CSV</button>
+    <br><br>
+    <button id="downloadJsonButton" type="button" class="centered large green button">Download JSON</button> -->
+
+
+    <h2>Get the Code</h2>
+    <hr>
+    <p>
+      <a href="http://github.com/awatson1978/meteor-cookbook/examples/plant-almanac"><i class="fa fa-world"></i> http://github.com/awatson1978/meteor-cookbook/examples/plant-almanac</a>
     </p>
 
 
