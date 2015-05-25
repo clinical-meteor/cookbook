@@ -1,6 +1,6 @@
 
 
-Template.famoDemo.onRendered(function() {
+Template.singleTileDemo.onRendered(function() {
 
     $(".famous-container").remove();
     div = document.createElement('div');
