@@ -12,12 +12,18 @@ For an introduction to different types of tests (unit, integration, functional, 
 [What is the Difference Between Unit, Integration, and Acceptance Testing?](http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test)  
 [What are Unit, Integration, Regression, and Smoke Tests?](http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test?lq=1)  
 
+
 ================================
 #### General Methodology - Red, Green, Refactor  
 
 Test driven development is summarized by the phrase "Red, Green, Refactor".  Illustrated below.  
 ![Red, Green, Refactor](http://www.pathfindersolns.com/wp-content/uploads/2012/05/red-green-refactorFINAL2.png)  
 
+
+================================
+#### Rule of Three  
+
+[Rule of Three](http://en.wikipedia.org/wiki/Rule_of_three_%28computer_programming%29)  
 
 ================================
 #### TinyTest  
