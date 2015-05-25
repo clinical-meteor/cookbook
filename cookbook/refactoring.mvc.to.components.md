@@ -5,9 +5,9 @@ Refactoring MVC to Components
 
 ````html
 <template name="fooComponent">
-  <section id="fooComponent">
+  <div id="fooComponent">
       <!-- stuff -->
-  </section>
+  </div>
 </template>
 ````
 
