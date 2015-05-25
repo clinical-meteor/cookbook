@@ -5,10 +5,10 @@ Template.body.addContent((function() {
 }));
 Meteor.startup(Template.body.renderToDocument);
 
-Template.__checkName("item");
-Template["item"] = new Template("Template.item", (function() {
+Template.__checkName("appLayout");
+Template["appLayout"] = new Template("Template.appLayout", (function() {
   var view = this;
-  return HTML.Raw("<li>\n    Foo?\n  </li>");
+  return Spacebars.include(view.lookupTemplate("yield"));
 }));
 
 })();

@@ -23,6 +23,6 @@ Router.route('/info', {
 
 
 Router.route('/demo', {
-  template: "famoDemo",
-  name: "famoDemo"
+  template: "singleTileDemo",
+  name: "singleTileDemo"
 });

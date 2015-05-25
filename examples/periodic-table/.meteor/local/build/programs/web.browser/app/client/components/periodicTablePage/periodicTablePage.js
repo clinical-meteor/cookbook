@@ -1,9 +1,6 @@
 (function(){Session.setDefault('elementSearchFilter', "");
 
 
-Template.periodicTablePage.rendered = function(){
-  Template.appLayout.delayedLayout(10);
-}
 
 Template.periodicTablePage.helpers({
   lists: function() {
@@ -23,12 +20,5 @@ Template.periodicTablePage.events({
     Router.go('/upsert/element/' + this._id);
   }
 });
-
-
-/*function flipSurface(event, fview) {
-  fview.parent.view.flip({ curve : 'easeOutBounce', duration : 500});
-}
-Template.flipper_front.famousEvents({ 'click': flipSurface });
-Template.flipper_back.famousEvents({ 'click': flipSurface });*/
 
 })();

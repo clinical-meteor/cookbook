@@ -583,15 +583,6 @@
       "hash": "78444ab7b0292b9d1c846a5e51e02fd137afb855"
     },
     {
-      "path": "app/client/components/famoDemo/template.famoDemo.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/components/famoDemo/template.famoDemo.js?a6f1d7c379a5219abe2995093d40f9758bf0b46e",
-      "size": 162,
-      "hash": "a6f1d7c379a5219abe2995093d40f9758bf0b46e"
-    },
-    {
       "path": "app/client/components/infoPage/template.infoPage.js",
       "where": "client",
       "type": "js",
@@ -623,18 +614,27 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/components/periodicTablePage/template.periodicTablePage.js?5d21156878d7fd0b6403433f581a25dbbdb9ee89",
-      "size": 3055,
-      "hash": "5d21156878d7fd0b6403433f581a25dbbdb9ee89"
+      "url": "/client/components/periodicTablePage/template.periodicTablePage.js?530e507ee18aa9eb997bb27317f73815ed7f2d60",
+      "size": 1485,
+      "hash": "530e507ee18aa9eb997bb27317f73815ed7f2d60"
+    },
+    {
+      "path": "app/client/components/singleTileDemo/template.singleTileDemo.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/components/singleTileDemo/template.singleTileDemo.js?f1069159c28c0e2fa4134ac8a82c54b1eca9ebc0",
+      "size": 180,
+      "hash": "f1069159c28c0e2fa4134ac8a82c54b1eca9ebc0"
     },
     {
       "path": "app/client/template.appLayout.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.appLayout.js?7a0afa653256931359c54557e456e757cf247cbb",
-      "size": 350,
-      "hash": "7a0afa653256931359c54557e456e757cf247cbb"
+      "url": "/client/template.appLayout.js?d67da7b681f192aaa79cfd99fb979304b74e3d4e",
+      "size": 377,
+      "hash": "d67da7b681f192aaa79cfd99fb979304b74e3d4e"
     },
     {
       "path": "app/lib/collections.js",
@@ -650,18 +650,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/lib/router.js?e6442c75d9bcd4d444ce5a050e3d3fdf5ea6f2da",
-      "size": 493,
-      "hash": "e6442c75d9bcd4d444ce5a050e3d3fdf5ea6f2da"
-    },
-    {
-      "path": "app/client/components/famoDemo/famoDemo.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/components/famoDemo/famoDemo.js?73502149a3971d5b3ac6b9311a5b3ec3dfd3047e",
-      "size": 1679,
-      "hash": "73502149a3971d5b3ac6b9311a5b3ec3dfd3047e"
+      "url": "/lib/router.js?7fc027ab408a61acd8ebf08ecff7efd1a55117b1",
+      "size": 505,
+      "hash": "7fc027ab408a61acd8ebf08ecff7efd1a55117b1"
     },
     {
       "path": "app/client/components/infoPage/infoPage.js",
@@ -677,18 +668,27 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/components/periodicTablePage/periodicTablePage.js?4686b872a890335250f286bc82c8febce08c6a86",
-      "size": 856,
-      "hash": "4686b872a890335250f286bc82c8febce08c6a86"
+      "url": "/client/components/periodicTablePage/periodicTablePage.js?408c06d0ca33c8f86c6411344f4818a1b4e12dfe",
+      "size": 524,
+      "hash": "408c06d0ca33c8f86c6411344f4818a1b4e12dfe"
+    },
+    {
+      "path": "app/client/components/singleTileDemo/singleTileDemo.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/components/singleTileDemo/singleTileDemo.js?bf798adefa33eb46b5e52b974dfad673622d7377",
+      "size": 1685,
+      "hash": "bf798adefa33eb46b5e52b974dfad673622d7377"
     },
     {
       "path": "app/client/appLayout.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/appLayout.js?31bfa044e7ef2f6b711deaf0392d9013102acffd",
-      "size": 2103,
-      "hash": "31bfa044e7ef2f6b711deaf0392d9013102acffd"
+      "url": "/client/appLayout.js?2ebcc40943f6d1ae4b9cd95519a25f73d782a321",
+      "size": 477,
+      "hash": "2ebcc40943f6d1ae4b9cd95519a25f73d782a321"
     },
     {
       "path": "app/client/startup.js",
@@ -709,15 +709,15 @@
       "hash": "b08f287bbf348fec1281651a3cbf09c8732cb86e"
     },
     {
-      "path": "e37d4efcedc5e4c421d3099d2c0d47b4e21af5a7.css",
+      "path": "85c55e7bac09429638c151cc4ba5ea2561e34c60.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/e37d4efcedc5e4c421d3099d2c0d47b4e21af5a7.css",
-      "sourceMap": "e37d4efcedc5e4c421d3099d2c0d47b4e21af5a7.css.map",
-      "sourceMapUrl": "/e37d4efcedc5e4c421d3099d2c0d47b4e21af5a7.map",
-      "size": 39849,
-      "hash": "e37d4efcedc5e4c421d3099d2c0d47b4e21af5a7"
+      "url": "/85c55e7bac09429638c151cc4ba5ea2561e34c60.css",
+      "sourceMap": "85c55e7bac09429638c151cc4ba5ea2561e34c60.css.map",
+      "sourceMapUrl": "/85c55e7bac09429638c151cc4ba5ea2561e34c60.map",
+      "size": 38661,
+      "hash": "85c55e7bac09429638c151cc4ba5ea2561e34c60"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
