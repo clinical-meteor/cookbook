@@ -3,8 +3,6 @@ Session.setDefault('appHeight', $(window).height());
 Session.setDefault('appWidth', $(window).width());
 Session.setDefault("glassOpacity", .95);
 
-FOO = "squee";
-Session.set("foo", "squee");
 
 Meteor.startup(function () {
   window.addEventListener('resize', function(){
@@ -29,7 +27,9 @@ Meteor.startup(function(){
 //==================================================================================================
 
 Template.appLayout.rendered = function(){
-  Template.appLayout.layout();
+  /*Template.appLayout.layout();*/
+  Template.appLayout.delayedLayout(100);
+  Template.appLayout.delayedLayout(1000);
 };
 
 

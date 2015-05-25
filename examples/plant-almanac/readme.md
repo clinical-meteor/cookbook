@@ -5,8 +5,21 @@ The Old-Farmers' Almanac meets seed-packet inventory meets botanical latin learn
 
 
 ==========================================
+#### Online Demo  
+
+See an online demo at:  
+http://plant-almanac.meteor.com/
+
+
+==========================================
 #### Installation
 
+
+````
+$ git clone https://github.com/awatson1978/meteor-cookbook/
+$ cd examples/plant-almanac
+$ meteor
+````
 
 
 ==========================================
@@ -36,3 +49,9 @@ cd packages
 meteor create --package clinical:dataset-plants
 meteor add clinical:dataset-plants
 ````
+
+
+==========================================
+#### Licensing
+
+Meteor code is MIT; use as you will.  

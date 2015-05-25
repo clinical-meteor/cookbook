@@ -1,46 +1,21 @@
 <head>
   <title>Periodic Table of the Elements</title>
-  <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" href="dticon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
 
 
-<template name="appLayout">
+<body>
+  <div id="backgroundImage"></div>
+</body>
 
-
-  <!-- {{> navbarHeader}} -->
-  <!-- {{#Scrollview proportions="[.5,1]"}}
-
-    {{#Surface size="[undefined,true]"}}
-      <h1>Scrollview Example</h1>
-    {{/Surface}}
-
-    {{#famousEach items}}
-      {{>Surface template="item" size="[undefined,20]"}}
-    {{/famousEach}}
-
-  {{/Scrollview}} -->
-
-
-    <div class="hidden">{{resized}}</div>
-    <div id="backgroundImage"></div>
-
-    {{> yield }}
-
-    <!-- <button id="homePageBadge" class="leafThemed mega homePageBadge"><i class="fa fa-leaf"></i></button>
-    <button id="tableBadge" class="leafThemed super tableBadge"><i class="fa fa-table"></i></button>
-    <button id="listBadge" class="leafThemed super listBadge"><i class="fa fa-list"></i></button>
-    <button id="backLeafBadge" class="leafThemed super imageGridBadge"><i class="fa fa-th"></i></button> -->
-
-
-    <!-- <div id="transparentPanel" class="container" style="{{getStyle}}"></div>
-    <div id="mainPanel" class="padded container helveticas" style="{{getStyle}}">
-      <div id="innerPanel" class="panel panel-default">
-        {{> yield }}
-      </div>
-    </div> -->
-
-  <!-- {{> navbarFooter}} -->
-</template>
 
 
 <template name="item">
