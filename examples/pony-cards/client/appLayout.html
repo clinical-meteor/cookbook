@@ -1,0 +1,47 @@
+<head>
+  <title>AppTitle</title>
+</head>
+
+<body>
+  {{#famousContext id="mainCtx"}}
+    {{#FlexLayoutController size=layoutSize align="[.5,.5]" origin="[.5,.5]"
+        layout="CollectionLayout" layoutOptions=layoutOptions}}
+      {{#famousEach cards}}
+        {{>flipper}}
+      {{/famousEach}}
+    {{/FlexLayoutController}}
+  {{/famousContext}}
+</body>
+
+<template name="flipper_front">{{label}}</template>
+<template name="flipper_back"><img src="{{img}}" /></template>
+
+<template name="flipper">
+  {{#ContainerSurface perspective=500}}
+    {{#Flipper}}
+      {{>Surface target="front" template="flipper_front" size="[150,150]"
+          class="card-front" origin="[.5,.5]" align="[.5,.5]"}}
+      {{>Surface target="back" template="flipper_back" size="[150,150]"
+          class="card-back" align="[.5,.5]" origin="[.5,.5]"}}
+    {{/Flipper}}
+  {{/ContainerSurface}}
+</template>
+
+
+
+<template name="appLayout">
+  {{> navbarHeader}}
+
+    <div class="hidden">{{resized}}</div>
+
+    <div id="transparentPanel" class="container" style="{{getStyle}}"></div>
+    <div id="mainPanel" class="padded container helveticas" style="{{getStyle}}">
+      <div id="innerPanel" class="panel panel-default">
+
+        {{> yield }}
+
+      </div>
+    </div>
+
+  {{> navbarFooter}}
+</template>

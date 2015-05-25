@@ -1,0 +1,104 @@
+/* CSS declarations go here */
+
+body{
+  background: url(colorful-background-29.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: .8em;
+
+  -webkit-text-size-adjust: auto;
+}
+
+#transparentPanel{
+  position: absolute;
+  top: 100px;
+  min-height: 60px;
+  width: 100%;
+  opacity: .8;
+  left: 0;
+  background-color: white;
+}
+
+#mainPanel{
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  height: 200px;
+  background-color: inherit;
+  width: 100%;
+  padding-bottom: 100px;
+
+  #innerPanel{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+
+//=======================================================
+
+h1{
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+h2{
+  padding-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+h4{
+  color: gray;
+  font-weight: 300;
+  margin-top: 0px;
+}
+hr{
+  margin-top: 0px;
+}
+p{
+  line-height: 140%;
+}
+a{
+  text-decoration: none;
+  color: steelblue;
+}
+
+.code{
+  background-color: #eeeeee;
+  padding: 10px;
+}
+.gray{
+  color: #999999;
+}
+.lightgray{
+  color: #dddddd;
+}
+
+.fa-github{
+  cursor: pointer;
+}
+.larg{
+  font-size: 2em !important;
+}
+
+#cookbookLink{
+  left: 50%;
+}
+
+// landscape orientation
+@media only screen and (min-width: 768px) {
+  #transparentPanel{
+    max-width: 768px;
+  }
+
+  #mainPanel{
+    max-width: 768px;
+  }
+
+}
