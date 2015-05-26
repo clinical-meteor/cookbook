@@ -8,7 +8,7 @@ Below is a pattern that I use to prep apps to be rewritten using components.  In
 ````sh
 fooComponent/fooComponent.html
 fooComponent/fooComponent.js
-fooComponent/fooComponent.less
+fooComponent/fooComponent.less  #this approach also works with stylus and .styl files
 ````
 
 Once we've moved relevant files into a directory, start by identifying the boundary of each template/component.  We do that by creating a div inside the template with an id that is the same as the name of the component.  When compiled to DOM, this inner div will become ``firstNode`` or ``childNode[0]``, and will be explicitely named the same as the template (which would otherwise be invisible).  This explicit naming convention will become invaluable with any technologies that use CSS or XPATH selectors (such as jquery or selenium).   
