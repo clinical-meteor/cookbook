@@ -1,6 +1,6 @@
 SSL Certificates  
 =================================
-Secure Sockets Layer (SSL) is a foundational part of modern [TCP](http://en.wikipedia.org/wiki/Transport_Layer_Security)/IP based telecommunications networks.  
+Secure Sockets Layer (SSL) is a foundational part of modern [TCP](http://en.wikipedia.org/wiki/Transport_Layer_Security)/IP based telecommunications networks, and is a necessary component for many regulatory frameworks such as HIPAA or SOX.  Installing SSL certifcates is fairly straight-forward; albeit tedious.  The details differ depending on the hosting environment; so, rather than try to document the process here, lets just go to the relevant blog articles specific to each platform. 
 
 ==================================================================
 #### Installing SSL Certificates on Modulus (Software as a Services)
