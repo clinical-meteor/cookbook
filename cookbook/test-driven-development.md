@@ -9,7 +9,7 @@ At some point, as your app grows, you will reach a point where it's complexity e
 
 For an introduction to different types of tests (unit, integration, functional, acceptance, regression, smoke tests), start with these StackOverflow articles, which do a fairly good job of covering terminology:   
 
-[What is the Difference Between Unit, Integration, and Acceptance Testing?](http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test)
+[What is the Difference Between Unit, Integration, and Acceptance Testing?](http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test)  
 [What are Unit, Integration, Regression, and Smoke Tests?](http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test?lq=1)  
 
 
