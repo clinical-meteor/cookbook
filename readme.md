@@ -1,6 +1,6 @@
 #Meteor Cookbook  
 
-The Cookbook is growing!  And on it's way to becoming a framework/distro, specializing in biomedical, healthcare, and clinical apps!  We're contemplating renaming this repo as this project becomes more of a framework/distro, so stay tuned!  
+The Cookbook is growing!  And on its way to becoming a framework/distro, specializing in biomedical, healthcare, and clinical apps!  We're contemplating renaming this repo as this project becomes more of a framework/distro, so stay tuned!  
 
 
 
@@ -59,7 +59,7 @@ This section is in the works, and will document the architecture behind creating
 
 Pull requests with typo corrections and copyediting are nearly always accepted.  
 
-Most of the main development right now is in migrating cookbook recipes into components, packaging them up, and/or moving them into the StarryNight utility.  The cookbook is on it's way to becoming the documentation for a Clinical Framework running on Meteor.  
+Most of the main development right now is in migrating cookbook recipes into components, packaging them up, and/or moving them into the StarryNight utility.  The cookbook is on its way to becoming the documentation for a Clinical Framework running on Meteor.  
 
 
 
