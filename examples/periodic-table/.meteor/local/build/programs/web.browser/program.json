@@ -677,9 +677,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/components/singleTileDemo/singleTileDemo.js?bf798adefa33eb46b5e52b974dfad673622d7377",
-      "size": 1685,
-      "hash": "bf798adefa33eb46b5e52b974dfad673622d7377"
+      "url": "/client/components/singleTileDemo/singleTileDemo.js?1d27e73b85869aa0fe352a2842822621099e272f",
+      "size": 2489,
+      "hash": "1d27e73b85869aa0fe352a2842822621099e272f"
     },
     {
       "path": "app/client/appLayout.js",
