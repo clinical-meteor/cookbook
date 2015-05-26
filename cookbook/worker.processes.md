@@ -1,17 +1,7 @@
-## Application Recipies
+Worker Processes
+===============================================
 
-This page is still being developed.  Be sure to check out my Gists in the meantime...   
-https://gist.github.com/awatson1978
-
-------------------------------------------------------------------
-### HIPAA Compliant Application
-- meteor add accounts-ui
-- meteor add force-ssl
-- mrt add hippa-audit-log
-
-
-------------------------------------------------------------------
-### Dyno Worker Processes
+Sometimes it's necessary to allocate a server to crunching numbers, or doing some type of task, rather than simply serving up web pages or acting as a communications hub.  Setting up a worker node using Meteor is somewhat similar to writing a Meteor command-line utility; in that the focus of each is on server-side processing, rather than client-side templating and user-interfaces.  Here's a basic recipe for setting up a server-side function to calculate fibonacci numbers.  
 
 On the server side:
 ````js
@@ -47,12 +37,3 @@ Meteor.call('myFunction', arg1, arg2, function(error, result) {
 });
 
 ```` 
-
-
-------------------------------------------------------------------
-### File Upload Patterns
-
-https://gist.github.com/dariocravero/3922137
-
-http://collectionfs.meteor.com/
-
