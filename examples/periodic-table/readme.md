@@ -10,8 +10,6 @@ Famo.us caused quite a splash a few years ago with their Periodic Table demo.  T
 See an online demo at:  
 http://periodic-table.meteor.com/
 
-The original demo:  
-http://periodic.famo.us/
 
 ==========================================
 #### Installation and Launch
@@ -23,17 +21,7 @@ $ meteor
 ````
 
 ==========================================
-#### Learn More
-
-http://famous.org/learn/hello-famous.html
-http://famous.org/learn/MixedMode/index.html
-http://famo.us/university/home/#/
-
-
-==========================================
-#### App Build Recipe  
-
-This app was generated using the following starrynight script.  
+#### Build Recipe  
 
 ````
 meteor create periodic-table
@@ -66,11 +54,13 @@ meteor add starrynight:dataset-periodic-table
 
 Periodic table data is courtesy of Chris Andrejewski.  
 
-https://www.npmjs.com/package/periodic-table  
-https://github.com/andrejewski/periodic-table
+https://www.npmjs.com/package/periodic-table
+https://github.com/andrejewski/periodic-table  
 
 
-
+Electron Shell Diagrams - mostly Creative Commons 2.
+http://commons.wikimedia.org/wiki/Electron_shell
+http://commons.wikimedia.org/wiki/Electron_shell#/media/File:Periodic_Table_of_Elements_showing_Electron_Shells_(2011_version).svg
 
 
 ==========================================

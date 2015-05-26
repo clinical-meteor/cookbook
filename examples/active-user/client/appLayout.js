@@ -25,9 +25,10 @@ Session.setDefault('transparencyDivLeft', 0);
 
 //==================================================================================================
 
-Template.appLayout.rendered = function(){
-  Template.appLayout.layout();
-};
+Template.appLayout.onRendered(function(){
+  Template.appLayout.delayedLayout(100);
+  Template.appLayout.delayedLayout(1000);
+});
 
 
 Template.appLayout.helpers({

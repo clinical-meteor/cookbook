@@ -24,9 +24,9 @@ Meteor.startup(function(){
 
 //==================================================================================================
 
-Template.appLayout.rendered = function(){
+Template.appLayout.onRendered(function(){
   Template.appLayout.layout();
-}
+});
 
 Template.appLayout.helpers({
   resized: function () {
