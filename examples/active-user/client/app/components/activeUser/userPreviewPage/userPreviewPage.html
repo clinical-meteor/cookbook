@@ -1,0 +1,18 @@
+<template name="userPreviewPage">
+  <div id="userPreviewPage" class="fullheight padded page">
+    <header class="pageHeader">
+      <i class="indexButton fa fa-chevron-left"></i>
+      <h4 class="userId barcode">{{_id}}</h4>
+      <i class="imageGridButton fa fa-th"></i>
+      <i class="listButton fa fa-list"></i>
+      <i class="tableButton fa fa-table"></i>
+    </header>
+
+      <div id="userPreviewCard" class="card-contents">
+        <h2 id="userTitleText">{{profile.name}}</h2>
+        <p id="notesText">
+          {{description}}
+        </p>
+      </div>
+  </div>
+</template>
