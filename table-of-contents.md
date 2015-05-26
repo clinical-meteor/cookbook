@@ -1,6 +1,5 @@
 ## Table of Contents  
 
-========================
 #### Part I - Getting Started
 
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
