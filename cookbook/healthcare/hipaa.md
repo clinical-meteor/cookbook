@@ -12,19 +12,21 @@ But what about Android and iOS?  Ah.  They're in a gray zone, progressively gett
 
 Long story short... you're in pretty much exactly the spot you want to be in.  The four things that a HIPAA compliant app needs, are:
 
-- uniquely assigned user accounts for each individual user
-- user passwords to separate access between users
-- a hipaa audit log to track who has access what data
-- SSL certificates for secure data transfer
+- uniquely assigned user accounts for each individual user  
+- user passwords to separate access between users  
+- a hipaa audit log to track who has access what data  
+- SSL certificates for secure data transfer  
 
 And, as you can imagine, those packages all exist in the Meteor ecosystem.  For my apps, I use the following combination of packages:
 
-accounts-base
-accounts-password
-accounts-ui
-alanning:roles
-clinical:hipaa-audit-log
-force-ssl
+````sh
+accounts-base  
+accounts-password  
+accounts-ui  
+alanning:roles  
+clinical:hipaa-audit-log  
+force-ssl  
+````
 
 As to the question about keeping the data encrypted on the cordova client.  I can't speak too much for Android devices, as I primarily develop on iOS.  For iOS devices, you're in good luck.  Each application is run in it's own cryptographically signed and secure sandbox.  That's why you have to do all that certificate request/generation/import business to get the app to compile on your device.  And if you have SSL certificates enabled, it should be a totally secure pipeline between client and server.  
 
