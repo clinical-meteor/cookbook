@@ -94,7 +94,7 @@
 
 
 ========================
-#### Part VI - Recipes  
+#### Part VI - General Recipes  
 
 - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)
 - [Exposing a REST API](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/rest.md)
@@ -119,7 +119,17 @@
 - [Worker Processes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/worker.processes.md)  
 
 ========================
-#### Part VI - Miscellaneous
+#### Part VII - Biomedical Apps
+- [D3 Integration]
+
+========================
+#### Part VIII - Clinical & Healthcare Apps
+
+- [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
+- [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
+
+========================
+#### Part X - Miscellaneous
 
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
