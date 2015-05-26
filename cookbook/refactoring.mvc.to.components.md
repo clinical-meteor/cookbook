@@ -16,7 +16,7 @@ Once we've moved relevant files into a directory, start by identifying the bound
 ````html
 <template name="fooComponent">
   <div id="fooComponent">
-      <!-- stuff -->
+      <widget id="barWidget"></widget>
   </div>
 </template>
 ````
@@ -42,8 +42,9 @@ Lastly - and this is one of the more important parts - we scope our styling to j
 #fooComponent{
   // add custom component classes here
   
-  //.barWidget{
-  //}
+  #barWidget{
+  
+  }
 
   // desktop specific layout for this component
   @media only screen and (min-width: 960px) { }
