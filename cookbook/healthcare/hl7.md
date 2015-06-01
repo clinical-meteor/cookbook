@@ -7,7 +7,7 @@ HL7 Interfaces
 - [ ] Add HL7 inbound collection log.
 
 ===========================================================================
-#### Fast Healthcare Interoperability Resources  
-http://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources
-http://www.hl7.org/fhir/
-https://www.npmjs.com/search?q=FHIR
+#### Fast Healthcare Interoperability Resources    
+http://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources  
+http://www.hl7.org/fhir/  
+https://www.npmjs.com/search?q=FHIR  
