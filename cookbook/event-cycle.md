@@ -91,6 +91,49 @@ Meteor.startup();
 ````
 
 ================================
+#### Event Cycle - Advanced 
+
+A slightly more detailed explanation.
+
+````
+// A: Browser window initializes
+window.init()
+
+  // B: Global objects get attached to window
+  Session 
+  Template 
+  Meteor
+
+    // C: Meteor startup is called
+    Meteor.startup();  
+    
+      // D: a page will load
+      document.onload
+    
+        // E: templates be created
+        Template.foo.created
+    
+          // F: and then rendered
+          Template.foo.rendered
+    
+            // G: and filled in with data 
+            Template.foo.my_custom_helper
+    
+        // E:  templates will finalize
+        // we could also call this H, if we were doing things sequentially or imperatively
+        // but we call it E to represent the functional scope we're in
+        Template.foo.destroyed
+    
+      // D:  and, eventually, the document will unload
+      // we could also call this I, if we were doing things sequentially or imperatively
+      // but we call it D to represent the functional scope we're in
+      document.onunload
+      
+    // there is no matching Meteor.shutdown()
+````
+
+
+================================
 #### Event Hooks  
 
 You can extend the event-cycle even further with the excellent event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.  Two highly recommended packages:  
