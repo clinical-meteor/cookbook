@@ -1,34 +1,504 @@
-14:54:29.008 INFO - Launching a standalone server
-Setting system property webdriver.chrome.driver to selenium/chromedriver
-14:54:29.069 INFO - Java: Apple Inc. 20.65-b04-466.1
-14:54:29.069 INFO - OS: Mac OS X 10.10.2 x86_64
-14:54:29.088 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
-14:54:29.183 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
-14:54:29.268 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-14:54:29.270 INFO - Version Jetty/5.1.x
-14:54:29.271 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-14:54:29.272 INFO - Started HttpContext[/selenium-server,/selenium-server]
-14:54:29.272 INFO - Started HttpContext[/,/]
-14:54:29.349 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@75e845c2
-14:54:29.349 INFO - Started HttpContext[/wd,/wd]
-14:54:29.391 INFO - Started SocketListener on 0.0.0.0:4444
-14:54:29.391 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
-14:54:29.724 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])
-14:54:29.741 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]
-14:54:34.575 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]]
-14:54:34.585 INFO - Executing: [get: http://localhost:3000])
-14:54:35.133 INFO - Done: [get: http://localhost:3000]
-14:54:35.143 INFO - Executing: [set window size])
-14:54:35.592 INFO - Done: [set window size]
-14:54:35.601 INFO - Executing: [find element: By.cssSelector: body])
-14:54:35.803 INFO - Done: [find element: By.cssSelector: body]
-14:54:35.810 INFO - Executing: [find element: By.cssSelector: #mainPanel])
-14:54:35.884 INFO - Done: [find element: By.cssSelector: #mainPanel]
-14:54:35.889 INFO - Executing: [find element: By.cssSelector: #transparentPanel])
-14:54:36.001 INFO - Done: [find element: By.cssSelector: #transparentPanel]
-14:54:36.006 INFO - Executing: [find elements: By.cssSelector: #mainPage])
-14:54:36.075 INFO - Done: [find elements: By.cssSelector: #mainPage]
-14:54:36.079 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (027bac3b-f903-8b43-8c18-490c0aecd772)] -> css selector: #mainPage]])
-14:54:36.138 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (027bac3b-f903-8b43-8c18-490c0aecd772)] -> css selector: #mainPage]]
-14:54:36.143 INFO - Executing: [delete session: 3105f714-663b-4498-9664-940e5c4cf42c])
-14:54:36.289 INFO - Done: [delete session: 3105f714-663b-4498-9664-940e5c4cf42c]
+01:45:09.088 INFO - Launching a standalone server
+Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/starrynight/node_modules/chromedriver/bin/chromedriver
+01:45:09.128 INFO - Java: Apple Inc. 20.65-b04-466.1
+01:45:09.128 INFO - OS: Mac OS X 10.10.2 x86_64
+01:45:09.139 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+01:45:09.203 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+01:45:09.260 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+01:45:09.261 INFO - Version Jetty/5.1.x
+01:45:09.261 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+01:45:09.262 INFO - Started HttpContext[/selenium-server,/selenium-server]
+01:45:09.262 INFO - Started HttpContext[/,/]
+01:45:09.320 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@75e845c2
+01:45:09.320 INFO - Started HttpContext[/wd,/wd]
+01:45:09.326 INFO - Started SocketListener on 0.0.0.0:4444
+01:45:09.326 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
+01:45:09.565 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Active Plant Walkthrough}]])
+01:45:09.575 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Active Plant Walkthrough}]
+01:45:12.418 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Active Plant Walkthrough}]]
+01:45:12.429 INFO - Executing: [set window size])
+01:45:12.484 INFO - Done: [set window size]
+01:45:12.488 INFO - Executing: [get: http://localhost:3000/insert/plant])
+01:45:13.277 INFO - Done: [get: http://localhost:3000/insert/plant]
+01:45:13.289 INFO - Executing: [switch to frame: null])
+01:45:13.355 INFO - Done: [switch to frame: null]
+01:45:13.361 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:13.463 INFO - Done: [find elements: By.cssSelector: body]
+01:45:13.468 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]])
+01:45:13.503 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]]
+01:45:13.509 INFO - Executing: [find element: By.cssSelector: body])
+01:45:13.557 INFO - Done: [find element: By.cssSelector: body]
+01:45:13.563 INFO - Executing: [find element: By.cssSelector: #plantUpsertPage])
+01:45:13.609 INFO - Done: [find element: By.cssSelector: #plantUpsertPage]
+01:45:13.613 INFO - Executing: [find element: By.cssSelector: #plantImageGridButton])
+01:45:13.657 INFO - Done: [find element: By.cssSelector: #plantImageGridButton]
+01:45:13.661 INFO - Executing: [find element: By.cssSelector: #plantListButton])
+01:45:13.710 INFO - Done: [find element: By.cssSelector: #plantListButton]
+01:45:13.715 INFO - Executing: [find element: By.cssSelector: #plantTableButton])
+01:45:13.769 INFO - Done: [find element: By.cssSelector: #plantTableButton]
+01:45:13.775 INFO - Executing: [find element: By.cssSelector: #plantUpsertCard])
+01:45:13.824 INFO - Done: [find element: By.cssSelector: #plantUpsertCard]
+01:45:13.843 INFO - Executing: [find element: By.cssSelector: #plantMetaData])
+01:45:13.922 INFO - Done: [find element: By.cssSelector: #plantMetaData]
+01:45:13.928 INFO - Executing: [find element: By.cssSelector: #plantMetaInputs])
+01:45:13.977 INFO - Done: [find element: By.cssSelector: #plantMetaInputs]
+01:45:13.983 INFO - Executing: [find element: By.cssSelector: #plantCommonNameInput])
+01:45:14.033 INFO - Done: [find element: By.cssSelector: #plantCommonNameInput]
+01:45:14.039 INFO - Executing: [find element: By.cssSelector: #plantLatinNameInput])
+01:45:14.095 INFO - Done: [find element: By.cssSelector: #plantLatinNameInput]
+01:45:14.102 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:14.152 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:14.157 INFO - Executing: [find element: By.cssSelector: #plantImageUrlInput])
+01:45:14.206 INFO - Done: [find element: By.cssSelector: #plantImageUrlInput]
+01:45:14.210 INFO - Executing: [find element: By.cssSelector: #plantImage])
+01:45:14.270 INFO - Done: [find element: By.cssSelector: #plantImage]
+01:45:14.274 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:14.324 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:14.328 INFO - Executing: [find element: By.cssSelector: #savePlantButton])
+01:45:14.376 INFO - Done: [find element: By.cssSelector: #savePlantButton]
+01:45:14.381 INFO - Executing: [find element: By.cssSelector: #plantCommonNameInput])
+01:45:14.432 INFO - Done: [find element: By.cssSelector: #plantCommonNameInput]
+01:45:14.437 INFO - Executing: [send keys: 8 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantCommonNameInput], [T, i, g, e, r,  , L, i, l, y]])
+01:45:14.523 INFO - Done: [send keys: 8 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantCommonNameInput], [T, i, g, e, r,  , L, i, l, y]]
+01:45:14.528 INFO - Executing: [find element: By.cssSelector: #plantLatinNameInput])
+01:45:14.594 INFO - Done: [find element: By.cssSelector: #plantLatinNameInput]
+01:45:14.598 INFO - Executing: [send keys: 9 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantLatinNameInput], [L, i, l, i, u, m,  , s, u, p, e, r, b, u, m]])
+01:45:14.683 INFO - Done: [send keys: 9 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantLatinNameInput], [L, i, l, i, u, m,  , s, u, p, e, r, b, u, m]]
+01:45:14.687 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:14.733 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:14.738 INFO - Executing: [send keys: 10 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantUrlInput], [h, t, t, p, :, /, /, e, n, ., w, i, k, i, p, e, d, i, a, ., o, r, g, /, w, i, k, i, /, L, i, l, i, u, m, _, s, u, p, e, r, b, u, m]])
+01:45:14.840 INFO - Done: [send keys: 10 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantUrlInput], [h, t, t, p, :, /, /, e, n, ., w, i, k, i, p, e, d, i, a, ., o, r, g, /, w, i, k, i, /, L, i, l, i, u, m, _, s, u, p, e, r, b, u, m]]
+01:45:14.843 INFO - Executing: [find element: By.cssSelector: #plantImageUrlInput])
+01:45:14.892 INFO - Done: [find element: By.cssSelector: #plantImageUrlInput]
+01:45:14.899 INFO - Executing: [send keys: 11 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantImageUrlInput], [h, t, t, p, :, /, /, u, p, l, o, a, d, ., w, i, k, i, m, e, d, i, a, ., o, r, g, /, w, i, k, i, p, e, d, i, a, /, c, o, m, m, o, n, s, /, 7, /, 7, 4, /, L, i, l, i, u, m, S, u, p, e, r, b, u, m, 1, ., j, p, g]])
+01:45:15.029 INFO - Done: [send keys: 11 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantImageUrlInput], [h, t, t, p, :, /, /, u, p, l, o, a, d, ., w, i, k, i, m, e, d, i, a, ., o, r, g, /, w, i, k, i, p, e, d, i, a, /, c, o, m, m, o, n, s, /, 7, /, 7, 4, /, L, i, l, i, u, m, S, u, p, e, r, b, u, m, 1, ., j, p, g]]
+01:45:15.034 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:15.089 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:15.103 INFO - Executing: [send keys: 13 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantDescriptionInput], [L, i, l, i, u, m,  , s, u, p, e, r, b, u, m,  , i, s,  , a,  , s, p, e, c, i, e, s,  , o, f,  , t, r, u, e,  , l, i, l, y,  , n, a, t, i, v, e,  , t, o,  , t, h, e,  , e, a, s, t, e, r, n,  , a, n, d,  , c, e, n, t, r, a, l,  , r, e, g, i, o, n, s,  , o, f,  , N, o, r, t, h,  , A, m, e, r, i, c, a, ., [, 2, ], [, 3, ], [, 4, ],  , C, o, m, m, o, n,  , n, a, m, e, s,  , i, n, c, l, u, d, e,  , T, u, r, k, ', s,  , c, a, p,  , l, i, l, y, ,, [, 2, ],  , t, u, r, b, a, n,  , l, i, l, y, ,,  , s, w, a, m, p,  , l, i, l, y, ,, [, 5, ],  , l, i, l, y,  , r, o, y, a, l, ,, [, 5, ],  , o, r,  , A, m, e, r, i, c, a, n,  , t, i, g, e, r,  , l, i, l, y, ., [, 3, ],  , T, h, e,  , n, a, t, i, v, e,  , r, a, n, g, e,  , o, f,  , t, h, e,  , s, p, e, c, i, e, s,  , e, x, t, e, n, d, s,  , f, r, o, m,  , N, e, w,  , H, a, m, p, s, h, i, r, e,  , s, o, u, t, h,  , t, o,  , t, h, e,  , F, l, o, r, i, d, a,  , P, a, n, h, a, n, d, l, e,  , a, n, d,  , w, e, s, t,  , t, o,  , M, i, s, s, o, u, r, i,  , a, n, d,  , A, r, k, a, n, s, a, s, .]])
+01:45:15.440 INFO - Done: [send keys: 13 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantDescriptionInput], [L, i, l, i, u, m,  , s, u, p, e, r, b, u, m,  , i, s,  , a,  , s, p, e, c, i, e, s,  , o, f,  , t, r, u, e,  , l, i, l, y,  , n, a, t, i, v, e,  , t, o,  , t, h, e,  , e, a, s, t, e, r, n,  , a, n, d,  , c, e, n, t, r, a, l,  , r, e, g, i, o, n, s,  , o, f,  , N, o, r, t, h,  , A, m, e, r, i, c, a, ., [, 2, ], [, 3, ], [, 4, ],  , C, o, m, m, o, n,  , n, a, m, e, s,  , i, n, c, l, u, d, e,  , T, u, r, k, ', s,  , c, a, p,  , l, i, l, y, ,, [, 2, ],  , t, u, r, b, a, n,  , l, i, l, y, ,,  , s, w, a, m, p,  , l, i, l, y, ,, [, 5, ],  , l, i, l, y,  , r, o, y, a, l, ,, [, 5, ],  , o, r,  , A, m, e, r, i, c, a, n,  , t, i, g, e, r,  , l, i, l, y, ., [, 3, ],  , T, h, e,  , n, a, t, i, v, e,  , r, a, n, g, e,  , o, f,  , t, h, e,  , s, p, e, c, i, e, s,  , e, x, t, e, n, d, s,  , f, r, o, m,  , N, e, w,  , H, a, m, p, s, h, i, r, e,  , s, o, u, t, h,  , t, o,  , t, h, e,  , F, l, o, r, i, d, a,  , P, a, n, h, a, n, d, l, e,  , a, n, d,  , w, e, s, t,  , t, o,  , M, i, s, s, o, u, r, i,  , a, n, d,  , A, r, k, a, n, s, a, s, .]]
+01:45:15.445 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:45:15.500 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:45:15.504 INFO - Executing: [mousemove: 15 true])
+01:45:15.569 INFO - Done: [mousemove: 15 true]
+01:45:16.078 INFO - Executing: [find element: By.cssSelector: #savePlantButton])
+01:45:16.091 INFO - Done: [find element: By.cssSelector: #savePlantButton]
+01:45:16.096 INFO - Executing: [find element: By.cssSelector: #savePlantButton])
+01:45:16.145 INFO - Done: [find element: By.cssSelector: #savePlantButton]
+01:45:16.149 INFO - Executing: [click: 14 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #savePlantButton]])
+01:45:16.343 INFO - Done: [click: 14 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #savePlantButton]]
+01:45:16.850 INFO - Executing: [find element: By.cssSelector: #plantUpsertPage])
+01:45:17.865 INFO - Done: [find element: By.cssSelector: #plantUpsertPage]
+01:45:17.870 INFO - Executing: [find element: By.cssSelector: #plantImageGridButton])
+01:45:17.917 INFO - Done: [find element: By.cssSelector: #plantImageGridButton]
+01:45:17.921 INFO - Executing: [find element: By.cssSelector: #plantListButton])
+01:45:17.967 INFO - Done: [find element: By.cssSelector: #plantListButton]
+01:45:17.972 INFO - Executing: [find element: By.cssSelector: #plantTableButton])
+01:45:18.022 INFO - Done: [find element: By.cssSelector: #plantTableButton]
+01:45:18.029 INFO - Executing: [find element: By.cssSelector: #plantUpsertCard])
+01:45:18.081 INFO - Done: [find element: By.cssSelector: #plantUpsertCard]
+01:45:18.085 INFO - Executing: [find element: By.cssSelector: #plantMetaData])
+01:45:18.139 INFO - Done: [find element: By.cssSelector: #plantMetaData]
+01:45:18.144 INFO - Executing: [find element: By.cssSelector: #plantMetaInputs])
+01:45:18.191 INFO - Done: [find element: By.cssSelector: #plantMetaInputs]
+01:45:18.196 INFO - Executing: [find element: By.cssSelector: #plantCommonNameInput])
+01:45:18.244 INFO - Done: [find element: By.cssSelector: #plantCommonNameInput]
+01:45:18.248 INFO - Executing: [find element: By.cssSelector: #plantLatinNameInput])
+01:45:18.293 INFO - Done: [find element: By.cssSelector: #plantLatinNameInput]
+01:45:18.298 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:18.349 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:18.354 INFO - Executing: [find element: By.cssSelector: #plantImageUrlInput])
+01:45:18.398 INFO - Done: [find element: By.cssSelector: #plantImageUrlInput]
+01:45:18.403 INFO - Executing: [find element: By.cssSelector: #plantImage])
+01:45:18.449 INFO - Done: [find element: By.cssSelector: #plantImage]
+01:45:18.453 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:18.500 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:18.505 INFO - Executing: [find element: By.cssSelector: #savePlantButton])
+01:45:18.551 INFO - Done: [find element: By.cssSelector: #savePlantButton]
+01:45:18.556 INFO - Executing: [find element: By.cssSelector: #plantCommonNameInput])
+01:45:18.607 INFO - Done: [find element: By.cssSelector: #plantCommonNameInput]
+01:45:18.610 INFO - Executing: [get element attribute: 8 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantCommonNameInput], value])
+01:45:18.658 INFO - Done: [get element attribute: 8 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantCommonNameInput], value]
+01:45:18.662 INFO - Executing: [find element: By.cssSelector: #plantLatinNameInput])
+01:45:18.708 INFO - Done: [find element: By.cssSelector: #plantLatinNameInput]
+01:45:18.711 INFO - Executing: [get element attribute: 9 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantLatinNameInput], value])
+01:45:18.764 INFO - Done: [get element attribute: 9 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantLatinNameInput], value]
+01:45:18.768 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:18.815 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:18.820 INFO - Executing: [get element attribute: 10 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantUrlInput], value])
+01:45:18.865 INFO - Done: [get element attribute: 10 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantUrlInput], value]
+01:45:18.870 INFO - Executing: [find element: By.cssSelector: #plantImageUrlInput])
+01:45:18.915 INFO - Done: [find element: By.cssSelector: #plantImageUrlInput]
+01:45:18.919 INFO - Executing: [get element attribute: 11 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantImageUrlInput], value])
+01:45:18.964 INFO - Done: [get element attribute: 11 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantImageUrlInput], value]
+01:45:18.972 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:19.021 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:19.024 INFO - Executing: [get element attribute: 13 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantDescriptionInput], value])
+01:45:19.070 INFO - Done: [get element attribute: 13 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: #plantDescriptionInput], value]
+01:45:19.074 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:45:19.122 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:45:19.126 INFO - Executing: [mousemove: 15 true])
+01:45:19.185 INFO - Done: [mousemove: 15 true]
+01:45:19.691 INFO - Executing: [find element: By.cssSelector: .imageGridButton])
+01:45:19.700 INFO - Done: [find element: By.cssSelector: .imageGridButton]
+01:45:19.704 INFO - Executing: [click: 16 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .imageGridButton]])
+01:45:19.929 INFO - Done: [click: 16 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .imageGridButton]]
+01:45:20.436 INFO - Executing: [switch to frame: null])
+01:45:20.445 INFO - Done: [switch to frame: null]
+01:45:20.449 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:20.505 INFO - Done: [find elements: By.cssSelector: body]
+01:45:20.507 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]])
+01:45:20.556 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]]
+01:45:20.560 INFO - Executing: [find element: By.cssSelector: body])
+01:45:20.607 INFO - Done: [find element: By.cssSelector: body]
+01:45:20.611 INFO - Executing: [find element: By.cssSelector: #plantImageGridPage])
+01:45:20.656 INFO - Done: [find element: By.cssSelector: #plantImageGridPage]
+01:45:20.659 INFO - Executing: [find element: By.cssSelector: #plantSearchInput])
+01:45:20.706 INFO - Done: [find element: By.cssSelector: #plantSearchInput]
+01:45:20.710 INFO - Executing: [find element: By.cssSelector: #plantImageGrid])
+01:45:20.755 INFO - Done: [find element: By.cssSelector: #plantImageGrid]
+01:45:20.758 INFO - Executing: [find element: By.cssSelector: #addNewPlant])
+01:45:20.806 INFO - Done: [find element: By.cssSelector: #addNewPlant]
+01:45:20.809 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:45:20.861 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:45:20.865 INFO - Executing: [mousemove: 15 true])
+01:45:20.922 INFO - Done: [mousemove: 15 true]
+01:45:21.429 INFO - Executing: [find element: By.cssSelector: .listButton])
+01:45:21.441 INFO - Done: [find element: By.cssSelector: .listButton]
+01:45:21.444 INFO - Executing: [click: 21 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .listButton]])
+01:45:21.679 INFO - Done: [click: 21 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .listButton]]
+01:45:22.187 INFO - Executing: [switch to frame: null])
+01:45:22.197 INFO - Done: [switch to frame: null]
+01:45:22.200 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:22.268 INFO - Done: [find elements: By.cssSelector: body]
+01:45:22.272 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]])
+01:45:22.322 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]]
+01:45:22.327 INFO - Executing: [find element: By.cssSelector: body])
+01:45:22.378 INFO - Done: [find element: By.cssSelector: body]
+01:45:22.383 INFO - Executing: [find element: By.cssSelector: #plantsListPage])
+01:45:22.430 INFO - Done: [find element: By.cssSelector: #plantsListPage]
+01:45:22.437 INFO - Executing: [find element: By.cssSelector: #plantSearchInput])
+01:45:22.490 INFO - Done: [find element: By.cssSelector: #plantSearchInput]
+01:45:22.494 INFO - Executing: [find element: By.cssSelector: #plantsUnorderedList])
+01:45:22.543 INFO - Done: [find element: By.cssSelector: #plantsUnorderedList]
+01:45:22.546 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:45:22.597 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:45:22.601 INFO - Executing: [mousemove: 15 true])
+01:45:22.653 INFO - Done: [mousemove: 15 true]
+01:45:23.159 INFO - Executing: [find element: By.cssSelector: .tableButton])
+01:45:23.171 INFO - Done: [find element: By.cssSelector: .tableButton]
+01:45:23.174 INFO - Executing: [click: 25 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .tableButton]])
+01:45:23.462 INFO - Done: [click: 25 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .tableButton]]
+01:45:23.970 INFO - Executing: [switch to frame: null])
+01:45:23.980 INFO - Done: [switch to frame: null]
+01:45:23.984 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:24.042 INFO - Done: [find elements: By.cssSelector: body]
+01:45:24.044 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]])
+01:45:24.101 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]]
+01:45:24.105 INFO - Executing: [find element: By.cssSelector: body])
+01:45:24.159 INFO - Done: [find element: By.cssSelector: body]
+01:45:24.163 INFO - Executing: [find element: By.cssSelector: #plantsTablePage])
+01:45:24.209 INFO - Done: [find element: By.cssSelector: #plantsTablePage]
+01:45:24.213 INFO - Executing: [find element: By.cssSelector: #plantSearchInput])
+01:45:24.261 INFO - Done: [find element: By.cssSelector: #plantSearchInput]
+01:45:24.265 INFO - Executing: [find element: By.cssSelector: #plantsTable])
+01:45:24.320 INFO - Done: [find element: By.cssSelector: #plantsTable]
+01:45:24.324 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:45:24.379 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:45:24.382 INFO - Executing: [mousemove: 15 true])
+01:45:24.440 INFO - Done: [mousemove: 15 true]
+01:45:24.945 INFO - Executing: [find element: By.cssSelector: .imageGridButton])
+01:45:24.958 INFO - Done: [find element: By.cssSelector: .imageGridButton]
+01:45:24.961 INFO - Executing: [click: 29 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .imageGridButton]])
+01:45:25.160 INFO - Done: [click: 29 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: .imageGridButton]]
+01:45:25.666 INFO - Executing: [switch to frame: null])
+01:45:25.675 INFO - Done: [switch to frame: null]
+01:45:25.679 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:25.728 INFO - Done: [find elements: By.cssSelector: body]
+01:45:25.730 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]])
+01:45:25.781 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (ed48d455-9ca4-9e44-8c30-444296faae50)] -> css selector: body]]
+01:45:25.786 INFO - Executing: [find element: By.cssSelector: body])
+01:45:25.842 INFO - Done: [find element: By.cssSelector: body]
+01:45:25.846 INFO - Executing: [find element: By.cssSelector: #plantImageGridPage])
+01:45:25.900 INFO - Done: [find element: By.cssSelector: #plantImageGridPage]
+01:45:25.904 INFO - Executing: [find element: By.cssSelector: #plantSearchInput])
+01:45:25.956 INFO - Done: [find element: By.cssSelector: #plantSearchInput]
+01:45:25.959 INFO - Executing: [find element: By.cssSelector: #plantImageGrid])
+01:45:26.009 INFO - Done: [find element: By.cssSelector: #plantImageGrid]
+01:45:26.013 INFO - Executing: [find element: By.cssSelector: #addNewPlant])
+01:45:26.066 INFO - Done: [find element: By.cssSelector: #addNewPlant]
+01:45:26.070 INFO - Executing: [delete session: 3ccf561c-39e2-42bd-aab4-8747430f5fda])
+01:45:26.214 INFO - Done: [delete session: 3ccf561c-39e2-42bd-aab4-8747430f5fda]
+01:45:26.336 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])
+01:45:26.337 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]
+01:45:28.582 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]]
+01:45:28.586 INFO - Executing: [get: http://localhost:3000])
+01:45:29.450 INFO - Done: [get: http://localhost:3000]
+01:45:29.455 INFO - Executing: [set window size])
+01:45:29.686 INFO - Done: [set window size]
+01:45:29.690 INFO - Executing: [find element: By.cssSelector: body])
+01:45:29.778 INFO - Done: [find element: By.cssSelector: body]
+01:45:29.782 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:45:29.832 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:45:29.835 INFO - Executing: [find element: By.cssSelector: #transparentPanel])
+01:45:29.884 INFO - Done: [find element: By.cssSelector: #transparentPanel]
+01:45:29.888 INFO - Executing: [find elements: By.cssSelector: #mainPage])
+01:45:29.939 INFO - Done: [find elements: By.cssSelector: #mainPage]
+01:45:29.941 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (dc11fb31-a15c-1640-a30f-327dd057250b)] -> css selector: #mainPage]])
+01:45:29.990 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (dc11fb31-a15c-1640-a30f-327dd057250b)] -> css selector: #mainPage]]
+01:45:29.994 INFO - Executing: [delete session: 26dded6a-832f-42ed-bd26-25252ed33487])
+01:45:30.130 INFO - Done: [delete session: 26dded6a-832f-42ed-bd26-25252ed33487]
+01:45:30.252 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Url Walkthrough}]])
+01:45:30.253 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Url Walkthrough}]
+01:45:32.487 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Url Walkthrough}]]
+01:45:32.490 INFO - Executing: [get: http://localhost:3000])
+01:45:33.320 INFO - Done: [get: http://localhost:3000]
+01:45:33.326 INFO - Executing: [set window size])
+01:45:33.544 INFO - Done: [set window size]
+01:45:33.548 INFO - Executing: [find element: By.cssSelector: body])
+01:45:33.645 INFO - Done: [find element: By.cssSelector: body]
+01:45:33.650 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:45:33.717 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:45:33.721 INFO - Executing: [find element: By.cssSelector: #transparentPanel])
+01:45:33.778 INFO - Done: [find element: By.cssSelector: #transparentPanel]
+01:45:33.782 INFO - Executing: [get: http://localhost:3000/edit/plant/foo])
+01:45:34.162 INFO - Done: [get: http://localhost:3000/edit/plant/foo]
+01:45:34.167 INFO - Executing: [switch to frame: null])
+01:45:34.333 INFO - Done: [switch to frame: null]
+01:45:34.339 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:34.388 INFO - Done: [find elements: By.cssSelector: body]
+01:45:34.392 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:34.442 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:34.446 INFO - Executing: [find element: By.cssSelector: body])
+01:45:34.503 INFO - Done: [find element: By.cssSelector: body]
+01:45:34.506 INFO - Executing: [find element: By.cssSelector: #plantEditPage])
+01:45:34.559 INFO - Done: [find element: By.cssSelector: #plantEditPage]
+01:45:34.562 INFO - Executing: [find element: By.cssSelector: #plantEditCard])
+01:45:34.614 INFO - Done: [find element: By.cssSelector: #plantEditCard]
+01:45:34.618 INFO - Executing: [find element: By.cssSelector: #plantTitleInput])
+01:45:34.671 INFO - Done: [find element: By.cssSelector: #plantTitleInput]
+01:45:34.675 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:34.727 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:34.735 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:34.834 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:34.843 INFO - Executing: [find element: By.cssSelector: #editPlantButton])
+01:45:34.887 INFO - Done: [find element: By.cssSelector: #editPlantButton]
+01:45:34.890 INFO - Executing: [get: http://localhost:3000/export/plants])
+01:45:35.238 INFO - Done: [get: http://localhost:3000/export/plants]
+01:45:35.242 INFO - Executing: [switch to frame: null])
+01:45:35.376 INFO - Done: [switch to frame: null]
+01:45:35.380 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:35.442 INFO - Done: [find elements: By.cssSelector: body]
+01:45:35.444 INFO - Executing: [is displayed: 10 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:35.504 INFO - Done: [is displayed: 10 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:35.508 INFO - Executing: [find element: By.cssSelector: body])
+01:45:35.559 INFO - Done: [find element: By.cssSelector: body]
+01:45:35.564 INFO - Executing: [find element: By.cssSelector: #plantExportPage])
+01:45:35.618 INFO - Done: [find element: By.cssSelector: #plantExportPage]
+01:45:35.624 INFO - Executing: [find element: By.cssSelector: #plantPreviewCard])
+01:45:35.677 INFO - Done: [find element: By.cssSelector: #plantPreviewCard]
+01:45:35.681 INFO - Executing: [find element: By.cssSelector: #notesText])
+01:45:35.735 INFO - Done: [find element: By.cssSelector: #notesText]
+01:45:35.739 INFO - Executing: [get: http://localhost:3000/new/plant])
+01:45:36.094 INFO - Done: [get: http://localhost:3000/new/plant]
+01:45:36.098 INFO - Executing: [switch to frame: null])
+01:45:36.202 INFO - Done: [switch to frame: null]
+01:45:36.209 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:36.273 INFO - Done: [find elements: By.cssSelector: body]
+01:45:36.275 INFO - Executing: [is displayed: 14 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:36.334 INFO - Done: [is displayed: 14 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:36.338 INFO - Executing: [find element: By.cssSelector: body])
+01:45:36.391 INFO - Done: [find element: By.cssSelector: body]
+01:45:36.396 INFO - Executing: [find element: By.cssSelector: #plantNewPage])
+01:45:36.457 INFO - Done: [find element: By.cssSelector: #plantNewPage]
+01:45:36.461 INFO - Executing: [find element: By.cssSelector: #plantTitleInput])
+01:45:36.519 INFO - Done: [find element: By.cssSelector: #plantTitleInput]
+01:45:36.523 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:36.579 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:36.585 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:36.644 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:36.648 INFO - Executing: [find element: By.cssSelector: #newPlantButton])
+01:45:36.709 INFO - Done: [find element: By.cssSelector: #newPlantButton]
+01:45:36.712 INFO - Executing: [get: http://localhost:3000/plant/foo])
+01:45:37.057 INFO - Done: [get: http://localhost:3000/plant/foo]
+01:45:37.061 INFO - Executing: [switch to frame: null])
+01:45:37.160 INFO - Done: [switch to frame: null]
+01:45:37.168 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:37.225 INFO - Done: [find elements: By.cssSelector: body]
+01:45:37.228 INFO - Executing: [is displayed: 20 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:37.287 INFO - Done: [is displayed: 20 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:37.292 INFO - Executing: [find element: By.cssSelector: body])
+01:45:37.358 INFO - Done: [find element: By.cssSelector: body]
+01:45:37.362 INFO - Executing: [find element: By.cssSelector: #plantPreviewPage])
+01:45:37.427 INFO - Done: [find element: By.cssSelector: #plantPreviewPage]
+01:45:37.432 INFO - Executing: [find element: By.cssSelector: #plantPreviewCard])
+01:45:37.494 INFO - Done: [find element: By.cssSelector: #plantPreviewCard]
+01:45:37.497 INFO - Executing: [find element: By.cssSelector: #plantTitleText])
+01:45:37.561 INFO - Done: [find element: By.cssSelector: #plantTitleText]
+01:45:37.565 INFO - Executing: [find element: By.cssSelector: #notesText])
+01:45:37.629 INFO - Done: [find element: By.cssSelector: #notesText]
+01:45:37.632 INFO - Executing: [get: http://localhost:3000/grid/plants])
+01:45:38.008 INFO - Done: [get: http://localhost:3000/grid/plants]
+01:45:38.012 INFO - Executing: [switch to frame: null])
+01:45:38.196 INFO - Done: [switch to frame: null]
+01:45:38.200 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:38.266 INFO - Done: [find elements: By.cssSelector: body]
+01:45:38.268 INFO - Executing: [is displayed: 25 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:38.332 INFO - Done: [is displayed: 25 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:38.335 INFO - Executing: [find element: By.cssSelector: body])
+01:45:38.401 INFO - Done: [find element: By.cssSelector: body]
+01:45:38.406 INFO - Executing: [find element: By.cssSelector: #plantImageGridPage])
+01:45:38.467 INFO - Done: [find element: By.cssSelector: #plantImageGridPage]
+01:45:38.473 INFO - Executing: [find element: By.cssSelector: #plantSearchInput])
+01:45:38.534 INFO - Done: [find element: By.cssSelector: #plantSearchInput]
+01:45:38.538 INFO - Executing: [find element: By.cssSelector: #plantImageGrid])
+01:45:38.600 INFO - Done: [find element: By.cssSelector: #plantImageGrid]
+01:45:38.603 INFO - Executing: [find element: By.cssSelector: #addNewPlant])
+01:45:38.670 INFO - Done: [find element: By.cssSelector: #addNewPlant]
+01:45:38.678 INFO - Executing: [get: http://localhost:3000/list/plants])
+01:45:39.062 INFO - Done: [get: http://localhost:3000/list/plants]
+01:45:39.065 INFO - Executing: [switch to frame: null])
+01:45:39.279 INFO - Done: [switch to frame: null]
+01:45:39.283 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:39.446 INFO - Done: [find elements: By.cssSelector: body]
+01:45:39.448 INFO - Executing: [is displayed: 30 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:39.498 INFO - Done: [is displayed: 30 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:39.501 INFO - Executing: [find element: By.cssSelector: body])
+01:45:39.545 INFO - Done: [find element: By.cssSelector: body]
+01:45:39.548 INFO - Executing: [find element: By.cssSelector: #plantsListPage])
+01:45:39.598 INFO - Done: [find element: By.cssSelector: #plantsListPage]
+01:45:39.602 INFO - Executing: [find element: By.cssSelector: #plantSearchInput])
+01:45:39.649 INFO - Done: [find element: By.cssSelector: #plantSearchInput]
+01:45:39.653 INFO - Executing: [find element: By.cssSelector: #plantsUnorderedList])
+01:45:39.707 INFO - Done: [find element: By.cssSelector: #plantsUnorderedList]
+01:45:39.711 INFO - Executing: [get: http://localhost:3000/table/plants])
+01:45:40.115 INFO - Done: [get: http://localhost:3000/table/plants]
+01:45:40.120 INFO - Executing: [switch to frame: null])
+01:45:40.316 INFO - Done: [switch to frame: null]
+01:45:40.320 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:40.377 INFO - Done: [find elements: By.cssSelector: body]
+01:45:40.379 INFO - Executing: [is displayed: 34 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:40.436 INFO - Done: [is displayed: 34 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:40.439 INFO - Executing: [find element: By.cssSelector: body])
+01:45:40.491 INFO - Done: [find element: By.cssSelector: body]
+01:45:40.495 INFO - Executing: [find element: By.cssSelector: #plantsTablePage])
+01:45:40.547 INFO - Done: [find element: By.cssSelector: #plantsTablePage]
+01:45:40.551 INFO - Executing: [find element: By.cssSelector: #plantSearchInput])
+01:45:40.603 INFO - Done: [find element: By.cssSelector: #plantSearchInput]
+01:45:40.608 INFO - Executing: [find element: By.cssSelector: #plantsTable])
+01:45:40.658 INFO - Done: [find element: By.cssSelector: #plantsTable]
+01:45:40.661 INFO - Executing: [get: http://localhost:3000/insert/plant])
+01:45:41.050 INFO - Done: [get: http://localhost:3000/insert/plant]
+01:45:41.055 INFO - Executing: [switch to frame: null])
+01:45:41.162 INFO - Done: [switch to frame: null]
+01:45:41.170 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:41.234 INFO - Done: [find elements: By.cssSelector: body]
+01:45:41.237 INFO - Executing: [is displayed: 38 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:41.314 INFO - Done: [is displayed: 38 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:41.317 INFO - Executing: [find element: By.cssSelector: body])
+01:45:41.376 INFO - Done: [find element: By.cssSelector: body]
+01:45:41.380 INFO - Executing: [find element: By.cssSelector: #plantUpsertPage])
+01:45:41.436 INFO - Done: [find element: By.cssSelector: #plantUpsertPage]
+01:45:41.440 INFO - Executing: [find element: By.cssSelector: #plantImageGridButton])
+01:45:41.497 INFO - Done: [find element: By.cssSelector: #plantImageGridButton]
+01:45:41.500 INFO - Executing: [find element: By.cssSelector: #plantListButton])
+01:45:41.559 INFO - Done: [find element: By.cssSelector: #plantListButton]
+01:45:41.563 INFO - Executing: [find element: By.cssSelector: #plantTableButton])
+01:45:41.623 INFO - Done: [find element: By.cssSelector: #plantTableButton]
+01:45:41.627 INFO - Executing: [find element: By.cssSelector: #plantUpsertCard])
+01:45:41.687 INFO - Done: [find element: By.cssSelector: #plantUpsertCard]
+01:45:41.692 INFO - Executing: [find element: By.cssSelector: #plantMetaData])
+01:45:41.750 INFO - Done: [find element: By.cssSelector: #plantMetaData]
+01:45:41.754 INFO - Executing: [find element: By.cssSelector: #plantMetaInputs])
+01:45:41.812 INFO - Done: [find element: By.cssSelector: #plantMetaInputs]
+01:45:41.815 INFO - Executing: [find element: By.cssSelector: #plantCommonNameInput])
+01:45:41.867 INFO - Done: [find element: By.cssSelector: #plantCommonNameInput]
+01:45:41.871 INFO - Executing: [find element: By.cssSelector: #plantLatinNameInput])
+01:45:41.927 INFO - Done: [find element: By.cssSelector: #plantLatinNameInput]
+01:45:41.931 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:41.993 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:41.997 INFO - Executing: [find element: By.cssSelector: #plantImageUrlInput])
+01:45:42.054 INFO - Done: [find element: By.cssSelector: #plantImageUrlInput]
+01:45:42.058 INFO - Executing: [find element: By.cssSelector: #plantImage])
+01:45:42.112 INFO - Done: [find element: By.cssSelector: #plantImage]
+01:45:42.115 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:42.170 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:42.174 INFO - Executing: [find element: By.cssSelector: #savePlantButton])
+01:45:42.230 INFO - Done: [find element: By.cssSelector: #savePlantButton]
+01:45:42.233 INFO - Executing: [get: http://localhost:3000/upsert/plant/foo])
+01:45:42.648 INFO - Done: [get: http://localhost:3000/upsert/plant/foo]
+01:45:42.652 INFO - Executing: [switch to frame: null])
+01:45:42.760 INFO - Done: [switch to frame: null]
+01:45:42.767 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:42.826 INFO - Done: [find elements: By.cssSelector: body]
+01:45:42.829 INFO - Executing: [is displayed: 53 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:42.885 INFO - Done: [is displayed: 53 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:42.889 INFO - Executing: [find element: By.cssSelector: body])
+01:45:42.950 INFO - Done: [find element: By.cssSelector: body]
+01:45:42.955 INFO - Executing: [find element: By.cssSelector: #plantUpsertPage])
+01:45:43.018 INFO - Done: [find element: By.cssSelector: #plantUpsertPage]
+01:45:43.022 INFO - Executing: [find element: By.cssSelector: #plantImageGridButton])
+01:45:43.082 INFO - Done: [find element: By.cssSelector: #plantImageGridButton]
+01:45:43.085 INFO - Executing: [find element: By.cssSelector: #plantListButton])
+01:45:43.151 INFO - Done: [find element: By.cssSelector: #plantListButton]
+01:45:43.156 INFO - Executing: [find element: By.cssSelector: #plantTableButton])
+01:45:43.216 INFO - Done: [find element: By.cssSelector: #plantTableButton]
+01:45:43.220 INFO - Executing: [find element: By.cssSelector: #plantUpsertCard])
+01:45:43.283 INFO - Done: [find element: By.cssSelector: #plantUpsertCard]
+01:45:43.287 INFO - Executing: [find element: By.cssSelector: #plantMetaData])
+01:45:43.351 INFO - Done: [find element: By.cssSelector: #plantMetaData]
+01:45:43.355 INFO - Executing: [find element: By.cssSelector: #plantMetaInputs])
+01:45:43.414 INFO - Done: [find element: By.cssSelector: #plantMetaInputs]
+01:45:43.418 INFO - Executing: [find element: By.cssSelector: #plantCommonNameInput])
+01:45:43.477 INFO - Done: [find element: By.cssSelector: #plantCommonNameInput]
+01:45:43.482 INFO - Executing: [find element: By.cssSelector: #plantLatinNameInput])
+01:45:43.540 INFO - Done: [find element: By.cssSelector: #plantLatinNameInput]
+01:45:43.544 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:43.603 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:43.607 INFO - Executing: [find element: By.cssSelector: #plantImageUrlInput])
+01:45:43.670 INFO - Done: [find element: By.cssSelector: #plantImageUrlInput]
+01:45:43.673 INFO - Executing: [find element: By.cssSelector: #plantImage])
+01:45:43.730 INFO - Done: [find element: By.cssSelector: #plantImage]
+01:45:43.734 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:43.797 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:43.805 INFO - Executing: [find element: By.cssSelector: #savePlantButton])
+01:45:43.860 INFO - Done: [find element: By.cssSelector: #savePlantButton]
+01:45:43.863 INFO - Executing: [get: http://localhost:3000/view/plant/foo])
+01:45:44.245 INFO - Done: [get: http://localhost:3000/view/plant/foo]
+01:45:44.249 INFO - Executing: [switch to frame: null])
+01:45:44.352 INFO - Done: [switch to frame: null]
+01:45:44.361 INFO - Executing: [find elements: By.cssSelector: body])
+01:45:44.420 INFO - Done: [find elements: By.cssSelector: body]
+01:45:44.423 INFO - Executing: [is displayed: 68 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]])
+01:45:44.485 INFO - Done: [is displayed: 68 [[FirefoxDriver: firefox on MAC (f12b2c80-6da0-2344-bacf-b16004e7174e)] -> css selector: body]]
+01:45:44.489 INFO - Executing: [find element: By.cssSelector: body])
+01:45:44.549 INFO - Done: [find element: By.cssSelector: body]
+01:45:44.553 INFO - Executing: [find element: By.cssSelector: #plantUpsertPage])
+01:45:44.619 INFO - Done: [find element: By.cssSelector: #plantUpsertPage]
+01:45:44.623 INFO - Executing: [find element: By.cssSelector: #plantImageGridButton])
+01:45:44.688 INFO - Done: [find element: By.cssSelector: #plantImageGridButton]
+01:45:44.692 INFO - Executing: [find element: By.cssSelector: #plantListButton])
+01:45:44.755 INFO - Done: [find element: By.cssSelector: #plantListButton]
+01:45:44.759 INFO - Executing: [find element: By.cssSelector: #plantTableButton])
+01:45:44.829 INFO - Done: [find element: By.cssSelector: #plantTableButton]
+01:45:44.833 INFO - Executing: [find element: By.cssSelector: #plantUpsertCard])
+01:45:44.903 INFO - Done: [find element: By.cssSelector: #plantUpsertCard]
+01:45:44.907 INFO - Executing: [find element: By.cssSelector: #plantMetaData])
+01:45:44.975 INFO - Done: [find element: By.cssSelector: #plantMetaData]
+01:45:44.980 INFO - Executing: [find element: By.cssSelector: #plantMetaInputs])
+01:45:45.047 INFO - Done: [find element: By.cssSelector: #plantMetaInputs]
+01:45:45.050 INFO - Executing: [find element: By.cssSelector: #plantCommonNameInput])
+01:45:45.113 INFO - Done: [find element: By.cssSelector: #plantCommonNameInput]
+01:45:45.117 INFO - Executing: [find element: By.cssSelector: #plantLatinNameInput])
+01:45:45.186 INFO - Done: [find element: By.cssSelector: #plantLatinNameInput]
+01:45:45.189 INFO - Executing: [find element: By.cssSelector: #plantUrlInput])
+01:45:45.253 INFO - Done: [find element: By.cssSelector: #plantUrlInput]
+01:45:45.262 INFO - Executing: [find element: By.cssSelector: #plantImageUrlInput])
+01:45:45.326 INFO - Done: [find element: By.cssSelector: #plantImageUrlInput]
+01:45:45.329 INFO - Executing: [find element: By.cssSelector: #plantImage])
+01:45:45.397 INFO - Done: [find element: By.cssSelector: #plantImage]
+01:45:45.400 INFO - Executing: [find element: By.cssSelector: #plantDescriptionInput])
+01:45:45.463 INFO - Done: [find element: By.cssSelector: #plantDescriptionInput]
+01:45:45.466 INFO - Executing: [find element: By.cssSelector: #savePlantButton])
+01:45:45.530 INFO - Done: [find element: By.cssSelector: #savePlantButton]
+01:45:45.532 INFO - Executing: [delete session: 4d6fb3be-45d1-4fc0-a61d-cec6e415cf94])
+01:45:45.682 INFO - Done: [delete session: 4d6fb3be-45d1-4fc0-a61d-cec6e415cf94]
