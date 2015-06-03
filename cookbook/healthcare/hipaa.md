@@ -92,3 +92,7 @@ Phase 4 - Federal HIPAA
 https://github.com/catalyzeio/policies
 
 
+================================================
+####  Data-At-Rest Encryption
+
+https://atmospherejs.com/jparker/crypto-aes
