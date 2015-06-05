@@ -94,8 +94,12 @@ Between the api.export(), the Http methods, and that custom object, you should t
 Obviously you'll want to adjust function names, arguments, urls, and the like, to create the proper syntax for the API.  
 
 #### Publish to Atmosphere  
-After all that is done, you'll want to post to Atmosphere for the community to use, so people can simply run Add your ``mrt add foo-api-wrapper``.
-https://gist.github.com/awatson1978/7293949
+After all that is done, you'll want to post to Atmosphere for the community to use, so people can simply add your wrapper like so:
+
+```
+meteor add username:foo-api-wrapper
+
+```
 
 
 
