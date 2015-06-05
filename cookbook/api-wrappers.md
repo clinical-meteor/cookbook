@@ -14,7 +14,7 @@ meteor create foo-api-wrapper
 In order to work with REST APIs within Meteor, you will want to create an API wrapper. The API wrapper mirrors the structure of the API, while giving you JavaScript methods to access each endpoint.
 
 ## Create A Package For Your API Wrapper
-You'll want to start creating a smart package for use with Atmosphere and Meteorite.  The documentation for creating smart packages is somewhat spotty, so check out the following links for documentation.
+You'll want to start creating a smart package for use with Atmosphere and Meteorite.  To get an overview of the package creation process, check out the following links for documentation.
 
 * [Meteor - Writing Packages](http://docs.meteor.com/#/full/writingpackages)
 * [Atmosphere - Publish Packages](https://atmosphere.meteor.com/wtf/package)
