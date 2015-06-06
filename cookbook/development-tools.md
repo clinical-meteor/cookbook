@@ -44,6 +44,7 @@ Developing Meteor apps usually means testing multi-client reactivity, which requ
 [Zapier](https://zapier.com/) - The best apps.  Together.  
 [Teamwork.com](https://www.teamwork.com/) - Traditional project management & gannt charts.   
 [Sprint.ly](https://sprint.ly/) - More kanban boards and sprint planning that works with GitHub.  
+[LucidCharts](https://www.lucidchart.com/) - Web based Visio alternative for flowcharting.
 
 ===============================================================
 #### REST Clients  
