@@ -68,6 +68,7 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed
     "preserve_newlines": true,
     "space_before_conditional": true,
     "space_in_paren": false,
+    "space_after_anon_function": true
     "unescape_strings": false,
     "wrap_line_length": 80
   }
