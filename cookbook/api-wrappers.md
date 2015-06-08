@@ -21,13 +21,15 @@ You'll want to start creating a smart package for use with Atmosphere and Meteor
 * [Meteor Cookbook - Createing a package for distribution](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md#creating-a-package-for-distribution) 
 
 ### File structure
-The files of your package will probably look something like this.
+The files of your package will probably look something like this:
 ```sh
-packages/foo-api-wrapper/smart.json
-packages/foo-api-wrapper/package.js
-packages/foo-api-wrapper/readme.md
-packages/foo-api-wrapper/foo.api.wrapper.js
+foo-api-wrapper/smart.json
+foo-api-wrapper/package.js
+foo-api-wrapper/readme.md
+foo-api-wrapper/foo.api.wrapper.js
 ```
+
+Initially, the files can be kept in the `packages` sub-directory of your sandbox project. This will make it so that Meteor can detect your package, enabling you to install the package via `meteor add username:package-name`.
 
 ### package.js
 The file `package.js` defines the overall package purpose and structure, including what functionality the package provides. In particular, you'll want to make sure that you have an api.export() call within `package.js`, like so:
