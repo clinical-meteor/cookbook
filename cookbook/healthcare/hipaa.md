@@ -98,7 +98,8 @@ https://github.com/catalyzeio/policies
 [AES Crypto Package](https://atmospherejs.com/jparker/crypto-aes)  
 [MongoDB Security Introduction](http://docs.mongodb.org/manual/core/security-introduction/)    
 [Encrypting Sensitive Data in Your MongoDB Database](https://www.compose.io/articles/encrypting-sensitive-data-in-your-mongodb-database/)  
-[Encrypting MongoDB Data At Rest (with MongoDirectory)](http://blog.mongodirector.com/encrypt-mongodb-data-at-rest/)  [HIPAA And PCI Compliance Are Not Interchangable](http://www.datacenterknowledge.com/archives/2013/03/07/hipaa-and-pci-compliance-are-not-interchangeable/)  
+[Encrypting MongoDB Data At Rest (with MongoDirectory)](http://blog.mongodirector.com/encrypt-mongodb-data-at-rest/)  
+[HIPAA And PCI Compliance Are Not Interchangable](http://www.datacenterknowledge.com/archives/2013/03/07/hipaa-and-pci-compliance-are-not-interchangeable/)  
 
 
 
