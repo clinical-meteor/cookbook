@@ -1,6 +1,8 @@
 Horizontal Scaling
 =========================================
 
+
+[Distributed Algorithms in NoSQL Databases](https://highlyscalable.wordpress.com/2012/09/18/distributed-algorithms-in-nosql-databases/)  
 [Oplog Observe Driver](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver)  
 [Meteor.js and MongoDB Replica Set for Oplog Tailing](http://www.manuel-schoebel.com/blog/meteorjs-and-mongodb-replica-set-for-oplog-tailing)  
 [Meteor #10: Set up Oplog Tialing on Ubuntu](http://journal.gentlenode.com/meteor-10-set-up-oplog-tailing-on-ubuntu/)  
