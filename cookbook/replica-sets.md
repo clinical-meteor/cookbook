@@ -81,13 +81,20 @@ sudo reboot
 
 Then go into the mongo shell and initiate the replica set, like so:
 
-````
+````sh
 mongo
 
   > rs.initiate()
   PRIMARY> rs.add("mongo-a")
   PRIMARY> rs.add("mongo-b")
   PRIMARY> rs.add("mongo-c")
+
+  # to allow reads on secondary members 
   PRIMARY> rs.slaveOk()
 ````
 
+
+====================================
+#### Set Up ReplicaSet OpLog Tailing  
+
+[Set Up OpLog Tailing on Ubuntu](https://gentlenode.com/journal/meteor-10-set-up-oplog-tailing-on-ubuntu/17)  
