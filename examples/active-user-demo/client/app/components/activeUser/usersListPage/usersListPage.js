@@ -1,4 +1,4 @@
-Session.setDefault('fooSearchFilter', '');
+Session.setDefault('userSearchFilter', '');
 Session.setDefault('tableLimit', 20);
 Session.setDefault('paginationCount', 1);
 Session.setDefault('selectedPagination', 0);
@@ -10,14 +10,11 @@ Session.setDefault('skipCount', 0);
 // ROUTING
 
 Router.map(function(){
-  this.route('foosListPage', {
-    path: '/list/foos/',
-    template: 'foosListPage',
+  this.route('usersListPage', {
+    path: '/list/users/',
+    template: 'usersListPage',
     data: function(){
-      return Foo.find();
-    },
-    onAfterAction: function(){
-      Template.appLayout.layout();
+      return Meteor.users.find();
     }
   });
 });
@@ -26,20 +23,20 @@ Router.map(function(){
 //------------------------------------------------------------------------------
 // TEMPLATE INPUTS
 
-Template.foosListPage.events({
-  /*'click .addFooItem':function(){
-    Router.go('/insert/foo');
+Template.usersListPage.events({
+  /*'click .addRecordItem':function(){
+    Router.go('/insert/user');
   },*/
-  'click .addUserIcon':function(){
-    Router.go('/insert/foo');
+  'click .addUserItem':function(){
+    Router.go('/insert/user');
   },
-  'click .fooItem':function(){
-    Router.go('/view/foo/' + this._id);
+  'click .userItem':function(){
+    Router.go('/view/user/' + this._id);
   },
   // use keyup to implement dynamic filtering
   // keyup is preferred to keypress because of end-of-line issues
-  'keyup #fooSearchInput': function() {
-    Session.set('fooSearchFilter', $('#fooSearchInput').val());
+  'keyup #userSearchInput': function() {
+    Session.set('userSearchFilter', $('#userSearchInput').val());
   }
 });
 
@@ -51,36 +48,29 @@ Template.foosListPage.events({
 var OFFSCREEN_CLASS = 'off-screen';
 var EVENTS = 'webkitTransitionEnd oTransitionEnd transitionEnd msTransitionEnd transitionend';
 
-Template.foosListPage.rendered = function(){
+Template.usersListPage.rendered = function(){
   console.log("trying to update layout...");
 
   Template.appLayout.delayedLayout(20);
 };
 
 
-Template.foosListPage.helpers({
+Template.usersListPage.helpers({
   hasNoContent: function(){
-    if(Foo.find().count() === 0){
+    if(Meteor.users.find().count() === 0){
       return true;
     }else{
       return false;
     }
   },
-  foosList: function() {
-    // this triggers a refresh of data elsewhere in the table
-    // step C:  receive some data and set our reactive data variable with a new value
+  usersList: function() {
     Session.set('receivedData', new Date());
 
     Template.appLayout.delayedLayout(20);
 
-
-    // this is a performant local (client-side) search on the data
-    // current in our CustomerAccounts cursor, and will reactively
-    // update the table
-
-    return Foo.find({
-      title: {
-        $regex: Session.get('fooSearchFilter'),
+    return Meteor.users.find({
+      'profile.fullName': {
+        $regex: Session.get('userSearchFilter'),
         $options: 'i'
     }});
   }

@@ -1,4 +1,4 @@
-Session.setDefault('fooSearchFilter', '');
+Session.setDefault('userSearchFilter', '');
 Session.setDefault('tableLimit', 20);
 Session.setDefault('paginationCount', 1);
 Session.setDefault('selectedPagination', 0);
@@ -10,12 +10,9 @@ Session.setDefault('skipCount', 0);
 // ROUTING
 
 Router.map(function(){
-  this.route('foosTablePage', {
-    path: '/table/foos',
-    template: 'foosTablePage',
-    onAfterAction: function(){
-      Template.appLayout.layout();
-    }
+  this.route('usersTablePage', {
+    path: '/table/users',
+    template: 'usersTablePage'
   });
 });
 
@@ -23,56 +20,56 @@ Router.map(function(){
 //------------------------------------------------------------------------------
 // TEMPLATE INPUTS
 
-Template.foosTablePage.events({
+Template.usersTablePage.events({
   'click .starA': function(event, template){
     event.stopPropagation();
-    Foo.update({_id: this._id}, {$set: {stars: 1}});
+    Meteor.users.update({_id: this._id}, {$set: {stars: 1}});
   },
   'click .starB': function(event, template){
     event.stopPropagation();
-    Foo.update({_id: this._id}, {$set: {stars: 2}});
+    Meteor.users.update({_id: this._id}, {$set: {stars: 2}});
   },
   'click .starC': function(event, template){
     event.stopPropagation();
-    Foo.update({_id: this._id}, {$set: {stars: 3}});
+    Meteor.users.update({_id: this._id}, {$set: {stars: 3}});
   },
   'click .starD': function(event, template){
     event.stopPropagation();
-    Foo.update({_id: this._id}, {$set: {stars: 4}});
+    Meteor.users.update({_id: this._id}, {$set: {stars: 4}});
   },
   'click .starE': function(event, template){
     event.stopPropagation();
-    Foo.update({_id: this._id}, {$set: {stars: 5}});
+    Meteor.users.update({_id: this._id}, {$set: {stars: 5}});
   },
   'click .checkbox': function(event, template){
     event.stopPropagation();
     if(this.checked){
-      Foo.update({_id: this._id}, {$set: {checked: false}});
+      Meteor.users.update({_id: this._id}, {$set: {checked: false}});
     }else{
-      Foo.update({_id: this._id}, {$set: {checked: true}});
+      Meteor.users.update({_id: this._id}, {$set: {checked: true}});
     }
   },
   'click .flag': function(event, template){
     event.stopPropagation();
     if(this.flagged){
-      Foo.update({_id: this._id}, {$set: {flagged: false}});
+      Meteor.users.update({_id: this._id}, {$set: {flagged: false}});
     }else{
-      Foo.update({_id: this._id}, {$set: {flagged: true}});
+      Meteor.users.update({_id: this._id}, {$set: {flagged: true}});
     }
   },
-  'click .addUserIcon': function(){
-    Router.go('/insert/foo');
+  'click .addRecordIcon': function(){
+    Router.go('/insert/user');
   },
   'click .delete': function(){
-    Foo.remove(this._id);
+    Meteor.users.remove(this._id);
   },
   'click tr': function(){
-    Router.go('/view/foo/' + this._id);
+    Router.go('/view/user/' + this._id);
   },
   // use keyup to implement dynamic filtering
   // keyup is preferred to keypress because of end-of-line issues
-  'keyup #fooSearchInput': function() {
-    Session.set('fooSearchFilter', $('#fooSearchInput').val());
+  'keyup #userSearchInput': function() {
+    Session.set('userSearchFilter', $('#userSearchInput').val());
   }
 });
 
@@ -80,7 +77,7 @@ Template.foosTablePage.events({
 //------------------------------------------------------------------------------
 // TEMPLATE OUTPUTS
 
-Template.foosTablePage.helpers({
+Template.usersTablePage.helpers({
   isGrayedOut: function(){
     if(this.checked){
       return "gray";
@@ -137,7 +134,7 @@ Template.foosTablePage.helpers({
       return "fa-flag-o";
     }
   },
-  foosList: function() {
+  usersList: function() {
     // this triggers a refresh of data elsewhere in the table
     // step C:  receive some data and set our reactive data variable with a new value
     Session.set('receivedData', new Date());
@@ -147,20 +144,20 @@ Template.foosTablePage.helpers({
     // this is a performant local (client-side) search on the data
     // current in our CustomerAccounts cursor, and will reactively
     // update the table
-    return Foo.find({
-      title: {
-        $regex: Session.get('fooSearchFilter'),
+    return Meteor.users.find({
+      'profile.fullName': {
+        $regex: Session.get('userSearchFilter'),
         $options: 'i'
     }});
   }
 });
 
 
-Template.foosTablePage.rendered = function(){
+Template.usersTablePage.rendered = function(){
   Template.appLayout.layout();
 
   // step A:  initialize the table sorting functionality
-  $(this.find('#foosTable')).tablesorter();
+  $(this.find('#usersTable')).tablesorter();
 
   // the Tracker API watches Collection and Session objects
   // so what we're doing here is registering a Tracker to watch the
@@ -178,7 +175,7 @@ Template.foosTablePage.rendered = function(){
     setTimeout(function() {
       // step F:  update the tablesorting library 200ms after receiving data
       // and Blaze has had a change to rerender the table
-      $("#foosTable").trigger("update");
+      $("#usersTable").trigger("update");
     }, 200);
   });
 

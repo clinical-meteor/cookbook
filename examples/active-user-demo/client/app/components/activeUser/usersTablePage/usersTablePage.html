@@ -1,55 +1,57 @@
 
-<template name="foosTablePage">
-  <article id="foosTablePage" class="page">
+<template name="usersTablePage">
+  <article id="usersTablePage" class="page">
     {{> pageNavHeader}}
 
-    <input id="fooSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getFooSearchFilter}}" />
+    <input id="userSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getRecordSearchFilter}}" />
 
-    <table id="foosTable" class=" table table-striped tablesorter">
+    <table id="usersTable" class=" table table-striped tablesorter">
       <thead>
-        <tr class="fooHeaderRow">
+        <tr class="userHeaderRow">
           <th>
             <i class="fa fa-check"></i>
           </th>
-          <th>_id</th>
+          <!-- <th>_id</th> -->
           <th>
             <i class="fa fa-image"></i>
           </th>
-          <th>Title</th>
-          <th>Stars</th>
+          <th>Name</th>
+          <th>Role</th>
+          <!-- <th>Stars</th> -->
           <!-- <th>Url</th> -->
-          <th>
+          <!-- <th>
             <i class="fa fa-flag-o"></i>
-          </th>
+          </th> -->
           <th>
             <i class="fa fa-times"></i>
           </th>
         </tr>
       </thead>
       <tbody>
-        {{#each foosList}}
-          <tr class="fooRow {{isGrayedOut}}">
+        {{#each usersList}}
+          <tr class="userRow {{isGrayedOut}}">
             <td class="checkbox">
               <i class="fa {{checkedIcon}}"></i>
             </td>
-            <td class="barcode">{{_id}}</td>
+            <!-- <td class="barcode">{{_id}}</td> -->
             <td class="avatar">
-              {{#if imageUrl}}
+              {{#if profile.avatar}}
               <i class="fa fa-image"></i>
               {{/if}}
             </td>
-            <td>{{title}}</td>
-            <td>
+            <td>{{profile.fullName}}</td>
+            <td>{{profile.role}}</td>
+            <!-- <td>
               <i class="starA fa {{starA}}"></i>
               <i class="starB fa {{starB}}"></i>
               <i class="starC fa {{starC}}"></i>
               <i class="starD fa {{starD}}"></i>
               <i class="starE fa {{starE}}"></i>
-            </td>
+            </td> -->
             <!-- <td>{{url}}</td> -->
-            <td class="flag">
+            <!-- <td class="flag">
               <i class="fa {{flaggedIcon}}"></i>
-            </td>
+            </td> -->
             <td class="delete">
               <i class="fa fa-times"></i>
             </td>
@@ -58,7 +60,7 @@
       </tbody>
     </table>
     <footer class="pageFooter">
-      <h3 class="addUserIcon"><i class="fa fa-sun-o"></i></h3>
+      <h3 class="addRecordIcon"><i class="fa fa-sun-o"></i></h3>
     </footer>
   </article>
 </template>

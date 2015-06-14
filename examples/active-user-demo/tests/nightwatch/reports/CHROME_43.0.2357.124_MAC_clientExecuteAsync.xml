@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="clientExecuteAsync"
+    errors="0" failures="0" hostname="" id="" package="clientExecuteAsync" skipped="0"
+    tests="2" time="6.467" timestamp="Sun, 14 Jun 2015 04:48:27 GMT">
+  
+    <testcase name="Check Session" time="3.180" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Check Methods" time="3.287" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
