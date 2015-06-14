@@ -15,11 +15,8 @@ Meteor.methods({
     return userId;
   },
   updateEmail: function(options){
-    Meteor.users.update({_id: options.userId}, {$set: {
-        'emails.0.address': options.email
-      }}, function(error, result){
-      if(error) console.log(error);
-      Router.go('/view/user/' + user._id);
-    });
+    return Meteor.users.update({_id: options.userId}, {$set: {
+      'emails.0.address': options.email
+    }});
   }
 });

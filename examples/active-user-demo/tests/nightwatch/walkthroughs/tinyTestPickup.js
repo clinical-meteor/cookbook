@@ -27,11 +27,11 @@ module.exports = {
       .pause(500)
       .reviewMainPanel()
       .getLogTypes()
-      /*.getLog('browser', function(logEntriesArray) {
+      .getLog('browser', function(logEntriesArray) {
         logEntriesArray.forEach(function(log) {
           console.log('[' + log.level + '] ' + log.timestamp + ' : ' + log.message);
         })
-      })*/
+      })
       .end();
   }
 };
