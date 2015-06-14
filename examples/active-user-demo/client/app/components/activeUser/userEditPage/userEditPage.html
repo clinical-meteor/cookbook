@@ -1,0 +1,21 @@
+<template name="userEditPage">
+  <div id="userEditPage" class="page">
+    <header class="pageHeader">
+      <i class="indexButton fa fa-chevron-left"></i>
+      <h4 class="userId barcode">{{_id}}</h4>
+      <i class="imageGridButton fa fa-th"></i>
+      <i class="listButton fa fa-list"></i>
+      <i class="tableButton fa fa-table"></i>
+    </header>
+
+    <div id="userEditCard" class="card-contents">
+      <input id="usernameInput" class="glass form-control" type="text" placeholder="Title" value="{{title}}"><br>
+      <input id="userEmailInput"  class="glass form-control" type="url" placeholder="http://www.widget.com" value="{{url}}">
+      <textarea id="userFullNameInput"  class="glass form-control" rows="10" placeholder="Lorem ipsum dolar set et...">{{description}}</textarea><br>
+    </div>
+
+    <div class="pageFooter">
+      <button id="editRecordButton" class="glass-footer-btn">Save Record</button>
+    </div>
+  </div>
+</template>

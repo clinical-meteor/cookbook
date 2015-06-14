@@ -28,7 +28,7 @@ Template.fooImageGridPage.events({
   "click .fooImage": function(event, template){
     Router.go('/upsert/foo/' + this._id);
   },
-  "click .addFooIcon": function(event, template){
+  "click .addUserIcon": function(event, template){
     Router.go('/insert/foo');
   },
   "click .addNewFoo": function(event, template){

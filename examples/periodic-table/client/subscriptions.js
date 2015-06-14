@@ -1,3 +1,3 @@
-Session.setDefault("ElementsId", null);
+//Session.setDefault("ElementsId", null);
 
-Meteor.subscribe("Elements", Session.get('ElementsId'));
+Meteor.subscribe("Elements");

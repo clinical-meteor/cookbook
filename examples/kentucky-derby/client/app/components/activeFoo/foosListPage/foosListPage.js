@@ -30,7 +30,7 @@ Template.foosListPage.events({
   /*'click .addFooItem':function(){
     Router.go('/insert/foo');
   },*/
-  'click .addFooIcon':function(){
+  'click .addUserIcon':function(){
     Router.go('/insert/foo');
   },
   'click .fooItem':function(){

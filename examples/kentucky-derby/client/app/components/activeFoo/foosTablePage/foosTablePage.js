@@ -60,7 +60,7 @@ Template.foosTablePage.events({
       Foo.update({_id: this._id}, {$set: {flagged: true}});
     }
   },
-  'click .addFooIcon': function(){
+  'click .addUserIcon': function(){
     Router.go('/insert/foo');
   },
   'click .delete': function(){
