@@ -10,6 +10,8 @@ The *compatibility* directory contains legacy or 3rd party code, such as JavaScr
 ## lib
 the *lib* directory contains common files that are shared between the application client and server. This can include collections and routing logic.
 
+**Note:** The *lib* directory is loaded before other directories in your Meteor project. This means that you can control load order within your application by placing files within a *lib* directory inside any other project directory.
+
 ## packages
 The *packages* directory is where you will keep custom package installations, including packages you may be developing. I.e. this directory will contain Meteor packages that are not auto-installed by the `meteor add <package-name>` command.
 
