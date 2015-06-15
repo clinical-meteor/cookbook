@@ -4,7 +4,7 @@ The first thing you need to know when structuring your apps is that Meteor has s
 ## client
 All code in the *client* directory is run only in the client-side, or web browser.
 
-### client/compatibility
+## compatibility
 The *compatibility* directory contains legacy or 3rd party code, such as JavaScript libraries, shims, etc.
 
 ## lib
