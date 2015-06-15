@@ -8,10 +8,10 @@ All code in the *client* directory is run only in the client-side, or web browse
 The *compatibility* directory contains legacy or 3rd party code, such as JavaScript libraries, shims, etc.
 
 ## lib
-The *lib* directory is loaded before other directories in your Meteor project. This means that you can control load order within your application by placing files within a *lib* directory inside any other project directory.
+The *lib* directory is loaded before other directories in your Meteor project. This means that you can control load order within your application by placing files within a *lib* directory (inside any project directory.)
 
 ## main
-The *main* directory is loaded after other directories in your project. This means you can control load order within your application by placing files within a *main* directory (inside any project directory).
+The *main* directory is loaded after other directories in your project. This means you can control load order within your application by placing files within a *main* directory (inside any project directory.)
 
 ## packages
 The *packages* directory is where you will keep custom package installations, including packages you may be developing. I.e. this directory will contain Meteor packages that are not auto-installed by the `meteor add <package-name>` command.
