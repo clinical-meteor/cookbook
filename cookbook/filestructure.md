@@ -1,6 +1,9 @@
 # Application File Structure
 The first thing you need to know when structuring your apps is that Meteor has some specific meanings for certain directory names.  At a very basic level, the following directories are "baked in" the Meteor bundler.
 
+## both
+the *both* directory contains common files that are shared between the application client and server. This can include collections and routing logic.
+
 ## client
 All code in the *client* directory is run only in the client-side, or web browser.
 
