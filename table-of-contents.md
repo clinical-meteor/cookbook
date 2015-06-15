@@ -13,6 +13,7 @@
   - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
     - [Atom Editor](https://github.com/awatson1978/meteor-api)  
     - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
+- [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
 
 ========================
 #### Part II - Basic Architecture
