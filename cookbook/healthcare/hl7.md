@@ -5,3 +5,7 @@ HL7 Interfaces
 - [ ] Add sample HL7 message to package.
 - [ ] Add basic interface admin component.  
 - [ ] Add HL7 inbound collection log.
+
+
+#### FHIR
+https://www.npmjs.com/search?q=FHIR
