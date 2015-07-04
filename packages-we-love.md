@@ -7,7 +7,6 @@
 | [jboulhous/dev](https://atmospherejs.com/jboulhous/dev)| none  |  jboulhous | no | 
 | [datariot/meteor-ganalytics](https://github.com/datariot/meteor-ganalytics) | none  |  datariot | yes | 
 | [aldeed/meteor-template-extension](https://github.com/aldeed/meteor-template-extension)  | ?  |  aldeed | No | 
-| [Session Extended API](https://github.com/awatson1978/session-extended-api)  | ? |  awatson1978 | No | 
 | [Payments - Stripe](https://atmosphere.meteor.com/package/stripe) | none |  ? | Yes | 
 | [Date/Time - Moment](https://github.com/possibilities/meteor-moment)  | none |  possibilities | No | 
 | [Clustering - Meteor-Cluster](https://github.com/arunoda/meteor-cluster)  | none |  ? | No | 
