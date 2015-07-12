@@ -5,9 +5,9 @@
 
   <testsuite name="activeUser"
     errors="0" failures="0" hostname="" id="" package="activeUser" skipped="0"
-    tests="3" time="28.08" timestamp="Sun, 14 Jun 2015 04:47:59 GMT">
+    tests="3" time="25.69" timestamp="Mon, 15 Jun 2015 05:20:18 GMT">
   
-    <testcase name="Users List Walkthrough" time="21.08" assertions="142">
+    <testcase name="Users List Walkthrough" time="19.90" assertions="153">
 
     
 
@@ -36,6 +36,28 @@
     
 
     
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Mon-Jun-15-2015-002024-GMT-0500.png]]</system-out>
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Mon-Jun-15-2015-002025-GMT-0500.png]]</system-out>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -234,7 +256,7 @@
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-234818-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Mon-Jun-15-2015-002036-GMT-0500.png]]</system-out>
     
 
     
@@ -294,7 +316,7 @@
     
     </testcase>
   
-    <testcase name="Users Table Walkthrough" time="3.714" assertions="3">
+    <testcase name="Users Table Walkthrough" time="2.882" assertions="3">
 
     
 
@@ -303,7 +325,7 @@
     
     </testcase>
   
-    <testcase name="Users Image Grid Walkthrough" time="3.288" assertions="3">
+    <testcase name="Users Image Grid Walkthrough" time="2.900" assertions="3">
 
     
 

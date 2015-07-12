@@ -18,18 +18,20 @@ module.exports = {
         client.assert.equal(result.value.FAILURES, 0);
       });
 
-      client.end();
+      client.endd();
   },*/
+  tags: ['users', 'tinytests'],
   "Test Getting Logs" : function (client) {
 
     client
-      .url("http://localhost:3000/list/users")
-      .pause(500)
-      .reviewMainPanel()
+      .url("http://localhost:3300")
+      .verify.elementPresent('body')
       .getLogTypes()
       .getLog('browser', function(logEntriesArray) {
         logEntriesArray.forEach(function(log) {
-          console.log('[' + log.level + '] ' + log.timestamp + ' : ' + log.message);
+          if(log.level == "INFO"){
+            console.log(log.message);
+          }
         })
       })
       .end();

@@ -27,6 +27,7 @@ editedOctocat.profile.fullName = helloCthulu.profile.fullName;
 
 
 module.exports = {
+  tags: ['users', 'validation', 'client'],
   before: function(client){
     // this depends on the accounts-housemd package
     client
@@ -45,7 +46,7 @@ module.exports = {
       .reviewMainPanel()
 
       .sectionBreak('Reviewing User List Page')
-      .reviewUsersListPage(false, false, false, false)
+      .reviewUsersListPage(false, false, true)
       .moveToElement('#userNavFooter', 10, 10)
       .click(".addUserIcon").pause(300)
       .waitForPage('#userUpsertPage')
@@ -80,7 +81,7 @@ module.exports = {
       //.waitForPage('#usersListPage')
 
       .sectionBreak('Reviewing User List Page')
-      .reviewUsersListPage(helloCthulu.title, false, helloCthulu.description, false)
+      .reviewUsersListPage(helloCthulu, false, false)
 
       // we've only added one new user; there shouldn't be a second (yet)!
       .verify.elementNotPresent("#usersUnorderedList li:nth-child(2)")

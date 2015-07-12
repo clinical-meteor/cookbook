@@ -5,43 +5,21 @@
 
   <testsuite name="clientExecuteAsync"
     errors="0" failures="0" hostname="" id="" package="clientExecuteAsync" skipped="0"
-    tests="2" time="7.399" timestamp="Sat, 13 Jun 2015 20:26:56 GMT">
+    tests="2" time="6.235" timestamp="Mon, 15 Jun 2015 02:57:13 GMT">
   
-    <testcase name="Check Session" time="3.568" assertions="2">
+    <testcase name="Check Session" time="2.990" assertions="2">
 
     
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1)&quot; using: css selector
-Unable to locate element: &quot;#usernameInput&quot; using: css selector
-Unable to locate element: &quot;#userEmailInput&quot; using: css selector
-Unable to locate element: &quot;#userAvatarInput&quot; using: css selector
-Unable to locate element: &quot;#userFullNameInput&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-      </system-err>
   
-    <testcase name="Check Methods" time="3.831" assertions="2">
+    <testcase name="Check Methods" time="3.245" assertions="2">
 
     
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1)&quot; using: css selector
-Unable to locate element: &quot;#usernameInput&quot; using: css selector
-Unable to locate element: &quot;#userEmailInput&quot; using: css selector
-Unable to locate element: &quot;#userAvatarInput&quot; using: css selector
-Unable to locate element: &quot;#userFullNameInput&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-      </system-err>
   
   
   </testsuite>

@@ -6,6 +6,7 @@ var fooVal = false;
 //var expect = require('chai').expect;
 
 module.exports = {
+  tags: ['users', 'methods'],
   "Check Session" : function (client) {
 
     var sessionBar = false;

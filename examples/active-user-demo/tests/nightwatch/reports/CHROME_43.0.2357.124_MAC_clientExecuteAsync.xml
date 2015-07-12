@@ -5,16 +5,16 @@
 
   <testsuite name="clientExecuteAsync"
     errors="0" failures="0" hostname="" id="" package="clientExecuteAsync" skipped="0"
-    tests="2" time="6.467" timestamp="Sun, 14 Jun 2015 04:48:27 GMT">
+    tests="2" time="5.439" timestamp="Mon, 15 Jun 2015 05:20:44 GMT">
   
-    <testcase name="Check Session" time="3.180" assertions="2">
+    <testcase name="Check Session" time="2.588" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Check Methods" time="3.287" assertions="2">
+    <testcase name="Check Methods" time="2.851" assertions="2">
 
     
 

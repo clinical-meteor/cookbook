@@ -5,9 +5,9 @@
 
   <testsuite name="tinyTestPickup"
     errors="0" failures="0" hostname="" id="" package="tinyTestPickup" skipped="0"
-    tests="1" time="4.591" timestamp="Sat, 13 Jun 2015 20:27:03 GMT">
+    tests="1" time="3.653" timestamp="Mon, 15 Jun 2015 02:57:19 GMT">
   
-    <testcase name="Test Getting Logs" time="4.591" assertions="3">
+    <testcase name="Test Getting Logs" time="3.653" assertions="3">
 
     
 

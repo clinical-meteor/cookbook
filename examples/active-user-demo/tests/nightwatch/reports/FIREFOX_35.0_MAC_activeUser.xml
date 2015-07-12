@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
-            failures="1"
+<testsuites errors="0"
+            failures="0"
             tests="3">
 
   <testsuite name="activeUser"
-    errors="1" failures="1" hostname="" id="" package="activeUser" skipped="0"
-    tests="3" time="86.91" timestamp="Sat, 13 Jun 2015 20:25:29 GMT">
+    errors="0" failures="0" hostname="" id="" package="activeUser" skipped="0"
+    tests="3" time="36.97" timestamp="Mon, 15 Jun 2015 02:56:35 GMT">
   
-    <testcase name="Users List Walkthrough" time="77.44" assertions="143">
+    <testcase name="Users List Walkthrough" time="30.26" assertions="153">
 
     
 
@@ -36,6 +36,44 @@
     
 
     
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sun-Jun-14-2015-215643-GMT-0500.png]]</system-out>
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sun-Jun-14-2015-215644-GMT-0500.png]]</system-out>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -67,18 +105,6 @@
 
     
 
-      <failure message="Testing if element &lt;#saveUserButton&gt; is visible.">Testing if element &lt;#saveUserButton&gt; is visible.: Expected &quot;true&quot; but got: &quot;false&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:351:24)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:322:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:148:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152542-GMT-0500.png]]</system-out>
     
 
     
@@ -120,7 +146,33 @@
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152546-GMT-0500.png]]</system-out>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -145,17 +197,11 @@
 
     
 
-      <failure message="Testing if attribute value of &lt;#usernameInput&gt; equals &quot;Hello Cthulu&quot;.">Testing if attribute value of &lt;#usernameInput&gt; equals &quot;Hello Cthulu&quot;.: Expected &quot;Hello Cthulu&quot; but got: &quot;Octocat&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:351:24)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:322:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:148:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
+    
+
+    
+
+    
 
     
 
@@ -209,6 +255,8 @@
 
     
 
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sun-Jun-14-2015-215703-GMT-0500.png]]</system-out>
     
 
     
@@ -235,271 +283,12 @@
 
     
 
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1)&gt; is present.">Testing if element &lt;#usersUnorderedList li:nth-child(1)&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152556-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1) article&gt; is present.">Testing if element &lt;#usersUnorderedList li:nth-child(1) article&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152558-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1) .barcode&gt; is present.">Testing if element &lt;#usersUnorderedList li:nth-child(1) .barcode&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152559-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1) .titleText&gt; is present.">Testing if element &lt;#usersUnorderedList li:nth-child(1) .titleText&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152601-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1) .descriptionText&gt; is present.">Testing if element &lt;#usersUnorderedList li:nth-child(1) .descriptionText&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152603-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1) .titleText&gt; contains text: &quot;Hello Cthulu&quot;. Element could not be located.">Testing if element &lt;#usersUnorderedList li:nth-child(1) .titleText&gt; contains text: &quot;Hello Cthulu&quot;. Element could not be located.: Expected &quot;Hello Cthulu&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:341:22)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152604-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1) .descriptionText&gt; contains text: &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot;. Element could not be located.">Testing if element &lt;#usersUnorderedList li:nth-child(1) .descriptionText&gt; contains text: &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot;. Element could not be located.: Expected &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:341:22)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152606-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152607-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152609-GMT-0500.png]]</system-out>
+
     
 
     
 
-      <failure message="Testing if element &lt;#userUpsertPage&gt; is present.">Testing if element &lt;#userUpsertPage&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152611-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userUpsertPage .pageHeader&gt; is present.">Testing if element &lt;#userUpsertPage .pageHeader&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152612-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userUpsertCard&gt; is present.">Testing if element &lt;#userUpsertCard&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152614-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userMetaData&gt; is present.">Testing if element &lt;#userMetaData&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152615-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userMetaInputs&gt; is present.">Testing if element &lt;#userMetaInputs&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152617-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usernameInput&gt; is present.">Testing if element &lt;#usernameInput&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152618-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userEmailInput&gt; is present.">Testing if element &lt;#userEmailInput&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152620-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userAvatarInput&gt; is present.">Testing if element &lt;#userAvatarInput&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152621-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userImage&gt; is present.">Testing if element &lt;#userImage&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152623-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userFullNameInput&gt; is present.">Testing if element &lt;#userFullNameInput&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152624-GMT-0500.png]]</system-out>
-      <failure message="Testing if attribute value of &lt;#usernameInput&gt; equals &quot;Hello Cthulu&quot;. Element could not be located.">Testing if attribute value of &lt;#usernameInput&gt; equals &quot;Hello Cthulu&quot;. Element could not be located.: Expected &quot;Hello Cthulu&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:341:22)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152626-GMT-0500.png]]</system-out>
-      <failure message="Testing if attribute value of &lt;#userEmailInput&gt; equals &quot;http://www.hello-cthulhu.com/&quot;. Element could not be located.">Testing if attribute value of &lt;#userEmailInput&gt; equals &quot;http://www.hello-cthulhu.com/&quot;. Element could not be located.: Expected &quot;http://www.hello-cthulhu.com/&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:341:22)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152627-GMT-0500.png]]</system-out>
-      <failure message="Testing if attribute value of &lt;#userAvatarInput&gt; equals &quot;http://ih1.redbubble.net/image.24129110.6086/fc,550x550,white.jpg&quot;. Element could not be located.">Testing if attribute value of &lt;#userAvatarInput&gt; equals &quot;http://ih1.redbubble.net/image.24129110.6086/fc,550x550,white.jpg&quot;. Element could not be located.: Expected &quot;http://ih1.redbubble.net/image.24129110.6086/fc,550x550,white.jpg&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:341:22)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152629-GMT-0500.png]]</system-out>
-      <failure message="Testing if attribute value of &lt;#userFullNameInput&gt; equals &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot;. Element could not be located.">Testing if attribute value of &lt;#userFullNameInput&gt; equals &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot;. Element could not be located.: Expected &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:341:22)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152630-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#userUpsertPage .pageFooter&gt; is present.">Testing if element &lt;#userUpsertPage .pageFooter&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152632-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#saveUserButton&gt; is present.">Testing if element &lt;#saveUserButton&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152633-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152635-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152636-GMT-0500.png]]</system-out>
     
 
     
@@ -512,71 +301,13 @@
 
     
 
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1)&gt; is present.">Testing if element &lt;#usersUnorderedList li:nth-child(1)&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152639-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList li:nth-child(1) article&gt; is present.">Testing if element &lt;#usersUnorderedList li:nth-child(1) article&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152640-GMT-0500.png]]</system-out>
     
 
-      <failure message="Testing if element &lt;#usersUnorderedList #noResultsMessage&gt; is present.">Testing if element &lt;#usersUnorderedList #noResultsMessage&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152642-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#usersUnorderedList .addUserItem&gt; is present.">Testing if element &lt;#usersUnorderedList .addUserItem&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:299:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:346:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152643-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152645-GMT-0500.png]]</system-out>
+
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR_Sat-Jun-13-2015-152646-GMT-0500.png]]</system-out>
+
     
-    </testcase>
-      <system-err>
-        Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1)&quot; using: css selector
-Unable to locate element: &quot;#usernameInput&quot; using: css selector
-Unable to locate element: &quot;#userEmailInput&quot; using: css selector
-Unable to locate element: &quot;#userAvatarInput&quot; using: css selector
-Unable to locate element: &quot;#userFullNameInput&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-      </system-err>
-  
-    <testcase name="Users Table Walkthrough" time="5.385" assertions="3">
 
     
 
@@ -584,19 +315,8 @@ Unable to locate element: &quot;#removeUserButton&quot; using: css selector
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1)&quot; using: css selector
-Unable to locate element: &quot;#usernameInput&quot; using: css selector
-Unable to locate element: &quot;#userEmailInput&quot; using: css selector
-Unable to locate element: &quot;#userAvatarInput&quot; using: css selector
-Unable to locate element: &quot;#userFullNameInput&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-      </system-err>
   
-    <testcase name="Users Image Grid Walkthrough" time="4.088" assertions="3">
+    <testcase name="Users Table Walkthrough" time="3.336" assertions="3">
 
     
 
@@ -604,17 +324,15 @@ Unable to locate element: &quot;#removeUserButton&quot; using: css selector
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#usersUnorderedList li:nth-child(1)&quot; using: css selector
-Unable to locate element: &quot;#usernameInput&quot; using: css selector
-Unable to locate element: &quot;#userEmailInput&quot; using: css selector
-Unable to locate element: &quot;#userAvatarInput&quot; using: css selector
-Unable to locate element: &quot;#userFullNameInput&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-Unable to locate element: &quot;#removeUserButton&quot; using: css selector
-      </system-err>
+  
+    <testcase name="Users Image Grid Walkthrough" time="3.370" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
   
   
   </testsuite>

@@ -7,9 +7,12 @@
 meteor-platform
 awatson1978:fonts-helveticas
 fortawesome:fontawesome
-clinical:barcode
 iron:router
 grove:less
-clinical:accounts-housemd
 accounts-base
 accounts-password
+
+clinical:accounts-housemd
+clinical:barcode
+clinical:env
+clinical:extended-api

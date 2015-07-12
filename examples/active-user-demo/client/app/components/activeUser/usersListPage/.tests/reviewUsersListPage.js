@@ -30,9 +30,9 @@ exports.command = function(user, rowIndex, isNew) {
       .verify.elementPresent("#usersUnorderedList li:nth-child(" + rowIndex + ")")
       .verify.elementPresent("#usersUnorderedList li:nth-child(" + rowIndex + ") article")
       .verify.elementPresent("#usersUnorderedList li:nth-child(" + rowIndex + ") .barcode")
-      .verify.elementPresent("#usersUnorderedList li:nth-child(" + rowIndex + ") .titleText")
+      .verify.elementPresent("#usersUnorderedList li:nth-child(" + rowIndex + ") .fullNameText")
       .verify.elementPresent("#usersUnorderedList li:nth-child(" + rowIndex + ") .descriptionText")
-      .verify.containsText("#usersUnorderedList li:nth-child(" + rowIndex + ") .titleText", title)
+      .verify.containsText("#usersUnorderedList li:nth-child(" + rowIndex + ") .fullNameText", user.profile.fullName)
 
       if(user.profile){
         if(user.profile.description){
