@@ -1,44 +1,20 @@
-clinical:session-extended-api
-====================
-Package that extends the Session API, with toggle(), clear(), and setAll() methods.
+## clinical:extended-api
+
+API extensions for Meteor core objects.
 
 
-## Installation
+### Installation
 
-First, install the session-extended-api package from the command line, like so:
-
-````js
-meteor add clinical:session-extended-api
-````
-
-## API
-
-The Session object will support the following API with this package installed:  
+First, install the extended-api package from the command line, like so:
 
 ````js
-Session.set()
-Session.setDefault()
-Session.setAll()
-Session.get()
-Session.equals()
-Session.toggle()
-Session.clear()
+meteor add clinical:extended-api
 ````
 
+### API
 
-## Testing  
-
-View the TinyTests results by doing the following:  
-````js
-cd myapp/packages/session-extended-api
-meteor test-packages
-````
-
-
-## Examples  
-
-
-**Session.toggle(key)**
+#### Session.toggle(key)  
+Function, Client
 Toggle a variable true/false in the session.
 
 ````js
@@ -52,7 +28,8 @@ Template.myTemplate.events({
 });
 ````
 
-**Session.clear(key)**
+#### Session.clear(key)  
+Function, Client  
 Toggle a variable true/false in the session.
 
 ````js
@@ -66,7 +43,23 @@ Template.myTemplate.events({
 });
 ````
 
+#### Mongo.Collection.drop()  
+Function, Server
+Drop the entire collection.  
+````js
+var Foo = new Mongo.Collection(null);
+Foo.insert({text: "foo"});
+Foo.drop();
+````
 
-## Licensing
+### Testing  
+
+View the TinyTests results by doing the following:  
+````js
+cd myapp/packages/extended-api
+meteor test-packages
+````
+
+### Licensing
 
 MIT License.  Use as you will.

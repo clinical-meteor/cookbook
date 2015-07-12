@@ -11,6 +11,7 @@ callback-hook@1.0.3
 check@1.0.5
 clinical:accounts-housemd@1.1.0
 clinical:barcode@2.0.2
+clinical:entry-pages@0.1.0
 clinical:env@2.1.4
 clinical:extended-api@1.0.1
 ddp@1.1.0
