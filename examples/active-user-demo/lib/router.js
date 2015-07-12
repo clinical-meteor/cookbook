@@ -19,6 +19,11 @@ Router.route('/home', {
   template: "mainPage",
   name: "homeRoute"
 });
+Router.route('/auditing', {
+  template: "auditingPolicy",
+  name: "auditingPolicy"
+});
+
 
 
 Router.onAfterAction = function(){

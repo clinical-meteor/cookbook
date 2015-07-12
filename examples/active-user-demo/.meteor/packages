@@ -18,4 +18,5 @@ clinical:env
 clinical:extended-api
 clinical:entry-pages
 
-clinical:hipaa-audit-log
+#clinical:hipaa-audit-log
+clinical:hipaa
