@@ -13,7 +13,11 @@ Router.configure({
 
 Router.route('/', {
   template: "mainPage",
-  name: "mainPage"
+  name: "mainRoute"
+});
+Router.route('/home', {
+  template: "mainPage",
+  name: "homeRoute"
 });
 
 
