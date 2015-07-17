@@ -2,6 +2,7 @@
 
 | Package       | UI  | Contributor | Scaffold   |
 | ------------- | :----------------: |  :----------------: | :----------------: |
+| [gwendall:meteor-ui-hooks](https://github.com/gwendall/meteor-ui-hooks) | --- | ---  | --- |
 | [msavin:mongol](https://github.com/msavin/mongol) | --- | ---  | --- | 
 | [msavin:jetsetter](https://github.com/msavin/jetsetter) | --- | ---  | --- | 
 | [jboulhous/dev](https://atmospherejs.com/jboulhous/dev)| none  |  jboulhous | no | 
@@ -34,4 +35,5 @@
 | [gfk:notifications](https://atmospherejs.com/gfk/notifications) | --- | ---  | --- | 
 | [CodeAdventure:meteor-space](https://atmospherejs.com/CodeAdventure/meteor-space) | --- | ---  | --- | 
 | [meteorhacks:sikka](https://github.com/meteorhacks/sikka) | --- | ---  | --- | 
+| [elidoran:cosmos-browserify](https://github.com/elidoran/cosmos-browserify) | --- | ---  | --- |
 
