@@ -139,20 +139,19 @@ Test-Driven-Development Quickstart
 Test-driven development is essential for building larger and more complex apps.  The following script will get you up-and-running with automated browser walkthroughs using the Nightwatch bridge to a Selenium Server.  Be aware that this script won't create tests for you.  You will need to create a tests/nightwatch directory with walkthroughs in it.
 
 ````sh
-# install clinical-nightwatch
-terminal-a$ cd helloworld
-terminal-a$ meteor add clinical:nightwatch
+# install the StarryNight utility
+npm install starrynight -g
 
-# In the same way that we run 'meteor mongo' in a separate terminal while our application is already running,
-# we want to open up a new terminal, and run nightwatch
-terminal-b$ ln -s .meteor/local/build/programs/server/assets/packages/clinical_nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
-terminal-b$ sudo chmod +x run_nightwatch.sh
-terminal-b$ sudo ./run_nightwatch.sh
+# add .meteor/nightwatch.json to our application
+$ starrynight generate-autoconfig
 
-# add some tests and repeat until passing green...
-terminal-b$ sudo ./run_nightwatch.sh
+# add acceptance tests to your application (using the nightwatch framework)
+$ starrynight scaffold --framework nightwatch
 
-# as you develop tests, you might want to do something clever like pass in arguments and run specific tests
-terminal-b$ sudo ./run_nightwatch.sh -t tests/nightwatch/walkthrough.js
+# run your validation tests using NightWatch
+$ starrynight run-tests --framework nightwatch
+
+# run any verification tests you may have written with TinyTest
+$ starrynight run-tests --framework tinytest-ci
 
 ````
