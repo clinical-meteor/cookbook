@@ -16,7 +16,7 @@ meteor --version
 http://nodejs.org/download/
  
 # install npm
-sudo curl -0 -L https://npmjs.org/install.sh | sh
+curl -0 -L https://npmjs.org/install.sh | sh
 
 # check node is installed correctly
 node --version
@@ -41,7 +41,7 @@ Meteorite is mostly deprecated utility and package management system used in pre
 npm install -g meteorite
  
 # and if you have problems with permissions
-sudo -H npm install -g meteorite
+npm install -g meteorite
  
 # check mrt is installed correctly
 mrt --version
@@ -51,7 +51,7 @@ which mrt
 locate mrt
  
 # make sure meteorite is in your path
-sudo nano ~/.profile
+nano ~/.profile
   export PATH=$PATH:/usr/local/share/npm/bin
  
 # check mrt is installed correctly
@@ -71,21 +71,21 @@ http://www.mongodb.org/dr//fastdl.mongodb.org/osx/mongodb-osx-x86_64-2.6.3.tgz/d
 # or install from command line
 curl http://downloads.mongodb.org/osx/mongodb-osx-x86_64-2.6.3.tgz > mongodb-osx-x86_64-2.6.3.tgz
 tar -zxvf mongodb-osx-x86_64-2.6.3.tgz
-sudo mkdir -p /var/mongodb
+mkdir -p /var/mongodb
 cp -R -n mongodb-osx-x86_64-2.6.3/* /usr/local/mongodb
 
 # make sure mongo is in your local path
-sudo nano ~/.profile
+nano ~/.profile
   export PATH=$PATH:/usr/local/mongodb/bin
   
 # or install it to the global path
-sudo nano /etc/paths
+nano /etc/paths
   /usr/local/mongodb/bin
 
 # create mongo database directory
 mkdir /data/
 mkdir /data/db
-sudo chown -R username:admin /data
+chown -R username:admin /data
 
 # run mongodb server
 mongod
