@@ -33,6 +33,10 @@ sudo nano ~/.profile
  ````
 
 
+If you have any problems with EACCESS pr ENOENT errors, check the file permissions of your NPM directories.  
+https://docs.npmjs.com/getting-started/fixing-npm-permissions
+
+
 
 Meteor Development Tools Quickstart
 ===========================================
