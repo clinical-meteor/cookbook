@@ -67,21 +67,15 @@ The simplist interface for getting Meteor up and running with acceptance testing
 ````sh
 # Go to the root of your application
 terminal-a$  cd myappdir
+terminal-a$ meteor
 
-# Option A:  Install via Atmosphere
-terminal-a$  mrt add selenium-nightwatch
-
-# Go to the root of your application
-terminal-a$ cd myappdir
-
-# run the leaderboard application
-terminal-a$ sudo mrt
+# Option A:  Install via Npm
+terminal-b$  npm install starrynight  
+terminal-b$  starrynight generate-autoconfig
+terminal-b$  starrynight scaffold --framework nightwatch
 
 # and then, in the same way that we run 'meteor mongo' in a separate terminal
-# while our application is already running,
-# we want to open up a new terminal, and run nightwatch
-terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
-terminal-b$ sudo ./run_nightwatch.sh
+terminal-b$  starrynight run-tests --framework nightwatch
 ````
 
 #### Writing Acceptance Tests  
