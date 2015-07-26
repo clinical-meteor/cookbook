@@ -62,26 +62,20 @@ Eventually, you'll need to decide whether you want to go through the effor of st
 
 #### Installing and Running Nightwatch  
 
-The simplist interface for getting Meteor up and running with acceptance testing using a browser automation server, is to use the Nightwatch bridge to Selenium.  You install [selenium-nightwatch](http://github.com/awatson1978/selenium-nightwatch.git) by simply running ``sudo mrt add selenium-nightwatch`` in your application directory, and then using the [Nightwatch API](http://nightwatchjs.org/api) to write acceptance tests.  
+The simplist interface for getting Meteor up and running with acceptance testing using a browser automation server, is to use the Nightwatch bridge to Selenium.  You install [selenium-nightwatch](http://github.com/awatson1978/selenium-nightwatch.git) by simply running ``starrynight generate-autoconfig && starrynight scaffold --framework nightwatch`` in your application directory, and then using the [Nightwatch API](http://nightwatchjs.org/api) to write acceptance tests.  
 
 ````sh
 # Go to the root of your application
 terminal-a$  cd myappdir
+terminal-a$ meteor
 
-# Option A:  Install via Atmosphere
-terminal-a$  mrt add selenium-nightwatch
-
-# Go to the root of your application
-terminal-a$ cd myappdir
-
-# run the leaderboard application
-terminal-a$ sudo mrt
+# Option A:  Install via Npm
+terminal-b$  npm install starrynight  
+terminal-b$  starrynight generate-autoconfig
+terminal-b$  starrynight scaffold --framework nightwatch
 
 # and then, in the same way that we run 'meteor mongo' in a separate terminal
-# while our application is already running,
-# we want to open up a new terminal, and run nightwatch
-terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
-terminal-b$ sudo ./run_nightwatch.sh
+terminal-b$  starrynight run-tests --framework nightwatch
 ````
 
 #### Writing Acceptance Tests  
@@ -89,7 +83,7 @@ terminal-b$ sudo ./run_nightwatch.sh
 Ultimately, just like writing application code, you'll need to figure out what kind of tests are right for you, your tolerance for ease of installation, and whether you can tolerate acceptance tests written in code, pseudocode, or need domain specific business langauge.  But for getting up to speed quickly, Nightwatch can be installed inside of 5 minutes to a project, and lets you get acceptance test coverage of your application at an extremely rapid pace.
 
 
-Once Nightwatch is installed, simply create a file in the ``tests/`` directory (it doesn't matter what the name is), add the following code, and run ``sudo ./run_nightwatch.sh`` from the command line.  
+Once Nightwatch is installed, simply create a file in the ``tests/nightwatch`` directory (it doesn't matter what the name is), add the following code, and run ``starrynight run-tests --framework nightwatch`` from the command line.  
 ````js
 // tests/leaderboard-walkthrough.js
 module.exports = {

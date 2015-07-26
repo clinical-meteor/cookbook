@@ -36,4 +36,8 @@
 | [CodeAdventure:meteor-space](https://atmospherejs.com/CodeAdventure/meteor-space) | --- | ---  | --- | 
 | [meteorhacks:sikka](https://github.com/meteorhacks/sikka) | --- | ---  | --- | 
 | [elidoran:cosmos-browserify](https://github.com/elidoran/cosmos-browserify) | --- | ---  | --- |
+| [handtrix:chrome-extension-utils](https://www.npmjs.com/package/meteor-chrome-extension-utils) | --- | ---  | --- |
+| [jrudio:electron](https://atmospherejs.com/jrudio/electron) | --- | ---  | --- |
+
+
 
