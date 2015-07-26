@@ -13,10 +13,6 @@ Meteor.startup(function () {
 
 
 
-
-Session.setDefault('transparencyDivHeight', 100);
-Session.setDefault('transparencyDivLeft', 0);
-
 Meteor.startup(function(){
   Template.appLayout.layout();
 });
@@ -37,8 +33,7 @@ Template.appLayout.helpers({
   },
   getStyle: function () {
     return parseStyle({
-      "left": Session.get('transparencyDivLeft') + "px;",
-      "height": Session.get('transparencyDivHeight') + "px;"
+      "left": Session.get('transparencyDivLeft') + "px;"
     });
   }
 });
@@ -61,7 +56,7 @@ Template.appLayout.delayedLayout = function(timeout){
 //==================================================================================================
 
 Template.registerHelper("getOpacity", function(){
-  return "opacity: " + Session.get("glassOpacity") + ";";
+  return "background-color:rgba(255,255,255," + Session.get("glassOpacity") +");";
 });
 
 

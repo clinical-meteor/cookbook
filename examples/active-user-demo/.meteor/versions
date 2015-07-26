@@ -14,8 +14,10 @@ clinical:barcode@2.0.2
 clinical:entry-pages@0.1.1
 clinical:env@2.1.4
 clinical:extended-api@1.0.1
-clinical:hipaa@0.1.0
+clinical:hipaa@0.2.0
 clinical:hipaa-audit-log@1.3.0
+clinical:hipaa-policies@0.1.0
+clinical:hipaa-routes@0.0.1
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6

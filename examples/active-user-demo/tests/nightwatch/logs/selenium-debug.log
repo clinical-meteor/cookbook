@@ -1,30 +1,28 @@
-11:55:15.224 INFO - Launching a standalone server
+19:51:02.395 INFO - Launching a standalone server
 Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/starrynight/node_modules/chromedriver/bin/chromedriver
-11:55:15.291 INFO - Java: Apple Inc. 20.65-b04-466.1
-11:55:15.291 INFO - OS: Mac OS X 10.10.2 x86_64
-11:55:15.311 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
-11:55:15.445 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
-11:55:15.498 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-11:55:15.499 INFO - Version Jetty/5.1.x
-11:55:15.500 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-11:55:15.501 INFO - Started HttpContext[/selenium-server,/selenium-server]
-11:55:15.501 INFO - Started HttpContext[/,/]
-11:55:15.569 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@643c0007
-11:55:15.569 INFO - Started HttpContext[/wd,/wd]
-11:55:15.576 INFO - Started SocketListener on 0.0.0.0:4444
-11:55:15.576 INFO - Started org.openqa.jetty.jetty.Server@acfec48
-11:55:15.887 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@2c78bc3b, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Tiny Test Pickup}]])
-11:55:15.903 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@2c78bc3b, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Tiny Test Pickup}]
-Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 30120
+19:51:02.429 INFO - Java: Apple Inc. 20.65-b04-466.1
+19:51:02.429 INFO - OS: Mac OS X 10.10.2 x86_64
+19:51:02.438 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+19:51:02.494 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+19:51:02.541 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+19:51:02.542 INFO - Version Jetty/5.1.x
+19:51:02.542 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+19:51:02.543 INFO - Started HttpContext[/selenium-server,/selenium-server]
+19:51:02.543 INFO - Started HttpContext[/,/]
+19:51:02.607 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@75e845c2
+19:51:02.607 INFO - Started HttpContext[/wd,/wd]
+19:51:02.612 INFO - Started SocketListener on 0.0.0.0:4444
+19:51:02.612 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
+19:51:02.849 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@79038de7, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Tiny Test Pickup}]])
+19:51:02.858 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@79038de7, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Tiny Test Pickup}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 44513
 Only local connections are allowed.
-11:55:17.700 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@2c78bc3b, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Tiny Test Pickup}]]
-11:55:17.715 INFO - Executing: [get: http://localhost:3300])
-11:55:18.471 INFO - Done: [get: http://localhost:3300]
-11:55:18.477 INFO - Executing: [find element: By.cssSelector: body])
-11:55:18.530 INFO - Done: [find element: By.cssSelector: body]
-11:55:18.534 INFO - Executing: [fetching available log types])
-11:55:18.543 INFO - Done: [fetching available log types]
-11:55:18.547 INFO - Executing: [fetching logs for: browser])
-11:55:18.551 INFO - Done: [fetching logs for: browser]
-11:55:18.554 INFO - Executing: [delete session: 83b2c290-5302-4805-8818-c70f767f5285])
-11:55:19.114 INFO - Done: [delete session: 83b2c290-5302-4805-8818-c70f767f5285]
+19:51:04.834 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@79038de7, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Tiny Test Pickup}]]
+19:51:04.850 INFO - Executing: [get: http://localhost:3300])
+19:51:05.746 INFO - Done: [get: http://localhost:3300]
+19:51:05.752 INFO - Executing: [find element: By.cssSelector: body])
+19:51:05.801 INFO - Done: [find element: By.cssSelector: body]
+19:51:05.805 INFO - Executing: [fetching available log types])
+19:51:05.814 INFO - Done: [fetching available log types]
+19:51:05.818 INFO - Executing: [fetching logs for: browser])
+19:51:05.825 INFO - Done: [fetching logs for: browser]
