@@ -21,6 +21,7 @@ Package.onUse(function(api) {
   api.use('clinical:hipaa-audit-log@1.2.3');
   api.use('clinical:hipaa-policies');
   api.use('clinical:hipaa-routes');
+  api.use('jparker:crypto-aes')
   api.use('perak:markdown@1.0.5');
 
 

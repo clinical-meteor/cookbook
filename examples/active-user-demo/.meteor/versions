@@ -17,7 +17,7 @@ clinical:extended-api@1.0.1
 clinical:hipaa@0.2.0
 clinical:hipaa-audit-log@1.3.0
 clinical:hipaa-policies@0.1.0
-clinical:hipaa-routes@0.0.1
+clinical:hipaa-routes@0.1.0
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
@@ -39,6 +39,14 @@ iron:location@1.0.7
 iron:middleware-stack@1.0.7
 iron:router@1.0.7
 iron:url@1.0.7
+jparker:crypto-aes@0.1.0
+jparker:crypto-base64@0.1.0
+jparker:crypto-cipher-core@0.1.1
+jparker:crypto-core@0.1.0
+jparker:crypto-evpkdf@0.1.1
+jparker:crypto-md5@0.1.1
+jparker:crypto-mode@0.1.1
+jparker:crypto-padding@0.1.0
 jquery@1.11.3_2
 json@1.0.3
 launch-screen@1.0.2

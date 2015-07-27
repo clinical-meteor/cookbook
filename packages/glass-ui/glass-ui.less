@@ -3,13 +3,18 @@
 //
 
   input, textarea{
-    background-color: inherit;
+    //background-color: inherit;
     padding-top: .5rem;
     padding-bottom: .5rem;
     font-size: 14px;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: 300;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-left: 10px;     /* Opera/IE 8+ */
   }
+
   input:focus, textarea:focus{
     outline: -webkit-focus-ring-color auto 0px;
   }
