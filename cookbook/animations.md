@@ -24,6 +24,7 @@ For basic GPU accelerated animations using CSS3 transforms, start with the follo
 [A Very Short Intro to CSS3D Transforms](http://bartaz.github.io/meetjs/css3d/)  
 [Browser Support for 2D Transforms](http://css3.bradshawenterprises.com/transforms/)  
 [Intro to CSS 3D Transforms](http://desandro.github.io/3dtransforms/)  
+[Advanced HTML/CSS](http://learn.shayhowe.com/advanced-html-css/)  
 
 ----------------------------------------
 #### Audit Your CSS!  
