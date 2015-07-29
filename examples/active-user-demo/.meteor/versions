@@ -20,7 +20,11 @@ clinical:hipaa-policies@0.1.0
 clinical:hipaa-routes@0.1.0
 clinical:users-edit@0.0.1
 clinical:users-image-grid@0.0.1
+clinical:users-list@0.0.1
 clinical:users-new@0.0.1
+clinical:users-preview@0.0.1
+clinical:users-table@0.0.1
+clinical:users-upsert@0.0.1
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6

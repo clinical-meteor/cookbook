@@ -21,5 +21,10 @@ clinical:entry-pages
 clinical:users-edit
 clinical:users-image-grid
 clinical:users-new
+clinical:users-table
+clinical:users-list
+clinical:users-upsert
+clinical:users-preview
+
 
 starrynight:glass-ui

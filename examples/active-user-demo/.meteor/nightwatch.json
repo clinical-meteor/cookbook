@@ -16,16 +16,16 @@
     "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
     "./tests/nightwatch/commands/methods",
-    "client/app/components/activeUser/userPreviewPage/.tests",
-    "client/app/components/activeUser/userUpsertPage/.tests",
-    "client/app/components/activeUser/userUpsertPage/.tests/actions",
-    "client/app/components/activeUser/usersListPage/.tests",
-    "client/app/components/activeUser/usersTablePage/.tests",
     "packages/clinical-entry-pages/components/entrySignIn/.tests",
     "packages/clinical-entry-pages/components/entrySignUp/.tests",
     "packages/users-edit/components/userEditPage/.tests",
     "packages/users-image-grid/components/userImageGridPage/.tests",
-    "packages/users-new/components/userNewPage/.tests"
+    "packages/users-list/components/usersListPage/.tests",
+    "packages/users-new/components/userNewPage/.tests",
+    "packages/users-preview/components/userPreviewPage/.tests",
+    "packages/users-table/components/usersTablePage/.tests",
+    "packages/users-upsert/components/userUpsertPage/.tests",
+    "packages/users-upsert/components/userUpsertPage/.tests/actions"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"

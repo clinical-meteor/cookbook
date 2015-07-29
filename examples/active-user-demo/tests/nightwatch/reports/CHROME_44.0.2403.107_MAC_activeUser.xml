@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="11">
 
   <testsuite name="activeUser"
-    errors="0" failures="0" hostname="" id="" package="activeUser" skipped="0"
-    tests="11" time="25.57" timestamp="Wed, 29 Jul 2015 06:03:22 GMT">
+    errors="0" failures="1" hostname="" id="" package="activeUser" skipped="9"
+    tests="11" time="11.74" timestamp="Wed, 29 Jul 2015 06:27:51 GMT">
   
-    <testcase name="A. Users List Walkthrough" time="4.862" assertions="2">
+    <testcase name="A. Users List Walkthrough" time="4.866" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="B. Reviewing User List Page" time="4.105" assertions="12">
+    <testcase name="B. Reviewing User List Page" time="6.874" assertions="12">
 
     
 
@@ -33,299 +33,71 @@
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010329-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-012757-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010330-GMT-0500.png]]</system-out>
-    
-
-    
-    </testcase>
-  
-    <testcase name="C. Reviewing User Upsert Page" time="3.037" assertions="21">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-012758-GMT-0500.png]]</system-out>
+      <failure message="Timed out while waiting for element &lt;#userUpsertPage&gt; to be present for 3000 milliseconds.">Timed out while waiting for element &lt;#userUpsertPage&gt; to be present for 3000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
+    at F.WaitForElement.fail (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/_waitForElement.js:193:15)
+    at F.WaitForElementPresent.elementNotFound (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/waitForElementPresent.js:57:15)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/_waitForElement.js:220:17)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
+    at HttpRequest.emit (events.js:98:17)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:334:15)
+    at HttpRequest.emit (events.js:106:17)
+    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:148:16)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:943:16</failure>
 
     
     </testcase>
   
-    <testcase name="D. Reviewing Octocat Info" time="0.2670" assertions="17">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
   
-    <testcase name="E. Upserting HelloCthulu Title" time="1.388" assertions="16">
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase
+      name="C. Reviewing User Upsert Page">
+      <skipped />
     </testcase>
-  
-    <testcase name="F. Upserting HelloCthulu Info" time="1.945" assertions="8">
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase
+      name="D. Reviewing Octocat Info">
+      <skipped />
     </testcase>
-  
-    <testcase name="G. Reviewing HelloCthulu Info" time="0.8430" assertions="19">
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase
+      name="E. Upserting HelloCthulu Title">
+      <skipped />
     </testcase>
-  
-    <testcase name="H. Reviewing User List Page" time="2.393" assertions="15">
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010340-GMT-0500.png]]</system-out>
-    
+    <testcase
+      name="F. Upserting HelloCthulu Info">
+      <skipped />
     </testcase>
-  
-    <testcase name="I. Removing User" time="5.370" assertions="29">
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010345-GMT-0500.png]]</system-out>
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010346-GMT-0500.png]]</system-out>
-    
+    <testcase
+      name="G. Reviewing HelloCthulu Info">
+      <skipped />
     </testcase>
-  
-    <testcase name="K. Users Table Walkthrough" time="0.4490" assertions="2">
-
     
-
-    
+    <testcase
+      name="H. Reviewing User List Page">
+      <skipped />
     </testcase>
-  
-    <testcase name="L. Users Image Grid Walkthrough" time="0.9080" assertions="2">
-
     
-
-    
+    <testcase
+      name="I. Removing User">
+      <skipped />
     </testcase>
-  
+    
+    <testcase
+      name="K. Users Table Walkthrough">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="L. Users Image Grid Walkthrough">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>
