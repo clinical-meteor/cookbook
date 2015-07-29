@@ -19,6 +19,8 @@ clinical:hipaa-audit-log@1.3.0
 clinical:hipaa-policies@0.1.0
 clinical:hipaa-routes@0.1.0
 clinical:users-edit@0.0.1
+clinical:users-image-grid@0.0.1
+clinical:users-new@0.0.1
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6

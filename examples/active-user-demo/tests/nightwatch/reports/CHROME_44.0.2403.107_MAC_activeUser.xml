@@ -5,16 +5,16 @@
 
   <testsuite name="activeUser"
     errors="0" failures="0" hostname="" id="" package="activeUser" skipped="0"
-    tests="11" time="25.99" timestamp="Wed, 29 Jul 2015 01:39:33 GMT">
+    tests="11" time="25.57" timestamp="Wed, 29 Jul 2015 06:03:22 GMT">
   
-    <testcase name="A. Users List Walkthrough" time="4.648" assertions="2">
+    <testcase name="A. Users List Walkthrough" time="4.862" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="B. Reviewing User List Page" time="4.020" assertions="12">
+    <testcase name="B. Reviewing User List Page" time="4.105" assertions="12">
 
     
 
@@ -33,151 +33,19 @@
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-28-2015-203939-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010329-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-28-2015-203941-GMT-0500.png]]</system-out>
-    
-
-    
-    </testcase>
-  
-    <testcase name="C. Reviewing User Upsert Page" time="3.387" assertions="21">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010330-GMT-0500.png]]</system-out>
     
 
     
     </testcase>
   
-    <testcase name="D. Reviewing Octocat Info" time="0.2680" assertions="17">
+    <testcase name="C. Reviewing User Upsert Page" time="3.037" assertions="21">
 
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="E. Upserting HelloCthulu Title" time="1.415" assertions="16">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="F. Upserting HelloCthulu Info" time="2.160" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="G. Reviewing HelloCthulu Info" time="0.8970" assertions="19">
 
     
 
@@ -218,40 +86,7 @@
     
     </testcase>
   
-    <testcase name="H. Reviewing User List Page" time="2.395" assertions="15">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-28-2015-203951-GMT-0500.png]]</system-out>
-    
-    </testcase>
-  
-    <testcase name="I. Removing User" time="5.402" assertions="29">
+    <testcase name="D. Reviewing Octocat Info" time="0.2670" assertions="17">
 
     
 
@@ -282,44 +117,209 @@
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-28-2015-203956-GMT-0500.png]]</system-out>
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-28-2015-203957-GMT-0500.png]]</system-out>
-    
-    </testcase>
-  
-    <testcase name="K. Users Table Walkthrough" time="0.4790" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="L. Users Image Grid Walkthrough" time="0.9220" assertions="2">
+    <testcase name="E. Upserting HelloCthulu Title" time="1.388" assertions="16">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="F. Upserting HelloCthulu Info" time="1.945" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="G. Reviewing HelloCthulu Info" time="0.8430" assertions="19">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="H. Reviewing User List Page" time="2.393" assertions="15">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010340-GMT-0500.png]]</system-out>
+    
+    </testcase>
+  
+    <testcase name="I. Removing User" time="5.370" assertions="29">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010345-GMT-0500.png]]</system-out>
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-user-demo/tests/nightwatch/screenshots/ERROR__Jul-29-2015-010346-GMT-0500.png]]</system-out>
+    
+    </testcase>
+  
+    <testcase name="K. Users Table Walkthrough" time="0.4490" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="L. Users Image Grid Walkthrough" time="0.9080" assertions="2">
 
     
 

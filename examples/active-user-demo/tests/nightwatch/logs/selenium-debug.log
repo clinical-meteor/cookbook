@@ -1,28 +1,28 @@
-20:39:32.681 INFO - Launching a standalone server
+01:03:21.981 INFO - Launching a standalone server
 Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/starrynight/node_modules/chromedriver/bin/chromedriver
-20:39:32.716 INFO - Java: Apple Inc. 20.65-b04-466.1
-20:39:32.716 INFO - OS: Mac OS X 10.10.2 x86_64
-20:39:32.725 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
-20:39:32.781 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
-20:39:32.827 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-20:39:32.828 INFO - Version Jetty/5.1.x
-20:39:32.828 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-20:39:32.829 INFO - Started HttpContext[/selenium-server,/selenium-server]
-20:39:32.829 INFO - Started HttpContext[/,/]
-20:39:32.895 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@643c0007
-20:39:32.895 INFO - Started HttpContext[/wd,/wd]
-20:39:32.900 INFO - Started SocketListener on 0.0.0.0:4444
-20:39:32.900 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
-20:39:33.264 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7174d93a, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active User}]])
-20:39:33.274 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7174d93a, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active User}]
-Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 24131
+01:03:22.025 INFO - Java: Apple Inc. 20.65-b04-466.1
+01:03:22.025 INFO - OS: Mac OS X 10.10.2 x86_64
+01:03:22.038 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+01:03:22.099 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+01:03:22.151 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+01:03:22.152 INFO - Version Jetty/5.1.x
+01:03:22.152 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+01:03:22.153 INFO - Started HttpContext[/selenium-server,/selenium-server]
+01:03:22.153 INFO - Started HttpContext[/,/]
+01:03:22.225 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@75e845c2
+01:03:22.225 INFO - Started HttpContext[/wd,/wd]
+01:03:22.232 INFO - Started SocketListener on 0.0.0.0:4444
+01:03:22.232 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
+01:03:22.614 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@d4dd758, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active User}]])
+01:03:22.629 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@d4dd758, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active User}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 12424
 Only local connections are allowed.
-20:39:35.059 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7174d93a, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active User}]]
-20:39:35.071 INFO - Executing: [get: http://localhost:3000])
-20:39:35.986 INFO - Done: [get: http://localhost:3000]
-20:39:35.992 INFO - Executing: [set script timeoutt: 5000])
-20:39:35.998 INFO - Done: [set script timeoutt: 5000]
-20:39:36.005 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+01:03:24.716 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@d4dd758, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active User}]]
+01:03:24.726 INFO - Executing: [get: http://localhost:3000])
+01:03:25.584 INFO - Done: [get: http://localhost:3000]
+01:03:25.590 INFO - Executing: [set script timeoutt: 5000])
+01:03:25.596 INFO - Done: [set script timeoutt: 5000]
+01:03:25.601 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
@@ -30,7 +30,7 @@ Only local connections are allowed.
               meteorCallback(response);
           });
       }.apply(window, passedArgs);, [[removeAllUsers, false]]])
-20:39:36.124 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+01:03:25.718 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
@@ -38,45 +38,45 @@ Only local connections are allowed.
               meteorCallback(response);
           });
       }.apply(window, passedArgs);, [[removeAllUsers, false]]]
-20:39:37.132 INFO - Executing: [get: http://localhost:3000/list/users])
-20:39:37.431 INFO - Done: [get: http://localhost:3000/list/users]
-20:39:37.436 INFO - Executing: [set window size])
-20:39:37.700 INFO - Done: [set window size]
-20:39:37.704 INFO - Executing: [find element: By.cssSelector: body])
-20:39:37.730 INFO - Done: [find element: By.cssSelector: body]
-20:39:37.735 INFO - Executing: [find element: By.cssSelector: #mainPanel])
-20:39:37.748 INFO - Done: [find element: By.cssSelector: #mainPanel]
-20:39:37.753 INFO - Executing: [find element: By.cssSelector: #usersListPage])
-20:39:37.766 INFO - Done: [find element: By.cssSelector: #usersListPage]
-20:39:37.769 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavHeader])
-20:39:37.782 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavHeader]
-20:39:37.786 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
-20:39:37.799 INFO - Done: [find element: By.cssSelector: #userSearchInput]
-20:39:37.803 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList])
-20:39:37.816 INFO - Done: [find element: By.cssSelector: #usersUnorderedList]
-20:39:37.820 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
-20:39:37.833 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
-20:39:37.836 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
-20:39:37.850 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
-20:39:37.853 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavFooter])
-20:39:37.867 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavFooter]
-20:39:37.870 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage])
-20:39:37.886 INFO - Done: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage]
-20:39:37.891 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList .addUserItem])
-20:39:37.906 INFO - Done: [find element: By.cssSelector: #usersUnorderedList .addUserItem]
-20:39:37.909 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2)])
-20:39:39.366 WARN - Exception thrown
+01:03:26.725 INFO - Executing: [get: http://localhost:3000/list/users])
+01:03:27.012 INFO - Done: [get: http://localhost:3000/list/users]
+01:03:27.016 INFO - Executing: [set window size])
+01:03:27.263 INFO - Done: [set window size]
+01:03:27.268 INFO - Executing: [find element: By.cssSelector: body])
+01:03:27.293 INFO - Done: [find element: By.cssSelector: body]
+01:03:27.297 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:03:27.310 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:03:27.315 INFO - Executing: [find element: By.cssSelector: #usersListPage])
+01:03:27.328 INFO - Done: [find element: By.cssSelector: #usersListPage]
+01:03:27.332 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavHeader])
+01:03:27.345 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavHeader]
+01:03:27.349 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
+01:03:27.363 INFO - Done: [find element: By.cssSelector: #userSearchInput]
+01:03:27.367 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList])
+01:03:27.380 INFO - Done: [find element: By.cssSelector: #usersUnorderedList]
+01:03:27.383 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
+01:03:27.396 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
+01:03:27.399 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
+01:03:27.412 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
+01:03:27.415 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavFooter])
+01:03:27.429 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavFooter]
+01:03:27.432 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage])
+01:03:27.446 INFO - Done: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage]
+01:03:27.451 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList .addUserItem])
+01:03:27.465 INFO - Done: [find element: By.cssSelector: #usersUnorderedList .addUserItem]
+01:03:27.469 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2)])
+01:03:29.070 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
+Command duration or timeout: 13 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -103,19 +103,19 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-20:39:39.369 WARN - Exception: no such element
+01:03:29.073 WARN - Exception: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
+Command duration or timeout: 13 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-20:39:39.862 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2) article])
-20:39:40.880 WARN - Exception thrown
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+01:03:29.566 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2) article])
+01:03:30.586 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
@@ -124,9 +124,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2) article}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -153,7 +153,7 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-20:39:40.881 WARN - Exception: no such element
+01:03:30.587 WARN - Exception: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 13 milliseconds
@@ -161,518 +161,391 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2) article}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-20:39:41.339 INFO - Executing: [find element: By.cssSelector: #userNavFooter])
-20:39:41.356 INFO - Done: [find element: By.cssSelector: #userNavFooter]
-20:39:41.364 INFO - Executing: [mousemove: 8 true])
-20:39:41.379 INFO - Done: [mousemove: 8 true]
-20:39:41.383 INFO - Executing: [find element: By.cssSelector: .addUserIcon])
-20:39:41.397 INFO - Done: [find element: By.cssSelector: .addUserIcon]
-20:39:41.400 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: .addUserIcon]])
-20:39:41.427 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: .addUserIcon]]
-20:39:41.738 INFO - Executing: [find elements: By.cssSelector: #userUpsertPage])
-20:39:41.754 INFO - Done: [find elements: By.cssSelector: #userUpsertPage]
-20:39:41.756 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userUpsertPage]])
-20:39:41.768 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userUpsertPage]]
-20:39:41.775 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
-20:39:41.789 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
-20:39:41.792 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
-20:39:41.807 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
-20:39:41.812 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
-20:39:41.826 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
-20:39:41.830 INFO - Executing: [find element: By.cssSelector: #userMetaData])
-20:39:41.843 INFO - Done: [find element: By.cssSelector: #userMetaData]
-20:39:41.845 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
-20:39:41.859 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
-20:39:41.863 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:41.879 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:41.882 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:41.897 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:41.900 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:41.916 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:41.922 INFO - Executing: [find element: By.cssSelector: #userImage])
-20:39:41.939 INFO - Done: [find element: By.cssSelector: #userImage]
-20:39:41.943 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:41.957 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:41.961 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
-20:39:41.979 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
-20:39:41.983 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:42.000 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:42.008 INFO - Executing: [switch to frame: null])
-20:39:42.016 INFO - Done: [switch to frame: null]
-20:39:42.021 INFO - Executing: [find elements: By.cssSelector: body])
-20:39:42.040 INFO - Done: [find elements: By.cssSelector: body]
-20:39:42.043 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: body]])
-20:39:42.054 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: body]]
-20:39:42.057 INFO - Executing: [find element: By.cssSelector: body])
-20:39:42.079 INFO - Done: [find element: By.cssSelector: body]
-20:39:42.083 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:42.097 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:42.100 INFO - Executing: [clear: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput]])
-20:39:42.121 INFO - Done: [clear: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput]]
-20:39:42.125 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:42.134 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:42.139 INFO - Executing: [send keys: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], [o, c, t, o, c, a, t]])
-20:39:42.188 INFO - Done: [send keys: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], [o, c, t, o, c, a, t]]
-20:39:42.191 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:42.207 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:42.214 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:42.225 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:42.228 INFO - Executing: [clear: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput]])
-20:39:42.252 INFO - Done: [clear: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput]]
-20:39:42.256 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:42.265 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:42.269 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], [o, c, t, o, c, a, t, @, t, e, s, t, ., c, o, m]])
-20:39:42.332 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], [o, c, t, o, c, a, t, @, t, e, s, t, ., c, o, m]]
-20:39:42.337 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:42.345 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:42.349 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:42.360 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:42.363 INFO - Executing: [clear: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput]])
-20:39:42.388 INFO - Done: [clear: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput]]
-20:39:42.392 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:42.403 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:42.409 INFO - Executing: [send keys: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]])
-20:39:42.515 INFO - Done: [send keys: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]]
-20:39:42.519 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:42.557 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:42.564 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:42.581 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:42.584 INFO - Executing: [clear: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput]])
-20:39:42.605 INFO - Done: [clear: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput]]
-20:39:42.609 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:42.618 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:42.621 INFO - Executing: [send keys: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
-20:39:42.669 INFO - Done: [send keys: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
-20:39:42.673 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:42.683 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:42.688 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:42.702 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:42.705 INFO - Executing: [clear: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput]])
-20:39:42.723 INFO - Done: [clear: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput]]
-20:39:42.727 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:42.743 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:42.760 INFO - Executing: [send keys: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]])
-20:39:43.374 INFO - Done: [send keys: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]]
-20:39:43.378 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:43.539 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:43.543 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:43.557 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:43.559 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:43.566 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:43.568 INFO - Executing: [mousemove: 21 true])
-20:39:43.581 INFO - Done: [mousemove: 21 true]
-20:39:43.585 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:43.592 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:43.595 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]])
-20:39:43.606 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]]
-20:39:43.610 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:43.617 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:43.619 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]])
-20:39:43.650 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]]
-20:39:45.162 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
-20:39:45.175 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
-20:39:45.177 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
-20:39:45.190 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
-20:39:45.192 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
-20:39:45.205 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
-20:39:45.208 INFO - Executing: [find element: By.cssSelector: #userMetaData])
-20:39:45.222 INFO - Done: [find element: By.cssSelector: #userMetaData]
-20:39:45.224 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
-20:39:45.237 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
-20:39:45.239 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:45.246 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:45.249 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:45.263 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:45.266 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:45.273 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:45.275 INFO - Executing: [find element: By.cssSelector: #userImage])
-20:39:45.283 INFO - Done: [find element: By.cssSelector: #userImage]
-20:39:45.285 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:45.292 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:45.295 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:45.303 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:45.306 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], value])
-20:39:45.314 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], value]
-20:39:45.319 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:45.326 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:45.328 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], value])
-20:39:45.337 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], value]
-20:39:45.340 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:45.348 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:45.350 INFO - Executing: [get element attribute: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], value])
-20:39:45.358 INFO - Done: [get element attribute: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], value]
-20:39:45.361 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:45.368 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:45.370 INFO - Executing: [get element attribute: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], value])
-20:39:45.378 INFO - Done: [get element attribute: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], value]
-20:39:45.382 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:45.389 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:45.391 INFO - Executing: [get element attribute: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], value])
-20:39:45.399 INFO - Done: [get element attribute: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], value]
-20:39:45.402 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
-20:39:45.409 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
-20:39:45.411 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:45.418 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:45.421 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+01:03:31.000 INFO - Executing: [find element: By.cssSelector: #userNavFooter])
+01:03:31.013 INFO - Done: [find element: By.cssSelector: #userNavFooter]
+01:03:31.019 INFO - Executing: [mousemove: 8 true])
+01:03:31.033 INFO - Done: [mousemove: 8 true]
+01:03:31.037 INFO - Executing: [find element: By.cssSelector: .addUserIcon])
+01:03:31.050 INFO - Done: [find element: By.cssSelector: .addUserIcon]
+01:03:31.053 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: .addUserIcon]])
+01:03:31.081 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: .addUserIcon]]
+01:03:31.387 INFO - Executing: [find elements: By.cssSelector: #userUpsertPage])
+01:03:31.402 INFO - Done: [find elements: By.cssSelector: #userUpsertPage]
+01:03:31.404 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userUpsertPage]])
+01:03:31.415 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userUpsertPage]]
+01:03:31.422 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
+01:03:31.434 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
+01:03:31.437 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
+01:03:31.450 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
+01:03:31.454 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
+01:03:31.466 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
+01:03:31.470 INFO - Executing: [find element: By.cssSelector: #userMetaData])
+01:03:31.482 INFO - Done: [find element: By.cssSelector: #userMetaData]
+01:03:31.485 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
+01:03:31.497 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
+01:03:31.500 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:31.513 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:31.516 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:31.529 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:31.532 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:31.544 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:31.547 INFO - Executing: [find element: By.cssSelector: #userImage])
+01:03:31.562 INFO - Done: [find element: By.cssSelector: #userImage]
+01:03:31.565 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:31.579 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:31.582 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
+01:03:31.594 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
+01:03:31.597 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:31.610 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:31.614 INFO - Executing: [switch to frame: null])
+01:03:31.619 INFO - Done: [switch to frame: null]
+01:03:31.623 INFO - Executing: [find elements: By.cssSelector: body])
+01:03:31.635 INFO - Done: [find elements: By.cssSelector: body]
+01:03:31.637 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: body]])
+01:03:31.646 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: body]]
+01:03:31.649 INFO - Executing: [find element: By.cssSelector: body])
+01:03:31.662 INFO - Done: [find element: By.cssSelector: body]
+01:03:31.665 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:31.678 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:31.681 INFO - Executing: [clear: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput]])
+01:03:31.698 INFO - Done: [clear: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput]]
+01:03:31.701 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:31.709 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:31.712 INFO - Executing: [send keys: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], [o, c, t, o, c, a, t]])
+01:03:31.768 INFO - Done: [send keys: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], [o, c, t, o, c, a, t]]
+01:03:31.770 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:31.784 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:31.788 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:31.795 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:31.797 INFO - Executing: [clear: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput]])
+01:03:31.813 INFO - Done: [clear: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput]]
+01:03:31.817 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:31.827 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:31.830 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], [o, c, t, o, c, a, t, @, t, e, s, t, ., c, o, m]])
+01:03:31.883 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], [o, c, t, o, c, a, t, @, t, e, s, t, ., c, o, m]]
+01:03:31.886 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:31.894 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:31.897 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:31.905 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:31.907 INFO - Executing: [clear: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput]])
+01:03:31.925 INFO - Done: [clear: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput]]
+01:03:31.928 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:31.935 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:31.940 INFO - Executing: [send keys: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]])
+01:03:32.024 INFO - Done: [send keys: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]]
+01:03:32.028 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:32.044 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:32.047 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:32.060 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:32.063 INFO - Executing: [clear: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput]])
+01:03:32.080 INFO - Done: [clear: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput]]
+01:03:32.083 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:32.091 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:32.093 INFO - Executing: [send keys: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+01:03:32.135 INFO - Done: [send keys: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+01:03:32.138 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:32.145 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:32.147 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:32.160 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:32.162 INFO - Executing: [clear: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput]])
+01:03:32.179 INFO - Done: [clear: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput]]
+01:03:32.182 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:32.195 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:32.212 INFO - Executing: [send keys: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]])
+01:03:32.730 INFO - Done: [send keys: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]]
+01:03:32.733 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:32.842 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:32.846 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:32.858 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:32.861 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:32.868 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:32.871 INFO - Executing: [mousemove: 21 true])
+01:03:32.883 INFO - Done: [mousemove: 21 true]
+01:03:32.887 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:32.894 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:32.896 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]])
+01:03:32.907 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]]
+01:03:32.909 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:32.916 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:32.918 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]])
+01:03:32.946 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]]
+01:03:34.458 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
+01:03:34.472 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
+01:03:34.474 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
+01:03:34.487 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
+01:03:34.489 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
+01:03:34.502 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
+01:03:34.506 INFO - Executing: [find element: By.cssSelector: #userMetaData])
+01:03:34.519 INFO - Done: [find element: By.cssSelector: #userMetaData]
+01:03:34.522 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
+01:03:34.534 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
+01:03:34.537 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:34.544 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:34.547 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:34.560 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:34.562 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:34.569 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:34.572 INFO - Executing: [find element: By.cssSelector: #userImage])
+01:03:34.581 INFO - Done: [find element: By.cssSelector: #userImage]
+01:03:34.583 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:34.591 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:34.594 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:34.601 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:34.604 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], value])
+01:03:34.613 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], value]
+01:03:34.616 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:34.623 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:34.626 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], value])
+01:03:34.634 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], value]
+01:03:34.637 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:34.644 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:34.646 INFO - Executing: [get element attribute: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], value])
+01:03:34.654 INFO - Done: [get element attribute: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], value]
+01:03:34.657 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:34.664 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:34.666 INFO - Executing: [get element attribute: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], value])
+01:03:34.673 INFO - Done: [get element attribute: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], value]
+01:03:34.678 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:34.685 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:34.686 INFO - Executing: [get element attribute: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], value])
+01:03:34.694 INFO - Done: [get element attribute: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], value]
+01:03:34.697 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
+01:03:34.705 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
+01:03:34.707 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:34.715 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:34.717 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
       return Meteor.users.findOne({_id: data});
     }.apply(window, passedArgs);, [false]])
-20:39:45.426 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
+01:03:34.722 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
       return Meteor.users.findOne({_id: data});
     }.apply(window, passedArgs);, [false]]
-20:39:45.429 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
-20:39:45.442 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
-20:39:45.445 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
-20:39:45.458 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
-20:39:45.461 INFO - Executing: [click: 23 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userUpsertPage .barcode]])
-20:39:45.489 INFO - Done: [click: 23 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userUpsertPage .barcode]]
-20:39:45.995 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:46.002 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:46.005 INFO - Executing: [clear: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput]])
-20:39:46.015 INFO - Done: [clear: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput]]
-20:39:46.018 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:46.025 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:46.027 INFO - Executing: [send keys: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
-20:39:46.077 INFO - Done: [send keys: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
-20:39:46.080 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:46.087 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:46.089 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:46.097 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:46.099 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:46.105 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:46.108 INFO - Executing: [mousemove: 21 true])
-20:39:46.119 INFO - Done: [mousemove: 21 true]
-20:39:46.123 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:46.130 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:46.133 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]])
-20:39:46.139 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]]
-20:39:46.141 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:46.148 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:46.151 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]])
-20:39:46.175 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]]
-20:39:46.680 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
-20:39:46.696 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
-20:39:46.699 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
-20:39:46.714 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
-20:39:46.717 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
-20:39:46.725 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
-20:39:46.727 INFO - Executing: [find element: By.cssSelector: #userMetaData])
-20:39:46.737 INFO - Done: [find element: By.cssSelector: #userMetaData]
-20:39:46.741 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
-20:39:46.755 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
-20:39:46.759 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:46.767 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:46.771 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:46.782 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:46.786 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:46.794 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:46.796 INFO - Executing: [find element: By.cssSelector: #userImage])
-20:39:46.804 INFO - Done: [find element: By.cssSelector: #userImage]
-20:39:46.806 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:46.816 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:46.819 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
-20:39:46.828 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
-20:39:46.831 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:46.840 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:46.845 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
-20:39:46.856 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
-20:39:46.859 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
-20:39:46.867 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
-20:39:46.871 INFO - Executing: [click: 23 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userUpsertPage .barcode]])
-20:39:46.896 INFO - Done: [click: 23 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userUpsertPage .barcode]]
-20:39:47.403 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:47.409 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:47.411 INFO - Executing: [clear: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput]])
-20:39:47.430 INFO - Done: [clear: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput]]
-20:39:47.433 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:47.440 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:47.443 INFO - Executing: [send keys: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], [h, e, l, l, o, c, t, h, u, l, u]])
-20:39:47.484 INFO - Done: [send keys: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], [h, e, l, l, o, c, t, h, u, l, u]]
-20:39:47.490 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:47.499 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:47.503 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:47.511 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:47.515 INFO - Executing: [clear: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput]])
-20:39:47.525 INFO - Done: [clear: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput]]
-20:39:47.529 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:47.538 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:47.542 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], [h, e, l, l, o, c, t, h, u, l, u, @, t, e, s, t, ., c, o, m]])
-20:39:47.606 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], [h, e, l, l, o, c, t, h, u, l, u, @, t, e, s, t, ., c, o, m]]
-20:39:47.610 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:47.620 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:47.622 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:47.629 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:47.631 INFO - Executing: [clear: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput]])
-20:39:47.652 INFO - Done: [clear: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput]]
-20:39:47.656 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:47.664 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:47.668 INFO - Executing: [send keys: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]])
-20:39:47.769 INFO - Done: [send keys: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]]
-20:39:47.774 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:47.851 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:47.854 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:47.863 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:47.865 INFO - Executing: [clear: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput]])
-20:39:47.884 INFO - Done: [clear: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput]]
-20:39:47.890 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:47.900 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:47.903 INFO - Executing: [send keys: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
-20:39:47.943 INFO - Done: [send keys: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
-20:39:47.948 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:47.957 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:47.961 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:47.969 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:47.972 INFO - Executing: [clear: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput]])
-20:39:47.993 INFO - Done: [clear: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput]]
-20:39:47.997 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:48.005 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:48.015 INFO - Executing: [send keys: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]])
-20:39:48.335 INFO - Done: [send keys: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]]
-20:39:48.346 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:48.412 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:48.417 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:48.424 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:48.426 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:48.433 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:48.435 INFO - Executing: [mousemove: 21 true])
-20:39:48.442 INFO - Done: [mousemove: 21 true]
-20:39:48.445 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:48.454 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:48.456 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]])
-20:39:48.462 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]]
-20:39:48.465 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:48.472 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:48.474 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]])
-20:39:48.497 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #saveUserButton]]
-20:39:49.005 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
-20:39:49.020 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
-20:39:49.023 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
-20:39:49.030 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
-20:39:49.034 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
-20:39:49.042 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
-20:39:49.046 INFO - Executing: [find element: By.cssSelector: #userMetaData])
-20:39:49.055 INFO - Done: [find element: By.cssSelector: #userMetaData]
-20:39:49.058 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
-20:39:49.067 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
-20:39:49.070 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:49.078 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:49.082 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:49.089 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:49.091 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:49.099 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:49.103 INFO - Executing: [find element: By.cssSelector: #userImage])
-20:39:49.114 INFO - Done: [find element: By.cssSelector: #userImage]
-20:39:49.121 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:49.129 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:49.132 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:49.139 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:49.141 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], value])
-20:39:49.150 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], value]
-20:39:49.154 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:49.160 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:49.162 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], value])
-20:39:49.170 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], value]
-20:39:49.173 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:49.180 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:49.185 INFO - Executing: [get element attribute: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], value])
-20:39:49.194 INFO - Done: [get element attribute: 17 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], value]
-20:39:49.197 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:49.204 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:49.206 INFO - Executing: [get element attribute: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], value])
-20:39:49.213 INFO - Done: [get element attribute: 19 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], value]
-20:39:49.217 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:49.224 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:49.227 INFO - Executing: [get element attribute: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], value])
-20:39:49.237 INFO - Done: [get element attribute: 22 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], value]
-20:39:49.240 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
-20:39:49.247 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
-20:39:49.250 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:49.262 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:49.265 INFO - Executing: [find element: By.cssSelector: #userListButton])
-20:39:49.279 INFO - Done: [find element: By.cssSelector: #userListButton]
-20:39:49.282 INFO - Executing: [find element: By.cssSelector: #userListButton])
-20:39:49.294 INFO - Done: [find element: By.cssSelector: #userListButton]
-20:39:49.296 INFO - Executing: [is displayed: 24 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userListButton]])
-20:39:49.308 INFO - Done: [is displayed: 24 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userListButton]]
-20:39:49.310 INFO - Executing: [find element: By.cssSelector: #userListButton])
-20:39:49.317 INFO - Done: [find element: By.cssSelector: #userListButton]
-20:39:49.319 INFO - Executing: [mousemove: 24 true])
-20:39:49.334 INFO - Done: [mousemove: 24 true]
-20:39:49.337 INFO - Executing: [find element: By.cssSelector: #userListButton])
-20:39:49.345 INFO - Done: [find element: By.cssSelector: #userListButton]
-20:39:49.347 INFO - Executing: [click: 24 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userListButton]])
-20:39:49.394 INFO - Done: [click: 24 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userListButton]]
-20:39:49.901 INFO - Executing: [find element: By.cssSelector: #usersListPage])
-20:39:49.914 INFO - Done: [find element: By.cssSelector: #usersListPage]
-20:39:49.916 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavHeader])
-20:39:49.928 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavHeader]
-20:39:49.931 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
-20:39:49.944 INFO - Done: [find element: By.cssSelector: #userSearchInput]
-20:39:49.946 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList])
-20:39:49.959 INFO - Done: [find element: By.cssSelector: #usersUnorderedList]
-20:39:49.962 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
-20:39:49.974 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
-20:39:49.976 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
-20:39:49.989 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
-20:39:49.991 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavFooter])
-20:39:50.004 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavFooter]
-20:39:50.007 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
-20:39:50.019 INFO - Done: [find element: By.cssSelector: #userSearchInput]
-20:39:50.022 INFO - Executing: [clear: 27 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userSearchInput]])
-20:39:50.038 INFO - Done: [clear: 27 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userSearchInput]]
-20:39:50.041 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
-20:39:50.048 INFO - Done: [find element: By.cssSelector: #userSearchInput]
-20:39:50.051 INFO - Executing: [send keys: 27 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userSearchInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
-20:39:50.092 INFO - Done: [send keys: 27 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userSearchInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
-20:39:50.396 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
-20:39:50.408 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
-20:39:50.410 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
-20:39:50.423 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
-20:39:50.425 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .barcode])
-20:39:50.438 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .barcode]
-20:39:50.440 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText])
-20:39:50.453 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText]
-20:39:50.455 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText])
-20:39:50.468 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText]
-20:39:50.470 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText])
-20:39:50.484 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText]
-20:39:50.486 INFO - Executing: [get text: 33 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usersUnorderedList li:nth-child(1) .fullNameText]])
-20:39:50.502 INFO - Done: [get text: 33 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usersUnorderedList li:nth-child(1) .fullNameText]]
-20:39:50.505 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText])
-20:39:50.518 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText]
-20:39:50.520 INFO - Executing: [get text: 34 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usersUnorderedList li:nth-child(1) .descriptionText]])
-20:39:50.535 INFO - Done: [get text: 34 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usersUnorderedList li:nth-child(1) .descriptionText]]
-20:39:50.537 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2)])
-20:39:51.518 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.107)
-  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
-*** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
-Session ID: fac7804e84c3173e7aab481057132e7a
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
-	at java.lang.Thread.run(Thread.java:695)
-20:39:51.519 WARN - Exception: no such element
-  (Session info: chrome=44.0.2403.107)
-  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
-*** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
-Session ID: fac7804e84c3173e7aab481057132e7a
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-20:39:51.949 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
-20:39:51.956 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
-20:39:51.961 INFO - Executing: [click: 29 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usersUnorderedList li:nth-child(1)]])
-20:39:51.989 INFO - Done: [click: 29 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usersUnorderedList li:nth-child(1)]]
-20:39:52.297 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
-20:39:52.310 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
-20:39:52.312 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
-20:39:52.319 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
-20:39:52.321 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
-20:39:52.327 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
-20:39:52.331 INFO - Executing: [find element: By.cssSelector: #userMetaData])
-20:39:52.339 INFO - Done: [find element: By.cssSelector: #userMetaData]
-20:39:52.342 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
-20:39:52.349 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
-20:39:52.352 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:52.365 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:52.368 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:52.381 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:52.383 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:52.390 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:52.393 INFO - Executing: [find element: By.cssSelector: #userImage])
-20:39:52.401 INFO - Done: [find element: By.cssSelector: #userImage]
-20:39:52.404 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:52.411 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:52.414 INFO - Executing: [find element: By.cssSelector: #usernameInput])
-20:39:52.421 INFO - Done: [find element: By.cssSelector: #usernameInput]
-20:39:52.422 INFO - Executing: [get element attribute: 40 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], value])
-20:39:52.430 INFO - Done: [get element attribute: 40 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #usernameInput], value]
-20:39:52.433 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
-20:39:52.439 INFO - Done: [find element: By.cssSelector: #userEmailInput]
-20:39:52.441 INFO - Executing: [get element attribute: 41 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], value])
-20:39:52.450 INFO - Done: [get element attribute: 41 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userEmailInput], value]
-20:39:52.452 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
-20:39:52.459 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
-20:39:52.461 INFO - Executing: [get element attribute: 42 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], value])
-20:39:52.470 INFO - Done: [get element attribute: 42 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userAvatarInput], value]
-20:39:52.473 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
-20:39:52.480 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
-20:39:52.482 INFO - Executing: [get element attribute: 44 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], value])
-20:39:52.490 INFO - Done: [get element attribute: 44 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userFullNameInput], value]
-20:39:52.493 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
-20:39:52.500 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
-20:39:52.502 INFO - Executing: [get element attribute: 45 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], value])
-20:39:52.511 INFO - Done: [get element attribute: 45 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #userDescriptionInput], value]
-20:39:52.513 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
-20:39:52.521 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
-20:39:52.523 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
-20:39:52.530 INFO - Done: [find element: By.cssSelector: #saveUserButton]
-20:39:52.532 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
-20:39:52.546 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
-20:39:52.548 INFO - Executing: [mousemove: 35 true])
-20:39:52.560 INFO - Done: [mousemove: 35 true]
-20:39:52.565 INFO - Executing: [find element: By.cssSelector: #removeUserButton])
-20:39:52.578 INFO - Done: [find element: By.cssSelector: #removeUserButton]
-20:39:52.580 INFO - Executing: [is displayed: 48 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #removeUserButton]])
-20:39:52.591 INFO - Done: [is displayed: 48 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #removeUserButton]]
-20:39:52.593 INFO - Executing: [find element: By.cssSelector: #removeUserButton])
-20:39:52.605 INFO - Done: [find element: By.cssSelector: #removeUserButton]
-20:39:52.607 INFO - Executing: [click: 48 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #removeUserButton]])
-20:39:52.635 INFO - Done: [click: 48 [[ChromeDriver: chrome on MAC (fac7804e84c3173e7aab481057132e7a)] -> css selector: #removeUserButton]]
-20:39:54.642 INFO - Executing: [find element: By.cssSelector: #usersListPage])
-20:39:54.655 INFO - Done: [find element: By.cssSelector: #usersListPage]
-20:39:54.657 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavHeader])
-20:39:54.670 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavHeader]
-20:39:54.673 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
-20:39:54.680 INFO - Done: [find element: By.cssSelector: #userSearchInput]
-20:39:54.682 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList])
-20:39:54.695 INFO - Done: [find element: By.cssSelector: #usersUnorderedList]
-20:39:54.697 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
-20:39:54.704 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
-20:39:54.707 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
-20:39:54.714 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
-20:39:54.716 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavFooter])
-20:39:54.723 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavFooter]
-20:39:54.726 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage])
-20:39:54.740 INFO - Done: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage]
-20:39:54.742 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList .addUserItem])
-20:39:54.757 INFO - Done: [find element: By.cssSelector: #usersUnorderedList .addUserItem]
-20:39:54.760 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2)])
-20:39:55.875 WARN - Exception thrown
+01:03:34.725 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
+01:03:34.737 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
+01:03:34.740 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
+01:03:34.753 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
+01:03:34.756 INFO - Executing: [click: 23 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userUpsertPage .barcode]])
+01:03:34.785 INFO - Done: [click: 23 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userUpsertPage .barcode]]
+01:03:35.293 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:35.302 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:35.306 INFO - Executing: [clear: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput]])
+01:03:35.316 INFO - Done: [clear: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput]]
+01:03:35.319 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:35.326 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:35.328 INFO - Executing: [send keys: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+01:03:35.365 INFO - Done: [send keys: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+01:03:35.368 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:35.375 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:35.378 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:35.384 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:35.387 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:35.393 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:35.395 INFO - Executing: [mousemove: 21 true])
+01:03:35.405 INFO - Done: [mousemove: 21 true]
+01:03:35.408 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:35.415 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:35.417 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]])
+01:03:35.424 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]]
+01:03:35.427 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:35.433 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:35.435 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]])
+01:03:35.460 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]]
+01:03:35.967 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
+01:03:35.980 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
+01:03:35.983 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
+01:03:35.995 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
+01:03:35.998 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
+01:03:36.004 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
+01:03:36.008 INFO - Executing: [find element: By.cssSelector: #userMetaData])
+01:03:36.015 INFO - Done: [find element: By.cssSelector: #userMetaData]
+01:03:36.018 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
+01:03:36.033 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
+01:03:36.036 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:36.043 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:36.047 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:36.053 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:36.056 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:36.063 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:36.065 INFO - Executing: [find element: By.cssSelector: #userImage])
+01:03:36.072 INFO - Done: [find element: By.cssSelector: #userImage]
+01:03:36.074 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:36.081 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:36.084 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
+01:03:36.091 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
+01:03:36.095 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:36.111 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:36.114 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
+01:03:36.121 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
+01:03:36.124 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .barcode])
+01:03:36.130 INFO - Done: [find element: By.cssSelector: #userUpsertPage .barcode]
+01:03:36.132 INFO - Executing: [click: 23 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userUpsertPage .barcode]])
+01:03:36.163 INFO - Done: [click: 23 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userUpsertPage .barcode]]
+01:03:36.669 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:36.677 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:36.679 INFO - Executing: [clear: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput]])
+01:03:36.696 INFO - Done: [clear: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput]]
+01:03:36.699 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:36.706 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:36.708 INFO - Executing: [send keys: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], [h, e, l, l, o, c, t, h, u, l, u]])
+01:03:36.746 INFO - Done: [send keys: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], [h, e, l, l, o, c, t, h, u, l, u]]
+01:03:36.750 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:36.756 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:36.759 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:36.767 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:36.769 INFO - Executing: [clear: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput]])
+01:03:36.787 INFO - Done: [clear: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput]]
+01:03:36.790 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:36.798 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:36.801 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], [h, e, l, l, o, c, t, h, u, l, u, @, t, e, s, t, ., c, o, m]])
+01:03:36.846 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], [h, e, l, l, o, c, t, h, u, l, u, @, t, e, s, t, ., c, o, m]]
+01:03:36.850 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:36.856 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:36.859 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:36.866 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:36.868 INFO - Executing: [clear: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput]])
+01:03:36.885 INFO - Done: [clear: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput]]
+01:03:36.887 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:36.895 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:36.899 INFO - Executing: [send keys: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]])
+01:03:36.979 INFO - Done: [send keys: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]]
+01:03:36.983 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:37.005 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:37.010 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:37.017 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:37.019 INFO - Executing: [clear: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput]])
+01:03:37.029 INFO - Done: [clear: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput]]
+01:03:37.032 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:37.039 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:37.041 INFO - Executing: [send keys: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+01:03:37.071 INFO - Done: [send keys: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+01:03:37.074 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:37.082 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:37.085 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:37.091 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:37.093 INFO - Executing: [clear: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput]])
+01:03:37.109 INFO - Done: [clear: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput]]
+01:03:37.112 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:37.119 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:37.128 INFO - Executing: [send keys: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]])
+01:03:37.409 INFO - Done: [send keys: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]]
+01:03:37.420 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:37.471 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:37.476 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:37.483 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:37.485 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:37.491 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:37.493 INFO - Executing: [mousemove: 21 true])
+01:03:37.501 INFO - Done: [mousemove: 21 true]
+01:03:37.504 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:37.510 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:37.513 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]])
+01:03:37.520 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]]
+01:03:37.523 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:37.529 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:37.531 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]])
+01:03:37.551 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #saveUserButton]]
+01:03:38.060 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
+01:03:38.073 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
+01:03:38.076 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
+01:03:38.083 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
+01:03:38.086 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
+01:03:38.092 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
+01:03:38.096 INFO - Executing: [find element: By.cssSelector: #userMetaData])
+01:03:38.103 INFO - Done: [find element: By.cssSelector: #userMetaData]
+01:03:38.106 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
+01:03:38.118 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
+01:03:38.120 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:38.127 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:38.129 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:38.136 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:38.139 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:38.145 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:38.148 INFO - Executing: [find element: By.cssSelector: #userImage])
+01:03:38.155 INFO - Done: [find element: By.cssSelector: #userImage]
+01:03:38.160 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:38.167 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:38.170 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:38.177 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:38.179 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], value])
+01:03:38.187 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], value]
+01:03:38.190 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:38.196 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:38.198 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], value])
+01:03:38.206 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], value]
+01:03:38.209 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:38.215 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:38.217 INFO - Executing: [get element attribute: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], value])
+01:03:38.225 INFO - Done: [get element attribute: 17 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], value]
+01:03:38.228 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:38.235 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:38.237 INFO - Executing: [get element attribute: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], value])
+01:03:38.245 INFO - Done: [get element attribute: 19 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], value]
+01:03:38.247 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:38.253 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:38.255 INFO - Executing: [get element attribute: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], value])
+01:03:38.266 INFO - Done: [get element attribute: 22 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], value]
+01:03:38.269 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
+01:03:38.275 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
+01:03:38.278 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:38.285 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:38.288 INFO - Executing: [find element: By.cssSelector: #userListButton])
+01:03:38.301 INFO - Done: [find element: By.cssSelector: #userListButton]
+01:03:38.303 INFO - Executing: [find element: By.cssSelector: #userListButton])
+01:03:38.316 INFO - Done: [find element: By.cssSelector: #userListButton]
+01:03:38.318 INFO - Executing: [is displayed: 24 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userListButton]])
+01:03:38.329 INFO - Done: [is displayed: 24 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userListButton]]
+01:03:38.331 INFO - Executing: [find element: By.cssSelector: #userListButton])
+01:03:38.337 INFO - Done: [find element: By.cssSelector: #userListButton]
+01:03:38.340 INFO - Executing: [mousemove: 24 true])
+01:03:38.352 INFO - Done: [mousemove: 24 true]
+01:03:38.355 INFO - Executing: [find element: By.cssSelector: #userListButton])
+01:03:38.362 INFO - Done: [find element: By.cssSelector: #userListButton]
+01:03:38.366 INFO - Executing: [click: 24 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userListButton]])
+01:03:38.395 INFO - Done: [click: 24 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userListButton]]
+01:03:38.903 INFO - Executing: [find element: By.cssSelector: #usersListPage])
+01:03:38.915 INFO - Done: [find element: By.cssSelector: #usersListPage]
+01:03:38.918 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavHeader])
+01:03:38.930 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavHeader]
+01:03:38.932 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
+01:03:38.945 INFO - Done: [find element: By.cssSelector: #userSearchInput]
+01:03:38.947 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList])
+01:03:38.959 INFO - Done: [find element: By.cssSelector: #usersUnorderedList]
+01:03:38.962 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
+01:03:38.974 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
+01:03:38.977 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
+01:03:38.989 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
+01:03:38.991 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavFooter])
+01:03:39.003 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavFooter]
+01:03:39.006 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
+01:03:39.018 INFO - Done: [find element: By.cssSelector: #userSearchInput]
+01:03:39.020 INFO - Executing: [clear: 27 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userSearchInput]])
+01:03:39.036 INFO - Done: [clear: 27 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userSearchInput]]
+01:03:39.039 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
+01:03:39.046 INFO - Done: [find element: By.cssSelector: #userSearchInput]
+01:03:39.048 INFO - Executing: [send keys: 27 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userSearchInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+01:03:39.085 INFO - Done: [send keys: 27 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userSearchInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+01:03:39.390 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
+01:03:39.403 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
+01:03:39.406 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
+01:03:39.421 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
+01:03:39.424 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .barcode])
+01:03:39.437 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .barcode]
+01:03:39.439 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText])
+01:03:39.453 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText]
+01:03:39.456 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText])
+01:03:39.469 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText]
+01:03:39.472 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText])
+01:03:39.484 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .fullNameText]
+01:03:39.486 INFO - Executing: [get text: 33 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usersUnorderedList li:nth-child(1) .fullNameText]])
+01:03:39.501 INFO - Done: [get text: 33 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usersUnorderedList li:nth-child(1) .fullNameText]]
+01:03:39.504 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText])
+01:03:39.519 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) .descriptionText]
+01:03:39.522 INFO - Executing: [get text: 34 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usersUnorderedList li:nth-child(1) .descriptionText]])
+01:03:39.540 INFO - Done: [get text: 34 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usersUnorderedList li:nth-child(1) .descriptionText]]
+01:03:39.543 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2)])
+01:03:40.528 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
@@ -681,9 +554,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -709,7 +582,7 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-20:39:55.876 WARN - Exception: no such element
+01:03:40.529 WARN - Exception: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 13 milliseconds
@@ -717,11 +590,138 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-20:39:56.290 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2) article])
-20:39:57.275 WARN - Exception thrown
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+01:03:40.950 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
+01:03:40.957 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
+01:03:40.962 INFO - Executing: [click: 29 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usersUnorderedList li:nth-child(1)]])
+01:03:40.990 INFO - Done: [click: 29 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usersUnorderedList li:nth-child(1)]]
+01:03:41.296 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
+01:03:41.309 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
+01:03:41.312 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageHeader])
+01:03:41.318 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageHeader]
+01:03:41.320 INFO - Executing: [find element: By.cssSelector: #userUpsertCard])
+01:03:41.327 INFO - Done: [find element: By.cssSelector: #userUpsertCard]
+01:03:41.329 INFO - Executing: [find element: By.cssSelector: #userMetaData])
+01:03:41.336 INFO - Done: [find element: By.cssSelector: #userMetaData]
+01:03:41.338 INFO - Executing: [find element: By.cssSelector: #userMetaInputs])
+01:03:41.345 INFO - Done: [find element: By.cssSelector: #userMetaInputs]
+01:03:41.347 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:41.360 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:41.363 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:41.374 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:41.377 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:41.383 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:41.386 INFO - Executing: [find element: By.cssSelector: #userImage])
+01:03:41.393 INFO - Done: [find element: By.cssSelector: #userImage]
+01:03:41.395 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:41.402 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:41.404 INFO - Executing: [find element: By.cssSelector: #usernameInput])
+01:03:41.411 INFO - Done: [find element: By.cssSelector: #usernameInput]
+01:03:41.413 INFO - Executing: [get element attribute: 40 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], value])
+01:03:41.422 INFO - Done: [get element attribute: 40 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #usernameInput], value]
+01:03:41.425 INFO - Executing: [find element: By.cssSelector: #userEmailInput])
+01:03:41.431 INFO - Done: [find element: By.cssSelector: #userEmailInput]
+01:03:41.433 INFO - Executing: [get element attribute: 41 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], value])
+01:03:41.441 INFO - Done: [get element attribute: 41 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userEmailInput], value]
+01:03:41.443 INFO - Executing: [find element: By.cssSelector: #userAvatarInput])
+01:03:41.450 INFO - Done: [find element: By.cssSelector: #userAvatarInput]
+01:03:41.453 INFO - Executing: [get element attribute: 42 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], value])
+01:03:41.461 INFO - Done: [get element attribute: 42 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userAvatarInput], value]
+01:03:41.463 INFO - Executing: [find element: By.cssSelector: #userFullNameInput])
+01:03:41.469 INFO - Done: [find element: By.cssSelector: #userFullNameInput]
+01:03:41.471 INFO - Executing: [get element attribute: 44 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], value])
+01:03:41.478 INFO - Done: [get element attribute: 44 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userFullNameInput], value]
+01:03:41.482 INFO - Executing: [find element: By.cssSelector: #userDescriptionInput])
+01:03:41.489 INFO - Done: [find element: By.cssSelector: #userDescriptionInput]
+01:03:41.490 INFO - Executing: [get element attribute: 45 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], value])
+01:03:41.498 INFO - Done: [get element attribute: 45 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #userDescriptionInput], value]
+01:03:41.501 INFO - Executing: [find element: By.cssSelector: #userUpsertPage .pageFooter])
+01:03:41.510 INFO - Done: [find element: By.cssSelector: #userUpsertPage .pageFooter]
+01:03:41.512 INFO - Executing: [find element: By.cssSelector: #saveUserButton])
+01:03:41.519 INFO - Done: [find element: By.cssSelector: #saveUserButton]
+01:03:41.521 INFO - Executing: [find element: By.cssSelector: #userUpsertPage])
+01:03:41.533 INFO - Done: [find element: By.cssSelector: #userUpsertPage]
+01:03:41.535 INFO - Executing: [mousemove: 35 true])
+01:03:41.548 INFO - Done: [mousemove: 35 true]
+01:03:41.551 INFO - Executing: [find element: By.cssSelector: #removeUserButton])
+01:03:41.564 INFO - Done: [find element: By.cssSelector: #removeUserButton]
+01:03:41.566 INFO - Executing: [is displayed: 48 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #removeUserButton]])
+01:03:41.576 INFO - Done: [is displayed: 48 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #removeUserButton]]
+01:03:41.579 INFO - Executing: [find element: By.cssSelector: #removeUserButton])
+01:03:41.604 INFO - Done: [find element: By.cssSelector: #removeUserButton]
+01:03:41.605 INFO - Executing: [click: 48 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #removeUserButton]])
+01:03:41.639 INFO - Done: [click: 48 [[ChromeDriver: chrome on MAC (cb2b0dcc7e7e7c35b4b880f8df5d4008)] -> css selector: #removeUserButton]]
+01:03:43.646 INFO - Executing: [find element: By.cssSelector: #usersListPage])
+01:03:43.660 INFO - Done: [find element: By.cssSelector: #usersListPage]
+01:03:43.663 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavHeader])
+01:03:43.675 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavHeader]
+01:03:43.677 INFO - Executing: [find element: By.cssSelector: #userSearchInput])
+01:03:43.684 INFO - Done: [find element: By.cssSelector: #userSearchInput]
+01:03:43.686 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList])
+01:03:43.692 INFO - Done: [find element: By.cssSelector: #usersUnorderedList]
+01:03:43.695 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)])
+01:03:43.702 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1)]
+01:03:43.704 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article])
+01:03:43.711 INFO - Done: [find element: By.cssSelector: #usersUnorderedList li:nth-child(1) article]
+01:03:43.714 INFO - Executing: [find element: By.cssSelector: #usersListPage #userNavFooter])
+01:03:43.721 INFO - Done: [find element: By.cssSelector: #usersListPage #userNavFooter]
+01:03:43.723 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage])
+01:03:43.736 INFO - Done: [find element: By.cssSelector: #usersUnorderedList #noResultsMessage]
+01:03:43.738 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList .addUserItem])
+01:03:43.750 INFO - Done: [find element: By.cssSelector: #usersUnorderedList .addUserItem]
+01:03:43.752 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2)])
+01:03:44.826 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.107)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+01:03:44.827 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.107)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2)}
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+01:03:45.264 INFO - Executing: [find element: By.cssSelector: #usersUnorderedList li:nth-child(2) article])
+01:03:46.250 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
@@ -730,9 +730,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2) article}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -758,7 +758,7 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-20:39:57.276 WARN - Exception: no such element
+01:03:46.251 WARN - Exception: no such element
   (Session info: chrome=44.0.2403.107)
   (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 12 milliseconds
@@ -766,52 +766,52 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 *** Element info: {Using=css selector, value=#usersUnorderedList li:nth-child(2) article}
-Session ID: fac7804e84c3173e7aab481057132e7a
+Session ID: cb2b0dcc7e7e7c35b4b880f8df5d4008
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.CNpe5N}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-20:39:57.703 INFO - Executing: [get: http://localhost:3000/table/users])
-20:39:57.938 INFO - Done: [get: http://localhost:3000/table/users]
-20:39:57.943 INFO - Executing: [set window size])
-20:39:58.144 INFO - Done: [set window size]
-20:39:58.147 INFO - Executing: [find element: By.cssSelector: body])
-20:39:58.160 INFO - Done: [find element: By.cssSelector: body]
-20:39:58.162 INFO - Executing: [find element: By.cssSelector: #mainPanel])
-20:39:58.176 INFO - Done: [find element: By.cssSelector: #mainPanel]
-20:39:58.180 INFO - Executing: [get: http://localhost:3000/list/users])
-20:39:58.384 INFO - Done: [get: http://localhost:3000/list/users]
-20:39:58.386 INFO - Executing: [set window size])
-20:39:58.497 INFO - Done: [set window size]
-20:39:58.499 INFO - Executing: [find element: By.cssSelector: body])
-20:39:58.513 INFO - Done: [find element: By.cssSelector: body]
-20:39:58.516 INFO - Executing: [find element: By.cssSelector: #mainPanel])
-20:39:58.529 INFO - Done: [find element: By.cssSelector: #mainPanel]
-20:39:58.531 INFO - Executing: [delete session: 572664dc-7fe9-491d-bd8b-d28c440e86bc])
-20:39:59.098 INFO - Done: [delete session: 572664dc-7fe9-491d-bd8b-d28c440e86bc]
-20:39:59.334 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@54eb840f, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]])
-20:39:59.335 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@54eb840f, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]
-Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 22564
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.qw5RTU}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.107, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+01:03:46.669 INFO - Executing: [get: http://localhost:3000/table/users])
+01:03:46.891 INFO - Done: [get: http://localhost:3000/table/users]
+01:03:46.895 INFO - Executing: [set window size])
+01:03:47.080 INFO - Done: [set window size]
+01:03:47.083 INFO - Executing: [find element: By.cssSelector: body])
+01:03:47.098 INFO - Done: [find element: By.cssSelector: body]
+01:03:47.100 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:03:47.113 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:03:47.117 INFO - Executing: [get: http://localhost:3000/list/users])
+01:03:47.307 INFO - Done: [get: http://localhost:3000/list/users]
+01:03:47.310 INFO - Executing: [set window size])
+01:03:47.421 INFO - Done: [set window size]
+01:03:47.423 INFO - Executing: [find element: By.cssSelector: body])
+01:03:47.436 INFO - Done: [find element: By.cssSelector: body]
+01:03:47.439 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+01:03:47.453 INFO - Done: [find element: By.cssSelector: #mainPanel]
+01:03:47.456 INFO - Executing: [delete session: 1b228220-655a-41b1-91bb-85f7e1f4fa87])
+01:03:48.021 INFO - Done: [delete session: 1b228220-655a-41b1-91bb-85f7e1f4fa87]
+01:03:48.251 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@52352d87, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]])
+01:03:48.252 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@52352d87, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 28425
 Only local connections are allowed.
-20:40:00.653 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@54eb840f, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]]
-20:40:00.658 INFO - Executing: [get: http://localhost:3000/list/users])
-20:40:01.633 INFO - Done: [get: http://localhost:3000/list/users]
-20:40:01.637 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
+01:03:49.568 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@52352d87, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]]
+01:03:49.572 INFO - Executing: [get: http://localhost:3000/list/users])
+01:03:50.557 INFO - Done: [get: http://localhost:3000/list/users]
+01:03:50.561 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
       return Session.get(data);
     }.apply(window, passedArgs);, [glassOpacity]])
-20:40:01.657 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
+01:03:50.588 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data){
       return Session.get(data);
     }.apply(window, passedArgs);, [glassOpacity]]
-20:40:02.666 INFO - Executing: [delete session: 3b4f1f5e-1b46-4963-a2ea-61ffcd8818a6])
-20:40:03.230 INFO - Done: [delete session: 3b4f1f5e-1b46-4963-a2ea-61ffcd8818a6]
-20:40:03.233 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@63cea096, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]])
-20:40:03.234 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@63cea096, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]
-Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 27012
+01:03:51.596 INFO - Executing: [delete session: 5e799398-54bc-4c65-b50f-32725cafbc1e])
+01:03:52.155 INFO - Done: [delete session: 5e799398-54bc-4c65-b50f-32725cafbc1e]
+01:03:52.158 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7058d7c2, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]])
+01:03:52.159 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7058d7c2, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 16213
 Only local connections are allowed.
-20:40:04.552 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@63cea096, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]]
-20:40:04.555 INFO - Executing: [get: http://localhost:3000/list/users])
-20:40:05.536 INFO - Done: [get: http://localhost:3000/list/users]
-20:40:05.539 INFO - Executing: [set script timeoutt: 5000])
-20:40:05.542 INFO - Done: [set script timeoutt: 5000]
-20:40:05.545 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+01:03:53.529 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7058d7c2, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Client Execute Async}]]
+01:03:53.533 INFO - Executing: [get: http://localhost:3000/list/users])
+01:03:54.498 INFO - Done: [get: http://localhost:3000/list/users]
+01:03:54.501 INFO - Executing: [set script timeoutt: 5000])
+01:03:54.504 INFO - Done: [set script timeoutt: 5000]
+01:03:54.508 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
@@ -819,7 +819,7 @@ Only local connections are allowed.
               meteorCallback(response);
           });
       }.apply(window, passedArgs);, [[testMethod, false]]])
-20:40:05.669 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+01:03:54.625 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
@@ -827,9 +827,9 @@ Only local connections are allowed.
               meteorCallback(response);
           });
       }.apply(window, passedArgs);, [[testMethod, false]]]
-20:40:05.674 INFO - Executing: [set script timeoutt: 5000])
-20:40:05.678 INFO - Done: [set script timeoutt: 5000]
-20:40:05.681 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+01:03:54.629 INFO - Executing: [set script timeoutt: 5000])
+01:03:54.633 INFO - Done: [set script timeoutt: 5000]
+01:03:54.636 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
@@ -837,7 +837,7 @@ Only local connections are allowed.
               meteorCallback(response);
           });
       }.apply(window, passedArgs);, [[testMethodWithInput, 3]]])
-20:40:05.796 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+01:03:54.750 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
@@ -845,5 +845,5 @@ Only local connections are allowed.
               meteorCallback(response);
           });
       }.apply(window, passedArgs);, [[testMethodWithInput, 3]]]
-20:40:05.799 INFO - Executing: [delete session: af43b528-e935-45b3-8677-37225a17f5e3])
-20:40:06.362 INFO - Done: [delete session: af43b528-e935-45b3-8677-37225a17f5e3]
+01:03:54.752 INFO - Executing: [delete session: 025278ea-19ad-44db-b521-0ef733854ae8])
+01:03:55.313 INFO - Done: [delete session: 025278ea-19ad-44db-b521-0ef733854ae8]
