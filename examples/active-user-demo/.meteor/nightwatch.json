@@ -1,13 +1,21 @@
 {
+  "starrynight": {
+    "version": "3.2.65"
+  },
+  "nightwatch": {
+    "version": "0.7.6"
+  },
   "src_folders": [
     "./tests/nightwatch/walkthroughs"
   ],
   "output_folder": "./tests/nightwatch/reports",
   "custom_commands_path": [
     "./tests/nightwatch/commands",
+    "./tests/nightwatch/commands/api/entry",
+    "./tests/nightwatch/commands/api/meteor",
+    "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
     "./tests/nightwatch/commands/methods",
-    "./tests/nightwatch/commands/actions",
     "client/app/components/activeUser/userEditPage/.tests",
     "client/app/components/activeUser/userImageGridPage/.tests",
     "client/app/components/activeUser/userNewPage/.tests",
@@ -15,7 +23,10 @@
     "client/app/components/activeUser/userUpsertPage/.tests",
     "client/app/components/activeUser/userUpsertPage/.tests/actions",
     "client/app/components/activeUser/usersListPage/.tests",
-    "client/app/components/activeUser/usersTablePage/.tests"
+    "client/app/components/activeUser/usersTablePage/.tests",
+    "packages/clinical-entry-pages/components/entrySignIn/.tests",
+    "packages/clinical-entry-pages/components/entrySignUp/.tests",
+    "packages/users-edit/components/userEditPage/.tests"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"

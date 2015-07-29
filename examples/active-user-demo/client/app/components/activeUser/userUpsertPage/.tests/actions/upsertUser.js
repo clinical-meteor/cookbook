@@ -1,55 +1,54 @@
-exports.command = function(action, user, callback) {
+exports.command = function ( action, user, callback ) {
 
-  if(action === "update"){
+  if ( action === "update" ){
     this
       .verify.elementPresent("#userUpsertPage .barcode")
-      .click("#userUpsertPage .barcode").pause(500)
+      .click("#userUpsertPage .barcode").pause(500);
   }
 
-  if(user){
+  if ( user ){
 
-    if(user.username){
+    if ( user.username ){
       this
-        .clearValue('#usernameInput')
-        .setValue('#usernameInput', user.username)
-        .verify.elementPresent("#usernameInput")
+        .clearValue("#usernameInput")
+        .setValue("#usernameInput", user.username)
+        .verify.elementPresent("#usernameInput");
     }
-    if(user.emails && user.emails && user.emails[0].address){
+    if ( user.emails && user.emails && user.emails[ 0 ].address ){
       this
-        .clearValue('#userEmailInput')
-        .setValue('#userEmailInput', user.emails[0].address)
-        .verify.elementPresent("#userEmailInput")
+        .clearValue("#userEmailInput")
+        .setValue("#userEmailInput", user.emails[ 0 ].address )
+        .verify.elementPresent("#userEmailInput");
     }
 
-    if(user.profile){
+    if ( user.profile ){
 
-      if(user.profile.avatar){
+      if ( user.profile.avatar ){
         this
-          .clearValue('#userAvatarInput')
-          .setValue('#userAvatarInput', user.profile.avatar)
-          .verify.elementPresent("#userAvatarInput")
+          .clearValue("#userAvatarInput")
+          .setValue("#userAvatarInput", user.profile.avatar )
+          .verify.elementPresent("#userAvatarInput");
       }
-      if(user.profile.fullName){
+      if ( user.profile.fullName ){
         this
-          .clearValue('#userFullNameInput')
-          .setValue('#userFullNameInput', user.profile.fullName)
-          .verify.elementPresent("#userFullNameInput")
+          .clearValue("#userFullNameInput")
+          .setValue("#userFullNameInput", user.profile.fullName)
+          .verify.elementPresent("#userFullNameInput");
       }
-      if(user.profile.description){
+      if ( user.profile.description ){
         this
-          .clearValue('#userDescriptionInput')
-          .setValue('#userDescriptionInput', user.profile.description)
-          .verify.elementPresent("#userDescriptionInput")
+          .clearValue("#userDescriptionInput")
+          .setValue("#userDescriptionInput", user.profile.description)
+          .verify.elementPresent("#userDescriptionInput");
       }
     }
   }
 
   this
     .verify.elementPresent("#saveUserButton")
-    .moveToElement('#saveUserButton', 10, 10)
-    .verify.visible('#saveUserButton')
-
-    .click("#saveUserButton").pause(500)
+    .moveToElement("#saveUserButton", 10, 10)
+    .verify.visible("#saveUserButton")
+    .click("#saveUserButton").pause(500);
 
   return this;
 };

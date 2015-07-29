@@ -15,7 +15,9 @@ accounts-password
 clinical:accounts-housemd
 clinical:barcode
 clinical:env
+clinical:hipaa
 clinical:extended-api
 clinical:entry-pages
+clinical:users-edit
 
-clinical:hipaa
+starrynight:glass-ui

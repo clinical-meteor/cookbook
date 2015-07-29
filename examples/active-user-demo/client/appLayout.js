@@ -55,10 +55,10 @@ Template.appLayout.delayedLayout = function(timeout){
 
 //==================================================================================================
 
-Template.registerHelper("getOpacity", function(){
-  return "background-color:rgba(255,255,255," + Session.get("glassOpacity") +");";
-  //return "background:linear-gradient(225deg, transparent 28.28px, white," + Session.get("glassOpacity") +");";
+Template.registerHelper("getOpacity", function (){
+  return "background: linear-gradient(225deg, transparent 28.28px, rgba(255,255,255," + Session.get("glassOpacity") + ") 0) top right;";
 });
+
 
 
 //==================================================================================================

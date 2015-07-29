@@ -1,44 +1,42 @@
-Session.setDefault('userSearchFilter', '');
-Session.setDefault('tableLimit', 20);
-Session.setDefault('paginationCount', 1);
-Session.setDefault('selectedPagination', 0);
-Session.setDefault('skipCount', 0);
+Session.setDefault( 'userSearchFilter', '' );
+Session.setDefault( 'tableLimit', 20 );
+Session.setDefault( 'paginationCount', 1 );
+Session.setDefault( 'selectedPagination', 0 );
+Session.setDefault( 'skipCount', 0 );
 
 
 
 //------------------------------------------------------------------------------
 // ROUTING
 
-Router.map(function(){
-  this.route('usersListPage', {
+Router.map( function () {
+  this.route( 'usersListPage', {
     path: '/list/users/',
     template: 'usersListPage',
-    data: function(){
+    data: function () {
       return Meteor.users.find();
     }
-  });
-});
+  } );
+} );
 
 
 //------------------------------------------------------------------------------
 // TEMPLATE INPUTS
 
-Template.usersListPage.events({
-  /*'click .addRecordItem':function(){
-    Router.go('/insert/user');
-  },*/
-  'click .addUserItem':function(){
-    Router.go('/insert/user');
+Template.usersListPage.events( {
+  'click .addUserItem': function () {
+    Router.go( '/insert/user' );
   },
-  'click .userItem':function(){
-    Router.go('/view/user/' + this._id);
+  'click .userItem': function () {
+    Router.go( '/view/user/' + this._id );
   },
   // use keyup to implement dynamic filtering
   // keyup is preferred to keypress because of end-of-line issues
-  'keyup #userSearchInput': function() {
-    Session.set('userSearchFilter', $('#userSearchInput').val());
+  'keyup #userSearchInput': function () {
+    Session.set( 'userSearchFilter', $( '#userSearchInput' )
+      .val() );
   }
-});
+} );
 
 
 //------------------------------------------------------------------------------
@@ -48,30 +46,32 @@ Template.usersListPage.events({
 var OFFSCREEN_CLASS = 'off-screen';
 var EVENTS = 'webkitTransitionEnd oTransitionEnd transitionEnd msTransitionEnd transitionend';
 
-Template.usersListPage.rendered = function(){
-  console.log("trying to update layout...");
+Template.usersListPage.rendered = function () {
+  console.log( 'trying to update layout...' );
 
-  Template.appLayout.delayedLayout(20);
+  Template.appLayout.delayedLayout( 20 );
 };
 
 
-Template.usersListPage.helpers({
-  hasNoContent: function(){
-    if(Meteor.users.find().count() === 0){
+Template.usersListPage.helpers( {
+  hasNoContent: function () {
+    if ( Meteor.users.find()
+      .count() === 0 ) {
       return true;
-    }else{
+    } else {
       return false;
     }
   },
-  usersList: function() {
-    Session.set('receivedData', new Date());
+  usersList: function () {
+    Session.set( 'receivedData', new Date() );
 
-    Template.appLayout.delayedLayout(20);
+    Template.appLayout.delayedLayout( 20 );
 
-    return Meteor.users.find({
+    return Meteor.users.find( {
       'profile.fullName': {
-        $regex: Session.get('userSearchFilter'),
+        $regex: Session.get( 'userSearchFilter' ),
         $options: 'i'
-    }});
+      }
+    } );
   }
-});
+} );

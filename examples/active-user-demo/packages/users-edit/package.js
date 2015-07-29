@@ -10,16 +10,21 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Package.onUse(function(api) {
+Package.onUse( function (api) {
   api.versionsFrom('1.1.0.2');
+
+  api.use('meteor-platform');
+  api.use('iron:router');
+  api.use('less');
+
   api.addFiles('components/userEditPage/userEditPage.html', ['client']);
   api.addFiles('components/userEditPage/userEditPage.js', ['client']);
   api.addFiles('components/userEditPage/userEditPage.less', ['client']);
-  //api.addFiles('components/reviewUserEditPage/reviewUserEditPage.js', ['client']);
 
+  api.export('userEditPage');
 });
 
-Package.onTest(function(api) {
+Package.onTest( function (api) {
   api.use('tinytest');
   api.use('clinical:users-edit');
   api.addFiles('users-edit-tests.js');
