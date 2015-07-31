@@ -97,7 +97,8 @@ module.exports = {
       .moveToElement('#userUpsertPage', 10, 10)
       .verify.visible('#removeUserButton')
       .click('#removeUserButton').pause(2000)
-      .reviewUsersListPage(false, false, true);
+      .reviewUsersListPage(false, false, true)
+      .end();
   },
   'K. Users Table Walkthrough' : function (client) {
     client

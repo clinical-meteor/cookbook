@@ -16,6 +16,8 @@
     "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
     "./tests/nightwatch/commands/methods",
+    "packages/active-form-upsert/components/userUpsertPage/.tests",
+    "packages/active-form-upsert/components/userUpsertPage/.tests/actions",
     "packages/clinical-entry-pages/components/entrySignIn/.tests",
     "packages/clinical-entry-pages/components/entrySignUp/.tests",
     "packages/users-edit/components/userEditPage/.tests",
@@ -23,9 +25,7 @@
     "packages/users-list/components/usersListPage/.tests",
     "packages/users-new/components/userNewPage/.tests",
     "packages/users-preview/components/userPreviewPage/.tests",
-    "packages/users-table/components/usersTablePage/.tests",
-    "packages/users-upsert/components/userUpsertPage/.tests",
-    "packages/users-upsert/components/userUpsertPage/.tests/actions"
+    "packages/users-table/components/usersTablePage/.tests"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"
