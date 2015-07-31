@@ -1,6 +1,6 @@
-exports.command = function(username, password) {
+exports.command = function ( username, password ) {
   this
-    .waitForElementVisible('#entrySignIn', 1000)
+    .waitForElementVisible("#entrySignIn", 1000)
       .verify.elementPresent("#signInPageTitle")
       .verify.elementPresent("#signInPageMessage")
       .verify.elementPresent("#signInPageEmailInput")
@@ -9,7 +9,7 @@ exports.command = function(username, password) {
       .verify.elementPresent("#needAnAccountButton")
 
       .verify.containsText("#signInPageTitle", "Sign In")
-      .verify.containsText("#signInPageMessage", "Improve your clincal practice with checklists.")
+      .verify.containsText("#signInPageMessage", "Improve your clincal practice with checklists.");
 
   return this; // allows the command to be chained.
 };

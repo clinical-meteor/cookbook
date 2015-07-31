@@ -16,80 +16,80 @@ var helloCthulu = {
 }
 
 module.exports = {
-  "FoosList Walkthrough" : function (client) {
+  "FoosList Walkthrough": function ( client ) {
     client
-      .url("http://localhost:3000/list/foos")
-      .resizeWindow(1024, 768)
+      .url( "http://localhost:3000/list/foos" )
+      .resizeWindow( 1024, 768 )
 
-      .reviewMainPanel()
+    .reviewMainPanel()
 
-      .sectionBreak('Reviewing Foo List Page')
-      .reviewFoosListPage(false, false, false, true)
-      .click("#noResultsMessage").pause(300)
-      .waitForPage('#fooUpsertPage')
+    .sectionBreak( 'Reviewing Foo List Page' )
+      .reviewFoosListPage( false, false, false, true )
+      .click( "#noResultsMessage" ).pause( 300 )
+      .waitForPage( '#fooUpsertPage' )
 
-      .sectionBreak('Reviewing Foo Upsert Page')
+    .sectionBreak( 'Reviewing Foo Upsert Page' )
       .reviewFooUpsertPage()
 
-      .sectionBreak('Upserting Octocat Info')
-      .upsertFooInfo('insert', octocat)
+    .sectionBreak( 'Upserting Octocat Info' )
+      .upsertFooInfo( 'insert', octocat )
 
-      .sectionBreak('Reviewing Octocat Info')
-      .reviewFooUpsertPage(octocat)
+    .sectionBreak( 'Reviewing Octocat Info' )
+      .reviewFooUpsertPage( octocat )
 
-      .sectionBreak('Upserting HelloCthulu Title')
-      .upsertFooInfo('update', false, helloCthulu.title, false, false, false)
-      .reviewFooUpsertPage(false, helloCthulu.title, octocat.url, octocat.imageUrl, octocat.description)
+    .sectionBreak( 'Upserting HelloCthulu Title' )
+      .upsertFooInfo( 'update', false, helloCthulu.title, false, false, false )
+      .reviewFooUpsertPage( false, helloCthulu.title, octocat.url, octocat.imageUrl, octocat.description )
 
-      .sectionBreak('Upserting HelloCthulu Info')
-      .upsertFooInfo('update', helloCthulu)
+    .sectionBreak( 'Upserting HelloCthulu Info' )
+      .upsertFooInfo( 'update', helloCthulu )
 
 
-      .sectionBreak('Reviewing HelloCthulu Info')
-      .reviewFooUpsertPage(helloCthulu)
+    .sectionBreak( 'Reviewing HelloCthulu Info' )
+      .reviewFooUpsertPage( helloCthulu )
 
-      .verify.elementPresent("#fooListButton")
-      .verify.visible("#fooListButton")
-      .moveToElement('#fooListButton', 10, 10)
-      .click("#fooListButton").pause(500)
+    .verify.elementPresent( "#fooListButton" )
+      .verify.visible( "#fooListButton" )
+      .moveToElement( '#fooListButton', 10, 10 )
+      .click( "#fooListButton" ).pause( 500 )
       //.waitForPage('#foosListPage')
 
-      .sectionBreak('Reviewing Foo List Page')
-      .reviewFoosListPage(helloCthulu.title, false, helloCthulu.description, false)
+    .sectionBreak( 'Reviewing Foo List Page' )
+      .reviewFoosListPage( helloCthulu.title, false, helloCthulu.description, false )
 
-      // we've only added one new record; there shouldn't be a second (yet)!
-      .verify.elementNotPresent("#foosUnorderedList li:nth-child(2)")
-      .click("#foosUnorderedList li:nth-child(1)").pause(300)
+    // we've only added one new record; there shouldn't be a second (yet)!
+    .verify.elementNotPresent( "#foosUnorderedList li:nth-child(2)" )
+      .click( "#foosUnorderedList li:nth-child(1)" ).pause( 300 )
 
-      .sectionBreak('Removing Foo')
-      .reviewFooUpsertPage(helloCthulu)
-      .moveToElement('#removeFooButton', 10, 10)
-      .click("#removeFooButton").pause(300)
+    .sectionBreak( 'Removing Foo' )
+      .reviewFooUpsertPage( helloCthulu )
+      .moveToElement( '#removeFooButton', 10, 10 )
+      .click( "#removeFooButton" ).pause( 300 )
 
-      .sectionBreak('Foo List Should Be Empty')
-      .reviewFoosListPage(false, false, false, true)
+    .sectionBreak( 'Foo List Should Be Empty' )
+      .reviewFoosListPage( false, false, false, true )
 
-      .end();
+    .end();
   },
 
-  "FooTable Walkthrough" : function (client) {
+  "FooTable Walkthrough": function ( client ) {
     client
-      .url("http://localhost:3000/list/foos")
-      .resizeWindow(1024, 768)
+      .url( "http://localhost:3000/list/foos" )
+      .resizeWindow( 1024, 768 )
       .reviewMainPanel()
 
 
-      .end();
+    .end();
   },
 
-  "FooImageGrid Walkthrough" : function (client) {
+  "FooImageGrid Walkthrough": function ( client ) {
     client
-      .url("http://localhost:3000/list/foos")
-      .resizeWindow(1024, 768)
+      .url( "http://localhost:3000/list/foos" )
+      .resizeWindow( 1024, 768 )
       .reviewMainPanel()
 
 
-      .end();
+    .end();
   }
 
 };
