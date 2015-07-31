@@ -36,8 +36,7 @@ Template.appLayout.helpers({
   },
   getStyle: function () {
     return parseStyle({
-      "left": Session.get('transparencyDivLeft') + "px;",
-      "height": Session.get('transparencyDivHeight') + "px;"
+      "left": Session.get('transparencyDivLeft') + "px;"
     });
   }
 });
@@ -59,8 +58,8 @@ Template.appLayout.delayedLayout = function(timeout){
 
 //==================================================================================================
 
-Template.registerHelper("getOpacity", function(){
-  return "opacity: " + Session.get("glassOpacity") + ";";
+Template.registerHelper("getOpacity", function (){
+  return "background: linear-gradient(225deg, transparent 28.28px, rgba(255,255,255," + Session.get("glassOpacity") + ") 0) top right;";
 });
 
 

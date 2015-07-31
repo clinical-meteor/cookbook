@@ -23,8 +23,9 @@ clinical:users-image-grid
 clinical:users-new
 clinical:users-table
 clinical:users-list
-#clinical:users-upsert
 clinical:users-preview
 clinical:active-form-upsert
+#clinical:users-upsert
+
 
 starrynight:glass-ui

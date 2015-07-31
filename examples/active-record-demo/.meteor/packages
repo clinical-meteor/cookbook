@@ -9,6 +9,12 @@ autopublish
 insecure
 awatson1978:fonts-helveticas
 fortawesome:fontawesome
-clinical:barcode
 iron:router
 grove:less
+
+starrynight:glass-ui
+starrynight:dropdatabase
+
+#clinical:extended-api
+clinical:barcode
+clinical:extended-api

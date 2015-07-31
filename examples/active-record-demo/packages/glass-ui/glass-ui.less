@@ -1,0 +1,231 @@
+
+//==================================================================================================
+//
+
+  input, textarea{
+    //background-color: inherit;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 14px;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: 300;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-left: 10px;     /* Opera/IE 8+ */
+  }
+
+  input:focus, textarea:focus{
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+  // button{
+  //   -webkit-appearance: square-button;
+  //   background-color: inherit;
+  //   border: 1px solid inherit;
+  //   font-size: 14px;
+  //   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //   font-style: 300;
+  //   padding: .5rem;
+  // }
+  button{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: 400;
+    padding: .75rem 0;
+    line-height: 1.5rem !important;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: inherit;
+  }
+
+  button:hover{
+    cursor: pointer;
+  }
+
+
+
+//==================================================================================================
+//
+
+  h1{
+    margin-bottom: 0px;
+    font-weight: 300;
+  }
+  h2{
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 300;
+  }
+  h4{
+    //color: gray;
+    font-weight: 300;
+    margin-top: 0px;
+  }
+  hr{
+    margin-top: 0px;
+  }
+
+
+
+//==================================================================================================
+//
+
+.glass-button{
+  border: 1px solid gray;
+}
+.glass-card-footer{
+  border: 1px solid inherit;
+}
+.glass-footer-btn{
+  border: 0px solid white;
+}
+.glass-footer-btn:focus{
+  outline: none;
+}
+.glass-footer-btn:hover{
+  border: 0px solid white;
+  color: maroon;
+}
+
+//==================================================================================================
+//
+
+.btn-primary{
+  background-color: #831d2c;
+  color: #ffffff;
+}
+.btn-gray{
+  background-color: #aaaaaa;
+  color: white;
+}
+.btn-main{
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+//==================================================================================================
+//
+
+
+
+#mainPanel:hover{
+  cursor: pointer;
+  .indexButton, .imageGridButton, .listButton, .lockButton, .tableButton, .pageFooter{
+    visibility: visible;
+  }
+  .indexButton:hover,
+  .listButton:hover,
+  .imageGridButton:hover,
+  .recordId:hover,
+  .lockButton:hover,
+  .tableButton:hover,
+  .pageFooter:hover{
+    color: maroon;
+  }
+}
+
+.page{
+  .indexButton{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 150%;
+    visibility: hidden;
+  }
+  .imageGridButton{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 150%;
+    visibility: hidden;
+  }
+  .listButton{
+    position: absolute;
+    top: 10px;
+    right: 90px;
+    font-size: 150%;
+    visibility: hidden;
+  }
+  .tableButton{
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    font-size: 150%;
+    visibility: hidden;
+  }
+  .lockButton, .unlockButton{
+    position: absolute;
+    top: 10px;
+    left: 355px;
+    font-size: 150%;
+    visibility: hidden;
+  }
+  .pageFooter{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+}
+
+
+
+
+
+
+//==================================================================================================
+//
+
+.fullwidth{
+  width: 100%;
+}
+.hidden{
+  visibility: hidden;
+}
+.visible{
+  visibility: visible;
+}
+
+//==================================================================================================
+//
+
+
+
+
+.form-control{
+  width: 100%;
+  margin-bottom: 10px;
+  border-top: 1px solid gray !important;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.recordId{
+  position: absolute;
+  top: 10px;
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+.glass{
+  border: 0px;
+}
+
+
+
+//==================================================================================================
+//
+
+
+.gray{
+  color: gray;
+}
+.lightgray{
+  color: lightgray;
+}
+.large{
+  font-size: 2em !important;
+}

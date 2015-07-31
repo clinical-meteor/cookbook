@@ -16,78 +16,90 @@ var helloCthulu = {
 }
 
 module.exports = {
-  "FoosList Walkthrough": function ( client ) {
+  tags: ['active', 'record', 'validation'],
+  before: function ( client ){
+    // this depends on the accounts-housemd package
+    client
+      .url('http://localhost:3000')
+      //.meteorCall('removeAllUsers', false, false)
+      .pause(1000);
+  },
+  "A. FoosList Walkthrough": function ( client ) {
     client
       .url( "http://localhost:3000/list/foos" )
       .resizeWindow( 1024, 768 )
 
     .reviewMainPanel()
 
-    .sectionBreak( 'Reviewing Foo List Page' )
+  },
+  "B. Reviewing Foo List Page": function ( client ) {
+    client
       .reviewFoosListPage( false, false, false, true )
       .click( "#noResultsMessage" ).pause( 300 )
       .waitForPage( '#fooUpsertPage' )
-
-    .sectionBreak( 'Reviewing Foo Upsert Page' )
+  },
+  "C. Reviewing Foo Upsert Page": function ( client ) {
+    client
       .reviewFooUpsertPage()
-
-    .sectionBreak( 'Upserting Octocat Info' )
+  },
+  "D. Upserting Octocat Info": function ( client ) {
+    client
       .upsertFooInfo( 'insert', octocat )
-
-    .sectionBreak( 'Reviewing Octocat Info' )
+  },
+  "E. Reviewing Octocat Info": function ( client ) {
+    client
       .reviewFooUpsertPage( octocat )
-
-    .sectionBreak( 'Upserting HelloCthulu Title' )
+  },
+  "F. Upserting HelloCthulu Title": function ( client ) {
+    client
       .upsertFooInfo( 'update', false, helloCthulu.title, false, false, false )
       .reviewFooUpsertPage( false, helloCthulu.title, octocat.url, octocat.imageUrl, octocat.description )
-
-    .sectionBreak( 'Upserting HelloCthulu Info' )
+  },
+  "G. Upserting HelloCthulu Info": function ( client ) {
+    client
       .upsertFooInfo( 'update', helloCthulu )
-
-
-    .sectionBreak( 'Reviewing HelloCthulu Info' )
+  },
+  "H. Reviewing HelloCthulu Info": function ( client ) {
+    client
       .reviewFooUpsertPage( helloCthulu )
-
-    .verify.elementPresent( "#fooListButton" )
+      .verify.elementPresent( "#fooListButton" )
       .verify.visible( "#fooListButton" )
       .moveToElement( '#fooListButton', 10, 10 )
       .click( "#fooListButton" ).pause( 500 )
       //.waitForPage('#foosListPage')
-
-    .sectionBreak( 'Reviewing Foo List Page' )
+  },
+  "I. Reviewing Foo List Page": function ( client ) {
+    client
+      .sectionBreak( 'Reviewing Foo List Page' )
       .reviewFoosListPage( helloCthulu.title, false, helloCthulu.description, false )
 
     // we've only added one new record; there shouldn't be a second (yet)!
     .verify.elementNotPresent( "#foosUnorderedList li:nth-child(2)" )
       .click( "#foosUnorderedList li:nth-child(1)" ).pause( 300 )
-
-    .sectionBreak( 'Removing Foo' )
+  },
+  "J. Removing Foo": function ( client ) {
+    client
       .reviewFooUpsertPage( helloCthulu )
       .moveToElement( '#removeFooButton', 10, 10 )
       .click( "#removeFooButton" ).pause( 300 )
-
-    .sectionBreak( 'Foo List Should Be Empty' )
       .reviewFoosListPage( false, false, false, true )
 
     .end();
   },
 
-  "FooTable Walkthrough": function ( client ) {
+  "K. FooTable Walkthrough": function ( client ) {
     client
       .url( "http://localhost:3000/list/foos" )
       .resizeWindow( 1024, 768 )
       .reviewMainPanel()
-
 
     .end();
   },
-
-  "FooImageGrid Walkthrough": function ( client ) {
+  "L. FooImageGrid Walkthrough": function ( client ) {
     client
       .url( "http://localhost:3000/list/foos" )
       .resizeWindow( 1024, 768 )
       .reviewMainPanel()
-
 
     .end();
   }

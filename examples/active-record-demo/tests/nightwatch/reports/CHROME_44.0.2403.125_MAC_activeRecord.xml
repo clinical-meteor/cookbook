@@ -1,327 +1,132 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
-            tests="3">
+<testsuites errors="1"
+            failures="1"
+            tests="12">
 
   <testsuite name="activeRecord"
-    errors="0" failures="0" hostname="" id="" package="activeRecord" skipped="0"
-    tests="3" time="25.34" timestamp="Fri, 31 Jul 2015 06:50:45 GMT">
+    errors="1" failures="1" hostname="" id="" package="activeRecord" skipped="10"
+    tests="12" time="15.59" timestamp="Fri, 31 Jul 2015 19:03:59 GMT">
   
-    <testcase name="FoosList Walkthrough" time="18.56" assertions="147">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-015050-GMT-0500.png]]</system-out>
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-015052-GMT-0500.png]]</system-out>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-015100-GMT-0500.png]]</system-out>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-015102-GMT-0500.png]]</system-out>
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-015103-GMT-0500.png]]</system-out>
-    
-    </testcase>
-  
-    <testcase name="FooTable Walkthrough" time="3.420" assertions="3">
-
-    
+    <testcase name="A. FoosList Walkthrough" time="4.614" assertions="2">
 
     
 
     
     </testcase>
+      <system-err>
+        Unable to locate element: &quot;#noResultsMessage&quot; using: css selector
+      </system-err>
   
-    <testcase name="FooImageGrid Walkthrough" time="3.368" assertions="3">
+    <testcase name="B. Reviewing Foo List Page" time="10.97" assertions="12">
 
     
 
     
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Testing if element &lt;#foosUnorderedList #noResultsMessage&gt; is present.">Testing if element &lt;#foosUnorderedList #noResultsMessage&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
+    at HttpRequest.emit (events.js:98:17)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
+    at HttpRequest.emit (events.js:106:17)
+    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:943:16
+    at process._tickCallback (node.js:419:13)</failure>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140406-GMT-0500.png]]</system-out>
+      <failure message="Testing if element &lt;#foosUnorderedList .addFooItem&gt; is present.">Testing if element &lt;#foosUnorderedList .addFooItem&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
+    at HttpRequest.emit (events.js:98:17)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
+    at HttpRequest.emit (events.js:106:17)
+    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:943:16
+    at process._tickCallback (node.js:419:13)</failure>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140407-GMT-0500.png]]</system-out>
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140409-GMT-0500.png]]</system-out>
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140410-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140411-GMT-0500.png]]</system-out>
+      <failure message="Timed out while waiting for element &lt;#fooUpsertPage&gt; to be present for 3000 milliseconds.">Timed out while waiting for element &lt;#fooUpsertPage&gt; to be present for 3000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
+    at F.WaitForElement.fail (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/_waitForElement.js:193:15)
+    at F.WaitForElementPresent.elementNotFound (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/waitForElementPresent.js:57:15)
+    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/_waitForElement.js:220:17)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
+    at HttpRequest.emit (events.js:98:17)
+    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:334:15)
+    at HttpRequest.emit (events.js:106:17)
+    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:148:16)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:943:16</failure>
 
     
     </testcase>
+      <system-err>
+        Unable to locate element: &quot;#noResultsMessage&quot; using: css selector
+      </system-err>
   
+  
+    
+    <testcase
+      name="C. Reviewing Foo Upsert Page">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="D. Upserting Octocat Info">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="E. Reviewing Octocat Info">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="F. Upserting HelloCthulu Title">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="G. Upserting HelloCthulu Info">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="H. Reviewing HelloCthulu Info">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="I. Reviewing Foo List Page">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="J. Removing Foo">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="K. FooTable Walkthrough">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="L. FooImageGrid Walkthrough">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

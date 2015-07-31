@@ -1,20 +1,15 @@
 <head>
-  <title>Hello StarryNight</title>
+  <title>ActiveRecord</title>
 </head>
 
 <template name="appLayout">
   {{> navbarHeader}}
 
     <div class="hidden">{{resized}}</div>
-
-    <div id="transparentPanel" class="border-radius" style="{{getStyle}} {{getOpacity}}"></div>
-    <div id="mainPanel" class="padded helveticas" style="{{getStyle}}">
-      <div id="innerPanel">
-
-        {{> yield }}
-
-      </div>
+    <div id="mainPanel" class="padded helveticas" style="{{getStyle}} {{getOpacity}}">
+      {{> yield }}
     </div>
+
 
   {{> navbarFooter}}
 </template>

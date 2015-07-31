@@ -9,6 +9,7 @@ boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
 clinical:barcode@2.0.2
+clinical:extended-api@1.0.1
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
@@ -51,6 +52,8 @@ routepolicy@1.0.5
 session@1.1.0
 spacebars@1.0.6
 spacebars-compiler@1.0.6
+starrynight:dropdatabase@0.0.1
+starrynight:glass-ui@0.1.4
 templating@1.1.1
 tracker@1.0.7
 ui@1.0.6
