@@ -5,9 +5,9 @@
 
   <testsuite name="activeRecord"
     errors="1" failures="1" hostname="" id="" package="activeRecord" skipped="10"
-    tests="12" time="15.59" timestamp="Fri, 31 Jul 2015 19:03:59 GMT">
+    tests="12" time="15.09" timestamp="Sat, 01 Aug 2015 00:09:28 GMT">
   
-    <testcase name="A. FoosList Walkthrough" time="4.614" assertions="2">
+    <testcase name="A. FoosList Walkthrough" time="4.761" assertions="2">
 
     
 
@@ -17,7 +17,7 @@
         Unable to locate element: &quot;#noResultsMessage&quot; using: css selector
       </system-err>
   
-    <testcase name="B. Reviewing Foo List Page" time="10.97" assertions="12">
+    <testcase name="B. Reviewing Foo List Page" time="10.33" assertions="12">
 
     
 
@@ -41,7 +41,7 @@
     at IncomingMessage.emit (events.js:117:20)
     at _stream_readable.js:943:16
     at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140406-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-190934-GMT-0500.png]]</system-out>
       <failure message="Testing if element &lt;#foosUnorderedList .addFooItem&gt; is present.">Testing if element &lt;#foosUnorderedList .addFooItem&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
     at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
     at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
@@ -52,11 +52,11 @@
     at IncomingMessage.emit (events.js:117:20)
     at _stream_readable.js:943:16
     at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140407-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-190936-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140409-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-190937-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140410-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-140411-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-190938-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-190939-GMT-0500.png]]</system-out>
       <failure message="Timed out while waiting for element &lt;#fooUpsertPage&gt; to be present for 3000 milliseconds.">Timed out while waiting for element &lt;#fooUpsertPage&gt; to be present for 3000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
     at F.WaitForElement.fail (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/_waitForElement.js:193:15)
     at F.WaitForElementPresent.elementNotFound (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands/waitForElementPresent.js:57:15)
