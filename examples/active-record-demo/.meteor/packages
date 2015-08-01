@@ -13,7 +13,7 @@ iron:router
 grove:less
 
 starrynight:glass-ui
-starrynight:dropdatabase
+starrynight:dropdatabase@0.0.2
 
 #clinical:extended-api
 clinical:barcode

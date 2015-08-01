@@ -17,6 +17,6 @@ Router.route('/', {
 });
 
 
-Router.onAfterAction = function(){
+Router.onAfterAction = function (){
   Template.appLayout.delayedLayout(50);
-}
+};

@@ -1,40 +1,1578 @@
-19:20:16.197 INFO - Launching a standalone server
+19:28:23.749 INFO - Launching a standalone server
 Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/starrynight/node_modules/chromedriver/bin/chromedriver
-19:20:16.231 INFO - Java: Apple Inc. 20.65-b04-466.1
-19:20:16.231 INFO - OS: Mac OS X 10.10.2 x86_64
-19:20:16.240 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
-19:20:16.296 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
-19:20:16.345 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-19:20:16.346 INFO - Version Jetty/5.1.x
-19:20:16.346 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-19:20:16.347 INFO - Started HttpContext[/selenium-server,/selenium-server]
-19:20:16.347 INFO - Started HttpContext[/,/]
-19:20:16.415 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@643c0007
-19:20:16.415 INFO - Started HttpContext[/wd,/wd]
-19:20:16.420 INFO - Started SocketListener on 0.0.0.0:4444
-19:20:16.420 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
-19:20:16.663 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@43ee148b, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]])
-19:20:16.674 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@43ee148b, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]
-Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 42851
+19:28:23.783 INFO - Java: Apple Inc. 20.65-b04-466.1
+19:28:23.783 INFO - OS: Mac OS X 10.10.2 x86_64
+19:28:23.792 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+19:28:23.865 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+19:28:23.895 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+19:28:23.896 INFO - Version Jetty/5.1.x
+19:28:23.897 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+19:28:23.897 INFO - Started HttpContext[/selenium-server,/selenium-server]
+19:28:23.897 INFO - Started HttpContext[/,/]
+19:28:23.963 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@643c0007
+19:28:23.963 INFO - Started HttpContext[/wd,/wd]
+19:28:23.969 INFO - Started SocketListener on 0.0.0.0:4444
+19:28:23.969 INFO - Started org.openqa.jetty.jetty.Server@acfec48
+19:28:24.212 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@5983e7de, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]])
+19:28:24.223 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@5983e7de, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 5886
 Only local connections are allowed.
-19:20:18.328 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@43ee148b, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]]
-19:20:18.338 INFO - Executing: [get: http://localhost:3000])
-19:20:19.123 INFO - Done: [get: http://localhost:3000]
-19:20:19.128 INFO - Executing: [set script timeoutt: 5000])
-19:20:19.133 INFO - Done: [set script timeoutt: 5000]
-19:20:19.138 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+19:28:26.066 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@5983e7de, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]]
+19:28:26.079 INFO - Executing: [get: http://localhost:3000])
+19:28:26.853 INFO - Done: [get: http://localhost:3000]
+19:28:26.857 INFO - Executing: [set script timeoutt: 5000])
+19:28:26.863 INFO - Done: [set script timeoutt: 5000]
+19:28:26.868 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
               var response = (meteorError ? { error: meteorError } : { result: meteorResult });
               meteorCallback(response);
           });
-      }.apply(window, passedArgs);, [[dropDatabases, null]]])
-19:20:19.270 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
+      }.apply(window, passedArgs);, [[dropDatabase, null]]])
+19:28:27.016 INFO - Done: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (meteorMethodNameAndArguments, meteorCallback) {
           var meteorMethodName = meteorMethodNameAndArguments[0];
           var meteorArguments = meteorMethodNameAndArguments[1];
           Meteor.call(meteorMethodName, meteorArguments, function (meteorError, meteorResult) {
               var response = (meteorError ? { error: meteorError } : { result: meteorResult });
               meteorCallback(response);
           });
-      }.apply(window, passedArgs);, [[dropDatabases, null]]]
+      }.apply(window, passedArgs);, [[dropDatabase, null]]]
+19:28:28.021 INFO - Executing: [get: http://localhost:3000/list/foos])
+19:28:28.274 INFO - Done: [get: http://localhost:3000/list/foos]
+19:28:28.281 INFO - Executing: [set window size])
+19:28:28.509 INFO - Done: [set window size]
+19:28:28.513 INFO - Executing: [find element: By.cssSelector: body])
+19:28:28.538 INFO - Done: [find element: By.cssSelector: body]
+19:28:28.542 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+19:28:28.555 INFO - Done: [find element: By.cssSelector: #mainPanel]
+19:28:28.560 INFO - Executing: [find element: By.cssSelector: #foosListPage])
+19:28:28.573 INFO - Done: [find element: By.cssSelector: #foosListPage]
+19:28:28.578 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavHeader])
+19:28:28.592 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavHeader]
+19:28:28.596 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+19:28:28.609 INFO - Done: [find element: By.cssSelector: #fooSearchInput]
+19:28:28.613 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList])
+19:28:28.625 INFO - Done: [find element: By.cssSelector: #foosUnorderedList]
+19:28:28.632 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+19:28:28.647 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)]
+19:28:28.651 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+19:28:28.664 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article]
+19:28:28.667 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavFooter])
+19:28:28.680 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavFooter]
+19:28:28.683 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage])
+19:28:28.698 INFO - Done: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage]
+19:28:28.704 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList .addFooItem])
+19:28:28.716 INFO - Done: [find element: By.cssSelector: #foosUnorderedList .addFooItem]
+19:28:28.720 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2)])
+19:28:29.953 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:29.955 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:30.352 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2) article])
+19:28:31.083 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:31.084 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:31.343 INFO - Executing: [find element: By.cssSelector: #noResultsMessage])
+19:28:31.357 INFO - Done: [find element: By.cssSelector: #noResultsMessage]
+19:28:31.362 INFO - Executing: [click: 6 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #foosUnorderedList li:nth-child(1)]])
+19:28:31.393 INFO - Done: [click: 6 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #foosUnorderedList li:nth-child(1)]]
+19:28:31.703 INFO - Executing: [find elements: By.cssSelector: #fooUpsertPage])
+19:28:31.719 INFO - Done: [find elements: By.cssSelector: #fooUpsertPage]
+19:28:31.721 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUpsertPage]])
+19:28:31.733 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUpsertPage]]
+19:28:31.740 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+19:28:31.755 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+19:28:31.758 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+19:28:31.772 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+19:28:31.775 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+19:28:31.790 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+19:28:31.793 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+19:28:31.805 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+19:28:31.808 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+19:28:31.821 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+19:28:31.824 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:31.838 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:31.842 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:31.855 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:31.859 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:31.872 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:31.875 INFO - Executing: [find element: By.cssSelector: #fooImage])
+19:28:31.888 INFO - Done: [find element: By.cssSelector: #fooImage]
+19:28:31.891 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:31.903 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:31.906 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+19:28:31.919 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+19:28:31.923 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:31.936 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:31.941 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:31.948 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:31.950 INFO - Executing: [clear: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput]])
+19:28:31.968 INFO - Done: [clear: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput]]
+19:28:31.973 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:31.981 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:31.985 INFO - Executing: [send keys: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], [O, c, t, o, c, a, t]])
+19:28:32.031 INFO - Done: [send keys: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], [O, c, t, o, c, a, t]]
+19:28:32.034 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:32.047 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:32.051 INFO - Executing: [clear: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput]])
+19:28:32.069 INFO - Done: [clear: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput]]
+19:28:32.072 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:32.079 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:32.082 INFO - Executing: [send keys: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, e, n, ., w, i, k, i, p, e, d, i, a, ., o, r, g, /, w, i, k, i, /, O, c, t, o, c, a, t]])
+19:28:32.156 INFO - Done: [send keys: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, e, n, ., w, i, k, i, p, e, d, i, a, ., o, r, g, /, w, i, k, i, /, O, c, t, o, c, a, t]]
+19:28:32.159 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:32.167 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:32.170 INFO - Executing: [clear: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput]])
+19:28:32.188 INFO - Done: [clear: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput]]
+19:28:32.191 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:32.198 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:32.203 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]])
+19:28:32.289 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], [h, t, t, p, s, :, /, /, a, s, s, e, t, s, -, c, d, n, ., g, i, t, h, u, b, ., c, o, m, /, i, m, a, g, e, s, /, m, o, d, u, l, e, s, /, l, o, g, o, s, _, p, a, g, e, /, O, c, t, o, c, a, t, ., p, n, g]]
+19:28:32.292 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:32.317 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:32.321 INFO - Executing: [clear: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput]])
+19:28:32.338 INFO - Done: [clear: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput]]
+19:28:32.342 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:32.349 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:32.365 INFO - Executing: [send keys: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]])
+19:28:32.897 INFO - Done: [send keys: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], [F, u, n, n, i, l, y,  , e, n, o, u, g, h, ,,  , O, x, l, e, y,  , d, e, s, i, g, n, e, d,  , t, h, e,  , o, c, t, o, c, a, t,  , r, i, g, h, t,  , a, r, o, u, n, d,  , t, h, e,  , s, a, m, e,  , t, i, m, e,  , a, s,  , t, h, e,  , T, w, i, t, t, e, r,  , b, i, r, d, ,,  , i, n,  , 2, 0, 0, 6, .,  , G, i, t, H, u, b,  , w, a, n, t, e, d,  , t, o,  , u, s, e,  , i, t,  , f, o, r,  , t, h, e, i, r,  , l, o, g, o, ,,  , s, o,  , t, h, e, y,  , r, e, a, c, h, e, d,  , o, u, t,  , t, o,  , O, x, l, e, y,  , t, o,  , b, y, p, a, s, s,  , i, S, t, o, c, k,  , r, u, l, e, s,  , a, n, d,  , b, u, y,  , t, h, e,  , r, i, g, h, t, s,  , t, o,  , t, h, e,  , O, c, t, o, c, a, t,  , d, i, r, e, c, t, l, y, .,  , O, n,  , Q, u, o, r, a, ,,  , G, i, t, H, u, b,  , c, o, -, f, o, u, n, d, e, r,  , P, J,  , H, y, e, t, t,  , s, a, i, d, ,,  , �, E, v, e, r, y, b, o, d, y,  , s, e, e, m, s,  , t, o,  , l, o, v, e,  , t, h, e,  , l, i, t, t, l, e,  , g, u, y, .,  , I, �, d,  , b, e,  , l, y, i, n, g,  , i, f,  , I,  , t, o, l, d,  , y, o, u,  , t, h, e,  , t, h, o, u, g, h, t,  , o, f,  , h, i, r, i, n, g,  , s, o, m, e, o, n, e,  , t, o,  , j, u, s, t,  , d, o,  , O, c, t, o, c, a, t,  , m, e, r, c, h, a, n, d, i, s, i, n, g,  , h, a, d,  , n, e, v, e, r,  , c, r, o, s, s, e, d,  , m, y,  , m, i, n, d, ., �,  , O, x, l, e, y,  , s, a, y, s,  , h, e,  , d, o, e, s, n, �, t,  , c, l, e, a, r, l, y,  , r, e, c, o, l, l, e, c, t,  , c, r, e, a, t, i, n, g,  , t, h, e,  , O, c, t, o, c, a, t, ,,  , b, u, t,  , t, h, a, t,  , h, e,  , k, n, o, w, s,  , h, e,  , u, s, e, d,  , t, h, e,  , h, e, a, d,  , o, n,  , a, n, o, t, h, e, r,  , d, e, s, i, g, n, ,,  , a, n, d,  , c, o, p, i, e, d,  , a, n, d,  , p, a, s, t, e, d,  , i, t,  , o, n, t, o,  , t, e, n, t, a, c, l, e, s,  , t, h, r, o, u, g, h,  , I, l, l, u, s, t, r, a, t, o, r, .]]
+19:28:32.900 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:32.996 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:32.999 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:33.006 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:33.009 INFO - Executing: [mousemove: 20 true])
+19:28:33.023 INFO - Done: [mousemove: 20 true]
+19:28:33.026 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:33.033 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:33.036 INFO - Executing: [is displayed: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]])
+19:28:33.047 INFO - Done: [is displayed: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]]
+19:28:33.049 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:33.057 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:33.059 INFO - Executing: [click: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]])
+19:28:33.087 INFO - Done: [click: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]]
+19:28:33.394 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+19:28:33.408 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+19:28:33.410 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+19:28:33.423 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+19:28:33.427 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+19:28:33.439 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+19:28:33.443 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+19:28:33.456 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+19:28:33.459 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+19:28:33.472 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+19:28:33.476 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:33.489 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:33.491 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:33.499 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:33.502 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:33.509 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:33.511 INFO - Executing: [find element: By.cssSelector: #fooImage])
+19:28:33.524 INFO - Done: [find element: By.cssSelector: #fooImage]
+19:28:33.527 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:33.535 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:33.539 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:33.547 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:33.552 INFO - Executing: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value])
+19:28:33.562 INFO - Done: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value]
+19:28:33.565 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:33.572 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:33.574 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value])
+19:28:33.582 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value]
+19:28:33.597 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:33.604 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:33.607 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value])
+19:28:33.615 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value]
+19:28:33.618 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:33.625 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:33.628 INFO - Executing: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value])
+19:28:33.636 INFO - Done: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value]
+19:28:33.639 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+19:28:33.651 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+19:28:33.655 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:33.662 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:33.665 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+19:28:33.678 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+19:28:33.681 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+19:28:33.693 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+19:28:33.695 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUpsertPage .barcode]])
+19:28:33.722 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUpsertPage .barcode]]
+19:28:34.030 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:34.037 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:34.039 INFO - Executing: [clear: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput]])
+19:28:34.057 INFO - Done: [clear: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput]]
+19:28:34.061 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:34.068 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:34.071 INFO - Executing: [send keys: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+19:28:34.111 INFO - Done: [send keys: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+19:28:34.114 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:34.122 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:34.124 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:34.131 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:34.133 INFO - Executing: [mousemove: 20 true])
+19:28:34.145 INFO - Done: [mousemove: 20 true]
+19:28:34.148 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:34.155 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:34.157 INFO - Executing: [is displayed: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]])
+19:28:34.164 INFO - Done: [is displayed: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]]
+19:28:34.167 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:34.173 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:34.175 INFO - Executing: [click: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]])
+19:28:34.197 INFO - Done: [click: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]]
+19:28:34.505 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+19:28:34.517 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+19:28:34.520 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+19:28:34.532 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+19:28:34.535 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+19:28:34.542 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+19:28:34.544 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+19:28:34.557 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+19:28:34.560 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+19:28:34.572 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+19:28:34.577 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:34.584 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:34.586 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:34.593 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:34.595 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:34.601 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:34.604 INFO - Executing: [find element: By.cssSelector: #fooImage])
+19:28:34.611 INFO - Done: [find element: By.cssSelector: #fooImage]
+19:28:34.613 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:34.632 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:34.635 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:34.641 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:34.643 INFO - Executing: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value])
+19:28:34.651 INFO - Done: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value]
+19:28:34.654 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:34.664 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:34.668 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value])
+19:28:34.678 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value]
+19:28:34.681 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:34.689 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:34.691 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value])
+19:28:34.698 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value]
+19:28:34.701 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:34.707 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:34.709 INFO - Executing: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value])
+19:28:34.718 INFO - Done: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value]
+19:28:34.723 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+19:28:34.729 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+19:28:34.732 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:34.739 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:34.742 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+19:28:34.751 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+19:28:34.753 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .barcode])
+19:28:34.759 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .barcode]
+19:28:34.762 INFO - Executing: [click: 21 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUpsertPage .barcode]])
+19:28:34.779 INFO - Done: [click: 21 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUpsertPage .barcode]]
+19:28:35.088 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:35.095 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:35.097 INFO - Executing: [clear: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput]])
+19:28:35.113 INFO - Done: [clear: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput]]
+19:28:35.116 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:35.123 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:35.126 INFO - Executing: [send keys: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]])
+19:28:35.158 INFO - Done: [send keys: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], [H, e, l, l, o,  , C, t, h, u, l, u]]
+19:28:35.161 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:35.170 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:35.173 INFO - Executing: [clear: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput]])
+19:28:35.182 INFO - Done: [clear: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput]]
+19:28:35.184 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:35.192 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:35.195 INFO - Executing: [send keys: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, w, w, w, ., h, e, l, l, o, -, c, t, h, u, l, h, u, ., c, o, m, /]])
+19:28:35.242 INFO - Done: [send keys: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], [h, t, t, p, :, /, /, w, w, w, ., h, e, l, l, o, -, c, t, h, u, l, h, u, ., c, o, m, /]]
+19:28:35.245 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:35.253 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:35.256 INFO - Executing: [clear: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput]])
+19:28:35.274 INFO - Done: [clear: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput]]
+19:28:35.277 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:35.283 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:35.287 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]])
+19:28:35.376 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], [h, t, t, p, :, /, /, i, h, 1, ., r, e, d, b, u, b, b, l, e, ., n, e, t, /, i, m, a, g, e, ., 2, 4, 1, 2, 9, 1, 1, 0, ., 6, 0, 8, 6, /, f, c, ,, 5, 5, 0, x, 5, 5, 0, ,, w, h, i, t, e, ., j, p, g]]
+19:28:35.379 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:35.398 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:35.400 INFO - Executing: [clear: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput]])
+19:28:35.417 INFO - Done: [clear: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput]]
+19:28:35.420 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:35.426 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:35.436 INFO - Executing: [send keys: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]])
+19:28:35.712 INFO - Done: [send keys: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], [W, e, l, c, o, m, e,  , t, o,  , t, h, e,  , b, e, g, i, n, n, i, n, g,  , o, f,  , H, e, l, l, o,  , C, t, h, u, l, h, u, .,  , T, h, i, s,  , a, l, l,  , s, t, a, r, t, e, d,  , a, s,  , a,  , r, a, n, d, o, m,  , i, d, e, a,  , I,  , o, n, c, e,  , h, a, d, .,  , I,  , k, n, o, w,  , t, h, a, t,  , s, e, v, e, r, a, l,  , p, e, o, p, l, e,  , h, a, v, e,  , c, o, m, e,  , u, p,  , w, i, t, h,  , t, h, e,  , s, a, m, e,  , i, d, e, a,  , b, e, f, o, r, e,  , m, e,  , a, n, d,  , h, a, v, e,  , d, o, n, e,  , a,  , b, i, t,  , w, i, t, h,  , i, t,  , o, n,  , t, h, e,  , w, e, b,  , a, n, d,  , w, h, a, t,  , n, o, t, .,  , B, u, t,  , I, ', m,  , p, r, e, t, t, y,  , s, u, r, e,  , I, ', m,  , t, h, e,  , o, n, l, y,  , o, n, e,  , w, h, o,  , h, a, s,  , d, o, n, e,  , a,  , c, o, m, i, c, .,  , I, n,  , a, n, y,  , c, a, s, e, ,,  , I,  , h, o, p, e,  , y, o, u,  , e, n, j, o, y,  , t, h, e, s, e, .]]
+19:28:35.715 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:35.781 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:35.784 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:35.791 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:35.793 INFO - Executing: [mousemove: 20 true])
+19:28:35.804 INFO - Done: [mousemove: 20 true]
+19:28:35.808 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:35.814 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:35.816 INFO - Executing: [is displayed: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]])
+19:28:35.823 INFO - Done: [is displayed: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]]
+19:28:35.826 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:35.833 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:35.835 INFO - Executing: [click: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]])
+19:28:35.852 INFO - Done: [click: 20 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #saveFooButton]]
+19:28:36.158 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+19:28:36.170 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+19:28:36.172 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+19:28:36.185 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+19:28:36.188 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+19:28:36.196 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+19:28:36.199 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+19:28:36.207 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+19:28:36.211 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+19:28:36.218 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+19:28:36.221 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:36.228 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:36.231 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:36.240 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:36.245 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:36.252 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:36.256 INFO - Executing: [find element: By.cssSelector: #fooImage])
+19:28:36.274 INFO - Done: [find element: By.cssSelector: #fooImage]
+19:28:36.276 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:36.290 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:36.293 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:36.300 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:36.303 INFO - Executing: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value])
+19:28:36.310 INFO - Done: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value]
+19:28:36.318 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:36.325 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:36.329 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value])
+19:28:36.334 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value]
+19:28:36.336 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:36.343 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:36.344 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value])
+19:28:36.350 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value]
+19:28:36.352 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:36.359 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:36.360 INFO - Executing: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value])
+19:28:36.365 INFO - Done: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value]
+19:28:36.369 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+19:28:36.376 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+19:28:36.378 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:36.385 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:36.387 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+19:28:36.400 INFO - Done: [find element: By.cssSelector: #fooListButton]
+19:28:36.402 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+19:28:36.410 INFO - Done: [find element: By.cssSelector: #fooListButton]
+19:28:36.413 INFO - Executing: [is displayed: 22 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooListButton]])
+19:28:36.426 INFO - Done: [is displayed: 22 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooListButton]]
+19:28:36.428 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+19:28:36.434 INFO - Done: [find element: By.cssSelector: #fooListButton]
+19:28:36.436 INFO - Executing: [mousemove: 22 true])
+19:28:36.449 INFO - Done: [mousemove: 22 true]
+19:28:36.452 INFO - Executing: [find element: By.cssSelector: #fooListButton])
+19:28:36.459 INFO - Done: [find element: By.cssSelector: #fooListButton]
+19:28:36.461 INFO - Executing: [click: 22 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooListButton]])
+19:28:37.229 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (171, 152). Other element would receive the click: <header class="pageHeader">...</header>
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 27 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
+	at com.sun.proxy.$Proxy2.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:63)
+	at com.sun.proxy.$Proxy3.click(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:29)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:37.230 WARN - Exception: unknown error: Element is not clickable at point (171, 152). Other element would receive the click: <header class="pageHeader">...</header>
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 27 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:38.475 INFO - Executing: [find element: By.cssSelector: #foosListPage])
+19:28:39.230 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosListPage}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:39.231 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosListPage}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:39.470 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavHeader])
+19:28:40.229 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosListPage #fooNavHeader}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:40.230 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosListPage #fooNavHeader}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:40.450 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+19:28:41.193 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#fooSearchInput}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:41.194 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#fooSearchInput}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:41.436 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList])
+19:28:42.166 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:42.167 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:42.400 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+19:28:43.133 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:43.134 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:43.374 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+19:28:44.116 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:44.117 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:44.349 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavFooter])
+19:28:45.077 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosListPage #fooNavFooter}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:45.078 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosListPage #fooNavFooter}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:45.320 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+19:28:46.055 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#fooSearchInput}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:46.056 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#fooSearchInput}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:46.305 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+19:28:47.058 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#fooSearchInput}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:47.059 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#fooSearchInput}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:47.602 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+19:28:48.346 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:48.347 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:48.580 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+19:28:49.306 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:49.307 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:49.558 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .barcode])
+19:28:50.294 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .barcode}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:50.295 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .barcode}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:50.517 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .titleText])
+19:28:51.250 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .titleText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:51.251 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .titleText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:51.490 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .descriptionText])
+19:28:52.226 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .descriptionText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:52.227 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .descriptionText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:52.456 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .titleText])
+19:28:53.191 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .titleText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:53.192 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .titleText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:53.417 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) .descriptionText])
+19:28:54.162 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .descriptionText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:54.163 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1) .descriptionText}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:54.387 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2)])
+19:28:55.161 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:55.162 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:55.393 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+19:28:56.160 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:56.161 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(1)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:56.698 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage])
+19:28:56.710 INFO - Done: [find element: By.cssSelector: #fooUpsertPage]
+19:28:56.713 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageHeader])
+19:28:56.720 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageHeader]
+19:28:56.722 INFO - Executing: [find element: By.cssSelector: #fooUpsertCard])
+19:28:56.729 INFO - Done: [find element: By.cssSelector: #fooUpsertCard]
+19:28:56.732 INFO - Executing: [find element: By.cssSelector: #fooMetaData])
+19:28:56.739 INFO - Done: [find element: By.cssSelector: #fooMetaData]
+19:28:56.741 INFO - Executing: [find element: By.cssSelector: #fooMetaInputs])
+19:28:56.757 INFO - Done: [find element: By.cssSelector: #fooMetaInputs]
+19:28:56.760 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:56.767 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:56.769 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:56.775 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:56.777 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:56.783 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:56.785 INFO - Executing: [find element: By.cssSelector: #fooImage])
+19:28:56.792 INFO - Done: [find element: By.cssSelector: #fooImage]
+19:28:56.794 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:56.801 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:56.803 INFO - Executing: [find element: By.cssSelector: #fooTitleInput])
+19:28:56.810 INFO - Done: [find element: By.cssSelector: #fooTitleInput]
+19:28:56.812 INFO - Executing: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value])
+19:28:56.817 INFO - Done: [get element attribute: 14 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooTitleInput], value]
+19:28:56.820 INFO - Executing: [find element: By.cssSelector: #fooUrlInput])
+19:28:56.826 INFO - Done: [find element: By.cssSelector: #fooUrlInput]
+19:28:56.828 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value])
+19:28:56.833 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooUrlInput], value]
+19:28:56.836 INFO - Executing: [find element: By.cssSelector: #fooImageUrlInput])
+19:28:56.842 INFO - Done: [find element: By.cssSelector: #fooImageUrlInput]
+19:28:56.844 INFO - Executing: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value])
+19:28:56.849 INFO - Done: [get element attribute: 16 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooImageUrlInput], value]
+19:28:56.852 INFO - Executing: [find element: By.cssSelector: #fooDescriptionInput])
+19:28:56.858 INFO - Done: [find element: By.cssSelector: #fooDescriptionInput]
+19:28:56.861 INFO - Executing: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value])
+19:28:56.866 INFO - Done: [get element attribute: 18 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #fooDescriptionInput], value]
+19:28:56.869 INFO - Executing: [find element: By.cssSelector: #fooUpsertPage .pageFooter])
+19:28:56.875 INFO - Done: [find element: By.cssSelector: #fooUpsertPage .pageFooter]
+19:28:56.878 INFO - Executing: [find element: By.cssSelector: #saveFooButton])
+19:28:56.887 INFO - Done: [find element: By.cssSelector: #saveFooButton]
+19:28:56.889 INFO - Executing: [find element: By.cssSelector: #removeFooButton])
+19:28:56.905 INFO - Done: [find element: By.cssSelector: #removeFooButton]
+19:28:56.907 INFO - Executing: [mousemove: 23 true])
+19:28:56.935 INFO - Done: [mousemove: 23 true]
+19:28:56.938 INFO - Executing: [find element: By.cssSelector: #removeFooButton])
+19:28:56.959 INFO - Done: [find element: By.cssSelector: #removeFooButton]
+19:28:56.960 INFO - Executing: [click: 23 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #removeFooButton]])
+19:28:56.987 INFO - Done: [click: 23 [[ChromeDriver: chrome on MAC (93e661362ca94cf850a1385b9adae9d3)] -> css selector: #removeFooButton]]
+19:28:57.294 INFO - Executing: [find element: By.cssSelector: #foosListPage])
+19:28:57.301 INFO - Done: [find element: By.cssSelector: #foosListPage]
+19:28:57.303 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavHeader])
+19:28:57.315 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavHeader]
+19:28:57.318 INFO - Executing: [find element: By.cssSelector: #fooSearchInput])
+19:28:57.325 INFO - Done: [find element: By.cssSelector: #fooSearchInput]
+19:28:57.328 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList])
+19:28:57.334 INFO - Done: [find element: By.cssSelector: #foosUnorderedList]
+19:28:57.337 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)])
+19:28:57.343 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1)]
+19:28:57.346 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article])
+19:28:57.353 INFO - Done: [find element: By.cssSelector: #foosUnorderedList li:nth-child(1) article]
+19:28:57.356 INFO - Executing: [find element: By.cssSelector: #foosListPage #fooNavFooter])
+19:28:57.363 INFO - Done: [find element: By.cssSelector: #foosListPage #fooNavFooter]
+19:28:57.365 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage])
+19:28:57.378 INFO - Done: [find element: By.cssSelector: #foosUnorderedList #noResultsMessage]
+19:28:57.381 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList .addFooItem])
+19:28:57.393 INFO - Done: [find element: By.cssSelector: #foosUnorderedList .addFooItem]
+19:28:57.395 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2)])
+19:28:58.126 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:58.127 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2)}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:58.405 INFO - Executing: [find element: By.cssSelector: #foosUnorderedList li:nth-child(2) article])
+19:28:59.109 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+19:28:59.110 WARN - Exception: no such element
+  (Session info: chrome=44.0.2403.125)
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.10.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#foosUnorderedList li:nth-child(2) article}
+Session ID: 93e661362ca94cf850a1385b9adae9d3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.LP6lxb}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.125, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+19:28:59.377 INFO - Executing: [delete session: f1659533-3c03-4af6-ab26-3364aa7f9211])
+19:28:59.946 INFO - Done: [delete session: f1659533-3c03-4af6-ab26-3364aa7f9211]
+19:28:59.954 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@5492de02, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]])
+19:28:59.955 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@5492de02, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 3684
+Only local connections are allowed.
+19:29:01.268 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@5492de02, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]]
+19:29:01.271 INFO - Executing: [get: http://localhost:3000/list/foos])
+19:29:02.192 INFO - Done: [get: http://localhost:3000/list/foos]
+19:29:02.195 INFO - Executing: [set window size])
+19:29:02.446 INFO - Done: [set window size]
+19:29:02.449 INFO - Executing: [find element: By.cssSelector: body])
+19:29:02.494 INFO - Done: [find element: By.cssSelector: body]
+19:29:02.497 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+19:29:02.527 INFO - Done: [find element: By.cssSelector: #mainPanel]
+19:29:02.529 INFO - Executing: [delete session: 3bc9d08f-405c-4c8c-9e54-f9d1cec8bb3d])
+19:29:03.091 INFO - Done: [delete session: 3bc9d08f-405c-4c8c-9e54-f9d1cec8bb3d]
+19:29:03.105 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@52f9cbe5, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]])
+19:29:03.106 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@52f9cbe5, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]
+Starting ChromeDriver 2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f) on port 22800
+Only local connections are allowed.
+19:29:04.427 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@52f9cbe5, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Record}]]
+19:29:04.431 INFO - Executing: [get: http://localhost:3000/list/foos])
+19:29:05.477 INFO - Done: [get: http://localhost:3000/list/foos]
+19:29:05.480 INFO - Executing: [set window size])
+19:29:05.726 INFO - Done: [set window size]
+19:29:05.728 INFO - Executing: [find element: By.cssSelector: body])
+19:29:05.741 INFO - Done: [find element: By.cssSelector: body]
+19:29:05.744 INFO - Executing: [find element: By.cssSelector: #mainPanel])
+19:29:05.768 INFO - Done: [find element: By.cssSelector: #mainPanel]
+19:29:05.770 INFO - Executing: [delete session: c442773d-c2d2-4105-bf9b-d71c26826f39])
+19:29:06.330 INFO - Done: [delete session: c442773d-c2d2-4105-bf9b-d71c26826f39]

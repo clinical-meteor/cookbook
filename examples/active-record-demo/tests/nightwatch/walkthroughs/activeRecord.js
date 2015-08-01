@@ -22,7 +22,7 @@ module.exports = {
     // this depends on the accounts-housemd package
     client
       .url('http://localhost:3000')
-      .meteorCall('dropDatabases')
+      .meteorCall('dropDatabase')
       .pause(1000);
   },
   "A. FoosList Walkthrough": function ( client ) {
