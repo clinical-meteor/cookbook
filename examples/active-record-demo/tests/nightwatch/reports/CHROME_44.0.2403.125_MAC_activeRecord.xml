@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
-            failures="1"
+<testsuites errors="0"
+            failures="0"
             tests="12">
 
   <testsuite name="activeRecord"
-    errors="1" failures="1" hostname="" id="" package="activeRecord" skipped="0"
-    tests="12" time="42.27" timestamp="Sat, 01 Aug 2015 00:28:23 GMT">
+    errors="0" failures="0" hostname="" id="" package="activeRecord" skipped="0"
+    tests="12" time="26.91" timestamp="Sat, 01 Aug 2015 01:55:14 GMT">
   
-    <testcase name="A. FoosList Walkthrough" time="4.501" assertions="2">
+    <testcase name="A. FoosList Walkthrough" time="4.153" assertions="2">
 
     
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="B. Reviewing Foo List Page" time="3.178" assertions="12">
+    <testcase name="B. Reviewing Foo List Page" time="4.437" assertions="12">
 
     
 
@@ -40,22 +33,15 @@ Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: 
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192830-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-205521-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192831-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-205523-GMT-0500.png]]</system-out>
     
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="C. Reviewing Foo Upsert Page" time="0.2010" assertions="12">
+    <testcase name="C. Reviewing Foo Upsert Page" time="0.2000" assertions="12">
 
     
 
@@ -81,29 +67,15 @@ Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: 
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="D. Upserting Octocat Info" time="1.453" assertions="2">
+    <testcase name="D. Upserting Octocat Info" time="1.568" assertions="2">
 
     
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="E. Reviewing Octocat Info" time="0.2710" assertions="16">
+    <testcase name="E. Reviewing Octocat Info" time="0.2610" assertions="16">
 
     
 
@@ -137,15 +109,8 @@ Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: 
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="F. Upserting HelloCthulu Title" time="1.077" assertions="19">
+    <testcase name="F. Upserting HelloCthulu Title" time="1.101" assertions="19">
 
     
 
@@ -185,15 +150,8 @@ Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: 
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="G. Upserting HelloCthulu Info" time="1.415" assertions="3">
+    <testcase name="G. Upserting HelloCthulu Info" time="1.435" assertions="3">
 
     
 
@@ -201,15 +159,8 @@ Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: 
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="H. Reviewing HelloCthulu Info" time="2.316" assertions="18">
+    <testcase name="H. Reviewing HelloCthulu Info" time="1.405" assertions="19">
 
     
 
@@ -244,276 +195,115 @@ Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: 
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192837-GMT-0500.png]]</system-out>
-    
-    </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
-  
-    <testcase name="I. Reviewing Foo List Page" time="18.22" assertions="15">  <failure message="Testing if element &lt;#foosListPage&gt; is present.">Testing if element &lt;#foosListPage&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192839-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosListPage #fooNavHeader&gt; is present.">Testing if element &lt;#foosListPage #fooNavHeader&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192840-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#fooSearchInput&gt; is present.">Testing if element &lt;#fooSearchInput&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192841-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList&gt; is present.">Testing if element &lt;#foosUnorderedList&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192842-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1)&gt; is present.">Testing if element &lt;#foosUnorderedList li:nth-child(1)&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192843-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1) article&gt; is present.">Testing if element &lt;#foosUnorderedList li:nth-child(1) article&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192844-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosListPage #fooNavFooter&gt; is present.">Testing if element &lt;#foosListPage #fooNavFooter&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192845-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192846-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192847-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1)&gt; is present.">Testing if element &lt;#foosUnorderedList li:nth-child(1)&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192848-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1) article&gt; is present.">Testing if element &lt;#foosUnorderedList li:nth-child(1) article&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192849-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1) .barcode&gt; is present.">Testing if element &lt;#foosUnorderedList li:nth-child(1) .barcode&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192850-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1) .titleText&gt; is present.">Testing if element &lt;#foosUnorderedList li:nth-child(1) .titleText&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192851-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1) .descriptionText&gt; is present.">Testing if element &lt;#foosUnorderedList li:nth-child(1) .descriptionText&gt; is present.: Expected &quot;present&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192852-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1) .titleText&gt; contains text: &quot;Hello Cthulu&quot;. Element could not be located.">Testing if element &lt;#foosUnorderedList li:nth-child(1) .titleText&gt; contains text: &quot;Hello Cthulu&quot;. Element could not be located.: Expected &quot;Hello Cthulu&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:344:18)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192853-GMT-0500.png]]</system-out>
-      <failure message="Testing if element &lt;#foosUnorderedList li:nth-child(1) .descriptionText&gt; contains text: &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot;. Element could not be located.">Testing if element &lt;#foosUnorderedList li:nth-child(1) .descriptionText&gt; contains text: &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot;. Element could not be located.: Expected &quot;Welcome to the beginning of Hello Cthulhu. This all started as a random idea I once had. I know that several people have come up with the same idea before me and have done a bit with it on the web and what not. But I&#39;m pretty sure I&#39;m the only one who has done a comic. In any case, I hope you enjoy these.&quot; but got: &quot;null&quot;
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/assertion.js:105:19)
-    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/api/element-commands.js:344:18)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:311:20)
-    at HttpRequest.emit (events.js:98:17)
-    at HttpRequest.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/index.js:344:15)
-    at HttpRequest.emit (events.js:106:17)
-    at IncomingMessage.&lt;anonymous&gt; (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/http/request.js:150:16)
-    at IncomingMessage.emit (events.js:117:20)
-    at _stream_readable.js:943:16
-    at process._tickCallback (node.js:419:13)</failure>
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192854-GMT-0500.png]]</system-out>
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192855-GMT-0500.png]][[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192856-GMT-0500.png]]</system-out>
-    
-    </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
-  
-    <testcase name="J. Removing Foo" time="3.256" assertions="27">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192858-GMT-0500.png]]</system-out>
-    
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-192859-GMT-0500.png]]</system-out>
-    
-    </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
-  
-    <testcase name="K. FooTable Walkthrough" time="3.151" assertions="2">
 
     
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
   
-    <testcase name="L. FooImageGrid Walkthrough" time="3.229" assertions="2">
+    <testcase name="I. Reviewing Foo List Page" time="3.006" assertions="15">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-205532-GMT-0500.png]]</system-out>
+    
+    </testcase>
+  
+    <testcase name="J. Removing Foo" time="3.087" assertions="27">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-205534-GMT-0500.png]]</system-out>
+    
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-205535-GMT-0500.png]]</system-out>
+    
+    </testcase>
+  
+    <testcase name="K. FooTable Walkthrough" time="3.118" assertions="2">
 
     
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#fooSearchInput&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .titleText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1) .descriptionText&quot; using: css selector
-Unable to locate element: &quot;#foosUnorderedList li:nth-child(1)&quot; using: css selector
-      </system-err>
+  
+    <testcase name="L. FooImageGrid Walkthrough" time="3.139" assertions="2">
+
+    
+
+    
+    </testcase>
   
   
   </testsuite>

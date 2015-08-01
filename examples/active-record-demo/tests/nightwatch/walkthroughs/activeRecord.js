@@ -64,8 +64,8 @@ module.exports = {
       .verify.elementPresent( "#fooListButton" )
       .verify.visible( "#fooListButton" )
       .moveToElement( '#fooListButton', 10, 10 )
-      .click( "#fooListButton" ).pause( 1000 );
-      //.waitForPage('#foosListPage')
+      .click( "#fooListButton" ).pause( 1000 )
+      .waitForElementPresent('#foosListPage', 1000);
   },
   "I. Reviewing Foo List Page": function ( client ) {
     client
