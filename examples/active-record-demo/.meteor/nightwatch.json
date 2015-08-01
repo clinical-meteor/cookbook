@@ -15,7 +15,15 @@
     "./tests/nightwatch/commands/api/meteor",
     "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
-    "./tests/nightwatch/commands/methods"
+    "./tests/nightwatch/commands/methods",
+    "client/app/components/activeRecord/recordEditPage/.tests",
+    "client/app/components/activeRecord/recordImageGridPage/.tests",
+    "client/app/components/activeRecord/recordNewPage/.tests",
+    "client/app/components/activeRecord/recordPreviewPage/.tests",
+    "client/app/components/activeRecord/recordUpsertPage/.tests",
+    "client/app/components/activeRecord/recordUpsertPage/.tests/actions",
+    "client/app/components/activeRecord/recordsListPage/.tests",
+    "client/app/components/activeRecord/recordsTablePage/.tests"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"
