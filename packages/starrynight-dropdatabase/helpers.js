@@ -4,7 +4,7 @@ Meteor.methods({
     var defaultConnection = MongoInternals.defaultRemoteCollectionDriver();
     defaultConnection.mongo.db.collection(collectionName).drop();
   },
-  dropCollections:function (collectionName, port){
+  dropCollections:function (){
     // var db = MongoInternals.defaultRemoteCollectionDriver().mongo.db;
     var defaultConnection = MongoInternals.defaultRemoteCollectionDriver();
     defaultConnection.mongo.db.collectionNames( function (err, collections){
@@ -19,5 +19,8 @@ Meteor.methods({
         }
       });
     });
+  },
+  dropDatabase: function (){
+    return Meteor.call('dropCollections');
   }
 });
