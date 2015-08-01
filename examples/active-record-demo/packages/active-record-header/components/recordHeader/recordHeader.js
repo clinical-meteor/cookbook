@@ -1,12 +1,12 @@
 
 
-Template.pageNavHeader.helpers({
+Template.recordHeader.helpers({
   rendered: function(){
 
   }
 });
 
-Template.pageNavHeader.events({
+Template.recordHeader.events({
   "click .listButton": function(event, template){
     Router.go('/list/foos');
   },

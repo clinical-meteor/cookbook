@@ -6,7 +6,7 @@ exports.command = function(title, barcode, description, isNew) {
     .verify.elementPresent("#foosUnorderedList")
     .verify.elementPresent("#foosUnorderedList li:nth-child(1)")
     .verify.elementPresent("#foosUnorderedList li:nth-child(1) article")
-    .verify.elementPresent("#recordsListPage #fooNavFooter")
+    .verify.elementPresent("#recordsListPage .recordFooter")
 
   if(isNew){
     this

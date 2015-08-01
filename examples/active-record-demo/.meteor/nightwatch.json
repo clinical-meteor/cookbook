@@ -16,14 +16,14 @@
     "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
     "./tests/nightwatch/commands/methods",
-    "client/app/components/activeRecord/recordEditPage/.tests",
-    "client/app/components/activeRecord/recordImageGridPage/.tests",
-    "client/app/components/activeRecord/recordNewPage/.tests",
-    "client/app/components/activeRecord/recordPreviewPage/.tests",
-    "client/app/components/activeRecord/recordUpsertPage/.tests",
-    "client/app/components/activeRecord/recordUpsertPage/.tests/actions",
-    "client/app/components/activeRecord/recordsListPage/.tests",
-    "client/app/components/activeRecord/recordsTablePage/.tests"
+    "packages/active-record-edit/components/recordEditPage/.tests",
+    "packages/active-record-imagegrid/components/recordImageGridPage/.tests",
+    "packages/active-record-list/components/recordsListPage/.tests",
+    "packages/active-record-new/components/recordNewPage/.tests",
+    "packages/active-record-preview/components/recordPreviewPage/.tests",
+    "packages/active-record-table/components/recordsTablePage/.tests",
+    "packages/active-record-upsert/components/recordUpsertPage/.tests",
+    "packages/active-record-upsert/components/recordUpsertPage/.tests/actions"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"

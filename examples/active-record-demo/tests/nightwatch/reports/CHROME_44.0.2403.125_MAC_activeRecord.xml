@@ -5,16 +5,16 @@
 
   <testsuite name="activeRecord"
     errors="0" failures="0" hostname="" id="" package="activeRecord" skipped="0"
-    tests="12" time="28.61" timestamp="Sat, 01 Aug 2015 02:51:49 GMT">
+    tests="12" time="29.60" timestamp="Sat, 01 Aug 2015 03:52:09 GMT">
   
-    <testcase name="A. RecordsList Walkthrough" time="4.747" assertions="2">
+    <testcase name="A. RecordsList Walkthrough" time="4.705" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="B. Reviewing Record List Page" time="4.493" assertions="12">
+    <testcase name="B. Reviewing Record List Page" time="4.796" assertions="12">
 
     
 
@@ -33,42 +33,42 @@
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-215157-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-225216-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-215158-GMT-0500.png]]</system-out>
-    
-
-    
-    </testcase>
-  
-    <testcase name="C. Reviewing Record Upsert Page" time="0.1990" assertions="12">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-225218-GMT-0500.png]]</system-out>
     
 
     
     </testcase>
   
-    <testcase name="D. Upserting Octocat Info" time="1.552" assertions="2">
+    <testcase name="C. Reviewing Record Upsert Page" time="0.2040" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="D. Upserting Octocat Info" time="1.531" assertions="2">
 
     
 
@@ -110,7 +110,7 @@
     
     </testcase>
   
-    <testcase name="F. Upserting HelloCthulu Title" time="1.104" assertions="19">
+    <testcase name="F. Upserting HelloCthulu Title" time="1.077" assertions="19">
 
     
 
@@ -151,7 +151,7 @@
     
     </testcase>
   
-    <testcase name="G. Upserting HelloCthulu Info" time="1.468" assertions="3">
+    <testcase name="G. Upserting HelloCthulu Info" time="1.464" assertions="3">
 
     
 
@@ -160,7 +160,7 @@
     
     </testcase>
   
-    <testcase name="H. Reviewing HelloCthulu Info" time="1.365" assertions="19">
+    <testcase name="H. Reviewing HelloCthulu Info" time="1.349" assertions="19">
 
     
 
@@ -201,7 +201,7 @@
     
     </testcase>
   
-    <testcase name="I. Reviewing Record List Page" time="2.812" assertions="15">
+    <testcase name="I. Reviewing Record List Page" time="2.922" assertions="15">
 
     
 
@@ -230,11 +230,11 @@
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-215207-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-225227-GMT-0500.png]]</system-out>
     
     </testcase>
   
-    <testcase name="J. Removing Record" time="4.508" assertions="27">
+    <testcase name="J. Removing Record" time="4.836" assertions="27">
 
     
 
@@ -285,20 +285,20 @@
     
 
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-215210-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-225230-GMT-0500.png]]</system-out>
     
-<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-215211-GMT-0500.png]]</system-out>
+<system-out>[[ATTACHMENT|/Users/abigailwatson/Code/MeteorCookbook/examples/active-record-demo/tests/nightwatch/screenshots/ERROR__Jul-31-2015-225232-GMT-0500.png]]</system-out>
     
     </testcase>
   
-    <testcase name="K. RecordTable Walkthrough" time="3.030" assertions="2">
+    <testcase name="K. RecordTable Walkthrough" time="3.323" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="L. RecordImageGrid Walkthrough" time="3.085" assertions="2">
+    <testcase name="L. RecordImageGrid Walkthrough" time="3.146" assertions="2">
 
     
 
