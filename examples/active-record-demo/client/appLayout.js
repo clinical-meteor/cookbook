@@ -2,9 +2,11 @@ Session.set("resize", null);
 Session.setDefault('appHeight', $(window).height());
 Session.setDefault('appWidth', $(window).width());
 Session.setDefault("glassOpacity", .95);
+Session.setDefault("backgroundColorA", '#456ad7');
+
 
 Meteor.startup(function () {
-  window.addEventListener('resize', function(){
+  window.addEventListener('resize', function () {
     Session.set("resize", new Date());
     Session.set("appHeight", $(window).height());
     Session.set("appWidth", $(window).width());
@@ -12,20 +14,18 @@ Meteor.startup(function () {
 });
 
 
-
-
 Session.setDefault('transparencyDivHeight', 100);
 Session.setDefault('transparencyDivLeft', 0);
 
 
-Meteor.startup(function(){
+Meteor.startup(function () {
   Template.appLayout.layout();
 });
 
 
 //==================================================================================================
 
-Template.appLayout.rendered = function(){
+Template.appLayout.rendered = function () {
   Template.appLayout.layout();
 };
 
@@ -42,36 +42,38 @@ Template.appLayout.helpers({
 });
 
 
-Template.appLayout.layout = function(){
-    Session.set('transparencyDivHeight', $('#innerPanel').height() + 40);
-    if(Session.get('appWidth') > 768){
-      Session.set('transparencyDivLeft', (Session.get('appWidth') - 768) * 0.5);
-    }else{
-      Session.set('transparencyDivLeft', 0);
-    }
-}
-Template.appLayout.delayedLayout = function(timeout){
-  Meteor.setTimeout(function(){
+Template.appLayout.layout = function () {
+  Session.set('transparencyDivHeight', $('#innerPanel').height() + 40);
+  if (Session.get('appWidth') > 768) {
+    Session.set('transparencyDivLeft', (Session.get('appWidth') - 768) * 0.5);
+  } else {
+    Session.set('transparencyDivLeft', 0);
+  }
+};
+Template.appLayout.delayedLayout = function (timeout) {
+  Meteor.setTimeout(function () {
     Template.appLayout.layout();
   }, timeout);
-}
+};
 
 //==================================================================================================
 
-Template.registerHelper("getOpacity", function (){
-  return "background: linear-gradient(225deg, transparent 28.28px, rgba(255,255,255," + Session.get("glassOpacity") + ") 0) top right;";
+Template.registerHelper("getOpacity", function () {
+  return "background: rgba(255,255,255," + Session.get("glassOpacity") + ");";
 });
 
+Template.registerHelper("btnPrimary", function () {
+  return "background-color: " + Session.get('backgroundColorA') + "; color: #ffffff;";
+});
 
 //==================================================================================================
 
 
 
-
-parseStyle = function(json){
+parseStyle = function (json) {
   var result = "";
-  $.each(json, function(i, val){
+  $.each(json, function (i, val) {
     result = result + i + ":" + val + " ";
   });
   return result;
-}
+};

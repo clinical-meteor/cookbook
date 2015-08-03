@@ -15,8 +15,9 @@ meteor add starrynight:helpers
 #### Meteor Methods API  
 
 ````
-dropDatabase(databaseName)
-dropDatabases
+dropCollection(databaseName)
+dropCollections
+dropDatabase
 ````
 
 ===================================
@@ -25,10 +26,10 @@ dropDatabases
 ````
 Template.foo.events({
   'click #clearAllDatabaseButton': function(){
-    Meteor.call('dropDatabases');
+    Meteor.call('dropDatabase');
   },
   'click #clearFooDatabaseButton': function(){
-    Meteor.call('dropDatabase', 'foo');
+    Meteor.call('dropCollection', 'foo');
   }
 });
 ````
@@ -41,7 +42,7 @@ module.exports = {
   before: function ( client ){
     client
       .url('http://localhost:3000')
-      .meteorCall('dropDatabases')
+      .meteorCall('dropDatabase')
       .pause(1000);
   },
   "Example Walkthrough": function ( client ) {

@@ -1,5 +1,5 @@
 Package.describe({
-  name:'starrynight:active-record-list',
+  name:'glass:active-record-list',
   version: '0.0.1',
   sumary: '',
   git: '',
@@ -12,8 +12,9 @@ Package.onUse( function ( api ) {
   api.use('iron:router');
   api.use('less');
 
-  api.use('starrynight:active-record-header');
-  api.use('starrynight:active-record-footer');
+  api.use('glass:active-record-core');
+  api.use('glass:active-record-header');
+  api.use('glass:active-record-footer');
 
   api.addFiles('components/recordsListPage/recordsListPage.html', ['client']);
   api.addFiles('components/recordsListPage/recordsListPage.js', ['client']);
@@ -24,6 +25,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('starrynight:active-record-list');
+  api.use('glass:active-record-list');
   api.addFiles('active-record-list-tests.js');
 });

@@ -12,17 +12,23 @@ fortawesome:fontawesome
 iron:router
 grove:less
 
-starrynight:glass-ui
+glass:glass-ui
 starrynight:dropdatabase@0.0.2
 
 #clinical:extended-api
 clinical:barcode
 clinical:extended-api
 
-starrynight:active-record-edit
-starrynight:active-record-imagegrid
-starrynight:active-record-list
-starrynight:active-record-new
-starrynight:active-record-preview
-starrynight:active-record-table
-starrynight:active-record-upsert
+#glass:active-record-edit
+#glass:active-record-imagegrid
+#glass:active-record-list
+#glass:active-record-new
+#glass:active-record-preview
+#glass:active-record-table
+#glass:active-record-upsert
+
+glass:active-record
+
+
+gadicohen:prism
+rahul:animate-everything

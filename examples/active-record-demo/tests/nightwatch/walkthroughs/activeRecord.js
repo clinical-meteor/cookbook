@@ -39,28 +39,28 @@ module.exports = {
   },
   "C. Reviewing Record Upsert Page": function ( client ) {
     client
-      .reviewRecordUpsertPage();
+      .reviewFormUpsertPage();
   },
   "D. Upserting Octocat Info": function ( client ) {
     client
-      .upsertRecordInfo( 'insert', octocat );
+      .upsertFormInfo( 'insert', octocat );
   },
   "E. Reviewing Octocat Info": function ( client ) {
     client
-      .reviewRecordUpsertPage( octocat );
+      .reviewFormUpsertPage( octocat );
   },
   "F. Upserting HelloCthulu Title": function ( client ) {
     client
-      .upsertRecordInfo( 'update', false, helloCthulu.title, false, false, false )
-      .reviewRecordUpsertPage( false, helloCthulu.title, octocat.url, octocat.imageUrl, octocat.description );
+      .upsertFormInfo( 'update', false, helloCthulu.title, false, false, false )
+      .reviewFormUpsertPage( false, helloCthulu.title, octocat.url, octocat.imageUrl, octocat.description );
   },
   "G. Upserting HelloCthulu Info": function ( client ) {
     client
-      .upsertRecordInfo( 'update', helloCthulu );
+      .upsertFormInfo( 'update', helloCthulu );
   },
   "H. Reviewing HelloCthulu Info": function ( client ) {
     client
-      .reviewRecordUpsertPage( helloCthulu )
+      .reviewFormUpsertPage( helloCthulu )
       .verify.elementPresent( "#fooListButton" )
       .verify.visible( "#fooListButton" )
       .moveToElement( '#fooListButton', 10, 10 )
@@ -77,7 +77,7 @@ module.exports = {
   },
   "J. Removing Record": function ( client ) {
     client
-      .reviewRecordUpsertPage( helloCthulu )
+      .reviewFormUpsertPage( helloCthulu )
       .moveToElement( '#removeRecordButton', 10, 10 )
       .click( "#removeRecordButton" ).pause( 300 )
       .reviewRecordsListPage( false, false, false, true )

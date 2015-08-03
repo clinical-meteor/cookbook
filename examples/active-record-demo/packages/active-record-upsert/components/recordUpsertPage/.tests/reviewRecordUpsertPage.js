@@ -4,14 +4,14 @@ exports.command = function(record, title, url, imageUrl, description) {
   this
     .verify.elementPresent("#recordUpsertPage")
     .verify.elementPresent("#recordUpsertPage .pageHeader")
-    .verify.elementPresent("#fooUpsertCard")
-    .verify.elementPresent("#fooMetaData")
-    .verify.elementPresent("#fooMetaInputs")
-    .verify.elementPresent("#fooTitleInput")
-    .verify.elementPresent("#fooUrlInput")
-    .verify.elementPresent("#recordImageUrlInput")
+    .verify.elementPresent("#recordUpsertCard")
+    .verify.elementPresent("#recordMetaData")
+    .verify.elementPresent("#recordMetaInputs")
+    .verify.elementPresent('input[name="title"]')
+    .verify.elementPresent('input[name="url"]')
+    .verify.elementPresent('input[name="imageUrl"]')
     .verify.elementPresent("#recordImage")
-    .verify.elementPresent("#fooDescriptionInput")
+    .verify.elementPresent('input[name="description"]')
 
 
       // then we check whether we received an entire record to parse
@@ -33,16 +33,16 @@ exports.command = function(record, title, url, imageUrl, description) {
 
       // if the field was specified, lets check it's set in its corresponding input
       if(title){
-        this.verify.attributeEquals("#fooTitleInput", "value", title)
+        this.verify.attributeEquals('input[name="title"]', "value", title)
       }
       if(url){
-        this.verify.attributeEquals("#fooUrlInput", "value", url)
+        this.verify.attributeEquals('input[name="url"]', "value", url)
       }
       if(imageUrl){
-        this.verify.attributeEquals("#recordImageUrlInput", "value", imageUrl)
+        this.verify.attributeEquals('input[name="imageUrl"]', "value", imageUrl)
       }
       if(description){
-        this.verify.attributeEquals("#fooDescriptionInput", "value", description)
+        this.verify.attributeEquals('input[name="description"]', "value", description)
       }
 
   this

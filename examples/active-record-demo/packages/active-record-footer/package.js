@@ -1,5 +1,5 @@
 Package.describe({
-  name:'starrynight:active-record-footer',
+  name:'glass:active-record-footer',
   version: '0.0.1',
   sumary: '',
   git: '',
@@ -21,6 +21,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('starrynight:active-record-footer');
+  api.use('glass:active-record-footer');
   api.addFiles('active-record-footer-tests.js');
 });

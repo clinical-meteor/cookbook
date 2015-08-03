@@ -40,9 +40,9 @@ Template.recordEditPage.events({
     // TODO:  add validation functions
 
     var customerObject = {
-      title: $('#fooTitleInput').val(),
-      description: $('#fooDescriptionInput').val(),
-      url: $('#fooUrlInput').val()
+      title: $('input[name="title"]').val(),
+      description: $('input[name="description"]').val(),
+      url: $('input[name="url"]').val()
     };
 
     customerObject._id = this._id;

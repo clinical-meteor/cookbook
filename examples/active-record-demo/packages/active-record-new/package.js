@@ -1,5 +1,5 @@
 Package.describe({
-  name:'starrynight:active-record-new',
+  name:'glass:active-record-new',
   version: '0.0.1',
   sumary: '',
   git: '',
@@ -21,6 +21,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('starrynight:active-record-new');
+  api.use('glass:active-record-new');
   api.addFiles('active-record-new-tests.js');
 });

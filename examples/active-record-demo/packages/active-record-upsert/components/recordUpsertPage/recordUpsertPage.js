@@ -1,4 +1,4 @@
-Session.setDefault('fooReadOnly', true);
+Session.setDefault('recordReadOnly', true);
 
 
 Router.map(function(){
@@ -6,7 +6,7 @@ Router.map(function(){
     path: '/insert/foo',
     template: 'recordUpsertPage',
     onAfterAction: function(){
-      Session.set('fooReadOnly', false);
+      Session.set('recordReadOnly', false);
     }
   });
 
@@ -18,7 +18,7 @@ Router.route('/upsert/foo/:id', {
     return Foo.findOne(this.params.id);
   },
   onAfterAction: function(){
-    Session.set('fooReadOnly', false);
+    Session.set('recordReadOnly', false);
   }
 });
 Router.route('/view/foo/:id', {
@@ -28,7 +28,7 @@ Router.route('/view/foo/:id', {
     return Foo.findOne(this.params.id);
   },
   onAfterAction: function(){
-    Session.set('fooReadOnly', true);
+    Session.set('recordReadOnly', true);
   }
 });
 
@@ -50,14 +50,14 @@ Template.recordUpsertPage.helpers({
     }
   },
   getLockIcon: function(){
-    if(Session.get('fooReadOnly')){
+    if(Session.get('recordReadOnly')){
       return "fa-lock";
     }else{
       return "fa-unlock";
     }
   },
   isReadOnly: function(){
-    if(Session.get('fooReadOnly')){
+    if(Session.get('recordReadOnly')){
       return "readonly";
     }
   },
@@ -80,14 +80,14 @@ Template.recordUpsertPage.events({
   },
   "click #saveRecordButton": function(){
     Template.recordUpsertPage.saveFoo(this);
-    Session.set('fooReadOnly', true);
+    Session.set('recordReadOnly', true);
   },
   "click .barcode": function(){
-    // TODO:  refactor to Session.toggle('fooReadOnly')
-    if(Session.equals('fooReadOnly', true)){
-      Session.set('fooReadOnly', false);
+    // TODO:  refactor to Session.toggle('recordReadOnly')
+    if(Session.equals('recordReadOnly', true)){
+      Session.set('recordReadOnly', false);
     }else{
-      Session.set('fooReadOnly', true);
+      Session.set('recordReadOnly', true);
       console.log('Locking the record...');
       Template.recordUpsertPage.saveFoo(this);
     }
@@ -95,10 +95,10 @@ Template.recordUpsertPage.events({
   "click #lockFooButton": function(){
     console.log("click #lockFooButton");
 
-    if(Session.equals('fooReadOnly', true)){
-      Session.set('fooReadOnly', false);
+    if(Session.equals('recordReadOnly', true)){
+      Session.set('recordReadOnly', false);
     }else{
-      Session.set('fooReadOnly', true);
+      Session.set('recordReadOnly', true);
     }
   },
   "click #fooListButton": function(event, template){
@@ -124,10 +124,10 @@ Template.recordUpsertPage.saveFoo = function(record){
   // TODO:  add validation functions
 
   var customerObject = {
-    title: $('#fooTitleInput').val(),
-    description: $('#fooDescriptionInput').val(),
-    imageUrl: $('#recordImageUrlInput').val(),
-    url: $('#fooUrlInput').val()
+    title: $('input[name="title"]').val(),
+    description: $('input[name="description"]').val(),
+    imageUrl: $('input[name="imageUrl"]').val(),
+    url: $('input[name="url"]').val()
   };
 
   console.log("customerObject",customerObject);

@@ -1,7 +1,7 @@
 exports.command = function(title, barcode, description, isNew) {
   this
     .verify.elementPresent("#recordsListPage")
-    .verify.elementPresent("#recordsListPage #fooNavHeader")
+    .verify.elementPresent("#recordsListPage .recordHeader")
     .verify.elementPresent("#recordSearchInput")
     .verify.elementPresent("#foosUnorderedList")
     .verify.elementPresent("#foosUnorderedList li:nth-child(1)")

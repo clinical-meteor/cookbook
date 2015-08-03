@@ -1,9 +1,9 @@
 exports.command = function() {
   this
     .verify.elementPresent("#recordNewPage")
-    .verify.elementPresent("#fooTitleInput")
-    .verify.elementPresent("#fooDescriptionInput")
-    .verify.elementPresent("#fooUrlInput")
-    .verify.elementPresent("#newFooButton")
+    .verify.elementPresent('input[name="title"]')
+    .verify.elementPresent('input[name="description"]')
+    .verify.elementPresent('input[name="url"]')
+    .verify.elementPresent("#newRecordButton")
   return this;
 };

@@ -1,5 +1,5 @@
 Package.describe({
-  name:'starrynight:active-record-table',
+  name:'glass:active-record-table',
   version: '0.0.1',
   sumary: '',
   git: '',
@@ -12,8 +12,9 @@ Package.onUse( function ( api ) {
   api.use('iron:router');
   api.use('less');
 
-  api.use('starrynight:active-record-header');
-  api.use('starrynight:active-record-footer');
+  api.use('glass:active-record-core');
+  api.use('glass:active-record-header');
+  api.use('glass:active-record-footer');
 
   api.addFiles('components/recordsTablePage/recordsTablePage.html', ['client']);
   api.addFiles('components/recordsTablePage/recordsTablePage.js', ['client']);
@@ -24,6 +25,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('starrynight:active-record-table');
+  api.use('glass:active-record-table');
   api.addFiles('active-record-table-tests.js');
 });

@@ -1,5 +1,5 @@
 Package.describe({
-  name:'starrynight:active-record-upsert',
+  name:'glass:active-record-upsert',
   version: '0.0.1',
   sumary: '',
   git: '',
@@ -21,6 +21,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('starrynight:active-record-upsert');
+  api.use('glass:active-record-upsert');
   api.addFiles('active-record-upsert-tests.js');
 });

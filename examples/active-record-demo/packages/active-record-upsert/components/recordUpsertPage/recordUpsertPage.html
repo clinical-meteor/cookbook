@@ -18,18 +18,18 @@
       {{/if}}
     </header>
 
-    <div id="fooUpsertCard" class="card-contents">
+    <div id="recordUpsertCard" class="card-contents">
 
-      <div id="fooMetaData">
-        <div id="fooMetaInputs">
-          <input id="fooTitleInput" class="glass form-control" type="text" placeholder="Title" value="{{title}}" {{isReadOnly}}><br>
-          <input id="fooUrlInput"  class="glass form-control" type="url" placeholder="http://www.widget.com" value="{{url}}" {{isReadOnly}}>
-          <input id="recordImageUrlInput"  class="glass form-control" type="url" placeholder="http://www.widget.com/cog.jpg" value="{{imageUrl}}" {{isReadOnly}}>
+      <div id="recordMetaData">
+        <div id="recordMetaInputs">
+          <input name="title" class="glass form-control" type="text" placeholder="Title" value="{{title}}" {{isReadOnly}}><br>
+          <input name="url"  class="glass form-control" type="url" placeholder="http://www.widget.com" value="{{url}}" {{isReadOnly}}>
+          <input id='input[name="imageUrl"]'  class="glass form-control" type="url" placeholder="http://www.widget.com/cog.jpg" value="{{imageUrl}}" {{isReadOnly}}>
 
         </div>
         <img id="recordImage" src="{{imageUrl}}" />
       </div>
-      <textarea id="fooDescriptionInput"  class="glass form-control" rows="10" placeholder="Lorem ipsum dolar set et..." {{isReadOnly}}>{{description}}</textarea><br>
+      <textarea name="description"  class="glass form-control" rows="10" placeholder="Lorem ipsum dolar set et..." {{isReadOnly}}>{{description}}</textarea><br>
     </div>
 
     <footer class="pageFooter">

@@ -26,23 +26,23 @@ exports.command = function (action, record, title, url, imageUrl, description) {
 
   if (title) {
     this
-      .clearValue('#fooTitleInput')
-      .setValue('#fooTitleInput', title);
+      .clearValue('input[name="title"]')
+      .setValue('input[name="title"]', title);
   }
   if (url) {
     this
-      .clearValue('#fooUrlInput')
-      .setValue('#fooUrlInput', url);
+      .clearValue('input[name="url"]')
+      .setValue('input[name="url"]', url);
   }
   if (imageUrl) {
     this
-      .clearValue('#recordImageUrlInput')
-      .setValue('#recordImageUrlInput', imageUrl);
+      .clearValue('input[name="imageUrl"]')
+      .setValue('input[name="imageUrl"]', imageUrl);
   }
   if (description) {
     this
-      .clearValue('#fooDescriptionInput')
-      .setValue('#fooDescriptionInput', description);
+      .clearValue('input[name="description"]')
+      .setValue('input[name="description"]', description);
   }
 
 

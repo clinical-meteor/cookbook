@@ -1,7 +1,14 @@
 
 
 <template name="recordFooter">
-  <footer class="recordFooter">
-    <h3 class="addUserIcon"><i class="fa fa-sun-o"></i></h3>
+  <footer class="recordFooter" style={{getOpacity}}>
+    {{#if isUpsert}}
+      <button id="saveRecordButton">Save</button>
+      {{#if _id}}
+        <button id="removeRecordButton">Remove</button>
+      {{/if}}
+    {{else}}
+    <span class="addRecordIcon"><i class="fa fa-2x fa-sun-o"></i></span>
+    {{/if}}
   </footer>
 </template>

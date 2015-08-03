@@ -1,21 +1,20 @@
 <template name="recordImageGridPage">
   <article id="recordImageGridPage" class="page">
-    {{> recordHeader}}
+    {{> recordHeader type="record"}}
+    <div class="pageBody" style="{{getOpacity}}">
+      <input id="recordSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." />
 
-    <input id="recordSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." />
-
-    <ul id="recordImageGrid">
-      {{#each lists}}
-        <li>
-          <img class="recordImage" src="{{imageUrl}}" />
+      <ul id="recordImageGrid">
+        {{#each lists}}
+          <li>
+            <img class="recordImage" src="{{imageUrl}}" />
+          </li>
+        {{/each}}
+        <li id="addNewRecord" class="addNewRecord">
+            <img class="recordImage" src="{{imageUrl}}" />
         </li>
-      {{/each}}
-      <li id="addNewRecord" class="addNewRecord">
-          <img class="recordImage" src="{{imageUrl}}" />
-      </li>
-    </ul>
-    <footer class="pageFooter">
-      <h3 class="addUserIcon"><i class="fa fa-sun-o"></i></h3>
-    </footer>
+      </ul>
+    </div>
+    {{> recordFooter }}
   </article>
 </template>
