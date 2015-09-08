@@ -12,16 +12,18 @@ What do we mean by 'old school'?  Well, a little background to put this into con
 
 Then, in the 1990s, the Web came onto the scene, and people started building server-client applications. This caused a big schism in how people understood the MVC model.  The computers that people sat at were no longer dumb terminals, but computers in their own regard.  And we started having to develop concepts around server-client MVC patterns.    
 
-![Basic Server-Client Technologies](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20Before%20Loading%20Page.jpg)  
-
 After a few years of experimenting, a common trend emerged where JS, HTML, and CSS files are sent from the server to the client, and the HTML gets rendered to the DOM, which then gets CSS applied to it in the render tree, which gets Javascript applied to it, which all gets shipped to the graphics buffer and displayed on the device screen.
+
+![Basic Server-Client Technologies](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20Before%20Loading%20Page.jpg)  
 
 This approach developed in large part because the client-side developers were using the same MVC and PAC models from pre-internet days to build the first web browsers.  And, along the way, those concepts of Model/View/Controller or Presentation/Abstraction/Controller got turned into the domain languages that we know now as Hypertext Markup Language, Cascading Style Sheets, and Javascript.  Or rather, hypertext expanded to become an object model abstraction, cascading style sheets expanded to create digital presentation views, and javascript expanded to become a general purpose controller langauage.
 
 ![How HTML-CSS-JS Get Applied On The Browser](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Static%20Website%20Architecture%20-%20After%20Browser%20Recieves%20Files.jpg)
 
 
-Unfortunately, along the way, most server side developers wound up dealing with CSS and graphics buffering less and less, to the point that it became common for people to consider CSS a 'graphic designer responsibility' or 'just styling'.
+Unfortunately, along the way, most server side developers wound up dealing with CSS and graphics buffering less and less, to the point that it became common for people to consider CSS a 'graphic designer responsibility' or 'just styling'.  
+
+This is unfortunate, because the View is fundamentally what the user sees.  It stands to reason that the View must, at some level, be in the domain of ophthalmology and photonics, concerning itself with pixels and color spaces and opacity, and other issues of transmitting data from a screen to an eyeball...  which is exactly what CSS is concerned with.  And as the server development community became more and more removed from the render cycle, they substituted View State for the View itself.  
 
 This was caused, in large part, by a division of labor that occured throughout much of the tech industry over the past 10 years, as client/server architectures resulted in a division of labor between "back-end developers" and "front-end developers".  The division of labor happened such that back-end developers began to view anything related to CSS as being a 'graphics design' issue and not part of their responsibilities. This is quite unfortunate, and has caused countless miscommunications since.  
 
@@ -62,7 +64,6 @@ Meteor-Cookbook tends towards a Client-Side MVC approach.  It's opinionated.  An
 In the end, there's no 'correct' way to do MVC.  There are simpler approaches and more convoluted approaches.  Some approaches will save you effort and complexity on the front end and be more work to maintain later; while others will require more upfront effort and be easier to maintain later.  Some approaches will have cleaner semantic syntax; others will offer greater backwards compatibility with older libraries.  Ultimately, it will be about what kind of application you want to design.  
 
 But, as you start building your app, start thinking about how to reconcile your client-side and server-side MVC models.  They will differ in the beginning, because Meteor isn't an MVC framework.  It's not really even an MVVM framework.  It's maybe an MVCP or WMVC framework.  But it's probably better to to call it a CMVVMCP or MCVVCMP framework, or something.  
-
 
 
 
