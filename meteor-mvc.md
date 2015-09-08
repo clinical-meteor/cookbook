@@ -65,7 +65,10 @@ In the end, there's no 'correct' way to do MVC.  There are simpler approaches an
 
 But, as you start building your app, start thinking about how to reconcile your client-side and server-side MVC models.  They will differ in the beginning, because Meteor isn't an MVC framework.  It's not really even an MVVM framework.  It's maybe an MVCP or WMVC framework.  But it's probably better to to call it a CMVVMCP or MCVVCMP framework, or something.  
 
+=============================
+#### Update
 
+Since this article was originally written, there's been a lot of discussion around Components, the [Blaze 2 Proposal Doc](https://meteor.hackpad.com/Proposal-for-Blaze-2-bRAxvfDzCVv), and the addition of React and Angular as first-class UI layers.  What you're seeing here is that earnest discussion happening around reconciling server/client MVC patterns.  The Blaze2 proposal is interesting, in that it acknowledges the issue by moving away from the MVC nomenclature entirely.  While the React/Angular integration attempts to incorporate different server-side MVC implementations. 
 
 
 
