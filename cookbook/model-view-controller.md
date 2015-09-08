@@ -63,4 +63,5 @@ If you're using Atom, you can try searching for and installing ``filetype-color`
 
 ===============================================
 #### More Info on MVC  
+For more information on the history of the MVC pattern and how it applies to Meteor, check out:
 [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/meteor-mvc.md)
