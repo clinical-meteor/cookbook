@@ -61,5 +61,6 @@ If you're using Atom, you can try searching for and installing ``filetype-color`
 ![ColorCoding](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/ColorCoding.jpg)  
 
 
-
-
+===============================================
+#### More Info on MVC  
+[Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/meteor-mvc.md)
