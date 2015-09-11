@@ -195,7 +195,7 @@ Router.route('/home', function(){
   Session.set('active_page', 'home')
 });
 Router.route('/about', function(){
-  Session.set('active_page', 'home')
+  Session.set('active_page', 'about')
 });
 ````
 
