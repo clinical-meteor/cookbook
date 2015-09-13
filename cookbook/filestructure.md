@@ -70,10 +70,9 @@ If you don't need a database, and just need to announce a project or host a stat
 ```sh
 .scrap                                    # keep a .scrap or .temp directory for scrap files
 
-client/startup.js                         # the main application javascript
 client/main.html                          # the main application html
-client/main.js                            # the main application html
-client/main.less                          # the main application html
+client/main.js                            # the main application javascript
+client/main.less                          # the main application stylesheet
 public/                                   # static files that are served directly.
 public/images                             # will serve images as: '/images/foo.jpg'
 ```
@@ -100,10 +99,9 @@ Meteor's bread-and butter has always been the database-driven single page app. T
 ```sh
 .scrap                                    # keep a .scrap or .temp directory for scrap files
 
-client/startup.js                         # the main application javascript
 client/main.html                          # the main application html
-client/main.js                            # the main application html
-client/main.less                          # the main application html
+client/main.js                            # the main application javascript
+client/main.less                          # the main application stylesheet
 client/subscriptions.js                   # application subscriptions
 
 
@@ -129,10 +127,9 @@ For larger apps, however, you'll need a router and the concept of workflow.  It'
 ```sh
 .scrap                                    # keep a .scrap or .temp directory for scrap files
 
-client/app/appStartup.js                  # the main application javascript
 client/app/appLayout.html                 # the main application html
-client/app/appLayout.js                   # the main application html
-client/app/appLayout.less                 # the main application html
+client/app/appLayout.js                   # the main application javascript
+client/app/appLayout.less                 # the main application stylesheet
 client/app/appsSubscriptions.js           # application subscriptions
 client/app/clientRoutes.js                # application routes 
 
