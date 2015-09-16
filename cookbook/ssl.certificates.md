@@ -15,14 +15,6 @@ All of the following SSL guides are with hosting providers or services that will
 4.  Upload the CSR to your SSL provider.
 5.  Update your DNS to reference the new SSL Endpoint URL
 
-==================================================================
-#### Questionaire  
-
-**Q: Do you need multiple domains?**  
-- You'll need to purchase a _wildcard_ certificate.
-
-**Q: Do you need a green bar?**  
-- You'll need an _Extended Validation_ certificate.
 
 ==================================================================
 #### Green URL Security Bar    
@@ -59,6 +51,14 @@ https://www.digitalocean.com/community/questions/how-do-i-open-ports-on-an-ubunt
 
 https://resources.catalyze.io/paas/getting-started/deploying-your-first-app/domain-names/
 
+==================================================================
+#### FAQ  
+
+**Q: Do you need multiple domains?**  
+- You'll need to purchase a _wildcard_ certificate.
+
+**Q: Do you need a green bar?**  
+- You'll need an _Extended Validation_ certificate.
 
 
 
