@@ -32,3 +32,16 @@ https://www.digitalocean.com/community/questions/how-do-i-open-ports-on-an-ubunt
 https://resources.catalyze.io/paas/getting-started/deploying-your-first-app/domain-names/
 
 
+==================================================================
+#### Questionaire  
+
+- Do you need multiple domains?
+- Do you need a green bar?
+
+==================================================================
+#### Basic Overview  
+1.  Select the SSL Cert you want.
+2.  Go through payment and purchase the cert.
+3.  
+
+
