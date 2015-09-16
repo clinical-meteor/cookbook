@@ -35,8 +35,16 @@ https://resources.catalyze.io/paas/getting-started/deploying-your-first-app/doma
 ==================================================================
 #### Questionaire  
 
-- Do you need multiple domains?
-- Do you need a green bar?
+**Q: Do you need multiple domains?**  
+- You'll need to purchase a _wildcard_ certificate.
+
+**Q: Do you need a green bar?**  
+- You'll need an _Extended Validation_ certificate.
+
+
+==================================================================
+#### Green URL Security Bar    
+https://www.digicert.com/code-signing/ev-code-signing.htm
 
 ==================================================================
 #### Basic Overview  
