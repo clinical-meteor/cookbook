@@ -5,6 +5,34 @@ Secure Sockets Layer (SSL) is a foundational part of modern [TCP](http://en.wiki
 All of the following SSL guides are with hosting providers or services that will sign HIPAA Business Associates Agreements (BAA).  
 
 ==================================================================
+#### Basic Overview  
+
+1.  Determine what kind of SSL Cert you want.
+2.  Purchase the certificate from your SSL provider.
+3.  Generate a Certificate Signing Request (CSR).
+    - Generate your own using OpenSSL.
+    - Or request it from your hosting provider.
+4.  Upload the CSR to your SSL provider.
+5.  Update your DNS to reference the new SSL Endpoint URL
+
+==================================================================
+#### Questionaire  
+
+**Q: Do you need multiple domains?**  
+- You'll need to purchase a _wildcard_ certificate.
+
+**Q: Do you need a green bar?**  
+- You'll need an _Extended Validation_ certificate.
+
+==================================================================
+#### Green URL Security Bar    
+To get the green pop-up address bar, you'll need an Extended Validation certificate.
+
+https://www.digicert.com/code-signing/ev-code-signing.htm
+https://www.namecheap.com/security/ssl-certificates/comodo/ev.aspx
+
+
+==================================================================
 #### Installing SSL Certificates on Modulus (Software as a Service)
 
 http://help.modulus.io/customer/portal/articles/1701165-ssl-setup-guide  
@@ -32,27 +60,9 @@ https://www.digitalocean.com/community/questions/how-do-i-open-ports-on-an-ubunt
 https://resources.catalyze.io/paas/getting-started/deploying-your-first-app/domain-names/
 
 
-==================================================================
-#### Questionaire  
-
-**Q: Do you need multiple domains?**  
-- You'll need to purchase a _wildcard_ certificate.
-
-**Q: Do you need a green bar?**  
-- You'll need an _Extended Validation_ certificate.
 
 
-==================================================================
-#### Green URL Security Bar    
-To get the green pop-up address bar, you'll need an Extended Validation certificate.
 
-https://www.digicert.com/code-signing/ev-code-signing.htm
-https://www.namecheap.com/security/ssl-certificates/comodo/ev.aspx
 
-==================================================================
-#### Basic Overview  
-1.  Select the SSL Cert you want.
-2.  Go through payment and purchase the cert.
-3.  
 
 
