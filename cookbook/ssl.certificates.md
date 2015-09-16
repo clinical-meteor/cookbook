@@ -44,7 +44,10 @@ https://resources.catalyze.io/paas/getting-started/deploying-your-first-app/doma
 
 ==================================================================
 #### Green URL Security Bar    
+To get the green pop-up address bar, you'll need an Extended Validation certificate.
+
 https://www.digicert.com/code-signing/ev-code-signing.htm
+https://www.namecheap.com/security/ssl-certificates/comodo/ev.aspx
 
 ==================================================================
 #### Basic Overview  
