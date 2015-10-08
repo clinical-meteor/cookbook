@@ -71,8 +71,8 @@ Package.onUse(function (api) {
   
   // add files to specific locations using api.addFiles
   api.addFiles('lib/myComponent.js', ['client', 'server']);
-  api.addFiles('client/subscription.js', 'client);
-  api.addFiles('server/publication.js', 'server);
+  api.addFiles('client/subscription.js', 'client');
+  api.addFiles('server/publication.js', 'server');
 
   // example: add multiple files to a location using an array
   api.addFiles([
