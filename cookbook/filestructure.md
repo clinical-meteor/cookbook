@@ -1,37 +1,34 @@
-# Application File Structure
+## Reserved Directories
 The first thing you need to know when structuring your apps is that Meteor has some specific meanings for certain directory names.  At a very basic level, the following directories are "baked in" the Meteor bundler.
 
-## both
+#### both
 the *both* directory contains common files that are shared between the application client and server. This can include collections and routing logic.
 
-## client
+#### client
 All code in the *client* directory is run only in the client-side, or web browser.
 
-## compatibility
+#### compatibility
 The *compatibility* directory contains legacy or 3rd party code, such as JavaScript libraries, shims, etc.
 
-## lib
+#### lib
 The *lib* directory is loaded before other directories in your Meteor project. This means that you can control load order within your application by placing files within a *lib* directory (inside any project directory).
 
-## main
-The *main* directory is loaded after other directories in your project. This means you can control load order within your application by placing files within a *main* directory (inside any project directory).
-
-## packages
+#### packages
 The *packages* directory is where you will keep custom package installations, including packages you may be developing. I.e. this directory will contain Meteor packages that are not auto-installed by the `meteor add <package-name>` command.
 
-## private
+#### private
 The *private* directory contains static files that should only be available on the web server.
 
-## public
+#### public
 The *public* directory contains static files that are only available on the application client. This may including branding assets, etc.
 
-## server
+#### server
 The *server* directory contains server-side assets. This can include authentication logic, methods, and other code that may need security consideration.
 
-## tests
+#### tests
 The *tests* directory contains unit and functional tests for your application.
 
-# Example file structures
+## Default Application Scaffold
 Keeping in mind the core directory conventions outlined above, lets take a quick look at some common project structures.
 ```sh
 client/                                  # client application code
@@ -44,7 +41,7 @@ server/                                  # server code
 tests/                                   # unit test files (won't be loaded on client or server)
 ```
 
-## Basic file structure
+## Create an Application Skeleton
 When creating a new application, sandboxing some new functionality, or otherwise starting a new project, you may frequently run the following series of commands:
 
 ````sh
@@ -64,7 +61,7 @@ meteor add <pakage-name>
 
 After creating those directories in the application folder, the next step is to create some structure for the MVC model, adding subscriptions and publications, and building out the rest of the application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  
 
-## Static Landing Page. 
+#### Example Scaffold:  Static Landing Page. 
 If you don't need a database, and just need to announce a project or host a static webpage, you'll only need the following.  
 
 ```sh
@@ -78,7 +75,7 @@ public/                                   # static files that are served directl
 public/images                             # will serve images as: '/images/foo.jpg'
 ```
 
-## REST API
+#### Example Scaffold:  REST API
 
 If you just need an application backend, try this and check out the REST API example.  
 
@@ -93,7 +90,7 @@ shared/routes.js                          # shared server/client routes
 ```
 
 =======================================
-## Single-Page App  
+#### Example Scaffold:  Single-Page App  
 
 Meteor's bread-and butter has always been the database-driven single page app. This structure is suitable for creating web-apps, video games, collaborative utilities, and the like.  For single-page apps, try the following.  
 
@@ -123,7 +120,7 @@ public/images                             # will serve images as: '/images/foo.j
 ```
 
 =======================================
-## Workflow-Oriented App  
+#### Example Scaffold:  Workflow-Oriented App  
 
 For larger apps, however, you'll need a router and the concept of workflow.  It's helpful to organize your directories to reflect the parts of your application.  
 ```sh
@@ -164,7 +161,7 @@ tests/nightwatch/walkthough.js            # nightwatch specific tests
 
 
 
-# File Permissions  
+#### Audit File Permissions  
 If you're having any problems bundling your app, it's sometimes useful to check the permissions on your directory structure.  Here is a short audit script that will hopefully help get your directory permissions sorted out.
 
 ````sh
