@@ -1,5 +1,4 @@
 ## Refactoring Patterns   
-============================
 
 
 #### Combining Template Helpers
