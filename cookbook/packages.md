@@ -64,25 +64,25 @@ Package.onUse(function (api) {
 
   api.versionsFrom('1.2.2');
   api.use('meteor-platform@1.2.2');
+  api.use('less');
   
   // expose an object from an Npm package by first referencing it
-  Foo = Npm.require('sample_package');  
+  Foo = Npm.require('fooLibrary');  
   
   // add files to specific locations using api.addFiles
-  api.addFiles('library_name.js', 'directory/to/install/into');
- 
+  api.addFiles('lib/myComponent.js', ['client', 'server']);
+  api.addFiles('client/subscription.js', 'client);
+  api.addFiles('server/publication.js', 'server);
+
   // example: add multiple files to a location using an array
   api.addFiles([
-    'first_library.js', 
-    'second_library.js'
+    'widget/myComponent.js', 
+    'widget/myComponent.html', 
+    'widget/myComponent.less'
   ], 'client');
  
-  // example: add file to multiple locations using an array
-  api.addFiles('other_library_name.js', ['client', 'server']);
-  
   // and then exporting it
   api.export('Foo');
-
 });
  
 Package.onTest(function (api) {
