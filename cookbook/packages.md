@@ -1,10 +1,6 @@
 ##Packages
 
 
-The packaging system has been updated in 0.9!  Please check out the following link for the latest news on the packaging system.
-
-[Unipackage Hackpad](https://meteor.hackpad.com/Unipackage-tvas8pXYMOW)  
-
 ================================================
 #### Adding and Managing Packages
 
@@ -42,17 +38,20 @@ For a long time, the package.js API was undocumented, and the following was an a
 // should go into the /meteor-project/packages/sample_package directory  
 
 Package.describe({
+  // if this value isn't set, meteor will default to the directory name
+  name: "sillySample:exampleFoo",
+  
   // define a message to describe the package
   summary: "This is a sample package that doesn't actually do anything.",
 
   // update this value before you run 'meteor publish'
   version: "1.2.1",
 
-  // if this value isn't set, meteor will default to the directory name
-  name: "samplePackage",
-  
   // and add this value if you want people to access your code from Atmosphere
   git: "http://github.com/myaccount/nifty-widget.git"
+  
+  // what to display in atmosphere
+  documentation: 'README.md'
 });
 
 // If you're bundling an NPM package, be sure to reference the package as a dependency
@@ -62,38 +61,40 @@ Npm.depends({
 });
 
 Package.onUse(function (api) {
-  
-  var path = Npm.require('path');
+
+  api.versionsFrom('1.2.2');
+  api.use('meteor-platform@1.2.2');
   
   // expose an object from an Npm package by first referencing it
-  // Foo = Npm.require('sample_package');  
+  Foo = Npm.require('sample_package');  
   
-  // and then exporting it
-  api.export('Foo');
-  
-  // add_files has been deprecated in favor of addFiles
-  api.addFiles(path.join('audio', 'click1.wav'), 'client');
-    
-  // define dependencies using api.use
-  api.use('package_name', 'directory/to/install/into');
- 
   // add files to specific locations using api.addFiles
   api.addFiles('library_name.js', 'directory/to/install/into');
  
   // example: add multiple files to a location using an array
-  api.addFiles(['first_library.js', 'second_library.js'], 'client');
+  api.addFiles([
+    'first_library.js', 
+    'second_library.js'
+  ], 'client');
  
   // example: add file to multiple locations using an array
   api.addFiles('other_library_name.js', ['client', 'server']);
+  
+  // and then exporting it
+  api.export('Foo');
+
 });
  
 Package.onTest(function (api) {
- 
   // define dependencies using api.use
-  api.use('package_name');
+  api.use('meteor-platform@1.2.2');
+  api.use('sillySample:exampleFoo');
+
+  // define testing framework packages
+  api.use('clinical:verification');
  
   // add files to specific locations using api.add_files
-  api.addFiles('library_name.js', 'directory/to/install/into');
+  api.addFiles('tests/other_library_name.js');
 });
 ````
 
@@ -103,13 +104,6 @@ Once all that is done, you should have a Foo object which you can now use in you
  // and now use the function like so:
  Foo.niftyFunction();  
 ````
-
-================================================
-#### Creating Configurable Packages  
-
-Nemo64 gets a gold-star for figuring out a really fantastic pattern for letting you configure which parts of a package you want installed via a .json configuration file.  Disect the meteor-bootstrap package for the pattern. 
-
-https://github.com/Nemo64/meteor-bootstrap/
 
 
 ================================================
@@ -150,12 +144,21 @@ https://atmosphere.meteor.com/wtf/package
 ================================================
 #### Bulk Package Deployments
 
+When you break your entire app apart into packages; it's necessary to start considering tools such as ``mrtbulkrelease``.  
+
 https://www.npmjs.com/package/mrtbulkrelease
 
 
 ================================================
 #### Private Packages
 
+If you have packages you want to keep private from Atmosphere, you may want to use ``mgp``.
 https://github.com/DispatchMe/mgp
 
 
+================================================
+#### Creating Configurable Packages  
+
+Nemo64 gets a gold-star for figuring out a really fantastic pattern for letting you configure which parts of a package you want installed via a .json configuration file.  Disect the meteor-bootstrap package for the pattern. 
+
+https://github.com/Nemo64/meteor-bootstrap/
