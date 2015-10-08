@@ -1,4 +1,4 @@
-Refactoring MVC to Components  
+## Refactoring MVC to Components  
 =================================================
 
 As mentioned elsewhere, for performance reasons, there's a general trend when building webapps to start with markup languages and to move towards pure javascript as the app becomes more mature.  If you find yourself struggling with styling and animations, and find yourself researching components/microservice based architectures (such as React, Famo.us, and the like), you may be ready to begin refactoring your MVC based app towards a component based app.
