@@ -2,7 +2,7 @@
 
 
 ================================================
-#### Adding and Managing Packages
+#### Managing Packages From the Command Line
 
 ````sh
 # figure out what packages are currently installed
@@ -29,9 +29,9 @@ meteor remove nifty:widget
 `````
 
 ================================================
-#### Creating a Package for Distribution  
+#### Packaging a Component for Distribution 
 
-For a long time, the package.js API was undocumented, and the following was an attempt to fill in the missing pieces of the documentation.  MDG has recently published an [official API for the package.js file](http://docs.meteor.com/#/full/packagejs), however, making the following documentation unnecessary.  It's being left in the cookbook for the time being, because it's been in here for ages.  But this section is liable to be removed at some point in the future.
+The following package.js file shows the general configuration we use to publish components within the Clinical Meteor release.  
 
 ````js
 // package.js  
