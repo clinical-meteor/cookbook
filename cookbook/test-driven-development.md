@@ -52,7 +52,7 @@ nano packages/quality-control/quality-control-tests.js
 
 There are some tutorials on how to use some older versions of Tinytest.  They should still mostly be up-to-date, as the Tinytest API hasn't changed drastically with the new package management system.  Let us know if you run into any discrepencies, and we'll update the Cookbook accordingly!  
 
-* [video tutorial on Eventedmind](https://www.eventedmind.com/tracks/feed-archive/meteor-testing-packages-with-tinytest)   
+* [video tutorial on Eventedmind](https://www.eventedmind.com/feed/meteor-testing-packages-with-tinytest) 
 * [accompanying example](https://github.com/EventedMind/meteor-file)  
 * [example of using the undocumented helpers for client testing](http://inconsistency.in/post/52547787175/flash-messages-package-and-testing-events-on-meteor).   
 * [Tinytest integration with Travis CI](https://github.com/arunoda/travis-ci-meteor-packages)  
