@@ -43,7 +43,7 @@ node main.js
 ````
 
 ===============================
-#### Replica Set Configuration 
+#### Replica Set Configuration
 
 Then go into the mongo shell and initiate the replica set, like so:
 
@@ -54,8 +54,9 @@ mongo
 PRIMARY> rs.add("mongo-a")
 PRIMARY> rs.add("mongo-b")
 PRIMARY> rs.add("mongo-c")
-PRIMARY> rs.slaveOk()
+PRIMARY> rs.setReadPref('secondaryPreferred')
 ````
+
 
 =========================================
 #### Configuring a Replica Set to Use Oplogging
