@@ -53,3 +53,22 @@ Speaking of which, I created a small utility for creating the release manifest, 
 cd myapp
 starrynight generate-release-json
 ````
+
+===========================
+####Displaying the Release Manifest for a Specific Release
+
+````bash
+meteor show --ejson METEOR@1.2.1
+````
+
+======================
+####Publishing a Release From Checkout
+
+````bash
+meteor publish-release --from-checkout
+````
+
+======================
+####Discussion
+
+https://forums.meteor.com/t/custom-meteor-release/13736/6
