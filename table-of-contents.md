@@ -119,17 +119,14 @@
 - [Parsing CSV](https://github.com/clinical-meteor/csv)  
 
 ========================
-#### Part VII - Biomedical Apps
-- [D3 Integration]
-
-========================
-#### Part VIII - Clinical & Healthcare Apps
+#### Part VII - Clinical, Healthcare, & Biomedical Apps
 
 - [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
 - [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
+- [Bioinformatic Data Visualizations (D3)](https://github.com/clinical-meteor/clinical-graphs-dailystats)
 
 ========================
-#### Part X - Miscellaneous
+#### Part VIII - Miscellaneous
 
 - [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
