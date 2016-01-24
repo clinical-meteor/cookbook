@@ -30,10 +30,10 @@ meteor run --release clinical:METEOR@1.1.3-rc6
 ####Identifying Packages to Include
 To get things published isn't particularly difficult. Just requires a bit of busy work. In particular, keep in mind the following points:
 
-Every package in the release has to be published and on Atmosphere.
+- Every package in the release has to be published and on Atmosphere.
 The .meteor/versions file of an app is a particularly good place for finding all the necessary packages and versions that should go into the release.
 
-After that, it's a matter of figuring out what you're willing to support, what you want to include, etc. Here is a partial Venn Diagram of what the Clinical Release is currently working on; and should give you a general idea of how we're going about the decision making process of what gets included.
+- After that, it's a matter of figuring out what you're willing to support, what you want to include, etc. Here is a partial Venn Diagram of what the Clinical Release is currently working on; and should give you a general idea of how we're going about the decision making process of what gets included.
 
 [Clinical Meteor Release Track Venn Diagram]
 
