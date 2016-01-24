@@ -85,10 +85,8 @@
 | Web Components and Card UI | --- | --- |  --- | 
 | Parsing File Types | --- | --- |  --- | 
 | XML | --- | --- |  --- | 
-| CSV | --- | --- |  --- | 
 | Breaking Changes | --- | --- |  --- | 
 | Recommended Packages | --- | --- |  --- | 
 | Applet Demos | --- | --- |  --- | 
-| Non Standard Architectures | --- | --- |  --- |  
 | Mobile Apps | --- | --- |  --- | 
 | Offline | --- | --- | --- | 
