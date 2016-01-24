@@ -1,3 +1,5 @@
+Just an internal checklist of the rewrite.  Ignore this page unless you're participating in the rewrite.
+
 
 | Article       | Code Samples     |  Diagram        | Meteor Version |
 | ------------- |:----------------:| ----------------|---------------:|
