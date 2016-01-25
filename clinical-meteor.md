@@ -1,4 +1,4 @@
-## Clinical:Meteor Packages
+## clinical@METEOR Packages
 
 | Source   | Interface | Meta | Object | Component | QA Status  |
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
