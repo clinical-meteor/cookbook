@@ -1,0 +1,91 @@
+[submodule "packages/clinical-active-entry"]
+    path = packages/active-entry
+    url = git://github.com/clinical-meteor/active-entry.git
+
+[submodule "packages/active-layout"]
+    path = packages/active-layout
+    url = git://github.com/clinical-meteor/active-layout.git
+
+[submodule "packages/collaborations"]
+    path = packages/collaborations
+    url = git://github.com/clinical-meteor/collaborations.git
+
+[submodule "packages/collaborations-ui"]
+    path = packages/collaborations-ui
+    url = git://github.com/clinical-meteor/collaborations-ui.git
+
+[submodule "packages/extended-api"]
+    path = packages/extended-api
+    url = git://github.com/clinical-meteor/extended-api.git
+
+[submodule "packages/keybindings"]
+    path = packages/keybindings
+    url = git://github.com/clinical-meteor/keybindings.git
+
+[submodule "packages/modals"]
+    path = packages/modals
+    url = git://github.com/clinical-meteor/modals.git
+
+[submodule "packages/router"]
+    path = packages/router
+    url = git://github.com/clinical-meteor/router.git
+
+[submodule "packages/router-location"]
+    path = packages/router-location
+    url = git://github.com/clinical-meteor/router-location.git
+
+[submodule "packages/router-middleware-stack"]
+    path = packages/router-middleware-stack
+    url = git://github.com/clinical-meteor/router-middleware-stack.git
+
+[submodule "packages/router-url"]
+    path = packages/router-url
+    url = git://github.com/clinical-meteor/router-url.git
+
+[submodule "packages/study-picklist"]
+    path = packages/study-picklist
+    url = git://github.com/clinical-meteor/study-picklist.git
+
+[submodule "packages/user-model"]
+    path = packages/user-model
+    url = git://github.com/clinical-meteor/user-model.git
+
+[submodule "packages/users-picklist"]
+    path = packages/users-picklist
+    url = git://github.com/clinical-meteor/users-picklist.git
+
+[submodule "packages/verification"]
+    path = packages/verification
+    url = git://github.com/awatson1978/verification.git
+
+[submodule "packages/autoform"]
+    path = packages/autoform
+    url = git://github.com/clinical-meteor/autoform.git
+
+[submodule "packages/schema-hydrator"]
+    path = packages/clinical-hydrator
+    url = git://github.com/clinical-meteor/schema-hydrator.git
+
+[submodule "packages/fonts"]
+    path = packages/fonts
+    url = git://github.com/clinical-meteor/fonts.git
+
+[submodule "packages/csv"]
+    path = packages/csv
+    url = git://github.com/clinical-meteor/csv.git
+
+[submodule "packages/env"]
+    path = packages/env
+    url = git://github.com/clinical-meteor/env.git
+
+[submodule "packages/active-users"]
+    path = packages/active-users
+    url = git://github.com/clinical-meteor/active-users.git
+
+[submodule "packages/theming"]
+    path = packages/theming
+    url = git://github.com/clinical-meteor/theming.git
+
+[submodule "packages/theming-ui"]
+    path = packages/theming-ui
+    url = git://github.com/clinical-meteor/theming-ui.git
