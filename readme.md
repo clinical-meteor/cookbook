@@ -55,13 +55,18 @@ This section is in the works, and will document the architecture behind creating
 
 
 ========================================
+###Development  
+
+For those who want to clone or fork the repository and do local development, it's recommended to use the ``--recursive`` flag, which will recursively download the examples and packages.  
+
+````bash
+git clone --recursive http://github.com/awatson1978/meteor-cookbook MeteorCookbook
+````
+
+
+========================================
 ###Contributing  
 
 Pull requests with typo corrections and copyediting are nearly always accepted.  
 
 Most of the main development right now is in migrating cookbook recipes into components, packaging them up, and/or moving them into the StarryNight utility.  The cookbook is on its way to becoming the documentation for a Clinical Framework running on Meteor.  
-
-
-
-
-
