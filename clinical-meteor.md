@@ -2,6 +2,8 @@
 
 | Source   | Interface | Meta | Scaffold | Component | Stable Version  |
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
+[clinical:active-entry](https://github.com/clinical-meteor/active-entry)| --- | --- | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master)  |
+|[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
 [clinical:auto-resizing](https://github.com/clinical-meteor/clinical-auto-resizing)  | --- | --- | --- | --- |  ---  |
 [clinical:fonts](https://github.com/clinical-meteor/fonts)  | --- | --- | --- | --- |  ---  |
 [clinical:hipaa-audit-log](https://github.com/clinical-meteor/clinical-hipaa-audit-log) |  bootstrap3 | --- | yes | --- |  --- |
@@ -9,11 +11,9 @@
 [clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | bootstrap3 | --- | yes | --- |  ---
 | [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | no | --- |  ---  |
 | [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | yes | --- |  --- | --- | 
-[clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | --- | --- |[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
-[clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| --- | --- | --- | --- | ---  |
+[clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | --- | --- [clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| --- | --- | --- | --- | ---  |
 [clinical:active-layout](https://github.com/clinical-meteor/active-layout)| --- | --- | --- | --- | ---  |
 [clinical:roles](https://github.com/clinical-meteor/roles)| --- | --- | --- | --- | ---  |
-[clinical:active-entry](https://github.com/clinical-meteor/active-entry)| --- | --- | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master)  |
 [clinical:device](https://github.com/clinical-meteor/device)| --- | --- | --- | --- | ---  |
 [clinical:theming](https://github.com/clinical-meteor/theming)| --- | --- | --- | --- | ---  |
 [clinical:theming-ui](https://github.com/clinical-meteor/theming-ui)| --- | --- | --- | --- | ---  |
