@@ -1,6 +1,6 @@
 ## Clinical:Meteor Packages
 
-| Source   | Interface | Meta | Scaffold | Component | Stable Version  |
+| Source   | Interface | Meta | Scaffold | Component | QA Status  |
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
 [clinical:active-entry](https://github.com/clinical-meteor/active-entry)| --- | --- | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master)  |
 [clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | --- | --- |[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
@@ -54,7 +54,3 @@
 | clinical:accounts-stripe  | --- | --- | --- | --- | ---  |
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  
 
-
-==============================
-
-**Version refers to recommended version of the package.** 
