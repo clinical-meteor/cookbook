@@ -93,14 +93,14 @@
 
 
 [submodule "examples-clinical/clinical-scheduling"]
-    path = xamples-clinical/clinical-scheduling
+    path = examples-clinical/clinical-scheduling
     url = https://github.com/awatson1978/clinical-scheduling.git
 [submodule "examples-clinical/clinical-support-forum"]
-    path = xamples-clinical/clinical-support-forum
+    path = examples-clinical/clinical-support-forum
     url = https://github.com/clinical-meteor/app-support-forum
 [submodule "examples-clinical/clinical-trials"]
-    path = xamples-clinical/clinical-trials
+    path = examples-clinical/clinical-trials
     url = https://github.com/awatson1978/clinical-trials.git
 [submodule "examples-clinical/image-link-archive"]
-    path = xamples-clinical/image-link-archive
+    path = examples-clinical/image-link-archive
     url = https://github.com/awatson1978/image-link-archive.git
