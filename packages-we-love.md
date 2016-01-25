@@ -1,5 +1,7 @@
 ## Recommended/Popular Community Packages 
 
+Beyond the packages in the Clinical Meteor track, there are many other packages that have caught our eye over the years.  Here are a few which we keep a watch on, and have been contemplating how they might fit into the Clinical Meteor project.
+
 | Package       | UI  | Contributor | Scaffold   |
 | ------------- | :----------------: |  :----------------: | :----------------: |
 | [gwendall:meteor-ui-hooks](https://github.com/gwendall/meteor-ui-hooks) | --- | ---  | --- |
