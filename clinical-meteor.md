@@ -12,9 +12,9 @@
 | [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | --- | --- |  ---  |
 [clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| --- | --- | --- | --- | ---  |
 [clinical:active-layout](https://github.com/clinical-meteor/active-layout)| --- | --- | --- | ActiveLayout | ---  |
-[clinical:roles](https://github.com/clinical-meteor/roles)| --- | --- | --- | Roles | ---  |
-[clinical:device](https://github.com/clinical-meteor/device)| --- | --- | --- | Device | ---  |
-[clinical:theming](https://github.com/clinical-meteor/theming)| --- | --- | --- | Theme | ---  |
+[clinical:roles](https://github.com/clinical-meteor/roles)| --- | --- | Roles | --- | ---  |
+[clinical:device](https://github.com/clinical-meteor/device)| --- | --- | Device | --- | ---  |
+[clinical:theming](https://github.com/clinical-meteor/theming)| --- | --- | Theme | --- | ---  |
 [clinical:theming-ui](https://github.com/clinical-meteor/theming-ui)| --- | --- | --- | --- | ---  |
 [clinical:modals](https://github.com/clinical-meteor/modals)| --- | --- | --- | --- | ---  |
 [clinical:keybindings](https://github.com/clinical-meteor/keybindings)| --- | --- | --- | --- | ---  |
@@ -31,7 +31,7 @@
 [clinical:autoform](https://github.com/clinical-meteor/autoform)| --- | --- | Autoform | --- | ---  |
 [clinical:schema-hydrator](https://github.com/clinical-meteor/schema-hydrator)| --- | --- | SchemaHydrator | --- | ---  |
 [clinical:router](https://github.com/clinical-meteor/router)| --- | --- | Router | --- | ---  |
-[clinical:router-url](https://github.com/clinical-meteor/router-url)| --- | --- | --- | Router.Url | ---  |
+[clinical:router-url](https://github.com/clinical-meteor/router-url)| --- | --- | Router.Url | --- | ---  |
 [clinical:env](https://github.com/clinical-meteor/env)| --- | --- | Env | --- | ---  |
 [clinical:graphs-dailystats](https://github.com/clinical-meteor/graphs-dailystats)| --- | --- | --- | --- | ---  |
 [clinical:extended-api](https://github.com/clinical-meteor/extended-api)| --- | --- | --- | --- | ---  |
