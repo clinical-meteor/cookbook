@@ -11,7 +11,7 @@
 [clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | --- | --- | --- | --- |  ---
 | [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | --- | --- |  ---  |
 [clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| --- | --- | --- | --- | ---  |
-[clinical:active-layout](https://github.com/clinical-meteor/active-layout)| --- | --- | --- | ActiveLayout | ---  |
+[clinical:active-layout](https://github.com/clinical-meteor/active-layout)| --- | --- | ActiveLayout | --- | ---  |
 [clinical:roles](https://github.com/clinical-meteor/roles)| --- | --- | Roles | --- | ---  |
 [clinical:device](https://github.com/clinical-meteor/device)| --- | --- | Device | --- | ---  |
 [clinical:theming](https://github.com/clinical-meteor/theming)| --- | --- | Theme | --- | ---  |
