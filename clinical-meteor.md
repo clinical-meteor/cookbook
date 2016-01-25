@@ -13,6 +13,7 @@
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  
 | [clinical:extended-api](https://github.com/clinical-meteor/clinical-extended-api) | --- | --- | --- | --- | ---  |
 | clinical:mobile   | bootstrap3 | --- | --- | --- | ---  |
+[clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | --- | --- | ---  |
 | clinical:offline  | bootstrap3 | --- | yes | yes | ---  |
 | clinical:users  | bootstrap3 | --- | yes | --- | ---  |
 | clinical:profile  | bootstrap3 | --- | yes | --- | ---  |
