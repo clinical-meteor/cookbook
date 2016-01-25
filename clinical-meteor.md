@@ -8,11 +8,7 @@
 [clinical:hipaa-logger](https://github.com/clinical-meteor/clinical-hipaa-logger) |  bootstrap3 | --- | yes | --- |  --- |
 [clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | bootstrap3 | --- | yes | --- |  ---
 | [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | no | --- |  ---  |
-| [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | yes | --- |  --- | --- | | clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
-| clinical:accounts-stripe  | none | --- | --- | --- | ---  |
-| clinical:grays-anatomy  | --- | --- | --- | --- | ---  
-| [clinical:extended-api](https://github.com/clinical-meteor/clinical-extended-api) | --- | --- | --- | --- | ---  |
-| clinical:mobile   | bootstrap3 | --- | --- | --- | ---  |
+| [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | yes | --- |  --- | --- | 
 [clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | --- | --- |[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
 [clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| --- | --- | --- | --- | ---  |
 [clinical:active-layout](https://github.com/clinical-meteor/active-layout)| --- | --- | --- | --- | ---  |
@@ -54,6 +50,10 @@
 | clinical:audio  | --- | --- | --- | --- | ---  |
 | clinical:video-streaming  | --- | --- | --- | --- | ---  |
 | clinical:near-field-communications | --- | --- | --- | --- | ---  |
+| clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
+| clinical:accounts-stripe  | none | --- | --- | --- | ---  |
+| clinical:grays-anatomy  | --- | --- | --- | --- | ---  
+
 
 ==============================
 
