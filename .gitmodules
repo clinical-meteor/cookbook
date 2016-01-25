@@ -1,4 +1,4 @@
-[submodule "packages/clinical-active-entry"]
+[submodule "packages/active-entry"]
     path = packages/active-entry
     url = git://github.com/clinical-meteor/active-entry.git
 

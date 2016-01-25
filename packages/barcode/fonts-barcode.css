@@ -1,8 +1,0 @@
-@font-face{
-    font-family: Barcode;
-    src: url('/packages/clinical_barcode/fonts/3OF9_NEW.TTF');
-}
-.barcode{
-    font-family: Barcode;
-    letter-spacing: 3px;
-}
