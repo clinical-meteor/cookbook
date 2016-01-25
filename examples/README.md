@@ -34,9 +34,8 @@ Additional examples that may be of interest to people.
 | [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | [green-eggs-and-spam](https://github.com/awatson1978/green-eggs-and-spam) | 7  | ![travis-build](https://travis-ci.org/awatson1978/green-eggs-and-spam.svg?branch=master) | 1.0.3.1 |
 | [Stripe - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | 7 | ![travis-build](https://travis-ci.org/awatson1978/payment-per-service.svg?branch=master) | 1.0.3.1 |
 | [Stripe - Crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) | [payment-crowdsourcing](https://github.com/awatson1978/payment-crowdsourcing) |  7 | ![travis-build](https://travis-ci.org/awatson1978/payment-crowdsourcing.svg?branch=master) | 1.0.3.1 |
-| [ActiveRecord Forms](http://clinical-ui-forms.meteor.com/)     | [clinical-ui-forms](https://github.com/awatson1978/clinical-ui-forms) | 7  | ![travis-build](https://travis-ci.org/awatson1978/clinical-ui-forms.svg?branch=master) | 0.6.5 |
+![travis-build](https://travis-ci.org/awatson1978/clinical-ui-forms.svg?branch=master) | 0.6.5 |
 | [Dictionary](http://dictionary.meteor.com/)             | [dictionary](https://github.com/awatson1978/dictionary) |  7  | ![travis-build](https://travis-ci.org/awatson1978/dictionary.svg?branch=master) | 0.6.5 |
-| [Collabtionary](http://collabtionary.meteor.com/)       | [collabtionary](https://github.com/awatson1978/collabtionary)      |  7  | ![travis-build](https://travis-ci.org/awatson1978/collabtionary.svg?branch=master) | 0.6.5 |
 | [Hubble (Datasets Demo)](http://hubble.meteor.com/)   | [hubble](https://github.com/awatson1978/hubble)      |  7  | ![travis-build](https://travis-ci.org/awatson1978/hubble.svg?branch=master) | 1.0.3.1 |
 
 ========================================
