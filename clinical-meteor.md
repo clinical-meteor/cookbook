@@ -6,11 +6,11 @@
 [clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | --- | --- |[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
 [clinical:auto-resizing](https://github.com/clinical-meteor/clinical-auto-resizing)  | --- | --- | --- | --- |  ---  |
 [clinical:fonts](https://github.com/clinical-meteor/fonts)  | --- | --- | --- | --- |  ---  |
-[clinical:hipaa-audit-log](https://github.com/clinical-meteor/clinical-hipaa-audit-log) |  bootstrap3 | --- | yes | --- |  --- |
-[clinical:hipaa-logger](https://github.com/clinical-meteor/clinical-hipaa-logger) |  bootstrap3 | --- | yes | --- |  --- |
-[clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | bootstrap3 | --- | yes | --- |  ---
-| [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | no | --- |  ---  |
-| [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  bootstrap3 | yes | --- |  --- | --- | 
+[clinical:hipaa-audit-log](https://github.com/clinical-meteor/clinical-hipaa-audit-log) |  --- | --- | --- | --- |  --- |
+[clinical:hipaa-logger](https://github.com/clinical-meteor/clinical-hipaa-logger) |  --- | --- | --- | --- |  --- |
+[clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | --- | --- | --- | --- |  ---
+| [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | --- | --- |  ---  |
+| [clinical:hipaa-audit-log](https://github.com/awatson1978/clinical-hipaa-audit-log) |  --- | --- | --- |  --- | --- | 
 [clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| --- | --- | --- | --- | ---  |
 [clinical:active-layout](https://github.com/clinical-meteor/active-layout)| --- | --- | --- | --- | ---  |
 [clinical:roles](https://github.com/clinical-meteor/roles)| --- | --- | --- | --- | ---  |
@@ -38,20 +38,20 @@
 [clinical:graphs-dailystats](https://github.com/clinical-meteor/graphs-dailystats)| --- | --- | --- | --- | ---  |
 [clinical:extended-api](https://github.com/clinical-meteor/extended-api)| --- | --- | --- | --- | ---  |
 [clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | --- | --- | ---  |
-| clinical:profile  | bootstrap3 | --- | yes | --- | ---  |
-| clinical:snomed    | bootstrap3 | --- | --- | yes | ---  |
-| clinical:icd10 | bootstrap3 | --- | --- | yes | ---  |
-| clinical:dicom  | --- | --- | yes | --- | ---  |
-| clinical:hl7 | --- | --- | yes | --- | ---  |
-| clinical:sidebars   | semantic | --- | yes | --- | ---  |
-| clinical:graphing   | --- | yes | --- | --- | ---  |
+| clinical:profile  | --- | --- | --- | --- | ---  |
+| clinical:snomed    | --- | --- | --- | --- | ---  |
+| clinical:icd10 | --- | --- | --- | --- | ---  |
+| clinical:dicom  | --- | --- | --- | --- | ---  |
+| clinical:hl7 | --- | --- | --- | --- | ---  |
+| clinical:sidebars   | --- | --- | --- | --- | ---  |
+| clinical:graphing   | --- | --- | --- | --- | ---  |
 | clinical:multitouch   | --- | --- | --- | --- | ---  |
 | clinical:leap | --- | --- | --- | --- | ---  |
 | clinical:audio  | --- | --- | --- | --- | ---  |
 | clinical:video-streaming  | --- | --- | --- | --- | ---  |
 | clinical:near-field-communications | --- | --- | --- | --- | ---  |
-| clinical:stripe  | bootstrap3 | --- | yes | yes | ---  |
-| clinical:accounts-stripe  | none | --- | --- | --- | ---  |
+| clinical:stripe  | --- | --- | --- | --- | ---  |
+| clinical:accounts-stripe  | --- | --- | --- | --- | ---  |
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  
 
 
