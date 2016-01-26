@@ -85,7 +85,7 @@
 ========================
 #### Part VI - User Interface Components - Card/Glass UI
   - [Theming](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/theming.md)  
-  - [Layouts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/layouts.md)  
+  - [Layouts](https://github.com/clinical-meteor/active-layout)  
   - [Navbars](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/navbars.md)  
   - [Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
   - [Drop Down Menus](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/drop-down-menu.md)  
