@@ -45,6 +45,9 @@ Router.route('checklistPage', {
   });
 ````
 
+========================================
+#### Create a Navbar Template
+
 ````html
 <template name="navbarFooter">
   <footer id="navbarFooter">
@@ -63,6 +66,46 @@ Router.route('checklistPage', {
       {{/if}}
     </nav>
   </footer>
+</template>
+````
+
+========================================
+#### Define Yields in Your Layout
+
+````html
+<template name="appLayout">
+
+  <div id="appLayout" style="{{getAppRightDistance}}">
+
+    <div id="panelSurface" style="{{appSurfaceOffset}} {{getLeftTransform}}">
+      <header id="navbarHeader" class="helveticas {{getTheme}}" style="{{getOpacity}} {{isVisible}} {{getNavWidth}} {{getBackgroundColor 'colorE'}} ">
+        {{> yield 'header'}}
+      </header>
+
+          <div id="mainPanel" class="helveticas layoutPanel" style="{{getTopDistance}} {{getPageWidth}} {{getPageHeight}} {{pageColor}}">
+            <div id="contentAnimation">
+              {{#each thisArray}}
+                {{> yield}}
+              {{/each}}
+            </div>
+          </div>
+
+      <footer id="navbarFooter" class="unselectable {{getTheme}}" style="{{getOpacity}} {{getFooterHeight}} {{getNavWidth}} {{getBackgroundColor 'colorE'}} ">
+        {{> yield 'footerActionElements' }}
+        <div class="eastLinks">
+          {{#if showHelp}}
+          <button id="helpBtn">{{getHelpText}}</button>
+          {{/if}}
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+
+  {{> yield 'modalA'}}
+  {{> yield 'modalB'}}
+  {{> yield 'modalC'}}
 </template>
 
 ````
