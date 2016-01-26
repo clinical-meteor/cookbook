@@ -26,21 +26,12 @@ Router.route('checklistPage', {
       'checklistFooter': {
         to: 'footer'
       },
-      'reactiveOverlaysTemplate': {
-        to: 'overlays'
-      },
       'sidebar': {
         to: 'westPanel'
-      },
-      'newTaskRibbon': {
-        to: 'globalInput'
       },
       'configListModal': {
         to: 'modalA'
       }
-    },
-    onAfterAction: function(){
-      //Session.set('showNavbars', true);
     }
   });
 ````
