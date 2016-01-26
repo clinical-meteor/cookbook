@@ -10,10 +10,18 @@ http://tokbox.com/opentok
 ======================================
 #### WebRTC Examples
 
-http://www.mhurwi.com/a-basic-webrtc-tutorial-using-meteor-peerjs/
-https://webrtc-signalling.meteor.com/liw
-https://github.com/foxdog-studios/meteor-webrtc
-https://groups.google.com/forum/#!topic/easyrtc/XZj8fUqhbXQ
-https://atmospherejs.com/fds/webrtc
-https://atmospherejs.com/fds/webrtc?q=webrtc
-https://crosswalk-project.org/documentation/webrtc.html
+http://www.mhurwi.com/a-basic-webrtc-tutorial-using-meteor-peerjs/  
+https://webrtc-signalling.meteor.com/liw  
+https://github.com/foxdog-studios/meteor-webrtc  
+https://groups.google.com/forum/#!topic/easyrtc/XZj8fUqhbXQ  
+https://atmospherejs.com/fds/webrtc  
+https://atmospherejs.com/fds/webrtc?q=webrtc  
+https://crosswalk-project.org/documentation/webrtc.html  
+
+======================================
+#### QA Testing WebRTC
+
+Please note that Nightwatch supports QA testing WebRTC applications:  
+http://nightwatchjs.org/blog/
+
+
