@@ -4,8 +4,6 @@
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
 [clinical:active-entry](https://github.com/clinical-meteor/active-entry)| --- | --- | ActiveEntry | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master)  |
 [clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | CSV | --- |[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
-[clinical:auto-resizing](https://github.com/clinical-meteor/clinical-auto-resizing)  | --- | --- | --- | --- |  ---  |
-[clinical:fonts](https://github.com/clinical-meteor/fonts)  | --- | --- | --- | --- |  ---  |
 [clinical:hipaa-audit-log](https://github.com/clinical-meteor/clinical-hipaa-audit-log) |  --- | --- | HipaaAuditLog | --- |  --- |
 [clinical:hipaa-logger](https://github.com/clinical-meteor/clinical-hipaa-logger) |  --- | --- | HipaaLogger | --- |  --- |
 [clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | --- | --- | --- | --- |  ---
@@ -15,16 +13,6 @@
 [clinical:roles](https://github.com/clinical-meteor/roles)| --- | --- | Roles | --- | ---  |
 [clinical:device](https://github.com/clinical-meteor/device)| --- | --- | Device | --- | ---  |
 [clinical:theming](https://github.com/clinical-meteor/theming)| --- | --- | Theme | --- | ---  |
-[clinical:theming-ui](https://github.com/clinical-meteor/theming-ui)| --- | --- | --- | --- | ---  |
-[clinical:modals](https://github.com/clinical-meteor/modals)| --- | --- | --- | --- | ---  |
-[clinical:keybindings](https://github.com/clinical-meteor/keybindings)| --- | --- | --- | --- | ---  |
-[clinical:glass-ui](https://github.com/clinical-meteor/glass-ui)| --- | --- | --- | --- | ---  |
-[clinical:error-pages](https://github.com/clinical-meteor/error-pages)| --- | --- | --- | --- | ---  |
-[clinical:json-data-utilities](https://github.com/clinical-meteor/json-data-utilities)| --- | --- | --- | --- | ---  |
-[clinical:offline](https://github.com/clinical-meteor/offline)| --- | --- | --- | --- | ---  |
-[clinical:mobile](https://github.com/clinical-meteor/mobile)| --- | --- | --- | --- | ---  |
-[clinical:active-users](https://github.com/clinical-meteor/active-users)| --- | --- | --- | --- | ---  |
-[clinical:base-model](https://github.com/clinical-meteor/base-model)| --- | --- | --- | --- | ---  |
 [clinical:collaborations](https://github.com/clinical-meteor/collaborations)| --- | --- | Collaboration | --- | ---  |
 [clinical:collaborations-ui](https://github.com/clinical-meteor/collaborations-ui)| --- | --- | --- | --- | ---  |
 [clinical:autoform-builder](https://github.com/clinical-meteor/autoform-builder)| --- | --- | FormBuilder | --- | ---  |
@@ -35,6 +23,18 @@
 [clinical:env](https://github.com/clinical-meteor/env)| --- | --- | Env | --- | ---  |
 [clinical:graphs-dailystats](https://github.com/clinical-meteor/graphs-dailystats)| --- | --- | --- | --- | ---  |
 [clinical:extended-api](https://github.com/clinical-meteor/extended-api)| --- | --- | --- | --- | ---  |
+[clinical:auto-resizing](https://github.com/clinical-meteor/clinical-auto-resizing)  | --- | --- | --- | --- |  ---  |
+[clinical:fonts](https://github.com/clinical-meteor/fonts)  | --- | --- | --- | --- |  ---  |
+[clinical:theming-ui](https://github.com/clinical-meteor/theming-ui)| --- | --- | --- | --- | ---  |
+[clinical:modals](https://github.com/clinical-meteor/modals)| --- | --- | --- | --- | ---  |
+[clinical:keybindings](https://github.com/clinical-meteor/keybindings)| --- | --- | --- | --- | ---  |
+[clinical:glass-ui](https://github.com/clinical-meteor/glass-ui)| --- | --- | --- | --- | ---  |
+[clinical:error-pages](https://github.com/clinical-meteor/error-pages)| --- | --- | --- | --- | ---  |
+[clinical:json-data-utilities](https://github.com/clinical-meteor/json-data-utilities)| --- | --- | --- | --- | ---  |
+[clinical:offline](https://github.com/clinical-meteor/offline)| --- | --- | --- | --- | ---  |
+[clinical:mobile](https://github.com/clinical-meteor/mobile)| --- | --- | --- | --- | ---  |
+[clinical:active-users](https://github.com/clinical-meteor/active-users)| --- | --- | --- | --- | ---  |
+[clinical:base-model](https://github.com/clinical-meteor/base-model)| --- | --- | --- | --- | ---  |
 | clinical:profile  | --- | --- | --- | --- | ---  |
 | clinical:snomed    | --- | --- | --- | --- | ---  |
 | clinical:icd10 | --- | --- | --- | --- | ---  |
@@ -50,4 +50,3 @@
 | clinical:stripe  | --- | --- | --- | --- | ---  |
 | clinical:accounts-stripe  | --- | --- | --- | --- | ---  |
 | clinical:grays-anatomy  | --- | --- | --- | --- | ---  
-
