@@ -4,7 +4,6 @@
 A very common task is to create responsive navbars and to create action/footer bars that have different controls based on what page a user is on, or what role a user belongs to.  Lets go over how to make these controls.  
 
 
-https://github.com/clinical-meteor/active-layout/blob/master/client/layouts/appLayout/appLayout.html
 https://github.com/clinical-meteor/checklist-manifesto/blob/master/webapp/lib/Router.js
 
 ========================================
@@ -62,6 +61,8 @@ Router.route('checklistPage', {
 
 ========================================
 #### Define Yields in Your Layout
+
+https://github.com/clinical-meteor/active-layout/blob/master/client/layouts/appLayout/appLayout.html
 
 ````html
 <template name="appLayout">
