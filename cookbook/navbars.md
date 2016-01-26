@@ -4,20 +4,41 @@
 A very common task is to create responsive navbars and to create action/footer bars that have different controls based on what page a user is on, or what role a user belongs to.  Lets go over how to make these controls.  
 
 ========================================
-#### Action/Footer Bars
+#### Adding Navbars to Pages Using Routes 
+
 
 ````js
-Template.registerHelper("hasPostsControls", function(argument) {
-  if (Router.current()) {
-    if (/posts/.test(Router.current().url)) {
-      return true;
-    } else if (/add/post/.test(Router.current().url)) {
-      return true;
-    } else {
-      return false;
+
+Router.route('checklistPage', {
+    path: '/lists/:_id',
+    onBeforeAction: function() {
+      Session.set('selectedListId', this.params._id);
+      this.next();
+    },
+    yieldTemplates: {
+      'checklistHeader': {
+        to: 'header'
+      },
+      'checklistFooter': {
+        to: 'footer'
+      },
+      'reactiveOverlaysTemplate': {
+        to: 'overlays'
+      },
+      'sidebar': {
+        to: 'westPanel'
+      },
+      'newTaskRibbon': {
+        to: 'globalInput'
+      },
+      'configListModal': {
+        to: 'modalA'
+      }
+    },
+    onAfterAction: function(){
+      //Session.set('showNavbars', true);
     }
-  }
-});
+  });
 ````
 
 ````html
