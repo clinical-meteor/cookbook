@@ -106,9 +106,7 @@
 [submodule "packages/users-picklist"]
     path = packages/users-picklist
     url = git://github.com/clinical-meteor/users-picklist.git
-[submodule "packages/verification"]
-    path = packages/verification
-    url = git://github.com/awatson1978/verification.git
+    
 
 
 [submodule "examples/clinical-scheduling"]
