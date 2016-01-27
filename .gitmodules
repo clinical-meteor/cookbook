@@ -139,6 +139,9 @@
 [submodule "examples-extra/rest-api"]
     path = examples-extra/rest-api
     url = https://github.com/awatson1978/rest-api
+[submodule "examples-extra/Rocket.Chat"]
+    path = examples-extra/Rocket.Chat
+    url = https://github.com/RocketChat/Rocket.Chat
 [submodule "examples-extra/plant-almanac"]
     path = examples-extra/plant-almanac
     url = https://github.com/awatson1978/plant-almanac
