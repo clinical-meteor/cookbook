@@ -1,94 +1,115 @@
 [submodule "packages/active-entry"]
     path = packages/active-entry
     url = git://github.com/clinical-meteor/active-entry.git
-
 [submodule "packages/active-layout"]
     path = packages/active-layout
     url = git://github.com/clinical-meteor/active-layout.git
-
+[submodule "packages/active-users"]
+    path = packages/active-users
+    url = git://github.com/clinical-meteor/active-users.git
+[submodule "packages/autoform"]
+    path = packages/autoform
+    url = git://github.com/clinical-meteor/autoform.git
+[submodule "packages/autoform-builder"]
+    path = packages/autoform-builder
+    url = git://github.com/clinical-meteor/autoform-builder.git
+[submodule "packages/auto-resizing"]
+    path = packages/auto-resizing
+    url = git://github.com/clinical-meteor/auto-resizing.git
+[submodule "packages/base-model"]
+    path = packages/base-model
+    url = git://github.com/clinical-meteor/base-model.git
 [submodule "packages/collaborations"]
     path = packages/collaborations
     url = git://github.com/clinical-meteor/collaborations.git
-
 [submodule "packages/collaborations-ui"]
     path = packages/collaborations-ui
     url = git://github.com/clinical-meteor/collaborations-ui.git
-
+[submodule "packages/csv"]
+    path = packages/csv
+    url = git://github.com/clinical-meteor/csv.git
+[submodule "packages/device"]
+    path = packages/device
+    url = git://github.com/clinical-meteor/device.git
+[submodule "packages/env"]
+    path = packages/env
+    url = git://github.com/clinical-meteor/env.git
+[submodule "packages/error-pages"]
+    path = packages/error-pages
+    url = git://github.com/clinical-meteor/error-pages.git
 [submodule "packages/extended-api"]
     path = packages/extended-api
     url = git://github.com/clinical-meteor/extended-api.git
-
+[submodule "packages/fonts"]
+    path = packages/fonts
+    url = git://github.com/clinical-meteor/fonts.git
+[submodule "packages/glass-ui"]
+    path = packages/glass-ui
+    url = git://github.com/clinical-meteor/glass-ui.git
+[submodule "packages/graphs-dailystats"]
+    path = packages/graphs-dailystats
+    url = git://github.com/clinical-meteor/graphs-dailystats.git
+[submodule "packages/hipaa-audit-log"]
+    path = packages/hipaa-audit-log
+    url = git://github.com/clinical-meteor/hipaa-audit-log.git
+[submodule "packages/hipaa-logger"]
+    path = packages/hipaa-logger
+    url = git://github.com/clinical-meteor/hipaa-logger.git
+[submodule "packages/json-data-utilities"]
+    path = packages/json-data-utilities
+    url = git://github.com/clinical-meteor/json-data-utilities.git
 [submodule "packages/keybindings"]
     path = packages/keybindings
     url = git://github.com/clinical-meteor/keybindings.git
-
+[submodule "packages/mobile"]
+    path = packages/mobile
+    url = git://github.com/clinical-meteor/mobile.git
 [submodule "packages/modals"]
     path = packages/modals
     url = git://github.com/clinical-meteor/modals.git
-
+[submodule "packages/offline"]
+    path = packages/offline
+    url = git://github.com/clinical-meteor/offline.git
+[submodule "packages/roles"]
+    path = packages/roles
+    url = git://github.com/clinical-meteor/roles.git
 [submodule "packages/router"]
     path = packages/router
     url = git://github.com/clinical-meteor/router.git
-
 [submodule "packages/router-location"]
     path = packages/router-location
     url = git://github.com/clinical-meteor/router-location.git
-
 [submodule "packages/router-middleware-stack"]
     path = packages/router-middleware-stack
     url = git://github.com/clinical-meteor/router-middleware-stack.git
-
 [submodule "packages/router-url"]
     path = packages/router-url
     url = git://github.com/clinical-meteor/router-url.git
-
+[submodule "packages/schema-hydrator"]
+    path = packages/clinical-hydrator
+    url = git://github.com/clinical-meteor/schema-hydrator.git
+[submodule "packages/simple-layout"]
+    path = packages/simple-layout
+    url = git://github.com/clinical-meteor/simple-layout.git
 [submodule "packages/study-picklist"]
     path = packages/study-picklist
     url = git://github.com/clinical-meteor/study-picklist.git
-
+[submodule "packages/theming"]
+    path = packages/theming
+    url = git://github.com/clinical-meteor/theming.git
+[submodule "packages/theming-ui"]
+    path = packages/theming-ui
+    url = git://github.com/clinical-meteor/theming-ui.git
 [submodule "packages/user-model"]
     path = packages/user-model
     url = git://github.com/clinical-meteor/user-model.git
-
 [submodule "packages/users-picklist"]
     path = packages/users-picklist
     url = git://github.com/clinical-meteor/users-picklist.git
-
 [submodule "packages/verification"]
     path = packages/verification
     url = git://github.com/awatson1978/verification.git
 
-[submodule "packages/autoform"]
-    path = packages/autoform
-    url = git://github.com/clinical-meteor/autoform.git
-
-[submodule "packages/schema-hydrator"]
-    path = packages/clinical-hydrator
-    url = git://github.com/clinical-meteor/schema-hydrator.git
-
-[submodule "packages/fonts"]
-    path = packages/fonts
-    url = git://github.com/clinical-meteor/fonts.git
-
-[submodule "packages/csv"]
-    path = packages/csv
-    url = git://github.com/clinical-meteor/csv.git
-
-[submodule "packages/env"]
-    path = packages/env
-    url = git://github.com/clinical-meteor/env.git
-
-[submodule "packages/active-users"]
-    path = packages/active-users
-    url = git://github.com/clinical-meteor/active-users.git
-
-[submodule "packages/theming"]
-    path = packages/theming
-    url = git://github.com/clinical-meteor/theming.git
-
-[submodule "packages/theming-ui"]
-    path = packages/theming-ui
-    url = git://github.com/clinical-meteor/theming-ui.git
 
 
 
@@ -107,6 +128,7 @@
 
 
 
+
 [submodule "examples/exec-command-line-from-ui"]
     path = examples/exec-command-line-from-ui
     url = https://github.com/awatson1978/exec-command-line-from-ui
@@ -122,6 +144,11 @@
 [submodule "examples/rest-api"]
     path = examples/rest-api
     url = https://github.com/awatson1978/rest-api
+[submodule "examples/plant-almanac"]
+    path = examples/plant-almanac
+    url = https://github.com/awatson1978/plant-almanac
+
+
 
 
 [submodule "starrynight"]
