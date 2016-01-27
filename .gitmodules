@@ -111,6 +111,39 @@
     url = git://github.com/awatson1978/verification.git
 
 
+[submodule "examples/clinical-scheduling"]
+    path = examples/clinical-scheduling
+    url = https://github.com/awatson1978/clinical-scheduling.git
+[submodule "examples/clinical-support-forum"]
+    path = examples/clinical-support-forum
+    url = https://github.com/clinical-meteor/app-support-forum
+[submodule "examples/clinical-trials"]
+    path = examples/clinical-trials
+    url = https://github.com/awatson1978/clinical-trials.git
+[submodule "examples/image-link-archive"]
+    path = examples/image-link-archive
+    url = https://github.com/awatson1978/image-link-archive.git
+
+
+
+[submodule "examples-extra/exec-command-line-from-ui"]
+    path = examples-extra/exec-command-line-from-ui
+    url = https://github.com/awatson1978/exec-command-line-from-ui
+[submodule "examples-extra/leaflet-parties"]
+    path = examples-extra/leaflet-parties
+    url = https://github.com/awatson1978/leaflet-parties
+[submodule "examples-extra/minimongo-table"]
+    path = examples-extra/minimongo-table
+    url = https://github.com/awatson1978/minimongo-table
+[submodule "examples-extra/rest-analytics-pipeline"]
+    path = examples-extra/rest-analytics-pipeline
+    url = https://github.com/awatson1978/rest-analytics-pipeline
+[submodule "examples-extra/rest-api"]
+    path = examples-extra/rest-api
+    url = https://github.com/awatson1978/rest-api
+[submodule "examples-extra/plant-almanac"]
+    path = examples-extra/plant-almanac
+    url = https://github.com/awatson1978/plant-almanac
 
 
 
