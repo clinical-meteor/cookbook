@@ -115,25 +115,6 @@
 
 
 
-[submodule "examples/exec-command-line-from-ui"]
-    path = examples/exec-command-line-from-ui
-    url = https://github.com/awatson1978/exec-command-line-from-ui
-[submodule "examples/leaflet-parties"]
-    path = examples/leaflet-parties
-    url = https://github.com/awatson1978/leaflet-parties
-[submodule "examples/minimongo-table"]
-    path = examples/minimongo-table
-    url = https://github.com/awatson1978/minimongo-table
-[submodule "examples/rest-analytics-pipeline"]
-    path = examples/rest-analytics-pipeline
-    url = https://github.com/awatson1978/rest-analytics-pipeline
-[submodule "examples/rest-api"]
-    path = examples/rest-api
-    url = https://github.com/awatson1978/rest-api
-[submodule "examples/plant-almanac"]
-    path = examples/plant-almanac
-    url = https://github.com/awatson1978/plant-almanac
-
 
 
 
