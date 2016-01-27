@@ -114,8 +114,8 @@
 [submodule "examples/clinical-scheduling"]
     path = examples/clinical-scheduling
     url = https://github.com/awatson1978/clinical-scheduling.git
-[submodule "examples/clinical-support-forum"]
-    path = examples/clinical-support-forum
+[submodule "examples/app-support-forum"]
+    path = examples/app-support-forum
     url = https://github.com/clinical-meteor/app-support-forum
 [submodule "examples/clinical-trials"]
     path = examples/clinical-trials
