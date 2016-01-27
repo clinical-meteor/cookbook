@@ -3,7 +3,7 @@
 
 | Source   | Interface | Meta | Object | Component | QA Status  |
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
-[clinical:active-entry](https://github.com/clinical-meteor/active-entry)| Blaze | --- | ActiveEntry | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/clinical-active-entry/tree/master)  |
+[clinical:active-entry](https://github.com/clinical-meteor/active-entry)| Blaze | --- | ActiveEntry | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/active-entry/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/active-entry/tree/master)  |
 [clinical:csv](https://github.com/clinical-meteor/csv)| --- | --- | CSV | --- |[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
 [clinical:hipaa-audit-log](https://github.com/clinical-meteor/clinical-hipaa-audit-log) |  Blaze | --- | HipaaAuditLog | --- |  --- |
 [clinical:hipaa-logger](https://github.com/clinical-meteor/clinical-hipaa-logger) |  --- | --- | HipaaLogger | --- |  --- |
