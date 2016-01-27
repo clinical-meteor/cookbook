@@ -86,7 +86,7 @@
     path = packages/router-url
     url = git://github.com/clinical-meteor/router-url.git
 [submodule "packages/schema-hydrator"]
-    path = packages/clinical-hydrator
+    path = packages/schema-hydrator
     url = git://github.com/clinical-meteor/schema-hydrator.git
 [submodule "packages/simple-layout"]
     path = packages/simple-layout
@@ -106,7 +106,7 @@
 [submodule "packages/users-picklist"]
     path = packages/users-picklist
     url = git://github.com/clinical-meteor/users-picklist.git
-    
+
 
 
 [submodule "examples/clinical-scheduling"]
