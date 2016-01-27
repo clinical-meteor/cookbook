@@ -1,1 +1,0 @@
-famous = window.famous;

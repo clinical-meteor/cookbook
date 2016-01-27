@@ -1,5 +1,0 @@
-.build*
-static/*bundle.*
-node_modules
-.idea/*
-famous.tmp
