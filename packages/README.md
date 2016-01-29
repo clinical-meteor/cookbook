@@ -14,11 +14,11 @@
 [clinical:autoform-builder](https://github.com/clinical-meteor/autoform-builder)| Blaze | FormBuilder | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/autoform-builder/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/autoform-builder/tree/master)  |
 [clinical:autoform](https://github.com/clinical-meteor/autoform)| Blaze | Autoform | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/autoform/tree/develop.svg?style=svg)](https://circleci.com/gh/clinical-meteor/autoform/tree/develop)  |
 [clinical:schema-hydrator](https://github.com/clinical-meteor/schema-hydrator)| --- | SchemaHydrator | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/schema-hydrator/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/schema-hydrator/tree/master)  |
-[clinical:router](https://github.com/clinical-meteor/router)| --- | Router | --- | --- | ---  |
-[clinical:router-url](https://github.com/clinical-meteor/router-url)| --- | Router.Url | --- | --- | ---  |
-[clinical:env](https://github.com/clinical-meteor/env)| --- | Env | --- | --- | ---  |
-[clinical:graphs-dailystats](https://github.com/clinical-meteor/graphs-dailystats)| Blaze | Graphs | --- | --- | ---  |
-[clinical:collaborations](https://github.com/clinical-meteor/collaborations)| --- | Collaboration | --- | --- | ---  |
+[clinical:router](https://github.com/clinical-meteor/router)| --- | Router | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/router/tree/develop.svg?style=svg)](https://circleci.com/gh/clinical-meteor/router/tree/develop)  |
+[clinical:router-url](https://github.com/clinical-meteor/router-url)| --- | Router.Url | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/router-url/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/router-url/tree/master)  |
+[clinical:env](https://github.com/clinical-meteor/env)| --- | Env | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/env/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/env/tree/master)  |
+[clinical:graphs-dailystats](https://github.com/clinical-meteor/graphs-dailystats)| Blaze | Graphs | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/graphs-dailystats/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/graphs-dailystats/tree/master)  |
+[clinical:collaborations](https://github.com/clinical-meteor/collaborations)| --- | Collaboration | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/collaborations/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/collaborations/tree/master)  |
 [clinical:collaborations-ui](https://github.com/clinical-meteor/collaborations-ui)| Blaze | --- | --- | --- | ---  |
 [clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | Blaze | --- | --- | --- |  ---
 [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | --- | --- |  ---  |
