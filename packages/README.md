@@ -13,7 +13,7 @@
 [clinical:theming](https://github.com/clinical-meteor/theming)| --- | Theme | --- | --- | ---  |
 [clinical:autoform-builder](https://github.com/clinical-meteor/autoform-builder)| Blaze | FormBuilder | --- | --- | ---  |
 [clinical:autoform](https://github.com/clinical-meteor/autoform)| Blaze | Autoform | --- | --- | ---  |
-[clinical:schema-hydrator](https://github.com/clinical-meteor/schema-hydrator)| --- | SchemaHydrator | --- | --- | ---  |
+[clinical:schema-hydrator](https://github.com/clinical-meteor/schema-hydrator)| --- | SchemaHydrator | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/schema-hydrator/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/schema-hydrator/tree/master)  |
 [clinical:router](https://github.com/clinical-meteor/router)| --- | Router | --- | --- | ---  |
 [clinical:router-url](https://github.com/clinical-meteor/router-url)| --- | Router.Url | --- | --- | ---  |
 [clinical:env](https://github.com/clinical-meteor/env)| --- | Env | --- | --- | ---  |
