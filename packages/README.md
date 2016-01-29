@@ -1,5 +1,6 @@
 ## clinical@METEOR Packages
 
+The following table serves as both regulatory status overview and project roadmap.  If a package is on this list, the functionality is tentatively on the project roadmap.  If it's on the list but doesn't have a badge, it's still in research and design phase.  If it's got a badge, it's dear continuous improvement process; and if it's a green badge, it's a candidate for regulatory review.  
 
 | Source   | Interface | Meta | Object | Component | QA Status  |
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
