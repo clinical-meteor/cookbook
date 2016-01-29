@@ -5,14 +5,14 @@
 |:------------ | :-----------: |  :-------: | :--------: | :--------: | ------------- |
 [clinical:active-entry](https://github.com/clinical-meteor/active-entry)| Blaze | ActiveEntry | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/active-entry/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/active-entry/tree/master)  |
 [clinical:active-layout](https://github.com/clinical-meteor/active-layout)| Blaze | ActiveLayout | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/active-layout/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/active-layout/tree/master)  |
-[clinical:csv](https://github.com/clinical-meteor/csv)| --- | CSV | --- | --- |[![testing](https://travis-ci.org/evaisse/meteor-csv.svg?branch=master)](https://travis-ci.org/evaisse/meteor-csv)  |
-[clinical:hipaa-audit-log](https://github.com/clinical-meteor/clinical-hipaa-audit-log) |  Blaze | HipaaAuditLog | --- | --- |  --- |
-[clinical:hipaa-logger](https://github.com/clinical-meteor/clinical-hipaa-logger) |  --- | HipaaLogger |  | --- |  --- |
-[clinical:roles](https://github.com/clinical-meteor/roles)| --- | Roles | --- | --- | ---  |
-[clinical:device](https://github.com/clinical-meteor/device)| --- | Device | --- | --- | ---  |
-[clinical:theming](https://github.com/clinical-meteor/theming)| --- | Theme | --- | --- | ---  |
-[clinical:autoform-builder](https://github.com/clinical-meteor/autoform-builder)| Blaze | FormBuilder | --- | --- | ---  |
-[clinical:autoform](https://github.com/clinical-meteor/autoform)| Blaze | Autoform | --- | --- | ---  |
+[clinical:csv](https://github.com/clinical-meteor/csv)| --- | CSV | --- | --- |[![Circle CI](https://circleci.com/gh/clinical-meteor/csv/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/csv/tree/master) |
+[clinical:hipaa-audit-log](https://github.com/clinical-meteor/hipaa-audit-log) |  Blaze | HipaaAuditLog | --- | --- |  [![Circle CI](https://circleci.com/gh/clinical-meteor/hipaa-audit-log/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/hipaa-audit-log/tree/master) |
+[clinical:hipaa-logger](https://github.com/clinical-meteor/hipaa-logger) |  --- | HipaaLogger |  | --- |  [![Circle CI](https://circleci.com/gh/clinical-meteor/hipaa-logger/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/hipaa-logger/tree/master) |
+[clinical:roles](https://github.com/clinical-meteor/roles)| --- | Roles | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/roles/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/roles/tree/master)  |
+[clinical:device](https://github.com/clinical-meteor/device)| --- | Device | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/device/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/device/tree/master)  |
+[clinical:theming](https://github.com/clinical-meteor/theming)| --- | Theme | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/theming/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/theming/tree/master)  |
+[clinical:autoform-builder](https://github.com/clinical-meteor/autoform-builder)| Blaze | FormBuilder | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/autoform-builder/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/autoform-builder/tree/master)  |
+[clinical:autoform](https://github.com/clinical-meteor/autoform)| Blaze | Autoform | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/autoform/tree/develop.svg?style=svg)](https://circleci.com/gh/clinical-meteor/autoform/tree/develop)  |
 [clinical:schema-hydrator](https://github.com/clinical-meteor/schema-hydrator)| --- | SchemaHydrator | --- | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/schema-hydrator/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/schema-hydrator/tree/master)  |
 [clinical:router](https://github.com/clinical-meteor/router)| --- | Router | --- | --- | ---  |
 [clinical:router-url](https://github.com/clinical-meteor/router-url)| --- | Router.Url | --- | --- | ---  |
