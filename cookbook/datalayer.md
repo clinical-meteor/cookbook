@@ -1,8 +1,6 @@
 ------------------------------------------------------------------
 ## DATABASES
 
-**Q: Does Meteor support SQL?**  
-Not officially.  
 
 **Q: When will Meteor support SQL?**  
 The position of the Meteor Cookbook is that it's a mistake for Meteor to natively support SQL.  So, hopefully not any time soon.  However, Meteor Cookbook is an unofficial resource, and MDG is going for widest possible appeal, so that means including SQL support.  If/when they do add SQL support, it's going to be a major big-ticket item that's going to likely take months to implement.  
