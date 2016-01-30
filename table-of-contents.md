@@ -163,8 +163,9 @@
 - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
 
 ========================
-#### Part XI - Contributing
+#### Part XI - Project Governance & Contributions
 
+  - [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
   - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
   - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
   - [Syntax & Semantics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
