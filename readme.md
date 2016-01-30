@@ -61,6 +61,4 @@ git clone --recursive http://github.com/awatson1978/meteor-cookbook MeteorCookbo
 ========================================
 ###Contributing  
 
-Pull requests with typo corrections and copyediting are nearly always accepted.  
-
-Most of the main development right now is in migrating cookbook recipes into components, packaging them up, and/or moving them into the StarryNight utility.  The cookbook is on its way to becoming the documentation for a Clinical Framework running on Meteor.  
+Pull requests with typo corrections and copyediting are nearly always accepted.  Feature requests for individual packages should be logged in their respective repositories.  Discussion regarding the larger overall project should be logged here.  Please see the [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md) documentation for more details on project governance.
