@@ -130,7 +130,6 @@
 ========================
 #### Part VIII - Miscellaneous
 
-- [Breaking Changes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/breaking-news.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
 - [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
