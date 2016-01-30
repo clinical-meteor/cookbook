@@ -1,4 +1,4 @@
-clinical@Meteor Quickstart 
+clinical@METEOR quickstart 
 ===========================================
 
 ````sh
@@ -12,7 +12,7 @@ curl https://install.meteor.com | sh
 npm install -g starrynight
 
 # create a helloworld app
-meteor create helloworld
+meteor create helloworld --release clinical:METEOR@1.1.0.3
 
 # create a helloworld app (in development)
 # starrynight generate helloworld
