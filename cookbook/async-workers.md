@@ -1,18 +1,18 @@
-Basic Async Recipes
-======================================
+##Basic Async Recipes
+
 
 https://gist.github.com/possibilities/3443021
 
 
-Async Worker Scripts
 ======================================
+####Async Worker Scripts  
 
 
 Excellent writeup by Kuba Wyrobek on StackOverflow   
 http://stackoverflow.com/questions/24743402/how-to-get-an-async-data-in-a-function-with-meteor
 
 ============================================
-#### Client Side
+####Client Side  
 
 ````js
 if (Meteor.isClient) {
@@ -32,7 +32,7 @@ if (Meteor.isClient) {
 
 
 ============================================
-#### Server Side
+####Server Side  
 
 ````js
 if (Meteor.isServer) {
