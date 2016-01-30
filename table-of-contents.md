@@ -13,7 +13,7 @@
 
 
 ========================
-#### Part II - Basic Architecture
+#### Part II - Architecture Basics
 
   - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/filestructure.md)
   - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
