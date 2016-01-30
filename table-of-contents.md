@@ -116,7 +116,7 @@
 - [Worker Processes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/worker.processes.md)  
 - [Daily Statistics](https://github.com/awatson1978/clinical-graphs-dailystats)  
 - JSON Data Transformations
-- Aggregation
+- [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)
 - Map/Reduce
 - Data Pipelining
 
