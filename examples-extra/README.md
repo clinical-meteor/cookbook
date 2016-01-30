@@ -45,7 +45,6 @@ Additional examples that may be of interest to people.
 | [iTunes Library](http://itunes.meteor.com/album/291183)  | [reactconf](https://github.com/mitar/reactconf-2015-HYPE) | --- | --- |  1.0.3.1 |
 | [RocketChat](https://rocket.chat/) | [RocketChat.Electron](https://github.com/RocketChat/Rocket.Chat.Electron) | --- | --- |  1.0.3.1 |
 | ---  | [todomvc-meteor-react-with-router-animations](https://forums.meteor.com/t/todomvc-meteor-react-with-router-animations/3328) | --- | --- |  --- |
-
 | [Document Timeline](http://document-timeline.meteor.com/)  | [timeline](https://github.com/AntoBase/timeline) | --- | --- |  --- |
 
 
