@@ -121,23 +121,30 @@
 - [Parsing CSV](https://github.com/clinical-meteor/csv)  
 
 ========================
-#### Part VII - Clinical, Healthcare, & Biomedical Apps
+#### Part VII - Routing
+
+- [Routing Basics](https://github.com/EventedMind/iron-router)
+- [Layout & Yields](https://github.com/clinical-meteor/active-layout)
+- [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
+- [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
+- [Static Pages](https://github.com/clinical-meteor/static-pages)
+- [Error Pages](https://github.com/clinical-meteor/error-pages)
+
+========================
+#### Part VIII - Clinical, Healthcare, & Biomedical Apps
 
 - [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
 - [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 - [Data Visualizations (D3)](https://github.com/clinical-meteor/clinical-graphs-dailystats)
 
+
+
 ========================
-#### Part VIII - Miscellaneous
+#### Part X - Miscellaneous
 
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
 - [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 - [Writing Unit Tests (with Jasmine Unit and Velocity)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.with.jasmine.md)  
-- [Routing](https://github.com/EventedMind/iron-router)
-  - [Layout & Yields](https://github.com/clinical-meteor/active-layout)
-  - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
-  - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
-  - [Static Pages](https://github.com/clinical-meteor/static-pages)
-  - [Error Pages](https://github.com/clinical-meteor/error-pages)
+
