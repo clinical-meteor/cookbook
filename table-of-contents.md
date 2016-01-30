@@ -136,6 +136,7 @@
 - [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
 - [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 - [Data Visualizations (D3)](https://github.com/clinical-meteor/clinical-graphs-dailystats)
+- [HL7 Argonaut FHIR](https://github.com/awatson1978/hl7-argonaut-fhir)
 
 
 
