@@ -35,7 +35,7 @@ The following table serves as both regulatory status overview and project roadma
 [clinical:json-data-utilities](https://github.com/clinical-meteor/json-data-utilities)| --- | --- | --- | --- | ---  |
 [clinical:offline](https://github.com/clinical-meteor/offline)| --- | --- | --- | --- | ---  |
 [clinical:mobile](https://github.com/clinical-meteor/mobile)| --- | --- | --- | --- | ---  |
-[clinical:active-users](https://github.com/clinical-meteor/active-users)| Blaze | --- | Users | --- | ---  |
+[clinical:active-users](https://github.com/clinical-meteor/active-users)| Blaze | Users | --- | --- | ---  |
 [clinical:base-model](https://github.com/clinical-meteor/base-model)| --- | --- | --- | --- | ---  |
 | clinical:profile  | --- | --- | --- | --- | ---  |
 | clinical:snomed    | --- | --- | --- | --- | ---  |
