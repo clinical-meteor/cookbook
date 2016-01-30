@@ -5,7 +5,7 @@ Links to live versions of the examples associated with this cookbook.
 
 | Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
-| [Clinical Checklists](http://clinical-checklists.meteor.com/) | [clinical-checklists](https://github.com/awatson1978/clinical-checklists) | 90+ | [![Build Status](https://travis-ci.org/awatson1978/clinical-checklists.svg?branch=master)](https://travis-ci.org/awatson1978/clinical-checklists)| 1.0.4 |
+| [Checklist Manifesto](http://checklist-manifesto.meteor.com/) | [checklist-manifesto](https://github.com/clinical-meteor/checklist-manifesto) | 90+ | [![Circle CI](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master)| 1.0.4 |
 
 
 
