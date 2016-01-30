@@ -70,9 +70,9 @@
 
 
 ========================
-#### Part VI - Test Driven Development  
+#### Part VI - Quality Assurance - FDA, CCHIT, and Other Regulatory Credentialing
 
-
+  - Introduction to Regulatory Overview & Credentialing
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
   - [Refactoring Files and Directories](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
   - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
