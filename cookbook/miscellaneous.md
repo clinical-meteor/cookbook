@@ -1,14 +1,13 @@
   
 ------------------------------------------------------------------
-## Meteor Licensing and Branding
+**Q:  Can Meteor run on Rasberry Pi?**  
+Daaah... maybe?  People seem to be working on it, but not much success yet.
 
-**Q:  Is there a Meteor logo?**  
-Currently, there is no Meteor logo, but Cloudbees has been using a modified Nodejs logo, which works very nicely too:  
-https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs.png
+http://www.badgersblog.co.uk/2012/12/nodejs-raspberry-pi-tutorial-1.html  
+https://groups.google.com/forum/#!msg/meteor-talk/CcXzU14EHH8/3wvB-d1RfaAJ  
 
-**Q:  I heard Meteor is licensed under the GPL.  Will it be available under the MIT license?**  
-Meteor is now available under the MIT license.  They switched licenses around version 0.4.0.
-
+Try using Tessel!
+https://www.trycelery.com/shop/TEC
 
 ------------------------------------------------------------------
 ### Server 
