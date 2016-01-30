@@ -170,3 +170,4 @@
   - [Syntax & Semantics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
   - [Grammar & Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
   - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
+  - Equal Opportunity & Non Discrimination
