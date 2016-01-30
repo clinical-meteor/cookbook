@@ -138,4 +138,5 @@
 - [Routing](https://github.com/EventedMind/iron-router)
   - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
   - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
-  - [Page Not Found](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/routing.page-not-found.md)
+  - [Static Pages](https://github.com/clinical-meteor/static-pages)
+  - [Error Pages](https://github.com/clinical-meteor/error-pages)
