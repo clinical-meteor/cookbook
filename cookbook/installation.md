@@ -16,10 +16,10 @@ mrt --version
 Use the ``--release`` flag!  
 ````js
 // for specifying meteor deployment target
-meteor update --release 0.6.5
+meteor update --release clinical:METEOR@1.1.0.3
 
 // for deployment
-meteor bundle --release 0.6.5
+meteor bundle --release clinical:METEOR@1.1.0.3
 ````
 
 
@@ -30,27 +30,7 @@ Probably not.  One of the main features of Meteor is that it establishes a 'best
 # to check what version of NVM is installed
 nvm ls
 ````
-
-**Q:  How do I install and use a development branch of Meteor?**  
-There are two ways, depending if you're using meteor, or meteorite.  If using meteor:
-
-````
-cd
-mkdir meteor.branchname
-cd meteor.branchname
-git clone https://github.com/username/meteor.git
-cd <path to meteor project>
-~/meteor.branchname/meteor/meteor
-```` 
  
-And, if you're using mrt:
-````
-{
-  "meteor": {
-    "branch": "branchname",
-    "git": "https://github.com/username/meteor.git"
-  }
-}
 ````
 **Q:  How do I uninstall Meteor?**  
 No need to run scripts.  Just delete directories like so:  
