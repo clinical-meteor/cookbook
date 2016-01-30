@@ -3,17 +3,14 @@
 #### Part I - Getting Started
 - Welcome
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
-- [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
-  - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
-  - [Syntax & Semantics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
-  - [Grammar & Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
-  - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
+
 - [Installation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/installation.md)  
   - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
   - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
     - [Atom Editor](https://github.com/awatson1978/meteor-api)  
     - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
 - [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
+
 
 ========================
 #### Part II - Basic Architecture
@@ -153,3 +150,11 @@
 - [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 - [Writing Unit Tests (with Jasmine Unit and Velocity)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.with.jasmine.md)  
 
+========================
+#### Part XI - Contributing
+
+  - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
+  - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
+  - [Syntax & Semantics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
+  - [Grammar & Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
+  - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
