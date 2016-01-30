@@ -21,7 +21,7 @@ We also provide a number of reference apps as part of the Clinical Meteor projec
 For those who want to clone or fork the project and do local development, it's recommended to use the ``--recursive`` flag, which will recursively download the examples and packages.  Be warned!  The entire project is well over 350MB at this point!
 
 ````bash
-git clone --recursive http://github.com/awatson1978/meteor-cookbook MeteorCookbook
+git clone --recursive http://github.com/clinical-meteor/clinical-meteor ClinicalMeteor
 ````
 
 ========================================
