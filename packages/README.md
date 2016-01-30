@@ -23,6 +23,7 @@ The following table serves as both regulatory status overview and project roadma
 [clinical:collaborations-ui](https://github.com/clinical-meteor/collaborations-ui)| Blaze | --- | --- | --- | ---  |
 [clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | Blaze | --- | --- | --- |  ---
 [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | --- | --- |  ---  |
+[clinical:active-users](https://github.com/clinical-meteor/active-users)| Blaze | Users | --- | --- | ---  |
 [clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| Blaze | --- | --- | --- | ---  |
 [clinical:extended-api](https://github.com/clinical-meteor/extended-api)| --- | --- | --- | --- | ---  |
 [clinical:auto-resizing](https://github.com/clinical-meteor/clinical-auto-resizing)  | --- | --- | --- | --- |  ---  |
@@ -35,7 +36,6 @@ The following table serves as both regulatory status overview and project roadma
 [clinical:json-data-utilities](https://github.com/clinical-meteor/json-data-utilities)| --- | --- | --- | --- | ---  |
 [clinical:offline](https://github.com/clinical-meteor/offline)| --- | --- | --- | --- | ---  |
 [clinical:mobile](https://github.com/clinical-meteor/mobile)| --- | --- | --- | --- | ---  |
-[clinical:active-users](https://github.com/clinical-meteor/active-users)| Blaze | Users | --- | --- | ---  |
 [clinical:base-model](https://github.com/clinical-meteor/base-model)| --- | --- | --- | --- | ---  |
 | clinical:profile  | --- | --- | --- | --- | ---  |
 | clinical:snomed    | --- | --- | --- | --- | ---  |
