@@ -159,7 +159,6 @@
 - [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
-- [Writing Unit Tests (with Jasmine Unit and Velocity)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.with.jasmine.md)  
 - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
 
 ========================
