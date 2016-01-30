@@ -3,9 +3,9 @@ Clinical Demos
 Links to live versions of the examples associated with this cookbook.  
  
 
-| Live Demo     | Source|    Tests   |  Status  | Meteor Version  |
+| Live Demo     | Source|    Validation   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
-| [Checklist Manifesto](http://checklist-manifesto.meteor.com/) | [checklist-manifesto](https://github.com/clinical-meteor/checklist-manifesto) | 90+ | [![Circle CI](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master)| 1.0.4 |
+| [Checklist Manifesto](http://checklist-manifesto.meteor.com/) | [checklist-manifesto](https://github.com/clinical-meteor/checklist-manifesto) | 250+ | [![Circle CI](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master)| 1.0.4 |
 
 
 
