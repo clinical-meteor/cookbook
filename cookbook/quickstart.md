@@ -15,7 +15,7 @@ npm install -g starrynight
 meteor create helloworld
 
 # create a helloworld app (in development)
-#starrynight generate helloworld
+# starrynight generate helloworld
 
 # add the framework components
 meteor add clinical:framework
@@ -29,7 +29,7 @@ $ starrynight run-tests --type package-verification
 
 # run validation tests
 $ starrynight run-tests --type validation
-$ starrynight run-tests --type package-validation
+#$ starrynight run-tests --type package-validation
 ````
 
 
