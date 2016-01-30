@@ -39,14 +39,6 @@ starrynight run-framework nightwatch
 We also provide a number of reference apps as part of the Clinical Meteor project, which act as a baseline and standard by which to calibrate the rest of the quality-control and continuous-improvement processes that are necessary for regulatory review.  These reference apps use the packages in the release track, are under quality control across multiple dimensions; and are suitable for benchmarking, baselining, and complex code refactorings.  
 
 
-
-
-========================================
-###[Clinical Meteor Track - Examples](https://github.com/awatson1978/meteor-cookbook/tree/master/examples-clinical)   
-
-There are a number of example clinical apps as well.  Check these out if you're building in the biomedical or healthcare space.  
-
-
 ========================================
 ###Clinical Meteor Architecture  
 
