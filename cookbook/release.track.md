@@ -69,6 +69,14 @@ meteor publish-release --from-checkout
 ````
 
 ======================
+####Fetching the Latest Commits for Each Package in a Release
+
+````bash
+git submodule foreach git pull origin master
+````
+
+
+======================
 ####Discussion
 
 https://forums.meteor.com/t/custom-meteor-release/13736/6
