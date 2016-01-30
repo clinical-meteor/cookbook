@@ -1,24 +1,6 @@
  
 ## Installation & Uninstallation
 
-**Q:  Is there a Homebrew installer for Mac OSX?**  
-Unofficially, yes.  It can be found here:  
-https://gist.github.com/4317935
-
-````
-brew install https://gist.github.com/raw/4317935/05084353d3cd50acad7e88e01c3f6463b42c0ed3/meteor.rb
-````
-
-**Q:  Is there an MSI installer for Windows?**  
-Unofficially, yes. The last released version is 0.6.4.1. It can be found here:  
-http://win.meteor.com/
-
-**Q:  When will Windows version become a first class citizen?**  
-After the 1.0 release.  In the meantime, it's recommended to use a virtual machine for development.  You can read the roadmap and relevant disscussions here:
-
-https://trello.com/card/official-windows-support/508721606e02bb9d570016ae/11  
-https://github.com/meteor/meteor/issues/867
-
 **Q:  Can Meteor run on Rasberry Pi?**  
 Daaah... maybe?  People seem to be working on it, but not much success yet.
 
