@@ -15,6 +15,14 @@ The Clinical Meteor project started off as the Meteor Cookbook, a FAQ and tutori
 ###[Example Apps](https://github.com/awatson1978/meteor-cookbook/tree/master/examples)  
 We also provide a number of reference apps as part of the Clinical Meteor project, which act as a baseline and standard by which to calibrate the rest of the quality-control and continuous-improvement processes that are necessary for regulatory review.  These reference apps use the packages in the release track, are under quality control across multiple dimensions; and are suitable for benchmarking, baselining, and complex code refactorings.  
 
+========================================
+###Local Development  
+
+For those who want to clone or fork the project and do local development, it's recommended to use the ``--recursive`` flag, which will recursively download the examples and packages.  Be warned!  The entire project is well over 350MB at this point!
+
+````bash
+git clone --recursive http://github.com/awatson1978/meteor-cookbook MeteorCookbook
+````
 
 ========================================
 ### [The StarryNight Utility](http://starrynight.meteor.com/)    
@@ -46,16 +54,6 @@ This section is in the works, and will document the architecture behind creating
 
 ![Meteor Architecture](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/Meteor%20Architecture%20-%20Dev%20to%20Prod.jpg)  
 
-
-
-========================================
-###Development  
-
-For those who want to clone or fork the repository and do local development, it's recommended to use the ``--recursive`` flag, which will recursively download the examples and packages.  
-
-````bash
-git clone --recursive http://github.com/awatson1978/meteor-cookbook MeteorCookbook
-````
 
 
 ========================================
