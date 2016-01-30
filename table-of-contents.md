@@ -136,6 +136,7 @@
 - [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 - [Writing Unit Tests (with Jasmine Unit and Velocity)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.with.jasmine.md)  
 - [Routing](https://github.com/EventedMind/iron-router)
+  - [Layout & Yields](https://github.com/clinical-meteor/active-layout)
   - [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
   - [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
   - [Static Pages](https://github.com/clinical-meteor/static-pages)
