@@ -46,5 +46,7 @@ Additional examples that may be of interest to people.
 | [RocketChat](https://rocket.chat/) | [RocketChat.Electron](https://github.com/RocketChat/Rocket.Chat.Electron) | --- | --- |  1.0.3.1 |
 | ---  | [todomvc-meteor-react-with-router-animations](https://forums.meteor.com/t/todomvc-meteor-react-with-router-animations/3328) | --- | --- |  --- |
 
+| [Document Timeline](http://document-timeline.meteor.com/)  | [timeline](https://github.com/AntoBase/timeline) | --- | --- |  --- |
+
 
 
