@@ -111,7 +111,7 @@
 - [Email](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/email.md)  
 - [File Operations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
 - [Streaming Video (WebRTC)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/video.md)  
-- [Keybindings](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/keybinding.md)  
+- [Keybindings](https://github.com/clinical-meteor/keybindings)  
 - [Multitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
 - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
 - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
