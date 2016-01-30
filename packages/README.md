@@ -20,10 +20,10 @@ The following table serves as both regulatory status overview and project roadma
 [clinical:env](https://github.com/clinical-meteor/env)| --- | Env | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/env/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/env/tree/master)  | --- |
 [clinical:graphs-dailystats](https://github.com/clinical-meteor/graphs-dailystats)| Blaze | Graphs | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/graphs-dailystats/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/graphs-dailystats/tree/master)  | --- |
 [clinical:collaborations](https://github.com/clinical-meteor/collaborations)| --- | Collaboration | --- | [![Circle CI](https://circleci.com/gh/clinical-meteor/collaborations/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/collaborations/tree/master)  | --- |
+[clinical:active-users](https://github.com/clinical-meteor/active-users)| Blaze | Users | --- | --- | ---  |
 [clinical:collaborations-ui](https://github.com/clinical-meteor/collaborations-ui)| Blaze | --- | --- | --- | ---  |
 [clinical:static-pages](https://github.com/clinical-meteor/clinical-static-pages)  | Blaze | --- | --- | --- |  ---
 [clinical:famous-dead-people](https://github.com/awatson1978/accounts-famous-dead-people)    | --- | --- | --- | --- |  ---  |
-[clinical:active-users](https://github.com/clinical-meteor/active-users)| Blaze | Users | --- | --- | ---  |
 [clinical:simple-layout](https://github.com/clinical-meteor/simple-layout)| Blaze | --- | --- | --- | ---  |
 [clinical:extended-api](https://github.com/clinical-meteor/extended-api)| --- | --- | --- | --- | ---  |
 [clinical:auto-resizing](https://github.com/clinical-meteor/clinical-auto-resizing)  | --- | --- | --- | --- |  ---  |
