@@ -20,7 +20,7 @@ We also provide a number of reference apps as part of the Clinical Meteor projec
 ========================================
 ###Local Development  
 
-For those who want to clone or fork the project and do local development, it's recommended to use the ``--recursive`` flag, which will recursively download the examples and packages.  Be warned!  We're trying to keep things compressed and optimized, but the project still weighs in at over 330MB at this point!
+For those who want to clone or fork the project and do local development, it's recommended to use the ``--recursive`` flag, which will recursively download the examples and packages.  Be warned!  We're trying to keep things compressed and optimized, but the project still weighs in at over 330MB at this point!  When decompressed and project databases rehydrated, the project can swell to over a gigabyte in size.
 
 ````bash
 git clone --recursive http://github.com/clinical-meteor/clinical-meteor ClinicalMeteor
