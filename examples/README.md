@@ -6,7 +6,7 @@ Links to live versions of the examples associated with this cookbook.
 | Live Demo     | Source|    Validation   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
 | [Checklist Manifesto](http://checklist-manifesto.meteor.com/) | [checklist-manifesto](https://github.com/clinical-meteor/checklist-manifesto) | 250+ | [![Circle CI](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master)| 1.1.0.3 |
-| [Hello Healthcare](http://hello-healthcare.meteor.com/) | [hello-healthcare](https://github.com/clinical-meteor/hello-healthcare) | 68 | [![Circle CI](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master)| 1.1.0.3 |
+| [Hello Healthcare](http://hello-healthcare.meteor.com/) | [hello-healthcare](https://github.com/clinical-meteor/hello-healthcare) | 100+ | [![Circle CI](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master)| 1.1.0.3 |
 | [California Kids Cancer Comparison](http://ckcc.meteor.com/) | [ckcc](https://github.com/clinical-meteor/ckcc) | --- | --- | 1.1.0.3 |
 
 
