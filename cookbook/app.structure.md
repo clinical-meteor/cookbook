@@ -40,27 +40,3 @@ public/                                  # static files that are available to th
 server/                                  # server code
 tests/                                   # unit test files (won't be loaded on client or server)
 ```
-
-## Create an Application Skeleton
-When creating a new application, sandboxing some new functionality, or otherwise starting a new project, you may frequently run the following series of commands:
-
-````sh
-meteor create myapp
-cd myapp
-mkdir client
-mkdir server
-mkdir public
-mkdir packages
-mkdir tests
-mkdir shared
-...
-
-meteor add <pakage-name>
-...
-````
-
-After creating those directories in the application folder, the next step is to create some structure for the MVC model, adding subscriptions and publications, and building out the rest of the application.  How to do that depends on what kind of application you're designing... ie. a static web page, a mobile application, a thick-client game, a thin-client applet, and so forth.  
-
-
-
-
