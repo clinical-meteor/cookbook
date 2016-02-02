@@ -1,43 +1,68 @@
 ## Namespacing
 
-There are a half-dozen approaches to creating namespaces in Meteor apps... the file system, package dependencies, CSS class namespacing, JavaScript objects.   We're going to present a structured methodology for walking through each of these approaches that will progress through the design cycle and lead to optimized code.
+There are a half-dozen approaches to creating namespaces in Meteor apps... the file system, package dependencies, CSS class namespacing, JavaScript objects.   We're going to present a structured methodology that uses all of them together, and walks you through through the design cycle and leads to optimized code.  It's easiest to just show you how it works.
 
 
 ============================================
 #### HTML Template Naming Conventions  
 
-The first step involves breaking up wireframes or screenshots into their respective components (or templates), and assigning names.  The simple act of assigning a template or div a name begins the process of defining a namespace.  In the following example, by using the name of the template as the id of the div, we are effectively binding the two together.
+The first step involves breaking up wireframes or screenshots into their respective components (or templates), and assigning names.  The simple act of assigning a template or div a name begins the process of defining a namespace.  Make a list of all the names from your wireframes, and then convert them to templates.
 
 ````html
-<template name="blankPage">
-  <div id="blankPage">
-  </div>
-</template>
-<template name="homePage"> 
-  <div id="homePage">
-  </div>
-</template>
-<template name="sidebar"> 
-  <div id="sidebar">
-  </div>
-</template>
+<template name="blankPage"></template>
+<template name="homePage"></template>
+<template name="sidebar"></template>
 ````
 
 ============================================
 #### File System  
-The most important is to simply use the filesystem as a namespace.  Feel free to organize files in folders however makes sense for your app, and use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.  Meteor's bundler and minifier will combine all your files, and users and clients will never need to know how your internal files are organized.  Feel free to rename files and directories as often as it makes sense to keep things organized.
+Feel free to organize files in folders however makes sense for your app, and use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.  Meteor's bundler and minifier will combine all your files, and users and clients will never need to know how your internal files are organized.  Feel free to rename files and directories as often as it makes sense to keep things organized.
+
 ````sh
-/client/components/blankPage.html
-/client/components/homePage.html
+/client/main.html
+/client/components/sidebar.html
+/client/components/pages/blank.html
+/client/components/pages/home.html
+/client/components/pages/home.patient.html
+/client/components/pages/home.physician.html
 ````
+
+However, we would like to point out one particularly effective method that can keep members with widely differing levels of experience successfully working together.  It requires a small bit of repetition, in that we make a folder for each component, and we put a single .html, .js, and .css file in the folder with the same name.
+
+````sh
+/client/components/homePage/homePage.html
+/client/components/homePage/homePage.js
+/client/components/homePage/homePage.css
+````
+At first glance, this may seem redundant and repetitive; but in reality, we will be using the namespace to tie different technologies together and simplify things by not letting them get out of control.  
 
 
 ============================================
 #### LESS Class Namespacing  
-The third most common approach to namespacing is to use LESS to create CSS class hierarchies and namespaces.  In the following example, the ``@import`` syntax defines a namespace hierarchy between LESS files; and the nested CSS classes define a hierarchical namespace in a tree format.  
-````css
-@import "../mixins.less";
 
+The pattern continues by  using LESS to layer on CSS class names onto our wireframe namespaces.  Assume you have a homepage that looks like the following:
+
+````html
+<template name="homePage">
+  <div id="homePage">
+    <header></header>
+    <div class="panel">
+      <div class="panel-heading">Home</div>
+    </div>
+    <footer></footer>
+  </div>
+</template>
+````
+
+Since HTML is generally synonymous with XHTML, and XHTML validates to XML, most modern web browsers can parse HTML using XPath selectors.  This is particularly true for Meteor, which basically enforces the use of well-formed HTML.  All that is to say that by using well-structured XHTML, we've created a document namespace, and can use jQuery to parse it using XPath selector.  (We'll be using this technique a lot.)
+
+````js
+$('#homePage .panel .panel-header").text()
+````
+
+So, we want to incorporate our styling into our namespacing, and we do so by using a preprocessor that supports nested classes.  The nested classes allow us to write our styles in the same manner as our HTML.  This is especially important because it prevent styles from leaking outside their component.  It also keeps the styling structurally the same as the HTML and in close proximity to our component, and not off in a bootstrap library who-knows-where in the app.
+
+````less
 #homePage{
   background-color: white;
   header{
@@ -54,7 +79,7 @@ The third most common approach to namespacing is to use LESS to create CSS class
 }
 ````
 
-Note:  we do *not* recommend the use of Less, Styl, or SCSS mixins.  They tend to be brittle, and hamper a teams ability to refactor code.
+Note:  we do not recommend the use of mixins.  They tend to be brittle, and hamper a teams ability to refactor code.
 
 
 
