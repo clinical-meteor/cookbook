@@ -16,7 +16,6 @@
 
   - [Directory Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/directory.structure.md)
   - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
-  - [Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/model-view-controller.md) 
   - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md) 
   - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
   - [Site Configuration](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/configuration.md)  
@@ -156,7 +155,8 @@
 ========================
 #### Part X - Miscellaneous
 
-- [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)
+- [Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/model-view-controller.md) 
+- [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
 - [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
 - [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
