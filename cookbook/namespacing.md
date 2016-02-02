@@ -18,7 +18,7 @@ The first step involves breaking up wireframes or screenshots into their respect
 #### File System  
 Feel free to organize files in folders however makes sense for your app, and use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.  Meteor's bundler and minifier will combine all your files, and users and clients will never need to know how your internal files are organized.  Feel free to rename files and directories as often as it makes sense to keep things organized.
 
-````sh
+````bash
 /client/main.html
 /client/components/sidebar.html
 /client/components/pages/blank.html
@@ -38,7 +38,7 @@ At first glance, this may seem redundant and repetitive; but in reality, we will
 
 
 ============================================
-#### LESS Class Namespacing  
+#### Using Namespacing to Coordinate HTML, JS, and CSS Files
 
 The pattern continues by  using LESS to layer on CSS class names onto our wireframe namespaces.  Assume you have a homepage that looks like the following:
 
@@ -48,10 +48,26 @@ The pattern continues by  using LESS to layer on CSS class names onto our wirefr
     <header></header>
     <div class="panel">
       <div class="panel-heading">Home</div>
+      <p>{{getContent}}</p>
     </div>
     <footer></footer>
   </div>
 </template>
+````
+
+We're going to create a JavaScript object called Template.homePage, with helpers and an event map.
+
+````js
+Template.homePage.events({
+  'click button': function (){
+    console.log(new Date());
+  }
+});
+Template.homePage.helpers({
+  getContent: function (){
+    return "lorem ipsum dollar set et...";
+  }
+});
 ````
 
 Since HTML is generally synonymous with XHTML, and XHTML validates to XML, most modern web browsers can parse HTML using XPath selectors.  This is particularly true for Meteor, which basically enforces the use of well-formed HTML.  All that is to say that by using well-structured XHTML, we've created a document namespace, and can use jQuery to parse it using XPath selector.  (We'll be using this technique a lot.)
@@ -60,7 +76,7 @@ Since HTML is generally synonymous with XHTML, and XHTML validates to XML, most 
 $('#homePage .panel .panel-header').text()
 ````
 
-So, we want to incorporate our styling into our namespacing, and we do so by using a preprocessor that supports nested classes.  The nested classes allow us to write our styles in the same manner as our HTML.  This is especially important because it prevent styles from leaking outside their component.  It also keeps the styling structurally the same as the HTML and in close proximity to our component, and not off in a bootstrap library who-knows-where in the app.
+We also want to incorporate our styling into our namespacing, and we do so by using a preprocessor that supports nested classes.  The nested classes allow us to write our styles in the same manner as our HTML.  This is especially important because it prevent styles from leaking outside their component.  It also keeps the styling structurally the same as the HTML and in close proximity to our component, and not off in a bootstrap library who-knows-where in the app.
 
 ````less
 #homePage{
@@ -80,6 +96,8 @@ So, we want to incorporate our styling into our namespacing, and we do so by usi
 ````
 
 Note:  we do not recommend the use of mixins.  They tend to be brittle, and hamper a teams ability to refactor code.
+
+
 
 
 
