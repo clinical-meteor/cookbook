@@ -57,7 +57,7 @@ The pattern continues by  using LESS to layer on CSS class names onto our wirefr
 Since HTML is generally synonymous with XHTML, and XHTML validates to XML, most modern web browsers can parse HTML using XPath selectors.  This is particularly true for Meteor, which basically enforces the use of well-formed HTML.  All that is to say that by using well-structured XHTML, we've created a document namespace, and can use jQuery to parse it using XPath selector.  (We'll be using this technique a lot.)
 
 ````js
-$('#homePage .panel .panel-header").text()
+$('#homePage .panel .panel-header').text()
 ````
 
 So, we want to incorporate our styling into our namespacing, and we do so by using a preprocessor that supports nested classes.  The nested classes allow us to write our styles in the same manner as our HTML.  This is especially important because it prevent styles from leaking outside their component.  It also keeps the styling structurally the same as the HTML and in close proximity to our component, and not off in a bootstrap library who-knows-where in the app.
