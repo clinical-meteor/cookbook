@@ -65,7 +65,7 @@ Template.homePage.events({
 });
 Template.homePage.helpers({
   getContent: function (){
-    return "lorem ipsum dollar set et...";
+    return HomePage.generateLispum();
   }
 });
 ````
@@ -100,6 +100,13 @@ Note:  we do not recommend the use of mixins.  They tend to be brittle, and hamp
 
 
 
+````js
+HomePage = {
+  generateLispum: function (){
+    return "lorem ipsum dollar set et...";
+  }
+}
+````
 
 ============================================
 #### NPM Package Namespacing  
@@ -108,6 +115,7 @@ However, if you need to expose a namespace, or import a namespace, you'll probab
 ````js
 // package.js  
 Package.describe({
+  name: "foo:homepage",
   summary: "This is a sample package that exposes the Foo namespace."
 });
 
