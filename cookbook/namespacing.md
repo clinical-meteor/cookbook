@@ -16,31 +16,17 @@ The most important is to simply use the filesystem as a namespace.  Feel free to
 ````
 
 ============================================
-#### NPM Package Namespacing  
-However, if you need to expose a namespace, or import a namespace, you'll probably need to use Javascript objects and the Npm namespacing system.  There are two steps in this process. The first is to expose a namespace via a Package. That is done with a ``package.js`` description file, which looks like this:
-
-````js
-// package.js  
-Package.describe({
-  summary: "This is a sample package that exposes the Foo namespace."
-});
-
-// If you're bundling an NPM package, be sure to reference the package as a dependency
-Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
-
-Package.on_use(function (api) {
-  // we set a package global variable with some value
-  // in this case a JSON object
-  Foo = {label: "foo object", value: "foo"};
-
-  // alternatively, we can reference an Npm package  
-  Foo = Npm.require('sample_package');  
-
-  // and we then export the Foo variable
-  api.export('Foo');
-});
+#### HTML Template Naming Conventions  
+Lastly, you can create namespaces by simply creating and using naming conventions throughout your application. For instance, you might create a template naming convention, using camelCase, which matches with the id of the first ``<div>`` in each template.
+````html
+<template name="pageGraph">
+<template name="pageProfile">
+<template name="pageHome">
+<template name="pageErrorNotFound">
+<template name="pageErrorUnknownBrowser">
+<template name="sidebarInspection">
+<template name="sidebarNavigation">
 ````
-In particular, if you're trying to access Npm namespaces, the ``Npm.depends()``, ``Npm.require()``, and ``Npm.export()`` commands define all the syntax you need.
 
 
 ============================================
@@ -66,15 +52,30 @@ The third most common approach to namespacing is to use LESS to create CSS class
 ````
 
 
+
 ============================================
-#### HTML Template Naming Conventions  
-Lastly, you can create namespaces by simply creating and using naming conventions throughout your application. For instance, you might create a template naming convention, using camelCase, which matches with the id of the first ``<div>`` in each template.
-````html
-<template name="pageGraph">
-<template name="pageProfile">
-<template name="pageHome">
-<template name="pageErrorNotFound">
-<template name="pageErrorUnknownBrowser">
-<template name="sidebarInspection">
-<template name="sidebarNavigation">
+#### NPM Package Namespacing  
+However, if you need to expose a namespace, or import a namespace, you'll probably need to use Javascript objects and the Npm namespacing system.  There are two steps in this process. The first is to expose a namespace via a Package. That is done with a ``package.js`` description file, which looks like this:
+
+````js
+// package.js  
+Package.describe({
+  summary: "This is a sample package that exposes the Foo namespace."
+});
+
+// If you're bundling an NPM package, be sure to reference the package as a dependency
+Npm.depends({sample_package: "0.2.6", bar: '1.2.3'});
+
+Package.on_use(function (api) {
+  // we set a package global variable with some value
+  // in this case a JSON object
+  Foo = {label: "foo object", value: "foo"};
+
+  // alternatively, we can reference an Npm package  
+  Foo = Npm.require('sample_package');  
+
+  // and we then export the Foo variable
+  api.export('Foo');
+});
 ````
+In particular, if you're trying to access Npm namespaces, the ``Npm.depends()``, ``Npm.require()``, and ``Npm.export()`` commands define all the syntax you need.
