@@ -14,7 +14,7 @@
 ========================
 #### Part II - Architecture Basics
 
-  - [File Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/filestructure.md)
+  - [Directory Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/directory.structure.md)
   - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
   - [Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/model-view-controller.md) 
   - [Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md) 
