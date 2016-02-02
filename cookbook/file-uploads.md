@@ -257,3 +257,56 @@ Thanks to Raz for this excellent example.  You'll want to check out the complete
 [Micha Roon's File Upload Pattern](https://coderwall.com/p/7tpa8w)  
 [EventedMind File Upload Package](https://www.eventedmind.com/feed/meteor-build-a-file-upload-package)  
 
+
+---------------------------------------
+#### Server Uploads
+
+The following scripts are for uploading a file from the server filesystem into the server.  Mostly for config files and filewatchers.
+
+````js
+//https://forums.meteor.com/t/read-file-from-the-public-folder/4910/5
+
+// Asynchronous Method.
+Meteor.startup(function () {
+    console.log('starting up');
+
+    var fs = Npm.require('fs');
+    // file originally saved as public/data/taxa.csv
+    fs.readFile(process.cwd() + '/../web.browser/app/data/taxa.csv', 'utf8', function (err, data) {
+        if (err) {
+            console.log('Error: ' + err);
+            return;
+        }
+
+        data = JSON.parse(data);
+        console.log(data);
+    });
+});
+
+
+// Synchronous Method.
+Meteor.startup(function () {
+    var fs = Npm.require('fs');
+    // file originally saved as public/data/taxa.csv
+    var data = fs.readFileSync(process.cwd() + '/../web.browser/app/data/taxa.csv', 'utf8');
+
+    if (Icd10.find().count() === 0) {
+        Icd10.insert({
+            date:  new Date(),
+            data:  JSON.parse(data)
+        });
+    }
+});
+
+
+Meteor.methods({
+  parseCsvFile:function (){
+    console.log('parseCsvFile');
+
+    var fs = Npm.require('fs');
+    // file originally saved as public/data/taxa.csv
+    var data = fs.readFileSync(process.cwd() + '/../web.browser/app/data/taxa.csv', 'utf8');
+    console.log('data', data);
+  }
+});
+````
