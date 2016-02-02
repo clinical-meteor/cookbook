@@ -65,7 +65,7 @@ Template.homePage.events({
 });
 Template.homePage.helpers({
   getContent: function (){
-    return HomePage.generateLispum();
+    return HomePage.content.generateLispum();
   }
 });
 ````
@@ -95,15 +95,18 @@ We also want to incorporate our styling into our namespacing, and we do so by us
 }
 ````
 
-Note:  we do not recommend the use of mixins.  They tend to be brittle, and hamper a teams ability to refactor code.
 
+===========================================
+#### JavaScript Dotted Notation 
 
 
 
 ````js
 HomePage = {
-  generateLispum: function (){
-    return "lorem ipsum dollar set et...";
+  content: {
+    generateLispum: function (){
+      return "lorem ipsum dollar set et...";
+    }
   }
 }
 ````
