@@ -1,31 +1,34 @@
 ## Namespacing
 
-There are four general approaches to creating namespaces in Meteor apps... the file system, package dependencies, CSS class namespacing, and naming conventions.  
+There are a half-dozen approaches to creating namespaces in Meteor apps... the file system, package dependencies, CSS class namespacing, JavaScript objects.   We're going to present a structured methodology for walking through each of these approaches that will progress through the design cycle and lead to optimized code.
+
+
+============================================
+#### HTML Template Naming Conventions  
+
+The first step involves breaking up wireframes or screenshots into their respective components (or templates), and assigning names.  The simple act of assigning a template or div a name begins the process of defining a namespace.  In the following example, by using the name of the template as the id of the div, we are effectively binding the two together.
+
+````html
+<template name="blankPage">
+  <div id="blankPage">
+  </div>
+</template>
+<template name="homePage"> 
+  <div id="homePage">
+  </div>
+</template>
+<template name="sidebar"> 
+  <div id="sidebar">
+  </div>
+</template>
+````
 
 ============================================
 #### File System  
 The most important is to simply use the filesystem as a namespace.  Feel free to organize files in folders however makes sense for your app, and use multi dotted names, or camelCase names, and go to town in creating ad-hoc namespaces.  Meteor's bundler and minifier will combine all your files, and users and clients will never need to know how your internal files are organized.  Feel free to rename files and directories as often as it makes sense to keep things organized.
 ````sh
-/client/templates/page.home.html
-/client/templates/page.profile.html
-/client/templates/page.graph.html
-/client/templates/page.error.pagenotfound.html
-/client/templates/page.error.unknownbrowser.html
-/client/templates/sidebar.inspection.html
-/client/templates/sidebar.navigation.html
-````
-
-============================================
-#### HTML Template Naming Conventions  
-Lastly, you can create namespaces by simply creating and using naming conventions throughout your application. For instance, you might create a template naming convention, using camelCase, which matches with the id of the first ``<div>`` in each template.
-````html
-<template name="pageGraph">
-<template name="pageProfile">
-<template name="pageHome">
-<template name="pageErrorNotFound">
-<template name="pageErrorUnknownBrowser">
-<template name="sidebarInspection">
-<template name="sidebarNavigation">
+/client/components/blankPage.html
+/client/components/homePage.html
 ````
 
 
@@ -50,6 +53,8 @@ The third most common approach to namespacing is to use LESS to create CSS class
   }
 }
 ````
+
+Note:  we do *not* recommend the use of Less, Styl, or SCSS mixins.  They tend to be brittle, and hamper a teams ability to refactor code.
 
 
 
