@@ -89,26 +89,17 @@ terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
 ````
 
 
-================================
-#### Velocity
-The newest full-featured reactive test runner.  
 
-[Velocity Homepage](https://github.com/xolvio/velocity)
-[Velocity Core Mailing List](https://groups.google.com/forum/#!forum/velocity-core)  
-[Meteor Testing Manual](http://www.meteortesting.com/)  
 
-================================
-#### mUnit
-[mUnit](https://atmospherejs.com/gfk/munit) is an independent testing framework, which took a very different approach to than Nightwatch and Velocity, and focused on providing Chai and Sinon hooks for TinyTest.  If you're looking for something lightweight that extends core Tinytest functionality, it's worth a look.  
-
-````sh
-meteor add gfk:munit
-````
 
 ================================
 #### Older/Deprecated Projects (Probablly Want to Avoid)  
-The following tools are first-generation testing frameworks.  They represent a lot of experimentation, and you may find some useful utilities in them.  Most of them are deprecated or rolled into the Velocity project.  
+The following tools are first and second generation testing frameworks.  They represent a lot of experimentation, and you may find some useful utilities in them.  Most of them are deprecated or abandoned
 
+[mUnit](https://atmospherejs.com/gfk/munit)
+[Velocity Homepage](https://github.com/xolvio/velocity)
+[Velocity Core Mailing List](https://groups.google.com/forum/#!forum/velocity-core)  
+[Meteor Testing Manual](http://www.meteortesting.com/)  
 [RTD](http://rtd.xolv.io)  
 [RTD Exampel Project](https://github.com/xolvio/meteor-rtd-example-project)  
 [Unit Testing with Meteor](http://blog.xolv.io/2013/04/unit-testing-with-meteor.html)  
