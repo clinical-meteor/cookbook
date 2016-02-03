@@ -5,7 +5,7 @@
 
 - [Login, Logout, Accounts](https://github.com/clinical-meteor/active-entry/blob/master/tests/gagarin/activeEntryTests.js)
 - [Window Size, Styles, Device, Layout](https://github.com/clinical-meteor/active-layout/blob/master/tests/gagarin/ActiveLayoutTests.js) 
-- [Parsing CSV Data](https://github.com/clinical-meteor/csv/blob/master/tests/gagarin/CsvTests.js). 
+- [Parsing CSV Data](https://github.com/clinical-meteor/csv/blob/master/tests/gagarin/CsvTests.js)
 - [Collections, Data Models](https://github.com/clinical-meteor/hipaa-audit-log/blob/master/tests/gagarin/HipaaAuditLogTests)
 - [Roles and Account Creation](https://github.com/clinical-meteor/roles/blob/master/tests/gagarin/RolesTests.js)
 - [Simple Schema / Schema Hydration](https://github.com/clinical-meteor/schema-hydrator/blob/master/tests/gagarin/SchemaHydratorTests.js)
