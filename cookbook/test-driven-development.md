@@ -96,8 +96,8 @@ terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
 #### Older/Deprecated Projects (Probablly Want to Avoid)  
 The following tools are first and second generation testing frameworks.  They represent a lot of experimentation, and you may find some useful utilities in them.  Most of them are deprecated or abandoned
 
-[mUnit](https://atmospherejs.com/gfk/munit)
-[Velocity Homepage](https://github.com/xolvio/velocity)
+[mUnit](https://atmospherejs.com/gfk/munit)  
+[Velocity Homepage](https://github.com/xolvio/velocity)  
 [Velocity Core Mailing List](https://groups.google.com/forum/#!forum/velocity-core)  
 [Meteor Testing Manual](http://www.meteortesting.com/)  
 [RTD](http://rtd.xolv.io)  
