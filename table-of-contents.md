@@ -80,6 +80,7 @@
   - [Refactoring With Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.tdd.md)   
   - [Writing Acceptance Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
   - [Writing Unit Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
+  - [Veification/Validation Code Samples](https://github.com/clinical-meteor/cookbook/blob/master/cookbook/testing.examples.md)
 
 
 ========================
