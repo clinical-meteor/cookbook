@@ -1,7 +1,7 @@
 
 
 ============================
-####Verification Tests
+####Verification Tests (Gagarin)
 
 - [Login, Logout, Accounts](https://github.com/clinical-meteor/active-entry/blob/master/tests/gagarin/activeEntryTests.js)
 - [Window Size, Styles, Device, Layout](https://github.com/clinical-meteor/active-layout/blob/master/tests/gagarin/ActiveLayoutTests.js) 
@@ -14,7 +14,7 @@
 - [Environment Variables](https://github.com/clinical-meteor/env/blob/master/tests/gagarin/EnvTests.js)
 
 ============================
-####Validation Tests
+####Validation Tests (Nightwatch)
 
 
 - [Sign In, Register, Forgot Password](https://github.com/clinical-meteor/active-entry/blob/master/tests/nightwatch/walkthroughs/activeEntryWalkthrough.js)
