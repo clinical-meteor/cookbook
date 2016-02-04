@@ -25,7 +25,7 @@ The *lib* directory is loaded before other directories in your Meteor project, a
 ##### packages
 The *packages* directory is where custom packages are stored  during local development. 
 
-#### private
+##### private
 The *private* directory contains static files that should only be available on the web server.
 
 ##### public
