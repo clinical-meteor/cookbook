@@ -14,4 +14,4 @@ Links to live versions of the examples associated with this cookbook.
 | [Clinical Health Planner](http://senescence.meteor.com/) | [health-planner](https://github.com/awatson1978/health-planner) | 7 | --- | 0.8 |
 | [Biological Reductionism](http://reductionism.meteor.com/) | [reductionism](https://github.com/awatson1978/reductionism) | 7 | --- | 0.7 |
 | [Bioinformatics Sampler](http://reductionism.meteor.com/) | [reductionism](https://github.com/awatson1978/d3-flare-demo) | 7 | --- | 0.7 |
-
+| [Pulse](http://pulseapp.meteor.com/)  | [pulse](https://github.com/firdausramlan/pulse) | --- | --- | --- |
