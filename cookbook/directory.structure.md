@@ -40,7 +40,6 @@ The *tests* directory is omitted by default when your application is bundled and
 ==========================================
 ## Package-Based Application Architecture
 
-## Reserved Directories
 Even though there is no hard-coded logic for directories in packages, we find that it's a very good practice to use the same directory conventions when building packages.  This creates a natural refactor path as features are prototyped in the app, and then extracted into packages to be shared between apps.
 
 ```sh
