@@ -33,6 +33,6 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 | [elidoran:cosmos-browserify](https://github.com/elidoran/cosmos-browserify) | --- | ---  | --- |
 | [handtrix:chrome-extension-utils](https://www.npmjs.com/package/meteor-chrome-extension-utils) | --- | ---  | --- |
 | [jrudio:electron](https://atmospherejs.com/jrudio/electron) | --- | ---  | --- |
-
-
+| [jamielob:transitions](https://github.com/jamielob/transitions) | --- | --- | --- |
+| [meson:electron](https://github.com/electron-webapps/meteor-electron) | --- | --- | --- |
 
