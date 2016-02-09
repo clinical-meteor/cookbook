@@ -180,7 +180,7 @@ Template.exampleComponent.events({
     var dataSchemaKey = $("#fooId").attr("data-schema-key")[0];
     var recordId = $('form').attr("id");
     
-    newObject[dataSchemaKey] = $("#fooId).val();
+    newObject[dataSchemaKey] = $("#fooId").val();
     
     Foo.update({_id: recordId}, {$set: newObject});
   }
