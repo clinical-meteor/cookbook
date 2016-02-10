@@ -4,11 +4,11 @@ The Redwood Methodology began with a simple diagram documenting the architecture
 
 ![Meteor Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/Meteor%20Architecture%20-%20Basic.jpg)
 
-Besides the breakthrough of creating an application framework that uses JavaScript on both the server and client, Meteor does a particularly noteworthy thing, in that it provides a technology called 'minimongo' which acts as a client-side replica set and data store for webapps.  We'll look at Replica Sets later; but suffice it to say that are Meteor architecture above can be distilled to the following database architecture.
+Besides the breakthrough of creating an application framework that uses JavaScript on both the server and client, Meteor does a particularly noteworthy thing, in that it provides a technology called 'minimongo' which acts as a light-weight, client-side replica set and datastore for webapps.  
 
 ![Collections & Models](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/CollectionsAndModels.PNG)
 
-The inbound/outbound HL7 logs are particularly prone to becoming 'big data' and having asymmetrical read/write topologies.  There are also likely to be high-availability and fault-redundancy requirements.  So, for various reasons, production Mongo systems are generally implemented using Replica Sets (also known as a Shard), which write the data to disk in triplicate.
+Traditionally, Replica Sets are part of production Mongo systems, and involve writing data to disk in triplicate.  
 
 ![Replica Set](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ReplicaSet.PNG)
 
@@ -41,7 +41,7 @@ It should also be noted that inbound/outbound HL7 requests are enabled through t
 ==========================
 #### Miscellaneous  
 
-That may seem like a lot of data (and it is); but the astonishing thing is that it only represents a single fault-tolerant, high-availability microservice.  These microservices don't exist in a vacuum; and even with a convention keeping the database-to-user-interface as close to a 1:1 model as possible, there is still much workflow logic to be implemented.  For instance, the ChecklistManifesto application has (approximately) the following workflow, which utilizes three microservices and two HL7 resources (List, DiagnosticOrder).
+These microservices don't exist in a vacuum; and even with a convention keeping the database-to-user-interface as close to a 1:1 model as possible, there is still much workflow logic to be implemented.  For instance, the ChecklistManifesto application has (approximately) the following workflow, which utilizes three microservices and two HL7 resources (List, DiagnosticOrder).
 
 ![Checklist Workflow](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ChecklistWorkflow.png)
 
