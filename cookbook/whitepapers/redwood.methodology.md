@@ -38,35 +38,3 @@ It should also be noted that inbound/outbound HL7 requests are enabled through t
 
 ![HL7 Inbound/Outbound](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/Hl7InboundOutbound.PNG)
 
-==========================
-#### Miscellaneous  
-
-These microservices don't exist in a vacuum; and even with a convention keeping the database-to-user-interface as close to a 1:1 model as possible, there is still much workflow logic to be implemented.  For instance, the ChecklistManifesto application has (approximately) the following workflow, which utilizes three microservices and two HL7 resources (List, DiagnosticOrder).
-
-![Checklist Workflow](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ChecklistWorkflow.png)
-
-To manage this complexity, we use two strategies: packages and Card UI design.  Packages are essentially about code reuse, and sharing modules between applications.  The Clinical Meteor track is essentially an exercise in reusing code between apps.  As such, all applications in the Clinical Meteor track and the Redwood Methodology tend towards being package-only apps.  
-
-![Clinical Meteor Venn Diagram](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ClinicalMeteorVennDiagram.PNG)
-
-
-================================
-#### Card User Interface Design
-
-As far as UI goes, we choose a Card UI, as its a natural design metaphor for a document-oriented database such as Mongo, and which is suitable for denormalized healthcare data.  There are many approaches to Card UI, and we take an accessibility and ergonomics approach, which specifies a standard design convention across devices.
-
-#####iPhone Portrait  
-![iPhone Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPhonePortrait.png)
-
-#####iPad Portrait  
-![iPad Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadPortrait.png)
-
-
-#####iPad Landscape    
-![iPad Landscape](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadLandscape.png)
-
-#####Desktop   
-![Desktop](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/DesktopLandscape.png)
-
-#####Thunderbolt     
-![Thunderbolt](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/Thunderbolt.png)
