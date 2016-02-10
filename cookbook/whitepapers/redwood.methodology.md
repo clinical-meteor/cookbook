@@ -52,13 +52,13 @@ To manage this complexity, we use two strategies: packages and Card UI design.  
 
 As fa as UI goes, we choose a Card UI, as its a natural design metaphor for a document-oriented database such as Mongo, and which is suitable for denormalized healthcare data.  There are many approaches to Card UI, and we take an accessibility and ergonomics approach, which specifies a standard design convention across devices.
 
-!(iPhone Portrait)[https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPhonePortrait.png]
+![iPhone Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPhonePortrait.png)
 
-!(iPad Portrait)[https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadPortrait.png]
+![iPad Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadPortrait.png)
 
 
-!(iPad Landscape)[https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadLandscape.png]
+![iPad Landscape](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadLandscape.png)
 
-!(Desktop)[https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/DesktopLandscape.png]
+![Desktop](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/DesktopLandscape.png)
 
-!(Thunderbolt)[https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/Thunderbolt.png]
+![Thunderbolt](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/Thunderbolt.png)
