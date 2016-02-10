@@ -8,6 +8,14 @@ Besides the breakthrough of creating an application framework that uses JavaScri
 
 ![Collections & Models](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/CollectionsAndModels.PNG)
 
+The inbound/outbound HL7 logs are particularly prone to becoming 'big data' and having asymmetrical read/write topologies.  There are also likely to be high-availability and fault-redundancy requirements.  So, for various reasons, production Mongo systems are generally implemented using Replica Sets (also known as a Shard), which write the data to disk in triplicate.
+
+![Replica Set](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ReplicaSet.PNG)
+
+Some organizations clear HL7 logs after a month, to keep them within the terabyte range.  But others might wish to keep long-term backups.  Assuming an organization has obligations to store data for 7 years (21 years in the case of pediatric data), it's quite reasonable to assume that someday an organization will exceed its capacity to scale vertically with a single server, and will need to scale horizontally with a database cluster.  In such situations, not only do we write the data in triplicate, but we write it to multiple servers.
+
+![Sharded Mongo Cluster](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ShardedMongoCluster.PNG)
+
 We can also represent this database architecture vertically, which will offer some benefits as we introduce the Redwood Methodology.  Compare the above data model with the following, which layers on some application-level CRUD components (Create, Read, Update, Delete, List).  We essentially define a Microservice as a convention by which data can be persisted between client, server, and database, has some user interface components, and can be consistently rendered across devices.  
 
 ![ActiveCardArchitecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ActiveCardArchitecture.PNG)
@@ -30,13 +38,8 @@ It should also be noted that inbound/outbound HL7 requests are enabled through t
 
 ![HL7 Inbound/Outbound](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/Hl7InboundOutbound.PNG)
 
-The inbound/outbound HL7 logs are particularly prone to becoming 'big data' and having asymmetrical read/write topologies.  There are also likely to be high-availability and fault-redundancy requirements.  So, for various reasons, production Mongo systems are generally implemented using Replica Sets (also known as a Shard), which write the data to disk in triplicate.
-
-![Replica Set](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ReplicaSet.PNG)
-
-Some organizations clear HL7 logs after a month, to keep them within the terabyte range.  But others might wish to keep long-term backups.  Assuming an organization has obligations to store data for 7 years (21 years in the case of pediatric data), it's quite reasonable to assume that someday an organization will exceed its capacity to scale vertically with a single server, and will need to scale horizontally with a database cluster.  In such situations, not only do we write the data in triplicate, but we write it to multiple servers.
-
-![Sharded Mongo Cluster](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ShardedMongoCluster.PNG)
+==========================
+#### Miscellaneous  
 
 That may seem like a lot of data (and it is); but the astonishing thing is that it only represents a single fault-tolerant, high-availability microservice.  These microservices don't exist in a vacuum; and even with a convention keeping the database-to-user-interface as close to a 1:1 model as possible, there is still much workflow logic to be implemented.  For instance, the ChecklistManifesto application has (approximately) the following workflow, which utilizes three microservices and two HL7 resources (List, DiagnosticOrder).
 
@@ -46,15 +49,24 @@ To manage this complexity, we use two strategies: packages and Card UI design.  
 
 ![Clinical Meteor Venn Diagram](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ClinicalMeteorVennDiagram.PNG)
 
-As fa as UI goes, we choose a Card UI, as its a natural design metaphor for a document-oriented database such as Mongo, and which is suitable for denormalized healthcare data.  There are many approaches to Card UI, and we take an accessibility and ergonomics approach, which specifies a standard design convention across devices.
 
+================================
+#### Card User Interface Design
+
+As far as UI goes, we choose a Card UI, as its a natural design metaphor for a document-oriented database such as Mongo, and which is suitable for denormalized healthcare data.  There are many approaches to Card UI, and we take an accessibility and ergonomics approach, which specifies a standard design convention across devices.
+
+#####iPhone Portrait  
 ![iPhone Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPhonePortrait.png)
 
+#####iPad Portrait  
 ![iPad Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadPortrait.png)
 
 
+#####iPad Landscape    
 ![iPad Landscape](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadLandscape.png)
 
+#####Desktop   
 ![Desktop](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/DesktopLandscape.png)
 
+#####Thunderbolt     
 ![Thunderbolt](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/Thunderbolt.png)
