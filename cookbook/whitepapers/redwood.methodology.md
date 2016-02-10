@@ -8,11 +8,7 @@ Besides the breakthrough of creating an application framework that uses JavaScri
 
 ![Collections & Models](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/CollectionsAndModels.PNG)
 
-We can also represent this database architecture vertically, which will offer some benefits as we introduce the Redwood Methodology.
-
-COLLECTIONS AND MODELS (VERTICAL)
-
-Compare the above data model with the following, which layers on some application-level CRUD components (Create, Read, Update, Delete, List).  We essentially define a Microservice as a convention by which data can be persisted between client, server, and database, has some user interface components, and can be consistently rendered across devices.  
+We can also represent this database architecture vertically, which will offer some benefits as we introduce the Redwood Methodology.  Compare the above data model with the following, which layers on some application-level CRUD components (Create, Read, Update, Delete, List).  We essentially define a Microservice as a convention by which data can be persisted between client, server, and database, has some user interface components, and can be consistently rendered across devices.  
 
 ![ActiveCardArchitecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ActiveCardArchitecture.PNG)
 
