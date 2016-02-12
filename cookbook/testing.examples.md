@@ -12,6 +12,10 @@
 - [Business Logic](https://github.com/clinical-meteor/form-builder/blob/master/tests/gagarin/FormBuilderTests.js)
 - [Router](https://github.com/clinical-meteor/router/blob/develop/tests/gagarin/RouterTests.js)
 - [Environment Variables](https://github.com/clinical-meteor/env/blob/master/tests/gagarin/EnvTests.js)
+- [Testing Pub/Sub Defined in a Package Library](https://github.com/clinical-meteor/collaborations/blob/master/tests/gagarin/CollaborationTests.js)
+- [Testing Pub/Subs Defined in Test Scripts](https://github.com/clinical-meteor/collaborations/blob/master/tests/gagarin/ScenarioPublicationTests.js)
+- [Testing Published Collection returns a Data Model using transform()](https://github.com/clinical-meteor/collaborations/blob/master/tests/gagarin/CollaborationPublicationAndTransformTests.js)
+- [Testing Collection Helper Functions](https://github.com/clinical-meteor/collaborations/blob/master/tests/gagarin/CollaborationGraphTests.js)
 
 ============================
 ####Validation Tests (Nightwatch)
