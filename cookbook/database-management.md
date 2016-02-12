@@ -78,11 +78,16 @@ mongoexport --db meteor --collection taxonomy --port 3001 --out taxonomy.json
 ===========================================
 #### Import a JSON File into Meteor
 
-This gist is meant to help you load a json datafile into a Meteor application.  More specifically, it's useful to migrate or bootstrap a Mongo datacollection.  The easiest way to do this task is to open up three command shell windows.  As a few of the commands will take over the command shell and direct their output to stdout.  
+Importing into a default Meteor instance is fairly easy.  Note that you can add a ``--jsonArray`` option if your json file is exported as an array from another system.
+````
+mongoimport --db meteor --port 3001 --collection taxonomy --file taxonomy.json
+````
+===========================================
+#### Copying Data Between Staging and Local Databases
+
+Mongo supports database-to-database copying, which is useful if you have large databases on a staging database that you want to copy into a local development instance.  
 
 ````js
-// first, export your data to a file
-// data.json
 
 // run mongod so we can create a staging database
 // note that this is a separate instance from the meteor mongo and minimongo instances
@@ -103,15 +108,6 @@ meteor mongo --port 3002
 
 // copy collections from staging database into meteor database
 db.copyDatabase('staging', 'meteor', 'localhost');
-
-// shut down the staging database
-Ctrl-C
-
-//------------------------------------------------------------
-// if your datafiles are a collection of json and bson objects 
-// from a mongodump command, use the following
-
-mongorestore --port 3002 --db test dump/test/
 ````
 
 
