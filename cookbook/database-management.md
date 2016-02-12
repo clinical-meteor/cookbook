@@ -66,6 +66,14 @@ mongorestore --port 3001 --db meteor /path/to/dump
 mongorestore --port 3001 --db meteor /path/to/dump -c comments.bson
 ````
 
+===================================
+#### Export a Collection to JSON
+
+Run meteor, open another terminal window, and run the following command.  In this instance, we are exporting a collection named ``taxonomy``.  
+
+````bash
+mongoexport --db meteor --collection taxonomy --port 3001 --out taxonomy.json
+````
 
 ===========================================
 #### Import a JSON File into Meteor
