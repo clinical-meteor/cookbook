@@ -1,8 +1,4 @@
- 
-
-
-
-## Model, View, Controllers
+## MVC is Dead; Long Live MVC
 
 The First Rule of MVC:  **Be wary of anybody who tries to re-invent the MVC pattern.** 
 
