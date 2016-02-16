@@ -12,7 +12,7 @@ Traditionally, Replica Sets are part of production Mongo systems, and involve wr
 
 ![Replica Set](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ReplicaSet.PNG)
 
-Some organizations clear HL7 logs after a month, to keep them within the terabyte range.  But others might wish to keep long-term backups.  Assuming an organization has obligations to store data for 7 years (21 years in the case of pediatric data), it's quite reasonable to assume that someday an organization will exceed its capacity to scale vertically with a single server, and will need to scale horizontally with a database cluster.  In such situations, not only do we write the data in triplicate, but we write it to multiple servers.
+And when the amount of data exceeds the capacity of a single replica set (aka shard), we add more shards to horizontally scale the cluster.  A Sharded cluster has overhead of three configuration servers, and two routers, in addition to the minimum of two shards of three servers each.  In total, a sharded database cluster requires a minimum of 11 servers, and thereafter increases in multiples of three...  11, 14, 17, 20, 23, etc.
 
 ![Sharded Mongo Cluster](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ShardedMongoCluster.PNG)
 
