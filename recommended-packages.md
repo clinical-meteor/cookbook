@@ -35,4 +35,6 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 | [jrudio:electron](https://atmospherejs.com/jrudio/electron) | --- | ---  | --- |
 | [jamielob:transitions](https://github.com/jamielob/transitions) | --- | --- | --- |
 | [meson:electron](https://github.com/electron-webapps/meteor-electron) | --- | --- | --- |
+| [helfer:minimongo-index](https://github.com/helfer/minimongo-index) | --- | --- | --- |
+
 
