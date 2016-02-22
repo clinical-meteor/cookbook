@@ -155,6 +155,8 @@
 
 - [Health Insurance Portability and Accountability Act](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
 - [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
+- U.S. Food and Drug Administration specifies in the Code of Federal Regulations Title 21, § 820.75  
+  - Equal Opportunity & Non Discrimination  
 
 ========================
 #### Part X - Miscellaneous
@@ -185,4 +187,3 @@
   - [Syntax & Semantics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
   - [Grammar & Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
   - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
-  - Equal Opportunity & Non Discrimination
