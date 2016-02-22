@@ -145,13 +145,15 @@
 
 - [Data Visualizations (D3)](https://github.com/clinical-meteor/clinical-graphs-dailystats)
 - [Fast Healthcare Interoperability Resources (HL7 FHIR)](https://github.com/awatson1978/hl7-argonaut-fhir)  
-- [Digital Imaging and Communications in Medicine (DICOM)]
+- [Digital Imaging and Communications in Medicine (DICOM)]()
+- Meaningful Use
+- Office of the National Coordinator (ONC) Health IT Certification Program
 
 
 ========================
 #### Part IX - Regulatory Compliance  
 
-- [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
+- [Health Insurance Portability and Accountability Act](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
 - [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 
 ========================
