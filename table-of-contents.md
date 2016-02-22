@@ -64,7 +64,7 @@
 - [Horizontal Scaling](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/horizontal-scaling.md)  
 - [Integrating 3rd Party Databases](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/orm.layers.md)  
 - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
-- [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
+
 
 ========================
 #### Part VI - Quality Assurance - FDA, CCHIT, and Other Regulatory Credentialing
@@ -144,16 +144,14 @@
 #### Part VIII - Clinical, Healthcare, & Biomedical Apps
 
 - [Data Visualizations (D3)](https://github.com/clinical-meteor/clinical-graphs-dailystats)
-
+- [Fast Healthcare Interoperability Resources (HL7 FHIR)](https://github.com/awatson1978/hl7-argonaut-fhir)  
+- [Digital Imaging and Communications in Medicine (DICOM)]
 
 
 ========================
 #### Part IX - Regulatory Compliance  
 
 - [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
-- [HL7 Argonaut FHIR](https://github.com/awatson1978/hl7-argonaut-fhir)  
-
-
 - [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 
 ========================
