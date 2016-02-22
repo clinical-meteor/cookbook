@@ -21,5 +21,8 @@ The terms Model, View, and Controller are used in so many different ways that th
 The Cookbook uses the StarryNight utility instead of Velocity for testing.  There are lots of reasons for this decision, but it basically boils down to the need to have something we can rely on and can contribute changes to when we need things changed.  The Velocity project was way to instable for our needs, and people running it actively worked to exclude any changes or contributions that we tried to submit.  
 
 ====================================  
-#### 3. Stability Over New Features  
-Clinical Meteor is all about getting Meteor through regulatory approval and used in situations where people's health and well-being may be impacted.  For that reason, we are interested in stability and reliability.  That means we need quality control and quality improvement processes.  These processes necessitate that we go at a slower pace than the rest of the Meteor community and ecosystem.  Don't worry, we'll get all the fancy features in eventually.  But this isn't the place for experimental features.
+#### 5.  Stability Over Latest Features
+Clinical Meteor is all about getting Meteor through regulatory approval and used in situations where people's health and well-being may be impacted.  For that reason, we are interested in stability and reliability, and implement a [12 Factor App](http://12factor.net/) that passes the [Joel Test](http://www.joelonsoftware.com/articles/fog0000000043.html).  That means we need quality control and quality improvement processes.  These processes necessitate that we go at a slower pace than the rest of the Meteor community and ecosystem.  Don't worry, we'll get all the fancy features in eventually.  But this isn't the place for experimental features.
+
+
+
