@@ -9,7 +9,7 @@
 - [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
 - [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
-
+- [Clinical Meteor Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 
 ========================
 #### Part II - Architecture Basics
@@ -29,6 +29,7 @@
 
   - [Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
   - [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)  
+  - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
   - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
   - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 
@@ -156,17 +157,13 @@
 - [Health Insurance Portability and Accountability Act](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
 - [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 - U.S. Food and Drug Administration specifies in the Code of Federal Regulations Title 21, § 820.75  
-  - Equal Opportunity & Non Discrimination  
+- Equal Opportunity & Non Discrimination  
 
 ========================
 #### Part X - Miscellaneous
 
-- [Model View Controller](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/model-view-controller.md) 
-- [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
 - [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
-- [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
-- [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
 
 
 ========================
