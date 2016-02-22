@@ -175,7 +175,7 @@
 
   - [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
   - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
-  - [Terminology](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/terminology.md)  
+  - [Glossary](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/glossary.md)  
   - [Syntax & Semantics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
   - [Grammar & Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
   - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
