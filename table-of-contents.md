@@ -163,8 +163,18 @@
 - [Cookbook MVC Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 - [Webstorm IDE](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/webstorm.md)
 
+
 ========================
-#### Part XI - Project Governance & Contributions
+#### Part XI - Upgrades. 
+
+  - [Version 6.5]
+  - [Version 8.0 - Spark]
+  - [Version 9.0 - Isopacks]
+  - [Version 1.2 - Isopack 2]
+  - [Version 1.3 - React]
+
+========================
+#### Part XII - Project Governance & Contributions
 
   - [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
   - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
@@ -173,3 +183,4 @@
   - [Grammar & Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
   - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
   - Equal Opportunity & Non Discrimination
+
