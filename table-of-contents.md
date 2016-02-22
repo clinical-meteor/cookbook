@@ -28,11 +28,9 @@
 #### Part III - Packages
 
   - [Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
-  - [Upgrading Legacy Apps to Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrading-to-0.9.x.md)  
   - [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md)  
   - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
   - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
-
 
 ========================
 #### Part IV - Deployment Environments    
@@ -165,11 +163,11 @@
 
 
 ========================
-#### Part XI - Upgrades. 
+#### Part XI - Upgrades  
 
   - [Version 6.5]
   - [Version 8.0 - Spark]
-  - [Version 9.0 - Isopacks]
+  - [Version 9.0 - Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrades/upgrading-to-0.9.x.md)  
   - [Version 1.2 - Isopack 2]
   - [Version 1.3 - React]
 
@@ -183,4 +181,3 @@
   - [Grammar & Punctuation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/punctuation.md)  
   - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
   - Equal Opportunity & Non Discrimination
-
