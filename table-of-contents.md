@@ -64,19 +64,19 @@
 - [Horizontal Scaling](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/horizontal-scaling.md)  
 - [Integrating 3rd Party Databases](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/orm.layers.md)  
 - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
-
+- [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 
 ========================
 #### Part VI - Quality Assurance - FDA, CCHIT, and Other Regulatory Credentialing
 
   - Introduction to Regulatory Overview & Credentialing
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
+  - [Writing Acceptance Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
+  - [Writing Unit Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
   - [Refactoring Files and Directories](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
   - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
   - [Refactoring MVC to Components](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.mvc.to.components.md)  
   - [Refactoring With Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.tdd.md)   
-  - [Writing Acceptance Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
-  - [Writing Unit Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
   - [Veification/Validation Code Samples](https://github.com/clinical-meteor/cookbook/blob/master/cookbook/testing.examples.md)
 
 
@@ -143,12 +143,18 @@
 ========================
 #### Part VIII - Clinical, Healthcare, & Biomedical Apps
 
-- [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
-- [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 - [Data Visualizations (D3)](https://github.com/clinical-meteor/clinical-graphs-dailystats)
-- [HL7 Argonaut FHIR](https://github.com/awatson1978/hl7-argonaut-fhir)
 
 
+
+========================
+#### Part IX - Regulatory Compliance  
+
+- [HIPAA Compliance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
+- [HL7 Argonaut FHIR](https://github.com/awatson1978/hl7-argonaut-fhir)  
+
+
+- [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
 
 ========================
 #### Part X - Miscellaneous
