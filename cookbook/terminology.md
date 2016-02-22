@@ -1,7 +1,5 @@
-## Terminology
-**Q:  How do I use DDP instead of a REST API with an ORM?  Is that ACID compliant?**  
+## Glossary
 
-Luckily, Meteor has been fairly good about not using too many acronyms.  But there are a few concept which you might not have run across, depending on your background, and how you came to Meteor. Here are a few relevant acronyms which people ask about from time to time...
 
 **ACID - Atomicity, Consistency, Isolation, Durability**  
 Generally speaking, when Meteor folks talk about ACID, they're talking about the fact that Mongo doesn't support traditional database transactions; they're not talking about the Acid2 browser compatibility tests.
@@ -29,6 +27,6 @@ https://en.wikipedia.org/wiki/Representational_state_transfer
 http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm  
 
 
-
-
+**SPA - Single Page Application**  
+A single page application is a JavaScript app that is loaded into a single document object model in a web browser.  Client-side routers may add/remove content and DOM nodes, and provide URL routing so that an application may appear to have many pages.  But the general idea is that onpageload() and onpageunload() are only called once for an SPA.
 
