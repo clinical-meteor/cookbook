@@ -36,5 +36,6 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 | [jamielob:transitions](https://github.com/jamielob/transitions) | --- | --- | --- |
 | [meson:electron](https://github.com/electron-webapps/meteor-electron) | --- | --- | --- |
 | [helfer:minimongo-index](https://github.com/helfer/minimongo-index) | --- | --- | --- |
+| [useraccounts:core](http://useraccounts.meteor.com/) | --- | --- | --- |
 
 
