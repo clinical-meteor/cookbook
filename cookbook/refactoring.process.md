@@ -1,4 +1,4 @@
-## Refactoring Process
+## Refactoring Files and Directories Example - Extracting a Package
 The following is a brief outline of the process of refactoring.  If you're an experienced programmer, this will be second-nature to you already.  If you're only recently finding yourself writing larger programs that need refactoring, I hope this little reference gives you an overview of what refactoring feels like.  
 
 
