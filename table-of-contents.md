@@ -78,7 +78,8 @@
   - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
   - [Refactoring MVC to Components](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.mvc.to.components.md)  
   - [Refactoring With Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.tdd.md)   
-  - [Veification/Validation Code Samples](https://github.com/clinical-meteor/cookbook/blob/master/cookbook/testing.examples.md)
+  - [Verification/Validation Code Samples](https://github.com/clinical-meteor/cookbook/blob/master/cookbook/testing.examples.md)  
+  - [Continuous Deployment](https://martinhbramwell.github.io/Meteor-CI-Tutorial/index.html)  
 
 
 ========================
