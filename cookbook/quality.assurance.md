@@ -12,3 +12,5 @@ For a more thorough look at Continuous Deployment, we recommend the excellent tu
 
 ##Release Track Change Control  
 We implement a similar process for the packages within the Clinical Meteor Track itself, and use the Reference Apps as our baseline.
+
+[Clinical Track Package QA](https://github.com/clinical-meteor/cookbook/tree/master/packages)
