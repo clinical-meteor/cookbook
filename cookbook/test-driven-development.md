@@ -21,11 +21,6 @@ Test driven development is summarized by the phrase "Red, Green, Refactor".  Ill
 
 
 ================================
-#### Rule of Three  
-
-[Rule of Three](http://en.wikipedia.org/wiki/Rule_of_three_%28computer_programming%29)  
-
-================================
 #### TinyTest  
 
 
