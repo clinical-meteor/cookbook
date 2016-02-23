@@ -72,12 +72,11 @@
 
   - Introduction to Regulatory Overview & Credentialing
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
-  - [Writing Acceptance Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
-  - [Writing Unit Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
+  - [Writing Validation Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
+  - [Writing Verification Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
   - [Refactoring Example - Extracting Files into a Package](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
   - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
   - [Refactoring MVC to Components](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.mvc.to.components.md)  
-  - [Refactoring With Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.tdd.md)   
   - [Verification/Validation Code Samples](https://github.com/clinical-meteor/cookbook/blob/master/cookbook/testing.examples.md)  
   - [Continuous Deployment](https://martinhbramwell.github.io/Meteor-CI-Tutorial/index.html)  
 
