@@ -4,23 +4,27 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 
 | Package       | UI  | Contributor | Scaffold   |
 | ------------- | :----------------: |  :----------------: | :----------------: |
-| [gwendall:meteor-ui-hooks](https://github.com/gwendall/meteor-ui-hooks) | --- | ---  | --- |
+| [jrudio:electron](https://atmospherejs.com/jrudio/electron) | --- | ---  | --- |
+| [jamielob:transitions](https://github.com/jamielob/transitions) | --- | --- | --- |
+| [jamielob:native-transitions](https://github.com/jamielob/native-transitions) | --- | --- | --- |
+| [datariot/meteor-ganalytics](https://github.com/datariot/meteor-ganalytics) | none  |  datariot | yes | 
+| [meson:electron](https://github.com/electron-webapps/meteor-electron) | --- | --- | --- |
+| [Event Hooks](https://atmosphere.meteor.com/package/event-hooks)  | none |  ? | No | 
+| [Payments - Stripe](https://atmosphere.meteor.com/package/stripe) | none |  ? | Yes | 
+| [Date/Time - Moment](https://github.com/possibilities/meteor-moment)  | none |  possibilities | No | 
 | [msavin:mongol](https://github.com/msavin/mongol) | --- | ---  | --- | 
 | [msavin:jetsetter](https://github.com/msavin/jetsetter) | --- | ---  | --- | 
 | [jboulhous/dev](https://atmospherejs.com/jboulhous/dev)| none  |  jboulhous | no | 
-| [datariot/meteor-ganalytics](https://github.com/datariot/meteor-ganalytics) | none  |  datariot | yes | 
 | [aldeed/meteor-template-extension](https://github.com/aldeed/meteor-template-extension)  | ?  |  aldeed | No | 
-| [Payments - Stripe](https://atmosphere.meteor.com/package/stripe) | none |  ? | Yes | 
-| [Date/Time - Moment](https://github.com/possibilities/meteor-moment)  | none |  possibilities | No | 
 | [Clustering - Meteor-Cluster](https://github.com/arunoda/meteor-cluster)  | none |  ? | No | 
 | [Browser Detection](https://atmosphere.meteor.com/package/browser-detection ) | none |  ? | No | 
-| [Event Hooks](https://atmosphere.meteor.com/package/event-hooks)  | none |  ? | No | 
 | [Collection2](https://atmosphere.meteor.com/package/collection2)  | none |  ? | No | 
 | [cron](https://atmosphere.meteor.com/package/cron)  | none |  ? | No | 
 | [Mesosphere](https://atmosphere.meteor.com/package/Mesosphere)  | none |  ? | No | 
 | [Login Page](https://atmosphere.meteor.com/package/accounts-entry)  | bootstrap3 |  ? | Yes | 
 | [LeapJ](https://github.com/kevohagan/meteor-leapmotion) | none |  ? | No | 
 | [rzymek:fullcalendar](https://atmospherejs.com/rzymek/fullcalendar) | custom | rzymek  | no | 
+| [gwendall:meteor-ui-hooks](https://github.com/gwendall/meteor-ui-hooks) | --- | ---  | --- |
 | [peerlibrary/meteor-blaze-components](https://github.com/peerlibrary/meteor-blaze-components) | no | ---  | no | 
 | [numtel/meteor-webcomponent](https://github.com/numtel/meteor-webcomponent) | no | ---  | no | 
 | [grigio:babel](https://atmospherejs.com/grigio/babel) | --- | ---  | --- | 
@@ -32,10 +36,9 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 | [meteorhacks:sikka](https://github.com/meteorhacks/sikka) | --- | ---  | --- | 
 | [elidoran:cosmos-browserify](https://github.com/elidoran/cosmos-browserify) | --- | ---  | --- |
 | [handtrix:chrome-extension-utils](https://www.npmjs.com/package/meteor-chrome-extension-utils) | --- | ---  | --- |
-| [jrudio:electron](https://atmospherejs.com/jrudio/electron) | --- | ---  | --- |
-| [jamielob:transitions](https://github.com/jamielob/transitions) | --- | --- | --- |
-| [meson:electron](https://github.com/electron-webapps/meteor-electron) | --- | --- | --- |
 | [helfer:minimongo-index](https://github.com/helfer/minimongo-index) | --- | --- | --- |
 | [useraccounts:core](http://useraccounts.meteor.com/) | --- | --- | --- |
+
+
 
 
