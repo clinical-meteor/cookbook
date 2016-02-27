@@ -10,7 +10,24 @@ At the heart of the Quality Assurance initiative process is the idea that any ap
 For a more thorough look at Continuous Deployment, we recommend the excellent tutorial from Martin Bramwell, a former V&V consultant for NASA.
 [Meteor Continuous Deployment](https://martinhbramwell.github.io/Meteor-CI-Tutorial/index.html)
 
+
+##Version Control Branching Model
+
+
+
+
+##Verification Validation Tests on Commits
+We recommend that all applications built with Clinical Meteor use GitHub and Circle CI, so they can use the Status API and set up a Continuous Integration and Deployment process.  To configure Circle CI, simply add a .circle.yml file, and connect the webhooks in CircleCI and GitHub.
+
+##Github Status API
+
+
+
 ##Release Track Change Control  
 We implement a similar process for the packages within the Clinical Meteor Track itself, and use the Reference Apps as our baseline.
 
 [Clinical Track Package QA](https://github.com/clinical-meteor/cookbook/tree/master/packages)
+
+##Release Track Insights
+
+We've set up a dashboard page for all of the packages in the Clinical Release track, where you can see the latest status of each package and reference app.
