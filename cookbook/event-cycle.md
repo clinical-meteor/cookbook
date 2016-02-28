@@ -148,7 +148,7 @@ It should be noted that Defensive Programming applies to any rendering view laye
 
 For an advanced dive into this topic, take a look at the following event-cycle diagrams, which are loosely inspired by [Feynman diagrams](https://www.google.com/search?q=Feynman+diagrams&espv=2&biw=1888&bih=1061&source=lnms&tbm=isch&sa=X&ei=nsRrVIWVCfHjsASltYLwCw&ved=0CAYQ_AUoAQ) and where drawn while trying to integrate Tokbox, a 3rd party Web RTC video-conferencing library.  These diagrams were drawn during 0.6.5 days, before Blaze changed the reactive rendering from an opt-out model to an opt-in model.  So, most of the references to a Singleton now refer to a Tracker object.  Otherwise, the diagrams seem to be fairly acurate models of the event cycle.
 
-![EventCycle](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/EventCycle.jpg)  
+![EventCycles](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/EventCycles.png)  
 
 ================================
 #### Event Hooks  
