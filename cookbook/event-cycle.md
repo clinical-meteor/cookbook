@@ -91,17 +91,56 @@ Meteor.startup();
   
 // there is no matching Meteor.shutdown()
 ````
-
 ================================
-#### Event Hooks  
+#### Defensive Programming
 
-You can extend the event-cycle even further with the excellent event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.  Two highly recommended packages:  
+So, now we have these templates rendering over-and-over as soon as the Meteor.startup() function is called. There's an extremely important use-case which confuses many people new to Meteor, which involves Blaze rendering the UI before data has reached the client - much like a car engine can idle in neutral before a gear is selected. When the subscription finally gets data from the publication, Blaze has data it can start using to render things with; much like the idling car engine can begin moving forward once it's shifted into gear.  But until it gets that data, things can break unless we handle that edge case.  Lets look at an example:
 
-Event Hooks  
-https://atmosphere.meteor.com/package/event-hooks  
+````js
+// BROKEN !!!  THIS DOES NOT WORK
+Template.showPlayer.helpers({
+  player: function () {
+    return players.findOne(FlowRouter.getParam("_id"));
+  },
+  calculateAge: function() {
+    // this player might not have arrived yet
+    var p = players.findOne(FlowRouter.getParam("_id"));
+    var dob = moment(p.dateOfBirth).format('YYYYMMDD');
 
-Collection Hooks  
-https://atmosphere.meteor.com/package/collection-hooks    
+   return moment().diff(moment(dob, 'YYYYMMDD'), 'years')
+  }
+});
+````
+
+The above code will intermittedly generate the following error on startup, and cause the UI to crash:
+````
+TypeError: Cannot read property 'dateOfBirth' of undefined.
+````
+
+So what to do about this?  How many hours of productivity have been lost by developers on this issue?  The answer is quite simple, and involves a programing technique known as _Defensive Programming_.  Simply put, we're going to guard against variables being undefined.  And we're going to guard in every single function.  The above code sample should look like this:
+
+````js
+Template.showPlayer.helpers({
+  player: function () {
+    return players.findOne(FlowRouter.getParam("_id"));
+  },
+  calculateAge: function() {
+    var player = players.findOne(FlowRouter.getParam("_id"));
+    // we're defending against an undefined player
+    if(player){
+      var dob = moment(p.dateOfBirth).format('YYYY/MM/DD');
+      return moment().diff(moment(dob, 'YYYY/MM/DD'), 'years')
+    } else {
+      // and we specify the value that should be rendered when data hasn't reached the client yet
+      return "----/--/--";
+    }
+  }
+});
+````
+
+So, to use our car engine analogy again, the defensive programming technique used above tells Blaze what to do when the engine is idling. Programmers new to Blaze often make the mistake of only telling the client how to render when the engine is in gear and moving forward; but we must also consider the edge-case of how to render when data hasn't reached the client.  
+It should be noted that Defensive Programming applies to any rendering view layer, and is applicable to React, Angular, Vue, and other libraries.
+
 
 
 ================================
@@ -110,3 +149,15 @@ https://atmosphere.meteor.com/package/collection-hooks
 For an advanced dive into this topic, take a look at the following event-cycle diagrams, which are loosely inspired by [Feynman diagrams](https://www.google.com/search?q=Feynman+diagrams&espv=2&biw=1888&bih=1061&source=lnms&tbm=isch&sa=X&ei=nsRrVIWVCfHjsASltYLwCw&ved=0CAYQ_AUoAQ) and where drawn while trying to integrate Tokbox, a 3rd party Web RTC video-conferencing library.  These diagrams were drawn during 0.6.5 days, before Blaze changed the reactive rendering from an opt-out model to an opt-in model.  So, most of the references to a Singleton now refer to a Tracker object.  Otherwise, the diagrams seem to be fairly acurate models of the event cycle.
 
 ![EventCycle](https://raw.githubusercontent.com/awatson1978/meteor-cookbook/master/images/EventCycle.jpg)  
+
+================================
+#### Event Hooks  
+
+Lastly, you can extend the event-cycle even further with the excellent event-hooks and collection-hooks packages, which will extend the number of event hooks you have available to you.  It's much easier to build applications using hooks, rather than wiring things up to Template.foo.rendered callbacks.  Two highly recommended packages:  
+
+Event Hooks  
+https://atmosphere.meteor.com/package/event-hooks  
+
+Collection Hooks  
+https://atmosphere.meteor.com/package/collection-hooks    
+
