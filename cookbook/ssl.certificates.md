@@ -20,8 +20,8 @@ All of the following SSL guides are with hosting providers or services that will
 #### Green URL Security Bar    
 To get the green pop-up address bar, you'll need an Extended Validation certificate.
 
-https://www.digicert.com/code-signing/ev-code-signing.htm
-https://www.namecheap.com/security/ssl-certificates/comodo/ev.aspx
+https://www.digicert.com/code-signing/ev-code-signing.htm  
+https://www.namecheap.com/security/ssl-certificates/comodo/ev.aspx  
 
 
 ==================================================================
