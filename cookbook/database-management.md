@@ -117,7 +117,7 @@ db.copyDatabase('staging', 'meteor', 'localhost');
 
 Preallocation. Mongo sets aside disk-space in empty containers, so when the time comes to write something to disk, it doesn't have to shuffle bits out of the way first. It does so by a doubling algorithm, always doubling the amount of disk space preallocated until it reaches 2GB; and then each prealloc file from thereon is 2GB. Once data is preallocated, it doesn't unallocate unless you specifically tell it to. So observable MongoDB space usage tends to go up automatically, but not down.
 
-Some research on the Mongo preallocation... 
+Some research on the Mongo preallocation...   
 http://stackoverflow.com/questions/2966687/reducing-mongodb-database-file-size  
 http://stackoverflow.com/questions/9473850/mongo-prealloc-files-taking-up-room   
 
