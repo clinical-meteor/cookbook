@@ -33,18 +33,20 @@ Once you get a 'Hello World' app running, you'll need to start paying attention 
 Developing Meteor apps usually means testing multi-client reactivity, which requires collaboration tools.  The following tools have proven to be popular within the Meteor community.  
 
 [Google Hangouts](http://www.google.com/+/learnmore/hangouts/)  - Video conferencing and chat.  
+[Zenhub.io](zenhub.io) - Kanban boards for GitHub.
+[InVision](https://projects.invisionapp.com/d/main#/projects) - Collaborative wireframing and prototyping.  
 [Meeting Hero](http://www.meetinghero.com/)  - Collaborative meeting planning.  
 [Hackpad](https://hackpad.com)  Collaborative document editing.  
 [Slack](https://slack.com/) - Collaborative project tracking feeds.    
 [MadEye](http://madeye.io/) - Collaborative web editor.    
 [Screenhero](http://screenhero.com) - Collaborative screen sharing.  
-[InVision](https://projects.invisionapp.com/d/main#/projects) - Collaborative wireframing and prototyping.  
 [Proto.io](https://proto.io/)  Wireframing and prototyping.  
 [HuBoard](https://huboard.com) - Kanban boards for GitHub.   
 [Zapier](https://zapier.com/) - The best apps.  Together.  
 [Teamwork.com](https://www.teamwork.com/) - Traditional project management & gannt charts.   
 [Sprint.ly](https://sprint.ly/) - More kanban boards and sprint planning that works with GitHub.  
 [LucidChart](https://www.lucidchart.com) - Online Visio alternative.
+[Culture Hacking Video](https://youtu.be/c39SWfrGaiA)  
 
 ===============================================================
 #### REST Clients  
