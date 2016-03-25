@@ -38,6 +38,7 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 | [handtrix:chrome-extension-utils](https://www.npmjs.com/package/meteor-chrome-extension-utils) | --- | ---  | --- |
 | [helfer:minimongo-index](https://github.com/helfer/minimongo-index) | --- | --- | --- |
 | [useraccounts:core](http://useraccounts.meteor.com/) | --- | --- | --- |
+| [nathantreid:blaze-modules](https://github.com/nathantreid/blaze-modules) | --- | --- | --- |
 
 
 
