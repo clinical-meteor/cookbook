@@ -40,6 +40,7 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 | [useraccounts:core](http://useraccounts.meteor.com/) | --- | --- | --- |
 | [nathantreid:blaze-modules](https://github.com/nathantreid/blaze-modules) | --- | --- | --- |
 
+https://github.com/Telerik-Verified-Plugins/NativePageTransitions
 
 
 
