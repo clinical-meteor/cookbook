@@ -4,9 +4,6 @@ Beyond the packages in the Clinical Meteor track, there are many other packages 
 
 | Package       | UI  | Contributor | Scaffold   |
 | ------------- | :----------------: |  :----------------: | :----------------: |
-
-
-
 | [jrudio:electron](https://atmospherejs.com/jrudio/electron) | --- | ---  | --- |
 | [jamielob:transitions](https://github.com/jamielob/transitions) | --- | --- | --- |
 | [jamielob:native-transitions](https://github.com/jamielob/native-transitions) | --- | --- | --- |
