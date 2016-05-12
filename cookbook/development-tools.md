@@ -8,7 +8,7 @@ You're going to need to set up a development environment if you want to program 
 Start by selecting an Integrated Development Environment (IDE), configuring it so it works with Meteor, and setting up debugging and profiling utilities.  Meteor Cookbook's recommendation in selecting an IDE is the following: go with WebStorm if you want the most full-featured team tools currently available; but go with Atom if you want the most advanced tool for the most bleeding-edge isomorphic development.
 
 [Atom](http://www.atom.io) - Javascript IDE that can fully leverage Meteor's isomorphic javascript framework.  Recommended. 
-[MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje) - Chrome extension for Blaze, DDP, and Minimongo.
+[MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje) - Chrome extension for Blaze, DDP, and Minimongo.  
 [WebStorm](http://www.jetbrains.com/webstorm/) - The most full featured IDE currently available for Meteor.    
 [Sublime](http://www.sublimetext.com/) - Light-weight and popular text editor.     
 [Nitrous.io](https://www.nitrous.io/) - The original Cloud Development for Meteor.   
