@@ -155,3 +155,6 @@
 [submodule "starrynight"]
     path = starrynight
     url = https://github.com/awatson1978/starrynight
+[submodule "examples/meteor-on-fhir"]
+	path = examples/meteor-on-fhir
+	url = http://github.com/clinical-meteor/meteor-on-fhir
