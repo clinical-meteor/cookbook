@@ -130,15 +130,6 @@
 
 
 ========================
-#### Part XIII - Upgrades  
-
-  - [Version 6.5]
-  - [Version 8.0 - Spark]
-  - [Version 9.0 - Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrades/upgrading-to-0.9.x.md)  
-  - [Version 1.2 - Isopack 2]
-  - [Version 1.3 - React]
-
-========================
 #### Part XIV - Project Governance & Contributions
 
   - [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
@@ -184,6 +175,5 @@
 - [Blaze Event Cycle](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/event-cycle.md)  
 - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
 - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
-
-
+- [Version 9.0 - Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrades/upgrading-to-0.9.x.md)  
 
