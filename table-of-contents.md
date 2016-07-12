@@ -18,8 +18,6 @@
   - [Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
   - [Debugging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/debugging.md)  
   - [Performance Tuning](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/performance-tunning.md)  
-  - [Scaffolds](https://github.com/clinical-meteor/clinical-meteor/blob/master/cookbook/scaffolds.md). 
-  - [Settings Collection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/settings.collection.md)  
 
 ========================
 #### Part III - Packages
@@ -176,4 +174,5 @@
 - [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
 - [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
 - [Version 9.0 - Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrades/upgrading-to-0.9.x.md)  
-
+-[Scaffolds](https://github.com/clinical-meteor/clinical-meteor/blob/master/cookbook/scaffolds.md). 
+- [Settings Collection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/settings.collection.md)  
