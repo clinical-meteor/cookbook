@@ -147,24 +147,12 @@
 ========================
 #### Part XV - Deprecation
 
-- [Error Reference](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/errors.md)  
+
 - [Routing Basics](https://github.com/EventedMind/iron-router)
 - [Layout & Yields](https://github.com/clinical-meteor/active-layout)
-- [Single Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.single.md)
-- [Multi-Page Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.multi.md)
-- [Static Pages](https://github.com/clinical-meteor/static-pages)
-- [Error Pages](https://github.com/clinical-meteor/error-pages)
-- [Async Workers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/async-workers.md)  
 - [Parsing XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
 - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
 - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
 - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
-- [Theming](https://github.com/clinical-meteor/theming)  
-- [Layouts](https://github.com/clinical-meteor/active-layout)  
 - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)
 - [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md) 
-- [Dependencies](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/dependencies.md)  
-- [Namespacing](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/namespacing.md) 
-- [Version 9.0 - Isopackage System](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/upgrades/upgrading-to-0.9.x.md)  
--[Scaffolds](https://github.com/clinical-meteor/clinical-meteor/blob/master/cookbook/scaffolds.md). 
-- [Settings Collection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/settings.collection.md)  
