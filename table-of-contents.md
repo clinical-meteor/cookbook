@@ -2,7 +2,7 @@
 
 #### Part I - Getting Started
 - Welcome
-- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  d)  
+- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
 - [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
 - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
 - [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
