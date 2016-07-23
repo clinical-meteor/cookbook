@@ -111,7 +111,7 @@
 - [Digital Imaging and Communications in Medicine (DICOM)]()
 - Meaningful Use
 - Office of the National Coordinator (ONC) Health IT Certification Program
-
+- [Medical Devices](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/healthcare/medical.devices.md)  
 
 ========================
 #### Part XII - Regulatory Compliance  
