@@ -84,7 +84,6 @@
 ========================
 #### Part IX - Data Processing
 
-- [File Uploads](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/file-uploads.md)  
 - [Worker Processes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/worker.processes.md)  
 - [Daily Statistics](https://github.com/awatson1978/clinical-graphs-dailystats)  
 - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)
@@ -158,3 +157,4 @@
 #### Part XVI - Migrated to Stack Overflow
 
 - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)
+- [File Uploads](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/file-uploads.md)  
