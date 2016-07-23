@@ -29,7 +29,6 @@
 ========================
 #### Part IV - Deployment Environments    
 
-- [Environment Variables](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
 - [Env](https://github.com/clinical-meteor/env)  
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
 - [Deploying to Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/deploying.to.production.md)
@@ -158,3 +157,4 @@
 
 - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)
 - [File Uploads](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/file-uploads.md)  
+- [Environment Variables](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
