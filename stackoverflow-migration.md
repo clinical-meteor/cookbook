@@ -3,16 +3,14 @@
 **NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics).**
 
 
+========================
 #### Easy Migration (Recommended for General Public to Work On)
 
-- Welcome
-- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
-- [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
-- [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
-- [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
-- [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
-- [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
-- [Clinical Meteor Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
+
+
+========================
+#### Blaze User Interface Recipes
+
 
 
 ========================
@@ -22,22 +20,31 @@
 ========================
 #### Needs Rewriting
 
-  - [Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
-  - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
-  - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
-  - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 
 ========================
 #### Needs Restructuring
 
+
+
+========================
+#### Part V - Data Layer  
+
+- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
+- [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
+- [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
+- [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
+- [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
+- [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
+- [Clinical Meteor Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
+  - [Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
+  - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
+  - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
+  - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 - [Env](https://github.com/clinical-meteor/env)  
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
 - [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
 - [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
 
-
-========================
-#### Part V - Data Layer  
 
 - [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
 - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
@@ -99,25 +106,6 @@
 - [Advanced Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/advanced-architectures.md)   
 
 
-
-
-========================
-#### Part XI - Clinical, Healthcare, & Biomedical Apps
-
-- [Data Visualizations (D3)](https://github.com/clinical-meteor/clinical-graphs-dailystats)
-- [Fast Healthcare Interoperability Resources (HL7 FHIR)](https://github.com/awatson1978/hl7-argonaut-fhir)  
-- [Digital Imaging and Communications in Medicine (DICOM)]()
-- Meaningful Use
-- Office of the National Coordinator (ONC) Health IT Certification Program
-- [Medical Devices](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/healthcare/medical.devices.md)  
-
-========================
-#### Part XII - Regulatory Compliance  
-
-- [Health Insurance Portability and Accountability Act](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/healthcare/hipaa.md)  
-- [SSL Certificates](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ssl.certificates.md)    
-- U.S. Food and Drug Administration specifies in the Code of Federal Regulations Title 21, § 820.75  
-- Equal Opportunity & Non Discrimination  
 
 
 ========================
