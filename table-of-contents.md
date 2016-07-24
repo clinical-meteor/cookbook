@@ -13,10 +13,6 @@
 - [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
 - [Clinical Meteor Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
 
-========================
-#### Part II - Architecture Basics
-
-  - [Performance Tuning](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/performance-tunning.md)  
 
 ========================
 #### Part III - Packages
@@ -149,6 +145,8 @@
 - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)
 - [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md) 
 
+
+
 ========================
 #### Part XVI - Migrated to Stack Overflow
 
@@ -161,3 +159,4 @@
 - [Offline Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)    
 - [Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
 - [Debugging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/debugging.md)  
+  - [Performance Tuning](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/performance-tunning.md)  
