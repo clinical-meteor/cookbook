@@ -5,12 +5,10 @@
 
 ========================
 #### Easy Migration (Recommended for General Public to Work On)
-- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
 - [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
 - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
 - [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
 - [Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
-- [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
 - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
 - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
@@ -95,6 +93,8 @@
 - [Env](https://github.com/clinical-meteor/env)  
 - [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
 - [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md) 
+- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
+- [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
 
 
 
