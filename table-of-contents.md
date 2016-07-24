@@ -16,7 +16,6 @@
 ========================
 #### Part II - Architecture Basics
 
-  - [Directory Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/directory.structure.md)   
   - [Console Logging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/logging.md)  
   - [Debugging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/debugging.md)  
   - [Performance Tuning](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/performance-tunning.md)  
@@ -161,3 +160,4 @@
 - [Environment Variables](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
 - [Deploying to Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/deploying.to.production.md)
 - [Running in Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
+  - [Directory Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/directory.structure.md)   
