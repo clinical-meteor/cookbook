@@ -1,5 +1,8 @@
 ## Table of Contents  
 
+**NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics), where it can be maintained by the entire Meteor community.**
+
+
 #### Part I - Getting Started
 - Welcome
 - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
