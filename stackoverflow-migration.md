@@ -4,7 +4,7 @@
 
 
 ========================
-#### Easy Migration - Should be Copy/Paste
+#### Easy Migration - Should only need Copy/Paste
 - [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
 - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
 - [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
