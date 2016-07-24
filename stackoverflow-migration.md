@@ -3,7 +3,8 @@
 **NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics).**
 
 
-#### Part I - Getting Started
+#### Easy Migration (Recommended for General Public to Work On)
+
 - Welcome
 - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
 - [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
@@ -15,7 +16,11 @@
 
 
 ========================
-#### Part III - Packages
+#### Needs Code Review
+
+
+========================
+#### Needs Rewriting
 
   - [Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
   - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
@@ -23,7 +28,7 @@
   - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 
 ========================
-#### Part IV - Deployment Environments    
+#### Needs Restructuring
 
 - [Env](https://github.com/clinical-meteor/env)  
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
