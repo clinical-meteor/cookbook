@@ -1,4 +1,4 @@
-## Table of Contents  
+## Meteor Cookbook - StackOverflow Migration
 
 **NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics).**
 
