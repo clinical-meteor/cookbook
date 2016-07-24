@@ -160,4 +160,4 @@
 - [Environment Variables](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments.md)  
 - [Deploying to Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/deploying.to.production.md)
 - [Running in Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
-  - [Directory Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/directory.structure.md)   
+- [Directory Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/directory.structure.md)   
