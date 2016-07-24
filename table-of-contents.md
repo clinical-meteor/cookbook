@@ -1,6 +1,6 @@
 ## Table of Contents  
 
-**NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics), where it can be maintained by the entire Meteor community.**
+**NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics).**
 
 
 #### Part I - Getting Started
