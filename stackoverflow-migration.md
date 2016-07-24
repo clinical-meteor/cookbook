@@ -5,6 +5,8 @@
 
 ========================
 #### Easy Migration (Recommended for General Public to Work On)
+- [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
+- [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
 
 
 
@@ -37,15 +39,15 @@
 ========================
 #### Needs Restructuring
 
+========================
+#### Not Recommended to Migrate
 
 
 ========================
-#### Part V - Data Layer  
+#### Miscellaneous
 
 - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
 - [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
-- [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
-- [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
 - [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
 - [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
 - [Clinical Meteor Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
