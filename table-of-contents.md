@@ -92,7 +92,6 @@
 ========================
 #### Part X - Hardware & Devices
 
-- [Offline Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)    
 - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
 - [File Operations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
 - [Streaming Video (WebRTC)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/video.md)  
@@ -161,3 +160,4 @@
 - [Deploying to Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/deploying.to.production.md)
 - [Running in Production](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environments-production.md)  
 - [Directory Structure](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/directory.structure.md)   
+- [Offline Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/offline.md)    
