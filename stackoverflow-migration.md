@@ -22,8 +22,8 @@
 - [Origami - Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)
 - [Origami - Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)
 - [Drop Down Menus](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/drop-down-menu.md)  
-- [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)
-- [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)
+- [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)  
+- [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
 
 
 ========================
