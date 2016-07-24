@@ -104,7 +104,7 @@
 
 
 ========================
-#### Part VI - Quality Assurance - FDA, CCHIT, and Other Regulatory Credentialing
+#### Needs Rewriting - Abigail Will Take Care of This
 
   - Introduction to Regulatory Overview & Credentialing
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
@@ -116,14 +116,6 @@
   - [Verification/Validation Code Samples](https://github.com/clinical-meteor/cookbook/blob/master/cookbook/testing.examples.md)  
   - [Continuous Deployment](https://martinhbramwell.github.io/Meteor-CI-Tutorial/index.html)  
 
-
-
-========================
-#### Part IX - Data Processing
-
-
-========================
-#### Part X - Hardware & Devices
 
 
 
@@ -141,13 +133,9 @@
 
 
 
-========================
-#### Part XV - Deprecation
-
-
 
 ========================
-#### Part XVI - Migrated to Stack Overflow
+#### Completed Migration
 
 - [Integration of 3rd party APIs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/api-wrappers.md)
 - [File Uploads](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/file-uploads.md)  
