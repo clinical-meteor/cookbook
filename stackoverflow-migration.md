@@ -73,21 +73,6 @@
 
 
 
-========================
-#### Not Recommended to Migrate
-
-- [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
-- [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
-- [Clinical Meteor Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
-- [Env](https://github.com/clinical-meteor/env)  
-- [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
-- [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md) 
-- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
-- [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
-- [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
-- [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
-- [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
-
 
 
 
@@ -109,7 +94,7 @@
 
 
 ========================
-#### Part XIV - Project Governance & Contributions
+#### Part XIV - Project Governance & Contributions - Do we migrate this kind of meta stuff?
 
   - [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
   - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
@@ -119,6 +104,21 @@
   - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
 
 
+
+========================
+#### Not Recommended to Migrate
+
+- [General Advice](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/general-advice.md)  
+- [Getting Help](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/getting-help.md)
+- [Clinical Meteor Conventions](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook-conventions.md)  
+- [Env](https://github.com/clinical-meteor/env)  
+- [Common Mistakes](https://dweldon.silvrback.com/common-mistakes)  
+- [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md) 
+- [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
+- [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
+- [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
+- [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
+- [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
 
 
 
