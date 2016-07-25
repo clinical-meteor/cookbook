@@ -1,22 +1,5 @@
 ## Environment Detection
 
-#### Environment Variables
-To date, the following variables have been seen in the wild:  
-
-PORT  
-MONGO_URL  
-ROOT_URL  
-OPLOG_URL  
-MONGO_OPLOG_URL  
-METEOR_SETTINGS  
-METEOR_ENV  
-NODE_ENV  
-NODE_OPTIONS  
-DISABLE_WEBSOCKETS  
-MAIL_URL  
-DDP_DEFAULT_CONNECTION_URL  
-HTTP_PROXY  
-HTTPS_PROXY  
 
 
 #### Specifying application parameters based on setting files.  
