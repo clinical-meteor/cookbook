@@ -10,15 +10,9 @@
 - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
 - [Data Integrity](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
 - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
-
-
-
-- [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
 - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
 - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 - [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
-- [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
-- [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
 
 
 
@@ -97,6 +91,9 @@
 - [Clinical Track Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/packages-we-love.md) 
 - [Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/quickstart.md)  
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
+- [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
+- [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
+- [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
 
 
 
