@@ -7,11 +7,7 @@
 #### Easy Migration - Should only need Copy/Paste
 - [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
 - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
-- [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
-- [Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
-- [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
 - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
-- [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
 - [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
 - [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
 - [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
@@ -48,10 +44,20 @@
 - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
 
 
+========================
+#### Orphaned Examples - Good to Use, But Need a Home
+
+- [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
+
+
+
 
 ========================
-#### Some Difficulty - Needs Code Review
+#### Some Difficulty - Needs Code Review or Restructuring
 
+- [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
+- [Package Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
+- [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
 
 ========================
 #### More Difficult - Needs Rewriting
