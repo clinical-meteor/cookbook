@@ -11,13 +11,6 @@
 - [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
 - [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
 - [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
-- [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
-  - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
-- [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
-  - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
-  - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
-  - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
-  - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
 - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
 - [Data Integrity](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
 - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
@@ -62,6 +55,13 @@
 ========================
 #### More Difficult - Needs Rewriting
 
+- [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
+  - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
+  - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
+  - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
+  - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
+  - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
+  - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
 
 
 ========================
