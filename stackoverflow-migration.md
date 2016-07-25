@@ -27,21 +27,18 @@
 - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
 - [File Operations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/fileio.md)  
 - [Streaming Video (WebRTC)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/video.md)  
-- [Keybindings](https://github.com/clinical-meteor/keybindings)  
-- [Multitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
-- [Advanced Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/advanced-architectures.md)   
-- [Routing Basics](https://github.com/EventedMind/iron-router)
-- [Layout & Yields](https://github.com/clinical-meteor/active-layout)
-- [Parsing XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
-- [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
 
 
 ========================
 #### Orphaned Examples - Good to Use, But Need a Home
 
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
-  - [Multi User Publications](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.multiuser.publications.md)    
-  
+- [Multi User Publications](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.multiuser.publications.md)    
+- [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
+- [Parsing XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
+- [Advanced Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/advanced-architectures.md)   
+- [Multitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
+
 
 
 
