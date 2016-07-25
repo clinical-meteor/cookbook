@@ -53,7 +53,7 @@
 - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
 
 ========================
-#### More Difficult - Needs Rewriting
+#### More Difficult - Needs Writing Review
 
 - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
   - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
