@@ -13,8 +13,7 @@
 - [Schema Design](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema-design.md)  
 - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
   - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
-  - [Multi User Publications](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.multiuser.publications.md)    
-  - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
+- [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
   - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
   - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
   - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
@@ -48,7 +47,8 @@
 #### Orphaned Examples - Good to Use, But Need a Home
 
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
-
+  - [Multi User Publications](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.multiuser.publications.md)    
+  
 
 
 
