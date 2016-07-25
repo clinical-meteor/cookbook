@@ -5,7 +5,6 @@
 
 ========================
 #### Easy Migration - Should only need Copy/Paste
-- [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
 - [Data Integrity](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
 - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
 - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
@@ -139,3 +138,4 @@
 - [Performance Tuning](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/performance-tunning.md)  
 - [Mobile Apps](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/mobile.md)  
 - [Horizontal Scaling](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/horizontal-scaling.md)  
+- [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
