@@ -34,14 +34,14 @@
 
 
 ========================
-#### Some Difficulty - Needs Code Review or Restructuring
+#### Some Difficulty - Needs Fleshed Out Code and Basic Review
 
 - [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
 - [Package Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
 - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
 
-========================
-#### More Difficult - Needs Writing Review
+======================== 
+#### More Difficult - Needs Writing or Restructuring
 
 - [Exposing a REST API](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/rest.md)
 - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
@@ -52,6 +52,12 @@
   - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
   - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
 - [Data Processing - Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)
+- [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
+
+======================== 
+#### More Difficult - Needs Significant Restructuring
+
+- [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 
 
 ========================
@@ -59,9 +65,6 @@
 
 - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
 - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
-- [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
-- [Theming](https://github.com/clinical-meteor/theming)  
-- [Layouts](https://github.com/clinical-meteor/active-layout)  
 - [Origami - Navbars](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/navbars.md)  
 - [Origami - Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
 - [Origami - Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)   
@@ -72,12 +75,6 @@
 - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
 
 
-
-
-
-========================
-#### Needs Restructuring
-- [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 
 
 ========================
