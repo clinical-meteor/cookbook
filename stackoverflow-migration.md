@@ -5,8 +5,6 @@
 
 ========================
 #### Easy Migration - Should only need Copy/Paste
-- [Data Integrity](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
-- [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
 - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 - [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
 
@@ -38,6 +36,7 @@
 - [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
 - [Package Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
 - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
+- [Data Integrity](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
 
 ======================== 
 #### More Difficult - Needs Writing or Restructuring
@@ -134,4 +133,5 @@
 - [Origami - Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
 - [Origami - Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)
 - [Data Processing - Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)
+- [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
 
