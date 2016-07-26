@@ -61,13 +61,8 @@
 
 - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
 - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
-- [Origami - Navbars](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/navbars.md)  
 - [Origami - Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
-- [Origami - Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)   
 - [Origami - Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)
-- [Origami - Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)
-- [Drop Down Menus](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/drop-down-menu.md)  
-- [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)  
 - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
 
 
@@ -139,4 +134,9 @@
 - [Horizontal Scaling](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/horizontal-scaling.md)  
 - [Database Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/database-management.md)
 - [Schema Migrations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/schema.changes.md)     
+- [Origami - Navbars](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/navbars.md)  
+- [Origami - Accordion](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accordion.md)   
+- [Origami - Modal Dialogs](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.dialogs.md)
+- [Drop Down Menus](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/drop-down-menu.md)  
+- [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)  
 
