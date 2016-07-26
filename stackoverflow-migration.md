@@ -3,11 +3,6 @@
 **NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics).**
 
 
-========================
-#### Easy Migration - Should only need Copy/Paste
-- [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
-- [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
-
 
 
 ========================
@@ -134,4 +129,5 @@
 - [Origami - Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)
 - [Data Processing - Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)
 - [Development Tools](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/development-tools.md)  
-
+- [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
+- [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
