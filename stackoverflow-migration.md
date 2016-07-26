@@ -59,14 +59,6 @@
 - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 
 
-========================
-#### Blaze User Interface Recipes (Needs Consolidation)
-
-
-
-
-
-
 
 
 ========================
