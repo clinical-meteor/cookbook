@@ -50,7 +50,6 @@
   - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
   - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
   - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
-- [Data Processing - Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)
 - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
 
 ======================== 
@@ -58,6 +57,9 @@
 
 - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 
+
+========================
+#### Blaze User Interface Recipes (Needs Consolidation)
 
 
 
@@ -131,4 +133,5 @@
 - [Tagging](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/tagging.md)  
 - [Origami - Alerts & Errors](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/pages.alerts.md)  
 - [Origami - Tabbed Workflow](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/workflow.md)
+- [Data Processing - Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)
 
