@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/clinical-meteor/software-development-kit.png?label=ready&title=Ready)](https://waffle.io/clinical-meteor/software-development-kit)
 ##Clinical Meteor Release Track
 
 Welcome to the Meteor release track specializing in biomedical, healthcare, and clinical apps!  This was formerly the home of the Meteor Cookbook; and is now a full-blown [Meteor](https://github.com/meteor/meteor) release track and distro that aims to be FDA, HIPAA, and HL7 compliant.  We are currently working towards implementing other regulatory standards, including DICOM, CLIA, CCHIT, and EOE.  
