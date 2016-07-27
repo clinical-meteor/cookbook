@@ -9,7 +9,6 @@
 #### Orphaned Examples - Good to Use, But Need a Home
 
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
-- [Multi User Publications](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.multiuser.publications.md)    
 - [Web Components and Card UI](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/card-ui.md)  
 - [Parsing XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
 - [Advanced Architectures](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/advanced-architectures.md)   
