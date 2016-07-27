@@ -1,6 +1,6 @@
 ## Table of Contents  
 
-**NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics).**
+**NOTE: The Cookbook is being migrated to [StackOverflow](http://stackoverflow.com/documentation/meteor/topics).  Half of the following links are now broken.**  
 
 
 #### Part I - Getting Started
