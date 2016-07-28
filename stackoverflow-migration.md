@@ -43,7 +43,7 @@
 - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 
 ========================
-#### Blaze Templating
+#### Blaze Templating - Improvements
 - [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
 - [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
 - [Haptics - Multitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
