@@ -10,13 +10,23 @@
 
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
 - [Parsing XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
-- [Multitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
 - [Data Processing - Worker Processes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/worker.processes.md) 
 - [Email](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/email.md)  
-- [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
 - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
 
 
+
+
+
+========================
+#### Consolidate
+- [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
+  - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
+  - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
+  - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
+  - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
+  - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
+  - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
 
 ========================
 #### Some Difficulty - Needs Fleshed Out Code and Basic Review
@@ -30,17 +40,13 @@
 #### More Difficult - Needs Writing or Restructuring
 
 - [Exposing a REST API](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/rest.md)
-- [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
-  - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
-  - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
-  - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
-  - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
-  - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
-  - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
-- [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
 - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 
-
+========================
+#### Blaze Templating
+- [Image Assets](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/image-assets.md)  
+- [Animations](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/animations.md)  
+- [Haptics - Multitouch](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/multitouch.md)  
 
 ========================
 #### Link Farm Articles - Need Examples
@@ -64,13 +70,9 @@
   - [Continuous Deployment](https://martinhbramwell.github.io/Meteor-CI-Tutorial/index.html)  
 
 
-
-
-
 ========================
 #### Part XIV - Project Governance & Contributions - Do we migrate this kind of meta stuff?
 
-  - [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
   - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
   - [Glossary](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/glossary.md)  
   - [Syntax & Semantics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/syntax.md)  
@@ -92,7 +94,8 @@
 - [Recommended Packages](https://github.com/awatson1978/meteor-cookbook/blob/master/recommended-packages.md)
 - [Installation Walkthrough](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/detailed.walkthrough.md)  
 - [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
-
+- [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
+- [Data Shaping](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/data-shaping.md)  
 
 
 ========================
