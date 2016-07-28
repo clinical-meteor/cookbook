@@ -69,8 +69,8 @@
 #### Refactoring Guide
 
 - [Refactoring Example - Extracting Files into a Package](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.process.md)   
-  - [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
-  - [Refactoring MVC to Components](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.mvc.to.components.md)  
+- [Refactoring Patterns](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.patterns.md)  
+- [Refactoring MVC to Components](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/refactoring.mvc.to.components.md)  
   
 
 ========================
