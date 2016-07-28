@@ -10,7 +10,6 @@
 
 - [Hosting Providers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/hosting-providers.md) 
 - [Parsing XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
-- [Data Processing - Worker Processes](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/worker.processes.md) 
 - [Email](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/email.md)  
 - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
 
