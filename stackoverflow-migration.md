@@ -19,7 +19,7 @@
 
 
 ========================
-#### Consolidate
+#### Collections - Consolidate
 - [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
   - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
   - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
