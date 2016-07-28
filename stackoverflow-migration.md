@@ -57,9 +57,8 @@
 
 
 ========================
-#### Needs Rewriting - Abigail Will Take Care of This
+#### Nightwatch - Abigail Will Take Care of This
 
-  - Introduction to Regulatory Overview & Credentialing
   - [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md)  
   - [Writing Validation Tests (with Nightwatch)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.acceptance.test.md)  
   - [Writing Verification Tests (with Tinytest)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)  
@@ -71,7 +70,7 @@
 
 
 ========================
-#### Part XIV - Project Governance & Contributions - Do we migrate this kind of meta stuff?
+#### Meteor Style Guide
 
   - [Meteor Style Guide](https://github.com/yauh/meteor-with-style)  
   - [Glossary](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/glossary.md)  
@@ -80,7 +79,8 @@
   - [Reserved Keywords](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/reserved.keywords.md)  
 
 
-========================
+
+
 ========================
 #### Not Recommended to Migrate
 
@@ -96,6 +96,7 @@
 - [Scaling Quickstart](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/scaling.md)  
 - [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md)  
 - [Data Shaping](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/data-shaping.md)  
+- Introduction to Regulatory Overview & Credentialing
 
 
 ========================
