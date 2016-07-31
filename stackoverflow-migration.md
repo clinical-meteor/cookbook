@@ -18,16 +18,6 @@
 
 
 ========================
-#### Collections - Consolidate into a Single Topic
-- [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
-  - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
-  - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
-  - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
-  - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
-  - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
-  - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
-
-========================
 #### Some Difficulty - Needs Fleshed Out Code and Basic Review
 
 - [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
@@ -135,3 +125,10 @@
 - [Publishing a Release Track](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/release.track.md)
 - [Environment Detection](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/environment-detection.md)  
 - [Replica Sets (aka Shards)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/replica-sets.md)  
+- [Collections](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collections.md)  
+  - [User Accounts](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/accounts.md)  
+  - [Aggregation](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/aggregation.md)  
+  - [Filters & Searching](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/ddp.filters.md)  
+  - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
+  - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
+  - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
