@@ -22,6 +22,11 @@ The first non-standard architecture you probably want to take a look at is using
 Sometimes, you don't need a full desktop app, but you want somthing a bit more tangible than just a webpage.  An intermediary architecture would be to use a Chrome Extension.  This lets you step outside of the browser window, but still be in a browser environment.  Useful for debugging tools, and the like.  
 
 [Building A Chrome Extension Using Meteor](http://thebakery.io/blog/meteor-spotting-building-a-chrome-extension-using-meteor/)  
+[Run Chrome Apps on Mobile Using Apache Cordova/Phonegap](http://blog.chromium.org/2014/01/run-chrome-apps-on-mobile-using-apache.html)  
+[Google Brings Chrome Apps to Google Play and Apple App Stores](http://thenextweb.com/google/2014/01/28/google-brings-chrome-apps-android-ios-lets-developers-submit-google-play-apples-app-store/#!uauSm)  
+[Chrome Apps on Mobile Toolchain](https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/README.md)  
+[What Are Chrome Apps?](http://developer.chrome.com/apps/about_apps.html)   
+[Create Your First Chrome App](http://developer.chrome.com/apps/first_app.html)  
 
 
 ============================================================
