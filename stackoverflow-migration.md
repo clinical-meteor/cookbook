@@ -20,7 +20,6 @@
 ========================
 #### Some Difficulty - Needs Fleshed Out Code and Basic Review
 
-- [Atom Editor & Development Environment](https://github.com/awatson1978/meteor-api)  
 - [Package Basics](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/packages.md)  
 - [Package Management](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/package.management.md)
 - [Data Integrity](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/validation.md)  
@@ -28,7 +27,6 @@
 ======================== 
 #### More Difficult - Needs Writing or Restructuring
 
-- [Exposing a REST API](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/rest.md)
 - [Two-Way Data Binding](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/data-binding.md)  
 
 ========================
@@ -132,3 +130,4 @@
   - [Observers](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/observers.md)  
   - [Timeseries](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.timeseries.md)  
   - [Geospatial](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/collection.geospatial.md)  
+- [Exposing a REST API](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/rest.md)
