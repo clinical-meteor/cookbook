@@ -9,12 +9,12 @@ While popular, server/client architectures aren't the only way to build applicat
 
 The first non-standard architecture you probably want to take a look at is using Meteor to create a desktop application, by way of Node Webkit and Chrome Extensions.  The basic idea is to launch a Blaze application from Node, but not send data over the wire.  To do that, you need a version of Node that uses Webkit and can render DOM.  Since Chrome uses the same V8 Javascript engine as Node; it was only a matter of time before somebody smashed Node and Chrome together to create a Desktop app.  That project is called [Electron](http://electron.atom.io/), and it's been ported to Meteor under a few different projects:
 
-[Electrify](https://github.com/arboleya/electrify)
-[Electron + Meteor Tutorial](https://medium.com/meteor-js/cross-platform-desktop-apps-with-meteor-and-electron-5355eb9e351#.pp579qw9nhttps://medium.com/meteor-js/cross-platform-desktop-apps-with-meteor-and-electron-5355eb9e351#.r8c14am23)
-[Electrometer](https://github.com/sircharleswatson/Electrometeor)
-[Electrometer Announcement](https://forums.meteor.com/t/electrometeor-desktop-applications-w-electron-meteor/3768)
-[Demo: RocketChat](https://github.com/RocketChat/Rocket.Chat.Electron)
-[meson:electron](https://github.com/electron-webapps/meteor-electron)
+[Electrify](https://github.com/arboleya/electrify)  
+[Electron + Meteor Tutorial](https://medium.com/meteor-js/cross-platform-desktop-apps-with-meteor-and-electron-5355eb9e351#.pp579qw9nhttps://medium.com/meteor-js/cross-platform-desktop-apps-with-meteor-and-electron-5355eb9e351#.r8c14am23)  
+[Electrometer](https://github.com/sircharleswatson/Electrometeor)  
+[Electrometer Announcement](https://forums.meteor.com/t/electrometeor-desktop-applications-w-electron-meteor/3768)  
+[Demo: RocketChat](https://github.com/RocketChat/Rocket.Chat.Electron)  
+[meson:electron](https://github.com/electron-webapps/meteor-electron)  
 
 ============================================================
 ##### Chrome Extensions
