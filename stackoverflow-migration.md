@@ -12,7 +12,8 @@
 - [Parsing XML](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/files.xml.md)   
 - [Email](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/email.md)  
 - [Window Resize](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/window.resize.md)  
-
+- [Mixing _ids (Antipattern)](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/antipatterns.md)  
+- 
 
 
 
