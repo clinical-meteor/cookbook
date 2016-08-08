@@ -1,0 +1,32 @@
+
+<template name="recordsListPage">
+  <div id="recordsListPage" class="page">
+    {{> pageNavHeader }}
+
+    <input id="recordSearchInput" type="text" class="glass fullwidth form-control" placeholder="search..." value="{{getRecordSearchFilter}}" />
+    <ul id="recordsUnorderedList">
+      {{#if hasNoContent}}
+        <li id="noResultsMessage" class="addRecordItem">
+          <article class="noResultsMessage">
+            <span>There are no results!  Click to add one.</span>
+          </article>
+          <div class="fadeAway"></div>
+        </li>
+
+      {{else}}
+        {{#each recordsList}}
+          <li class="recordItem">
+            <article>
+              <h2 class="titleText">{{title}}</h2>
+              <span class="pull-right barcode gray idText">{{_id}}</span><br>
+              <span class="descriptionText">{{description}}</span>
+            </article>
+            <div class="fadeAway"></div>
+          </li>
+        {{/each}}
+      {{/if}}
+
+    </ul>
+    {{> pageNavFooter }}
+  </div>
+</template>

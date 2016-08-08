@@ -1,0 +1,248 @@
+<template name="apiSpecs">
+  <div id="apiSpecs">
+    <h2>TinyTest API</h2>
+    <hr>
+    <ul>
+      <li>
+        <h4 class="bold">
+          .equal ( actual, expected, message, not )
+        </h4>
+        <p>
+          Tests that two values are equal.
+        </p>
+        {{#prism language="javascript"}}
+          //test
+        {{/prism}}
+      </li>
+      <li>
+        <h4 class="bold">
+          .notEqual(actual, expected, message)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .instanceOf(obj, class)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .notInstanceOf(obj, class)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .matches(actual, regexp, message)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .notMatches(actual, regexp, message)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .throws(f, expected)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isTrue(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isFalse(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isNull(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isNotNull(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isUndefined(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isNotUndefined(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isNaN(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .isNotNaN(actual, msg)
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .length(obj, expected_length, msg)
+        </h4>
+      </li>
+    </ul>
+
+    <h2>LifeCycle API</h2>
+    <hr>
+    <p>
+      The following API is isomorphic to both Validation and Verification testing process.
+    </p>
+    <ul>
+      <li>
+        <h4 class="bold">
+          .before()
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .beforeEach()
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .afterEach()
+        </h4>
+      </li>
+      <li>
+        <h4 class="bold">
+          .after()
+        </h4>
+      </li>
+    </ul>
+
+
+    <h2>Meteor Nightwatch API (Completed)</h2>
+    <hr>
+    <ul>
+      <li>
+        <h4 class="completed">
+          .sessionEquals(varName, expectedValue)
+        </h4>
+      </li>
+      <li>
+        <h4 class="completed">
+          .meteorCall(methodName, arguments, expectedValue)
+        </h4>
+      </li>
+    </ul>
+
+    <h2>Meteor Nightwatch API (Roadmap)</h2>
+    <hr>
+    <ul>
+      <li>
+        <h4>
+          .collectionContainsRecord(recordId, expectedValue)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .collectionCount(collectionName, expectedCount)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .collectionIsNotEmpty(collectionName)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .collectionIsEmpty(collectionName)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .collectionContains(collectionName, record)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .recordEquals(record, expectedRecord)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .meteorStatus()
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .meteorIsConnected()
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .meteorIsDisconnected()
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .meteorAbsoluteUrl(expectedUrl)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .meteorReleaseIs()
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .recordContainsField(record, expectedField)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .recordFieldEquals(record, field, expectedValue)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .recordFieldContains(record, field, expectedValue)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .subscriptionIsReady(subscriptionName)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .publicationIsReady(publicationName)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .subscriptionExists(subscriptionName)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          .publicationExists(publicationName)
+        </h4>
+      </li>
+    </ul>
+
+    <h2>Nightwatch API</h2>
+    <hr>
+    <p>
+      You'll obviously also want to refer to the <a href="http://nightwatchjs.org/api">Nightwatch API Reference</a>.
+    </p>
+
+
+    <h2>Contributing</h2>
+    <hr>
+    <p>
+      Contributing pull requests on the above API items would be an excellent exercise for anybody interested in mastering the Meteor API.  If you'd like to contribute, please submit 1 pull-request per command.  It will probably take a few hours for each command; and doing all of them is a weeks worth of work.  Alternatively, doing 2-3 per week over a school semeter would make a nice homework assignment.
+      <br><br>
+      Please see the <a href="/testing">Inspecting Client Objects</a> section for more information on how to write custom API commands.
+    </p>
+  </div>
+</template>

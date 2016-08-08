@@ -1,0 +1,45 @@
+# This is the configuration file for continuous integration of
+# your project in CircleCi.
+#
+# The full reference is available at :
+#             https://circleci.com/docs/configuration
+#
+machine:
+  node:
+    # Cannot be certain that this build wlll work with all future versions: so specify.
+    version: 0.10.33
+
+dependencies:
+  # Whatever is written to these directories during one build will be
+  #    restored verbatim on every future build.
+  cache_directories:
+    - ~/.meteor
+    - ~/node_modules
+    - ~/nvm/v0.10.33/lib/node_modules/starrynight
+    - ~/nvm/v0.10.33/bin/starrynight
+
+  # Dependencies of the build run before CircleCI's inferred commands
+  pre:
+    # Now install WebDriver
+    - mkdir -p ~/node_modules
+    # If WebDriver is already cached, do not need to build it again.
+    - if [ ! -d ~/node_modules/selenium-webdriver/ ]; then npm install --prefix ~ selenium-webdriver; else echo "Selenium Webdriver seems to be cached"; fi;
+    # Have symlink to a cached directory
+    - ln -s ~/node_modules node_modules
+    # Now install  Starrynight
+    - mkdir -p ~/.meteor
+    # If Meteor is already cached, do not need to build it again.
+    - if [ ! -e ~/.meteor/meteor ]; then curl https://install.meteor.com | /bin/sh; else echo "Meteor installation seems to be cached"; fi;
+    # Starrynight tests require a running copy of a Meteor app
+    #    so start it up and push it into the background
+    - ~/.meteor/meteor:
+          background: true
+    - if [ ! -e ~/nvm/v0.10.33/bin/starrynight ]; then npm install -g starrynight; else echo "Starrynight seems to be cached"; fi;
+    # - npm install -g starrynight
+
+
+test:
+  # Tests that replace CircleCI's inferred tests
+  override:
+    # Run the Nightwatch tests of your Meteor app
+    - starrynight run-tests --framework nightwatch

@@ -1,0 +1,34 @@
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init --recursive
+machine:
+  hosts:
+    circlehost: 127.0.0.1
+    dev.mycompany.com: 127.0.0.1
+  environment:
+    CONFIG_PREFIX: `npm config get prefix`
+    MONGO_URL:
+    TRAVIS: true
+    DISPLAY: 99
+    CIRCLE_BRANCH: master
+
+      node:
+    version: 0.10.28
+dependencies:
+  pre:
+    - npm install -g starrynight
+  override:
+    - meteor list
+  post:
+    # install meteor
+    - "curl https://install.meteor.com | /bin/sh"
+    - "sleep 10"
+    - "cd meteor"
+    - "meteor &"
+
+    # give Meteor some time to download packages, init data, and to start
+    - "sleep 60"    
+test:
+  override:
+    - starrynight run-tests --framework nightwatch

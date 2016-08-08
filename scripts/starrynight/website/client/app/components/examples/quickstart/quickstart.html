@@ -1,0 +1,22 @@
+<template name="quickstart">
+  <div id="quickstart">
+    <h2>Testing Quickstart</h2>
+    <hr>
+    {{#prism language="bash"}}
+      # API Version 3.3.0
+
+      # add .meteor/nightwatch.json to our application
+      $ starrynight generate-autoconfig
+
+      # add acceptance tests to your application (using the nightwatch framework)
+      $ starrynight scaffold --framework nightwatch
+
+      # run your validation tests using NightWatch
+      $ starrynight run-tests --framework nightwatch
+
+      # run any verification tests you may have written with TinyTest
+      $ starrynight run-tests --framework tinytest-ci
+    {{/prism}}
+
+  </div>
+</template>

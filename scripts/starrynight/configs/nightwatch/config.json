@@ -1,0 +1,54 @@
+{
+  "src_folders" : ["./tests/nightwatch/walkthroughs"],
+  "output_folder" : "./tests/nightwatch/reports",
+  "custom_commands_path" : [
+    "./tests/nightwatch/commands",
+    "./tests/nightwatch/commands/components",
+    "./tests/nightwatch/commands/methods",
+    "tests/nightwatch/commands/actions"
+  ],
+  "custom_assertions_path" : "./tests/nightwatch/assertions",
+  "globals_path" : "./tests/nightwatch/globals.json",
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "${npm_config_prefix}/lib/node_modules/starrynight/node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.45.0.jar",
+    "log_path" : "tests/nightwatch/logs",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "${npm_config_prefix}/lib/node_modules/starrynight/node_modules/chromedriver/bin/chromedriver"
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost:5000",
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4444,
+      "pathname": "/wd/hub",
+      "silent" : true,
+      "disable_colors": false,
+      "firefox_profile" : false,
+      "ie_driver" : "",
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities" : {
+        "browserName" : "firefox",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+      },
+      "exclude":"./tests/nightwatch/unittests/*"
+    },
+    "unittests":{
+      "selenium" : {
+        "start_process" : false,
+        "start_session" : false
+      },
+      "filter" : "./tests/nightwatch/unittests/*",
+      "exclude" : ""
+    }
+  }
+}

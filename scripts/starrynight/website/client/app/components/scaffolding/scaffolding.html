@@ -1,0 +1,55 @@
+<template name="scaffolding">
+  <div id="scaffolding">
+    <h2>Reference Scaffold</h2>
+    <hr>
+    <p>
+      StarryNight's scaffolding and pattern commands make use of the Reference Scaffold, which is a sort of default app that StarryNight uses to structure apps.  The following files and directories are specifically referenced throughout the StarryNight application, and amount to a sort of API.
+    </p>
+    {{#prism language="bash"}}
+      /media
+      /docs
+      /design
+      /data
+      /webapp
+      /webapp/client
+      /webapp/client/mainLayout.html
+      /webapp/client/mainLayout.js
+      /webapp/client/mainLayout.less
+      /webapp/client/app/components
+      /webapp/client/app/components/foo/.tests
+      /webapp/client/app/components/foo/.tests/actions
+      /webapp/client/app
+      /webapp/client/subscriptions.js
+      /webapp/server
+      /webapp/server/publications.js
+      /webapp/lib
+      /webapp/tests
+      /webapp/tests/nightwatch
+      /webapp/tests/nightwatch/commands
+      /webapp/tests/nightwatch/commands/actions
+      /webapp/tests/nightwatch/commands/methods
+      /webapp/tests/nightwatch/commands/components
+      /webapp/tests/nightwatch/walkthroughs
+      .travis.yml
+    {{/prism}}
+
+    <p>
+      The Reference Scaffold makes quite a few opinionated assumptions about how to structure an app...  everything from how to integrate analytics to which continuous-integration environment to run.  You're welcome to ignore any part, delete components, or not run the scaffolding commands in the first place.  But if you just want to get an app up-and-running, and are willing to follow some standard conventions, StarryNight will do a whole lot of the heavy-lifting for you.  But you should know what you're getting, and that begins by looking at the default directory structure of what you would get if you ran all the scaffolding components.
+    </p>
+  </div>
+
+  <h2>Scaffold Snippets</h2>
+  <hr>
+  <p>
+    Feel free to peruse the scaffolding snippets that are currently being used.<br>
+    <a href="https://github.com/awatson1978/starrynight/tree/master/scaffolds">StarryNight Scaffold Snippets</a>
+  </p>
+
+  <h2>Reference App</h2>
+  <hr>
+  <p>
+    The active-record-demo in the Meteor Cookbook is a pretty close implementation of the Reference App.  As we get time, we'll be adding a proper reference app to StarryNight.<br>
+    <a href="https://github.com/awatson1978/meteor-cookbook/tree/master/examples/active-record-demo">Active Record Demo</a>
+  </p>
+
+</template>

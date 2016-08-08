@@ -1,0 +1,76 @@
+<template name="mobileApp">
+  <div id="mobileApp">
+    <h2>App Store & Refactoring</h2>
+    <hr>
+    <p>
+
+    </p>
+
+    {{#prism language="bash"}}
+      # API Version 3.3.0
+
+      # create a mobile application
+      $ meteor create mobile-app
+      $ cd mobile-app
+
+      # you might want to open your editor to follow along
+      $ atom .
+      $ meteor
+
+      # add .meteor/nightwatch.json to our application
+      $ starrynight generate-autoconfig
+
+      # add acceptance tests to your application (using the nightwatch framework)
+      $ starrynight scaffold --framework nightwatch
+
+      # make sure the acceptance testing framework is running
+      $ starrynight run-tests --framework nightwatch
+
+      # add a scaffold/boilerplate to your project
+      $ starrynight scaffold --boilerplate project-homepage
+      $ rm mobile-app.*
+
+      # add acceptance tests for the project-homepage scaffold
+      $ starrynight scaffold --boilerplate project-homepage --framework nightwatch
+
+      # run acceptance tests on the new scaffold
+      $ starrynight run-tests --framework nightwatch
+
+      # add the itunes connect acceptance tests (mobile first)
+      $ starrynight scaffold --boilerplate itunes --framework nightwatch
+
+      # our tests should break
+      $ starrynight run-tests --framework nightwatch
+
+      # add extra page components and routes to our app
+      $ starrynight pattern --url https://github.com/awatson1978/clinical-static-pages
+
+      # run acceptance tests (they should break)
+      $ starrynight run-tests --framework nightwatch
+
+      # rename files throughout your app in one go
+      $ starrynight rename --from about --to marketing
+      $ starrynight rename --from About --to Marketing
+
+      # find-and-replace terms throughout our app
+      $ starrynight find-and-replace --from "AppTitle" --to "Hello StarryNight"
+      $ starrynight find-and-replace --from "about" --to "marketing"
+    {{/prism}}
+
+
+
+    <h2>Detailed Walkthrough</h2>
+    <hr>
+
+    <img src="/refactoring/refactoring-a.png" class="exampleScreenshot" />
+    <img src="/refactoring/refactoring-b.png" class="exampleScreenshot" />
+    <img src="/refactoring/refactoring-c.png" class="exampleScreenshot" />
+    <img src="/refactoring/refactoring-d.png" class="exampleScreenshot" />
+    <img src="/refactoring/refactoring-e.png" class="exampleScreenshot" />
+    <img src="/refactoring/refactoring-f.png" class="exampleScreenshot" />
+    <img src="/refactoring/refactoring-g.png" class="exampleScreenshot" />
+
+
+
+  </div>
+</template>

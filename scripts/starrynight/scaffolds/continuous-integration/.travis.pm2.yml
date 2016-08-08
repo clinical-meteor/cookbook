@@ -1,0 +1,61 @@
+# this travis.yml file is for the leaderboard-nightwatch example, when run standalone
+language: node_js
+
+node_js:
+  - "0.10.38"
+
+services:
+  - mongodb
+
+sudo: required
+
+env:
+  global:
+    - TRAVIS=true
+    - CONFIG_PREFIX=`npm config get prefix`
+    - DISPLAY=:99.0
+  matrix:
+
+
+cache:
+  directories:
+    - ~/.nvm
+    - node_modules
+    - ~/.meteor
+    - build-prod/bundle/programs/server/node_modules
+
+before_install:
+  # install meteor
+  #   TODO logic to only install if not already there (cached @ /usr/local/bin/meteor)
+  - "curl https://install.meteor.com | /bin/sh"
+  # install all npm packages
+  - "npm install"
+  # install pm2 process manager for Node
+  - "npm install pm2 -g"
+  # install bcrypt globally (trying to circumvent a bug in bundled version)
+  - "npm install bcrypt -g"
+  # everything should be done INSIDE webapp (aside from the build)
+  - "cd webapp"
+  # fire up xvfb on port :99.0
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  # set the xvfb screen size to 1280x1024x16
+  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
+  #- "mongo travisci --eval 'db.addUser(\"travisi\", \"test\");'"
+  # build Meteor app for production
+  - "meteor build --server localhost:3000 --directory ../build-prod"
+  - "cd ../build-prod"
+  - "(cd bundle/programs/server && npm install)"
+  # start meteor with pm2 (1 instance only)
+  - "cp ../deployment/process-travisci.json ./process.json"
+  - "pm2 start process.json --name 'myapp'"
+  - "cd .."
+
+before_script:
+  # give Meteor some time to init data, and to start
+  - "sleep 15"
+  - "cat ~/.pm2/logs/*"
+
+  script: 
+  - "cd webapp"
+  - "starrynight run-tests --framework nightwatch"

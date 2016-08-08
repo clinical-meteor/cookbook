@@ -1,0 +1,130 @@
+<template name="verificationSection">
+  <section id="verificationSection">
+      <h2><b>Verification Testing</b></h2>
+      <p>
+        To use a car analogy, if validation testing is an inspection of the car's exterior and the cabin where driver and passenger sit; then verification testing would be the act of opening the hood of the car and taking a look at the engine.
+        <br><br>
+        Meteor comes with a verification testing suite by default, known as TinyTest.  To use it, we simply need to create a package, and an example verification test will be added by default.
+      </p>
+
+      {{#prism language="bash" class="line-numbers"}}
+        meteor create --package myname:foo
+      {{/prism}}
+
+      <p>
+        If we look in <code>packages/foo/foo-tests.js</code>, we'll find the following verification test.
+      </p>
+      {{#prism language="javascript" class="line-numbers"}}
+        Tinytest.add('example', function (test) {
+          test.equal(true, true);
+        });
+      {{/prism}}
+
+      <p>
+        And we can run it by simply doing the following:
+      </p>
+      {{#prism language="bash" class="line-numbers"}}
+        meteor test-packages
+      {{/prism}}
+
+      <p>
+        However, our interests are in making creating an <i>isomorphic</i> verfication API, which uses the same API across server, client, and packages.  This creates a problem, since TinyTest only works on packages, and uses a different API than Nightwatch, or Mocha, or any of the other testing frameworks out there.  What should we do?
+        <br><br>
+        There are two ways to approach this problem - the first is to take unit-testing API that we know we can run on the client or server (such as Mocha, Sinon, Chai, or qUnit) and bring it to TinyTest.  The other alternative is to take the TinyTest API, and bring it to Nightwatch, Mocha, Chai, etc.  We're attempting to do both options.
+        <br><br>
+        The first approach is to extend the default TinyTest API with functionality from Mocha and Chai Expect, which we know can also run with Nightwatch.  We do that with a package called <code>clinical:verification</code>, which is based off of the excellent <code>practicalmeteor:munit</code> package.
+      </p>
+
+      {{#prism language="bash" class="line-numbers"}}
+        meteor add clinical:verification
+      {{/prism}}
+
+
+
+      <h2 id="describeIt">Describe/It</h2>
+      <hr>
+      <p>
+        Verification tests use a Describe/It syntax, which is a form of Behavior Driven Development.  The tests can be arbitrarily nested, so simply organize them according to your business needs.
+      </p>
+
+      {{#prism language="javascript" class="line-numbers"}}
+        describe('top-level describe', function(){
+          describe('nested describe', function() {
+            describe('deep nested describe', function() {
+              it('a test', function () {
+                expect(true).to.be.true;
+              })
+            })
+          })
+        });
+      {{/prism}}
+
+
+      <h2 id="serverClientDescribes">Server/Client</h2>
+      <hr>
+      <p>
+        Since packages provide isomorphic code that can be run on both server and client, we can get into a situation where we write code for one or the other, and it breaks if running in the wrong environment.  To deal with this issue, Describe/It can both take <code>.client</code> and <code>.server</code> methods.
+      </p>
+        {{#prism language="javascript" class="line-numbers"}}
+          describe.client('client only test suite', function(){
+            it('runs only in client', function(){
+              expect(Meteor.isClient).to.be.true;
+            });
+            it.server('overrides describe.client and runs only in server', function(){
+              expect(Meteor.isServer).to.be.true;
+            });
+          });
+
+          describe.server('server only test suite', function(){
+            it('runs only in server', function(){
+              expect(Meteor.isServer).to.be.true;
+            });
+            it.client('overrides describe.server and runs only in client', function(){
+              expect(Meteor.isClient).to.be.true;
+            });
+          });
+
+          describe('client only and server only tests', function(){
+            it.client('runs only in client', function(){
+              expect(Meteor.isClient).to.be.true;
+            });
+            it.server('runs only in server', function(){
+              expect(Meteor.isServer).to.be.true;
+            });
+          });
+        {{/prism}}
+
+      <h2 id="verifyingBlazeComponents">Testing Blaze Comonents</h2>
+      <hr>
+      <p>
+        Which becomes very handy when we want to test components that have user interface elements that can only be run on the client.  Or modules that access the database that can only be run on the server.  And so forth.
+      </p>
+        {{#prism language="javascript" class="line-numbers"}}
+          describe('fooTemplate', function(){
+            it.client('should have customizable title', function(client){
+              var card = Blaze.renderWithData(
+              	Template.foo,
+              	{title: "lorem ipsum...", description: "words, words, words..."},
+              	document.body
+            	);
+
+            	expect.element('.foo').to.be.visible;
+            	expect.element('.foo .title').text.to.contain('lorem ipsum');
+
+            	Blaze.remove(card);
+            });
+          });
+        {{/prism}}
+
+      <h2 id="isomorphicVerification">Isomorphic Verification</h2>
+      <hr>
+      <p>
+        When we talk about isomorphic verification, we're talking about running verification tests not only in our packages, but in the non-packaged application client and server code.  This is difficult, because TinyTest is inherently a package based testing system.  So we need to figure out a way to get a test runner that can analyze application code that also uses the TinyTest API.  The current approach that we're researching is using <a href="http://nightwatchjs.org/guide#writing-unit-tests">Nightwatch unittests</a>.  These will differ from TinyTests, in that they will load Meteor files independently of the Meteor process.  To use a car analogy, if TinyTest is like opening the hood and looking at a running engine; using Nightwatch unittests would be like looking at the engine while it's turned off.
+        <br><br>
+        To get Nightwatch UnitTests fully integrated, we're going to need to write another directory scanning utility (which we already have the pattern for), and wrap each file in a closure that exports the code as a module (which is what the bundler does; and which we alos have a pattern for).  Lastly, we'll need to write some basic Nightwatch unittest methods that match the TinyTest API.  In all likelihood, it will wind up being a similar process as to how System Scenarios get compiled down to Nightwatch scripts.
+        <br><br>
+        We'll happily take pull-requests on this feature.
+      </p>
+
+  </section>
+</template>

@@ -1,0 +1,177 @@
+<template name="tinyTestsExample">
+  <div id="tinyTestsExample">
+    <h2>TinyTests</h2>
+    <hr>
+    {{#prism language="bash"}}
+      # API Version 3.3.0
+
+      # create a helloworld application
+      meteor create helloworld
+      cd helloworld
+
+      # you might want to open your editor to follow along
+      atom .
+      meteor
+
+      # add .meteor/nightwatch.json to our application
+      starrynight generate-autoconfig
+
+      # add acceptance tests to your application (using the nightwatch framework)
+      starrynight scaffold --framework nightwatch
+
+      # make sure the acceptance testing framework is running
+      starrynight run-tests --framework nightwatch
+
+      # add a package to our application
+      meteor create --package me:foo
+
+      # add tinytest-ci pickup to your application
+      starrynight scaffold --framework tinytest-ci
+
+      # run tinytests and read the results through nightwatch
+      starrynight run-tests --framework tinytest-ci
+    {{/prism}}
+
+
+    <h2>Detailed Walkthrough</h2>
+    <hr>
+
+    <p>
+      We start from the beginning by creating a helloworld app.
+    </p>
+    {{#prism language="bash"}}
+      $ meteor create helloworld
+      $ cd helloworld
+      $ meteor
+    {{/prism}}
+    <p>
+      Which will generate the following app on port 3000:
+    </p>
+    <img src="/tinytests/tinytests-a.png" class="exampleScreenshot" />
+
+    <p>
+      We now want to add our .meteor/nightwatch.json config file, and all of our testing files.  Let's run the following commands
+    </p>
+    {{#prism language="bash"}}
+      $ starrynight generate-autoconfig
+      $ starrynight scaffold --framework nightwatch
+    {{/prism}}
+
+    <p>
+      And we should see a /tests/nightwatch directory added to the project, along with many subdirectories and files.  These files won't get added to the application when we bundle it for production.  They are only part of the testing process.
+    </p>
+    <img src="/tinytests/tinytests-c.png" class="exampleScreenshot" />
+
+
+    <p>
+      Let's run our tests, and make sure that Nightwatch runs correctly and all of our tests pass.
+    </p>
+    {{#prism language="bash"}}
+      $ starrynight run-tests --framework nightwatch
+    {{/prism}}
+
+    <p>
+      There should be a single test at this point.  If it runs green, that's an important milestone!
+    </p>
+    <img src="/tinytests/tinytests-b.png" class="exampleScreenshot" />
+
+    <p>
+      Instead of adding validation scripts and acceptance tests, as we would normally do at this point, lets create a package within our application.  We'll put it in the 'me' namespace; and the package name will be 'foo'.  The point of using TinyTest with Nightwatch is that we want to add tests from our packages to our test runner.
+    </p>
+    {{#prism language="bash"}}
+      meteor create --package me:foo
+    {{/prism}}
+
+
+    <p>
+      Now that we've added our package, we should see a subdirectory named packages/foo.  In it will be a package manifest, a default ReadMe file, a file for adding package code, and a test file. The package.js manifest should look something like this:
+    </p>
+
+    <img src="/tinytests/tinytests-d.png" class="exampleScreenshot" />
+
+    <p>
+      And lets take a look at that foo-tests.js file.  In it we will see a Tinytest named 'example', which simply asserts that true is true.  This is the test we want to get running in Nightwatch.
+    </p>
+    <img src="/tinytests/tinytests-e.png" class="exampleScreenshot" />
+
+    <p>
+      So lets run the default Meteor test runner.  The test should run green.
+    </p>
+
+    {{#prism language="bash"}}
+      meteor test-packages
+    {{/prism}}
+
+    <p>
+      And it does.  Since the test is isomorphic, it's run on both the server and client, and we can confirm that our isomorphic DRY code works in both environments (the S: and C: stand for Server and Client, respectively).
+    </p>
+    <img src="/tinytests/tinytests-f.png" class="exampleScreenshot" />
+
+    <p>
+      So now lets run out tinytest via Nightwatch.  We do by using the `--framework tinytest-ci` argument, which will use the 'test-in-console' package driver, which uses a version of the TinyTest runner that writes the results to the browser console.
+    </p>
+
+    {{#prism language="bash"}}
+      $ starrynight scaffold --framework tinytest-ci
+    {{/prism}}
+
+    <p>
+      When Nightwatch asks Selenium to open the TinyTest browser for us, it will open a empty window that appears to do nothing.
+    </p>
+    <img src="/tinytests/tinytests-i.png" class="exampleScreenshot" />
+
+    <p>
+      However, if we open up the browser console, we'll see all the same tests as before!  This is what the 'test-in-console' package provides.  It's the same TinyTest runner, but without the HTML reporter.  This is the data that SpaceJam and Starrynight use to report to their respective test runners.  So our goal at this point is to get at this data, and return it to the Nightwatch runner.
+    </p>
+    <img src="/tinytests/tinytests-j.png" class="exampleScreenshot" />
+
+    <p>
+      We do that by adding the tinyTestPickup.js file, which uses the Nightwatch .getLog() command.  getLog() basically just monitors the console log, and reports back to Nightwatch.
+    </p>
+    <img src="/tinytests/tinytests-g.png" class="exampleScreenshot" />
+
+    <p>
+      The output is that we get our TinyTest results in our Nightwatch console log.
+    </p>
+    <img src="/tinytests/tinytests-h.png" class="exampleScreenshot" />
+
+    <h2>Contributing & Next Steps</h2>
+    <hr>
+    <p>
+      Obviously, there's a lot more we can do to integrate the TinyTest runner and Nightwatch/StarryNight.
+    </p>
+    <p>
+      A good introductory task would be to hack on the tinyTestPickup() file, and consume the TinyTest results via Nightwatch assertions, rather than simply writing to the console.
+    </p>
+    <p>
+      The tinyTestPickup.js is brittle, however, and sometimes doesn't get the TinyTest reuslts due to timing issues.  A much more challenging task would be to expose the TinyTest results in a javascript object, rather than the console log, so we can eliminate the timing issues during the pickup; and, by setting up a polling mechanism using Nightwatch's <a href="http://nightwatchjs.org/api#expect-before">.before/.after</a> API (introduced in 7.9) which would monitor the TinyTest results.
+    </p>
+    <p>
+      If anybody want's to tackle this next step, they'll probably need to create a new tinytest package using a separate track:
+    </p>
+
+        {{#prism language="bash"}}
+git clone meteor/packages test-in-console test-in-nightwatch-console
+git clone meteor/packages test-in-browser test-in-nightwatch
+meteor publish foo:test-in-nightwatch
+meteor publish foo:test-in-nightwatch-console
+starrynight generate-release-json
+meteor publish-release --create-track release.json
+meteor --release foo:METEOR@1.0.0.4
+        {{/prism}}
+
+    <p>
+      And then hack on the <a href="https://github.com/awatson1978/starrynight/blob/master/tool/frameworks/tinytest-on-server-console.js">starrynight tool's tiny-test-on-server framework</a> and use the newly customized driver-package:
+    </p>
+
+
+        {{#prism language="javascript"}}
+var args = ['test-packages', '--once', '--driver-package', 'test-in-nightwatch', '-p', 10015];
+        {{/prism}}
+
+    <p>
+      That should open up a bunch of possibilities with regard to hacking on the TinyTest reporter, and integrating it with Nightwatch and StarryNight.  It would be great to be able to use the DOM to render Blaze elements during integration tests; pick up the results via a JSON object in the browser, and then report via Nightwatch.
+    </p>
+
+  </div>
+</template>

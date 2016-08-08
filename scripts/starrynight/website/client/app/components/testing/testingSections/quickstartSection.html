@@ -1,0 +1,151 @@
+<template name="quickstartSection">
+  <section id="quickstartSection">
+    <h2 id="testingQuickStart"><b>Testing Quickstart</b></h2>
+    <hr>
+    {{#prism language="bash" class="line-numbers"}}
+      # API Version 3.3.0
+
+      # install the starrynight and nightwatch utilities
+      $ npm install -g starrynight
+
+      # add .meteor/nightwatch.json to our application
+      $ starrynight generate-autoconfig
+
+      # add acceptance tests to your application (using the Nightwatch framework)
+      $ starrynight scaffold --framework nightwatch
+
+      # run your validation tests using NightWatch
+      $ starrynight run-tests --framework nightwatch
+
+      # run your application verification tests using Gagarin
+      $ starrynight run-tests --framework gagarin --webdriver http://localhost:9515
+
+      # run your package verification tests using Gagarin
+      $ starrynight run-tests --framework gagarin --webdriver http://localhost:9515 --path /packages/*/tests/gagarin/**/*.js
+    {{/prism}}
+
+
+    <h2 id="supportedFrameworks">Supported Frameworks</h2>
+    <hr>
+    <p>
+      StarryNight is a general-purpose node utility that can support any number of testing frameworks.  If you can run it from node, we can accept a pull-request and add it into StarryNight.  That being said, the primary interest is in having an integrated, isomorphic API, which nowdays means support Chai and Mocha syntax to some extent.
+    </p>
+    <div class="left-padded">
+      <!-- <p>
+        Supports package testing via TinyTest framework; and acceptance testing and unit testing via the Nightwatch testing framework.  Here's the quick-and-simple way of getting started.
+      </p> -->
+      <p>
+        <b><a href="https://github.com/awatson1978/starrynight/blob/master/tool/frameworks/nightwatch.js">nightwatch</a></b><br>
+        Acceptance testing framework for UI testing.  Supports method chaining, custom commands and assertions, workflow pipelining, screenshots, tagging, and many more advanced features.
+      </p>
+      <p>
+        <b><a href="https://github.com/awatson1978/starrynight/blob/master/tool/frameworks/gagarin.js">gagarin</a></b><br>
+        Integration testing framework.  Launches instances of Meteor and coordinates tests running in client and server contexts.
+      </p>
+      <p>
+        <b><a href="https://github.com/awatson1978/starrynight/blob/master/tool/frameworks/spacejam.js">spacejam</a></b><br>
+        Package testing framework that extends TinyTest with chai assertions and a command line option.  A little inconsistent with launching, so it's remaining in experimental status for the time being.
+      </p>
+      <p>
+        <b><a href="https://github.com/awatson1978/starrynight/blob/master/tool/frameworks/tinytest-on-server-console.js">tinytest-ci</a></b><br>
+        Meteor's built in test framework for testing isopacks. Tests on both client and server.  Runs in a web-browser with user interface.
+      </p>
+      <!-- <p>
+        <b>tinytest</b><br>
+        Meteor's built in test framework for testing isopacks. Tests on both client and server.  Runs in a web-browser with user interface.
+      </p> -->
+      <span class="gray">
+        <p>
+          <b><a href="https://github.com/awatson1978/starrynight/blob/master/tool/frameworks/end-to-end.js">e2e</a></b><br>
+          Experimental framework based on mocha which supports testing OAuth functionality.  <a href="https://github.com/meteor/e2e">Originally written by the MDG</a>, you might want to take a look at the <a href="https://github.com/awatson1978/e2e/tree/community-use">community use fork</a> for experimenting in your own apps.
+        </p>
+      </span>
+
+
+      <!-- <span class="gray">
+
+        <p>
+          <b>mocha</b><br>
+          Unit/Integration testing framework for Node.  Framework launches, but cannot find config file and/or test files, so remaining in experimental status.
+        </p>
+        <p>
+          <b>pioneer</b><br>
+          Acceptance testing framework that uses Cucumber, which itself uses Selenium with Gherkin syntax, a behavior-driven-development style.  Framework launches, but cannot find config file and/or test files, so remaining in experimental status.
+        </p>
+        <p>
+          <b>jasmine</b><br>
+          Unit/Integration testing framework for Node.  Experimental support.  Framework launches, but cannot find config file and/or test files, so remaining in experimental status.
+        </p>
+      </span> -->
+    </div>
+    <h2 id="meteorNightwatchJson">.meteor/nightwatch.json</h2>
+    <hr>
+    <p>
+      Probably the most important file that you need to know about is the <code>.meteor/nightwatch.json</code> config file.  This is the master config for Nightwatch.  The thing to understand about this file is that it's extensible.  If you want to add more source folders, just put them in.  Want Nightwatch to look for custom commands in a temp directory?  Just add the paths.  Want to define dozens of different test environments?  Or enable logging and error screenshot on one workstation, but not another?   You can do all of that and more.  Because <code>.meteor/nightwatch.json</code> is exposed as a config file, feel free to script against it; manually tweak it; and otherwise adjust it for your workflow.
+    </p>
+    {{#prism language="js" class="line-numbers"}}
+      {
+        starrynight: {
+          version: "3.2.65"
+        },
+        nightwatch: {
+          version: "0.7.6"
+        },
+        src_folders : ["./tests/nightwatch/walkthroughs"],
+        output_folder : "./tests/nightwatch/reports",
+        custom_commands_path : [
+          "./tests/nightwatch/commands",
+          "./tests/nightwatch/commands/api/entry",
+          "./tests/nightwatch/commands/api/meteor",
+          "./tests/nightwatch/commands/actions",
+          "./tests/nightwatch/commands/components",
+          "./tests/nightwatch/commands/methods"
+        ],
+        custom_assertions_path : ["./tests/nightwatch/assertions"],
+        globals_path : "./tests/nightwatch/globals.json",
+
+        selenium : {
+          start_process : true,
+          server_path : "${npm_config_prefix}/lib/node_modules/starrynight/node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.45.0.jar",
+          log_path : "tests/nightwatch/logs",
+          host : "127.0.0.1",
+          port : 4444,
+          cli_args: {
+            "webdriver.chrome.driver": "${npm_config_prefix}/lib/node_modules/starrynight/node_modules/chromedriver/bin/chromedriver"
+          }
+        },
+
+        test_settings : {
+          default : {
+            launch_url : "http://localhost:5000",
+            selenium_host : "127.0.0.1",
+            selenium_port : 4444,
+            pathname: "/wd/hub",
+            silent : true,
+            disable_colors: false,
+            firefox_profile : false,
+            desiredCapabilities : {
+              browserName : "chrome",
+              javascriptEnabled : true,
+              acceptSslCerts : true,
+               loggingPrefs: { "browser": "ALL" }
+            },
+            exclude:"./tests/nightwatch/unittests/*"
+          },
+
+          phantomjs : {
+            desiredCapabilities : {
+              browserName : "phantomjs",
+              javascriptEnabled: true,
+              acceptSslCerts: true,
+              "phantomjs.binary.path" : "${npm_config_prefix}/lib/node_modules/starrynight/node_modules/phantomjs/bin/phantomjs"
+            }
+          }
+        }
+      }
+    {{/prism}}
+
+
+
+  </section>
+</template>

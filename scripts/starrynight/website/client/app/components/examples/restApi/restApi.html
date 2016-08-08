@@ -1,0 +1,98 @@
+<template name="restApi">
+  <div id="restApi">
+    <h2>Rest API</h2>
+    <hr>
+
+    <code class="monospace">
+      <span class="gray"># create a helloworld application</span><br>
+      $ meteor create helloworld<br>
+      $ cd helloworld<br>
+      <br>
+
+      <span class="gray"># you might want to open your editor to follow along</span><br>
+      $ atom .<br>
+      $ meteor<br>
+      <br>
+
+      <span class="gray"># add acceptance tests to your application (using the nightwatch framework)</span><br>
+      $ starrynight scaffold --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># make sure the acceptance testing framework is running</span><br>
+      $ starrynight run-tests --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># add a scaffold/boilerplate to your project</span><br>
+      $ starrynight scaffold --boilerplate project-homepage<br>
+      $ rm helloworld.*<br>
+      <br>
+
+      <span class="gray"># add acceptance tests for the project-homepage scaffold</span><br>
+      $ starrynight scaffold --boilerplate project-homepage --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># run acceptance tests on the new scaffold</span><br>
+      $ starrynight run-tests --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># add more scaffolding to your project</span><br>
+      $ starrynight scaffold --boilerplate iron-router<br>
+      <br>
+
+      <span class="gray"># see if our tests still work</span><br>
+      $ starrynight run-tests --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># add the itunes connect acceptance tests (mobile first)</span><br>
+      $ starrynight scaffold --boilerplate itunes --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># our tests should break</span><br>
+      $ starrynight run-tests --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># add extra page components and routes to our app</span><br>
+      $ starrynight pattern --url https://github.com/awatson1978/clinical-static-pages<br>
+      <br>
+
+      <span class="gray"># run acceptance tests (they should break)</span><br>
+      $ starrynight run-tests --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># rename files throughout your app in one go</span><br>
+      $ starrynight rename --from about --to marketing<br>
+      $ starrynight rename --from About --to Marketing<br>
+      <br>
+
+      <span class="gray"># find-and-replace terms throughout our app</span><br>
+      $ starrynight find-and-replace "AppTitle" "Hello StarryNight"<br>
+      $ starrynight find-and-replace "about" "marketing"<br>
+      <br>
+
+      <span class="gray"># when new files are created, we sometimes want to check file permissions</span><br>
+      $ starrynight audit-permissions<br>
+      <br>
+
+      <span class="gray"># run acceptance tests again (they should pass)</span><br>
+      $ starrynight run-tests --framework nightwatch<br>
+      <br>
+
+      <span class="gray"># create a package</span><br>
+      $ mkdir packages<br>
+      $ cd packages<br>
+      $ meteor create --package foo<br>
+      $ cd ..<br>
+      <br>
+
+      <span class="gray"># run package tests</span><br>
+      $ starrynight run-tests --framework tinytest-ci<br>
+      <br>
+
+      <span class="gray"># lets add some database</span><br>
+      $ starrynight scaffold --boilerplate client-server<br>
+      <br>
+
+
+    </code>
+  </div>
+</template>

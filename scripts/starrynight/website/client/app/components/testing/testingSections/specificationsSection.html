@@ -1,0 +1,46 @@
+<template name="specificationsSection">
+  <section id="specificationsSection">
+    <h2 id="businessFeatures">System Specifications</h2>
+    <hr>
+
+    <p>
+      A specification is defined as “a document that states requirements.” (See 21 CFR §820.3(y).) It may
+refer to or include drawings, patterns, or other relevant documents and usually indicates the means and
+the criteria whereby conformity with the requirement can be checked. There are many different kinds of
+written specifications, e.g., system requirements specification, software requirements specification,
+software design specification, software test specification, software integration specification, etc. All of
+these documents establish “specified requirements” and are design outputs for which various forms of
+verification are necessary.
+<br><a href="http://www.fda.gov/downloads/RegulatoryInformation/Guidances/ucm126955.pdf">- Guidance for Industry and FDA Staff</a>
+    </p>
+
+
+    <h2 id="businessRequirements">Business Requirements</h2>
+    <hr>
+    <p>
+      It's very convenient to begin writing your system specifications and requirements by looking at the business use cases and regulatory obligations. Even if you don't code up go through the effort of creating Given, And, When, and Then helper functions, the simple act of writing down Requirements and Scenarios can go a long way in clarifying what, exactly, you are trying to build.
+    </p>
+    {{#prism language="blaze" class="line-numbers"}}
+      Requirement: Physician can  score can be increased manually
+
+        As a task manager is some hypothetical workflow
+        I want to manually check off a task in a checklist
+        So that I can publicly display a my workflow state
+
+        Scenario: Give 5 points to a player
+          Given I authenticate
+          And "MRI Protocol - Head w/wo Contrast" has no completed tasks
+          When I complete "Greet patient." task
+          Then "MRI Protocol - Head w/wo Contrast" updates to "In Progress"
+    {{/prism}}
+
+
+    <h2 id="givenWhenThen">Given, When, Then</h2>
+    <hr>
+    <p>
+      This section is still under development.  You can find the latest work on Cucumber integration in the <a href="https://github.com/awatson1978/starrynight/tree/specifications"><code>specifications</code></a> branch.  Be sure to look at the <a href="https://github.com/awatson1978/starrynight/tree/specifications/examples/helloworld">examples/helloworld</a> applet.  Pull requests will be accepted if anybody wants to work on this.
+    </p>
+
+
+  </section>
+</template>

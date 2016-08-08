@@ -1,0 +1,15 @@
+<head>
+  <title>AppTitle</title>
+</head>
+
+<template name="appLayout">
+  {{> navbarHeader}}
+
+    <div class="hidden">{{resized}}</div>
+
+    <div id="mainPanel" class="padded container helveticas" style="{{getStyle}} {{getOpacity}}">
+        {{> yield }}
+    </div>
+
+  {{> navbarFooter}}
+</template>

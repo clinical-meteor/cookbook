@@ -1,0 +1,265 @@
+<template name="packageRefactor">
+  <div id="packageRefactor">
+    <h2>Extract A Package</h2>
+    <hr>
+    {{#prism language="bash"}}
+      # API Version 3.3.0
+
+      # create a helloworld application
+      $ meteor create helloworld
+      $ cd helloworld
+
+      # you might want to open your editor to follow along
+      $ atom .
+      $ meteor
+
+      # add .meteor/nightwatch.json to our application
+      $ starrynight generate-autoconfig
+
+      # add acceptance tests to your application (using the nightwatch framework)
+      $ starrynight scaffold --framework nightwatch
+
+      # make sure the acceptance testing framework is running
+      $ starrynight run-tests --framework nightwatch
+
+      # add a scaffold/boilerplate to your project
+      $ starrynight scaffold --boilerplate project-homepage
+      $ rm helloworld.*
+
+      # add acceptance tests for the project-homepage scaffold
+      $ starrynight scaffold --boilerplate project-homepage --framework nightwatch
+
+      # run acceptance tests on the new scaffold
+      $ starrynight run-tests --framework nightwatch
+
+      # create a componentized test file
+      mkdir client/mainPage/.tests
+      starrynight extract-tests-for client/mainPage/mainPage.html > client/mainPage/.tests/reviewMainPage.js
+
+      # add our new test command to our walkthrough
+      nano tests/nightwatch/walkthroughs/appLayout.js
+      > .waitForPage("#mainPage")
+      > .reviewMainPage()
+
+      # rescan the filesystem and update .meteor/nightwatch.json
+      $ starrynight generate-autoconfig
+
+      # run acceptance tests on the new scaffold
+      $ starrynight run-tests --framework nightwatch
+
+      # now we're going to extract a package from one of our components
+      starrynight create --package foo:mainpage --from client/mainPage
+
+      # lets remove the original component
+      rm -rf client/mainPage
+
+      # our tests shoudl fail
+      $ starrynight run-tests --framework nightwatch
+
+      # rescan the filesystem and update .meteor/nightwatch.json
+      $ starrynight generate-autoconfig
+
+
+      # we need to add foo:mainpage
+      $ meteor add foo:mainpage
+
+      # our tests should now pass
+      $ starrynight run-tests --framework nightwatch
+
+    {{/prism}}
+
+    <h2>Prerequisites</h2>
+    <hr>
+
+    This tutorial assumes that you've followed the <a href="/examples/project-homepage">Project Homepage Tutorial</a>, and begins where it leaves off.
+
+
+    <h2>Detailed Walkthrough</h2>
+    <hr>
+
+    <p>
+      In this example, we're going to extract validation tests for the <b>mainPage</b> component, move the component into it's own package, and add verification tests for the new package.
+    </p>
+    <img src="/extractComponent/extract-g.png" class="exampleScreenshot" />
+
+    <p>
+      We begin by creating a <b>.tests</b> directory in our component directory, where we'll be able to keep our validation tests.  We then extract them from the <b>mainPage.html</b> file by using the <b>extract-tests-for</b> command, which searches through the HTML and reports a list of all the element ids in the file.   It's easiest to pipe the results into a new file; but you can also copy-paste if that suits you more.
+    </p>
+        {{#prism language="bash"}}
+          # create a componentized test file
+          mkdir client/mainPage/.tests
+          starrynight extract-tests-for client/mainPage/mainPage.html > client/mainPage/.tests/reviewMainPage.js
+        {{/prism}}
+        <br><br>
+    <p>
+      Lets take a look at what our <b>extract-tests-for</b> command produced.   The first step it did was list of all the elements from mainPage.html that had a unique id specified, and then wrapped each element id in a css selector and a Nightwatch .verify assertion; then it wrapped all of that within an export.command.  And then we piped the file into the .tests directory.  If you write your html files intelligently, this can make writing test a breeze.
+      <br><br>
+      Note:  There's a similar command for classes called <b>extract-classes</b>
+    </p>
+    <img src="/extractComponent/extract-f.png" class="exampleScreenshot" />
+
+
+    <p>
+      We now want to add our new Nightwatch command to our walkthrough script.  We're doing this before beginning our package refactor, because we want to use the tests to confirm that our refactor doesn't break anything.
+    </p>
+      {{#prism language="bash"}}
+        # add our new test command to our walkthrough
+        nano tests/nightwatch/walkthroughs/appLayout.js
+        > .waitForPage("#mainPage")
+        > .reviewMainPage()
+      {{/prism}}
+      <br><br>
+
+
+    <p>
+      The resulting file should simply use the <b>.reviewMainPage()</b> somewhere after the <b>.url()</b> and before <b>.end();</b>
+    </p>
+    <img src="/extractComponent/extract-s.png" class="exampleScreenshot" />
+
+      <p>
+        So, up until now, we haven't done anything that would affect our test scripts.  All we did was add a new file to our application.  However, adding new commands to our test script... that can break things.  So lets check to see how are tests are doing.
+      </p>
+      {{#prism language="bash"}}
+        $ starrynight run-tests --framework nightwatch
+      {{/prism}}
+      <br><br>
+
+      <p>
+        Nack!  Something went wrong.  Apparently Nightwatch doesn't understand what <code>reviewMainPage()</code> means.  So we need to update our <b>.meteor/nightatch.json</b> and make sure there's a reference to the directory that contains <code>reviewMainPage.js</code>
+      </p>
+
+      <img src="/extractComponent/extract-b.png" class="exampleScreenshot" />
+
+      <p>
+        We need to add the <code>.tests</code> directory to our <code>.meteor/nightwatch.json</code> file.  So lets rerun <b>generate-autoconfig</b>.
+      </p>
+      {{#prism language="bash"}}
+        $ starrynight generate-autoconfig
+      {{/prism}}
+      <br><br>
+
+      <p>
+        And if we check <code>.meteor/nightwatch.json</code>, we see that <code>client/mainPage/.tests</code> has been added to our <code>custom_commands_path</code>.  In practice, this can pick up dozens or hundreds of files across the entire application, allowing you to keep your tests alongside your components.
+      </p>
+      <img src="/extractComponent/extract-d.png" class="exampleScreenshot" />
+
+      <p>
+        If we run our tests again, we should now get 13 tests, and they should all pass green.  Awesome, we're back under QA.  Time to commit and check all of our files in.
+      </p>
+      <img src="/extractComponent/extract-e.png" class="exampleScreenshot" />
+
+
+    <p>
+      Now we're ready for some real refactoring.  The 'Halp; I'm totally lost now' kind of refactoring.  The kind of refactoring that breaks everything.  That digs a deep hole that goes deeper before it gets better.  The kind of refactoring that needs to be done to fundamentally restructure an application.  They kind of refactoring that will pay down technical debt.  That will simplify your app.  And let you add new features.
+    </p>
+    <p>
+      We're going to do this refactor using the <code>starrynight create</code> command, which is a simply alias for <code>meteor create</code>.  However, the StarryNight extends the Meteor version, and supports one super awesome argument:  the <b>--from path/to/component</b> argument.
+    </p>
+      {{#prism language="bash"}}
+        $ starrynight create --package foo:mainpage --from client/mainPage
+      {{/prism}}
+      <br><br>
+
+      <p>
+        We run it, and snap!  Look at that.  Our package includes all of the files from our component directory, even including the <code>.tests</code> subdirectory!
+      </p>
+
+      <img src="/extractComponent/extract-h.png" class="exampleScreenshot" />
+
+
+      <p>
+        But now we're going to do something a little crazy.  We're going to delete the <b>client/mainPage</b> directory, and totally break our app, <i>on purpose</i>.  It's sort of like jumping out of an airplane.  Without a parachute, it would be completely crazy to do.  But since we have our tests protecting us, we can do this crazy thing knowing that we're not going to die a horrible death and wind up with a mangled useless application.
+      </p>
+      {{#prism language="bash"}}
+        $ rm -rf client/mainPage
+      {{/prism}}
+      <br><br>
+
+    <!-- <img src="/extractComponent/extract-c.png" class="exampleScreenshot" /> -->
+    <!-- <img src="/extractComponent/extract-i.png" class="exampleScreenshot" /> -->
+    <p>
+      Uh oh.  We're in freefall.  We got no application.  The site is unusable.
+    </p>
+    <img src="/extractComponent/extract-j.png" class="exampleScreenshot" />
+
+    <p>
+      Quick!  To our tests!  And....
+    </p>
+    {{#prism language="bash"}}
+      $ starrynight run-tests --framework nightwatch
+    {{/prism}}
+    <br><br>
+
+    <p>
+      ... we've got a 75% error rate.  :(  It's actually more like a 92% error rate; but we didn't even get to parse our .reviewMainPage() command.  Ug.
+      <br><br>However!  That 25% of information that's left, it can tell us a whole lot.  We know that the body of the application is loading, which tells us all sorts of stuff... like that network is still loading; that Meteor is initializing; that something is happening.  And we know exactly what's broken and missing.
+    </p>
+    <img src="/extractComponent/extract-k.png" class="exampleScreenshot" />
+
+    <p>
+      So lets go check our new package, and see what we might have missed.  Starting with the <b>package.js</b> file, we see that it's missing some dependencies that parse templates, and it's not exporting anything.
+    </p>
+    <img src="/extractComponent/extract-l.png" class="exampleScreenshot" />
+
+    <p>
+      So we add our dependencies and exports to <code>package.js</code>, and it should look something like this.
+    </p>
+    <img src="/extractComponent/extract-p.png" class="exampleScreenshot" />
+    <!-- <img src="/extractComponent/extract-m.png" class="exampleScreenshot" /> -->
+
+    <p>
+      Lets try our tests again....
+    </p>
+    {{#prism language="bash"}}
+      $ starrynight run-tests --framework nightwatch
+    {{/prism}}
+    <br><br>
+
+    <p>
+      Drat.  Still no dice.  We need to try something else.
+    </p>
+    <img src="/extractComponent/extract-k.png" class="exampleScreenshot" />
+
+
+    <p>
+      Lets check our logs.  On the browser console, we see that there's <b>No such template: mainPage</b>.  What could that mean?  The Meteor application isn't finding the package we just created.  Oh!  How about the <b>.meteor/packages</b> file?
+    </p>
+
+    <img src="/extractComponent/extract-n.png" class="exampleScreenshot" />
+
+    <p>
+      Aha.  We forgot to add <b>foo:mainpage</b> to our app.
+    </p>
+    <img src="/extractComponent/extract-o.png" class="exampleScreenshot" />
+
+    <p>
+      So lets make sure it's included in the app.
+    </p>
+    {{#prism language="bash"}}
+      $ meteor add foo:mainpage
+    {{/prism}}
+    <br><br>
+
+
+    <p>
+      And just like that, our application is back.
+    </p>
+    <img src="/extractComponent/extract-r.png" class="exampleScreenshot" />
+
+    <p>
+      And we run our tests again, and they all pass green.  We can now breath a sigh of relief that we're back on the ground.  Our parachute saved us from a horrible death.  Our application is back up.  The boss and teammembers aren't going to be mad.
+    </p>
+    <img src="/extractComponent/extract-q.png" class="exampleScreenshot" />
+
+    <p>
+      Time to commit the data to version control; and publish to the dev server!  We might also want to publish our package to Atmosphere, and begin using it in other apps.
+    </p>
+
+    {{#prism language="bash"}}
+      $ meteor publish --create foo:mainpage
+    {{/prism}}
+    <br><br>
+
+    <div id="disqus_thread"></div>
+  </div>
+</template>

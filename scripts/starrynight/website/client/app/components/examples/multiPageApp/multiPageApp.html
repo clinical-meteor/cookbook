@@ -1,0 +1,106 @@
+<template name="multiPageApp">
+  <div id="multiPageApp">
+    <h2>Multi-Page App</h2>
+    <hr>
+
+      {{#prism language="bash"}}
+        # API Version 3.3.0
+
+        # create a helloworld application
+        $ meteor create helloworld
+        $ cd helloworld
+
+        # you might want to open your editor to follow along
+        $ atom .
+        $ meteor
+
+        # add .meteor/nightwatch.json to our application
+        $ starrynight generate-autoconfig
+
+        # add acceptance tests to your application (using the nightwatch framework)
+        $ starrynight scaffold --framework nightwatch
+
+        # make sure the acceptance testing framework is running
+        $ starrynight run-tests --framework nightwatch
+
+        # add a scaffold/boilerplate to your project
+        $ starrynight scaffold --boilerplate project-homepage
+        $ rm helloworld.*
+
+        # add acceptance tests for the project-homepage scaffold
+        $ starrynight scaffold --boilerplate project-homepage --framework nightwatch
+
+        # run acceptance tests on the new scaffold
+        $ starrynight run-tests --framework nightwatch
+
+        # add more scaffolding to your project
+        $ starrynight scaffold --boilerplate iron-router
+
+        # see if our tests still work
+        $ starrynight run-tests --framework nightwatch
+      {{/prism}}
+
+
+    <h2>Prerequisites</h2>
+    <hr>
+
+    This tutorial assumes that you've followed the <a href="/examples/project-homepage">Project Homepage Tutorial</a>, and begins where it leaves off.
+
+    <h2>Detailed Walkthrough</h2>
+    <hr>
+
+    <p>
+      Lets begin our refactor and addition of our client-side router by going back and looking at our appLayout component.  There's two things we want to change:  first, we want to take everything within the <b>&#60;body&#62;</b> tag, and move it into a template.  And second, we want to replace the the <b>&#123;&#123;> mainPage&#125;&#125;</b> helper with a the <b>&#123;&#123;> yield&#125;&#125;</b>, which will allow us to hook up our router.
+    </p>
+
+    <img src="/projectHomepage/projectHomepage-b.png" class="exampleScreenshot">
+
+      <p>
+        Normally, we'd have to do such a refactor by hand, and rely on our tests to keep us from wrecking things.  In this case, we have our scaffolding tool to do this particular refactor for us.  So we can just scaffold in a new template.  (Please note that the location of files and directories have been chosen to facilitate this scaffolding.  Replacing boilerplate components is possible because each boilerplate conforms to the <a href="/scaffolding">Reference Scaffold</a>)
+      </p>
+      {{#prism language="bash"}}
+        $ starrynight scaffold --boilerplate iron-router
+      {{/prism}}
+      <br>
+      <br>
+
+      <p>
+        Our new scaffold has our appLayout code located within a <b>&#60;template&#62;</b> tag, and we are now using a <b>&#123;&#123;> yield&#125;&#125;</b>.  We now need to fill that yield with a component.  So we need to specify a route.
+      </p>
+
+    <img src="/ironRouter/ironRouter-a.png" class="exampleScreenshot" />
+
+    <p>
+      There should be a /lib/router.js file which you can now take a look at.  You'll see that there are templates for the header and footer, as well as a default route that points to the mainPage template.
+    </p>
+    <img src="/ironRouter/ironRouter-b.png" class="exampleScreenshot" />
+
+    <p>
+      Assuming everything went correct when we scaffolded in the new boilerplate, there shouldn't be any changes to our app.
+    </p>
+    <img src="/projectHomepage/projectHomepage-c.png" class="exampleScreenshot">
+
+    <p>
+      Perhaps more importantly, we have tests we can run to check that our application is conforming to our expectations.
+    </p>
+
+    {{#prism language="bash"}}
+      $ starrynight run-tests --framework nightwatch
+    {{/prism}}
+    <br>
+    <br>
+
+    <p>
+      We run our tests again, and see that even though our application visually looks the same, we also know that it's structurally the same.  The elements which we expected to be there are still there.
+    </p>
+    <img src="/ironRouter/ironRouter-c.png" class="exampleScreenshot" />
+
+    <h2>Next Steps</h2>
+    <hr>
+
+    <p>
+      Next steps might include creating a Mobile App, Cloning and Refactoring a Marketing Page, or adding the MultiActor Pattern.  These advanced tutorials are in the works, and will be published as time, funding, and sponsorship permit.
+    </p>
+
+  </div>
+</template>
