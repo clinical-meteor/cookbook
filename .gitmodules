@@ -158,3 +158,17 @@
 [submodule "examples/meteor-on-fhir"]
 	path = examples/meteor-on-fhir
 	url = http://github.com/clinical-meteor/meteor-on-fhir
+
+
+[submodule "fhir-resources/hl7-resource-location"]
+	path = fhir-resources/hl7-resource-location
+	url = http://github.com/clinical-meteor/hl7-resource-location
+[submodule "fhir-resources/hl7-resource-patient"]
+	path = fhir-resources/hl7-resource-patient
+	url = http://github.com/clinical-meteor/hl7-resource-patient
+[submodule "fhir-resources/hl7-resource-practitioner"]
+	path = fhir-resources/hl7-resource-practitioner
+	url = http://github.com/clinical-meteor/hl7-resource-practitioner
+[submodule "fhir-resources/hl7-resource-organization"]
+	path = fhir-resources/hl7-resource-organization
+	url = http://github.com/clinical-meteor/hl7-resource-organization
