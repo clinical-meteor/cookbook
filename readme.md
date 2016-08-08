@@ -54,9 +54,10 @@ This section is in the works, and will document the architecture behind creating
 
 
 ========================================
-###[Cookbook - Table of Contents (Deprecated)](https://github.com/awatson1978/meteor-cookbook/blob/master/table-of-contents.md)   
-The Clinical Meteor project started off as the Meteor Cookbook, a FAQ and tutorial curated from over 2 years of emails and discussions from the old [meteor] google group and the author's experiences rolling out packages and apps.  These documents were written for the intermediate user learning Meteor, who is accustomed to a) object-oriented frameworks and languages, such as Java and C#, and b) relational databases and data structures derived from SQL table schemas.  The focus was on helping the user grow accustomed to functional programming using document oriented databases.  Over the past years, much of the Cookbook has been migrated into the StarryNight utility, or moved into packages within the ``clinical:METEOR`` track.  The remaining material is being rewritten as a tutorial, guide, and white-paper documentation of the Clinical Track.
+###[Cookbook - (Deprecated)](https://github.com/awatson1978/meteor-cookbook/blob/master/stackoverflow-migration.md)   
+The Clinical Meteor project started off as the Meteor Cookbook, a FAQ and tutorial curated from over 3 years of emails and discussions from the old [meteor] google group and the author's experiences rolling out packages and apps.  The focus was on helping the user grow accustomed to functional programming using document oriented databases.  Over the past year, much of the Cookbook has been migrated into the StarryNight utility, moved into packages within the ``clinical:METEOR`` track, or migrated to the StackOverflow Documenation site for Meteor.
 
+[StackOverflow Documentation - Meteor](http://stackoverflow.com/documentation/meteor/topics)  
 
 
 ========================================
