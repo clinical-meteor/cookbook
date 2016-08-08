@@ -1,8 +1,0 @@
-  {
-    "devDependencies": {
-      "mrtbulkrelease":"0.7.2",
-      "pioneer": "^0.11.3",
-      "spacejam": "^1.2.0",
-      "jasmine": "^2.2.1"
-    }
-  }
