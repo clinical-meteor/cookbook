@@ -10,10 +10,8 @@ curl https://install.meteor.com | sh
 # check it's installed correctly
 meteor --version
  
-# install node
-# as of OSX Mavericks, we need the GUI installer (?!)
-# when a good command line alternative is found, we'll post it
-http://nodejs.org/download/
+# install node.  Go to Download link.
+https://nodejs.org/
  
 # install npm
 curl -0 -L https://npmjs.org/install.sh | sh
