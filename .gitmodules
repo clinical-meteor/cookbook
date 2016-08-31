@@ -156,11 +156,11 @@
     path = utilities/starrynight
     url = https://github.com/awatson1978/starrynight
 [submodule "utilities/cornerstone"]
-    path = utilities/cornerstone
-    url = https://github.com/chafey/cornerstone
+	path = utilities/cornerstone
+	url = https://github.com/chafey/cornerstone
 [submodule "utilities/tensorflow"]
-    path = utilities/tensorflow
-    url = https://github.com/tensorflow/tensorflow
+	path = utilities/tensorflow
+	url = https://github.com/tensorflow/tensorflow
 
 [submodule "examples/meteor-on-fhir"]
 	path = examples/meteor-on-fhir
