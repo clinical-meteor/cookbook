@@ -155,20 +155,93 @@
 [submodule "utilities/starrynight"]
     path = utilities/starrynight
     url = https://github.com/awatson1978/starrynight
+[submodule "utilities/cornerstone"]
+    path = utilities/cornerstone
+    url = https://github.com/chafey/cornerstone
+[submodule "utilities/tensorflow"]
+    path = utilities/tensorflow
+    url = https://github.com/tensorflow/tensorflow
+
 [submodule "examples/meteor-on-fhir"]
 	path = examples/meteor-on-fhir
 	url = http://github.com/clinical-meteor/meteor-on-fhir
 
 
+[submodule "fhir-resources/hl7-resource-appointment"]
+	path = fhir-resources/hl7-resource-appointment
+	url = http://github.com/clinical-meteor/hl7-resource-appointment
+[submodule "fhir-resources/hl7-resource-careplan"]
+	path = fhir-resources/hl7-resource-careplan
+	url = http://github.com/clinical-meteor/hl7-resource-careplan
+[submodule "fhir-resources/hl7-resource-condition"]
+	path = fhir-resources/hl7-resource-condition
+	url = http://github.com/clinical-meteor/hl7-resource-condition
+[submodule "fhir-resources/hl7-resource-datatypes"]
+	path = fhir-resources/hl7-resource-datatypes
+	url = http://github.com/clinical-meteor/hl7-resource-datatypes
+[submodule "fhir-resources/hl7-resource-device"]
+	path = fhir-resources/hl7-resource-device
+	url = http://github.com/clinical-meteor/hl7-resource-device
+[submodule "fhir-resources/hl7-resource-diagnostic-report"]
+	path = fhir-resources/hl7-resource-diagnostic-report
+	url = http://github.com/clinical-meteor/hl7-resource-diagnostic-report
+[submodule "fhir-resources/hl7-resource-encounter"]
+	path = fhir-resources/hl7-resource-encounter
+	url = http://github.com/clinical-meteor/hl7-resource-encounter
+[submodule "fhir-resources/hl7-resource-family-member-history"]
+	path = fhir-resources/hl7-resource-family-member-history
+	url = http://github.com/clinical-meteor/hl7-resource-family-member-history
+[submodule "fhir-resources/hl7-resource-healthcare-service"]
+	path = fhir-resources/hl7-resource-healthcare-service
+	url = http://github.com/clinical-meteor/hl7-resource-healthcare-service
+[submodule "fhir-resources/hl7-resource-imaging-study"]
+	path = fhir-resources/hl7-resource-imaging-study
+	url = http://github.com/clinical-meteor/hl7-resource-imaging-study
 [submodule "fhir-resources/hl7-resource-location"]
 	path = fhir-resources/hl7-resource-location
 	url = http://github.com/clinical-meteor/hl7-resource-location
-[submodule "fhir-resources/hl7-resource-patient"]
-	path = fhir-resources/hl7-resource-patient
-	url = http://github.com/clinical-meteor/hl7-resource-patient
-[submodule "fhir-resources/hl7-resource-practitioner"]
-	path = fhir-resources/hl7-resource-practitioner
-	url = http://github.com/clinical-meteor/hl7-resource-practitioner
+[submodule "fhir-resources/hl7-resource-medication"]
+	path = fhir-resources/hl7-resource-medication
+	url = http://github.com/clinical-meteor/hl7-resource-medication
+[submodule "fhir-resources/hl7-resource-medication-order"]
+	path = fhir-resources/hl7-resource-medication-order
+	url = http://github.com/clinical-meteor/hl7-resource-medication-order
+[submodule "fhir-resources/hl7-resource-observation"]
+	path = fhir-resources/hl7-resource-observation
+	url = http://github.com/clinical-meteor/hl7-resource-observation
+[submodule "fhir-resources/hl7-resource-order"]
+	path = fhir-resources/hl7-resource-order
+	url = http://github.com/clinical-meteor/hl7-resource-order
 [submodule "fhir-resources/hl7-resource-organization"]
 	path = fhir-resources/hl7-resource-organization
 	url = http://github.com/clinical-meteor/hl7-resource-organization
+[submodule "fhir-resources/hl7-resource-patient"]
+	path = fhir-resources/hl7-resource-patient
+	url = http://github.com/clinical-meteor/hl7-resource-patient
+[submodule "fhir-resources/hl7-resource-person"]
+	path = fhir-resources/hl7-resource-person
+	url = http://github.com/clinical-meteor/hl7-resource-person
+[submodule "fhir-resources/hl7-resource-practitioner"]
+	path = fhir-resources/hl7-resource-practitioner
+	url = http://github.com/clinical-meteor/hl7-resource-practitioner
+[submodule "fhir-resources/hl7-resource-procedure"]
+	path = fhir-resources/hl7-resource-procedure
+	url = http://github.com/clinical-meteor/hl7-resource-procedure
+[submodule "fhir-resources/hl7-resource-questionnaire"]
+	path = fhir-resources/hl7-resource-questionnaire
+	url = http://github.com/clinical-meteor/hl7-resource-questionnaire
+[submodule "fhir-resources/hl7-resource-questionnaire-response"]
+	path = fhir-resources/hl7-resource-questionnaire-response
+	url = http://github.com/clinical-meteor/hl7-resource-questionnaire-response
+[submodule "fhir-resources/hl7-resource-related-person"]
+	path = fhir-resources/hl7-resource-related-person
+	url = http://github.com/clinical-meteor/hl7-resource-related-person
+[submodule "fhir-resources/hl7-resource-risk-assessment"]
+	path = fhir-resources/hl7-resource-risk-assessment
+	url = http://github.com/clinical-meteor/hl7-resource-risk-assessment
+[submodule "fhir-resources/hl7-resource-sequence"]
+	path = fhir-resources/hl7-resource-sequence
+	url = http://github.com/clinical-meteor/hl7-resource-sequence
+[submodule "fhir-resources/hl7-resource-specimen"]
+	path = fhir-resources/hl7-resource-specimen
+	url = http://github.com/clinical-meteor/hl7-resource-specimen
