@@ -52,13 +52,3 @@ The following table serves as both regulatory status overview and project roadma
 | clinical:stripe  | --- | --- | --- | --- | ---  |
 | clinical:accounts-stripe  | --- | --- | --- | --- | ---  |
 | clinical:grays-anatomy  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-patient  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-specimen  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-clinicalImpression  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-questionnaire  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-questionnaireResponse  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-practitioner  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-organization  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-observation  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-device  | --- | --- | --- | --- | --- |
-| clinical:hl7-resource-sequence | --- | --- | --- | --- | --- |
