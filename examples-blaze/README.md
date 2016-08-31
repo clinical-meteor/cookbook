@@ -1,3 +1,22 @@
+Clinical Demos  
+========================================
+Links to live versions of the examples associated with this cookbook.  
+
+
+| Live Demo     | Source|    Validation   |  Status  | Meteor Version  |
+| ------------- |:----------------:| ----------------| ---------------- | ---------------:|
+| [Checklist Manifesto](http://checklist-manifesto.meteor.com/) | [checklist-manifesto](https://github.com/clinical-meteor/checklist-manifesto) | 250+ | [![Circle CI](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master)| 1.1.0.3 |
+| [Hello Healthcare](http://hello-healthcare.meteor.com/) | [hello-healthcare](https://github.com/clinical-meteor/hello-healthcare) | 100+ | [![Circle CI](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master)| 1.1.0.3 |
+| [California Kids Cancer Comparison](http://ckcc.meteor.com/) | [ckcc](https://github.com/clinical-meteor/ckcc) | --- | --- | 1.1.0.3 |
+| [Clinical Trials](http://clinical-trials.meteor.com/) | [clinical-trials](https://github.com/awatson1978/clinical-trials) | 800+ | --- | 0.9.4 |
+| [Clinical ActiveRecord](https://clinical-activerecord.meteor.com)  | [clinical-activerecord](https://github.com/awatson1978/clinical-activerecord) | 296 | --- |  1.0.3.1 |
+| [Clinical Scheduling](https://clinical-scheduling.meteor.com)   | [clinical-scheduling](https://github.com/awatson1978/clinical-scheduling) |  7 | --- | 1.0.3.1 |
+| [Clinical Health Planner](http://senescence.meteor.com/) | [health-planner](https://github.com/awatson1978/health-planner) | 7 | --- | 0.8 |
+| [Biological Reductionism](http://reductionism.meteor.com/) | [reductionism](https://github.com/awatson1978/reductionism) | 7 | --- | 0.7 |
+| [Bioinformatics Sampler](http://reductionism.meteor.com/) | [reductionism](https://github.com/awatson1978/d3-flare-demo) | 7 | --- | 0.7 |
+| [Pulse](http://pulseapp.meteor.com/)  | [pulse](https://github.com/firdausramlan/pulse) | --- | --- | --- |
+
+
 Examples & Demos
 ===============================
 
@@ -19,7 +38,7 @@ Included example apps.
 
 
 Additional examples that may be of interest to people.
- 
+
 
 | Live Demo     | Source|    Validation   |  Status  | Meteor Version  |
 | ------------- |:----------------:| ----------------| ---------------- | ---------------:|
@@ -28,7 +47,7 @@ Additional examples that may be of interest to people.
 | [Fonts & Calligraphy](http://fonts.meteor.com/)   | [fonts-site](https://github.com/awatson1978/fonts-site) |  15  | ![travisci](https://travis-ci.org/awatson1978/fonts-site.svg?branch=master) | 1.0.3.1 |
 | [Stripe - Subscriptions ](https://github.com/awatson1978/payment-subscription) | [payment-subscription](https://github.com/awatson1978/payment-subscription) |  7 |  ![travis-build](https://travis-ci.org/awatson1978/payment-subscription.svg?branch=master) | 1.0.3.1 |
 | [Workflow Routing](http://workflow-routing.meteor.com/)  | [workflow-routing](https://github.com/awatson1978/workflow-routing) |  7 | ![travis-build](https://travis-ci.org/awatson1978/workflow-routing.svg?branch=master) | 1.0.3.1 |
-| [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | 7 |  ![travis-build](https://travis-ci.org/awatson1978/dropzone-ui.svg?branch=master) | 1.0.3.1 | 
+| [Dropzone UI](https://github.com/awatson1978/dropzone-ui) | [dropzone-ui](https://github.com/awatson1978/dropzone-ui) | 7 |  ![travis-build](https://travis-ci.org/awatson1978/dropzone-ui.svg?branch=master) | 1.0.3.1 |
 | [Drag and Drop](http://drag-and-drop.meteor.com/)        | [drag-and-drop](https://github.com/awatson1978/drag-and-drop) | 7 | ![travis-build](https://travis-ci.org/awatson1978/drag-and-drop.svg?branch=master) | 1.0.3.1 |
 | [Green Eggs and Spam](https://green-eggs-and-spam.meteor.com)        | [green-eggs-and-spam](https://github.com/awatson1978/green-eggs-and-spam) | 7  | ![travis-build](https://travis-ci.org/awatson1978/green-eggs-and-spam.svg?branch=master) | 1.0.3.1 |
 | [Stripe - Per Service ](http://payment-per-service.meteor.com/)  | [payment-per-service](https://github.com/awatson1978/payment-per-service) | 7 | ![travis-build](https://travis-ci.org/awatson1978/payment-per-service.svg?branch=master) | 1.0.3.1 |
@@ -52,6 +71,3 @@ Additional examples that may be of interest to people.
 | [RocketChat](https://rocket.chat/) | [RocketChat.Electron](https://github.com/RocketChat/Rocket.Chat.Electron) | --- | --- |  1.0.3.1 |
 | ---  | [todomvc-meteor-react-with-router-animations](https://forums.meteor.com/t/todomvc-meteor-react-with-router-animations/3328) | --- | --- |  --- |
 | [Document Timeline](http://document-timeline.meteor.com/)  | [timeline](https://github.com/AntoBase/timeline) | --- | --- |  --- |
-
-
-

@@ -109,41 +109,41 @@
 
 
 
-[submodule "examples/clinical-scheduling"]
-    path = examples/clinical-scheduling
+[submodule "examples-blaze/clinical-scheduling"]
+    path = examples-blaze/clinical-scheduling
     url = https://github.com/awatson1978/clinical-scheduling.git
-[submodule "examples/app-support-forum"]
-    path = examples/app-support-forum
+[submodule "examples-blaze/app-support-forum"]
+    path = examples-blaze/app-support-forum
     url = https://github.com/clinical-meteor/app-support-forum
-[submodule "examples/clinical-trials"]
-    path = examples/clinical-trials
+[submodule "examples-blaze/clinical-trials"]
+    path = examples-blaze/clinical-trials
     url = https://github.com/awatson1978/clinical-trials.git
-[submodule "examples/image-link-archive"]
-    path = examples/image-link-archive
+[submodule "examples-blaze/image-link-archive"]
+    path = examples-blaze/image-link-archive
     url = https://github.com/awatson1978/image-link-archive.git
 
 
 
-[submodule "examples-extra/exec-command-line-from-ui"]
-    path = examples-extra/exec-command-line-from-ui
+[submodule "examples-blaze/exec-command-line-from-ui"]
+	path = examples-blaze/exec-command-line-from-ui
     url = https://github.com/awatson1978/exec-command-line-from-ui
-[submodule "examples-extra/leaflet-parties"]
-    path = examples-extra/leaflet-parties
+[submodule "examples-blaze/leaflet-parties"]
+	path = examples-blaze/leaflet-parties
     url = https://github.com/awatson1978/leaflet-parties
-[submodule "examples-extra/minimongo-table"]
-    path = examples-extra/minimongo-table
+[submodule "examples-blaze/minimongo-table"]
+	path = examples-blaze/minimongo-table
     url = https://github.com/awatson1978/minimongo-table
-[submodule "examples-extra/rest-analytics-pipeline"]
-    path = examples-extra/rest-analytics-pipeline
+[submodule "examples-blaze/rest-analytics-pipeline"]
+	path = examples-blaze/rest-analytics-pipeline
     url = https://github.com/awatson1978/rest-analytics-pipeline
-[submodule "examples-extra/rest-api"]
-    path = examples-extra/rest-api
+[submodule "examples-blaze/rest-api"]
+	path = examples-blaze/rest-api
     url = https://github.com/awatson1978/rest-api
-[submodule "examples-extra/Rocket.Chat"]
-    path = examples-extra/Rocket.Chat
+[submodule "examples-blaze/Rocket.Chat"]
+	path = examples-blaze/Rocket.Chat
     url = https://github.com/RocketChat/Rocket.Chat
-[submodule "examples-extra/plant-almanac"]
-    path = examples-extra/plant-almanac
+[submodule "examples-blaze/plant-almanac"]
+	path = examples-blaze/plant-almanac
     url = https://github.com/awatson1978/plant-almanac
 
 
