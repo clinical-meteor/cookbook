@@ -54,13 +54,6 @@ This section is in the works, and will document the architecture behind creating
 
 
 ========================================
-###[Cookbook - (Deprecated)](https://github.com/awatson1978/meteor-cookbook/blob/master/stackoverflow-migration.md)   
-The Clinical Meteor project started off as the Meteor Cookbook, a FAQ and tutorial curated from over 3 years of emails and discussions from the old [meteor] google group and the author's experiences rolling out packages and apps.  The focus was on helping the user grow accustomed to functional programming using document oriented databases.  Over the past year, much of the Cookbook has been migrated into the StarryNight utility, moved into packages within the ``clinical:METEOR`` track, or migrated to the StackOverflow Documenation site for Meteor.
-
-[StackOverflow Documentation - Meteor](http://stackoverflow.com/documentation/meteor/topics)  
-
-
-========================================
 ###Contributing  
 
 Pull requests with typo corrections and copyediting are nearly always accepted.  Feature requests for individual packages should be logged in their respective repositories.  Discussion regarding the larger overall project should be logged here.  Please see the [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md) documentation for more details on project governance.
