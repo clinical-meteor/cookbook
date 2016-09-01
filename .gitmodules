@@ -260,3 +260,6 @@
 [submodule "examples-blaze/dropzone-ui"]
 	path = examples-blaze/dropzone-ui
 	url = https://github.com/awatson1978/dropzone-ui
+[submodule "examples-blaze/drag-and-drop"]
+	path = examples-blaze/drag-and-drop
+	url = https://github.com/awatson1978/drag-and-drop
