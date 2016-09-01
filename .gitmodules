@@ -159,9 +159,9 @@
 	path = utilities/tensorflow
 	url = https://github.com/tensorflow/tensorflow
 
-[submodule "examples/meteor-on-fhir"]
-	path = examples/meteor-on-fhir
-	url = http://github.com/clinical-meteor/meteor-on-fhir
+[submodule "examples-react/meteor-on-fhir"]
+	path = examples-react/meteor-on-fhir
+	url = https://github.com/clinical-meteor/meteor-on-fhir
 
 
 [submodule "fhir-resources/hl7-resource-appointment"]
