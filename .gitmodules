@@ -242,3 +242,6 @@
 [submodule "fhir-resources/hl7-resource-specimen"]
 	path = fhir-resources/hl7-resource-specimen
 	url = http://github.com/clinical-meteor/hl7-resource-specimen
+[submodule "examples-blaze/dental-svg"]
+	path = examples-blaze/dental-svg
+	url = https://github.com/proehlen/meteor-demo-svg-subs-pure-blaze
