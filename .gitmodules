@@ -257,3 +257,6 @@
 [submodule "examples-blaze/payment-subscription"]
 	path = examples-blaze/payment-subscription
 	url = https://github.com/awatson1978/payment-subscription
+[submodule "examples-blaze/dropzone-ui"]
+	path = examples-blaze/dropzone-ui
+	url = https://github.com/awatson1978/dropzone-ui
