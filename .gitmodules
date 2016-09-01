@@ -278,3 +278,6 @@
 [submodule "examples-blaze/timeline"]
 	path = examples-blaze/timeline
 	url = https://github.com/AntoBase/timeline
+[submodule "examples-blaze/personal-health-record"]
+	path = examples-blaze/personal-health-record
+	url = https://github.com/clinical-meteor/personal-health-record
