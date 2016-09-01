@@ -248,3 +248,6 @@
 [submodule "examples-blaze/nvd3-statistics"]
 	path = examples-blaze/nvd3-statistics
 	url = https://github.com/clinical-meteor/nvd3-statistics-meteor-blaze
+[submodule "examples-blaze/pulse"]
+	path = examples-blaze/pulse
+	url = https://github.com/firdausramlan/pulse
