@@ -254,3 +254,6 @@
 [submodule "examples-blaze/reductionism"]
 	path = examples-blaze/reductionism
 	url = https://github.com/awatson1978/reductionism
+[submodule "examples-blaze/payment-subscription"]
+	path = examples-blaze/payment-subscription
+	url = https://github.com/awatson1978/payment-subscription
