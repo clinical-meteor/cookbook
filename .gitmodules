@@ -266,3 +266,6 @@
 [submodule "examples-blaze/green-eggs-and-spam"]
 	path = examples-blaze/green-eggs-and-spam
 	url = https://github.com/awatson1978/green-eggs-and-spam
+[submodule "examples-blaze/itunes-interface"]
+	path = examples-blaze/itunes-interface
+	url = https://github.com/mitar/reactconf-2015-HYPE
