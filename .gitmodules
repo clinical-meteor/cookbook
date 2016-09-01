@@ -251,3 +251,6 @@
 [submodule "examples-blaze/pulse"]
 	path = examples-blaze/pulse
 	url = https://github.com/firdausramlan/pulse
+[submodule "examples-blaze/reductionism"]
+	path = examples-blaze/reductionism
+	url = https://github.com/awatson1978/reductionism
