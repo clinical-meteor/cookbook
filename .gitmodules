@@ -245,3 +245,6 @@
 [submodule "examples-blaze/dental-svg"]
 	path = examples-blaze/dental-svg
 	url = https://github.com/proehlen/meteor-demo-svg-subs-pure-blaze
+[submodule "examples-blaze/nvd3-statistics"]
+	path = examples-blaze/nvd3-statistics
+	url = https://github.com/clinical-meteor/nvd3-statistics-meteor-blaze
