@@ -269,3 +269,12 @@
 [submodule "examples-blaze/itunes-interface"]
 	path = examples-blaze/itunes-interface
 	url = https://github.com/mitar/reactconf-2015-HYPE
+[submodule "examples-react/todo-list"]
+	path = examples-react/todo-list
+	url = https://github.com/grigio/todomvc-meteor-react
+[submodule "examples-react/timeline"]
+	path = examples-react/timeline
+	url = https://github.com/AntoBase/timeline
+[submodule "examples-blaze/timeline"]
+	path = examples-blaze/timeline
+	url = https://github.com/AntoBase/timeline
