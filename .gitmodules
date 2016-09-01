@@ -263,3 +263,6 @@
 [submodule "examples-blaze/drag-and-drop"]
 	path = examples-blaze/drag-and-drop
 	url = https://github.com/awatson1978/drag-and-drop
+[submodule "examples-blaze/green-eggs-and-spam"]
+	path = examples-blaze/green-eggs-and-spam
+	url = https://github.com/awatson1978/green-eggs-and-spam
