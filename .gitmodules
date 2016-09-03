@@ -251,3 +251,9 @@
 [submodule "utilities/material-fhir-ui"]
 	path = utilities/material-fhir-ui
 	url = https://github.com/clinical-meteor/software-development-kit
+[submodule "utilities/mongo"]
+	path = utilities/mongo
+	url = https://github.com/mongodb/mongo
+[submodule "utilities/mupx"]
+	path = utilities/mupx
+	url = https://github.com/arunoda/meteor-up
