@@ -145,6 +145,12 @@
 [submodule "examples-blaze/plant-almanac"]
 	path = examples-blaze/plant-almanac
     url = https://github.com/awatson1978/plant-almanac
+[submodule "examples-blaze/dental-svg"]
+	path = examples-blaze/dental-svg
+	url = https://github.com/proehlen/meteor-demo-svg-subs-pure-blaze
+[submodule "examples-blaze/nvd3-statistics"]
+	path = examples-blaze/nvd3-statistics
+	url = https://github.com/clinical-meteor/nvd3-statistics-meteor-blaze
 
 
 
@@ -242,42 +248,6 @@
 [submodule "fhir-resources/hl7-resource-specimen"]
 	path = fhir-resources/hl7-resource-specimen
 	url = http://github.com/clinical-meteor/hl7-resource-specimen
-[submodule "examples-blaze/dental-svg"]
-	path = examples-blaze/dental-svg
-	url = https://github.com/proehlen/meteor-demo-svg-subs-pure-blaze
-[submodule "examples-blaze/nvd3-statistics"]
-	path = examples-blaze/nvd3-statistics
-	url = https://github.com/clinical-meteor/nvd3-statistics-meteor-blaze
-[submodule "examples-blaze/pulse"]
-	path = examples-blaze/pulse
-	url = https://github.com/firdausramlan/pulse
-[submodule "examples-blaze/reductionism"]
-	path = examples-blaze/reductionism
-	url = https://github.com/awatson1978/reductionism
-[submodule "examples-blaze/payment-subscription"]
-	path = examples-blaze/payment-subscription
-	url = https://github.com/awatson1978/payment-subscription
-[submodule "examples-blaze/dropzone-ui"]
-	path = examples-blaze/dropzone-ui
-	url = https://github.com/awatson1978/dropzone-ui
-[submodule "examples-blaze/drag-and-drop"]
-	path = examples-blaze/drag-and-drop
-	url = https://github.com/awatson1978/drag-and-drop
-[submodule "examples-blaze/green-eggs-and-spam"]
-	path = examples-blaze/green-eggs-and-spam
-	url = https://github.com/awatson1978/green-eggs-and-spam
-[submodule "examples-blaze/itunes-interface"]
-	path = examples-blaze/itunes-interface
-	url = https://github.com/mitar/reactconf-2015-HYPE
-[submodule "examples-react/todo-list"]
-	path = examples-react/todo-list
-	url = https://github.com/grigio/todomvc-meteor-react
-[submodule "examples-react/timeline"]
-	path = examples-react/timeline
-	url = https://github.com/AntoBase/timeline
-[submodule "examples-blaze/timeline"]
-	path = examples-blaze/timeline
-	url = https://github.com/AntoBase/timeline
-[submodule "examples-blaze/personal-health-record"]
-	path = examples-blaze/personal-health-record
-	url = https://github.com/clinical-meteor/personal-health-record
+[submodule "utilities/material-fhir-ui"]
+	path = utilities/material-fhir-ui
+	url = https://github.com/clinical-meteor/software-development-kit
