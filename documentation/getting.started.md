@@ -1,24 +1,44 @@
 ===========================================
-## Development Tools
+## Getting Started  
 
-To start with the Clinical Meteor Software Development Kit, you're going to need to set up a development environment if you want to program in Meteor.  There's a large ecosystem of tools to use, so the focus in this document is on tools that are known to work together well on Mac OSX and are popular within the Meteor community.   
-
-[Atom](http://www.atom.io) - Javascript IDE that can fully leverage Meteor's isomorphic javascript framework.   
-[MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje) - Chrome extension for Blaze, DDP, and Minimongo.  
-[Robomongo](http://robomongo.org/) - A sweet, sweet database management tool for MongoDB.
-[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb) - Preferences GUI for MacOSX.  
-[Slack](https://slack.com/) - Collaborative project tracking feeds.    
-[InVision Sync](http://blog.invisionapp.com/an-all-new-invision-sync/) - Collaborative wireframing and prototyping.  
-[Zenhub.io](zenhub.io) - Project management Kanban boards for GitHub.  
-[Postman Utility](https://www.getpostman.com/) - HTTP protocol utility for programming REST interfaces.  
-[GitHub Desktop](https://desktop.github.com/) - Version control software.  
-[Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Needed QA testing tools.
-[Node JS](http://nodejs.org/en/) - Server-side javascript environment. Use the LTS release.
+To start with the Clinical Meteor Software Development Kit, we're going to need to set up a complete development environment.  There's a large ecosystem of tools to use, so the focus in this document is on tools that are known to work together well on Mac OSX and are popular within the Meteor community.   
 
 
 ===========================================
-## Meteor Installation Walkthrough  
+#### Core Libraries   
 
+The core of Clinical Meteor is NodeJS, although we also use Java for our QA testing framework.  
+
+[Node JS](http://nodejs.org/en/) - Server-side javascript environment. Use the LTS release.  
+[Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Needed QA testing tools.
+
+===========================================
+#### Chrome Environment  
+
+[Chrome](https://www.google.com/chrome/browser/desktop/)
+
+Clinical Meteor prefers a Chrome environment.  So much so, that its arguably an alternative Chrome OS.  Not only will we be targeting Chrome as our preferred browser; we'll also be installing utilities as Chrome extensions; using a code editor built on Chrome, and using Chrome in our QA test runner.  Clinical Meteor supports other browsers (particularly Firefox and Safari), but the bulk of it's work is done with Chrome.  
+
+===========================================
+#### Isomorphic Editor  
+
+[Atom](http://www.atom.io)
+
+Clinical Meteor recommends using Atom for your code editor, since it's built in Chrome, and can fully leverage Meteor's isomorphic javascript framework.  After you install the application, be sure to run **File > Install Shell Commands** which will allow you to run the `atom` command from the terminal.  
+
+===========================================
+#### Version Control Software     
+
+The easiest way to install `git` is to install the [GitHub Desktop App](https://desktop.github.com/).  You'll then have access to both the GUI and the command line.   
+
+```sh
+$ git config --global user.name "Jane Doe"
+$ git config --global user.email janedoe@example.com
+$ git config --global core.editor atom -w
+```
+
+===========================================
+#### Meteor Installation Walkthrough  
 
 This quickstart is written for Mac OSX Mavericks, and is a bit more verbose than other installation instructions.  It should hopefully cover a few edge cases, such as setting your path, which can cause an installation to go awry.  
 
@@ -50,10 +70,13 @@ sudo nano ~/.profile
 If you have any problems with EACCESS pr ENOENT errors, check the file permissions of your NPM directories.  
 https://docs.npmjs.com/getting-started/fixing-npm-permissions
 
+You may also want to install [MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje), which provide Blaze, DDP, and Minimongo editing utilities via a Chrome extension.  
 
 
 ===========================================
-## Meteor Development Tools Quickstart  
+#### Database Tools  
+
+[Robomongo](http://robomongo.org/) - A sweet, sweet database management tool for MongoDB.
 
 Here's the script the author uses when setting up a new development workstation.  It's certainly not the only environment setup script, and it's by no means authoritative.  It's simply what seems to work.
 
@@ -149,4 +172,17 @@ $ starrynight run-tests --framework nightwatch
 # run any verification tests you may have written with TinyTest
 $ starrynight run-tests --framework tinytest-ci
 
-````
+````  
+
+===========================================
+## HTTP Protocol Development  
+
+[Postman Utility](https://www.getpostman.com/) - HTTP protocol utility for programming REST interfaces.  
+
+
+===========================================
+## Project Management Tools  
+
+[Slack](https://slack.com/) - Collaborative project tracking feeds.    
+[InVision Sync](http://blog.invisionapp.com/an-all-new-invision-sync/) - Collaborative wireframing and prototyping.  
+[Zenhub.io](zenhub.io) - Project management Kanban boards for GitHub.  
