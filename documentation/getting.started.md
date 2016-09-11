@@ -1,32 +1,46 @@
-Meteor Installation Walkthrough
 ===========================================
+## Development Tools
+
+To start with the Clinical Meteor Software Development Kit, you're going to need to set up a development environment if you want to program in Meteor.  There's a large ecosystem of tools to use, so the focus in this document is on tools that are known to work together well on Mac OSX and are popular within the Meteor community.   
+
+[Atom](http://www.atom.io) - Javascript IDE that can fully leverage Meteor's isomorphic javascript framework.   
+[MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje) - Chrome extension for Blaze, DDP, and Minimongo.  
+[Robomongo](http://robomongo.org/) - A sweet, sweet database management tool for MongoDB.
+[MacOSX Mongo Preference Page](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb) - Preferences GUI for MacOSX.  
+[Slack](https://slack.com/) - Collaborative project tracking feeds.    
+[InVision Sync](http://blog.invisionapp.com/an-all-new-invision-sync/) - Collaborative wireframing and prototyping.  
+[Zenhub.io](zenhub.io) - Project management Kanban boards for GitHub.  
+[Postman Utility](https://www.getpostman.com/) - HTTP protocol utility for programming REST interfaces.  
+[GitHub Desktop](https://desktop.github.com/) - Version control software.  
+[Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Needed QA testing tools.
+[Node JS](http://nodejs.org/en/) - Server-side javascript environment. Use the LTS release.
+
+
+===========================================
+## Meteor Installation Walkthrough  
+
 
 This quickstart is written for Mac OSX Mavericks, and is a bit more verbose than other installation instructions.  It should hopefully cover a few edge cases, such as setting your path, which can cause an installation to go awry.  
 
 ````sh
 # install meteor
 curl https://install.meteor.com | sh
- 
+
 # check it's installed correctly
 meteor --version
- 
-# install node
-# as of OSX Mavericks, we need the GUI installer (?!)
-# when a good command line alternative is found, we'll post it
-http://nodejs.org/download/
- 
+
 # install npm
 curl -0 -L https://npmjs.org/install.sh | sh
 
 # check node is installed correctly
 node --version
- 
+
 # check npm is installed correctly
 npm -version
- 
+
 # find your npm path
 which npm
- 
+
 # make sure npm is in your path
 sudo nano ~/.profile
   export PATH=$PATH:/usr/local/bin
@@ -38,8 +52,9 @@ https://docs.npmjs.com/getting-started/fixing-npm-permissions
 
 
 
-Meteor Development Tools Quickstart
 ===========================================
+## Meteor Development Tools Quickstart  
+
 Here's the script the author uses when setting up a new development workstation.  It's certainly not the only environment setup script, and it's by no means authoritative.  It's simply what seems to work.
 
 
@@ -56,7 +71,7 @@ cp -R -n mongodb-osx-x86_64-2.6.3/* /usr/local/mongodb
 # make sure mongo is in your local path
 nano ~/.profile
   export PATH=$PATH:/usr/local/mongodb/bin
-  
+
 # or install it to the global path
 nano /etc/paths
   /usr/local/mongodb/bin
@@ -77,7 +92,7 @@ terminal-a$ meteor
 
 terminal-b$ mongo -port 3001
 
-# install robomongo database admin tool 
+# install robomongo database admin tool
 http://robomongo.org/
 
 # check you can connect to your mongo instance with robomongo
@@ -104,7 +119,7 @@ terminal-b$  node-inspector
 http://localhost:8080/debug?port=5858
 
 # install jshint
-npm install -g jshint 
+npm install -g jshint
 
 # run code analysis on local directory
 cd helloworld
@@ -113,8 +128,9 @@ jshint .
 ````
 
 
-Test-Driven-Development Quickstart
 ===========================================
+## Test-Driven-Development Quickstart  
+
 Test-driven development is essential for building larger and more complex apps.  The following script will get you up-and-running with automated browser walkthroughs using the Nightwatch bridge to a Selenium Server.  Be aware that this script won't create tests for you.  You will need to create a tests/nightwatch directory with walkthroughs in it.
 
 ````sh
