@@ -4,27 +4,55 @@
 To start with the Clinical Meteor Software Development Kit, we're going to need to set up a complete development environment.  There's a large ecosystem of tools to use, so the focus in this document is on tools that are known to work together well on Mac OSX and are popular within the Meteor community.   
 
 
-===========================================
-#### Core Libraries   
-
-The core of Clinical Meteor is NodeJS, although we also use Java for our QA testing framework.  
-
 [Node JS](http://nodejs.org/en/) - Server-side javascript environment. Use the LTS release.  
 [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Needed QA testing tools.
+[Chrome](https://www.google.com/chrome/browser/desktop/)  
+[Atom](http://www.atom.io)  
+[GitHub Desktop App](https://desktop.github.com/)  
 
 ===========================================
 #### Chrome Environment  
 
-[Chrome](https://www.google.com/chrome/browser/desktop/)
-
 Clinical Meteor prefers a Chrome environment.  So much so, that its arguably an alternative Chrome OS.  Not only will we be targeting Chrome as our preferred browser; we'll also be installing utilities as Chrome extensions; using a code editor built on Chrome, and using Chrome in our QA test runner.  Clinical Meteor supports other browsers (particularly Firefox and Safari), but the bulk of it's work is done with Chrome.  
 
+Once you get Chrome installed, we recommend the following extensions; which will help develop Clinical Meteor apps.  
+
+[Postman HTTP/REST Utility](https://www.getpostman.com/) - HTTP protocol utility for programming REST interfaces.  
+[MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje) - Blaze, DDP, and Minimongo debugging utilities.
+
+
 ===========================================
-#### Isomorphic Editor  
+#### Code Editor
 
-[Atom](http://www.atom.io)
+Clinical Meteor recommends using Atom for your code editor, since it's built in Chrome, and can fully leverage Meteor's isomorphic javascript framework.  After you install the application, be sure to run **File > Install Shell Commands** which will allow you to run the `atom` and `apm` commands from the terminal.  After that is installed, we recommend the following packages:  
 
-Clinical Meteor recommends using Atom for your code editor, since it's built in Chrome, and can fully leverage Meteor's isomorphic javascript framework.  After you install the application, be sure to run **File > Install Shell Commands** which will allow you to run the `atom` command from the terminal.  
+```sh
+# atom packages
+apm install atom-bootstrap3
+apm install atom-handlebars
+apm install color-picker
+apm install copy-filename
+apm install jsformat
+apm install language-html
+apm install language-spacebars
+apm install language-javascript-jsx
+apm install language-babel
+apm install less-autocompile
+apm install line-count
+apm install linter
+apm install linter-eslint
+apm install linter-handlebars
+apm install linter-jsxhint
+apm install merge-conflicts
+apm install meteor-api
+apm install meteor-helper
+apm install minimap
+apm install react
+
+# npm tools that atom will use
+npm config get prefix  
+npm install -g eslint
+```
 
 ===========================================
 #### Version Control Software     
@@ -70,7 +98,6 @@ sudo nano ~/.profile
 If you have any problems with EACCESS pr ENOENT errors, check the file permissions of your NPM directories.  
 https://docs.npmjs.com/getting-started/fixing-npm-permissions
 
-You may also want to install [MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje), which provide Blaze, DDP, and Minimongo editing utilities via a Chrome extension.  
 
 
 ===========================================
@@ -174,10 +201,7 @@ $ starrynight run-tests --framework tinytest-ci
 
 ````  
 
-===========================================
-## HTTP Protocol Development  
 
-[Postman Utility](https://www.getpostman.com/) - HTTP protocol utility for programming REST interfaces.  
 
 
 ===========================================
