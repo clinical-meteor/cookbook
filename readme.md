@@ -9,6 +9,15 @@ If you'd like to use the latest packages that are under QA and audited to work t
 meteor run --release clinical:METEOR
 ````
 
+
+========================================
+###[Getting Started Walkthrough](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md)  
+
+The above walkthrough should get you started installing the SDK, setting up a development environment, a scalable database,  compiling your first app, and running QA scripts.  The following diagram attempts to give a basic subsystem diagram of the Meteor platform. 
+
+![Meteor Microservice Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
+
+
 ========================================
 ###[Example Apps](https://github.com/awatson1978/meteor-cookbook/tree/master/examples)  
 We also provide a number of reference apps as part of the Clinical Meteor project, which act as a baseline and standard by which to calibrate the rest of the quality-control and continuous-improvement processes that are necessary for regulatory review.  These reference apps use the packages in the release track, are under quality control across multiple dimensions; and are suitable for benchmarking, baselining, and complex code refactorings.  
@@ -45,12 +54,8 @@ starrynight autoscan
 starrynight run-framework nightwatch
 ````
 
-========================================
-###Clinical Meteor Architecture  
 
-This section is in the works, and will document the architecture behind creating HIPAA compliant apps with Meteor that can pass FDA/CCHIT review.  
 
-![Meteor Microservice Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
 
 ========================================
