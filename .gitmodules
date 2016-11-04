@@ -168,6 +168,10 @@
 [submodule "examples-react/meteor-on-fhir"]
 	path = examples-react/meteor-on-fhir
 	url = https://github.com/clinical-meteor/meteor-on-fhir
+[submodule "examples-react/my-nutrition"]
+	path = examples-react/my-nutrition
+	url = https://github.com/djhi/my-nutrition
+
 
 
 [submodule "fhir-resources/hl7-resource-appointment"]
