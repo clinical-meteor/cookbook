@@ -261,3 +261,6 @@
 [submodule "utilities/mupx"]
 	path = utilities/mupx
 	url = https://github.com/arunoda/meteor-up
+[submodule "utilities/snomed-ct-rest-api"]
+	path = utilities/snomed-ct-rest-api
+	url = https://github.com/IHTSDO/sct-snapshot-rest-api
