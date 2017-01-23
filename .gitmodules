@@ -112,6 +112,9 @@
 [submodule "examples-blaze/clinical-scheduling"]
     path = examples-blaze/clinical-scheduling
     url = https://github.com/awatson1978/clinical-scheduling.git
+[submodule "examples-blaze/dropzone-ui"]
+    path = examples-blaze/dropzone-ui
+    url = https://github.com/awatson1978/dropzone-ui
 [submodule "examples-blaze/app-support-forum"]
     path = examples-blaze/app-support-forum
     url = https://github.com/clinical-meteor/app-support-forum
@@ -121,6 +124,9 @@
 [submodule "examples-blaze/image-link-archive"]
     path = examples-blaze/image-link-archive
     url = https://github.com/awatson1978/image-link-archive.git
+[submodule "examples-blaze/green-eggs-and-spam"]
+    path = examples-blaze/green-eggs-and-spam
+    url = https://github.com/awatson1978/green-eggs-and-spam
 
 
 
@@ -171,6 +177,11 @@
 [submodule "examples-react/my-nutrition"]
 	path = examples-react/my-nutrition
 	url = https://github.com/djhi/my-nutrition
+
+[submodule "examples-react/reactconf-2015"]
+	path = examples-react/reactconf-2015
+	url = https://github.com/ryanflorence/reactconf-2015-HYPE
+
 
 
 
@@ -264,3 +275,6 @@
 [submodule "utilities/snomed-ct-rest-api"]
 	path = utilities/snomed-ct-rest-api
 	url = https://github.com/IHTSDO/sct-snapshot-rest-api
+[submodule "utilities/silver-decisions"]
+	path = utilities/silver-decisions
+	url = https://github.com/bkamins/SilverDecisions
