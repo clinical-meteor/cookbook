@@ -157,6 +157,21 @@
 [submodule "examples-blaze/nvd3-statistics"]
 	path = examples-blaze/nvd3-statistics
 	url = https://github.com/clinical-meteor/nvd3-statistics-meteor-blaze
+[submodule "examples-blaze/payment-subscription"]
+	path = examples-blaze/payment-subscription
+	url = https://github.com/awatson1978/payment-subscription
+[submodule "examples-blaze/personal-health-record"]
+	path = examples-blaze/personal-health-record
+	url = https://github.com/clinical-meteor/personal-health-record
+[submodule "examples-blaze/pulse"]
+	path = examples-blaze/pulse
+	url = https://github.com/firdausramlan/pulse
+[submodule "examples-blaze/reductionism"]
+	path = examples-blaze/reductionism
+	url = https://github.com/awatson1978/reductionism
+[submodule "examples-blaze/timeline"]
+	path = examples-blaze/timeline
+	url = https://github.com/AntoBase/timeline
 
 
 
@@ -177,10 +192,20 @@
 [submodule "examples-react/my-nutrition"]
 	path = examples-react/my-nutrition
 	url = https://github.com/djhi/my-nutrition
-
-[submodule "examples-react/reactconf-2015"]
+[submodule "examples-react/eactconf-2015"]
 	path = examples-react/reactconf-2015
 	url = https://github.com/ryanflorence/reactconf-2015-HYPE
+[submodule "examples-react/tmeline"]
+	path = examples-react/timeline
+	url = https://github.com/AntoBase/timeline
+[submodule "examples-react/todos"]
+	path = examples-react/todos
+	url = https://github.com/meteor/todos
+[submodule "examples-react/todo-list"]
+	path = examples-react/todo-list
+	url = https://github.com/grigio/todomvc-meteor-react
+
+
 
 
 
