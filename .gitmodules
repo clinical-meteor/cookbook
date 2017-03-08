@@ -303,3 +303,6 @@
 [submodule "utilities/silver-decisions"]
 	path = utilities/silver-decisions
 	url = https://github.com/bkamins/SilverDecisions
+[submodule "utilities/gql-fhir"]
+	path = utilities/gql-fhir
+	url = https://github.com/shalkam/gql-fhir
