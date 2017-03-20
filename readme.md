@@ -13,7 +13,7 @@ meteor run --release clinical:METEOR
 ========================================
 ###[Getting Started Walkthrough](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md)  
 
-The above walkthrough should get you started installing the SDK, setting up a development environment, a scalable database,  compiling your first app, and running QA scripts.  The following diagram attempts to give a basic subsystem diagram of the Meteor platform. 
+The above walkthrough should get you started installing the SDK, setting up a development environment, a scalable database,  compiling your first app, and running QA scripts.  The following diagram attempts to give a basic subsystem diagram of the Meteor platform.
 
 ![Meteor Microservice Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
@@ -29,6 +29,9 @@ For those who want to clone or fork the project and do local development, it's r
 
 ````bash
 git clone --recursive http://github.com/clinical-meteor/clinical-meteor ClinicalMeteor
+
+# you can also update to the latest versions of the submodules 
+git submodule update
 ````
 
 ========================================
