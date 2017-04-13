@@ -306,3 +306,6 @@
 [submodule "utilities/gql-fhir"]
 	path = utilities/gql-fhir
 	url = https://github.com/shalkam/gql-fhir
+[submodule "utilities/synthea"]
+	path = utilities/synthea
+	url = https://github.com/synthetichealth/synthea
