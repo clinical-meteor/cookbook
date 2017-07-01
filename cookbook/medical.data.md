@@ -6,8 +6,10 @@ This list is provided for informational purposes only, please make sure you resp
 ## 1. Medical Imaging Data
 
 __SIIM Datasets for Meteor__  
-
+Basic patient medical history, including radiology images and reports.  Used in SIIM hackathons.  
 https://github.com/clinical-meteor/siim-dataset  
+
+***
 
 __The National Library of Medicine presents MedPix®__  
 Database of 53,000 medical images from 13,000 patients with annotations. __Requires registration__.  
