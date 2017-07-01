@@ -1,8 +1,14 @@
 # Medical Data for Machine Learning
 This is a curated list of medical data for machine learning.  Original file was located at [beamandrew/medical-data](https://github.com/beamandrew/medical-data/).
-This list is provided for informational purposes only, please make sure you respect any and all usage restrictions for any of the data listed here.
+This list is provided for informational purposes only, please make sure you respect any and all usage restrictions for any of the data listed here.  When converting to Meteor datasets, be use to use the [getText()](https://dweldon.silvrback.com/get-text  ) api to import assets.
+
 
 ## 1. Medical Imaging Data
+
+__SIIM Datasets for Meteor__  
+
+https://github.com/clinical-meteor/siim-dataset  
+
 __The National Library of Medicine presents MedPix®__  
 Database of 53,000 medical images from 13,000 patients with annotations. __Requires registration__.  
 Information: https://medpix.nlm.nih.gov/home  
@@ -428,6 +434,3 @@ Collection of all the full-text, open access articles in Pubmed central.
 Information: http://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/  
 Archived files: http://www.ncbi.nlm.nih.gov/pmc/tools/ftp/#Data_Mining  
 
-## 7. SIIM / Medical Imaging  
-https://github.com/clinical-meteor/siim-dataset  
-https://dweldon.silvrback.com/get-text  
