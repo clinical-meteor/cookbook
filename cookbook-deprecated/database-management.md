@@ -2,7 +2,7 @@
 
 As far as databases go, Mongo delivers an excellent cost of ownership.  Arguably much higher than SQL systems.  But, at the end of the day, it's still an enterprise-grade database.  And, unfortunately, there's no such thing as a free lunch.  So, despite it being very easy to manage compared to SQL based systems, there's still quite a bit involved.  The following is a grab-bag of various scripts and recipes for managing your Mongo database.    
 
-===========================================
+-----------------------------------------------
 #### Analyzing An Inherited Database  
 
 There's two great utilities you should check out.  First is variety.js, which will give you a great high-level overview.  The second is schema.js, which will let you dig into the collections for more detail on the individual fields.  
@@ -18,7 +18,7 @@ mongo --shell schema.js
 ````
 
 
-===========================================
+-----------------------------------------------
 #### Connect To A Database on *.meteor.com?**  
 
 Try the ``--url`` flag.  It's quite simple actually.  The only tricky thing is that there's only a 60 second window to authenticate, and then the username/password randomly resets.  So be sure to have robomongo open and ready to configure a new connection when you run the command.  
@@ -28,7 +28,7 @@ Try the ``--url`` flag.  It's quite simple actually.  The only tricky thing is t
 meteor mongo --url $METEOR_APP_URL
 ````
 
-===========================================
+-----------------------------------------------
 #### Download a Database from *.meteor.com?**  
 
 Same thing as before, but you have to copy the info into the mongodump command.  You have to run the following commands rediculously fast, and it requires hand/eye coordination.  Be warned!  This is a rediculously hacky!  But fun!  Think of it as a video game!  :D
@@ -41,7 +41,7 @@ meteor mongo --url $METEOR_APP_URL
 mongodump -u username -p password --port 27017 --db meteor_app_url_com --host production-db-b1.meteor.io
 ````
 
-===========================================
+-----------------------------------------------
 ####  Export Data from local Meteor development instance?  
 
 This command will create a /dump directory, and store each collection in a separate BSON blob file.  This is the best way to backup or transfer databases between systems. 
@@ -50,7 +50,7 @@ This command will create a /dump directory, and store each collection in a separ
 mongodump --db meteor
 ````
 
-===========================================
+-----------------------------------------------
 #### Restore Data from a Dumpfile
 
 The analog to the ``meteordump`` command is ``meteorrestore``.  You can do a partial import by selecting the specific collection to import.  Particularly useful after running a drop command.
@@ -66,7 +66,7 @@ mongorestore --port 3001 --db meteor /path/to/dump
 mongorestore --port 3001 --db meteor /path/to/dump -c comments.bson
 ````
 
-===================================
+-----------------------------------------------
 #### Export a Collection to JSON
 
 Run meteor, open another terminal window, and run the following command.  In this instance, we are exporting a collection named ``taxonomy``.  
@@ -75,14 +75,15 @@ Run meteor, open another terminal window, and run the following command.  In thi
 mongoexport --db meteor --collection taxonomy --port 3001 --out taxonomy.json
 ````
 
-===========================================
+-----------------------------------------------
 #### Import a JSON File into Meteor
 
 Importing into a default Meteor instance is fairly easy.  Note that you can add a ``--jsonArray`` option if your json file is exported as an array from another system.
 ````
 mongoimport --db meteor --port 3001 --collection taxonomy --file taxonomy.json
 ````
-===========================================
+
+-----------------------------------------------
 #### Copying Data Between Staging and Local Databases
 
 Mongo supports database-to-database copying, which is useful if you have large databases on a staging database that you want to copy into a local development instance.  
@@ -110,9 +111,7 @@ meteor mongo --port 3002
 db.copyDatabase('staging', 'meteor', 'localhost');
 ````
 
-
-
-===========================================
+-----------------------------------------------
 #### Compact a Mongo Database on an Ubuntu Box
 
 Preallocation. Mongo sets aside disk-space in empty containers, so when the time comes to write something to disk, it doesn't have to shuffle bits out of the way first. It does so by a doubling algorithm, always doubling the amount of disk space preallocated until it reaches 2GB; and then each prealloc file from thereon is 2GB. Once data is preallocated, it doesn't unallocate unless you specifically tell it to. So observable MongoDB space usage tends to go up automatically, but not down.
@@ -134,13 +133,12 @@ echo 'db.dropDatabase()' | mongo databasename
 mongorestore dump/databasename
 ````
 
-
-===========================================
+-----------------------------------------------
 #### Reset a Replica Set  
 Delete the local database files.  Just exit the Mongo shell, navigate to the ``/dbpath`` (wherever you set it up), and delete the files within that directory.   
 
 
-===========================================
+-----------------------------------------------
 #### Connect Remotely to a Mongo Instance on *.meteor.com  
 
 Did you know about the ``--url`` flag?  Very handy.  
@@ -148,7 +146,7 @@ Did you know about the ``--url`` flag?  Very handy.
 meteor mongo --url YOURSITE.meteor.com
 ````
 
-===========================================
+-----------------------------------------------
 #### Mongo Admin Interfaces
 
 If you're not opposed to running a Ruby utility, Genghis is a classic:
@@ -161,8 +159,7 @@ Also, the Mongo Monitoring Service, from 10Gen, the makers of Mongo:
 https://mms.mongodb.com/
 
 
-
-===========================================
+-----------------------------------------------
 #### Accessing Mongo Log Files on a Local Meteor Instance
 
 They're not easily accessible.  If you run the 'meteor bundle' command, you can generate a tar.gz file, and then run your app manually.  Doing that, you should be able to access the mongo logs... probably in the .meteor/db directory.  
@@ -176,8 +173,7 @@ Once that's done, you should be able to access logs in the usual places...
 /var/log/mongodb/server1.log
 ````
 
-
-===========================================
+-----------------------------------------------
 #### Rotate Log Files on an Ubuntu Box
 
 Gotta rotate those log files, or they'll eventually eat up all of your disk space.  Start with some research...   
