@@ -5,16 +5,16 @@ To start with the Clinical Meteor Software Development Kit, we're going to need 
 
 
 ** App Development **  
-[Meteor](https://www.meteor.com/) - Isomorphic javascript/node environment.
-[Chrome](https://www.google.com/chrome/browser/desktop/) - Prefered web browser.
-[GitHub Desktop App](https://desktop.github.com/) - For synchronizing and managing code.  
+[Meteor](https://www.meteor.com/) - Isomorphic javascript/node environment.  
+[Chrome](https://www.google.com/chrome/browser/desktop/) - Prefered web browser.  
+[GitHub Desktop App](https://desktop.github.com/) - For synchronizing and managing code.    
 [Visual Studio Code](https://code.visualstudio.com/)  - Editor with support for large files (needed for genomics, big data) and good javascript refactoring tools.  
 
 
 ** Platform Development **  
-[Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Needed QA testing tools.
-[Node JS](http://nodejs.org/en/) - Server-side javascript environment. Use the LTS release.  
-[Visual Studio - Community 2017](https://www.visualstudio.com/downloads/) - C++ compilers needed for some Node libraries.  
+[Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Needed QA testing tools.  
+[Node JS](http://nodejs.org/en/) - Server-side javascript environment. Use the LTS release.    
+[Visual Studio - Community 2017](https://www.visualstudio.com/downloads/) - C++ compilers needed for some Node libraries.    
 
 
 -----------------------------------------------
