@@ -6,10 +6,8 @@ To start with the Clinical Meteor Software Development Kit, we're going to need 
 
 **App Development**  
 [Meteor](https://www.meteor.com/) - Isomorphic javascript/node environment.  
-[Chrome](https://www.google.com/chrome/browser/desktop/) - Prefered web browser.  
 [GitHub Desktop App](https://desktop.github.com/) - For synchronizing and managing code.    
 [Visual Studio Code](https://code.visualstudio.com/) - Editor with support for large files (genomics, big data) and good javascript refactoring tools.  
-
 
 **Platform Development**    
 [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Needed QA testing tools.  
@@ -24,6 +22,7 @@ Clinical Meteor prefers a Chrome environment.  So much so, that its arguably an 
 
 Once you get Chrome installed, we recommend the following extensions; which will help develop Clinical Meteor apps.  
 
+[Chrome](https://www.google.com/chrome/browser/desktop/) - Prefered web browser.  
 [Postman HTTP/REST Utility](https://www.getpostman.com/) - HTTP protocol utility for programming REST interfaces.  
 [MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje) - Blaze, DDP, and Minimongo debugging utilities.
 
