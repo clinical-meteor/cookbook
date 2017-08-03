@@ -177,7 +177,7 @@ jshint .
 
 
 -----------------------------------------------
-## Test-Driven-Development Quickstart  
+#### Test-Driven-Development Quickstart  
 
 Test-driven development is essential for building larger and more complex apps.  The following script will get you up-and-running with automated browser walkthroughs using the Nightwatch bridge to a Selenium Server.  Be aware that this script won't create tests for you.  You will need to create a tests/nightwatch directory with walkthroughs in it.
 
@@ -203,7 +203,7 @@ $ starrynight run-tests --framework tinytest-ci
 
 
 -----------------------------------------------
-## Project Management Tools  
+#### Project Management Tools  
 
 [Slack](https://slack.com/) - Collaborative project tracking feeds.    
 [InVision Sync](http://blog.invisionapp.com/an-all-new-invision-sync/) - Collaborative wireframing and prototyping.  
