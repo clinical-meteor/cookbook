@@ -1,4 +1,4 @@
-===========================================
+-----------------------------------------------
 ## Getting Started  
 
 To start with the Clinical Meteor Software Development Kit, we're going to need to set up a complete development environment.  There's a large ecosystem of tools to use, so the focus in this document is on tools that are known to work together well on Mac OSX and are popular within the Meteor community.   
@@ -10,7 +10,7 @@ To start with the Clinical Meteor Software Development Kit, we're going to need 
 [Atom](http://www.atom.io)  
 [GitHub Desktop App](https://desktop.github.com/)  
 
-===========================================
+-----------------------------------------------
 #### Chrome Environment  
 
 Clinical Meteor prefers a Chrome environment.  So much so, that its arguably an alternative Chrome OS.  Not only will we be targeting Chrome as our preferred browser; we'll also be installing utilities as Chrome extensions; using a code editor built on Chrome, and using Chrome in our QA test runner.  Clinical Meteor supports other browsers (particularly Firefox and Safari), but the bulk of it's work is done with Chrome.  
@@ -20,8 +20,7 @@ Once you get Chrome installed, we recommend the following extensions; which will
 [Postman HTTP/REST Utility](https://www.getpostman.com/) - HTTP protocol utility for programming REST interfaces.  
 [MeteorDevTools](https://chrome.google.com/webstore/detail/meteor-devtools/ippapidnnboiophakmmhkdlchoccbgje) - Blaze, DDP, and Minimongo debugging utilities.
 
-
-===========================================
+-----------------------------------------------
 #### Code Editor
 
 Clinical Meteor recommends using Atom for your code editor, since it's built in Chrome, and can fully leverage Meteor's isomorphic javascript framework.  After you install the application, be sure to run **File > Install Shell Commands** which will allow you to run the `atom` and `apm` commands from the terminal.  After that is installed, we recommend the following packages:  
@@ -54,7 +53,7 @@ npm config get prefix
 npm install -g eslint
 ```
 
-===========================================
+-----------------------------------------------
 #### Version Control Software     
 
 The easiest way to install `git` is to install the [GitHub Desktop App](https://desktop.github.com/).  You'll then have access to both the GUI and the command line.   
@@ -65,7 +64,7 @@ $ git config --global user.email janedoe@example.com
 $ git config --global core.editor atom -w
 ```
 
-===========================================
+-----------------------------------------------
 #### Meteor Installation Walkthrough  
 
 This quickstart is written for Mac OSX Mavericks, and is a bit more verbose than other installation instructions.  It should hopefully cover a few edge cases, such as setting your path, which can cause an installation to go awry.  
@@ -99,8 +98,7 @@ If you have any problems with EACCESS pr ENOENT errors, check the file permissio
 https://docs.npmjs.com/getting-started/fixing-npm-permissions
 
 
-
-===========================================
+-----------------------------------------------
 #### Database Tools  
 
 [Robomongo](http://robomongo.org/) - A sweet, sweet database management tool for MongoDB.
@@ -178,7 +176,7 @@ jshint .
 ````
 
 
-===========================================
+-----------------------------------------------
 ## Test-Driven-Development Quickstart  
 
 Test-driven development is essential for building larger and more complex apps.  The following script will get you up-and-running with automated browser walkthroughs using the Nightwatch bridge to a Selenium Server.  Be aware that this script won't create tests for you.  You will need to create a tests/nightwatch directory with walkthroughs in it.
@@ -204,7 +202,7 @@ $ starrynight run-tests --framework tinytest-ci
 
 
 
-===========================================
+-----------------------------------------------
 ## Project Management Tools  
 
 [Slack](https://slack.com/) - Collaborative project tracking feeds.    
