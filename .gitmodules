@@ -296,7 +296,7 @@
 	url = https://github.com/mongodb/mongo
 [submodule "utilities/mupx"]
 	path = utilities/mupx
-	url = https://github.com/arunoda/meteor-up
+	url = https://github.com/arunoda/meteor-up-legacy
 [submodule "utilities/snomed-ct-rest-api"]
 	path = utilities/snomed-ct-rest-api
 	url = https://github.com/IHTSDO/sct-snapshot-rest-api
@@ -309,3 +309,9 @@
 [submodule "utilities/synthea"]
 	path = utilities/synthea
 	url = https://github.com/synthetichealth/synthea
+[submodule "examples-react/meteor-on-fhir/webapp/packages/accounts-famous-dead-people"]
+	path = examples-react/meteor-on-fhir/webapp/packages/accounts-famous-dead-people
+	url = https://github.com/clinical-meteor/accounts-famous-dead-people
+[submodule "examples-blaze/clinical-trials/packages/active-entry"]
+	path = examples-blaze/clinical-trials/packages/active-entry
+	url = https://github.com/clinical-meteor/entry
