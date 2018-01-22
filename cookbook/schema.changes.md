@@ -1,5 +1,4 @@
 ## Schema Changes
---------------------------------------
 
 It's often necessary to run maintenance scripts on your database.  Fields get renamed; data structures get changed; features that you used to support get removed; services get migrated.  The list of reasons why you might want to change your schema is pretty limitless.  So, the 'why' is pretty self explanatory.  
 
