@@ -11,12 +11,16 @@
 ### Symptomatic Plugin API  
 
 #### DynamicRoutes
- 
+_name_: String
+_path_: String
+_component_: Object
+_requireAuth_: Boolean
+
 #### SidebarElements
+_primaryText_: 'Patients',
+_to_: '/patients',
+_href_: '/patients'
 
-#### FooterElements
-
-#### MainIndexTiles
 
 ### Index.jsx  
 
