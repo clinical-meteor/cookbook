@@ -1,19 +1,19 @@
 ## Creating a Plugin Quickstart  
 
 ### Overview    
-- A Symptomatic Plugin is an [Atmosphere](https://atmospherejs.com) package for the [Meteor](https://www.meteor.com/) javascript framework, which conforms to a specific API interface.  You'll want to familiarize yourself with the [Meteor Guide](https://guide.meteor.com/) to get started, with particular attention to the section on [Writing Atmosphere Packages](https://guide.meteor.com/writing-atmosphere-packages.html).
+A Symptomatic Plugin is an [Atmosphere](https://atmospherejs.com) package for the [Meteor](https://www.meteor.com/) javascript framework, which conforms to a specific API interface.  You'll want to familiarize yourself with the [Meteor Guide](https://guide.meteor.com/) to get started, with particular attention to the section on [Writing Atmosphere Packages](https://guide.meteor.com/writing-atmosphere-packages.html).
 
-- Atmosphere packages are javascript meta-packages, and may contain references to Node packages or the Node Package Manager (Npm).  The nice thing about Atmosphere packages is that they abstract a lot of the technical details out of the way.  Generally speaking, Atmosphere packages focus on clinical and healthcare business logic, compared to Node packages which focus on technology implementation.
+Atmosphere packages are javascript meta-packages, and may contain references to Node packages or the Node Package Manager (Npm).  The nice thing about Atmosphere packages is that they abstract a lot of the technical details out of the way.  Generally speaking, Atmosphere packages focus on clinical and healthcare business logic, compared to Node packages which focus on technology implementation.
 
 
 ### Architecture Diagram
 
-Plugins generally follow a microservice architecture, which support all the functionality to store data in a collection in the Mongo database and display it on the client.  
+Plugins generally follow a microservice architecture, which support all the functionality to store data in a collection in the Mongo database and display it on the client.  By default, it will coordinate data transfer across three different devices (database, server, and client) using either the DDP or REST protocol.  
 
 ![MeteorMicroserviceArchitecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
 ### Implementation Checklist  
-A complete implementation would include the following items:
+To implement a complete plugin using all available features and fully integrating into the Symptomatic architecture, one would want to implement the following items:  
 
 - [ ] a data schema
 - [ ] a Mongo collection
@@ -28,6 +28,7 @@ A complete implementation would include the following items:
 - [ ] a javascript class
 - [ ] verification tests
 - [ ] validation tests
+- [ ] event hooks
     
 ### Reference Implementation  
 
@@ -35,6 +36,8 @@ The defecto gold-standard plugin for the Symptomatic platform is the [clinical:h
 
 
 ### Symptomatic Plugin API  
+
+Symptomatic extends the underlying Atmosphere plugin architecture with an API that is specific to the Meteor on FHIR interface engine.  If the following objects are exported from the package with the appropriate fields, Meteor on FHIR will be able to pick up the UI/UX elements and display them.  
 
 - **DynamicRoutes**   
   _name_: String  
@@ -59,6 +62,23 @@ The defecto gold-standard plugin for the Symptomatic platform is the [clinical:h
   _href_: String   
   _icon_: String   
 
+
+To better understand how this works, take a look at the [imports/client/startup/routes.js](https://github.com/clinical-meteor/meteor-on-fhir/blob/development/webapp/imports/client/startup/routes.js#L88-L97) file, and how it parses through the packages looking for the `DynamicRoutes` API.  
+
+```js
+// Pick up any dynamic routes that are specified in packages, and include them
+var dynamicRoutes = [];
+Object.keys(Package).forEach(function(packageName){
+  if(Package[packageName].DynamicRoutes){
+    // we try to build up a route from what's specified in the package
+    Package[packageName].DynamicRoutes.forEach(function(route){
+      dynamicRoutes.push(route);      
+    });    
+  }
+});
+```
+
+Similar functionality is implemented in the `Footers.js`, `Sidebar.js`, and `MainIndex.js` files and elsewhere.
 
 ### Index.jsx  
 
