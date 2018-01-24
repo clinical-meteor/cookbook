@@ -21,6 +21,20 @@ _primaryText_: String
 _to_: String   
 _href_: String  
 
+#### FooterElements  
+_label_: String    
+_className_: String    
+_style_: Object  
+_onClick_: Function    
+
+#### MainIndexTiles    
+_primaryText_: String    
+_to_: String   
+_href_: String   
+_icon_: String   
+
+
+
 ### Index.jsx  
 
 The plugin API is generally implemented within the [index.jsx](https://github.com/clinical-meteor/hl7-resource-patient/blob/master/index.jsx) file of the package.  
@@ -34,6 +48,9 @@ import PatientsPage from './client/react/PatientsPage.js';
 import PatientTable from './client/react/PatientTable.js';
 import PatientsPage from './client/react/PatientsPage';
 import Patients from './lib/Patients.js';
+
+// import external dependencies 
+import Heartbeat from 'react-icons/lib/fa/heartbeat';
 
 // create the interface objects that Symptomatic expects
 var DynamicRoutes = [{
@@ -49,9 +66,24 @@ var SidebarElements = [{
   'href': '/patients'
 }];
 
-var FooterElements = [];
+var FooterElements = [{
+  'label': 'View Patients',
+  'className': 'button',
+  'style': {
+    'color': 'black'
+  },
+  'onClick': function(){
+    console.log('Navigating to /patients page');
+  },
+  'href': '/patients'
+}];
 
-var MainIndexTiles = [];
+var MainIndexTiles = [{
+  'primaryText': 'Patients',
+  'to': '/patients',
+  'href': '/patients',
+  'icon': Heartbeat
+}];
 
 export { 
   // attach the plugin API objects
@@ -65,6 +97,7 @@ export {
   PatientDetail,
   PatientPickList,
   PatientTable,
+  Heartbeat,
 
   // and any data schemas or other libraries
   Patient,
