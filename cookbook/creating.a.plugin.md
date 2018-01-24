@@ -84,14 +84,10 @@ export {
     - [ ] validation tests
 
 
-#### Getting Started  
+#### Other Notes  
 
 - Read the [Meteor on FHIR README](https://github.com/clinical-meteor/meteor-on-fhir).
 - Read through the [Clinical Meteor Quickstart](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md) to set up your development environment.
-- 
 - Reference the [Software Development Kit](https://github.com/clinical-meteor/software-development-kit) as needed.
-
-
-#### Notes  
 
 
