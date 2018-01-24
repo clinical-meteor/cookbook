@@ -14,19 +14,19 @@ Plugins generally follow a microservice architecture, which support all the func
 
 Such functionality typically includes:
 
-    - [ ] a data schema
-    - [ ] a Mongo collection
-    - [ ] a server-side cursor
-    - [ ] a client-side cursor
-    - [ ] a set of basic REST endpoints
-    - [ ] a publication/subscription
-    - [ ] a dynamic route
-    - [ ] a main page
-    - [ ] a sidebar element
-    - [ ] a menu tile
-    - [ ] a javascript class
-    - [ ] verification tests
-    - [ ] validation tests
+- [ ] a data schema
+- [ ] a Mongo collection
+- [ ] a server-side cursor
+- [ ] a client-side cursor
+- [ ] a set of basic REST endpoints
+- [ ] a publication/subscription
+- [ ] a dynamic route
+- [ ] a main page
+- [ ] a sidebar element
+- [ ] a menu tile
+- [ ] a javascript class
+- [ ] verification tests
+- [ ] validation tests
     
 ### Reference Implementation  
 
