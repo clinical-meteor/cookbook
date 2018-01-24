@@ -10,12 +10,62 @@
 
 #### Symptomatic Plugin API  
 
-The plugin API is generally implemented within the [index.jsx](https://github.com/clinical-meteor/hl7-resource-patient/blob/master/index.jsx) file of the package.  
-
     - DynamicRoutes
     - SidebarElements
     - FooterElements
     - MainIndexTiles
+
+#### Index.jsx  
+
+The plugin API is generally implemented within the [index.jsx](https://github.com/clinical-meteor/hl7-resource-patient/blob/master/index.jsx) file of the package.  
+
+
+```js
+// import UI/UX components from files in the plugin
+import PatientDetail from './client/react/PatientDetail.js';
+import PatientPickList from './client/react/PatientPickList.js';
+import PatientsPage from './client/react/PatientsPage.js';
+import PatientTable from './client/react/PatientTable.js';
+import PatientsPage from './client/react/PatientsPage';
+import Patients from './lib/Patients.js';
+
+// create the interface objects that Symptomatic expects
+var DynamicRoutes = [{
+  'name': 'PatientPage',
+  'path': '/patients',
+  'component': PatientsPage,
+  'requireAuth': true
+}];
+
+var SidebarElements = [{
+  'primaryText': 'Patients',
+  'to': '/patients',
+  'href': '/patients'
+}];
+
+var FooterElements = [];
+
+var MainIndexTiles = [];
+
+export { 
+  // attach the plugin API objects
+  SidebarElements, 
+  DynamicRoutes, 
+  FooterElements, 
+  MainIndexTiles,
+
+  // as well as the components that will be used
+  PatientsPage,
+  PatientDetail,
+  PatientPickList,
+  PatientTable,
+
+  // and any data schemas or other libraries
+  Patient,
+  Patients,
+  PatientSchema
+};
+```
 
 #### Implementation Checklist  
 - Plugins generally follow a microservice architecture, which support all the functionality to store data in a collection in the Mongo database and display it on the client.  Such functionality typically includes:
