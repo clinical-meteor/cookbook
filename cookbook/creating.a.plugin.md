@@ -1,7 +1,7 @@
 ## Creating a Plugin Quickstart  
 
 #### Architecture  
-- A Symptomatic Plugin is an Atmosphere package for the Meteor javascript framework, which conforms to a specific API interface.  You'll want to familiarize yourself with the [Meteor Guide](https://guide.meteor.com/) to get started, with particular attention to the section on [Writing Atmosphere Packages](https://guide.meteor.com/writing-atmosphere-packages.html).
+- A Symptomatic Plugin is an [Atmosphere](https://atmospherejs.com) package for the [Meteor](https://www.meteor.com/) javascript framework, which conforms to a specific API interface.  You'll want to familiarize yourself with the [Meteor Guide](https://guide.meteor.com/) to get started, with particular attention to the section on [Writing Atmosphere Packages](https://guide.meteor.com/writing-atmosphere-packages.html).
 
 - Atmosphere packages are javascript meta-packages, and may contain references to Node packages or the Node Package Manager (Npm).  The nice thing about Atmosphere packages is that they abstract a lot of the technical details out of the way.  Generally speaking, Atmosphere packages are more clinical and healthcare related, compared to Node packages.
 
