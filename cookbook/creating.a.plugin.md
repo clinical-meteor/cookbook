@@ -3,7 +3,7 @@
 #### Architecture  
 - A Symptomatic Plugin is an [Atmosphere](https://atmospherejs.com) package for the [Meteor](https://www.meteor.com/) javascript framework, which conforms to a specific API interface.  You'll want to familiarize yourself with the [Meteor Guide](https://guide.meteor.com/) to get started, with particular attention to the section on [Writing Atmosphere Packages](https://guide.meteor.com/writing-atmosphere-packages.html).
 
-- Atmosphere packages are javascript meta-packages, and may contain references to Node packages or the Node Package Manager (Npm).  The nice thing about Atmosphere packages is that they abstract a lot of the technical details out of the way.  Generally speaking, Atmosphere packages are more clinical and healthcare related, compared to Node packages.
+- Atmosphere packages are javascript meta-packages, and may contain references to Node packages or the Node Package Manager (Npm).  The nice thing about Atmosphere packages is that they abstract a lot of the technical details out of the way.  Generally speaking, Atmosphere packages focus on clinical and healthcare business logic, compared to Node packages which focus on technology implementation.
 
 - The defecto gold-standard plugin for the Symptomatic platform is the [clinical:hl7-resource-patient](https://github.com/clinical-meteor/hl7-resource-patient) package. It contains the latest code, most functionality, and is kept under quality control.  
 
