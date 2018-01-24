@@ -10,29 +10,28 @@
 
 ### Symptomatic Plugin API  
 
-#### DynamicRoutes  
-_name_: String  
-_path_: String  
-_component_: Object  
-_requireAuth_: Boolean  
+...#### DynamicRoutes  
+..._name_: String  
+..._path_: String  
+..._component_: Object  
+..._requireAuth_: Boolean  
 
-#### SidebarElements  
-_primaryText_: String    
-_to_: String   
-_href_: String  
+...#### SidebarElements  
+..._primaryText_: String    
+..._to_: String   
+..._href_: String  
 
-#### FooterElements  
-_label_: String    
-_className_: String    
-_style_: Object  
-_onClick_: Function    
+...#### FooterElements  
+..._label_: String    
+..._className_: String    
+..._style_: Object  
+..._onClick_: Function    
 
-#### MainIndexTiles    
-_primaryText_: String    
-_to_: String   
-_href_: String   
-_icon_: String   
-
+...#### MainIndexTiles    
+..._primaryText_: String    
+..._to_: String   
+..._href_: String   
+..._icon_: String   
 
 
 ### Index.jsx  
