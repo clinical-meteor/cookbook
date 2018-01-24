@@ -1,8 +1,11 @@
 ## Creating a Plugin Quickstart  
 
 #### Architecture  
-- A Symptomatic Plugin is an Atmosphere package for the Meteor javascript framework, which conforms to a specific interface.   
-- Atmosphere packages are javascript meta-packages, and may contain references to Node packages or the Node Package Manager (Npm).  The nice thing about Atmosphere packages is that they abstract a lot of the technical details out of the way.  Generally speaking, Atmosphere packages are more clinical and healthcare related, compared to Node packages. 
+- A Symptomatic Plugin is an Atmosphere package for the Meteor javascript framework, which conforms to a specific interface.  
+
+- Atmosphere packages are javascript meta-packages, and may contain references to Node packages or the Node Package Manager (Npm).  The nice thing about Atmosphere packages is that they abstract a lot of the technical details out of the way.  Generally speaking, Atmosphere packages are more clinical and healthcare related, compared to Node packages.
+
+- The defecto gold-standard plugin for the Symptomatic platform is the [clinical:hl7-resource-patient](https://github.com/clinical-meteor/hl7-resource-patient) package. It contains the latest code, most functionality, and is kept under quality control.  
 
 
 #### Symptomatic Plugin API  
@@ -27,11 +30,8 @@
     - [ ] verification tests
     - [ ] validation tests
 
-- The defecto gold-standard plugin for the Symptomatic platform is the clinical:hl7-resource-patient package.  You’ll generally want to copy it and 
 
-
-
-
+#### Getting Started  
 
 - Read the [Meteor on FHIR README](https://github.com/clinical-meteor/meteor-on-fhir).
 - Read through the [Clinical Meteor Quickstart](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md) to set up your development environment.
@@ -41,6 +41,6 @@
 - Copy and modify the [Default Landing Page Plugin](https://github.com/clinical-meteor/meteor-on-fhir/tree/development/webapp/packages/plugin-default-landing-page) to create your first plugin.
 
 
-
+#### Notes  
 
 
