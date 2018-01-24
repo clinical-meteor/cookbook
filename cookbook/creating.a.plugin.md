@@ -37,7 +37,7 @@
 - Read through the [Clinical Meteor Quickstart](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md) to set up your development environment.
 - Familiarize yourself with the [Meteor Guide](https://guide.meteor.com/) to get started with developing Meteor.
 - Reference the [Software Development Kit](https://github.com/clinical-meteor/software-development-kit) as needed.
-- Update the [Landing Page](https://github.com/clinical-meteor/meteor-on-fhir/blob/development/webapp/packages/plugin-default-landing-page/client/FullPageCanvas.jsx and replace with your custom content.
+- Update the [Landing Page](https://github.com/clinical-meteor/meteor-on-fhir/blob/development/webapp/packages/plugin-default-landing-page/client/FullPageCanvas.jsx) and replace with your custom content.
 - Copy and modify the [Default Landing Page Plugin](https://github.com/clinical-meteor/meteor-on-fhir/tree/development/webapp/packages/plugin-default-landing-page) to create your first plugin.
 
 
