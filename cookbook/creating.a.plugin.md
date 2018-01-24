@@ -17,10 +17,9 @@ _component_: Object
 _requireAuth_: Boolean  
 
 #### SidebarElements  
-_primaryText_: 'Patients'  
-_to_: '/patients'  
-_href_: '/patients'  
-
+_primaryText_: String    
+_to_: String   
+_href_: String  
 
 ### Index.jsx  
 
