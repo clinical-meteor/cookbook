@@ -12,7 +12,8 @@ Plugins generally follow a microservice architecture, which support all the func
 
 ![MeteorMicroserviceArchitecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
-Such functionality typically includes:
+### Implementation Checklist  
+A complete implementation would include the following items:
 
 - [ ] a data schema
 - [ ] a Mongo collection
@@ -130,21 +131,6 @@ export {
 };
 ```
 
-### Implementation Checklist  
-- Plugins generally follow a microservice architecture, which support all the functionality to store data in a collection in the Mongo database and display it on the client.  Such functionality typically includes:
-    - [ ] a data schema
-    - [ ] a Mongo collection
-    - [ ] a server-side cursor
-    - [ ] a client-side cursor
-    - [ ] a set of basic REST endpoints
-    - [ ] a publication/subscription
-    - [ ] a dynamic route
-    - [ ] a main page
-    - [ ] a sidebar element
-    - [ ] a menu tile
-    - [ ] a javascript class
-    - [ ] verification tests
-    - [ ] validation tests
 
 
 ### Other Notes  
