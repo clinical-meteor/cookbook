@@ -6,7 +6,7 @@ To understand Clinical Meteor, one must begin by understanding the architecture 
 
 ![Meteor Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)
 
-Besides the breakthrough of creating an application framework that uses JavaScript on both the server and client, Meteor does a particularly noteworthy thing, in that it provides a technology called 'minimongo' which acts as a light-weight, client-side replica set and datastore for webapps.  
+Besides the breakthrough of creating an application framework that uses JavaScript on both the server and client, Meteor does a particularly noteworthy thing, in that it provides a technology called 'minimongo' which acts as a light-weight, client-side replica set and datastore for webapps.  Thus, we have the concept of a unified 'data layer' in Meteor.
 
 ![Collections & Models](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/CollectionsAndModels.PNG)
 
