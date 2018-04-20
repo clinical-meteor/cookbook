@@ -2,7 +2,7 @@
 
 Unlike application architectures which focus on simply emulating companies like Facebook which host millions of concurrent users, Clinical Meteor is built with a multi-tenant Wordpress model, focusing on managing billions and trillions of historical documents that must be systematically accessed and reviewed. The purpose of the following document is to provide a methodology and convention for developers to use that allows them to focus on clinical problems rather than technical ones.
 
-To understand Clinical Meteor, one must begin by understand  architecture of Meteor, an isomorphic application framework that uses JavaScript on the server, client, and database; and which happens to use a document-oriented database.
+To understand Clinical Meteor, one must begin by understanding the architecture of Meteor, an isomorphic application framework that uses JavaScript on the server, client, and database; and which happens to use a document-oriented database.  The following diagram illustrates a typical Meteor application, wherein the gray boxes are the V8 Javascript machine that runes in Mongo, Node, and Chome (respectively).
 
 ![Meteor Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)
 
