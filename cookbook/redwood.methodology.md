@@ -2,7 +2,7 @@ The Redwood Methodology is an application architecture for building next-gen EMR
 
 The Redwood Methodology began with a simple diagram documenting the architecture of Meteor, an isomorphic application framework that uses JavaScript on the server, client, and database; and which happens to use a document-oriented database.
 
-![Meteor Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/Meteor%20Architecture%20-%20Basic.jpg)
+![Meteor Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)
 
 Besides the breakthrough of creating an application framework that uses JavaScript on both the server and client, Meteor does a particularly noteworthy thing, in that it provides a technology called 'minimongo' which acts as a light-weight, client-side replica set and datastore for webapps.  
 
