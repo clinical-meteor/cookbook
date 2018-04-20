@@ -20,6 +20,8 @@ The above walkthrough should get you started installing the SDK, setting up a de
 -----------------------------------------------
 ### [Architecture Overview](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/redwood.methodology.md)  
 
+Clinical Meteor uses a NoSQL data pipeline architecture with isomorphic software.  Read the following for an overview of our full-stack javascript platform and the distributed data architecture.  
+
 ![Meteor Microservice Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
 
