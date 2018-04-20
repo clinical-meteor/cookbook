@@ -1,6 +1,8 @@
-The Redwood Methodology is an application architecture for building next-gen EMR applications using document-oriented databases and web technologies.  Unlike application architectures which focus on simply emulating companies like Facebook which host millions of concurrent users, the Redwood Methodology is more of a multi-tenant Wordpress model, focusing on managing billions and trillions of historical documents that must be systematically accessed and reviewed. The purpose of the following document is to provide a methodology and convention for developers to use that allows them to focus on clinical problems rather than technical ones.
+## Architecture Overview  
 
-The Redwood Methodology began with a simple diagram documenting the architecture of Meteor, an isomorphic application framework that uses JavaScript on the server, client, and database; and which happens to use a document-oriented database.
+Unlike application architectures which focus on simply emulating companies like Facebook which host millions of concurrent users, Clinical Meteor is built with a multi-tenant Wordpress model, focusing on managing billions and trillions of historical documents that must be systematically accessed and reviewed. The purpose of the following document is to provide a methodology and convention for developers to use that allows them to focus on clinical problems rather than technical ones.
+
+To understand Clinical Meteor, one must begin by understand  architecture of Meteor, an isomorphic application framework that uses JavaScript on the server, client, and database; and which happens to use a document-oriented database.
 
 ![Meteor Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)
 
