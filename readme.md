@@ -16,6 +16,10 @@ meteor run --release clinical:METEOR
 
 The above walkthrough should get you started installing the SDK, setting up a development environment, a scalable database,  compiling your first app, and running QA scripts.  The following diagram attempts to give a basic subsystem diagram of the Meteor platform.
 
+
+-----------------------------------------------
+### [Architecture Overview](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/redwood.methodology.md)  
+
 ![Meteor Microservice Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
 
