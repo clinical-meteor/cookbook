@@ -50,6 +50,11 @@ Symptomatic extends the underlying Atmosphere plugin architecture with an API th
   _to_: String   
   _href_: String  
 
+- **AdminSidebarElements**    
+  _primaryText_: String    
+  _to_: String   
+  _href_: String  
+
 - **FooterElements**    
   _label_: String    
   _className_: String    
@@ -61,6 +66,10 @@ Symptomatic extends the underlying Atmosphere plugin architecture with an API th
   _to_: String   
   _href_: String   
   _icon_: String   
+
+- **ThemingAssets**      
+  _name_: String    
+  _src_: String   
 
 
 To better understand how this works, take a look at the [imports/client/startup/routes.js](https://github.com/clinical-meteor/meteor-on-fhir/blob/development/webapp/imports/client/startup/routes.js#L88-L97) file, and how it parses through the packages looking for the `DynamicRoutes` API.  
