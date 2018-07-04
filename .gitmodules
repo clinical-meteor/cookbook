@@ -315,3 +315,6 @@
 [submodule "examples-blaze/clinical-trials/packages/active-entry"]
 	path = examples-blaze/clinical-trials/packages/active-entry
 	url = https://github.com/clinical-meteor/entry
+[submodule "examples-blaze/clinical-trials/packages/hipaa-audit-log"]
+	path = examples-blaze/clinical-trials/packages/hipaa-audit-log
+	url = https://github.com/clinical-meteor/hipaa-audit-log
