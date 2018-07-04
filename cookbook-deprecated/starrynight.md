@@ -20,3 +20,27 @@ $ starrynight run-tests --framework nightwatch
 $ starrynight run-tests --framework tinytest-ci
 
 ````
+
+
+-----------------------------------------------
+### [The StarryNight Utility](http://starrynight.meteor.com/)    
+
+A project of this size eventually needs it's own tools and utilities.  Ours is called StarryNight, in keeping with the astronomy themes of Meteor and Nightwatch.  It's our general-purpose multi-tool where we put utilities for managing the package authoring workflow, refactoring code, installing dev environments, running validation/verification tests, security/performance auditing, and so forth.  Think of StarryNight as a framework utility that extends the core platform tools.
+
+````sh
+# install the utility
+npm install starrynight -g
+
+# run verification tests (similar to unit  or integration tests)
+starrynight run-tests --type verification
+starrynight run-tests --type package-verification
+
+# run validation tests (similar to end-to-end or acceptance tests)
+starrynight autoscan
+starrynight run-tests --type validation
+
+# or run a specific testing framework
+starrynight scaffold --framework nightwatch
+starrynight autoscan
+starrynight run-framework nightwatch
+````

@@ -34,33 +34,14 @@ We also provide a number of reference apps as part of the Clinical Meteor projec
 For those who want to clone or fork the project and do local development, it's recommended to use the ``--recursive`` flag, which will recursively download the examples and packages.  Be warned!  We're trying to keep things compressed and optimized, but the project still weighs in at over 330MB at this point!  When decompressed and project databases rehydrated, the project can swell to over a gigabyte in size.
 
 ````bash
-git clone --recursive http://github.com/clinical-meteor/clinical-meteor ClinicalMeteor
+git clone --recursive http://github.com/clinical-meteor/clinical-meteor 
 
 # you can also update to the latest versions of the submodules 
-git submodule update
-````
+cd clinical-meteor
+git submodule update --recursive --remote --merge
 
------------------------------------------------
-### [The StarryNight Utility](http://starrynight.meteor.com/)    
-
-A project of this size eventually needs it's own tools and utilities.  Ours is called StarryNight, in keeping with the astronomy themes of Meteor and Nightwatch.  It's our general-purpose multi-tool where we put utilities for managing the package authoring workflow, refactoring code, installing dev environments, running validation/verification tests, security/performance auditing, and so forth.  Think of StarryNight as a framework utility that extends the core platform tools.
-
-````sh
-# install the utility
-npm install starrynight -g
-
-# run verification tests (similar to unit  or integration tests)
-starrynight run-tests --type verification
-starrynight run-tests --type package-verification
-
-# run validation tests (similar to end-to-end or acceptance tests)
-starrynight autoscan
-starrynight run-tests --type validation
-
-# or run a specific testing framework
-starrynight scaffold --framework nightwatch
-starrynight autoscan
-starrynight run-framework nightwatch
+# if you're submitting patchs and pull-requests 
+git add . && git commit -m 'Update submodules to latest revisions message'
 ````
 
 
