@@ -49,3 +49,4 @@ git add . && git commit -m 'Update submodules to latest revisions message'
 ### Contributing   
 
 Pull requests with typo corrections and copyediting are nearly always accepted.  Feature requests for individual packages should be logged in their respective repositories.  Discussion regarding the larger overall project should be logged here.  Please see the [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md) documentation for more details on project governance.
+
