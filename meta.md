@@ -6,9 +6,19 @@
 
 ### Add New Submodule  
 ```
+
+
 cd software-development-kit
-git submodule add http://github.com/path/to-lib utilities/lib
+pwd
+
+git branch
+git pull origin branch-name
+
+git submodule add http://github.com/path/to-lib utilities/lib-name
 git status
 git submodule init
 git submodule update
+
+git add --all .
+git commit -a -m 'lib-name added'
 ```

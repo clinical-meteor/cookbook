@@ -318,3 +318,12 @@
 [submodule "examples-blaze/clinical-trials/packages/hipaa-audit-log"]
 	path = examples-blaze/clinical-trials/packages/hipaa-audit-log
 	url = https://github.com/clinical-meteor/hipaa-audit-log
+[submodule "utilities/simpleddp"]
+	path = utilities/simpleddp
+	url = https://github.com/Gregivy/simpleddp
+[submodule "utilities/qewd"]
+	path = utilities/qewd
+	url = https://github.com/robtweed/qewd
+[submodule "utilities/simpl-schema"]
+	path = utilities/simpl-schema
+	url = https://github.com/aldeed/simple-schema-js
