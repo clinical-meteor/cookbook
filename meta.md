@@ -6,8 +6,6 @@
 
 ### Add New Submodule  
 ```
-
-
 cd software-development-kit
 pwd
 
