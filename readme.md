@@ -25,9 +25,9 @@ Clinical Meteor uses a NoSQL data pipeline architecture with isomorphic software
 ![Meteor Microservice Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
 -----------------------------------------------
-### [Design Principles]
+### Design Principles
 
-Yes, we're continuing the tradition of the Meteor Principles, but are focusing them on Healthcare apps!  
+Yes, we're continuing the tradition of the Meteor Principles, but are focusing them on Healthcare apps!  These are the principles we believe in with regard to technology stack design (in no particular order).  
 
 1.  One Language: Javascript
 2.  Fast Healthcare Interoperability Resources
