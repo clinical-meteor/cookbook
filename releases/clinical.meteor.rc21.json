@@ -224,7 +224,7 @@
     "standard-minifier-js":"2.4.0",
     "templating":"1.2.15",
     "templating-compiler":"1.2.15",
-    "templating-runtimes":"1.2.15",
+    "templating-runtime":"1.2.15",
     "templating-tools":"1.1.2",
     "themeteorchef:bert":"2.1.1",
     "tmeasday:publish-with-relations":"0.2.0",

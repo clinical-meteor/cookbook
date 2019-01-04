@@ -5,7 +5,8 @@
 
 
 ### Add New Submodule  
-```
+```sh
+# Add New Submodule  
 cd software-development-kit
 pwd
 
@@ -19,4 +20,13 @@ git submodule update
 
 git add --all .
 git commit -a -m 'lib-name added'
+
+# Publish Release  
+
+git add --all .
+git commit -a -m 'clinical.meteor.rc21.json'
+git branch
+git push origin master
+
+meteor publish-release ./clinical.meteor.rc21.json
 ```
