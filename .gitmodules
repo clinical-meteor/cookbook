@@ -327,3 +327,12 @@
 [submodule "utilities/simpl-schema"]
 	path = utilities/simpl-schema
 	url = https://github.com/aldeed/simple-schema-js
+[submodule "utilities/phx-tools"]
+	path = utilities/phx-tools
+	url = https://github.com/Asymmetrik/phx-tools
+[submodule "utilities/typescript-fhir-types"]
+	path = utilities/typescript-fhir-types
+	url = https://github.com/Ahryman40k/typescript-fhir-types
+[submodule "utilities/fhir-js"]
+	path = utilities/fhir-js
+	url = https://github.com/FHIR/fhir.js
