@@ -342,3 +342,6 @@
 [submodule "utilities/fhir-kit-client"]
 	path = utilities/fhir-kit-client
 	url = https://github.com/Vermonster/fhir-kit-client
+[submodule "utilities/smart-on-fhir-client-node"]
+	path = utilities/smart-on-fhir-client-node
+	url = https://github.com/smart-on-fhir/client-node
