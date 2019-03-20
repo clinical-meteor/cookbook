@@ -336,3 +336,9 @@
 [submodule "utilities/fhir-js"]
 	path = utilities/fhir-js
 	url = https://github.com/FHIR/fhir.js
+[submodule "utilities/smart-on-fhir-client-js"]
+	path = utilities/smart-on-fhir-client-js
+	url = https://github.com/smart-on-fhir/client-js
+[submodule "utilities/fhir-kit-client"]
+	path = utilities/fhir-kit-client
+	url = https://github.com/Vermonster/fhir-kit-client
