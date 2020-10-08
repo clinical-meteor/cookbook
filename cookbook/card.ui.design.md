@@ -6,18 +6,18 @@ As far as UI goes, we choose a Card UI, as its a natural design metaphor for a d
 
 There are many approaches to Card UI, and we take an accessibility and ergonomics approach, which specifies a standard design convention across devices.
 
-#####iPhone Portrait  
+#### iPhone Portrait  
 ![iPhone Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPhonePortrait.png)
 
-#####iPad Portrait  
+#### iPad Portrait  
 ![iPad Portrait](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadPortrait.png)
 
 
-#####iPad Landscape    
+#### iPad Landscape    
 ![iPad Landscape](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/iPadLandscape.png)
 
-#####Desktop   
+#### Desktop   
 ![Desktop](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/DesktopLandscape.png)
 
-#####Thunderbolt     
+#### Thunderbolt     
 ![Thunderbolt](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/carddesign/Thunderbolt.png)
