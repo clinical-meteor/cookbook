@@ -1,19 +1,18 @@
 # Node on FHIR Cookbook
 
-Welcome to the Meteor release track specializing in biomedical, healthcare, and clinical apps!  This was formerly the home of the Meteor Cookbook; and is now a full-blown [Meteor](https://github.com/meteor/meteor) release track and distro that aims to be FDA, HIPAA, and HL7 compliant.  We are currently working towards implementing other regulatory standards, including DICOM, CLIA, CCHIT, and EOE.  
+Welcome to the Node on FHIR Cookbook.  This repository contains a cookbook for writing Node/Javascript software that's intended to be used in clinical, laboratory, and healthcare settings.  You may wish to see the companion software at:   
 
-If you'd like to use the latest packages that are under QA and audited to work together, be sure to specify the ``--release clinical:METEOR`` when you run meteor commands, like so:
+[Node on FHIR](https://github.com/clinical-meteor/node-on-fhir)  
 
-````
-meteor run --release clinical:METEOR
-````
 
+# History  
+
+This repostiory was originally entitled the 'Meteor Cookbook', and was focused on recipes for making Meteor.js apps HIPAA compliant, FDA precertification ready, and interoperable via HL7 interfaces.  Add HL7 data schemas became a much larger project than anticipated, which lead to the creation of a fork/release track (clinical-meteor) and this project was renamed as a Software Development Kit.  We are finishing up a major refactor, which has renamed the base boilerplate form 'meteor-on-fhir' to 'node-on-fhir', and migrating to a more NPM centric package management system.  We're taking this moment to move back to the original naming convention of 'cookbook', with a focus on Node.js as the tech stack; and Meteor.js as our build pipeline.  
 
 -----------------------------------------------
 ### [Getting Started Walkthrough](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md)  
 
 The above walkthrough should get you started installing the SDK, setting up a development environment, a scalable database,  compiling your first app, and running QA scripts.  The following diagram attempts to give a basic subsystem diagram of the Meteor platform.
-
 
 -----------------------------------------------
 ### [Architecture Overview](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/architecture-overview.md)  
