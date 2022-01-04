@@ -2,11 +2,6 @@
 
 Welcome to the Node on FHIR Cookbook.  This repository contains a cookbook for writing Node/Javascript software that's intended to be used in clinical, laboratory, and healthcare settings.  You may wish to see the companion software at [Node on FHIR](https://github.com/clinical-meteor/node-on-fhir)  
 
-
-# History  
-
-This repostiory was originally entitled the 'Meteor Cookbook', and was focused on recipes for making Meteor.js apps HIPAA compliant, FDA precertification ready, and interoperable via HL7 interfaces.  Add HL7 data schemas became a much larger project than anticipated, which lead to the creation of a fork/release track (clinical-meteor) and this project was renamed as a Software Development Kit.  We are finishing up a major refactor, which has renamed the base boilerplate form 'meteor-on-fhir' to 'node-on-fhir', and migrating to a more NPM centric package management system.  We're taking this moment to move back to the original naming convention of 'cookbook', with a focus on Node.js as the tech stack; and Meteor.js as our build pipeline.  
-
 -----------------------------------------------
 ### [Getting Started Walkthrough](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md)  
 
@@ -53,9 +48,11 @@ git submodule update --recursive --remote --merge
 git add . && git commit -m 'Update submodules to latest revisions message'
 ````
 
+### History  
+
+This repostiory was originally entitled the 'Meteor Cookbook', and was focused on recipes for making Meteor.js apps HIPAA compliant, FDA precertification ready, and interoperable via HL7 interfaces.  Add HL7 data schemas became a much larger project than anticipated, which lead to the creation of a fork/release track (clinical-meteor) and this project was renamed as a Software Development Kit.  We are finishing up a major refactor, which has renamed the base boilerplate form 'meteor-on-fhir' to 'node-on-fhir', and migrating to a more NPM centric package management system.  We're taking this moment to move back to the original naming convention of 'cookbook', with a focus on Node.js as the tech stack; and Meteor.js as our build pipeline.  
 
 -----------------------------------------------
 ### Contributing   
 
 Pull requests with typo corrections and copyediting are nearly always accepted.  Feature requests for individual packages should be logged in their respective repositories.  Discussion regarding the larger overall project should be logged here.  Please see the [Governance](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/governance.md) documentation for more details on project governance.
-
