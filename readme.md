@@ -1,6 +1,6 @@
 # Node on FHIR Cookbook
 
-> Author's Note:  I'm attempting yet another rewrite of this Cookbook.  I'm mostly almost finished with the refactor from `meteor-on-fhir` to `node-on-fhir`, and finally have a reference target that I can document to.  And since the cookbook seemed to resonate with folks the most the first time around, I'm giving it another go.  
+> Author's Note:  I'm attempting yet another reorg/rewrite of the Cookbook.  I'm mostly almost finished with the refactor from `meteor-on-fhir` to `node-on-fhir`, and finally have a reference target that I can document to.  And since the cookbook seemed to resonate with folks the most the first time around, I'm going back to its original moniker.  
 
 Welcome to the Node on FHIR Cookbook.  This repository contains cookbook recipes for writing Node/Javascript software that's intended to be used in clinical, laboratory, and healthcare settings.  If you're using Node.js (and the Meteor build pipeline) and need to implement a HIPAA audit log, or do a schema migration on a document oriented database, or parse a pharmacogenomics pipeline... we probably have some recipes for helping that happen.  
 
