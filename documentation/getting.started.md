@@ -28,38 +28,6 @@ Once you get Chrome installed, we recommend the following extensions; which will
 
 
 -----------------------------------------------
-#### Code Editor
-
-Clinical Meteor recommends using Atom for your code editor, since it's built in Chrome, and can fully leverage Meteor's isomorphic javascript framework.  After you install the application, be sure to run **File > Install Shell Commands** which will allow you to run the `atom` and `apm` commands from the terminal.  After that is installed, we recommend the following packages:  
-
-```sh
-# atom packages
-apm install atom-bootstrap3
-apm install atom-handlebars
-apm install color-picker
-apm install copy-filename
-apm install jsformat
-apm install language-html
-apm install language-spacebars
-apm install language-javascript-jsx
-apm install language-babel
-apm install less-autocompile
-apm install line-count
-apm install linter
-apm install linter-eslint
-apm install linter-handlebars
-apm install linter-jsxhint
-apm install merge-conflicts
-apm install meteor-api
-apm install meteor-helper
-apm install minimap
-apm install react
-
-# npm tools that atom will use
-npm config get prefix  
-npm install -g eslint
-```
------------------------------------------------
 #### Version Control Software     
 
 The easiest way to install `git` is to install the [GitHub Desktop App](https://desktop.github.com/).  You'll then have access to both the GUI and the command line.   
@@ -77,7 +45,7 @@ This quickstart is written for Mac OSX Mavericks, and is a bit more verbose than
 
 ````sh
 # install meteor
-curl https://install.meteor.com | sh
+npm install -g meteor. 
 
 # check it's installed correctly
 meteor --version
@@ -183,34 +151,11 @@ jshint .
 
 
 -----------------------------------------------
-#### Test-Driven-Development Quickstart  
-
-Test-driven development is essential for building larger and more complex apps.  The following script will get you up-and-running with automated browser walkthroughs using the Nightwatch bridge to a Selenium Server.  Be aware that this script won't create tests for you.  You will need to create a tests/nightwatch directory with walkthroughs in it.
-
-````sh
-# install the StarryNight utility
-npm install starrynight -g
-
-# add .meteor/nightwatch.json to our application
-$ starrynight generate-autoconfig
-
-# add acceptance tests to your application (using the nightwatch framework)
-$ starrynight scaffold --framework nightwatch
-
-# run your validation tests using NightWatch
-$ starrynight run-tests --framework nightwatch
-
-# run any verification tests you may have written with TinyTest
-$ starrynight run-tests --framework tinytest-ci
-
-````  
-
-
-
-
------------------------------------------------
 #### Project Management Tools  
+
+Popular project management tools.
 
 [Slack](https://slack.com/) - Collaborative project tracking feeds.    
 [InVision Sync](http://blog.invisionapp.com/an-all-new-invision-sync/) - Collaborative wireframing and prototyping.  
 [Zenhub.io](zenhub.io) - Project management Kanban boards for GitHub.  
+[LucidChart](https://www.lucidchart.com/) - Flowcharting software.
