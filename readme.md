@@ -1,7 +1,5 @@
 # Node on FHIR Cookbook
 
-[![Stories in Ready](https://badge.waffle.io/clinical-meteor/software-development-kit.png?label=ready&title=Ready)](https://waffle.io/clinical-meteor/software-development-kit)
-
 Welcome to the Meteor release track specializing in biomedical, healthcare, and clinical apps!  This was formerly the home of the Meteor Cookbook; and is now a full-blown [Meteor](https://github.com/meteor/meteor) release track and distro that aims to be FDA, HIPAA, and HL7 compliant.  We are currently working towards implementing other regulatory standards, including DICOM, CLIA, CCHIT, and EOE.  
 
 If you'd like to use the latest packages that are under QA and audited to work together, be sure to specify the ``--release clinical:METEOR`` when you run meteor commands, like so:
