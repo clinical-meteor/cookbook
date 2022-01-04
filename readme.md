@@ -1,6 +1,8 @@
 # Node on FHIR Cookbook
 
-Welcome to the Node on FHIR Cookbook.  This repository contains cookbook recipes for writing Node/Javascript software that's intended to be used in clinical, laboratory, and healthcare settings.  If you're using Node.js (and the Meteor build pipeline) and need to implement a HIPAA audit log, or do a schema migration on a document oriented database, or parse a pharmacogenomics pipeline... we probably have some recipes for helping that happen.  Over the years, we've tried to extract some best practices from the problems we encounter again and again.  These best-practices have been codified in our companion software at [Node on FHIR](https://github.com/clinical-meteor/node-on-fhir)  
+Welcome to the Node on FHIR Cookbook.  This repository contains cookbook recipes for writing Node/Javascript software that's intended to be used in clinical, laboratory, and healthcare settings.  If you're using Node.js (and the Meteor build pipeline) and need to implement a HIPAA audit log, or do a schema migration on a document oriented database, or parse a pharmacogenomics pipeline... we probably have some recipes for helping that happen.  
+
+Over the years, we've tried to extract some best practices from the problems we encounter again and again.  These best-practices have been codified in our companion software at [Node on FHIR](https://github.com/clinical-meteor/node-on-fhir)  
 
 -----------------------------------------------
 ### [Getting Started Walkthrough](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md)  
