@@ -7,21 +7,21 @@ Welcome to the Node on FHIR Cookbook.  This repository contains cookbook recipes
 Over the years, we've tried to extract some best practices from the problems we encounter again and again.  These best-practices have been codified in our companion software at [Node on FHIR](https://github.com/clinical-meteor/node-on-fhir)  
 
 -----------------------------------------------
-### [Getting Started Walkthrough](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md)  
+### [Getting Started](https://github.com/clinical-meteor/software-development-kit/blob/master/documentation/getting.started.md)  
 
-The above walkthrough should get you started installing the SDK, setting up a development environment, a scalable database,  compiling your first app, and running QA scripts.  The following diagram attempts to give a basic subsystem diagram of the Meteor platform.
+The above walkthrough should get you started with a development environment, a scalable document-oriented database, compiling your first app, running QA scripts, and connecting to a healthcare server.  
 
 -----------------------------------------------
 ### [Architecture Overview](https://github.com/clinical-meteor/software-development-kit/blob/master/cookbook/architecture-overview.md)  
 
-Clinical Meteor uses a NoSQL data pipeline architecture with isomorphic software.  Read the following for an overview of our full-stack javascript platform and the distributed data architecture.  
+Node on FHIR takes the assumption that it will be working with Fast Healthcare Interoperability Resources (FHIR) as the primary data standard throughout the entire software stack, from database to mobile application.  In implementing this vision, it uses a microservice architecture around an HTTP endpoint.  On the backend, it uses a document-oriented NoSQL JSON data storage for it's data warehouse, layers a FHIR server on top of that, and serves JSON formatted data to FHIR enabled mobile apps that are compiled from the same Javascript software that is running on the server.  Read the following for an overview of our full-stack javascript platform and the distributed data architecture.  
 
 ![Meteor Microservice Architecture](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/MeteorMicroserviceArchitecture.png)  
 
 -----------------------------------------------
 ### Design Principles
 
-Yes, we're continuing the tradition of the Meteor Principles, but are focusing them on Healthcare apps!  These are the principles we believe in with regard to technology stack design (in no particular order).  
+Our design principles for this software were inspired by the Meteor.js Principles, but with a healthcare focus.  These are the principles we value in the development of this software stack:  
 
 1.  One Language: Javascript
 2.  Fast Healthcare Interoperability Resources
