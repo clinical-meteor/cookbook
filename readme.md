@@ -34,7 +34,7 @@ Our design principles for this software were initially inspired by the Meteor.js
 
 
 -----------------------------------------------
-### [Example Apps](https://github.com/clinical-meteor/cookbook/tree/master/examples)   
+### [Example Apps](https://github.com/clinical-meteor/cookbook/tree/master/examples-react)   
 In developing this software, we built 100+ prototypes, forked a web application framework, and published a separate release track (Clinical Meteor) which acts as a baseline and standard by which to calibrate the rest of the quality-control and continuous-improvement processes that are necessary for regulatory review.  These prototypes and reference implementations use the packages from the `clinical` release track, and are baselined and referenced with various quality control measures.  i.e. We try to run the app through Touchstone or Crucible or Inferno test suites; make sure that the accounts package QA scripts are still passing; the package integration tests work, etc.  You may find the list of examples to be of general interest.
 
 -----------------------------------------------
