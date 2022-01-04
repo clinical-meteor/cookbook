@@ -21,7 +21,7 @@ Node on FHIR takes the assumption that it will be working with Fast Healthcare I
 -----------------------------------------------
 ### Design Principles
 
-Our design principles for this software were inspired by the Meteor.js Principles, but with a healthcare focus.  These are the principles we value in the development of this software stack:  
+Our design principles for this software were initially inspired by the Meteor.js Principles, but with a focus on healthcare.  We eventually landed at the following design principles which we value in the development of this software stack:  
 
 1.  One Language: Javascript
 2.  Fast Healthcare Interoperability Resources
@@ -34,8 +34,8 @@ Our design principles for this software were inspired by the Meteor.js Principle
 
 
 -----------------------------------------------
-### [Example Apps](https://github.com/awatson1978/meteor-cookbook/tree/master/examples)   
-We also provide a number of reference apps as part of the Clinical Meteor project, which act as a baseline and standard by which to calibrate the rest of the quality-control and continuous-improvement processes that are necessary for regulatory review.  These reference apps use the packages in the release track, are under quality control across multiple dimensions; and are suitable for benchmarking, baselining, and complex code refactorings.  
+### [Example Apps](https://github.com/clinical-meteor/cookbook/tree/master/examples)   
+In developing this software, we built 100+ prototypes, forked a web application framework, and published a separate release track (Clinical Meteor) which acts as a baseline and standard by which to calibrate the rest of the quality-control and continuous-improvement processes that are necessary for regulatory review.  These prototypes and reference implementations use the packages from the `clinical` release track, and are baselined and referenced with various quality control measures.  i.e. We try to run the app through Touchstone or Crucible or Inferno test suites; make sure that the accounts package QA scripts are still passing; the package integration tests work, etc.  You may find the list of examples to be of general interest.
 
 -----------------------------------------------
 ### Local Development  
