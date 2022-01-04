@@ -1,8 +1,6 @@
 # Node on FHIR Cookbook
 
-Welcome to the Node on FHIR Cookbook.  This repository contains a cookbook for writing Node/Javascript software that's intended to be used in clinical, laboratory, and healthcare settings.  You may wish to see the companion software at:   
-
-[Node on FHIR](https://github.com/clinical-meteor/node-on-fhir)  
+Welcome to the Node on FHIR Cookbook.  This repository contains a cookbook for writing Node/Javascript software that's intended to be used in clinical, laboratory, and healthcare settings.  You may wish to see the companion software at [Node on FHIR](https://github.com/clinical-meteor/node-on-fhir)  
 
 
 # History  
